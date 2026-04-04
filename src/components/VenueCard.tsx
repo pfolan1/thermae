@@ -12,15 +12,17 @@ interface Props {
 
 // Richer gradients evoking natural materials
 const banners: Record<Venue['type'], string> = {
-  sauna:  'radial-gradient(ellipse at 30% 50%, #ffe8e0 0%, #ffd5c8 60%, #f7f7f7 100%)',
-  plunge: 'radial-gradient(ellipse at 70% 40%, #e0f0f7 0%, #c8e4f0 60%, #f7f7f7 100%)',
-  both:   'radial-gradient(ellipse at 50% 50%, #ffe8e0 0%, #e0f0f7 50%, #f7f7f7 100%)',
+  sauna:   'radial-gradient(ellipse at 30% 50%, #ffe8e0 0%, #ffd5c8 60%, #f7f7f7 100%)',
+  plunge:  'radial-gradient(ellipse at 70% 40%, #e0f0f7 0%, #c8e4f0 60%, #f7f7f7 100%)',
+  both:    'radial-gradient(ellipse at 50% 50%, #ffe8e0 0%, #e0f0f7 50%, #f7f7f7 100%)',
+  seaweed: 'radial-gradient(ellipse at 40% 60%, #e0f5e8 0%, #c8ead4 60%, #f7f7f7 100%)',
 };
 
 const typeLabel: Record<Venue['type'], { text: string; color: string }> = {
-  sauna:  { text: 'Sauna',       color: '#FF5A5F' },
-  plunge: { text: 'Cold Plunge', color: '#6bafc8' },
-  both:   { text: 'Sauna & Cold Plunge', color: '#8a9c82' },
+  sauna:   { text: 'Sauna',             color: '#FF5A5F' },
+  plunge:  { text: 'Cold Plunge',       color: '#6bafc8' },
+  both:    { text: 'Sauna & Cold Plunge', color: '#8a9c82' },
+  seaweed: { text: 'Seaweed Baths',     color: '#4a9b6a' },
 };
 
 export default function VenueCard({ venue, distance, fromLat, fromLng }: Props) {

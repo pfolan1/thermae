@@ -4,7 +4,7 @@ export interface Venue {
   country: string;
   name: string;
   area: string;
-  type: 'sauna' | 'plunge' | 'both';
+  type: 'sauna' | 'plunge' | 'both' | 'seaweed';
   price: string;
   rating: number;
   reviews: number;
@@ -238,7 +238,7 @@ export const VENUES: Venue[] = [
     transport:"Oranmore · 5 min from Renville Pier",
     parking:"Free at Renville Pier",
     desc:"Hand-built Finnish sauna at Renville Pier on the Wild Atlantic Way. Plunge into the Atlantic or a cold barrel.",
-    lat:53.2619, lng:-8.9386,
+    lat:53.2436, lng:-8.9677,
     bookingUrl:"https://saunafiain.ie"
   },
 
@@ -676,7 +676,7 @@ export const VENUES: Venue[] = [
     transport:"Drive — 45 min from Cork City via N71",
     parking:"Garrettstown beach car park",
     desc:"Sauna with panoramic Atlantic Ocean views at Garrettstown Beach. Cool off with a sea dip then warm up in the sauna. Don't miss the O'Flynn's gourmet sausage hot dogs from the on-site café. Views and vibes both 10/10.",
-    lat:51.6157, lng:-8.7139,
+    lat:51.6434, lng:-8.5809,
     bookingUrl:"https://coastalroast.ie"
   },
   {
@@ -688,7 +688,7 @@ export const VENUES: Venue[] = [
     transport:"Drive — 30 min from Cork City · Ballincollig studio closer",
     parking:"Beach car park / on-site",
     desc:"Two Cork locations — a stunning seaside sauna at Garrylucas Beach with Atlantic views, and a newer city studio in Ballincollig for year-round access. Traditional wood-burning saunas with hot and cold therapy.",
-    lat:51.8785, lng:-8.5836,
+    lat:51.6095, lng:-8.5252,
     bookingUrl:"https://thesaunasnugg.com"
   },
   {
@@ -1175,9 +1175,9 @@ export const VENUES: Venue[] = [
   // ── SLIGO ──
   {
     id:97, city:"Sligo", country:"Ireland", name:"Voya Seaweed Baths Strandhill", area:"Strandhill",
-    type:"both", price:"From €30", rating:4.9, reviews:312,
+    type:"seaweed", price:"From €30", rating:4.9, reviews:312,
     hours:"Check website for current hours",
-    temp:"Cold shower & sea", tags:["Seafront","Coastal","Outdoor","Wild Atlantic"], emoji:"🌊♨️", open:true,
+    temp:"Cold shower & sea", tags:["Seaweed Bath","Seafront","Coastal","Outdoor","Wild Atlantic"], emoji:"🌿♨️", open:true,
     hygiene:"A+", lockerNote:"Lockers provided",
     transport:"Drive — 8 km from Sligo town",
     parking:"Free on-site parking at Strandhill beach",
@@ -1502,7 +1502,7 @@ export const VENUES: Venue[] = [
     transport:"Drive from Waterford city — 45 min",
     parking:"On-site at Kilmurrin Cove",
     desc:"A mobile barrel sauna rotating between four stunning coastal locations on the Copper Coast — Kilmurrin Cove, Dunmore East, Tramore, and Newtown Cove. Guests alternate between 85–95°C heat and sea swimming for genuine wild wellness on Waterford's rugged coastline.",
-    lat:52.1088, lng:-7.3941,
+    lat:52.1383, lng:-7.3133,
     bookingUrl:"https://www.thehotpod.ie"
   },
 
@@ -1556,7 +1556,7 @@ export const VENUES: Venue[] = [
     transport:"Drive from Nenagh — 15 min",
     parking:"On-site at Dromineer Harbour",
     desc:"A custom-built lakeside sauna overlooking Lough Derg with changing rooms, showers, and ample parking. Guests can swim in the lake, heat in the sauna, then join yoga, pilates, or run club sessions. Coffee and locally baked treats served on-site. A stunning waterside wellness destination.",
-    lat:52.956, lng:-8.296,
+    lat:52.9231, lng:-8.2767,
     bookingUrl:"https://www.ritual-lifestyle.com"
   },
 
@@ -1712,7 +1712,7 @@ export const VENUES: Venue[] = [
     transport:"Drive — 15 min from Tralee",
     parking:"Banna Beach Car Park",
     desc:"A custom-built barrel sauna just off the sand at Banna Beach, one of Kerry's finest Blue Flag strands. Perfect for warming up after sea swims. Sessions available from the main car park with stunning views across the Atlantic towards the Dingle Peninsula.",
-    lat:52.3614, lng:-9.7889,
+    lat:52.3335, lng:-9.8433,
     bookingUrl:"https://www.happydayssauna.ie"
   },
   {
@@ -1724,7 +1724,7 @@ export const VENUES: Venue[] = [
     transport:"Drive from Kenmare — 30 min",
     parking:"Derrynane Beach car park",
     desc:"Kerry's coastal sauna set at Derrynane Beach — one of Ireland's most beautiful National Park beaches — with panoramic views over the bay and surrounding mountains. An unforgettable combination of Ireland's best scenery and authentic wood-fired heat.",
-    lat:51.7696, lng:-10.1251,
+    lat:51.7598, lng:-10.1374,
     bookingUrl:"https://www.kingdomsauna.ie"
   },
 
@@ -1864,7 +1864,7 @@ export const VENUES: Venue[] = [
     transport:"Drive — 25 min from Galway city",
     parking:"On-site parking",
     desc:"Started by a couple who spent time in Scandinavia, bringing authentic sauna culture to the West of Ireland. Traditional Finnish touches including leaf whisks. Full Moon Sauna events with fire pit, cocoa and marshmallows by the beach. A truly special experience outside Galway.",
-    lat:53.2523, lng:-9.0837
+    lat:53.2444, lng:-9.3099
   },
 
   // ── ICELAND / REYKJAVIK ──
@@ -1956,6 +1956,206 @@ export const VENUES: Venue[] = [
     lat:56.154, lng:10.204,
     bookingUrl:"https://broens-sauna.dk"
   },
+
+  // ── WATERFORD (ADDITIONAL) ──
+  {
+    id:154, city:"Waterford", country:"Ireland", name:"The Hot Pod Clonea", area:"Clonea Beach, Dungarvan",
+    type:"both", price:"Check website", rating:4.8, reviews:67,
+    hours:"Check website for current hours",
+    temp:"Sea / cold plunge", tags:["Seafront","Wood-fired","Outdoor","Beach"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 5 min from Dungarvan town",
+    parking:"Clonea Lower Beach Car Park",
+    desc:"Mobile barrel sauna at Clonea Beach, one of Waterford's finest Blue Flag strands near Dungarvan. Alternate between the wood-fired heat and the sea for a classic wild wellness experience on the Waterford coast.",
+    lat:52.0933, lng:-7.5537,
+    bookingUrl:"https://www.thehotpod.ie"
+  },
+  {
+    id:155, city:"Waterford", country:"Ireland", name:"The Hot Pod Dunmore East", area:"Dunmore East Beach",
+    type:"both", price:"Check website", rating:4.8, reviews:54,
+    hours:"Check website for current hours",
+    temp:"Sea / cold plunge", tags:["Seafront","Wood-fired","Outdoor","Beach"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 20 min from Waterford city",
+    parking:"Counsellors' Strand car park",
+    desc:"Mobile barrel sauna at the charming fishing village of Dunmore East, positioned at Counsellors' Strand. Sea swim in the sheltered harbour bay, then warm through in the barrel sauna — one of the most picturesque sauna settings on the south-east coast.",
+    lat:52.1493, lng:-6.9948,
+    bookingUrl:"https://www.thehotpod.ie"
+  },
+  {
+    id:156, city:"Waterford", country:"Ireland", name:"The Hot Pod Tramore", area:"Tramore Beach",
+    type:"both", price:"Check website", rating:4.8, reviews:89,
+    hours:"Check website for current hours",
+    temp:"Sea / cold plunge", tags:["Seafront","Wood-fired","Outdoor","Beach"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 12 km from Waterford city",
+    parking:"Tramore promenade car park",
+    desc:"Mobile barrel sauna on Tramore's iconic beach promenade — Waterford's most popular seaside resort. Warm up after a bracing Atlantic dip in the wood-fired barrel, with views across Tramore Bay.",
+    lat:52.1650, lng:-7.1464,
+    bookingUrl:"https://www.thehotpod.ie"
+  },
+  {
+    id:157, city:"Waterford", country:"Ireland", name:"Endorfin", area:"Copper Coast / Boatstrand",
+    type:"both", price:"Check website", rating:4.9, reviews:78,
+    hours:"Check website for current hours",
+    temp:"Sea / cold plunge", tags:["Seafront","Wood-fired","Outdoor","Copper Coast","Wild Swimming"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 40 min from Waterford city via coastal road",
+    parking:"On-site at Boatstrand Pier",
+    desc:"A coastal sauna and cold plunge experience on the dramatic Copper Coast at Boatstrand Pier, Dunabrattin — one of Waterford's most beautiful and rugged stretches of coastline. An exceptional wild wellness experience on the Wild Atlantic Way.",
+    lat:52.1383, lng:-7.3021,
+    bookingUrl:"https://endorfin.ie"
+  },
+  {
+    id:158, city:"Waterford", country:"Ireland", name:"The Stove Sauna", area:"Ballyscanlon Lake, Tramore",
+    type:"both", price:"Check website", rating:4.8, reviews:45,
+    hours:"Check website for current hours",
+    temp:"Lake cold plunge", tags:["Lakeside","Wood-fired","Outdoor","Scenic","Forest"], emoji:"🔥🌿", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 5 km west of Tramore on R675",
+    parking:"On-site at Ballyscanlon Wellness Retreat",
+    desc:"A wood-fired sauna at the water's edge of Ballyscanlon Lake, a tranquil freshwater reservoir surrounded by native Irish trees near Tramore. Part of the Ballyscanlon Wellness Retreat, combining sauna heat with lake plunges in one of Waterford's most serene natural settings.",
+    lat:52.1772, lng:-7.2111,
+    bookingUrl:"https://thestovesauna.rezgo.com"
+  },
+
+  // ── DUBLIN (ADDITIONAL) ──
+  {
+    id:159, city:"Dublin", country:"Ireland", name:"Sláinte Saunas", area:"Sandymount / Dublin 4",
+    type:"both", price:"From €18", rating:4.9, reviews:94,
+    hours:"Mon–Fri 5pm–10pm · Sat–Sun 9am–10pm",
+    temp:"Ice bath / cold plunge", tags:["Wood-fired","Community","Outdoor","Coastal","City Centre"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing rooms on-site",
+    transport:"Bus 1/47/84X to Sean Moore Rd · 3 min walk · or Sandymount DART",
+    parking:"Clanna Gael GAA car park",
+    desc:"A wood-fired communal sauna within the Clanna Gael Fontenoy GAA grounds near Sandymount Strand, Dublin 4. Seating up to 12 people in a 55-minute shared session, with cold plunge and ice bath options. Also available on ClassPass. One of Dublin's friendliest sauna communities, with a Mayo location too.",
+    lat:53.3375, lng:-6.2144,
+    bookingUrl:"https://www.slaintesaunas.ie"
+  },
+  {
+    id:160, city:"Dublin", country:"Ireland", name:"The Wood Fired Sauna", area:"Rush / Skerries, North County Dublin",
+    type:"both", price:"€100 private / 45 min", rating:4.8, reviews:67,
+    hours:"Wed–Fri 6pm–9pm · Sat–Sun 8am–3:30pm",
+    temp:"Sea plunge", tags:["Seafront","Wood-fired","Outdoor","Community","Beach"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Rush/Skerries approx 30 min from Dublin city",
+    parking:"North Beach Car Park, Rush",
+    desc:"Traditional Finnish wood-fired saunas by the sea at two North County Dublin locations — North Beach, Rush and Red Island, Skerries. Private bookings for up to 10 people. Sea plunging available directly from the sauna. Walk-ins welcome when available. Pure coastal contrast therapy just 30 minutes from Dublin.",
+    lat:53.5255, lng:-6.0865,
+    bookingUrl:"https://www.thewoodfiredsauna.ie"
+  },
+  {
+    id:161, city:"Drogheda", country:"Ireland", name:"Secret Garden Sauna", area:"Drogheda / Co. Louth",
+    type:"both", price:"Check website", rating:5.0, reviews:26,
+    hours:"Mon/Wed–Fri 7am–12pm & 5pm–10pm · Tue 5pm–9pm · Sat–Sun 9am–9pm",
+    temp:"Ice baths / cold plunge", tags:["Community","Ice Bath","Outdoor","Secret Garden"], emoji:"🔥🧊", open:true,
+    hygiene:"A+", lockerNote:"On-site facilities",
+    transport:"Drive — 40 min north of Dublin via M1",
+    parking:"Black Bull Inn car park",
+    desc:"Drogheda's first dedicated sauna and ice bath recovery centre, set in a garden behind the Black Bull Inn. Features a 12-person sauna, three ice baths, and two cold plunge pools. Despite appearing in Dublin sauna directories, it's a 40-minute drive north on the M1 — and worth every minute of the journey.",
+    lat:53.7060, lng:-6.3630,
+    bookingUrl:"https://secretgardensauna.ie"
+  },
+
+  // ── SEAWEED BATHS ──
+  {
+    id:162, city:"Sligo", country:"Ireland", name:"Kilcullen's Seaweed Baths", area:"Enniscrone / Inishcrone",
+    type:"seaweed", price:"Check website", rating:4.9, reviews:287,
+    hours:"Daily 10am–8pm (seasonal — check website)",
+    temp:"Heated sea water & seaweed", tags:["Seaweed Bath","Seafront","Coastal","Historic Building","Wild Atlantic"], emoji:"🌿♨️", open:true,
+    hygiene:"A+", lockerNote:"Private bathing boxes — secure changing in your room",
+    transport:"Drive — 50 min from Sligo town",
+    parking:"Free on-site parking at Cliff Road",
+    desc:"Ireland's oldest bathhouse, open since 1912 and now in its fifth generation of the Kilcullen family. Private wooden baths filled with hot seawater and freshly harvested Atlantic seaweed. An ancient Irish wellness tradition at its most authentic — the original thalassotherapy experience on the Wild Atlantic Way.",
+    lat:54.2197, lng:-9.0942,
+    bookingUrl:"https://www.kilcullenseaweedbaths.net"
+  },
+  {
+    id:163, city:"Kerry", country:"Ireland", name:"Collins's Seaweed Baths", area:"Ballybunion / Ladies Beach",
+    type:"seaweed", price:"From €20", rating:4.8, reviews:198,
+    hours:"Check seasonal hours — phone 068 27469",
+    temp:"Heated sea water & seaweed", tags:["Seaweed Bath","Seafront","Coastal","Beach","Historic Building"], emoji:"🌿♨️", open:true,
+    hygiene:"A", lockerNote:"Private bathing rooms",
+    transport:"Drive — 45 min from Tralee · 30 min from Listowel",
+    parking:"Ladies Beach car park",
+    desc:"A true Kerry institution. Established in 1932 on the Ladies Strand in Ballybunion, Collins's offers private heated baths packed with fresh Atlantic seaweed — one of only four remaining authentic seaweed bathhouses in Ireland. Three generations of the Collins family and almost 100 years of tradition. Walk-ins welcome.",
+    lat:52.5118, lng:-9.6871
+  },
+  {
+    id:164, city:"Galway", country:"Ireland", name:"Oileánra Seaweed Baths & Sauna", area:"Lettermullen / Leitir Mealláin",
+    type:"seaweed", price:"Check website", rating:4.9, reviews:156,
+    hours:"Check website for current hours",
+    temp:"Seaweed bath & sauna", tags:["Seaweed Bath","Seafront","Coastal","Wood-fired","Outdoor","Scenic"], emoji:"🌿🔥", open:true,
+    hygiene:"A+", lockerNote:"On-site facilities",
+    transport:"Drive — 1 hr from Galway city via R336 through Carraroe",
+    parking:"On-site at Maumeen",
+    desc:"A stunning seaweed bath and wood-fired sauna experience set in the wild archipelago of Lettermullen on the south Connemara coast. Not the Aran Islands but arguably wilder — panoramic Atlantic views, sea swimming off the deck, and the deep relaxation of a traditional seaweed soak. One of Ireland's most remote and special wellness venues.",
+    lat:53.2105, lng:-9.5502,
+    bookingUrl:"https://www.oileanra.ie"
+  },
+
+  // ── WICKLOW (ADDITIONAL) ──
+  {
+    id:165, city:"Wicklow", country:"Ireland", name:"The Boat Yard Sauna", area:"Wicklow Harbour",
+    type:"both", price:"Check website", rating:4.9, reviews:78,
+    hours:"Mon–Thu 4pm–10pm · Fri 2pm–10pm · Sat–Sun 8am–10pm",
+    temp:"Sea / harbour plunge", tags:["Seafront","Wood-fired","Outdoor","Community","Harbour"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Wicklow town · 5 min walk from train station",
+    parking:"Wicklow Harbour car park",
+    desc:"A wood-fired barrel sauna perched on the edge of Wicklow Harbour with stunning sea views and a cold plunge just steps from the water. One of Ireland's best-located harbour saunas — the contrast between steaming cedar heat and the bracing Irish Sea is hard to beat. Buy 10 sessions, get one free.",
+    lat:52.9800, lng:-6.0437,
+    bookingUrl:"https://linktr.ee/theboatyardsauna"
+  },
+
+  // ── GALWAY (ADDITIONAL) ──
+  {
+    id:166, city:"Galway", country:"Ireland", name:"Folláine Sauna", area:"Annaghdown / Lough Corrib",
+    type:"both", price:"From €15", rating:4.9, reviews:43,
+    hours:"Mon 6pm–9pm · Wed 6pm–10pm · Fri 5pm–9pm · Sat–Sun 9am–2pm",
+    temp:"Lough Corrib cold plunge", tags:["Wood-fired","Lakeside","Outdoor","Community","Scenic"], emoji:"🔥🌿", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 20 min north of Galway city",
+    parking:"On-site at Annaghdown Pier",
+    desc:"A wood-fired mobile sauna beside Annaghdown Pier on the shores of Lough Corrib, Ireland's second-largest lake. Built and run by Eoin with a focus on wellness and community. A deeply peaceful setting — cold plunges in the fresh lough water, birdsong, and the wide Corrib shoreline. A hidden gem 20 minutes from Galway city.",
+    lat:53.4153, lng:-9.0847
+  },
+  {
+    id:167, city:"Galway", country:"Ireland", name:"Oak Smoke Sauna", area:"Kylebrack / Loughrea",
+    type:"both", price:"Check website", rating:4.8, reviews:54,
+    hours:"Check website for current hours",
+    temp:"Cold plunge / outdoor dip", tags:["Wood-fired","Outdoor","Countryside","Rural","Scenic"], emoji:"🔥🌲", open:true,
+    hygiene:"A", lockerNote:"On-site at Slieve Aughty Centre",
+    transport:"Drive — 45 min east of Galway city via M6",
+    parking:"Free on-site at Slieve Aughty Riding Centre",
+    desc:"A handcrafted wood-fired sauna set within the Slieve Aughty Riding Centre in the east Galway countryside near Loughrea. Accommodates up to six guests with a cold dip and outdoor relaxation area. Also available for mobile spa hire. A quiet, off-the-beaten-track sauna experience in the Slieve Aughty hills.",
+    lat:53.1887, lng:-8.5263,
+    bookingUrl:"https://slieveaughtycentre.com/oak-smoke-sauna"
+  },
+  {
+    id:168, city:"Galway", country:"Ireland", name:"Power Saunas", area:"Silverstrand Beach",
+    type:"both", price:"Check website", rating:4.9, reviews:89,
+    hours:"Mon–Fri 1pm–9pm · Sat–Sun 8am–8pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Community","Beach","Wild Swimming"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 10 min from Galway city",
+    parking:"Silverstrand Beach car park",
+    desc:"A popular wood-fired sauna at Silverstrand Beach, one of Galway city's most beloved seaside spots just 10 minutes from the city centre. Heat up in the cedar barrel, then plunge directly into the Atlantic. A brilliant local option combining Galway's incredible natural coastline with authentic wood-fired sauna culture.",
+    lat:53.2506, lng:-9.1263,
+    bookingUrl:"https://powersaunas.ie"
+  },
+  {
+    id:169, city:"Galway", country:"Ireland", name:"Sweathouse.ie", area:"Renvyle / Tully, Connemara",
+    type:"both", price:"Check website", rating:4.9, reviews:112,
+    hours:"Check website — seasonal and weather-dependent",
+    temp:"Atlantic ocean plunge", tags:["Seafront","Wood-fired","Outdoor","Wild Atlantic Way","Scenic","Wild Swimming"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — remote location, bring dry bag",
+    transport:"Drive — 1.5 hrs from Galway city via N59 through Clifden",
+    parking:"On-site at Gurteen Pier, Tully, Renvyle",
+    desc:"An ecological wood-fired outdoor sauna at Gurteen Pier in Renvyle, deep in the Connemara wilderness with the Twelve Bens as a backdrop. Atlantic Ocean plunging directly from the pier, temperatures from 70–110°C. Also operates in Wexford. One of Ireland's most wild and remote sauna experiences — truly living up to the brand name.",
+    lat:53.5831, lng:-9.9917,
+    bookingUrl:"https://www.sweathouse.ie"
+  },
 ];
 
 export const CITIES = [
@@ -1970,7 +2170,7 @@ export const CITIES = [
   // UK — Northern Ireland
   "Belfast","Derry",
   // Ireland
-  "Dublin","Galway","Cork","Sligo","Kerry","Wicklow","Limerick","Waterford","Kilkenny","Wexford","Tipperary","Carlingford",
+  "Dublin","Galway","Cork","Sligo","Kerry","Wicklow","Limerick","Waterford","Kilkenny","Wexford","Tipperary","Carlingford","Drogheda",
   // Nordic
   "Helsinki","Stockholm","Gothenburg","Copenhagen","Aarhus","Oslo","Bergen","Rovaniemi","Karlstad","Reykjavik",
 ];
@@ -1986,7 +2186,7 @@ export const FLAG: Record<string, string> = {
   Belfast:"🇬🇧", Derry:"🇬🇧",
   Dublin:"🇮🇪", Galway:"🇮🇪", Cork:"🇮🇪",
   Sligo:"🇮🇪", Kerry:"🇮🇪", Wicklow:"🇮🇪", Limerick:"🇮🇪",
-  Waterford:"🇮🇪", Kilkenny:"🇮🇪", Wexford:"🇮🇪", Tipperary:"🇮🇪", Carlingford:"🇮🇪",
+  Waterford:"🇮🇪", Kilkenny:"🇮🇪", Wexford:"🇮🇪", Tipperary:"🇮🇪", Carlingford:"🇮🇪", Drogheda:"🇮🇪",
   Helsinki:"🇫🇮", Stockholm:"🇸🇪", Gothenburg:"🇸🇪", Karlstad:"🇸🇪",
   Copenhagen:"🇩🇰", Aarhus:"🇩🇰", Oslo:"🇳🇴", Bergen:"🇳🇴", Rovaniemi:"🇫🇮",
   Reykjavik:"🇮🇸",
@@ -2006,7 +2206,7 @@ export const REGION_MAP: Record<string, string> = {
   Dublin:"UK & Ireland", Galway:"UK & Ireland", Cork:"UK & Ireland",
   Sligo:"UK & Ireland", Kerry:"UK & Ireland", Wicklow:"UK & Ireland",
   Limerick:"UK & Ireland", Waterford:"UK & Ireland", Kilkenny:"UK & Ireland",
-  Wexford:"UK & Ireland", Tipperary:"UK & Ireland", Carlingford:"UK & Ireland",
+  Wexford:"UK & Ireland", Tipperary:"UK & Ireland", Carlingford:"UK & Ireland", Drogheda:"UK & Ireland",
   Reykjavik:"Nordic", Aarhus:"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", Rovaniemi:"Nordic",
@@ -2030,7 +2230,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Dublin:"Ireland", Galway:"Ireland", Cork:"Ireland",
   Sligo:"Ireland", Kerry:"Ireland", Wicklow:"Ireland",
   Limerick:"Ireland", Waterford:"Ireland", Kilkenny:"Ireland",
-  Wexford:"Ireland", Tipperary:"Ireland", Carlingford:"Ireland",
+  Wexford:"Ireland", Tipperary:"Ireland", Carlingford:"Ireland", Drogheda:"Ireland",
   // Nordic
   Reykjavik:"Iceland",
   Aarhus:"Denmark", Copenhagen:"Denmark",
@@ -2161,6 +2361,8 @@ export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
   "West London":     { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
   "Waterside":       { bg:"rgba(107,175,200,0.15)",  c:"#6bafc8" },
   "Hammam":          { bg:"rgba(107,175,200,0.12)",  c:"#6bafc8" },
+  "Seaweed Bath":    { bg:"rgba(74,155,106,0.15)",   c:"#4a9b6a" },
+  "Lakeside":        { bg:"rgba(107,175,200,0.13)",  c:"#6bafc8" },
 };
 
 export function getTag(t: string): { bg: string; c: string } {
