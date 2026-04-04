@@ -1,0 +1,46 @@
+import type { Metadata } from 'next';
+import { DM_Sans, Playfair_Display } from 'next/font/google';
+import './globals.css';
+
+const dmSans = DM_Sans({
+  subsets: ['latin'],
+  weight: ['400', '500', '600', '700', '800'],
+  display: 'swap',
+  variable: '--font-sans',
+});
+
+const playfair = Playfair_Display({
+  subsets: ['latin'],
+  weight: ['400', '600', '700'],
+  style: ['normal', 'italic'],
+  display: 'swap',
+  variable: '--font-serif',
+});
+
+export const metadata: Metadata = {
+  title: {
+    default: 'Thermae — Nordic Sauna & Cold Plunge Directory',
+    template: '%s | Thermae',
+  },
+  description:
+    "Discover the world's finest saunas, bathhouses, and cold plunge venues. Curated listings across the UK, Ireland, Scandinavia, and the USA.",
+  keywords: [
+    'sauna', 'cold plunge', 'bathhouse', 'wellness', 'ice bath',
+    'Finnish sauna', 'Nordic spa', 'thermae', 'contrast therapy',
+  ],
+  openGraph: {
+    type: 'website',
+    locale: 'en_GB',
+    siteName: 'Thermae',
+  },
+};
+
+export default function RootLayout({ children }: { children: React.ReactNode }) {
+  return (
+    <html lang="en">
+      <body className={`${dmSans.variable} ${playfair.variable} ${dmSans.className}`}>
+        {children}
+      </body>
+    </html>
+  );
+}

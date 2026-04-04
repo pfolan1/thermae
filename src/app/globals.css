@@ -1,0 +1,25 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #ffffff; color: #222222; font-family: 'Inter', sans-serif; }
+
+/* Scrollbar hide */
+.no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+.no-scrollbar::-webkit-scrollbar { display: none; }
+
+/* Hide scroll arrows on touch screens */
+@media (hover: none) {
+  .scroll-arrow { display: none !important; }
+}
+
+/* Mobile: tighter padding */
+@media (max-width: 600px) {
+  main { padding-left: 16px !important; padding-right: 16px !important; }
+}
+
+/* Mobile: filters modal full screen */
+@media (max-width: 600px) {
+  .filters-modal-inner {
+    border-radius: 0 !important;
+    max-height: 100vh !important;
+    height: 100vh !important;
+  }
+}
