@@ -2156,6 +2156,168 @@ export const VENUES: Venue[] = [
     lat:53.5831, lng:-9.9917,
     bookingUrl:"https://www.sweathouse.ie"
   },
+
+  // ── CORK (ADDITIONAL) ──
+  {
+    id:170, city:"Cork", country:"Ireland", name:"Cedar & Steam Sauna", area:"Ballycroneen Strand / Guileen Bay, East Cork",
+    type:"both", price:"Check website", rating:5.0, reviews:43,
+    hours:"Wed 5:30pm–10pm · Fri 9:30am–10pm · Sat–Sun 9:30am–9pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Beach","Mobile"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 40 min east of Cork City via N25",
+    parking:"Ballycroneen Beach car park",
+    desc:"A wood-fired sauna built inside a converted vintage horsebox, operated by Mike McCarthy at Ballycroneen Strand in East Cork, with occasional pop-ups at Guileen Bay and Ballymacoda. A charming, personal sauna experience on one of Cork's quieter beaches.",
+    lat:51.8091, lng:-8.1114,
+    bookingUrl:"http://www.cedarandsteamsauna.as.me"
+  },
+  {
+    id:171, city:"Cork", country:"Ireland", name:"Coastal Cabin Beach Sauna", area:"Garryvoe Beach / Ballycotton Bay",
+    type:"both", price:"Check website", rating:4.4, reviews:13,
+    hours:"Mon–Thu 5pm–8pm · Fri 4pm–8pm · Sat–Sun 10am–4pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Beach","Coastal"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 35 min east of Cork City via N25",
+    parking:"Garryvoe Beach car park",
+    desc:"A handmade beachside sauna for up to 10 guests at Garryvoe Beach, with views across Ballycotton Bay to the famous lighthouse. Warm up after a dip in the calm, sheltered waters of one of East Cork's finest sandy beaches.",
+    lat:51.8489, lng:-8.0118,
+    bookingUrl:"https://coastalcabin.ie"
+  },
+  {
+    id:172, city:"Cork", country:"Ireland", name:"Happy Place Saunas", area:"Fountainstown Beach",
+    type:"both", price:"From €10", rating:4.9, reviews:67,
+    hours:"Sat community sessions 12pm–2pm · private/group Fri–Sun",
+    temp:"Cork Harbour sea plunge", tags:["Seafront","Wood-fired","Outdoor","Beach","Community","Budget"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 20 min south of Cork City via R610",
+    parking:"Fountainstown Beach car park",
+    desc:"An affordable beach sauna at Fountainstown offering €10 shared sessions and private group bookings with direct sea swim access into Cork Harbour. One of the most accessible entry points to sauna culture on the Cork coast — perfect for first-timers.",
+    lat:51.7749, lng:-8.3111,
+    bookingUrl:"https://happyplacesaunas.ie"
+  },
+  {
+    id:173, city:"Cork", country:"Ireland", name:"Hoco Sauna", area:"Ballintemple / Cork City",
+    type:"both", price:"From €20", rating:4.9, reviews:112,
+    hours:"Thu–Fri 4pm–8:30pm · Sat–Sun 8am–4:30pm",
+    temp:"Ice baths", tags:["City Centre","Finnish","Ice Bath","Urban","Cork"], emoji:"🔥🧊", open:true,
+    hygiene:"A+", lockerNote:"Changing facilities on-site",
+    transport:"Cork City bus routes · 5 min walk from Marina",
+    parking:"On-site at The Black Market, Monahan Rd",
+    desc:"Cork City's dedicated sauna and ice bath venue, set in a converted cold-store rock face at The Black Market in Ballintemple. A 16-person sauna, multiple ice baths and copper showers in a unique industrial-cool setting. €20 per 45-minute session — one of the city's best wellness venues.",
+    lat:51.8990, lng:-8.4230,
+    bookingUrl:"https://hocosauna.ie"
+  },
+  {
+    id:174, city:"Cork", country:"Ireland", name:"My Haven Sauna", area:"Oysterhaven Bay, Kinsale",
+    type:"both", price:"Check website", rating:5.0, reviews:71,
+    hours:"Wed 3:30pm–8pm · Thu 5pm–8pm · Fri 2pm–7pm · Sat–Sun 8am–5:30pm",
+    temp:"Tidal sea swim", tags:["Seafront","Wood-fired","Outdoor","Coastal","Holistic","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A+", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 25 min south of Cork City via R610",
+    parking:"On-site at Oysterhaven Bay",
+    desc:"A mobile sauna, infrared sauna and holistic wellness experience at the sheltered tidal inlet of Oysterhaven Bay, run by Paul with a thoughtful, personal touch. Sessions include salts, oils, and direct tidal swim access in one of Cork's most beautiful hidden bays.",
+    lat:51.6959, lng:-8.4506,
+    bookingUrl:"https://www.myhaven.ie"
+  },
+
+  // ── MAYO ──
+  {
+    id:175, city:"Mayo", country:"Ireland", name:"Big Dipper", area:"Killadoon / Louisburgh, Wild Atlantic Way",
+    type:"both", price:"From €25", rating:4.9, reviews:30,
+    hours:"Sat–Sun 1pm–8pm",
+    temp:"Hot tub & cold plunge", tags:["Seafront","Wood-fired","Outdoor","Wild Atlantic Way","Scenic","Hot Tub"], emoji:"🔥🌊", open:true,
+    hygiene:"A+", lockerNote:"Facilities at BigStyle Atlantic Lodge",
+    transport:"Drive — 1.5 hrs from Galway · 2 hrs from Sligo",
+    parking:"Free on-site at BigStyle Atlantic Lodge",
+    desc:"A wood-lined sauna, hot tub and plunge pool experience at BigStyle Atlantic Lodge on the Wild Atlantic Way, with panoramic views of Clare Island and Clew Bay. Private group sessions for up to 10 people also available. One of Mayo's most spectacular wellness settings.",
+    lat:53.7470, lng:-9.8060,
+    bookingUrl:"https://bigstyle.ie/bigdipper"
+  },
+  {
+    id:176, city:"Mayo", country:"Ireland", name:"Sabhna Saunas Dugort", area:"Dugort Beach / Silver Strand, Achill Island",
+    type:"both", price:"From €22", rating:4.9, reviews:56,
+    hours:"Check sabhna.ie — walk-ins welcome",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Beach","Wild Atlantic Way","Wild Swimming","Achill"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 2 hrs from Galway · 1 hr from Westport",
+    parking:"Silver Strand Beach car park, Dugort",
+    desc:"A Finnish-style wood-fired sauna on Blue Flag Silver Strand at the foot of Slievemore Mountain, Achill Island. Plunge into Blacksod Bay between rounds in the 10-person cedar sauna. One of the most dramatically situated sauna spots in Ireland.",
+    lat:54.0124, lng:-10.0234,
+    bookingUrl:"https://sabhna.ie"
+  },
+  {
+    id:177, city:"Mayo", country:"Ireland", name:"Sabhna Saunas Keel", area:"Keel Beach, Achill Island",
+    type:"both", price:"From €22", rating:4.9, reviews:48,
+    hours:"Check sabhna.ie — walk-ins welcome",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Beach","Wild Atlantic Way","Wild Swimming","Achill"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 2 hrs from Galway · 1 hr from Westport",
+    parking:"Keel Beach car park, Achill Island",
+    desc:"A Finnish-style sauna on wild, exposed Keel Beach with sweeping views of the Minaun Cliffs — Sabhna's second Achill location. Shared and private sessions available. Keel Beach's open Atlantic exposure makes the cold plunge particularly bracing and memorable.",
+    lat:53.9700, lng:-10.0674,
+    bookingUrl:"https://sabhna.ie"
+  },
+  {
+    id:178, city:"Mayo", country:"Ireland", name:"Sláinte Saunas Wild Atlantic", area:"Old Head Beach / Clew Bay, Louisburgh",
+    type:"both", price:"From €15", rating:4.9, reviews:44,
+    hours:"Wed–Fri 5pm–10pm · Sat–Sun & bank holidays 8:30am–5:30pm",
+    temp:"Clew Bay sea plunge", tags:["Seafront","Wood-fired","Outdoor","Wild Atlantic Way","Community","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 20 min from Westport",
+    parking:"Old Head Beach car park, Louisburgh",
+    desc:"Sláinte Saunas' Mayo Wild Atlantic outpost — a wood-fired sauna at the pier on Old Head Beach, Clew Bay, with harbour swim access at all tides and views across to Croagh Patrick. Shared sessions from €15; private sauna for up to 16 people also available. Sister venue to the Dublin D4 studio.",
+    lat:53.7726, lng:-9.6938,
+    bookingUrl:"https://www.slaintesaunas.ie"
+  },
+  {
+    id:179, city:"Mayo", country:"Ireland", name:"South Sligo Wild Sauna", area:"Charlestown, Co. Mayo",
+    type:"both", price:"From €10", rating:4.8, reviews:38,
+    hours:"Mon/Wed/Fri evenings from 7pm · additional slots via Bookwhen",
+    temp:"Ice bath (Oct–Jun)", tags:["Community","Wood-fired","Outdoor","Budget","Indoor"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities at CBD Sports Complex",
+    transport:"Drive — 30 min from Ballina · 30 min from Sligo town",
+    parking:"Free on-site at CBD Sports Complex, Charlestown",
+    desc:"A wood-fired barrel sauna at Charlestown's sports complex on the Mayo/Sligo border, running sessions alongside the town's swimming pool. Shared sessions from €10, private hire €65. An affordable community sauna bringing genuine wellness to a market town on the north-west corridor.",
+    lat:53.9634, lng:-8.8005,
+    bookingUrl:"https://bookwhen.com/southsligowildsauna"
+  },
+
+  // ── SLIGO (ADDITIONAL) ──
+  {
+    id:180, city:"Sligo", country:"Ireland", name:"Blaze It Sauna", area:"Mullaghmore Pier",
+    type:"both", price:"From €12.50", rating:5.0, reviews:17,
+    hours:"Fri 5:30pm–9:30pm · Sat–Sun 10:30am–6pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Community","Scenic","Wild Atlantic Way"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 25 min north of Sligo town",
+    parking:"Mullaghmore Pier car park",
+    desc:"A sea-facing wood-fired sauna heated to 90–100°C on the edge of Mullaghmore Pier, with a direct jump into the Atlantic for cooling. Views of Benbulben, Classiebawn Castle and the Wild Atlantic horizon. One of Sligo's most atmospheric sauna settings — weekday sessions from €12.50.",
+    lat:54.4663, lng:-8.4472,
+    bookingUrl:"https://blazeitsauna.simplybook.it/v2/"
+  },
+  {
+    id:181, city:"Sligo", country:"Ireland", name:"Sauna Sásta", area:"Dunmoran Beach / Augris Head",
+    type:"both", price:"€90 private session", rating:4.9, reviews:34,
+    hours:"Fri 5pm–8pm · Sat 10am–5pm · Sun 10am–7pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Scenic","Wild Atlantic Way","Private"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 35 min north-west of Sligo town",
+    parking:"Dunmoran Beach car park",
+    desc:"A 6–8 person wood-fired barrel sauna at Dunmoran Beach on the Wild Atlantic Way, near Augris Head, with panoramic views across Dunmoran Strand. Private session hire (€90 for the barrel). Monthly full moon special sessions add to the magic of this quietly spectacular Sligo coastal spot.",
+    lat:54.2631, lng:-8.7249,
+    bookingUrl:"https://saunasasta.ie"
+  },
+  {
+    id:182, city:"Sligo", country:"Ireland", name:"West Coast Sauna Co.", area:"Enniscrone Pier / Killala Bay",
+    type:"both", price:"Check website", rating:5.0, reviews:12,
+    hours:"Wed–Fri 6pm–9pm · Sat–Sun 10am–9pm",
+    temp:"Killala Bay sea plunge", tags:["Seafront","Wood-fired","Outdoor","Community","Wild Atlantic Way","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 50 min from Sligo town",
+    parking:"Enniscrone Pier, Cliff Road",
+    desc:"A Finnish wood-fired sauna nestled at Enniscrone Pier on Killala Bay, offering private and group bookings with a cold Atlantic dip. Views across to the Mayo headlands. A second location at Ballina Rugby Club has also opened, making this one of Sligo's fastest-growing sauna communities.",
+    lat:54.2202, lng:-9.0973,
+    bookingUrl:"https://westcoastsaunaco.ie"
+  },
 ];
 
 export const CITIES = [
@@ -2170,7 +2332,7 @@ export const CITIES = [
   // UK — Northern Ireland
   "Belfast","Derry",
   // Ireland
-  "Dublin","Galway","Cork","Sligo","Kerry","Wicklow","Limerick","Waterford","Kilkenny","Wexford","Tipperary","Carlingford","Drogheda",
+  "Dublin","Galway","Cork","Sligo","Mayo","Kerry","Wicklow","Limerick","Waterford","Kilkenny","Wexford","Tipperary","Carlingford","Drogheda",
   // Nordic
   "Helsinki","Stockholm","Gothenburg","Copenhagen","Aarhus","Oslo","Bergen","Rovaniemi","Karlstad","Reykjavik",
 ];
@@ -2186,7 +2348,7 @@ export const FLAG: Record<string, string> = {
   Belfast:"🇬🇧", Derry:"🇬🇧",
   Dublin:"🇮🇪", Galway:"🇮🇪", Cork:"🇮🇪",
   Sligo:"🇮🇪", Kerry:"🇮🇪", Wicklow:"🇮🇪", Limerick:"🇮🇪",
-  Waterford:"🇮🇪", Kilkenny:"🇮🇪", Wexford:"🇮🇪", Tipperary:"🇮🇪", Carlingford:"🇮🇪", Drogheda:"🇮🇪",
+  Mayo:"🇮🇪", Waterford:"🇮🇪", Kilkenny:"🇮🇪", Wexford:"🇮🇪", Tipperary:"🇮🇪", Carlingford:"🇮🇪", Drogheda:"🇮🇪",
   Helsinki:"🇫🇮", Stockholm:"🇸🇪", Gothenburg:"🇸🇪", Karlstad:"🇸🇪",
   Copenhagen:"🇩🇰", Aarhus:"🇩🇰", Oslo:"🇳🇴", Bergen:"🇳🇴", Rovaniemi:"🇫🇮",
   Reykjavik:"🇮🇸",
@@ -2206,7 +2368,7 @@ export const REGION_MAP: Record<string, string> = {
   Dublin:"UK & Ireland", Galway:"UK & Ireland", Cork:"UK & Ireland",
   Sligo:"UK & Ireland", Kerry:"UK & Ireland", Wicklow:"UK & Ireland",
   Limerick:"UK & Ireland", Waterford:"UK & Ireland", Kilkenny:"UK & Ireland",
-  Wexford:"UK & Ireland", Tipperary:"UK & Ireland", Carlingford:"UK & Ireland", Drogheda:"UK & Ireland",
+  Mayo:"UK & Ireland", Wexford:"UK & Ireland", Tipperary:"UK & Ireland", Carlingford:"UK & Ireland", Drogheda:"UK & Ireland",
   Reykjavik:"Nordic", Aarhus:"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", Rovaniemi:"Nordic",
@@ -2230,7 +2392,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Dublin:"Ireland", Galway:"Ireland", Cork:"Ireland",
   Sligo:"Ireland", Kerry:"Ireland", Wicklow:"Ireland",
   Limerick:"Ireland", Waterford:"Ireland", Kilkenny:"Ireland",
-  Wexford:"Ireland", Tipperary:"Ireland", Carlingford:"Ireland", Drogheda:"Ireland",
+  Mayo:"Ireland", Wexford:"Ireland", Tipperary:"Ireland", Carlingford:"Ireland", Drogheda:"Ireland",
   // Nordic
   Reykjavik:"Iceland",
   Aarhus:"Denmark", Copenhagen:"Denmark",
