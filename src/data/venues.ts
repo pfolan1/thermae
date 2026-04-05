@@ -2318,6 +2318,270 @@ export const VENUES: Venue[] = [
     lat:54.2202, lng:-9.0973,
     bookingUrl:"https://westcoastsaunaco.ie"
   },
+
+  // ── CARLOW ──
+  {
+    id:183, city:"Carlow", country:"Ireland", name:"Valhalla Saunas", area:"Milford Weir, River Barrow",
+    type:"both", price:"Check valhallasaunas.ie", rating:4.9, reviews:31,
+    hours:"Check valhallasaunas.ie — booking essential",
+    temp:"River Barrow plunge", tags:["Riverside","Wood-fired","Outdoor","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 15 min south of Carlow town",
+    parking:"Milford Weir, off R430",
+    desc:"Wood-fired sauna on the banks of the River Barrow at Milford Weir — one of Co. Carlow's most scenic riverside spots. Cold plunge in the river, sauna to 85–90°C. Private 45-minute sessions for small groups, nestled in woodland along the Barrow Way.",
+    lat:52.6980, lng:-6.9670,
+    bookingUrl:"https://valhallasaunas.ie"
+  },
+
+  // ── LAOIS ──
+  {
+    id:184, city:"Laois", country:"Ireland", name:"Woodfield Sauna", area:"Killeshin, Co. Laois",
+    type:"sauna", price:"Check woodfieldsauna.com", rating:4.9, reviews:22,
+    hours:"Check woodfieldsauna.com — booking essential",
+    temp:"Outdoor cold shower", tags:["Wood-fired","Outdoor","Countryside","Handcrafted"], emoji:"🔥🌲", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 5 min from Carlow town · Killeshin, Co. Laois",
+    parking:"On-site at Highfield House, Killeshin",
+    desc:"A handcrafted wood-fired sauna set in the tranquil grounds of Highfield House on an organic farm in Killeshin — just minutes from Carlow town. Private sessions in a beautifully built Finnish-style cabin with woodland views and outdoor cool-down space.",
+    lat:52.8330, lng:-6.9660,
+    bookingUrl:"https://woodfieldsauna.com"
+  },
+  {
+    id:185, city:"Laois", country:"Ireland", name:"Soul Sauna", area:"Ballykilcavan Farm, Stradbally",
+    type:"sauna", price:"Check soulsauna.ie", rating:4.9, reviews:18,
+    hours:"Mobile pop-up sessions — check soulsauna.ie for dates and locations",
+    temp:"Outdoor cooling", tags:["Wood-fired","Community","Outdoor","Countryside"], emoji:"🔥🌿", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Base at Ballykilcavan Farm, Stradbally, Co. Laois · operates across Laois, Carlow, Kilkenny and beyond",
+    parking:"On-site at Ballykilcavan Farm",
+    desc:"A mobile wood-fired sauna based at the idyllic Ballykilcavan Farm & Brewery in Stradbally, Co. Laois. Pop-up sessions across Laois, Carlow, Kilkenny, Kildare and Offaly — follow on socials for upcoming events. Private group hire also available.",
+    lat:52.9500, lng:-7.1380,
+    bookingUrl:"https://soulsauna.ie"
+  },
+
+  // ── CAVAN ──
+  {
+    id:186, city:"Cavan", country:"Ireland", name:"Live Lagom Sauna", area:"Brackley & Annagh Lakes, Cootehill",
+    type:"both", price:"Check livelagom.ie", rating:5.0, reviews:21,
+    hours:"Wed–Fri: Annagh Lake · Sat–Sun: Brackley Lake — check livelagom.ie",
+    temp:"Freshwater lake plunge", tags:["Lakeside","Wood-fired","Outdoor","Scenic"], emoji:"🔥🏊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — near Cootehill, Co. Cavan",
+    parking:"On-site at each lake location",
+    desc:"A beautifully crafted mobile sauna running sessions on two of Cavan's most serene lakes — Annagh Lake mid-week and Brackley Lake at weekends. Large picture window overlooks the water, capacity for 7. Cold plunge in the freshwater lake. One of Ireland's most peaceful sauna experiences.",
+    lat:53.9780, lng:-7.0830,
+    bookingUrl:"https://livelagom.ie"
+  },
+
+  // ── CLARE ──
+  {
+    id:187, city:"Clare", country:"Ireland", name:"Sauna Suaimhneas", area:"Dough, Lahinch",
+    type:"both", price:"Check saunasuaimhneas.com", rating:5.0, reviews:26,
+    hours:"Mobile — check saunasuaimhneas.com for current locations and times",
+    temp:"Atlantic sea plunge", tags:["Coastal","Wood-fired","Beach","Wild Atlantic Way","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Mobile — sessions at Lahinch, Spanish Point, Miltown Malbay, Fanore and other Clare beaches",
+    parking:"Beach car parks at each location",
+    desc:"A traditional wood-fired sauna touring Clare's most beautiful Atlantic beaches — Lahinch, Spanish Point, Miltown Malbay and Fanore. Run by siblings Niamh and Seán. 'Suaimhneas' means 'peace' in Irish — and a Clare beach sauna delivers exactly that.",
+    lat:52.9352, lng:-9.3504,
+    bookingUrl:"https://saunasuaimhneas.com"
+  },
+
+  // ── DONEGAL ──
+  {
+    id:188, city:"Donegal", country:"Ireland", name:"Cocoon Sauna", area:"Portnablagh, Breaghy",
+    type:"both", price:"Check cocoonsauna.ie", rating:4.9, reviews:34,
+    hours:"Check cocoonsauna.ie — booking essential",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Beach","Wild Atlantic Way","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — near Dunfanaghy, northwest Donegal",
+    parking:"Portnablagh Pier, Breaghy",
+    desc:"A barrel-shaped wood-fired sauna with a sea-view window at Portnablagh Pier — a quiet harbour on the Donegal coast near Dunfanaghy. Cold plunge in the Atlantic at the beach entrance. Launched Easter 2023. An intimate and perfectly located sauna on the Wild Atlantic Way.",
+    lat:55.1850, lng:-7.8750,
+    bookingUrl:"https://cocoonsauna.ie"
+  },
+  {
+    id:189, city:"Donegal", country:"Ireland", name:"OM Saunas", area:"Rossnowlagh Beach",
+    type:"both", price:"Check omsaunas.simplybook.it", rating:4.8, reviews:29,
+    hours:"Check omsaunas.simplybook.it for sessions",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Beach","Wild Atlantic Way","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 15 min south of Donegal town",
+    parking:"Rossnowlagh Beach car park, F94 X7X3",
+    desc:"A wood-fired sauna nestled in the dunes at Rossnowlagh — one of Donegal's widest and most beautiful surf beaches. Cold plunge in the Atlantic. Private and shared sessions with the two-mile golden strand as your backdrop.",
+    lat:54.5540, lng:-8.2910,
+    bookingUrl:"https://omsaunas.simplybook.it"
+  },
+  {
+    id:190, city:"Donegal", country:"Ireland", name:"Salt and Ember Sauna", area:"Magheracar Beach, Bundoran",
+    type:"both", price:"Check saltandember.simplybook.it", rating:5.0, reviews:32,
+    hours:"Sat–Sun 10am–4pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Beach","Wild Atlantic Way","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 2 min south of Bundoran town",
+    parking:"Boat Quay, Magheracar, Bundoran F94 HV21",
+    desc:"A cosy wood-fired sauna for 6–8 people on Magheracar Beach with breathtaking ocean views — just south of Bundoran, the surf capital of Ireland. Weekend sessions Sat–Sun with Atlantic plunge. Booking via simplybook.",
+    lat:54.4670, lng:-8.3000,
+    bookingUrl:"https://saltandember.simplybook.it"
+  },
+  {
+    id:191, city:"Donegal", country:"Ireland", name:"Sliabh Liag Sauna", area:"Teelin Pier, Co. Donegal",
+    type:"both", price:"Check sliabhliagsauna.ie", rating:5.0, reviews:21,
+    hours:"Check sliabhliagsauna.ie — booking essential",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Views","Wild Atlantic Way","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 8 min from Carrick village",
+    parking:"Teelin Pier car park, Rinnakill, Teelin",
+    desc:"A waterfront wood-fired sauna at Teelin Pier, nestled at the foot of the Sliabh Liag (Slieve League) cliffs — some of the highest sea cliffs in Europe at over 600m. Panoramic views across Teelin Bay. Cold plunge in the Atlantic. Ireland's most dramatic sauna setting.",
+    lat:54.6420, lng:-8.6310,
+    bookingUrl:"https://sliabhliagsauna.ie"
+  },
+  {
+    id:192, city:"Donegal", country:"Ireland", name:"The Hot Barrel Sauna", area:"Drum, Portsalon / Kerrykeel",
+    type:"both", price:"Check @the_hot_barrel on Instagram", rating:5.0, reviews:18,
+    hours:"Sat–Sun 8am–4pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Scenic","Views"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Fanad Peninsula · Portsalon or Kerrykeel",
+    parking:"Near Portsalon Beach or Kerrykeel Pier",
+    desc:"A wood-fired barrel sauna on the Fanad Peninsula with two locations — one overlooking Portsalon Beach, one at Kerrykeel Pier on Mulroy Bay. Operated by Brian, weekend mornings from 8am. Cold sea swim at both settings.",
+    lat:55.1920, lng:-7.6480,
+    bookingUrl:"https://www.instagram.com/the_hot_barrel"
+  },
+  {
+    id:193, city:"Donegal", country:"Ireland", name:"The Sea View Sauna Culdaff", area:"Knock, Culdaff, Inishowen",
+    type:"both", price:"Check theseaviewsauna.ie", rating:5.0, reviews:37,
+    hours:"Fri 2pm–5:30pm · Sat–Sun 9am–5pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Views","Outdoor","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Culdaff village, north Inishowen peninsula",
+    parking:"On-site at Knock, Culdaff, Co. Donegal",
+    desc:"A sea-view wood-fired sauna at Culdaff on the northern tip of the Inishowen peninsula. Stunning Atlantic views and direct sea swim access. Fri afternoons plus weekends. One of two Sea View Sauna locations on Inishowen — consistently rated 5-star.",
+    lat:55.2890, lng:-7.1640,
+    bookingUrl:"https://theseaviewsauna.ie"
+  },
+  {
+    id:194, city:"Donegal", country:"Ireland", name:"The Sea View Sauna Shroove", area:"Stroove, Inishowen",
+    type:"both", price:"Check theseaviewsauna.ie", rating:5.0, reviews:24,
+    hours:"Mon–Thu 5pm–7pm · Fri 2:45pm–5:30pm · Sat–Sun 9am–5pm",
+    temp:"Atlantic / Lough Foyle plunge", tags:["Seafront","Wood-fired","Views","Outdoor","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Stroove, eastern tip of Inishowen peninsula",
+    parking:"On-site at Stroove, Co. Donegal",
+    desc:"The second Sea View Sauna location — at Stroove on the dramatic eastern tip of Inishowen, where Lough Foyle meets the open Atlantic. Open weekday evenings and full weekends. Same team and 5-star experience as the Culdaff location.",
+    lat:55.2530, lng:-6.9760,
+    bookingUrl:"https://theseaviewsauna.ie"
+  },
+  {
+    id:195, city:"Donegal", country:"Ireland", name:"The Swilly Sauna", area:"Main Beach, Rathmullan",
+    type:"both", price:"Check website", rating:5.0, reviews:42,
+    hours:"Sat–Sun 9am–2pm",
+    temp:"Lough Swilly plunge", tags:["Waterside","Wood-fired","Outdoor","Scenic","Views"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 30 min from Letterkenny",
+    parking:"Main Beach Carpark, Rathmullan, Co. Donegal",
+    desc:"A wood-fired sauna on the beach at Rathmullan — a historic and scenic village on the shore of Lough Swilly. Cold plunge in the Lough. Run by Ricky, Sat–Sun mornings. Views across to the Inishowen hills. Consistently 5-star reviewed.",
+    lat:55.0990, lng:-7.5280,
+    bookingUrl:"https://www.instagram.com/theswillysauna"
+  },
+  {
+    id:196, city:"Donegal", country:"Ireland", name:"Wild Atlantic Sauna Dooey", area:"Dooey, Lettermacaward",
+    type:"both", price:"Check website", rating:5.0, reviews:19,
+    hours:"Sat–Sun 9am–5pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Beach","Wild Atlantic Way","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Changing rooms on-site",
+    transport:"Drive — 55 min south-west of Letterkenny · Gaeltacht, west Donegal",
+    parking:"Dooey Beach car park, Lettermacaward F94 WF54",
+    desc:"A remote wood-fired sauna on pristine Dooey Beach in the Irish-speaking heartland of west Donegal. Essential oils, changing rooms, and a wonderfully hospitable host (Mags). One of Ireland's most elemental and memorable sauna experiences.",
+    lat:54.8370, lng:-8.5610,
+    bookingUrl:"https://www.instagram.com/wildatlanticsaunadooey"
+  },
+
+  // ── KERRY ──
+  {
+    id:197, city:"Kerry", country:"Ireland", name:"Brandon Bay Sauna", area:"Fahamore, Maharees, Castlegregory",
+    type:"both", price:"From €10 per 30 min", rating:5.0, reviews:20,
+    hours:"Wed–Fri 5:30pm–8:30pm · Sat–Sun 10am–6pm",
+    temp:"Brandon Bay sea plunge", tags:["Seafront","Wood-fired","Beach","Wild Atlantic Way","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 25 min north of Tralee · via Maharees Peninsula",
+    parking:"Fahamore Beach car park, V92 A3Y6",
+    desc:"A wood-fired sauna with plunge pool on the Maharees peninsula at Fahamore — views across Brandon Bay to the slopes of Mount Brandon (951m). Cold plunge in crystal-clear Atlantic. Sessions from €10 per 30 min. One of Kerry's most peaceful headland settings.",
+    lat:52.2630, lng:-10.0450,
+    bookingUrl:"https://brandonbaysauna.com"
+  },
+  {
+    id:198, city:"Kerry", country:"Ireland", name:"Fenit Lighthouse Sauna", area:"Fenit Pier, Tralee Bay",
+    type:"both", price:"From €10", rating:4.9, reviews:29,
+    hours:"Sat 9am–3pm · Sun 9am–2pm",
+    temp:"Tralee Bay sea plunge", tags:["Seafront","Wood-fired","Harbour","Views","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Showers and changing area on-site",
+    transport:"Drive — 15 min west of Tralee town",
+    parking:"Fenit Pier car park",
+    desc:"A wood-fired sauna at Fenit Pier with panoramic views over Tralee Bay and the Fenit lighthouse. Run by Maryanne, Sat–Sun mornings from €10. Half-hour and one-hour sessions. Cold plunge in the bay. Particularly atmospheric with the Slieve Mish mountains behind.",
+    lat:52.2760, lng:-9.8640,
+    bookingUrl:"https://fenitlighthousesauna.ie"
+  },
+  {
+    id:199, city:"Kerry", country:"Ireland", name:"Fire and Ice Sauna", area:"Ballinskelligs, Iveragh Peninsula",
+    type:"both", price:"Check fire-and-ice-sauna.com", rating:4.9, reviews:26,
+    hours:"Mon–Sun 12pm–7pm",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Views","Wild Atlantic Way","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 25 min south of Caherciveen",
+    parking:"On-site, 7 Cois Trá Upper, Ballinskelligs V23 HR27",
+    desc:"A wood-fired sauna on the wild shore at Ballinskelligs on the Iveragh Peninsula — facing Puffin Island, with Skellig Michael on the horizon. Open daily 12–7pm. Private sessions for up to 6. One of Kerry's most strikingly beautiful sauna locations.",
+    lat:51.8270, lng:-10.2530,
+    bookingUrl:"https://fire-and-ice-sauna.com"
+  },
+  {
+    id:200, city:"Kerry", country:"Ireland", name:"Infinity Sauna", area:"Gallarus, Dingle Peninsula",
+    type:"both", price:"Check website", rating:4.9, reviews:22,
+    hours:"Mon/Wed/Fri 6:30pm–9:30pm · Sat 8am–12pm · Sun 12pm–4pm",
+    temp:"Cold plunge pool", tags:["Wood-fired","Outdoor","Views","Scenic","Wild Atlantic Way"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 6 min west of Dingle town",
+    parking:"On-site at Gallarus, V92 HX95",
+    desc:"A wood-fired sauna cabin at Gallarus, 6 minutes west of Dingle — with a rainfall shower, cold plunge pool and the ancient Dingle Peninsula landscape as backdrop. Evening sessions Mon/Wed/Fri plus weekend mornings. Near the iconic Gallarus Oratory.",
+    lat:52.1790, lng:-10.3460,
+    bookingUrl:"https://wunderbook-production-mobilewebapp.azurewebsites.net/app/Discover?tenancyName=Infinity_Sauna"
+  },
+  {
+    id:201, city:"Kerry", country:"Ireland", name:"Samhradh's Sauna", area:"Cromane, Killorglin",
+    type:"both", price:"Check samhradhssauna.com", rating:4.9, reviews:33,
+    hours:"Check samhradhssauna.com for current sessions",
+    temp:"Cromane Bay sea plunge", tags:["Coastal","Wood-fired","Beach","Scenic","Community"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 8 min from Killorglin · Ring of Kerry N70, sign for Cromane",
+    parking:"Cromane Strand, Glosha, V93 K2C5",
+    desc:"A mobile wood-fired sauna at Cromane beach — a sheltered strand on the Iveragh Peninsula 8km from Killorglin. Cold plunge in Cromane Bay. 'Samhradh' means 'summer' in Irish — and this peaceful, sun-dappled spot captures exactly that feeling year-round.",
+    lat:52.0640, lng:-9.8250,
+    bookingUrl:"https://samhradhssauna.com"
+  },
+  {
+    id:202, city:"Kerry", country:"Ireland", name:"Sona Saunas", area:"Ventry Bay, Dingle Peninsula",
+    type:"both", price:"Check @sonasaunaventry on Instagram", rating:5.0, reviews:16,
+    hours:"Check @sonasaunaventry on Instagram for sessions",
+    temp:"Ventry Bay sea plunge", tags:["Seafront","Wood-fired","Beach","Scenic","Wild Atlantic Way"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — 8 min west of Dingle town · Ceann Trá / Ventry",
+    parking:"Ventry Bay Beach, Cantra, Dingle",
+    desc:"A wood-fired barrel sauna heating to 100°C on the shores of Ventry Bay (Ceann Trá) — a sheltered turquoise beach a few minutes west of Dingle. Cold plunge in the bay. Run by Tom Connolly since March 2024. One of the Dingle Peninsula's finest coastal sauna settings.",
+    lat:52.1170, lng:-10.2850,
+    bookingUrl:"https://linktr.ee/sonasauna"
+  },
+  {
+    id:203, city:"Kerry", country:"Ireland", name:"Sunset Sauna Kerry", area:"Coornagillagh, Tuosist / Beara Peninsula",
+    type:"both", price:"Check @sunsetsaunakerry_beara on Instagram", rating:4.9, reviews:21,
+    hours:"Check @sunsetsaunakerry_beara on Instagram for sessions",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Scenic","Wild Atlantic Way","Views"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — south Kerry / Beara Peninsula · near Kenmare",
+    parking:"Coornagillagh beach, Tuosist, Co. Kerry",
+    desc:"A mobile wood-fired sauna touring the wild Beara Peninsula coast — Kenmare, Castletownbere, and Allihies. Year-round sessions with Atlantic views at multiple locations. Paired with the Coorna Cafe food and coffee truck for a full post-sauna experience.",
+    lat:51.7760, lng:-9.6310,
+    bookingUrl:"https://www.instagram.com/sunsetsaunakerry_beara"
+  },
 ];
 
 export const CITIES = [
@@ -2333,6 +2597,7 @@ export const CITIES = [
   "Belfast","Derry",
   // Ireland
   "Dublin","Galway","Cork","Sligo","Mayo","Kerry","Wicklow","Limerick","Waterford","Kilkenny","Wexford","Tipperary","Carlingford","Drogheda",
+  "Donegal","Clare","Cavan","Carlow","Laois",
   // Nordic
   "Helsinki","Stockholm","Gothenburg","Copenhagen","Aarhus","Oslo","Bergen","Rovaniemi","Karlstad","Reykjavik",
 ];
@@ -2349,6 +2614,7 @@ export const FLAG: Record<string, string> = {
   Dublin:"🇮🇪", Galway:"🇮🇪", Cork:"🇮🇪",
   Sligo:"🇮🇪", Kerry:"🇮🇪", Wicklow:"🇮🇪", Limerick:"🇮🇪",
   Mayo:"🇮🇪", Waterford:"🇮🇪", Kilkenny:"🇮🇪", Wexford:"🇮🇪", Tipperary:"🇮🇪", Carlingford:"🇮🇪", Drogheda:"🇮🇪",
+  Donegal:"🇮🇪", Clare:"🇮🇪", Cavan:"🇮🇪", Carlow:"🇮🇪", Laois:"🇮🇪",
   Helsinki:"🇫🇮", Stockholm:"🇸🇪", Gothenburg:"🇸🇪", Karlstad:"🇸🇪",
   Copenhagen:"🇩🇰", Aarhus:"🇩🇰", Oslo:"🇳🇴", Bergen:"🇳🇴", Rovaniemi:"🇫🇮",
   Reykjavik:"🇮🇸",
@@ -2369,6 +2635,7 @@ export const REGION_MAP: Record<string, string> = {
   Sligo:"UK & Ireland", Kerry:"UK & Ireland", Wicklow:"UK & Ireland",
   Limerick:"UK & Ireland", Waterford:"UK & Ireland", Kilkenny:"UK & Ireland",
   Mayo:"UK & Ireland", Wexford:"UK & Ireland", Tipperary:"UK & Ireland", Carlingford:"UK & Ireland", Drogheda:"UK & Ireland",
+  Donegal:"UK & Ireland", Clare:"UK & Ireland", Cavan:"UK & Ireland", Carlow:"UK & Ireland", Laois:"UK & Ireland",
   Reykjavik:"Nordic", Aarhus:"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", Rovaniemi:"Nordic",
@@ -2393,6 +2660,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Sligo:"Ireland", Kerry:"Ireland", Wicklow:"Ireland",
   Limerick:"Ireland", Waterford:"Ireland", Kilkenny:"Ireland",
   Mayo:"Ireland", Wexford:"Ireland", Tipperary:"Ireland", Carlingford:"Ireland", Drogheda:"Ireland",
+  Donegal:"Ireland", Clare:"Ireland", Cavan:"Ireland", Carlow:"Ireland", Laois:"Ireland",
   // Nordic
   Reykjavik:"Iceland",
   Aarhus:"Denmark", Copenhagen:"Denmark",
@@ -2421,6 +2689,8 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Sligo:"Sligo", Kerry:"Kerry", Wicklow:"Wicklow",
   Limerick:"Limerick", Waterford:"Waterford", Kilkenny:"Kilkenny",
   Wexford:"Wexford", Tipperary:"Tipperary", Carlingford:"Louth",
+  Mayo:"Mayo", Drogheda:"Louth",
+  Donegal:"Donegal", Clare:"Clare", Cavan:"Cavan", Carlow:"Carlow", Laois:"Laois",
   // Nordic — region
   Helsinki:"Helsinki Region", Rovaniemi:"Lapland",
   Stockholm:"Stockholm Region", Gothenburg:"Gothenburg Region", Karlstad:"Gothenburg Region",
