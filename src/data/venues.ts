@@ -2582,6 +2582,210 @@ export const VENUES: Venue[] = [
     lat:51.7760, lng:-9.6310,
     bookingUrl:"https://www.instagram.com/sunsetsaunakerry_beara"
   },
+
+  // ── KILDARE ──
+  {
+    id:204, city:"Kildare", country:"Ireland", name:"An Chill Sauna", area:"Kill, Co. Kildare",
+    type:"both", price:"Check website for current pricing", rating:4.9, reviews:39,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Cold Plunge","Wood-fired","Countryside"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Kill village, Co. Kildare · off M7",
+    parking:"On-site",
+    desc:"Intimate wood-fired sauna and cold plunge in Kill, Co. Kildare. Capacity of 8 for a personal, unhurried experience. Conveniently located just off the M7 motorway.",
+    lat:53.2545, lng:-6.5929,
+    bookingUrl:"http://www.anchillsauna.ie/book-now"
+  },
+  {
+    id:205, city:"Kildare", country:"Ireland", name:"Treehouse Sauna", area:"Osberstown, Naas",
+    type:"both", price:"Check website for current pricing", rating:4.9, reviews:30,
+    hours:"Check website for current hours",
+    temp:"Cold plunge + jacuzzi", tags:["Riverside","Jacuzzi","Wood-fired","Contrast Therapy"], emoji:"🔥🧊", open:true,
+    hygiene:"A+", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Osberstown, Naas · near Liffey Valley",
+    parking:"Free on-site at Liffeyvale Nurseries",
+    desc:"Riverside sauna and contrast therapy centre set among the nursery gardens at Liffeyvale, Naas. 50-minute sessions combining wood-fired sauna, cold plunge pool, and jacuzzi — a hidden gem beside the River Liffey.",
+    lat:53.2201, lng:-7.0014,
+    bookingUrl:"https://www.treehousesauna.com"
+  },
+
+  // ── LEITRIM ──
+  {
+    id:206, city:"Leitrim", country:"Ireland", name:"Lough Allen Adventure Sauna", area:"Drumshanbo, Co. Leitrim",
+    type:"both", price:"Check website for current pricing", rating:4.7, reviews:70,
+    hours:"Check website for current hours",
+    temp:"Cold plunge pool", tags:["Lakeside","Yoga","Cold Plunge","Hot Tub"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities on-site",
+    transport:"Drive — Drumshanbo town centre, Co. Leitrim",
+    parking:"Free on-site",
+    desc:"Full wellness centre on the shores of Lough Allen — sauna, hot tub, cold plunge pool, and yoga. Part of the Lough Allen Outdoor Pursuits Centre. A tranquil base for exploring the Iron Way and the Lough Allen basin.",
+    lat:54.0478, lng:-8.0432,
+    bookingUrl:"http://www.loughallenadventure.ie"
+  },
+
+  // ── MEATH ──
+  {
+    id:207, city:"Meath", country:"Ireland", name:"Lagoa Mercury Saunas", area:"Summerhill, Co. Meath",
+    type:"both", price:"Check website for current pricing", rating:4.9, reviews:20,
+    hours:"Check website for current hours",
+    temp:"Cold lake immersion", tags:["Lakeside","Wood-fired","Outdoor","Wild Swim"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Summerhill, Co. Meath",
+    parking:"On-site",
+    desc:"Outdoor wood-fired sauna on a private lake near Summerhill, Co. Meath. The session ends with a cold immersion in the lake — a restorative contrast therapy experience in quiet Meath countryside.",
+    lat:53.4764, lng:-6.7439,
+    bookingUrl:"https://www.mercurysauna.com"
+  },
+  {
+    id:208, city:"Meath", country:"Ireland", name:"The Hot Box Sauna Bective", area:"Bective / Navan, Co. Meath",
+    type:"both", price:"Check website for current pricing", rating:4.9, reviews:349,
+    hours:"Check website for current hours",
+    temp:"River Boyne plunge", tags:["Riverside","Wood-fired","River Boyne","Multi-sauna"], emoji:"🔥🌊", open:true,
+    hygiene:"A+", lockerNote:"Changing rooms on-site",
+    transport:"Drive — Bective, near Navan · Co. Meath",
+    parking:"Free on-site at Mill House",
+    desc:"Multi-sauna facility at a historic mill on the River Boyne, near Bective Abbey. Multiple wood-fired saunas, a plunge pool, and direct access to the Boyne for wild swimming. One of Ireland's highest-rated sauna experiences.",
+    lat:53.6583, lng:-6.7556,
+    bookingUrl:"https://www.thehotboxsauna.ie"
+  },
+
+  // ── OFFALY ──
+  {
+    id:209, city:"Offaly", country:"Ireland", name:"An Bosca Te — Banagher Sauna", area:"Banagher Marina, Co. Offaly",
+    type:"both", price:"Check website for current pricing", rating:5.0, reviews:7,
+    hours:"Check Calendly for current sessions",
+    temp:"River Shannon / barrel cold plunge", tags:["Riverside","River Shannon","Wood-fired","Marina"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Banagher Marina, Co. Offaly",
+    parking:"Free at the marina",
+    desc:"Traditional sauna and cold water immersion at Banagher Marina on the River Shannon. A compact, community-focused venue with barrel cold plunge and stunning river views. Perfect after a walk or cycle along the Shannon.",
+    lat:53.1952, lng:-7.9861,
+    bookingUrl:"https://calendly.com/banaghersauna"
+  },
+
+  // ── ROSCOMMON ──
+  {
+    id:210, city:"Roscommon", country:"Ireland", name:"Cavetown Lake Sauna", area:"Croghan, Co. Roscommon",
+    type:"both", price:"Check website for current pricing", rating:5.0, reviews:15,
+    hours:"Check website for current hours",
+    temp:"Cavetown Lake cold swim", tags:["Lakeside","Wild Swim","Wood-fired","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Croghan / Fairview, Co. Roscommon",
+    parking:"On-site",
+    desc:"Wood-fired sauna paired with wild swimming in Cavetown Lake near Croghan. A peaceful, nature-first experience in the heart of Roscommon — popular for group and family sessions.",
+    lat:53.8060, lng:-8.1850,
+    bookingUrl:"https://bookwhen.com/cavetownsauna"
+  },
+  {
+    id:211, city:"Roscommon", country:"Ireland", name:"Cè Sauna", area:"Rockingham Demesne, Boyle",
+    type:"both", price:"Check website for current pricing", rating:4.8, reviews:12,
+    hours:"Check website for current hours",
+    temp:"Lakeside cold plunge", tags:["Lakeside","Wood-fired","Scenic","Connaught"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Rockingham Demesne, Boyle, Co. Roscommon",
+    parking:"On-site",
+    desc:"Wood-fired sauna and plunge pool in the historic Rockingham Demesne estate near Boyle. Access to a beautiful lake for cold water immersion amid mature woodland. A serene escape close to Lough Key Forest Park.",
+    lat:53.9727, lng:-8.3190,
+    bookingUrl:"https://www.irelandsaunas.com/roscommon"
+  },
+  {
+    id:212, city:"Roscommon", country:"Ireland", name:"Riverside Sauna Termonbarry", area:"Termonbarry, Co. Roscommon",
+    type:"sauna", price:"Check website for current pricing", rating:5.0, reviews:10,
+    hours:"Check website for current hours",
+    temp:"River Shannon", tags:["Riverside","River Shannon","Wood-fired"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Termonbarry / Ballytoohey, Co. Roscommon",
+    parking:"Harbour Road, Ballytoohey",
+    desc:"Intimate wood-fired sauna on the banks of the River Shannon at Termonbarry. Perfect for a quiet, restorative session followed by a cold dip in the Shannon.",
+    lat:53.6728, lng:-7.9767,
+    bookingUrl:"https://www.irelandsaunas.com/roscommon"
+  },
+  {
+    id:213, city:"Roscommon", country:"Ireland", name:"Sauna Castlerea", area:"Clonalis, Castlerea, Co. Roscommon",
+    type:"both", price:"Check website for current pricing", rating:5.0, reviews:12,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Cold Plunge","Wood-fired","Rural"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Clonalis, Castlerea, Co. Roscommon",
+    parking:"On-site",
+    desc:"Sauna and cold plunge set on the grounds near Clonalis House in Castlerea — the ancestral home of the O'Conor family. A well-rated local venue in the west of Co. Roscommon.",
+    lat:53.7641, lng:-8.4847,
+    bookingUrl:"https://bookwhen.com/saunacastlerea"
+  },
+  {
+    id:214, city:"Roscommon", country:"Ireland", name:"SauNua Athlone", area:"Hodson Bay, Co. Roscommon",
+    type:"both", price:"Check website for current pricing", rating:5.0, reviews:25,
+    hours:"Check website for current hours",
+    temp:"Lough Ree lake swim", tags:["Lakeside","Lough Ree","Hot Tub","Wood-fired"], emoji:"🔥🌊", open:true,
+    hygiene:"A+", lockerNote:"Changing facilities on-site",
+    transport:"Drive — Hodson Bay, Athlone · Co. Roscommon side of Lough Ree",
+    parking:"Free at Bay Sports Centre",
+    desc:"Wood cabin saunas, hot tubs, and lake swimming on Lough Ree at Hodson Bay. Operated from the Bay Sports Centre — Ireland's largest inland lake provides a stunning cold water contrast after a sauna session.",
+    lat:53.4558, lng:-7.9781,
+    bookingUrl:"https://www.baysports.ie"
+  },
+  {
+    id:215, city:"Roscommon", country:"Ireland", name:"Sweathouse Battlebridge", area:"Battlebridge, Co. Roscommon",
+    type:"both", price:"€12.50–€15", rating:4.9, reviews:40,
+    hours:"Check website for current hours",
+    temp:"River cold plunge", tags:["Riverside","Wood-fired","Budget","Community"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Battlebridge / Lustia, Co. Roscommon · near Lough Allen",
+    parking:"On-site",
+    desc:"Wood-fired sweat house with river access for cold plunging, near the Roscommon-Leitrim border at Battlebridge. One of Ireland's most affordable sauna sessions (€12.50 midweek / €15 weekends) in a beautiful riverside setting.",
+    lat:53.9900, lng:-8.1153,
+    bookingUrl:"https://www.sweathousebattlebridge.com"
+  },
+  {
+    id:216, city:"Roscommon", country:"Ireland", name:"Wood Fired Sauna Lough Errit", area:"Gortaganny, Castlerea, Co. Roscommon",
+    type:"both", price:"Check website for current pricing", rating:5.0, reviews:23,
+    hours:"Check website for current hours · Sunday Wim Hof group sessions",
+    temp:"Lough Errit lake dip", tags:["Lakeside","Wim Hof","Wood-fired","Wild Swim"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Gortaganny, Castlerea · north Co. Roscommon",
+    parking:"On-site at Errit Lodge",
+    desc:"Wood-fired sauna on the shore of Lough Errit, west of Castlerea. Regular Sunday Wim Hof group sessions combine sauna, breathwork, and a cold lake dip. A deeply immersive experience in one of Roscommon's quieter corners.",
+    lat:53.7800, lng:-8.5200,
+    bookingUrl:"https://bookwhen.com/woodfiredsaunalougherrit"
+  },
+
+  // ── WESTMEATH ──
+  {
+    id:217, city:"Westmeath", country:"Ireland", name:"Contrast Wellness", area:"Athlone, Co. Westmeath",
+    type:"both", price:"Check website for current pricing", rating:4.8, reviews:20,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Mobile","Cold Plunge","Private Hire","Community"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Grace Park Road, Athlone, Co. Westmeath",
+    parking:"On-site",
+    desc:"Mobile sauna and cold plunge pod operating public sessions and private event hire in Athlone. Flexible booking makes it ideal for groups, corporate wellness days, and special occasions.",
+    lat:53.4239, lng:-7.9302,
+    bookingUrl:"https://www.contrastwellness.ie"
+  },
+  {
+    id:218, city:"Westmeath", country:"Ireland", name:"Serenity Sauna and Ice Baths", area:"Moate, Co. Westmeath",
+    type:"both", price:"Check website for current pricing", rating:5.0, reviews:18,
+    hours:"Check website for current hours",
+    temp:"Ice baths", tags:["Ice Bath","Sauna","Park","Scenic"], emoji:"🔥🧊", open:true,
+    hygiene:"A+", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Dún Na Sí Amenity & Heritage Park, Moate",
+    parking:"Free at Dún Na Sí Park",
+    desc:"Sauna and ice baths set within the beautiful Dún Na Sí Amenity and Heritage Park in Moate. A calming, park-based wellness experience in the midlands — surrounded by nature and heritage at a much-loved Westmeath landmark.",
+    lat:53.3986, lng:-7.7213,
+    bookingUrl:"https://www.irelandsaunas.com/westmeath"
+  },
+  {
+    id:219, city:"Westmeath", country:"Ireland", name:"The Sauna Society", area:"Lough Ennell, Mullingar",
+    type:"both", price:"Check website for current pricing", rating:4.9, reviews:30,
+    hours:"Check website for current hours",
+    temp:"Lough Ennell lake cold plunge", tags:["Lakeside","Lough Ennell","Cold Plunge","Ice Tub"], emoji:"🔥🌊", open:true,
+    hygiene:"A+", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Tudenham Shore, Lough Ennell, near Mullingar",
+    parking:"Free at Lough Ennell Caravan Park",
+    desc:"Sauna, cold plunge pools, and an ice tub on the shores of Lough Ennell near Mullingar. A lakeside wellness retreat that combines the heat of a Finnish sauna with the cold clarity of a Westmeath lake — one of Ireland's best-kept sauna secrets.",
+    lat:53.4422, lng:-7.4375,
+    bookingUrl:"https://www.thesaunasociety.ie"
+  },
 ];
 
 export const CITIES = [
@@ -2598,6 +2802,7 @@ export const CITIES = [
   // Ireland
   "Dublin","Galway","Cork","Sligo","Mayo","Kerry","Wicklow","Limerick","Waterford","Kilkenny","Wexford","Tipperary","Carlingford","Drogheda",
   "Donegal","Clare","Cavan","Carlow","Laois",
+  "Kildare","Leitrim","Meath","Offaly","Roscommon","Westmeath",
   // Nordic
   "Helsinki","Stockholm","Gothenburg","Copenhagen","Aarhus","Oslo","Bergen","Rovaniemi","Karlstad","Reykjavik",
 ];
