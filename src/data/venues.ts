@@ -2799,10 +2799,8 @@ export const CITIES = [
   "Cardiff","Swansea",
   // UK — Northern Ireland
   "Belfast","Derry",
-  // Ireland
-  "Dublin","Galway","Cork","Sligo","Mayo","Kerry","Wicklow","Limerick","Waterford","Kilkenny","Wexford","Tipperary","Carlingford","Drogheda",
-  "Donegal","Clare","Cavan","Carlow","Laois",
-  "Kildare","Leitrim","Meath","Offaly","Roscommon","Westmeath",
+  // Ireland — cities only (counties appear as region filters when Ireland is selected)
+  "Dublin","Cork","Galway","Limerick",
   // Nordic
   "Helsinki","Stockholm","Gothenburg","Copenhagen","Aarhus","Oslo","Bergen","Rovaniemi","Karlstad","Reykjavik",
 ];
@@ -2820,6 +2818,7 @@ export const FLAG: Record<string, string> = {
   Sligo:"🇮🇪", Kerry:"🇮🇪", Wicklow:"🇮🇪", Limerick:"🇮🇪",
   Mayo:"🇮🇪", Waterford:"🇮🇪", Kilkenny:"🇮🇪", Wexford:"🇮🇪", Tipperary:"🇮🇪", Carlingford:"🇮🇪", Drogheda:"🇮🇪",
   Donegal:"🇮🇪", Clare:"🇮🇪", Cavan:"🇮🇪", Carlow:"🇮🇪", Laois:"🇮🇪",
+  Kildare:"🇮🇪", Leitrim:"🇮🇪", Meath:"🇮🇪", Offaly:"🇮🇪", Roscommon:"🇮🇪", Westmeath:"🇮🇪",
   Helsinki:"🇫🇮", Stockholm:"🇸🇪", Gothenburg:"🇸🇪", Karlstad:"🇸🇪",
   Copenhagen:"🇩🇰", Aarhus:"🇩🇰", Oslo:"🇳🇴", Bergen:"🇳🇴", Rovaniemi:"🇫🇮",
   Reykjavik:"🇮🇸",
@@ -2841,6 +2840,7 @@ export const REGION_MAP: Record<string, string> = {
   Limerick:"UK & Ireland", Waterford:"UK & Ireland", Kilkenny:"UK & Ireland",
   Mayo:"UK & Ireland", Wexford:"UK & Ireland", Tipperary:"UK & Ireland", Carlingford:"UK & Ireland", Drogheda:"UK & Ireland",
   Donegal:"UK & Ireland", Clare:"UK & Ireland", Cavan:"UK & Ireland", Carlow:"UK & Ireland", Laois:"UK & Ireland",
+  Kildare:"UK & Ireland", Leitrim:"UK & Ireland", Meath:"UK & Ireland", Offaly:"UK & Ireland", Roscommon:"UK & Ireland", Westmeath:"UK & Ireland",
   Reykjavik:"Nordic", Aarhus:"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", Rovaniemi:"Nordic",
@@ -2866,6 +2866,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Limerick:"Ireland", Waterford:"Ireland", Kilkenny:"Ireland",
   Mayo:"Ireland", Wexford:"Ireland", Tipperary:"Ireland", Carlingford:"Ireland", Drogheda:"Ireland",
   Donegal:"Ireland", Clare:"Ireland", Cavan:"Ireland", Carlow:"Ireland", Laois:"Ireland",
+  Kildare:"Ireland", Leitrim:"Ireland", Meath:"Ireland", Offaly:"Ireland", Roscommon:"Ireland", Westmeath:"Ireland",
   // Nordic
   Reykjavik:"Iceland",
   Aarhus:"Denmark", Copenhagen:"Denmark",
@@ -2896,6 +2897,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Wexford:"Wexford", Tipperary:"Tipperary", Carlingford:"Louth",
   Mayo:"Mayo", Drogheda:"Louth",
   Donegal:"Donegal", Clare:"Clare", Cavan:"Cavan", Carlow:"Carlow", Laois:"Laois",
+  Kildare:"Kildare", Leitrim:"Leitrim", Meath:"Meath", Offaly:"Offaly", Roscommon:"Roscommon", Westmeath:"Westmeath",
   // Nordic — region
   Helsinki:"Helsinki Region", Rovaniemi:"Lapland",
   Stockholm:"Stockholm Region", Gothenburg:"Gothenburg Region", Karlstad:"Gothenburg Region",
