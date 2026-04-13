@@ -395,27 +395,6 @@ export default function HomePage() {
           </div>
         </div>
 
-        {/* Suggest a Sauna CTA */}
-        <div style={{ marginBottom: '16px' }}>
-          <a
-            href="/submit"
-            style={{
-              display: 'inline-block',
-              background: '#FF5A5F',
-              color: '#fff',
-              fontFamily: 'inherit',
-              fontSize: '14px',
-              fontWeight: 700,
-              padding: '10px 22px',
-              borderRadius: '999px',
-              textDecoration: 'none',
-              letterSpacing: '0.2px',
-            }}
-          >
-            Suggest a Sauna 🌿
-          </a>
-        </div>
-
         {/* Result count + TASK 2: Grid/Map toggle */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
           <div style={{ fontSize: '12px', color: '#aaa' }}>
