@@ -21,10 +21,11 @@ export default function Header() {
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'space-between',
+          gap: '16px',
         }}
       >
         {/* Logo */}
-        <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'baseline', gap: '0' }}>
+        <Link href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'baseline', gap: '0', flexShrink: 0 }}>
           <span
             style={{
               fontFamily: 'var(--font-serif, Georgia, serif)',
@@ -49,13 +50,59 @@ export default function Header() {
           </span>
         </Link>
 
-        {/* Meta */}
+        {/* Nav links */}
+        <nav style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+          <Link
+            href="/blog"
+            style={{
+              fontSize: '13px',
+              fontWeight: 500,
+              color: '#555',
+              textDecoration: 'none',
+              padding: '6px 12px',
+              borderRadius: '8px',
+            }}
+          >
+            Blog
+          </Link>
+          <Link
+            href="/about"
+            style={{
+              fontSize: '13px',
+              fontWeight: 500,
+              color: '#555',
+              textDecoration: 'none',
+              padding: '6px 12px',
+              borderRadius: '8px',
+            }}
+          >
+            About
+          </Link>
+          <Link
+            href="/submit"
+            style={{
+              fontSize: '13px',
+              fontWeight: 700,
+              color: '#FF5A5F',
+              textDecoration: 'none',
+              padding: '6px 12px',
+              borderRadius: '8px',
+              border: '1px solid #FF5A5F',
+            }}
+          >
+            Suggest a Sauna
+          </Link>
+        </nav>
+
+        {/* Meta — hidden on small screens */}
         <div
+          className="header-meta"
           style={{
             fontSize: '11px',
             color: '#aaa',
             letterSpacing: '0.8px',
             fontWeight: 500,
+            flexShrink: 0,
           }}
         >
           {CITIES.length - 1} cities &nbsp;&middot;&nbsp; {VENUES.length} venues

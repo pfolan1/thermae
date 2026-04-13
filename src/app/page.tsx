@@ -469,7 +469,7 @@ export default function HomePage() {
               </div>
             )}
             <div style={{ textAlign: 'center', marginTop: '40px', paddingBottom: '8px' }}>
-              <a href="/submit" style={{ fontSize: '13px', color: '#aaa', textDecoration: 'none' }}>
+              <a href="/submit" style={{ fontSize: '13px', color: '#FF5A5F', textDecoration: 'none', fontWeight: 600 }}>
                 Missing a sauna? Suggest one →
               </a>
             </div>
