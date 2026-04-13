@@ -5,6 +5,8 @@ out/
 .env
 .env.local
 .env.*.local
+scripts/.env
+scripts/logs/
 *.log
 .DS_Store
 Thumbs.db

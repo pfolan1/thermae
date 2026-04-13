@@ -1,70 +1,148 @@
 # Thermae Scripts
 
-## Weekly Health Check
-
-Checks every venue website in `src/data/venues.ts` and reports which ones are offline, timing out, or missing a URL.
-
-### Run manually
-
-```bash
-npm run health-check
-```
-
-Or directly:
-
-```bash
-node scripts/weekly-health-check.js
-```
-
-The report is printed to the console and also saved to `scripts/health-report.txt`.
-
-### What it checks
-
-| Result | Meaning |
-|--------|---------|
-| ✅ OK | HTTP 200–399 — site is live |
-| ❌ Dead | HTTP 4xx / 5xx — site returned an error |
-| ⏱ Timeout | No response within 10 seconds |
-| ⚠️ Error | Connection refused or DNS failure |
-| 🔗 No URL | Venue has no `bookingUrl` set |
-
-Redirects (301/302) are followed once before classifying.
+Utility scripts for weekly site maintenance. Run from the project root unless noted otherwise.
 
 ---
 
-## Set up automatic weekly runs on Windows Task Scheduler
+## Contents
 
-1. Open **Task Scheduler** (search for it in the Start menu).
+| Script | npm command | Purpose |
+|--------|------------|---------|
+| `weekly-health-check.js` | `npm run health-check` | Check all venue websites, email report |
+| `monitor-new-saunas.js`  | `npm run monitor`      | Search news for new venue openings |
+| `check-blog-posts.js`    | `npm run check-blogs`  | Check blog posts for stale venue references |
+| `setup-scheduler.ps1`    | *(run once)*           | Register Windows Task Scheduler job |
+| `WEEKLY-PROMPT.md`       | *(read this)*          | Prompt to paste into Claude Code each Sunday |
 
-2. Click **Create Basic Task…** in the right panel.
+---
 
-3. Fill in the wizard:
-   - **Name:** Thermae Health Check
-   - **Description:** Weekly sauna venue website health check
-   - **Trigger:** Weekly → Sunday → 9:00 PM
-   - **Action:** Start a program
+## 1. Environment Setup
 
-4. In the **Start a Program** step:
-   - **Program/script:** `node`
-   - **Add arguments:** `scripts/weekly-health-check.js`
-   - **Start in:** `C:\Users\kateq\Projects\Thermae`
+Scripts that send email require SMTP credentials.
 
-5. Click **Finish**.
-
-You can verify it works by right-clicking the task and choosing **Run**.
-
-### Alternative: one-line Task Scheduler setup via PowerShell
-
-Open PowerShell as Administrator and run:
-
-```powershell
-$action  = New-ScheduledTaskAction -Execute "node" `
-             -Argument "scripts/weekly-health-check.js" `
-             -WorkingDirectory "C:\Users\kateq\Projects\Thermae"
-$trigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -At "9:00PM"
-$settings = New-ScheduledTaskSettingsSet -ExecutionTimeLimit (New-TimeSpan -Minutes 10)
-Register-ScheduledTask -TaskName "Thermae Health Check" `
-  -Action $action -Trigger $trigger -Settings $settings -RunLevel Highest
+**Step 1** — Copy the example file:
+```
+copy scripts\.env.example scripts\.env
 ```
 
-The report will be written to `scripts/health-report.txt` each Sunday at 9 PM.
+**Step 2** — Edit `scripts/.env` and fill in your Zoho credentials:
+```
+ZOHO_EMAIL=hello@thermae.app
+ZOHO_PASSWORD=your_zoho_app_password_here
+```
+
+> **How to get a Zoho app password:**
+> Log in at mail.zoho.eu → My Account → Security → App-Specific Passwords → Generate New Password.
+> Use that generated password here (not your main account password).
+
+`scripts/.env` is listed in `.gitignore` and will never be committed to git.
+
+---
+
+## 2. Running Scripts Manually
+
+### Health Check
+Checks every venue website, generates a report, and emails it.
+```bash
+npm run health-check
+```
+Output: `scripts/health-report.txt` (also printed to console and emailed)
+
+### New Venue Monitor
+Searches Google News RSS for sauna/wellness openings in the past 7 days.
+```bash
+npm run monitor
+```
+Output: `scripts/new-venues-found.txt`
+
+### Blog Post Checker
+Checks blog posts reference venues that still exist in venues.ts.
+```bash
+npm run check-blogs
+```
+Output: `scripts/blog-report.txt`
+
+---
+
+## 3. Automatic Weekly Runs — Windows Task Scheduler
+
+### One-time setup
+
+Open **PowerShell as Administrator** and run:
+```powershell
+Set-ExecutionPolicy RemoteSigned -Scope CurrentUser   # allow local scripts
+cd C:\Users\kateq\Projects\Thermae
+.\scripts\setup-scheduler.ps1
+```
+
+This registers a task called **"Thermae Weekly Health Check"** that runs every **Sunday at 8:00 PM**.
+
+### Verify the task registered
+```powershell
+Get-ScheduledTask -TaskName "Thermae Weekly Health Check"
+```
+
+### Test it immediately (without waiting for Sunday)
+```powershell
+Start-ScheduledTask -TaskName "Thermae Weekly Health Check"
+```
+
+### View logs
+Logs are saved to `scripts/logs/health-<date>.log` each time the task runs.
+
+### Add monitor script to the schedule (optional)
+If you also want `monitor-new-saunas.js` to run automatically, add a second task:
+```powershell
+$action  = New-ScheduledTaskAction -Execute "cmd.exe" `
+    -Argument "/c `"node scripts\monitor-new-saunas.js >> scripts\logs\monitor-$(Get-Date -Format 'yyyy-MM-dd').log 2>&1`"" `
+    -WorkingDirectory "C:\Users\kateq\Projects\Thermae"
+$trigger = New-ScheduledTaskTrigger -Weekly -DaysOfWeek Sunday -At "20:05"
+Register-ScheduledTask -TaskName "Thermae Monitor New Saunas" `
+    -Action $action -Trigger $trigger -RunLevel Highest
+```
+
+---
+
+## 4. Recommended Sunday Evening Workflow
+
+1. **8:00 PM** — Task Scheduler automatically runs the health check and emails the report.
+2. **~8:15 PM** — Check your email at hello@thermae.app for the health report.
+3. **Open Claude Code** in the Thermae project directory.
+4. **Open `scripts/WEEKLY-PROMPT.md`** — copy the prompt, update the date, and paste it into Claude Code.
+5. Claude Code will:
+   - Fix any dead venue websites
+   - Search for new venues and add them
+   - Check blog posts for stale content
+   - Build and push to GitHub
+6. The whole process takes roughly **20–40 minutes**.
+
+---
+
+## 5. Health Report Fields Explained
+
+| Field | Meaning |
+|-------|---------|
+| ✅ OK | HTTP 200–399 — site is live |
+| ❌ Dead | HTTP 4xx / 5xx — site returned an error |
+| ⏱ Timeout | No response within 12 seconds |
+| ⚠️ Error | Connection refused or DNS failure |
+| 🔗 No URL | Venue has no `bookingUrl` set |
+| 📍 No coords | Venue is missing lat/lng coordinates |
+| 🌊 Suspect coords | Coordinates fall outside the expected country bounding box |
+
+Redirects (301/302/307/308) are followed up to 3 hops before classifying.
+
+---
+
+## 6. Email Configuration (Zoho)
+
+The health check emails via Zoho Mail SMTP:
+
+| Setting | Value |
+|---------|-------|
+| Host | `smtp.zoho.eu` |
+| Port | `465` (SSL) |
+| User | Your `ZOHO_EMAIL` |
+| Pass | Your `ZOHO_PASSWORD` (app-specific password) |
+
+If no credentials are set, the script still runs and saves the report locally — it just skips the email step.
