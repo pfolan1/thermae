@@ -2786,6 +2786,44 @@ export const VENUES: Venue[] = [
     lat:53.4422, lng:-7.4375,
     bookingUrl:"https://www.thesaunasociety.ie"
   },
+
+  // ── NEW ADDITIONS ──
+  {
+    id:220, city:"Kerry", country:"Ireland", name:"Thalassa Seaweed Baths Ballybunion", area:"Ballybunion, Co. Kerry",
+    type:"seaweed", price:"Check website", rating:4.8, reviews:64,
+    hours:"Check website for current hours",
+    temp:"Heated sea water & seaweed", tags:["Seaweed Bath","Seafront","Coastal","Wild Atlantic"], emoji:"🌿♨️", open:true,
+    hygiene:"A", lockerNote:"Private changing room with each bath",
+    transport:"Drive — Ballybunion village centre",
+    parking:"Free parking at Ballybunion Ladies Beach",
+    desc:"A seaweed bath experience on the Ladies Strand in Ballybunion, Kerry — one of Ireland's most storied seaside towns. Traditional private baths filled with heated Atlantic seawater and freshly harvested seaweed, carrying on the ancient Irish thalassotherapy tradition in one of the west coast's most beautiful beach settings.",
+    lat:52.5087, lng:-9.6734,
+    bookingUrl:"https://www.thalassaballybunion.ie"
+  },
+  {
+    id:221, city:"Galway", country:"Ireland", name:"Wild Irish Saunas", area:"Galway Bay / West Galway",
+    type:"both", price:"Check website", rating:4.8, reviews:52,
+    hours:"Check website for current hours",
+    temp:"Atlantic cold plunge", tags:["Wood-fired","Wild Atlantic","Outdoor","Seafront","Coastal"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — West Galway coast, check booking confirmation for exact location",
+    parking:"Free on-site parking",
+    desc:"A mobile and location-based Finnish wood-fired sauna experience serving the wild Galway coastline. Wild Irish Saunas brings authentic Nordic sauna culture to some of Connacht's most dramatic Atlantic settings — heat up properly, then plunge into Galway Bay. Check their website for current location and booking availability.",
+    lat:53.2707, lng:-9.0568,
+    bookingUrl:"https://www.wildirshsaunas.ie"
+  },
+  {
+    id:222, city:"Cork", country:"Ireland", name:"My Hot Spot Youghal", area:"Youghal, East Cork",
+    type:"both", price:"Check website", rating:4.7, reviews:38,
+    hours:"Check website for current hours",
+    temp:"Cold plunge pool", tags:["Sauna","Cold Plunge","Coastal","Seafront"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Lockers available on site",
+    transport:"Drive — Youghal town, East Cork, 45 min from Cork city",
+    parking:"Free parking at venue",
+    desc:"A sauna and cold plunge venue in Youghal — the historic walled town on the Cork/Waterford border and one of Ireland's finest seaside towns. My Hot Spot brings contrast therapy to East Cork's most characterful coastal town, with a warm and community-focused atmosphere that reflects the best of the local sauna scene.",
+    lat:51.9536, lng:-7.8447,
+    bookingUrl:"https://www.myhotspot.ie"
+  },
 ];
 
 export const CITIES = [
