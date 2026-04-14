@@ -2133,15 +2133,15 @@ export const VENUES: Venue[] = [
     bookingUrl:"https://slieveaughtycentre.com/oak-smoke-sauna"
   },
   {
-    id:168, city:"Galway", country:"Ireland", name:"Power Saunas", area:"Silverstrand Beach",
-    type:"both", price:"Check website", rating:4.9, reviews:89,
+    id:168, city:"Galway", country:"Ireland", name:"Power Saunas", area:"Silverstrand Beach, Bearna",
+    type:"both", price:"€17 per session", rating:4.9, reviews:89,
     hours:"Mon–Fri 1pm–9pm · Sat–Sun 8am–8pm",
-    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Community","Beach","Wild Swimming"], emoji:"🔥🌊", open:true,
+    temp:"Atlantic sea plunge + cold plunge pools", tags:["Seafront","Wood-fired","Outdoor","Community","Beach","Wild Swimming"], emoji:"🔥🌊", open:true,
     hygiene:"A", lockerNote:"No lockers — bring a dry bag",
-    transport:"Drive — 10 min from Galway city",
+    transport:"Drive — Silverstrand, Bearna, 10 min from Galway city",
     parking:"Silverstrand Beach car park",
-    desc:"A popular wood-fired sauna at Silverstrand Beach, one of Galway city's most beloved seaside spots just 10 minutes from the city centre. Heat up in the cedar barrel, then plunge directly into the Atlantic. A brilliant local option combining Galway's incredible natural coastline with authentic wood-fired sauna culture.",
-    lat:53.2506, lng:-9.1263,
+    desc:"A wood-fired sauna directly on Silverstrand Beach with views of Galway Bay — one of Galway city's most beloved seaside spots, 10 minutes from the city centre. Cold plunge pools and ice baths on site, plus direct ocean access. Sessions are 55 minutes at €17; monthly memberships available at €90. Heat up in the cedar barrel, then plunge into the Atlantic or the cold pools. A brilliant local option combining Galway's incredible natural coastline with authentic wood-fired sauna culture.",
+    lat:53.2543, lng:-9.1304,
     bookingUrl:"https://powersaunas.ie"
   },
   {
@@ -2792,15 +2792,15 @@ export const VENUES: Venue[] = [
   // Dublin additions
   {
     id:223, city:"Dublin", country:"Ireland", name:"The Chillipod", area:"Ringsend, Dublin 4",
-    type:"both", price:"Check website", rating:4.8, reviews:47,
-    hours:"Check website for current hours",
-    temp:"Cold plunge pod", tags:["Sauna","Cold Plunge","Contrast Therapy","City Centre","Ice Bath"], emoji:"🔥🧊", open:true,
-    hygiene:"A", lockerNote:"Lockers available on site",
-    transport:"Dublin Bus routes to Ringsend · Grand Canal Dock DART · 12 min walk",
+    type:"both", price:"From €15", rating:4.8, reviews:47,
+    hours:"Daily 7am–8pm",
+    temp:"Cold plunge pool", tags:["Sauna","Cold Plunge","Contrast Therapy","City Centre","Outdoor"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing rooms and showers on site",
+    transport:"Grand Canal Dock DART · 12 min walk · Dublin Bus to Ringsend",
     parking:"Ringsend Road street parking",
-    desc:"A dedicated sauna and cold plunge studio at 97 Ringsend Road, Dublin 4 — one of the city's most conveniently located contrast therapy venues, a short walk from Grand Canal Dock. The Chillipod brings a focused, no-frills approach to heat and cold therapy in a neighbourhood that's become one of Dublin's most vibrant. Perfect for working professionals looking to integrate contrast therapy into their routine.",
+    desc:"Dublin's relaxed outdoor sauna and cold plunge space at 98 Ringsend Road, Dublin 4 — a Nordic-inspired wellness venue with sauna, cold plunge pool, café, changing rooms and showers. Sessions are 45 minutes and run daily from 7am. Conveniently located for Grand Canal Dock and the Silicon Docks, making it a popular pre- or post-work option for south inner-city Dublin.",
     lat:53.3452, lng:-6.2196,
-    bookingUrl:"https://www.chillipod.ie"
+    bookingUrl:"https://www.thechillipod.ie"
   },
   {
     id:224, city:"Dublin", country:"Ireland", name:"The Wonky Sauna", area:"Howth, North Dublin",
@@ -2815,16 +2815,16 @@ export const VENUES: Venue[] = [
     bookingUrl:"https://www.wonkysauna.ie"
   },
   {
-    id:225, city:"Dublin", country:"Ireland", name:"The Sea Sauna Tower Bay Portrane", area:"Tower Bay, Portrane, Co. Dublin",
-    type:"both", price:"From €20", rating:4.9, reviews:89,
-    hours:"Check website for current hours",
-    temp:"Irish Sea", tags:["Wood-fired","Seafront","Coastal","Outdoor","Beach"], emoji:"🌊🔥", open:true,
-    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
-    transport:"Drive — Portrane village, 30 min north of Dublin city",
-    parking:"Free at Tower Bay beach car park, Portrane",
-    desc:"The Sea Sauna's Tower Bay location at Portrane — a stunning north Dublin coastal village with a Blue Flag beach and sweeping views across to Lambay Island. A wood-fired sauna with direct access to the Irish Sea for cold plunging, this is one of the most beautiful sauna settings in the Dublin county area. The sister location to the existing Sea Sauna at Donabate. Book via theseasauna.ie.",
+    id:225, city:"Dublin", country:"Ireland", name:"The Sea Sauna Tower Bay Portrane", area:"Tower Bay Beach, Portrane, Co. Dublin",
+    type:"both", price:"From €15", rating:4.9, reviews:89,
+    hours:"Mon 4pm–9pm · Tue closed · Wed–Thu 4pm–9pm · Fri 8:30am–9pm · Sat–Sun 8am–9pm",
+    temp:"Irish Sea cold shower & plunge barrels", tags:["Wood-fired","Seafront","Coastal","Outdoor","Beach"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag. 16+ only.",
+    transport:"Drive — Tower Bay Beach Car Park, Portrane (K36 RX92), 30 min north of Dublin city",
+    parking:"Free at Tower Bay Beach Car Park, Portrane",
+    desc:"Three handcrafted wood-fired saunas — Barrel, Box and Snug — sitting right beside the Irish Sea at Tower Bay Beach, Portrane (Eircode K36 RX92). Outdoor cold showers and plunge barrels available at all sessions. Shared and private bookings, with group discounts for 15+. Panoramic views across the Irish Sea and out to Lambay Island. One of north Dublin's finest coastal wellness experiences.",
     lat:53.4973, lng:-6.1142,
-    bookingUrl:"https://www.theseasauna.ie"
+    bookingUrl:"https://www.theseasauna.ie/bookings"
   },
 
   // Kilkenny
@@ -2841,32 +2841,32 @@ export const VENUES: Venue[] = [
     bookingUrl:"https://www.thehideawaysauna.ie"
   },
 
-  // Clare / Burren
+  // Galway — Kinvara / Burren edge
   {
-    id:227, city:"Clare", country:"Ireland", name:"Réale Burren Sauna", area:"The Burren, Co. Clare",
-    type:"both", price:"Check website", rating:4.9, reviews:41,
-    hours:"Check website for current hours",
-    temp:"Cold plunge / Atlantic views", tags:["Wood-fired","Outdoor","Scenic","Countryside","Wild Atlantic"], emoji:"🔥🌿", open:true,
-    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
-    transport:"Drive — The Burren, Co. Clare. Check realeburrensauna.ie for exact location",
+    id:227, city:"Galway", country:"Ireland", name:"Réale Burren Sauna", area:"Moy Road, Kinvara, Co. Galway",
+    type:"both", price:"From €20", rating:4.9, reviews:41,
+    hours:"Book via easyweek — check website for availability",
+    temp:"Bespoke cold plunge pool", tags:["Wood-fired","Outdoor","Scenic","Countryside","Lough Corrib"], emoji:"🔥🌿", open:true,
+    hygiene:"A+", lockerNote:"Private changing area, shower and toilet on site",
+    transport:"Drive — Moy Road, Kinvara, Co. Galway (H91 KV4H), 20 min south of Galway city",
     parking:"On-site parking at venue",
-    desc:"A wood-fired sauna experience set in the extraordinary lunar landscape of The Burren — the 250km² karst limestone plateau on the Clare coast, one of Europe's most unique landscapes. Réale Burren Sauna places you in this UNESCO-protected wilderness for a genuinely otherworldly heat and cold therapy experience. The Burren's ancient clints and grykes, the sound of the wind off Galway Bay, and a properly built wood-fired sauna: this is Ireland's most atmospherically unique sauna setting.",
-    lat:53.0420, lng:-9.1410,
-    bookingUrl:"https://www.realeburrensauna.ie"
+    desc:"An authentic Finnish sauna built with Scandinavian materials and a bespoke cold plunge pool at Moy Road, Kinvara, Co. Galway (H91 KV4H) — on the southern shores of Galway Bay, where the Burren limestone meets the sea. Solar-powered (16 panels + battery), private and semi-private bookings for up to 6 people. Includes changing area, shower, toilet and WiFi. From €20 for a solo non-private hour, €30 private. One of Galway's most beautiful and complete sauna experiences.",
+    lat:53.1380, lng:-8.9320,
+    bookingUrl:"https://booking.easyweek.ie/reale-burren-sauna"
   },
 
   // Wicklow
   {
-    id:228, city:"Wicklow", country:"Ireland", name:"The Barrel Sauna Greystones", area:"Greystones, Co. Wicklow",
-    type:"both", price:"Check website", rating:4.8, reviews:52,
-    hours:"Check website for current hours",
-    temp:"Cold plunge", tags:["Finnish","Cold Plunge","Coastal","Community"], emoji:"🔥🧊", open:true,
-    hygiene:"A", lockerNote:"Lockers available",
-    transport:"Greystones DART station · short walk",
-    parking:"Greystones town parking",
-    desc:"The Barrel Sauna's Greystones location brings the brand's Finnish barrel sauna format to the Co. Wicklow coast — one of Ireland's most scenic DART-accessible seaside towns, an hour south of Dublin city. A proper Finnish sauna experience with cold plunge, set against the backdrop of the Sugar Loaf mountain and the Irish Sea. Combine with a Greystones Cliff Walk for a perfect Wicklow day.",
-    lat:53.1421, lng:-6.0682,
-    bookingUrl:"https://www.thebarrelsauna.ie"
+    id:228, city:"Wicklow", country:"Ireland", name:"The Barrel Sauna Greystones", area:"The Boatyard, Beach Road, Greystones Harbour",
+    type:"both", price:"From €10", rating:4.8, reviews:52,
+    hours:"Mon–Tue 4pm–10:30pm · Wed–Thu 10am–10:30pm · Fri 7am–10:30pm · Sat–Sun 9am–10:30pm",
+    temp:"Three cold plunges at variable temperatures", tags:["Finnish","Cold Plunge","Coastal","Community","Wood-fired","Harbour"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Private cubicles and lockers on site. 18+ (under 18 with guardian).",
+    transport:"Greystones DART station · 5 min walk to Beach Road · 1 hr from Dublin Connolly",
+    parking:"Greystones harbour car park, Beach Road (A63 R721)",
+    desc:"Two 10-person wood-fired barrel saunas in a walled garden setting at Greystones Harbour — The Barrel Sauna's Wicklow location at The Boatyard, Beach Road (A63 R721). Three cold plunge options at variable temperatures. Private cubicles, lockers and showers. Sessions from €10 (Early Bird 30 min) to €20 (Slow Burn 75 min), with 10- and 20-pass bundles. The most accessible quality sauna from Dublin by DART — one hour from the city, on the Co. Wicklow coast.",
+    lat:53.1410, lng:-6.0658,
+    bookingUrl:"https://wunderbook.link/TBSGreyst"
   },
 
   {
