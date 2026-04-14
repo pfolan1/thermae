@@ -2,6 +2,7 @@ import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
 import Header from '@/components/Header';
+import BlogViewTracker from '@/components/BlogViewTracker';
 import { ALL_POSTS, getPostBySlug } from '@/content/blog';
 
 interface Props {
@@ -37,6 +38,7 @@ export default function BlogPostPage({ params }: Props) {
   return (
     <>
       <Header />
+      <BlogViewTracker slug={post.slug} />
       <main style={{ maxWidth: '720px', margin: '0 auto', padding: '48px 24px 100px' }}>
 
         {/* Breadcrumb */}

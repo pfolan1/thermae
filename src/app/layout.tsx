@@ -1,6 +1,9 @@
 import type { Metadata } from 'next';
 import { DM_Sans, Playfair_Display } from 'next/font/google';
 import './globals.css';
+import Footer from '@/components/Footer';
+import GoogleAnalytics from '@/components/GoogleAnalytics';
+import CookieBanner from '@/components/CookieBanner';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -47,7 +50,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${dmSans.variable} ${playfair.variable} ${dmSans.className}`}>
+        <GoogleAnalytics />
         {children}
+        <Footer />
+        <CookieBanner />
       </body>
     </html>
   );

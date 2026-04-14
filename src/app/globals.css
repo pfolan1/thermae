@@ -16,6 +16,9 @@ body { background: #ffffff; color: #222222; font-family: 'Inter', sans-serif; }
   .header-meta { display: none !important; }
 }
 
+/* Footer links */
+.footer-link:hover { color: #FF5A5F !important; }
+
 /* Blog post content styles */
 .blog-content {
   font-size: 16px;

@@ -8,6 +8,7 @@ import BackToTop from '@/components/BackToTop';
 import ScrollableRow from '@/components/ScrollableRow';
 import { VENUES, CITIES, COUNTRY_MAP, CITY_REGION_MAP } from '@/data/venues';
 import { haversineDistance, formatDistance } from '@/lib/geo';
+import { trackEvent } from '@/lib/analytics';
 
 const VenueMap = lazy(() => import('@/components/VenueMap'));
 
@@ -173,6 +174,7 @@ export default function HomePage() {
     const val = searchInput.trim();
     if (!val) return;
     setLocationLoading(true); setLocationError('');
+    trackEvent('search_used', { term: val });
     const geocoded = await tryGeocode(val);
     setLocationLoading(false);
     if (!geocoded) {
@@ -339,7 +341,7 @@ export default function HomePage() {
               return (
                 <button
                   key={cat.label}
-                  onClick={() => setCategoryFilter(active ? null : cat.label)}
+                  onClick={() => { const next = active ? null : cat.label; setCategoryFilter(next); if (next) trackEvent('filter_type', { type: next }); }}
                   style={{
                     display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '4px',
                     padding: '10px 14px', borderRadius: '12px', flexShrink: 0,
@@ -362,12 +364,12 @@ export default function HomePage() {
         <div style={{ display: 'flex', flexDirection: 'column', gap: '8px', marginBottom: '20px' }}>
           <ScrollableRow gap={6}>
             {COUNTRIES.map(c => (
-              <Pill key={c} active={countryFilter === c} onClick={() => { setCountryFilter(c); setCity('All'); setRegionFilter('All'); }}>{COUNTRY_LABELS[c]}</Pill>
+              <Pill key={c} active={countryFilter === c} onClick={() => { setCountryFilter(c); setCity('All'); setRegionFilter('All'); if (c !== 'All') trackEvent('filter_country', { country: c }); }}>{COUNTRY_LABELS[c]}</Pill>
             ))}
           </ScrollableRow>
           <ScrollableRow>
             {countryCities.map(c => (
-              <Pill key={c} active={city === c} onClick={() => setCity(c)}>{c === 'All' ? 'All Cities' : c}</Pill>
+              <Pill key={c} active={city === c} onClick={() => { setCity(c); if (c !== 'All') trackEvent('filter_city', { city: c }); }}>{c === 'All' ? 'All Cities' : c}</Pill>
             ))}
           </ScrollableRow>
           {activeRegions.length > 0 && (
@@ -390,7 +392,7 @@ export default function HomePage() {
           )}
           <div style={{ display: 'flex', gap: '6px', flexWrap: 'wrap' }}>
             {TYPE_OPTIONS.map(([val, label]) => (
-              <Pill key={val} active={typeFilter === val} onClick={() => setTypeFilter(val)}>{label}</Pill>
+              <Pill key={val} active={typeFilter === val} onClick={() => { setTypeFilter(val); if (val !== 'all') trackEvent('filter_type', { type: val }); }}>{label}</Pill>
             ))}
           </div>
         </div>
@@ -405,7 +407,7 @@ export default function HomePage() {
             {(['grid', 'map'] as const).map(mode => (
               <button
                 key={mode}
-                onClick={() => setViewMode(mode)}
+                onClick={() => { setViewMode(mode); if (mode === 'map') trackEvent('map_toggle'); }}
                 style={{
                   padding: '7px 16px', border: 'none', cursor: 'pointer',
                   fontFamily: 'inherit', fontSize: '12px', fontWeight: 600,
@@ -448,7 +450,7 @@ export default function HomePage() {
               </div>
             )}
             <div style={{ textAlign: 'center', marginTop: '40px', paddingBottom: '8px' }}>
-              <a href="/submit" style={{ fontSize: '13px', color: '#FF5A5F', textDecoration: 'none', fontWeight: 600 }}>
+              <a href="/submit" onClick={() => trackEvent('suggest_venue_opened')} style={{ fontSize: '13px', color: '#FF5A5F', textDecoration: 'none', fontWeight: 600 }}>
                 Missing a sauna? Suggest one →
               </a>
             </div>

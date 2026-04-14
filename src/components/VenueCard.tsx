@@ -1,7 +1,10 @@
+'use client';
+
 import Link from 'next/link';
 import type { Venue } from '@/data/venues';
 import { FLAG, getTag } from '@/data/venues';
 import { venueSlug } from '@/lib/utils';
+import { trackEvent } from '@/lib/analytics';
 
 interface Props {
   venue: Venue;
@@ -35,7 +38,11 @@ export default function VenueCard({ venue, distance, fromLat, fromLng }: Props) 
       : '';
 
   return (
-    <Link href={`/venues/${slug}/${locationParams}`} style={{ textDecoration: 'none', display: 'block', height: '100%' }}>
+    <Link
+      href={`/venues/${slug}/${locationParams}`}
+      style={{ textDecoration: 'none', display: 'block', height: '100%' }}
+      onClick={() => trackEvent('venue_click', { name: venue.name, city: venue.city, country: venue.country })}
+    >
       <article
         className="venue-card"
         style={{
