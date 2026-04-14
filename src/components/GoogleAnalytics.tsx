@@ -3,7 +3,7 @@
 import Script from 'next/script';
 import { useState, useEffect } from 'react';
 
-const GA_ID = 'G-PLACEHOLDER';
+const GA_ID = 'G-1CS1TLYCRK';
 
 export default function GoogleAnalytics() {
   const [consent, setConsent] = useState(false);
