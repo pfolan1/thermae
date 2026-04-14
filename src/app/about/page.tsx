@@ -261,12 +261,12 @@ export default function AboutPage() {
             <P>
               You can <a href="/submit" style={{ color: CORAL, textDecoration: 'none', fontWeight: 600 }}>suggest your venue</a> for
               free listing, or claim an existing listing to keep your details up to date. Featured listings are
-              available from <strong>£49 per month</strong> — these appear at the top of search results, include
+              available for venue owners who want to stand out — these appear at the top of search results, include
               expanded descriptions, and are highlighted across our directory.
             </P>
             <P style={{ marginBottom: '24px' }}>
-              Email us at <a href="mailto:hello@thermae.app" style={{ color: CORAL, textDecoration: 'none', fontWeight: 600 }}>hello@thermae.app</a> to
-              claim your listing or discuss featured placement.
+              Interested in a featured listing? Email us at <a href="mailto:hello@thermae.app" style={{ color: CORAL, textDecoration: 'none', fontWeight: 600 }}>hello@thermae.app</a> to
+              find out more.
             </P>
             <a
               href="/submit"

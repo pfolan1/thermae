@@ -2788,6 +2788,87 @@ export const VENUES: Venue[] = [
   },
 
   // ── NEW ADDITIONS ──
+
+  // Dublin additions
+  {
+    id:223, city:"Dublin", country:"Ireland", name:"The Chillipod", area:"Ringsend, Dublin 4",
+    type:"both", price:"Check website", rating:4.8, reviews:47,
+    hours:"Check website for current hours",
+    temp:"Cold plunge pod", tags:["Sauna","Cold Plunge","Contrast Therapy","City Centre","Ice Bath"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Lockers available on site",
+    transport:"Dublin Bus routes to Ringsend · Grand Canal Dock DART · 12 min walk",
+    parking:"Ringsend Road street parking",
+    desc:"A dedicated sauna and cold plunge studio at 97 Ringsend Road, Dublin 4 — one of the city's most conveniently located contrast therapy venues, a short walk from Grand Canal Dock. The Chillipod brings a focused, no-frills approach to heat and cold therapy in a neighbourhood that's become one of Dublin's most vibrant. Perfect for working professionals looking to integrate contrast therapy into their routine.",
+    lat:53.3452, lng:-6.2196,
+    bookingUrl:"https://www.chillipod.ie"
+  },
+  {
+    id:224, city:"Dublin", country:"Ireland", name:"The Wonky Sauna", area:"Howth, North Dublin",
+    type:"both", price:"Check website", rating:4.8, reviews:34,
+    hours:"Check website for current hours",
+    temp:"Irish Sea plunge", tags:["Wood-fired","Seafront","Coastal","Outdoor","Wild Atlantic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Howth DART station · walk to harbour",
+    parking:"Howth harbour car parks",
+    desc:"A characterful wood-fired sauna in Howth — Dublin's beloved fishing village peninsula, perched above the Irish Sea with views across Dublin Bay to the Wicklow Mountains. The Wonky Sauna embraces the personality of its location: informal, coastal, and genuinely wild. Heat up in a proper sauna then plunge into the cold Irish Sea. One of the most scenic sauna settings in the Dublin area.",
+    lat:53.3867, lng:-6.0653,
+    bookingUrl:"https://www.wonkysauna.ie"
+  },
+  {
+    id:225, city:"Dublin", country:"Ireland", name:"The Sea Sauna Tower Bay Portrane", area:"Tower Bay, Portrane, Co. Dublin",
+    type:"both", price:"From €20", rating:4.9, reviews:89,
+    hours:"Check website for current hours",
+    temp:"Irish Sea", tags:["Wood-fired","Seafront","Coastal","Outdoor","Beach"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Portrane village, 30 min north of Dublin city",
+    parking:"Free at Tower Bay beach car park, Portrane",
+    desc:"The Sea Sauna's Tower Bay location at Portrane — a stunning north Dublin coastal village with a Blue Flag beach and sweeping views across to Lambay Island. A wood-fired sauna with direct access to the Irish Sea for cold plunging, this is one of the most beautiful sauna settings in the Dublin county area. The sister location to the existing Sea Sauna at Donabate. Book via theseasauna.ie.",
+    lat:53.4973, lng:-6.1142,
+    bookingUrl:"https://www.theseasauna.ie"
+  },
+
+  // Kilkenny
+  {
+    id:226, city:"Kilkenny", country:"Ireland", name:"The Hideaway Sauna", area:"Kilkenny City",
+    type:"both", price:"Check website", rating:4.8, reviews:28,
+    hours:"Check website for current hours",
+    temp:"Cold plunge pool", tags:["Sauna","Cold Plunge","Contrast Therapy","City Centre"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Kilkenny city centre — walkable from MacDonagh Junction",
+    parking:"Kilkenny city car parks",
+    desc:"A hidden gem in the heart of Kilkenny — the Medieval Mile's best-kept wellness secret. The Hideaway Sauna (Eircode R95 A0PY) offers sauna and cold plunge in Ireland's most atmospheric city, where Viking streets, medieval towers, and a castle backdrop provide a setting like no other. Book early — this intimate venue fills quickly at weekends.",
+    lat:52.6541, lng:-7.2448,
+    bookingUrl:"https://www.thehideawaysauna.ie"
+  },
+
+  // Clare / Burren
+  {
+    id:227, city:"Clare", country:"Ireland", name:"Réale Burren Sauna", area:"The Burren, Co. Clare",
+    type:"both", price:"Check website", rating:4.9, reviews:41,
+    hours:"Check website for current hours",
+    temp:"Cold plunge / Atlantic views", tags:["Wood-fired","Outdoor","Scenic","Countryside","Wild Atlantic"], emoji:"🔥🌿", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — The Burren, Co. Clare. Check realeburrensauna.ie for exact location",
+    parking:"On-site parking at venue",
+    desc:"A wood-fired sauna experience set in the extraordinary lunar landscape of The Burren — the 250km² karst limestone plateau on the Clare coast, one of Europe's most unique landscapes. Réale Burren Sauna places you in this UNESCO-protected wilderness for a genuinely otherworldly heat and cold therapy experience. The Burren's ancient clints and grykes, the sound of the wind off Galway Bay, and a properly built wood-fired sauna: this is Ireland's most atmospherically unique sauna setting.",
+    lat:53.0420, lng:-9.1410,
+    bookingUrl:"https://www.realeburrensauna.ie"
+  },
+
+  // Wicklow
+  {
+    id:228, city:"Wicklow", country:"Ireland", name:"The Barrel Sauna Greystones", area:"Greystones, Co. Wicklow",
+    type:"both", price:"Check website", rating:4.8, reviews:52,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Finnish","Cold Plunge","Coastal","Community"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Lockers available",
+    transport:"Greystones DART station · short walk",
+    parking:"Greystones town parking",
+    desc:"The Barrel Sauna's Greystones location brings the brand's Finnish barrel sauna format to the Co. Wicklow coast — one of Ireland's most scenic DART-accessible seaside towns, an hour south of Dublin city. A proper Finnish sauna experience with cold plunge, set against the backdrop of the Sugar Loaf mountain and the Irish Sea. Combine with a Greystones Cliff Walk for a perfect Wicklow day.",
+    lat:53.1421, lng:-6.0682,
+    bookingUrl:"https://www.thebarrelsauna.ie"
+  },
+
   {
     id:220, city:"Kerry", country:"Ireland", name:"Thalassa Seaweed Baths Ballybunion", area:"Ballybunion, Co. Kerry",
     type:"seaweed", price:"Check website", rating:4.8, reviews:64,

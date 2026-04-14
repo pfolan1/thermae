@@ -30,6 +30,10 @@ const post: BlogPost = {
 
 <h2>City Centre and Inner City</h2>
 
+<h3>The Chillipod, Ringsend</h3>
+
+<p><strong>The Chillipod</strong> at 97 Ringsend Road, Dublin 4 is one of the city's most conveniently located contrast therapy venues — a short walk from Grand Canal Dock DART station and the tech offices of the Silicon Docks. The offering is focused and purposeful: a proper sauna and a cold plunge pod, designed for the person who wants the full contrast therapy experience without fuss. Ringsend is one of Dublin's most characterful inner-city neighbourhoods, and The Chillipod fits naturally into its increasingly wellness-aware community. An excellent option if you're working nearby or coming in from the Dart.</p>
+
 <h3>Riverbank Sauna</h3>
 
 <p><strong>Riverbank Sauna</strong> is exactly what it suggests: a sauna experience in Dublin city, near the Liffey, accessible without a car. This is the venue for Dubliners who want to integrate sauna practice into a regular urban routine — for the commuter who wants to use it after work, for the city-dweller who doesn't want to drive to the coast every time they want a proper sauna.</p>
