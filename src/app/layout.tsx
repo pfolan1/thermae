@@ -18,6 +18,7 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://thermae.app'),
   title: {
     default: 'Thermae — Nordic Sauna & Cold Plunge Directory',
     template: '%s | Thermae',
@@ -32,6 +33,7 @@ export const metadata: Metadata = {
     type: 'website',
     locale: 'en_GB',
     siteName: 'Thermae',
+    images: [{ url: '/og-image.png', width: 1200, height: 630, alt: 'Thermae — Sauna & Cold Plunge Directory' }],
   },
 };
 
@@ -42,6 +44,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <link rel="icon" href="/favicon.ico" sizes="any" />
         <link rel="icon" href="/favicon-32x32.png" type="image/png" sizes="32x32" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="manifest" href="/manifest.json" />
       </head>
       <body className={`${dmSans.variable} ${playfair.variable} ${dmSans.className}`}>
         {children}
