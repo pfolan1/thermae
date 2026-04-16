@@ -2905,6 +2905,166 @@ export const VENUES: Venue[] = [
     lat:51.9536, lng:-7.8447,
     bookingUrl:"https://www.myhotspot.ie"
   },
+
+  // ── LONDON (NEW 2026 ADDITIONS) ──
+  {
+    id:229, city:"London", country:"UK", name:"Skuna Sauna Boats", area:"Canary Wharf",
+    type:"both", price:"From £15pp", rating:5.0, reviews:159,
+    hours:"Daily 10am–10pm",
+    temp:"Rooftop cold plunge + dock water", tags:["Floating","Wood-fired","Canary Wharf","Unique","East London"], emoji:"🚢🔥", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"West India Quay (DLR) · 2 min walk",
+    parking:"NCP West India Quay · 5 min",
+    desc:"London's floating wood-fired sauna experience at West India Quay, Canary Wharf. Skuna's self-driving boats each carry a proper cedar sauna (up to 16 people), rooftop cold plunge and BBQ facilities — no boating experience required. Perfect for groups, celebrations, or a genuinely unique contrast therapy session on the historic dockwater.",
+    lat:51.5075, lng:-0.0207,
+    bookingUrl:"https://skunaboats.com"
+  },
+  {
+    id:230, city:"London", country:"UK", name:"Saunos Canal Sauna", area:"Islington / Angel",
+    type:"both", price:"From £20pp", rating:4.9, reviews:87,
+    hours:"Check website for current timetable",
+    temp:"2°C ice bath", tags:["Floating","Regent's Canal","Unique","Islington","Wood-fired"], emoji:"🚢🔥", open:true,
+    hygiene:"A+", lockerNote:"Limited space — bring a dry bag only",
+    transport:"Angel (Northern) · 15 min walk · or bus 38/56 to Packington St",
+    parking:"Very limited — public transport strongly recommended",
+    desc:"A Scandinavian-inspired floating sauna moored on Regent's Canal at Eagle Wharf Marina, Islington. The sauna is hand-built with lavender and lavender scent — heat to 75–95°C in a six-person cabin on a converted Dutch barge, then plunge into a 2°C stainless steel ice bath at the bow. Intimate, atmospheric and genuinely unique — one of London's most memorable wellness experiences.",
+    lat:51.5328, lng:-0.0954,
+    bookingUrl:"https://www.legitfit.com/p/timetable/saunoslimited"
+  },
+  {
+    id:231, city:"London", country:"UK", name:"Lowlu Kentish Town", area:"Kentish Town",
+    type:"both", price:"From £9 off-peak", rating:4.7, reviews:58,
+    hours:"Daily 7am–9pm",
+    temp:"3–15°C ice baths (6 options)", tags:["Finnish","Ice Bath","North London","Community","Budget"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Lockers provided",
+    transport:"Kentish Town (Northern) · 5 min walk",
+    parking:"Street parking on Caversham Road",
+    desc:"London's most affordable new sauna complex at 44 Caversham Road NW5. Five saunas ranging from 75–95°C in thermo-spruce-lined cabins and six cold plunge options from 3–15°C — more sauna-and-plunge variety than almost anywhere else in London. Off-peak from just £9, with an app-based unlimited subscription. One of London's best-value serious sauna venues, opened 2025.",
+    lat:51.5519, lng:-0.1449,
+    bookingUrl:"https://www.lowlu.co"
+  },
+  {
+    id:232, city:"London", country:"UK", name:"Lowlu Wandsworth", area:"Wandsworth",
+    type:"both", price:"From £9 off-peak", rating:4.8, reviews:43,
+    hours:"Daily 7am–9pm",
+    temp:"Cold plunge pools", tags:["Finnish","Ice Bath","South London","Community","Budget"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Lockers provided",
+    transport:"Wandsworth Town (rail) · 8 min walk",
+    parking:"Street parking on Armoury Way",
+    desc:"Lowlu's South West London location at 2 Armoury Way, Wandsworth SW18 — the same Scandinavian-inspired sauna experience as Kentish Town, with shared cold plunges, changing areas and showers, from just £9 off-peak via the Lowlu app. One of London's most accessible and affordable sauna options south of the river.",
+    lat:51.4577, lng:-0.1890,
+    bookingUrl:"https://www.lowlu.co"
+  },
+  {
+    id:233, city:"London", country:"UK", name:"Reset Sauna Islington", area:"Islington / Highbury",
+    type:"both", price:"Check website", rating:4.9, reviews:31,
+    hours:"Check website for current hours",
+    temp:"1–9°C ice baths (8 baths)", tags:["Finnish","Ice Bath","North London","Breathwork","Guided","New 2026"], emoji:"🔥🧊", open:true,
+    hygiene:"A+", lockerNote:"Lockers and towels provided",
+    transport:"Highbury & Islington (Victoria/Overground) · 3 min walk",
+    parking:"Limited street parking on Upper Street",
+    desc:"Opened January 2026 at 240 Upper Street, Reset is one of London's newest and most ambitious contrast therapy venues. A 25-person charred oak Finnish sauna runs at up to 105°C — one of the hottest in London — with eight stainless steel ice baths from 1–9°C. All sessions are guided (not self-service): contrast therapy classes, expert breathwork, and alcohol-free social evenings with DJs and guest speakers. A serious wellness venue with a genuine programme.",
+    lat:51.5437, lng:-0.1028,
+    bookingUrl:"https://resetsauna.com"
+  },
+  {
+    id:234, city:"London", country:"UK", name:"Innervisions Alchemy", area:"Bermondsey / South Bermondsey",
+    type:"both", price:"From £8 off-peak", rating:4.8, reviews:94,
+    hours:"Mon–Wed 6am–9:30pm · Thu–Fri 7am–9:30pm · Sat–Sun 8am–9:30pm",
+    temp:"1°C cold plunge + ice baths", tags:["Wood-fired","Community","Budget","South London","Cold Plunge"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Lockers provided",
+    transport:"South Bermondsey (rail) · 7 min walk · or Queen's Road Peckham (Overground)",
+    parking:"Street parking on Rollins Street",
+    desc:"A hidden South Bermondsey wellness sanctuary at Ilderton Wharf, Rollins Street SE15. Three large wood-fired saunas and three cold plunge baths (including 1°C plunges) in an industrial waterside setting. One of London's most affordable community sauna venues at from £8 off-peak. Classes, yoga, sound baths, private treatments and studio hire also on the programme.",
+    lat:51.4799, lng:-0.0541,
+    bookingUrl:"https://www.innervisionsalchemy.co.uk"
+  },
+  {
+    id:235, city:"London", country:"UK", name:"Old Kent Road Sauna", area:"Old Kent Road / Peckham",
+    type:"sauna", price:"£11 per session", rating:4.7, reviews:67,
+    hours:"Tue–Fri 5pm–9pm · Sat 10am–8pm · Sun 10am–5pm",
+    temp:"Cold shower & plunge", tags:["Finnish","Community","South London","Budget","Aufguss"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Lockers provided",
+    transport:"Queen's Road Peckham (Overground) · 8 min walk · or bus P12",
+    parking:"Street parking on Old Kent Road",
+    desc:"A community Finnish sauna in the railway arches at 897a Old Kent Road SE15 — one of London's most honest and affordable sauna spaces at £11 per 1-hour session. Regular Aufguss ceremonies, private hire for groups up to 30 (from £400 for 2 hours), and a growing events programme. Simple, no-frills, and exactly what South London's Old Kent Road community needed.",
+    lat:51.4832, lng:-0.0543,
+    bookingUrl:"https://www.oldkentroadsauna.com"
+  },
+  {
+    id:236, city:"London", country:"UK", name:"The Cabin Clapham Common", area:"Clapham",
+    type:"both", price:"£19 per 60 min", rating:4.8, reviews:112,
+    hours:"Seasonal (Oct–May) · check website for schedule",
+    temp:"Cold plunge pool", tags:["Outdoor","Seasonal","Wood-fired","South London","Park"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities on site",
+    transport:"Clapham Common (Northern) · 3 min walk",
+    parking:"Clapham Common car park",
+    desc:"A Scandinavian sauna and cold plunge installed on Clapham Common each autumn, running October to May. Sessions are £19/hour; a 15-session pack drops it to £13.30. Located next to the water play area on the Common — an extraordinary setting for an outdoor winter sauna. Slots sell out 24–48 hours ahead in peak season, so book early.",
+    lat:51.4613, lng:-0.1488,
+    bookingUrl:"https://thecabinsauna.co.uk"
+  },
+  {
+    id:237, city:"London", country:"UK", name:"Sweat Lounge Chiswick", area:"Chiswick",
+    type:"sauna", price:"£35 per 30 min", rating:5.0, reviews:368,
+    hours:"Check website for current hours",
+    temp:"Infrared heat only", tags:["Infrared","West London","Boutique","Private Pods"], emoji:"🔥", open:true,
+    hygiene:"A+", lockerNote:"Lockers provided",
+    transport:"Chiswick Park (District) · 5 min walk",
+    parking:"Street parking on Chiswick High Road",
+    desc:"London's top-rated infrared sauna studio at 48 Chiswick High Road W4 — consistently 5-star on Google with 370+ reviews. Solo pods and premiere shared cabins with infrared light therapy, combining targeted body heat with coloured light. Unlike traditional saunas, infrared heats the body directly for a less intense but deeply therapeutic experience. Perfect for recovery, skin and detox. 20% off your first treatment.",
+    lat:51.4941, lng:-0.2671,
+    bookingUrl:"https://www.sweatlounge.co.uk"
+  },
+
+  // ── DUBLIN / WICKLOW (NEW ADDITIONS) ──
+  {
+    id:238, city:"Dublin", country:"Ireland", name:"Restore Sauna Portmarnock", area:"Portmarnock, Co. Dublin",
+    type:"both", price:"From €12 per 30 min", rating:4.8, reviews:56,
+    hours:"Check website / Instagram @restore_dub for current sessions",
+    temp:"Irish Sea cold plunge", tags:["Wood-fired","Coastal","Outdoor","Community","Beach"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Portmarnock DART · 10 min walk to White Sands Hotel",
+    parking:"White Sands Hotel car park, Coast Road, Portmarnock",
+    desc:"A beautifully positioned barrel sauna in the car park of the White Sands Hotel on the Coast Road, Portmarnock — steps from the beach and a short stroll from the Irish Sea. Sessions from €12 for 30 minutes, walk-ins welcome or book via Wunderbook. A real community spirit, started by two friends — perfect to combine with a Portmarnock beach swim.",
+    lat:53.4148, lng:-6.1427,
+    bookingUrl:"https://wunderbook.app/d7-sauna/"
+  },
+  {
+    id:239, city:"Dublin", country:"Ireland", name:"D7 Sauna", area:"Phibsborough, Dublin 7",
+    type:"both", price:"€15 per session", rating:4.8, reviews:78,
+    hours:"Wed–Fri 4pm–10pm · Sat–Sun 10am–9pm",
+    temp:"Cold plunge pools", tags:["Finnish","Community","Urban","Dublin 7","Canal"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities on site",
+    transport:"Bus 9/83/122 to Phibsborough · 3 min walk · or Broadstone–DIT stop",
+    parking:"Street parking on Royal Canal Bank",
+    desc:"Dublin 7's dedicated sauna and cold plunge venue at Units 2&3, Royal Canal Bank, Phibsborough D07 R52H — sitting right on the banks of the Royal Canal. Sessions are €15 per person (or €10 with a membership pack); private hire for up to 10 costs €100. Wednesday to Sunday, with a welcoming community atmosphere in one of Dublin's most vibrant and up-and-coming neighbourhoods.",
+    lat:53.3614, lng:-6.2763,
+    bookingUrl:"https://d7sauna.ie"
+  },
+  {
+    id:240, city:"Dublin", country:"Ireland", name:"Helios Sauna Dundrum", area:"Dundrum, Dublin 14",
+    type:"both", price:"€16.95–€18.95 / 45 min", rating:4.8, reviews:134,
+    hours:"Mon–Sun 8am–10pm",
+    temp:"Communal ice bath + cold plunge barrels", tags:["Finnish","Ice Bath","South Dublin","Dundrum","Community"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities on site",
+    transport:"Dundrum (Luas Green) · 2 min walk",
+    parking:"Dundrum Village Centre paid car park · 1 min",
+    desc:"Helios Sauna's Dundrum village location at 4 Main Street, Dundrum, Dublin 14 D14 V977 — a short stroll from the Luas Green Line. Two saunas (one communal, one intimate two-person cabin), a communal ice bath, cold plunge barrels and an outdoor wood-fired hot tub. Coffee and drinks also served. Off-peak €16.95 (Mon–Fri 8am–5pm), peak €18.95. One of south Dublin's most popular wellness stops.",
+    lat:53.2899, lng:-6.2436,
+    bookingUrl:"https://heliossauna.ie/products/dundrum"
+  },
+  {
+    id:241, city:"Dublin", country:"Ireland", name:"The Mindful Yard", area:"The Liberties, Dublin 8",
+    type:"both", price:"From €10", rating:4.9, reviews:89,
+    hours:"Evening sessions · check website for days and times",
+    temp:"Cold shower / cold plunge", tags:["Wood-fired","Community","Urban","The Liberties","Dublin 8"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities on site",
+    transport:"Bus 123/151/77A to The Liberties · 3 min walk",
+    parking:"Street parking in The Liberties",
+    desc:"A wood-fired sauna tucked into Crostick Alley in the heart of Dublin's historic Liberties district — one of the city's oldest and most characterful neighbourhoods. Evening sessions in an intimate, community-focused setting with cold plunge. Monday deal: 2 people for €20. The Liberties setting — with its distilleries, markets and community spirit — makes this one of Dublin's most uniquely located sauna experiences.",
+    lat:53.3383, lng:-6.2804,
+    bookingUrl:"https://mindfulyard.ie"
+  },
 ];
 
 export const CITIES = [
