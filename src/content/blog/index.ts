@@ -1,4 +1,5 @@
 import type { BlogPost } from './types';
+import healthBenefitsSauna from './health-benefits-sauna-science-2026';
 import contrastTherapy from './contrast-therapy-beginners-guide';
 import saunasIreland from './saunas-ireland-complete-guide';
 import seaweedBaths from './seaweed-baths-ireland';
@@ -13,6 +14,7 @@ import saunasLondon from './best-saunas-london';
 export type { BlogPost };
 
 export const ALL_POSTS: BlogPost[] = [
+  healthBenefitsSauna,
   saunasLondon,
   saunasDublin,
   saunasScotland,
@@ -29,4 +31,4 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return ALL_POSTS.find(p => p.slug === slug);
 }
 
-export { contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
+export { healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };

@@ -13,6 +13,8 @@ Utility scripts for weekly site maintenance. Run from the project root unless no
 | `check-blog-posts.js`    | `npm run check-blogs`  | Check blog posts for stale venue references |
 | `setup-scheduler.ps1`    | *(run once)*           | Register Windows Task Scheduler job |
 | `WEEKLY-PROMPT.md`       | *(read this)*          | Prompt to paste into Claude Code each Sunday |
+| `generate-blog-post.js`  | *(GitHub Actions)*     | Auto-generate a blog post using the Anthropic API |
+| `blog-schedule.json`     | *(config)*             | Scheduled blog post topics and publish dates |
 
 ---
 
@@ -131,6 +133,48 @@ Register-ScheduledTask -TaskName "Thermae Monitor New Saunas" `
 | 🌊 Suspect coords | Coordinates fall outside the expected country bounding box |
 
 Redirects (301/302/307/308) are followed up to 3 hops before classifying.
+
+---
+
+## 7. Automated Blog Post System
+
+Blog posts are generated automatically every other Monday at 6am BST via the GitHub Action at `.github/workflows/auto-blog.yml`.
+
+### How it works
+
+1. GitHub Actions runs the workflow every Monday at 5am UTC (6am BST).
+2. `scripts/generate-blog-post.js` checks `scripts/blog-schedule.json` for a topic scheduled for today.
+3. If a topic is due, it calls the Anthropic API (Claude) to write a 1,000+ word blog post.
+4. The post is saved as a new TypeScript file in `src/content/blog/`.
+5. `src/content/blog/index.ts` is updated to include the new post.
+6. The topic is marked `"published": true` in `blog-schedule.json`.
+7. Changes are committed and pushed to `main` — Netlify auto-deploys.
+
+### Required: Add the Anthropic API Key as a GitHub Secret
+
+> **You must do this once before the first automated post runs.**
+
+1. Go to: **https://github.com/pfolan1/thermae/settings/secrets/actions**
+2. Click **"New repository secret"**
+3. Name: `ANTHROPIC_API_KEY`
+4. Value: your Anthropic API key (from https://console.anthropic.com/keys)
+5. Click **"Add secret"**
+
+Without this secret, the workflow will fail when it tries to call the API.
+
+### Manually trigger a blog post
+
+Go to **Actions → Auto Blog Post → Run workflow** in the GitHub UI, optionally checking "Force generate" to bypass the date check.
+
+### Blog post schedule
+
+Defined in `scripts/blog-schedule.json`. Add new entries following the existing format. The `"published"` field is set to `true` automatically after a post is generated.
+
+### Running the generator locally (for testing)
+
+```bash
+ANTHROPIC_API_KEY=your_key_here FORCE_GENERATE=true node scripts/generate-blog-post.js
+```
 
 ---
 
