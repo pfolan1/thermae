@@ -3319,7 +3319,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — no direct public transport to Oxford Island",
     parking:"Free car park at Oxford Island Discovery Centre",
     desc:"Hot Rocks Sauna at Oxford Island on the shores of Lough Neagh — one of Northern Ireland's finest outdoor sauna experiences with panoramic lough views. Wood-fired heat followed by a wild dip in Lough Neagh, the largest freshwater lake in the British Isles. A tranquil and spectacular setting in the heart of Northern Ireland. Book in advance via the website.",
-    lat:54.4938, lng:-6.2682,
+    lat:54.548384, lng:-6.30789,
     bookingUrl:"https://www.hotrocksni.com/"
   },
   {
@@ -3332,7 +3332,7 @@ export const VENUES: Venue[] = [
     transport:"Bus routes to Ballymena town centre · 10 min walk",
     parking:"Free parking at retail park",
     desc:"JD Gyms Ballymena at the retail park — a large budget gym with sauna and steam room included with membership or a low-cost day pass. Excellent value for sauna access in the Ballymena area. Clean, well-maintained facilities in a modern gym environment.",
-    lat:54.8642, lng:-6.2716,
+    lat:54.850641, lng:-6.258932,
     bookingUrl:"https://www.jdgyms.co.uk/gym/ballymena/"
   },
   {
@@ -3345,7 +3345,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — Benone Beach is on the rural Causeway Coast",
     parking:"Benone Tourist Complex car park on site",
     desc:"HotBox Benone — a wood-fired barrel sauna at award-winning Benone Beach on Northern Ireland's Causeway Coastal Route. Positioned on one of Ireland's finest Blue Flag beaches with views across the Atlantic, this is an exceptional coastal sauna experience. Cold plunge in the Atlantic after your session. Seasonal availability — book well in advance.",
-    lat:55.1539, lng:-6.9327,
+    lat:55.163443, lng:-6.879525,
     bookingUrl:"https://hotboxni.com/"
   },
   {
@@ -3358,7 +3358,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — National Trust car park at Portstewart Strand",
     parking:"National Trust car park at Portstewart Strand (charge applies)",
     desc:"Sauna & Sea at Portstewart Strand — a spectacular outdoor sauna on one of Northern Ireland's most beautiful National Trust beaches. Wood-fired heat followed by a sea plunge into the Atlantic on the Causeway Coast. Limited sessions available — book ahead. One of the most scenic sauna experiences in Ireland.",
-    lat:55.1854, lng:-6.7088,
+    lat:55.172225, lng:-6.724689,
     bookingUrl:"https://www.saunaandsea.co.uk/"
   },
   {
@@ -3371,7 +3371,7 @@ export const VENUES: Venue[] = [
     transport:"Multiple bus routes to Kennedy Centre from city centre",
     parking:"Kennedy Centre car park",
     desc:"Spa Experience Belfast at Kennedy Centre on the Falls Road — a full day spa with sauna, steam room, hydrotherapy pool and relaxation facilities. Offers affordable spa access in West Belfast, popular for spa days, couples' sessions and birthday experiences. Good range of day pass and package options.",
-    lat:54.5789, lng:-5.9583,
+    lat:54.580146, lng:-5.962375,
     bookingUrl:"https://spaexperience.co.uk/"
   },
   {
@@ -3384,7 +3384,7 @@ export const VENUES: Venue[] = [
     transport:"Multiple bus routes · short walk from Belfast city centre",
     parking:"NCP car parks nearby",
     desc:"JD Gyms Belfast — a large budget gym in North Belfast with sauna and steam room included in gym access. Excellent value for sauna access in the city, with a day pass available for non-members. Modern facilities in a high-footfall location near Belfast city centre.",
-    lat:54.6064, lng:-5.9727,
+    lat:54.612499, lng:-5.95486,
     bookingUrl:"https://www.jdgyms.co.uk/gym/belfast/"
   },
   {
@@ -3397,7 +3397,7 @@ export const VENUES: Venue[] = [
     transport:"Buses to Cavehill Road from Belfast city centre",
     parking:"On-site parking available",
     desc:"Redbarn Cavehill — a private wood-fired outdoor sauna experience at the foot of Belfast's iconic Cave Hill. A stunning natural backdrop for a traditional Finnish-style sauna session, set in a private rural spot on the edge of the city with open countryside views. Advance booking essential.",
-    lat:54.6364, lng:-5.9476,
+    lat:54.635888, lng:-5.949039,
     bookingUrl:"https://redbarnni.com/"
   },
   {
@@ -3410,7 +3410,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — Rostrevor village is rural",
     parking:"On-site parking",
     desc:"Revive Saunas in the picturesque village of Rostrevor at the foot of the Mourne Mountains — a beautiful outdoor wood-fired sauna experience in one of Northern Ireland's most scenic areas. Cold plunge facilities available. Ideal for groups and couples seeking a nature sauna experience in the Mournes AONB.",
-    lat:54.1033, lng:-6.2049,
+    lat:54.130514, lng:-6.202075,
     bookingUrl:"https://revivesaunasni.com/"
   },
   {
@@ -3423,7 +3423,7 @@ export const VENUES: Venue[] = [
     transport:"Holywood train station 5 min walk · Belfast–Bangor line",
     parking:"Free car park at retail park",
     desc:"Bannatyne Health Club Holywood at Kinnegar Retail Park — a premium health club with sauna, steam room, jacuzzi and 20-metre swimming pool. Day passes available for non-members. Conveniently close to Holywood town centre and train station on the Belfast–Bangor line. A polished mid-range spa and gym option on the north side of Belfast Lough.",
-    lat:54.6376, lng:-5.8231,
+    lat:54.623856, lng:-5.851131,
     bookingUrl:"https://www.bannatyne.co.uk/health-club/holywood"
   },
   {
@@ -3436,7 +3436,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended",
     parking:"On-site parking",
     desc:"Sudor Club 24 in Bangor — a private outdoor wood-fired sauna and cold plunge experience run by the Sudor sauna collective. Intimate, bespoke sessions in a beautiful County Down setting. Private bookings for groups and couples. Part of the Sudor family of outdoor sauna experiences across the Ards Peninsula.",
-    lat:54.6464, lng:-5.6802,
+    lat:54.645324, lng:-5.674751,
     bookingUrl:"https://www.sudoroutdoorsaunas.com/"
   },
   {
@@ -3449,7 +3449,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — rural location outside Bangor",
     parking:"Farm car park on site",
     desc:"Sudor Quarries Farm — a rural outdoor sauna and cold plunge experience set on a working farm outside Bangor in County Down. Wood-fired sauna with a natural cold plunge pool surrounded by farmland — a genuinely off-grid, restorative experience. Part of the Sudor outdoor sauna collective. Book in advance.",
-    lat:54.6598, lng:-5.7050,
+    lat:54.634057, lng:-5.638158,
     bookingUrl:"https://www.sudoroutdoorsaunas.com/"
   },
   {
@@ -3462,7 +3462,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Groomsport village 1 min walk",
     parking:"Groomsport Harbour car park",
     desc:"HotBox Groomsport — a wood-fired barrel sauna at the charming harbour village of Groomsport on the County Down coast. Heat up in the barrel sauna then plunge into the Irish Sea off the pier. A quintessential coastal sauna experience with views across Belfast Lough to the Antrim Hills. Seasonal and weekend availability — book early.",
-    lat:54.6708, lng:-5.6228,
+    lat:54.676038, lng:-5.617067,
     bookingUrl:"https://hotboxni.com/"
   },
   {
@@ -3475,7 +3475,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — Castle Ward is 7 miles from Downpatrick",
     parking:"National Trust car park on site (charge applies)",
     desc:"Sudor Castle Ward — an exceptional outdoor sauna and cold plunge experience at the National Trust's Castle Ward estate on the shores of Strangford Lough. Set against the backdrop of the 18th-century castle with views over the lough, this is one of Northern Ireland's most spectacular sauna settings. Cold plunge in Strangford Lough. Advance booking via the National Trust website.",
-    lat:54.3725, lng:-5.5716,
+    lat:54.358759, lng:-5.579151,
     bookingUrl:"https://www.nationaltrust.org.uk/visit/northern-ireland/castle-ward"
   },
 
@@ -3490,7 +3490,7 @@ export const VENUES: Venue[] = [
     transport:"Criccieth train station 5 min walk · Cambrian Coast line",
     parking:"Criccieth town car parks",
     desc:"Sawna Criccieth on the beach at the historic town of Criccieth in the Llŷn Peninsula — a traditional wood-fired sauna with Cardigan Bay views and the medieval castle on the headland above. One of North Wales's most picturesque beach sauna settings. Cold sea dip after your session. Train-accessible from Pwllheli and Machynlleth on the scenic Cambrian Coast line.",
-    lat:52.9194, lng:-4.2336,
+    lat:52.919861, lng:-4.223283,
     bookingUrl:"https://sawna.co.uk/"
   },
   {
@@ -3503,7 +3503,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — Bala is in rural Gwynedd",
     parking:"Bala town car parks nearby",
     desc:"Niku-Naku Sauna at Bala Lake (Llyn Tegid) in Gwynedd — a wood-fired outdoor sauna on the shores of Wales's largest natural lake at the foot of the Aran mountains. Cold plunge in the pristine lake waters after your sauna session. A stunning and tranquil setting deep in the Welsh countryside.",
-    lat:52.9073, lng:-3.6861,
+    lat:52.909116, lng:-3.600627,
     bookingUrl:"https://niku-naku.co.uk/"
   },
   {
@@ -3516,7 +3516,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — Newborough is in rural southwest Anglesey",
     parking:"Newborough forest car park",
     desc:"Sawna Bach (Little Sauna) on the Isle of Anglesey near Newborough — a compact, beautiful wood-fired sauna in the dunes near Newborough Warren National Nature Reserve and Llanddwyn Island. Views of Snowdonia across the Menai Strait. A deeply peaceful Welsh island sauna experience in a protected coastal landscape.",
-    lat:53.2218, lng:-4.5112,
+    lat:53.21898, lng:-4.500014,
     bookingUrl:"https://sawnabach.co.uk/"
   },
   {
@@ -3542,7 +3542,7 @@ export const VENUES: Venue[] = [
     transport:"Bus routes to Llanberis from Caernarfon",
     parking:"Village car parks in Llanberis",
     desc:"Sawna Bach in Llanberis at the gateway to Snowdon — a wood-fired outdoor sauna in the heart of Eryri (Snowdonia National Park) with views of Llyn Padarn lake and the Snowdon massif. Perfect for walkers after a Snowdon summit, or anyone seeking mountain-and-lake sauna serenity in one of Wales's finest landscapes.",
-    lat:53.1168, lng:-4.1323,
+    lat:53.120604, lng:-4.115282,
     bookingUrl:"https://sawnabach.co.uk/"
   },
   {
@@ -3555,7 +3555,7 @@ export const VENUES: Venue[] = [
     transport:"Bus routes to Beaumaris from Bangor",
     parking:"Beaumaris town car parks",
     desc:"Seacoast Sauna in Beaumaris on the Menai Strait — a coastal wood-fired sauna with views of the medieval castle and across to Snowdonia. One of Anglesey's finest sauna experiences in one of Wales's most beautiful towns. Sea swim in the Strait after your session. The UNESCO World Heritage Beaumaris Castle is a short walk away.",
-    lat:53.2648, lng:-4.0906,
+    lat:53.255389, lng:-4.103203,
     bookingUrl:"https://seacoastsauna.co.uk/"
   },
   {
@@ -3568,7 +3568,7 @@ export const VENUES: Venue[] = [
     transport:"Bus services to Llangollen from Wrexham and Corwen",
     parking:"Mile End Mill car park",
     desc:"STōKED Sawna at Mile End Mill on the banks of the River Dee in Llangollen — a wood-fired outdoor sauna in a stunning riverside setting in the Dee Valley AONB. The River Dee provides natural cold water immersion after your session. Located near the UNESCO World Heritage Pontcysyllte Aqueduct and the International Eisteddfod town.",
-    lat:52.9706, lng:-3.1636,
+    lat:52.973066, lng:-3.179165,
     bookingUrl:"https://stokedsawna.co.uk/"
   },
   {
@@ -3581,7 +3581,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — Dolgarrog is in the Conwy Valley",
     parking:"Free car park at Surf Snowdonia",
     desc:"Wave Garden Spa at Surf Snowdonia in the Conwy Valley — a premium spa facility attached to the world's first inland surf lagoon. Features sauna, steam room, hot tubs and thermal suite with views of surrounding Snowdonia mountains. Combine a surf session on the wave machine with full spa facilities. Ideal for groups, couples and surf-and-wellness days.",
-    lat:53.2164, lng:-3.8327,
+    lat:53.191172, lng:-3.842558,
     bookingUrl:"https://www.surfsnowdonia.co.uk/spa"
   },
   {
@@ -3594,7 +3594,7 @@ export const VENUES: Venue[] = [
     transport:"Aberystwyth train station — regular services from Birmingham and Cardiff",
     parking:"Town car parks nearby",
     desc:"ABERPOETH Sauna in Aberystwyth on the Cardigan Bay coast — a wood-fired outdoor sauna experience on the West Wales coast. Sea swimming in Cardigan Bay after your session. Aberystwyth is accessible by train from Birmingham and Cardiff on one of the most scenic rail routes in Wales — the Cambrian Main Line.",
-    lat:52.4154, lng:-4.0832,
+    lat:52.423144, lng:-4.081171,
     bookingUrl:"https://aberpoethsauna.co.uk/"
   },
   {
@@ -3607,7 +3607,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — Pembrokeshire Coast National Park",
     parking:"On-site or nearby National Park car park",
     desc:"Wildwater Sauna on the St Davids Peninsula in Pembrokeshire — a stunning outdoor wood-fired sauna within Britain's only coastal national park. Wild Atlantic sea swimming after your session off some of Wales's most dramatic sea cliffs and hidden coves. Near St Davids, the UK's smallest city. Seasonal availability — an exceptional Welsh coastal experience.",
-    lat:51.8718, lng:-5.1222,
+    lat:51.870555, lng:-5.136853,
     bookingUrl:"https://wildwatersauna.co.uk/"
   },
   {
@@ -3620,7 +3620,7 @@ export const VENUES: Venue[] = [
     transport:"Bus routes to Plas Coch from Wrexham town centre",
     parking:"Free car park at retail park",
     desc:"Total Fitness Wrexham at Plas Coch Retail Park — a large health club with sauna, steam room and swimming pool. Day passes available for non-members. One of the more affordable sauna options in North East Wales, within a full-service gym and swimming facility. Close to Wrexham town centre with good transport links.",
-    lat:53.0459, lng:-3.0231,
+    lat:53.058306, lng:-3.005063,
     bookingUrl:"https://www.totalfitness.co.uk/clubs/wrexham/"
   },
   {
@@ -3633,7 +3633,7 @@ export const VENUES: Venue[] = [
     transport:"Colwyn Bay train station — regular services on the North Wales coast line",
     parking:"Town car parks nearby",
     desc:"Casgen Sawna (Barrel Sauna) in Colwyn Bay on the North Wales coast — a wood-fired barrel sauna with coastal views. Sea swimming in the Irish Sea after your session. Colwyn Bay is well-served by the North Wales coast railway, making this one of the more accessible outdoor sauna venues in the region.",
-    lat:53.2978, lng:-3.7199,
+    lat:53.298269, lng:-3.728018,
     bookingUrl:"https://casgensawna.co.uk/"
   },
   {
@@ -3661,7 +3661,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — rural Carmarthenshire",
     parking:"On-site parking",
     desc:"Golden Grove Retreat in the Tywi Valley near Carmarthen — a wellness retreat with outdoor wood-fired sauna set in the stunning Carmarthenshire countryside. Cold plunge and relaxation facilities in a beautifully rural setting. Retreat packages, couples' sessions and group bookings available. Near the historic Golden Grove estate in the heart of West Wales.",
-    lat:51.9064, lng:-4.0986,
+    lat:51.848383, lng:-4.056512,
     bookingUrl:"https://goldengrove.co.uk/"
   },
   {
@@ -3674,7 +3674,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended",
     parking:"On-site parking",
     desc:"Willow Springs Wellness in Neath Port Talbot — an outdoor wood-fired sauna and wellness experience in South Wales. Set in a peaceful rural location offering sauna sessions and wellness packages for groups and individuals. A growing addition to the South Wales wellness scene.",
-    lat:51.6692, lng:-3.6279,
+    lat:51.684438, lng:-3.629078,
     bookingUrl:"https://willowspringswellness.co.uk/"
   },
   {
@@ -3687,7 +3687,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended",
     parking:"On-site parking",
     desc:"Live Free Sauna at Y Coed (The Wood) near Llanelli — a wood-fired outdoor sauna nestled in Welsh woodland in Carmarthenshire. The forest setting provides a beautiful natural backdrop for a traditional sauna experience. Cold water facilities and relaxation space available. Suitable for groups and couples looking for a nature-connected wellness experience.",
-    lat:51.7104, lng:-4.1310,
+    lat:51.707362, lng:-4.145524,
     bookingUrl:"https://livefreesauna.co.uk/"
   },
   {
@@ -3700,7 +3700,7 @@ export const VENUES: Venue[] = [
     transport:"Bus routes to Phoenix Retail Park from Swansea city centre",
     parking:"Free car park at retail park",
     desc:"JD Gyms at Phoenix Retail Park in Llansamlet, Swansea — a large budget gym with sauna and steam room included with membership or a low-cost day pass. Convenient for the Swansea Vale area and easily accessible from the M4. One of the most affordable sauna options in the Swansea area.",
-    lat:51.6549, lng:-3.8843,
+    lat:51.662124, lng:-3.914327,
     bookingUrl:"https://www.jdgyms.co.uk/gym/llansamlet/"
   },
   {
@@ -3713,7 +3713,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended — western Swansea",
     parking:"On-site at Papermill Fishery",
     desc:"Papermill Saunas at Papermill Fishery in Fforestfach, Swansea — a wood-fired outdoor sauna set on the lakeside at a beautiful fishery on the western edge of Swansea. Cold water plunge in the lake after your session. A peaceful, rural sauna experience hidden within the city boundary. Popular with Swansea locals for weekend wellness sessions.",
-    lat:51.6437, lng:-3.9750,
+    lat:51.65372, lng:-3.997173,
     bookingUrl:"https://papermillsaunas.co.uk/"
   },
   {
@@ -3726,7 +3726,7 @@ export const VENUES: Venue[] = [
     transport:"Swansea city centre bus routes · 10 min walk from station",
     parking:"Car park on site",
     desc:"Village Gym Swansea on Langdon Road near the city centre — a premium health club with sauna, steam room, 20-metre swimming pool and spa facilities. Day passes available for non-members. One of Swansea's best mid-to-premium gym and spa options, within walking distance of the waterfront.",
-    lat:51.6175, lng:-3.8997,
+    lat:51.620582, lng:-3.924568,
     bookingUrl:"https://www.villagegym.co.uk/clubs/swansea/"
   },
   {
@@ -3739,7 +3739,7 @@ export const VENUES: Venue[] = [
     transport:"Merthyr Tydfil train station — regular services from Cardiff",
     parking:"On-site parking",
     desc:"The Old Drift Wellness in the Merthyr Tydfil area — a wood-fired outdoor sauna experience set in the South Wales Valleys landscape. River access for cold plunge after your session. Merthyr Tydfil is well connected to Cardiff by train, making this a practical Welsh Valleys sauna destination near the Brecon Beacons gateway.",
-    lat:51.6623, lng:-3.3539,
+    lat:51.664384, lng:-3.305526,
     bookingUrl:"https://theolddrift.co.uk/"
   },
   {
@@ -3752,7 +3752,7 @@ export const VENUES: Venue[] = [
     transport:"Bus routes from Newport and Cardiff to Blackwood",
     parking:"On-site parking",
     desc:"Tân a Rhew (Fire and Ice) in Blackwood, Caerphilly — a wood-fired outdoor sauna and cold plunge experience in the South Wales Valleys. The Welsh name captures the contrast bathing experience perfectly. A popular local outdoor wellness venue bringing the Nordic sauna tradition to the Gwent Valleys.",
-    lat:51.6840, lng:-3.2215,
+    lat:51.68259, lng:-3.208899,
     bookingUrl:"https://tanarhew.co.uk/"
   },
   {
@@ -3778,7 +3778,7 @@ export const VENUES: Venue[] = [
     transport:"Cwmbran train station 5 min walk · regular Cardiff and Newport services",
     parking:"Cwmbran Shopping Centre car park",
     desc:"JD Gyms Cwmbran at the shopping centre — a large budget gym with sauna and steam room included with membership or day pass. Excellent value for sauna access in Cwmbran, with the train station a short walk away for easy access from Cardiff and Newport. One of Torfaen's most accessible gym-sauna options.",
-    lat:51.6532, lng:-3.0165,
+    lat:51.653995, lng:-3.021675,
     bookingUrl:"https://www.jdgyms.co.uk/gym/cwmbran/"
   },
   {
@@ -3791,7 +3791,7 @@ export const VENUES: Venue[] = [
     transport:"Saundersfoot train station 5 min walk · Pembroke Dock line from Swansea",
     parking:"Saundersfoot harbour car park",
     desc:"Hwyl Outdoor Sauna in Saundersfoot, Pembrokeshire — a wood-fired sauna at this charming harbour village on the Pembrokeshire Coast. Sea swimming in Saundersfoot Bay after your session. Hwyl (Welsh for fun/joy/spirit) captures the essence of the experience. Train-accessible from Swansea on the Pembroke Dock line.",
-    lat:51.7166, lng:-4.6983,
+    lat:51.710794, lng:-4.699041,
     bookingUrl:"https://hwyloutsauna.co.uk/"
   },
   {
@@ -3804,7 +3804,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Porthcawl is 5 miles from Bridgend station",
     parking:"Sandy Bay car park adjacent",
     desc:"Hikitalo Sandy Bay Sauna at Sandy Bay, Porthcawl — a Finnish-inspired wood-fired outdoor sauna on the sandy beach at the southern end of Porthcawl. Sea swimming in the Bristol Channel after your session. Porthcawl's seaside esplanade and town are a short walk away. A unique addition to the South Wales coast.",
-    lat:51.4796, lng:-3.7014,
+    lat:51.479418, lng:-3.695413,
     bookingUrl:"https://hikitalo.co.uk/"
   },
   {
@@ -3817,7 +3817,7 @@ export const VENUES: Venue[] = [
     transport:"Bridgend train station — regular services from Cardiff and Swansea",
     parking:"On-site parking",
     desc:"The Outdoor Sauna Bridgend — a wood-fired outdoor sauna in the Bridgend area, one of the growing number of outdoor wellness venues in South Wales. Rural setting with peaceful surroundings and cold water facilities. Bridgend has excellent rail connections from Cardiff and Swansea.",
-    lat:51.4961, lng:-3.6394,
+    lat:51.485717, lng:-3.608911,
     bookingUrl:"https://outdoorsaunabridgend.co.uk/"
   },
 
@@ -3831,7 +3831,7 @@ export const VENUES: Venue[] = [
     transport:"Bus to Granton · 5 min walk to The Pitt Market",
     parking:"On-street parking near The Pitt",
     desc:"Two Siberian cedar saunas — Big Bear (18 people) and Little Bear (8 people) — nestled into the coastline at Granton Beach, next to The Pitt Market. Community sessions from £14.50 per seat, with 65 and 95 minute options. A vibrant outdoor sauna community growing on Edinburgh's regenerating waterfront.",
-    lat:55.9777, lng:-3.2154,
+    lat:55.983461, lng:-3.245199,
     bookingUrl:"https://soulwatersauna.com/book-granton"
   },
   {
@@ -3843,7 +3843,7 @@ export const VENUES: Venue[] = [
     transport:"Dalkeith town centre · 15 min walk",
     parking:"Dalkeith Country Park car park (£3 charge)",
     desc:"Wood-fired sauna in a peaceful green field with views across ancient woodland and the gentle flow of the River Esk, within beautiful Dalkeith Country Park. Community seat bookings for 60-minute sessions. A tranquil contrast to the city bustle, just 7 miles from Edinburgh.",
-    lat:55.8960, lng:-3.0628,
+    lat:55.901386, lng:-3.06128,
     bookingUrl:"https://soulwatersauna.com/dcp"
   },
   {
@@ -3855,7 +3855,7 @@ export const VENUES: Venue[] = [
     transport:"10 min drive from Edinburgh Airport · transfers available",
     parking:"Free at Lost Shore Surf Resort",
     desc:"Wood-fired horsebox sauna positioned alongside the wave pool at Lost Shore — Scotland's first inland surf resort in Ratho, just 10 minutes from Edinburgh Airport. Panoramic views over the cove and surf lake. Public 30 or 60 minute slots, plus private hour sessions for up to 4. One of Scotland's most dramatic sauna settings.",
-    lat:55.9343, lng:-3.3748,
+    lat:55.919758, lng:-3.393345,
     bookingUrl:"https://www.spearsauna.co.uk/bookhere"
   },
   {
@@ -3867,7 +3867,7 @@ export const VENUES: Venue[] = [
     transport:"Bus to Fairmilehead · short drive to venue",
     parking:"On-site parking",
     desc:"A peaceful hillside sauna retreat on the edge of Edinburgh with sweeping views over the Pentland Hills. Wood-fired sauna with cold water immersion in a beautiful rural setting just minutes from the city. Perfect for a Highland-style sauna experience without leaving Edinburgh.",
-    lat:55.8946, lng:-3.2177,
+    lat:55.913863, lng:-3.157419,
     bookingUrl:"https://pentlandviewbooking.as.me"
   },
   {
@@ -3879,7 +3879,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · North Berwick 5 miles",
     parking:"On-site at Archerfield estate",
     desc:"Two wood-fired saunas — Gurt's Yurt sauna (the only publicly available yurt sauna of its kind in the UK) and the Bothy Sauna with stunning countryside views — tucked behind Archerfield Walled Garden near North Berwick. Capacity for 16. Cold plunge barrels, showers and a fire-pit area included. 90-minute sessions in a beautiful East Lothian setting.",
-    lat:56.0370, lng:-2.7903,
+    lat:56.050448, lng:-2.734604,
     bookingUrl:"https://www.hotandbothysauna.co.uk"
   },
   {
@@ -3891,7 +3891,7 @@ export const VENUES: Venue[] = [
     transport:"Dunbar train station · regular Edinburgh–London service · 10 min drive",
     parking:"Free at Foxlake Adventures",
     desc:"Hot Fox sauna at Foxlake Adventures — a dual wood-fired sauna and cold plunge experience in beautiful East Lothian woodland on the edge of Foxlake's watersports venue. Communal sessions from £10/person (30 min, max 8), private hire from £150/hour (max 10). A fun wellness add-on to a day at East Lothian's top outdoor adventure hub, 25 miles east of Edinburgh.",
-    lat:55.9831, lng:-2.5274,
+    lat:55.998608, lng:-2.574971,
     bookingUrl:"https://foxlake.citizenticket.com/events/foxlake-adventures/sauna-and-cold-plunge/"
   },
   {
@@ -3903,7 +3903,7 @@ export const VENUES: Venue[] = [
     transport:"Waverley 10 min walk · Princes Street tram stop",
     parking:"NCP Edinburgh Castle car park nearby",
     desc:"Bannatyne Health Club & Spa Edinburgh City Centre in the New Town — a premium health club with sauna, steam room, spa pool and 20-metre pool just a short walk from Princes Street. Day passes available via Hussle or direct booking.",
-    lat:55.9543, lng:-3.2021,
+    lat:55.954076, lng:-3.202086,
     bookingUrl:"https://www.bannatyne.co.uk/health-club/edinburgh-city-centre"
   },
   {
@@ -3915,7 +3915,7 @@ export const VENUES: Venue[] = [
     transport:"Bus to Newcraighall · near Fort Kinnaird retail park",
     parking:"Free on-site parking",
     desc:"Bannatyne Health Club & Spa Newcraighall Road in east Edinburgh — a well-equipped health club with 20-metre pool, sauna, spa pool and steam room. Easily accessible from the A1 and Fort Kinnaird area. Day passes available.",
-    lat:55.9349, lng:-3.0936,
+    lat:55.934981, lng:-3.09218,
     bookingUrl:"https://www.bannatyne.co.uk/health-club/edinburgh-newcraighall-rd"
   },
   {
@@ -3927,7 +3927,7 @@ export const VENUES: Venue[] = [
     transport:"Bus on Crewe Road · 10 min from city centre",
     parking:"Free on-site parking",
     desc:"Village Gym Edinburgh on Crewe Road South — a large premium health club with 20-metre swimming pool, sauna, steam room and spa pool. Part of the Village Hotel complex. Day passes available for non-members. Good sauna access in north Edinburgh with ample free parking.",
-    lat:55.9637, lng:-3.2295,
+    lat:55.967977, lng:-3.234672,
     bookingUrl:"https://www.villagegym.co.uk/locations/edinburgh/"
   },
 
@@ -3941,7 +3941,7 @@ export const VENUES: Venue[] = [
     transport:"Maxwell Park train station · 5 min walk",
     parking:"On-street parking on McCulloch Street",
     desc:"Scotland's first queer-led, not-for-profit community sauna, nestled in the back corner of Bowling Green Together in Pollokshields. A 90°C sauna in a remodelled horsebox with spacious reclaimed-wood changing rooms, cold shower and ice-cold plunge pools. 75 minutes for just £10, £7 concession. One of Glasgow's most welcoming and affordable sauna experiences.",
-    lat:55.8468, lng:-4.2698,
+    lat:55.84443, lng:-4.270127,
     bookingUrl:"https://www.glasgowcommunitysauna.co.uk/bookings"
   },
   {
@@ -3953,7 +3953,7 @@ export const VENUES: Venue[] = [
     transport:"Bridgeton train station · 10 min walk",
     parking:"On-site at Abercromby Business Centre",
     desc:"Soul Suites Glasgow in Bridgeton — a dedicated contrast therapy studio combining traditional and infrared saunas with ice baths to improve circulation, reduce muscle soreness and enhance recovery. Private and shared sessions from £15. Glasgow's most complete standalone contrast therapy experience, close to Bridgeton Cross.",
-    lat:55.8494, lng:-4.2194,
+    lat:55.851304, lng:-4.228445,
     bookingUrl:"https://glasgow.soul-suites.co.uk"
   },
   {
@@ -3965,7 +3965,7 @@ export const VENUES: Venue[] = [
     transport:"5 min walk Finnieston · near SSE Hydro · bus routes on Finnieston St",
     parking:"Pay and display nearby",
     desc:"Nuffield Health Glasgow Central at the Finnieston waterfront, beside the Clyde Arc and SSE Hydro. Sauna, steam room and 20-metre pool. Excellent day pass value at £9 via Hussle. One of Glasgow's most accessible central gym-sauna options, in the heart of the vibrant west end.",
-    lat:55.8628, lng:-4.2823,
+    lat:55.860022, lng:-4.28088,
     bookingUrl:"https://www.nuffieldhealth.com/gyms/glasgow-central"
   },
   {
@@ -3977,7 +3977,7 @@ export const VENUES: Venue[] = [
     transport:"Govan underground · 10 min walk · Festival Park bus routes",
     parking:"Free on-site parking",
     desc:"Village Gym Glasgow at Festival Gate in Govan — a large premium health club with 20-metre heated pool, sauna, steam room, spa pool and full fitness facilities. Part of the Village Hotel complex. Day passes available for non-members.",
-    lat:55.8574, lng:-4.3046,
+    lat:55.85625, lng:-4.289399,
     bookingUrl:"https://www.villagegym.co.uk/locations/glasgow/"
   },
   {
@@ -3989,7 +3989,7 @@ export const VENUES: Venue[] = [
     transport:"Partick underground & train · 10 min walk · bus on Dumbarton Road",
     parking:"On-street parking in Partick",
     desc:"Sauna and cold plunge in the green grounds of the historic West of Scotland Cricket Club in Partick's West End. Wood-fired outdoor sauna on the lush cricket grounds with cold plunge pool. One of Glasgow's most characterful wellness spots — a Nordic ritual in a quintessentially Scottish sporting setting, close to Kelvingrove and the Clyde.",
-    lat:55.8685, lng:-4.3175,
+    lat:55.872284, lng:-4.310517,
     bookingUrl:"https://www.thewildheat.co.uk"
   },
   {
@@ -4001,7 +4001,7 @@ export const VENUES: Venue[] = [
     transport:"Hillhead underground · 10 min walk · bus on Great Western Road",
     parking:"On-site at Hillhead Sports Club",
     desc:"Pigg Sauna — a mobile wood-fired sauna at leafy Hillhead Sports Club in Glasgow's West End, with three cold plunge pools. An informal community sauna experience in one of Glasgow's most pleasant neighbourhoods, close to the Botanic Gardens and Kelvingrove Park. Wednesday to Sunday sessions.",
-    lat:55.8787, lng:-4.3064,
+    lat:55.881934, lng:-4.305398,
     bookingUrl:"https://hillheadsportsclub.com"
   },
   {
@@ -4013,7 +4013,7 @@ export const VENUES: Venue[] = [
     transport:"Bus routes to Crown Street · 10 min walk from Gorbals underground",
     parking:"Free at Crown Street Retail Park",
     desc:"JD Gyms Glasgow South at Crown Street Retail Park — a large budget gym with sauna and steam room. Hundreds of cardio and strength machines, 300+ classes monthly. One of the most affordable sauna options in the Glasgow Southside, with free parking and easy access from the Gorbals.",
-    lat:55.8484, lng:-4.2464,
+    lat:55.845191, lng:-4.250699,
     bookingUrl:"https://www.jdgyms.co.uk/gym/glasgow-south/"
   },
   {
@@ -4025,7 +4025,7 @@ export const VENUES: Venue[] = [
     transport:"Bus on Maryhill Road",
     parking:"Free on-site parking",
     desc:"JD Gyms Glasgow North off Maryhill Road — a large budget gym with sauna and steam room in luxury changing rooms. No contract required. An affordable sauna option in north Glasgow with ample free parking.",
-    lat:55.8907, lng:-4.2785,
+    lat:55.889001, lng:-4.285027,
     bookingUrl:"https://www.jdgyms.co.uk/gym/glasgow-north/"
   },
   {
@@ -4037,7 +4037,7 @@ export const VENUES: Venue[] = [
     transport:"East Kilbride train station · 10 min drive",
     parking:"On-site parking",
     desc:"Soul Suites East Kilbride — a contrast therapy studio combining traditional and infrared saunas with ice baths. Shared and private sessions from £15. Part of the Soul Suites family with Glasgow, Hamilton and East Kilbride locations.",
-    lat:55.7652, lng:-4.1659,
+    lat:55.769312, lng:-4.213496,
     bookingUrl:"https://ek.soul-suites.co.uk"
   },
   {
@@ -4049,7 +4049,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Newton Mearns, 20 min from Glasgow city centre",
     parking:"On-site parking",
     desc:"Eastwood Forest Sauna in Newton Mearns — a wild log-fired sauna nestled in the forest of south Glasgow with ice water barrels and rolling hill views. Social and private sessions at £25/person in a peaceful woodland setting. About 20 minutes from Glasgow city centre, one of the most scenic outdoor sauna experiences near Glasgow.",
-    lat:55.7709, lng:-4.3093,
+    lat:55.742645, lng:-4.358419,
     bookingUrl:"https://www.instagram.com/eastwoodforestsauna/"
   },
   {
@@ -4061,7 +4061,7 @@ export const VENUES: Venue[] = [
     transport:"Cumbernauld town centre · M80 junction 5 · 30 min from Glasgow",
     parking:"On-site parking",
     desc:"Vida Sauna & Ice in Cumbernauld — a science-backed wellness studio combining traditional and infrared saunas with three ice baths at varying temperatures. Drop-in 45-minute sessions at £25 or the guided Vida Protocol (1 hr 20 min contrast therapy) at £55. Accessible from the M80 north of Glasgow.",
-    lat:55.9430, lng:-3.9813,
+    lat:55.961125, lng:-4.010797,
     bookingUrl:"https://vidasauna-ice.co.uk"
   },
   {
@@ -4073,7 +4073,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · 45 min from Glasgow on A81 towards Aberfoyle",
     parking:"At Cobleland Campsite, Gartmore",
     desc:"Bask Saunas at Cobleland Campsite in Gartmore, on the edge of Loch Lomond and the Trossachs National Park. Wood-fired sauna with communal sessions for up to 6 at £17/person and private hire for £100/hour (up to 8 people). A beautiful forest and riverside sauna setting about 45 minutes from Glasgow.",
-    lat:56.1649, lng:-4.3716,
+    lat:56.15173, lng:-4.378087,
     bookingUrl:"https://www.basksaunas.com"
   },
 
@@ -4087,7 +4087,7 @@ export const VENUES: Venue[] = [
     transport:"Bus to Aberdeen beach / esplanade",
     parking:"Beach Boulevard car park nearby",
     desc:"A unique seaside sauna in a converted horsebox on Aberdeen's beachfront at Esplanade North Square. Finnish-inspired wood-fired sauna for up to 6 with stunning North Sea views. From £12/person for a community hour, private hire from £60/hour. Open Wednesday to Sunday with walk-ins welcome. A refreshing coastal sauna experience on Aberdeen's famous beach.",
-    lat:57.1453, lng:-2.0709,
+    lat:57.14349, lng:-2.071559,
     bookingUrl:"https://www.barbossauna.co.uk"
   },
   {
@@ -4099,7 +4099,7 @@ export const VENUES: Venue[] = [
     transport:"Bus to Danestone · Bridge of Don area",
     parking:"Free on-site parking",
     desc:"Bannatyne Health Club & Spa Aberdeen in Danestone — a premium health club with sauna, steam room, spa pool, 20-metre swimming pool and relaxation room. Spa treatments from £20. Day passes available for non-members.",
-    lat:57.1771, lng:-2.0835,
+    lat:57.180843, lng:-2.158041,
     bookingUrl:"https://www.bannatyne.co.uk/health-club/aberdeen"
   },
   {
@@ -4111,7 +4111,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Prime Four Business Park, west Aberdeen",
     parking:"Free at Prime Four Business Park",
     desc:"Village Gym Aberdeen at Prime Four Business Park in Kingswells — a premium health club with sauna, steam room and spa pool. Day passes available for non-members. Convenient for the Aberdeen bypass and Westhill corridor.",
-    lat:57.1420, lng:-2.2134,
+    lat:57.148278, lng:-2.229415,
     bookingUrl:"https://www.villagegym.co.uk/locations/aberdeen/"
   },
   {
@@ -4123,7 +4123,7 @@ export const VENUES: Venue[] = [
     transport:"Stonehaven train station · 5 min walk · regular Aberdeen–Dundee services",
     parking:"Stonehaven harbour car park nearby",
     desc:"An Estonian-style wood-fired sauna in a converted horsebox with beautiful Aspen wood panelling and driftwood exterior, perched at Stonehaven's historic harbour. Up to 6 people, bookable in 30, 60, 90 or 120 minute slots. Stonehaven is just 15 miles south of Aberdeen by train — one of Scotland's most scenic coastal sauna settings.",
-    lat:56.9650, lng:-2.2107,
+    lat:56.952325, lng:-2.205687,
     bookingUrl:"https://shpb.co.uk/sauna/"
   },
   {
@@ -4149,7 +4149,7 @@ export const VENUES: Venue[] = [
     transport:"Bus from Inverness city centre to Inshes Retail Park",
     parking:"Free on-site at Inshes Retail Park",
     desc:"Bannatyne Health Club & Spa Inverness at the Inshes Retail & Leisure Park — a well-equipped health club with sauna, steam room, swimming pool and full spa treatments from £44.50. Day passes from £13.50 for non-members. A popular wellness facility in east Inverness, convenient for the A9.",
-    lat:57.4503, lng:-4.1969,
+    lat:57.468634, lng:-4.19131,
     bookingUrl:"https://www.bannatyne.co.uk/health-club/inverness"
   },
   {
@@ -4161,7 +4161,7 @@ export const VENUES: Venue[] = [
     transport:"Kingussie train station · 5 miles · direct from Edinburgh and Inverness",
     parking:"At Loch Insh Outdoor Centre",
     desc:"Sauna Cairngorms at Loch Insh Outdoor Centre in Kincraig — a wood-fired sauna on the banks of Loch Insh inside Cairngorms National Park. Private sessions for up to 6 from £75 (75 minutes), communal sessions also available. Direct access to Loch Insh for wild water plunges. One of Scotland's most spectacular sauna locations — Highland wilderness and dark loch water in the heart of the Cairngorms. Train-accessible from Edinburgh via Kingussie.",
-    lat:57.0919, lng:-3.9831,
+    lat:57.105558, lng:-3.938788,
     bookingUrl:"https://saunacairngorms.co.uk/book-a-sauna/"
   },
   {
@@ -4173,7 +4173,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Forres 5 miles · train to Forres then taxi",
     parking:"Findhorn East Beach Car Park (free)",
     desc:"Watershed Sauna — a vintage horsebox wood-fired Nordic sauna at Findhorn East Beach on the Moray Firth. Private 60-minute sessions with views over the coastal nature reserve and estuary. Findhorn village is a gem of the Scottish coast, with dolphin sightings and the famous Findhorn Foundation community nearby. A truly remote and peaceful sauna experience.",
-    lat:57.6584, lng:-3.7547,
+    lat:57.662385, lng:-3.610768,
     bookingUrl:"https://watershedsauna.com"
   },
   {
@@ -4185,7 +4185,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Elgin 10 miles · limited bus to Hopeman",
     parking:"Hopeman Beach car park",
     desc:"Fyrhùs Sauna at Hopeman Beach, Moray — a wood-fired sauna nestled in the dunes past the beach huts on Hopeman's east beach. Communal sessions at £15/person (max 7), private from £90 for up to 6. Wednesday community sessions with pay-what-you-can (£5 donation suggested). A genuinely wild sauna on a beautiful and often deserted Moray Firth beach. Note: use Hopeman Beach car park for navigation — not the booking postcode.",
-    lat:57.7083, lng:-3.4387,
+    lat:57.6851, lng:-3.441395,
     bookingUrl:"https://fyrhussauna.co.uk/booking/"
   },
   {
@@ -4197,7 +4197,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Cullen, Moray · A98 between Aberdeen and Inverness",
     parking:"Cullen Links car park",
     desc:"Sauna at the Kings on the Links at Cullen Beach — a beautiful coastal sauna on the Moray Firth with direct beach access and sea plunge into Cullen Bay. Public sessions bookable per person (up to 8), private hire also available. Cullen Bay is one of the most picturesque coves on the Scottish northeast coast, flanked by the ruins of Cullen House and the iconic Three Kings sea stacks.",
-    lat:57.6918, lng:-2.8188,
+    lat:57.693383, lng:-2.832268,
     bookingUrl:"https://www.saunaatthekings.co.uk/sauna-sessions"
   },
 
@@ -4211,7 +4211,7 @@ export const VENUES: Venue[] = [
     transport:"5 min walk from St Andrews town centre · bus to St Andrews",
     parking:"East Sands car park adjacent",
     desc:"St Andrews Seaside Sauna at East Sands — a completely off-grid wood-fired sauna facing directly out to sea across St Andrews Bay. Established in late 2024 and heated to 70–100°C. Individual or group bookings. The sauna sits on the Fife Coastal Path next to East Sands Leisure Centre, with the iconic Old Course and Cathedral ruins nearby. One of Fife's most scenic coastal sauna experiences.",
-    lat:56.3383, lng:-2.7812,
+    lat:56.332927, lng:-2.779373,
     bookingUrl:"https://standrewsseasidesauna.com"
   },
   {
@@ -4223,7 +4223,7 @@ export const VENUES: Venue[] = [
     transport:"15 min walk from St Andrews town centre · car park at West Sands Rd",
     parking:"West Sands Road car park",
     desc:"Wild Scottish Sauna at West Sands Beach — a traditional Finnish-style sauna behind the dunes at the iconic West Sands, famously the filming location for Chariots of Fire. Next to The Dook Cafe. 90-minute sessions with panoramic sea views across St Andrews Bay. Sea plunge directly from the beach. Up to 12 people. Full moon saunas and seasonal events.",
-    lat:56.3518, lng:-2.8088,
+    lat:56.317413, lng:-2.704028,
     bookingUrl:"https://wildscottishsauna.com/make-a-booking/"
   },
   {
@@ -4235,7 +4235,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · 5 miles south of St Andrews on the coast road",
     parking:"Kingsbarns Beach Car Park (free)",
     desc:"Wild Scottish Sauna at Kingsbarns Beach — a luxury 12-person traditional Finnish sauna on the award-winning Kingsbarns Beach, one of Fife's most beautiful coastal locations. Wild spa, hen/stag and private hire packages alongside social sessions. The most popular and highest-rated Wild Scottish Sauna location, with stunning East Neuk coastal scenery.",
-    lat:56.2869, lng:-2.6432,
+    lat:56.299957, lng:-2.654777,
     bookingUrl:"https://wildscottishsauna.com/make-a-booking/"
   },
   {
@@ -4247,7 +4247,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Cupar 3 miles · A91 Fife",
     parking:"At Eden Springs Country Park",
     desc:"Wild Scottish Sauna at Eden Springs Country Park near Cupar — a beautiful lochside sauna at a fishery and country park in the heart of Fife. Social sessions from £15, private packages from £100 for fully guided experiences. Jetty access for loch plunges, toilets and cafe on-site. A special inland sauna setting away from the coast, in contrast to the East Neuk beach locations.",
-    lat:56.3463, lng:-3.0249,
+    lat:56.300775, lng:-3.128821,
     bookingUrl:"https://wildscottishsauna.com/make-a-booking/"
   },
   {
@@ -4259,7 +4259,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Elie village 1 mile",
     parking:"Shell Bay / Elie Holiday Park car park",
     desc:"Wild Scottish Sauna at Shell Bay, near the charming village of Elie in the East Neuk of Fife. Traditional Finnish sauna on the beach at Shell Bay with Firth of Forth sea plunge access. Friday to Sunday sessions, typically spring to autumn. One of the most picturesque spots in Fife, on one of Scotland's most beautiful shorelines.",
-    lat:56.1838, lng:-2.8367,
+    lat:56.19243, lng:-2.819335,
     bookingUrl:"https://wildscottishsauna.com/make-a-booking/"
   },
   {
@@ -4271,7 +4271,7 @@ export const VENUES: Venue[] = [
     transport:"Car recommended · Elie is a charming East Neuk fishing village",
     parking:"Elie Harbour car park",
     desc:"Elie Seaside Sauna at the historic Elie Harbour — two saunas in one of Fife's most charming coastal settings. 'Shore' seats up to 10 (bookable by the seat) and 'Dune' is private-hire-only for 6–8. Direct sea plunge into the Firth of Forth from the harbour. The East Neuk town of Elie is a favourite destination for Scots escaping Edinburgh, with excellent restaurants and a beautiful sandy bay.",
-    lat:56.1877, lng:-2.8279,
+    lat:56.186264, lng:-2.819784,
     bookingUrl:"https://www.elieseasidesauna.com/booking/"
   },
 ];
