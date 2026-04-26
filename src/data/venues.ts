@@ -3820,6 +3820,460 @@ export const VENUES: Venue[] = [
     lat:51.4961, lng:-3.6394,
     bookingUrl:"https://outdoorsaunabridgend.co.uk/"
   },
+
+  // ── EDINBURGH (Scotland — new venues) ──
+  {
+    id:301, city:"Edinburgh", country:"Scotland", name:"Soul Water Sauna — Granton", area:"Granton / Waterfront",
+    type:"sauna", price:"From £14.50 per seat", rating:4.9, reviews:87,
+    hours:"Check website for session times",
+    temp:"Cold plunge · 65 or 95 min sessions", tags:["Community","Wood-fired","Coastal","Waterside"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Bus to Granton · 5 min walk to The Pitt Market",
+    parking:"On-street parking near The Pitt",
+    desc:"Two Siberian cedar saunas — Big Bear (18 people) and Little Bear (8 people) — nestled into the coastline at Granton Beach, next to The Pitt Market. Community sessions from £14.50 per seat, with 65 and 95 minute options. A vibrant outdoor sauna community growing on Edinburgh's regenerating waterfront.",
+    lat:55.9777, lng:-3.2154,
+    bookingUrl:"https://soulwatersauna.com/book-granton"
+  },
+  {
+    id:302, city:"Edinburgh", country:"Scotland", name:"Soul Water Sauna — Dalkeith Country Park", area:"Dalkeith / River Esk",
+    type:"sauna", price:"£14.50 per person", rating:4.8, reviews:42,
+    hours:"Check website · park gates open 7am–7pm",
+    temp:"River Esk cold plunge", tags:["Outdoor","Wood-fired","Country Estate","Riverside"], emoji:"🌿🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Dalkeith town centre · 15 min walk",
+    parking:"Dalkeith Country Park car park (£3 charge)",
+    desc:"Wood-fired sauna in a peaceful green field with views across ancient woodland and the gentle flow of the River Esk, within beautiful Dalkeith Country Park. Community seat bookings for 60-minute sessions. A tranquil contrast to the city bustle, just 7 miles from Edinburgh.",
+    lat:55.8960, lng:-3.0628,
+    bookingUrl:"https://soulwatersauna.com/dcp"
+  },
+  {
+    id:303, city:"Edinburgh", country:"Scotland", name:"Spear Sauna — Lost Shore", area:"Ratho / Newbridge",
+    type:"sauna", price:"£10 / 30 min · £18 / 60 min", rating:4.9, reviews:63,
+    hours:"Aligned with Lost Shore resort hours",
+    temp:"Plunge pool on-site", tags:["Outdoor","Wood-fired","Waterside","Scenic","Surf"], emoji:"🏄🔥", open:true,
+    hygiene:"A", lockerNote:"Changing facilities at Lost Shore resort",
+    transport:"10 min drive from Edinburgh Airport · transfers available",
+    parking:"Free at Lost Shore Surf Resort",
+    desc:"Wood-fired horsebox sauna positioned alongside the wave pool at Lost Shore — Scotland's first inland surf resort in Ratho, just 10 minutes from Edinburgh Airport. Panoramic views over the cove and surf lake. Public 30 or 60 minute slots, plus private hour sessions for up to 4. One of Scotland's most dramatic sauna settings.",
+    lat:55.9343, lng:-3.3748,
+    bookingUrl:"https://www.spearsauna.co.uk/bookhere"
+  },
+  {
+    id:304, city:"Edinburgh", country:"Scotland", name:"Pentland View Outdoor Sauna", area:"Fairmilehead / Pentland Hills",
+    type:"sauna", price:"Check website for session prices", rating:4.8, reviews:19,
+    hours:"Check website for availability",
+    temp:"Cold plunge barrel", tags:["Outdoor","Wood-fired","Countryside","Views","Scenic"], emoji:"⛰️🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Bus to Fairmilehead · short drive to venue",
+    parking:"On-site parking",
+    desc:"A peaceful hillside sauna retreat on the edge of Edinburgh with sweeping views over the Pentland Hills. Wood-fired sauna with cold water immersion in a beautiful rural setting just minutes from the city. Perfect for a Highland-style sauna experience without leaving Edinburgh.",
+    lat:55.8946, lng:-3.2177,
+    bookingUrl:"https://pentlandviewbooking.as.me"
+  },
+  {
+    id:305, city:"Edinburgh", country:"Scotland", name:"Hot and Bothy Community Sauna", area:"Dirleton / North Berwick",
+    type:"sauna", price:"Check website for session prices", rating:4.9, reviews:28,
+    hours:"Check website · 90-minute sessions",
+    temp:"Cold plunge barrel · outdoor", tags:["Community","Outdoor","Wood-fired","Countryside","East Lothian"], emoji:"🌿🔥", open:true,
+    hygiene:"A", lockerNote:"Changing rooms and showers on-site",
+    transport:"Car recommended · North Berwick 5 miles",
+    parking:"On-site at Archerfield estate",
+    desc:"Two wood-fired saunas — Gurt's Yurt sauna (the only publicly available yurt sauna of its kind in the UK) and the Bothy Sauna with stunning countryside views — tucked behind Archerfield Walled Garden near North Berwick. Capacity for 16. Cold plunge barrels, showers and a fire-pit area included. 90-minute sessions in a beautiful East Lothian setting.",
+    lat:56.0370, lng:-2.7903,
+    bookingUrl:"https://www.hotandbothysauna.co.uk"
+  },
+  {
+    id:306, city:"Edinburgh", country:"Scotland", name:"Hot Fox Sauna & Cold Plunge", area:"Dunbar / East Lothian",
+    type:"sauna", price:"From £10 per person (30 min)", rating:4.7, reviews:34,
+    hours:"Wed–Sun 10am–6pm (seasonal — check website)",
+    temp:"Cold plunge barrel · lakeside", tags:["Outdoor","Wood-fired","Lakeside","East Lothian","Seasonal"], emoji:"🦊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Dunbar train station · regular Edinburgh–London service · 10 min drive",
+    parking:"Free at Foxlake Adventures",
+    desc:"Hot Fox sauna at Foxlake Adventures — a dual wood-fired sauna and cold plunge experience in beautiful East Lothian woodland on the edge of Foxlake's watersports venue. Communal sessions from £10/person (30 min, max 8), private hire from £150/hour (max 10). A fun wellness add-on to a day at East Lothian's top outdoor adventure hub, 25 miles east of Edinburgh.",
+    lat:55.9831, lng:-2.5274,
+    bookingUrl:"https://foxlake.citizenticket.com/events/foxlake-adventures/sauna-and-cold-plunge/"
+  },
+  {
+    id:307, city:"Edinburgh", country:"Scotland", name:"Bannatyne Health Club & Spa — Edinburgh", area:"New Town / City Centre",
+    type:"both", price:"Day pass from £13.50 · memberships from £49/month", rating:4.3, reviews:148,
+    hours:"Mon–Fri 6:30am–10pm · Sat–Sun 8am–9pm",
+    temp:"Dry sauna · steam room · spa pool", tags:["Gym Sauna","Pool","Spa","Day Pass","City Centre"], emoji:"💆", open:true,
+    hygiene:"A+", lockerNote:"Secure lockers provided",
+    transport:"Waverley 10 min walk · Princes Street tram stop",
+    parking:"NCP Edinburgh Castle car park nearby",
+    desc:"Bannatyne Health Club & Spa Edinburgh City Centre in the New Town — a premium health club with sauna, steam room, spa pool and 20-metre pool just a short walk from Princes Street. Day passes available via Hussle or direct booking.",
+    lat:55.9543, lng:-3.2021,
+    bookingUrl:"https://www.bannatyne.co.uk/health-club/edinburgh-city-centre"
+  },
+  {
+    id:308, city:"Edinburgh", country:"Scotland", name:"Bannatyne Health Club & Spa — Edinburgh Newcraighall", area:"Newcraighall / East Edinburgh",
+    type:"both", price:"Day pass from £13.50 · memberships available", rating:4.2, reviews:112,
+    hours:"Mon–Fri 6am–10pm · Sat–Sun 8am–8pm",
+    temp:"Dry sauna · spa pool · steam room", tags:["Gym Sauna","Pool","Spa","Day Pass"], emoji:"💆", open:true,
+    hygiene:"A", lockerNote:"Secure lockers provided",
+    transport:"Bus to Newcraighall · near Fort Kinnaird retail park",
+    parking:"Free on-site parking",
+    desc:"Bannatyne Health Club & Spa Newcraighall Road in east Edinburgh — a well-equipped health club with 20-metre pool, sauna, spa pool and steam room. Easily accessible from the A1 and Fort Kinnaird area. Day passes available.",
+    lat:55.9349, lng:-3.0936,
+    bookingUrl:"https://www.bannatyne.co.uk/health-club/edinburgh-newcraighall-rd"
+  },
+  {
+    id:309, city:"Edinburgh", country:"Scotland", name:"Village Gym Edinburgh", area:"Crewe / North Edinburgh",
+    type:"both", price:"Day pass from £15 · memberships from £29/month", rating:4.2, reviews:188,
+    hours:"Mon–Fri 6am–10pm · Sat–Sun 7am–9pm",
+    temp:"Dry sauna · steam room · 20m pool", tags:["Gym Sauna","Pool","Spa","Day Pass","Steam"], emoji:"💆", open:true,
+    hygiene:"A", lockerNote:"Secure lockers provided",
+    transport:"Bus on Crewe Road · 10 min from city centre",
+    parking:"Free on-site parking",
+    desc:"Village Gym Edinburgh on Crewe Road South — a large premium health club with 20-metre swimming pool, sauna, steam room and spa pool. Part of the Village Hotel complex. Day passes available for non-members. Good sauna access in north Edinburgh with ample free parking.",
+    lat:55.9637, lng:-3.2295,
+    bookingUrl:"https://www.villagegym.co.uk/locations/edinburgh/"
+  },
+
+  // ── GLASGOW (Scotland — new venues) ──
+  {
+    id:310, city:"Glasgow", country:"Scotland", name:"Glasgow Community Sauna", area:"Pollokshields / Southside",
+    type:"sauna", price:"£10 per session (75 min) · £7 concession", rating:4.9, reviews:76,
+    hours:"Check website for current sessions",
+    temp:"90°C sauna · cold plunge barrels", tags:["Community","Outdoor","Wood-fired","Budget","City Centre"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing rooms from reclaimed wood · showers available",
+    transport:"Maxwell Park train station · 5 min walk",
+    parking:"On-street parking on McCulloch Street",
+    desc:"Scotland's first queer-led, not-for-profit community sauna, nestled in the back corner of Bowling Green Together in Pollokshields. A 90°C sauna in a remodelled horsebox with spacious reclaimed-wood changing rooms, cold shower and ice-cold plunge pools. 75 minutes for just £10, £7 concession. One of Glasgow's most welcoming and affordable sauna experiences.",
+    lat:55.8468, lng:-4.2698,
+    bookingUrl:"https://www.glasgowcommunitysauna.co.uk/bookings"
+  },
+  {
+    id:311, city:"Glasgow", country:"Scotland", name:"Soul Suites Glasgow", area:"Bridgeton / East End",
+    type:"both", price:"From £15 per person", rating:4.8, reviews:94,
+    hours:"Mon–Thu 6am–9pm · Fri–Sun 7am–7pm",
+    temp:"Ice bath 5°C · traditional and infrared sauna", tags:["Contrast Therapy","Infrared","Ice Bath","Urban","Community"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities on-site",
+    transport:"Bridgeton train station · 10 min walk",
+    parking:"On-site at Abercromby Business Centre",
+    desc:"Soul Suites Glasgow in Bridgeton — a dedicated contrast therapy studio combining traditional and infrared saunas with ice baths to improve circulation, reduce muscle soreness and enhance recovery. Private and shared sessions from £15. Glasgow's most complete standalone contrast therapy experience, close to Bridgeton Cross.",
+    lat:55.8494, lng:-4.2194,
+    bookingUrl:"https://glasgow.soul-suites.co.uk"
+  },
+  {
+    id:312, city:"Glasgow", country:"Scotland", name:"Nuffield Health Glasgow Central", area:"Finnieston / Clyde Waterfront",
+    type:"both", price:"Day pass from £9 (via Hussle)", rating:4.3, reviews:267,
+    hours:"Mon–Thu 6:30am–10pm · Fri 6:30am–9pm · Sat–Sun 8am–8pm",
+    temp:"Dry sauna · steam room · 20m pool", tags:["Gym Sauna","Pool","Spa","Day Pass","City Centre"], emoji:"💆", open:true,
+    hygiene:"A", lockerNote:"Secure lockers provided",
+    transport:"5 min walk Finnieston · near SSE Hydro · bus routes on Finnieston St",
+    parking:"Pay and display nearby",
+    desc:"Nuffield Health Glasgow Central at the Finnieston waterfront, beside the Clyde Arc and SSE Hydro. Sauna, steam room and 20-metre pool. Excellent day pass value at £9 via Hussle. One of Glasgow's most accessible central gym-sauna options, in the heart of the vibrant west end.",
+    lat:55.8628, lng:-4.2823,
+    bookingUrl:"https://www.nuffieldhealth.com/gyms/glasgow-central"
+  },
+  {
+    id:313, city:"Glasgow", country:"Scotland", name:"Village Gym Glasgow", area:"Govan / Festival Gate",
+    type:"both", price:"Day pass from £26 · memberships from £35/month", rating:4.3, reviews:312,
+    hours:"Mon–Fri 6am–10pm · Sat–Sun 7am–9pm",
+    temp:"Dry sauna · steam room · spa pool · 20m pool", tags:["Gym Sauna","Pool","Spa","Day Pass","Steam"], emoji:"💆", open:true,
+    hygiene:"A", lockerNote:"Secure lockers provided",
+    transport:"Govan underground · 10 min walk · Festival Park bus routes",
+    parking:"Free on-site parking",
+    desc:"Village Gym Glasgow at Festival Gate in Govan — a large premium health club with 20-metre heated pool, sauna, steam room, spa pool and full fitness facilities. Part of the Village Hotel complex. Day passes available for non-members.",
+    lat:55.8574, lng:-4.3046,
+    bookingUrl:"https://www.villagegym.co.uk/locations/glasgow/"
+  },
+  {
+    id:314, city:"Glasgow", country:"Scotland", name:"The Wild Heat", area:"Partick / West End",
+    type:"sauna", price:"Check website for session prices", rating:4.8, reviews:41,
+    hours:"Check website for current sessions",
+    temp:"Cold plunge pool", tags:["Outdoor","Wood-fired","Community","West End","Waterside"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Partick underground & train · 10 min walk · bus on Dumbarton Road",
+    parking:"On-street parking in Partick",
+    desc:"Sauna and cold plunge in the green grounds of the historic West of Scotland Cricket Club in Partick's West End. Wood-fired outdoor sauna on the lush cricket grounds with cold plunge pool. One of Glasgow's most characterful wellness spots — a Nordic ritual in a quintessentially Scottish sporting setting, close to Kelvingrove and the Clyde.",
+    lat:55.8685, lng:-4.3175,
+    bookingUrl:"https://www.thewildheat.co.uk"
+  },
+  {
+    id:315, city:"Glasgow", country:"Scotland", name:"Pigg Sauna", area:"Hillhead / West End",
+    type:"sauna", price:"Check website for session prices", rating:4.7, reviews:23,
+    hours:"Wed–Sun · check website for session times",
+    temp:"3 cold plunge pools", tags:["Outdoor","Wood-fired","Community","West End","Social"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Hillhead underground · 10 min walk · bus on Great Western Road",
+    parking:"On-site at Hillhead Sports Club",
+    desc:"Pigg Sauna — a mobile wood-fired sauna at leafy Hillhead Sports Club in Glasgow's West End, with three cold plunge pools. An informal community sauna experience in one of Glasgow's most pleasant neighbourhoods, close to the Botanic Gardens and Kelvingrove Park. Wednesday to Sunday sessions.",
+    lat:55.8787, lng:-4.3064,
+    bookingUrl:"https://hillheadsportsclub.com"
+  },
+  {
+    id:316, city:"Glasgow", country:"Scotland", name:"JD Gyms Glasgow South", area:"Gorbals / Crown Street",
+    type:"sauna", price:"Day pass from £5 · memberships from £25.99/month", rating:3.9, reviews:412,
+    hours:"Mon–Fri 5am–11pm · Sat–Sun 7am–9pm",
+    temp:"Dry sauna · steam room", tags:["Gym Sauna","Budget","Day Pass","City Centre"], emoji:"🔥", open:true,
+    hygiene:"B+", lockerNote:"Lockers in luxury changing rooms",
+    transport:"Bus routes to Crown Street · 10 min walk from Gorbals underground",
+    parking:"Free at Crown Street Retail Park",
+    desc:"JD Gyms Glasgow South at Crown Street Retail Park — a large budget gym with sauna and steam room. Hundreds of cardio and strength machines, 300+ classes monthly. One of the most affordable sauna options in the Glasgow Southside, with free parking and easy access from the Gorbals.",
+    lat:55.8484, lng:-4.2464,
+    bookingUrl:"https://www.jdgyms.co.uk/gym/glasgow-south/"
+  },
+  {
+    id:317, city:"Glasgow", country:"Scotland", name:"JD Gyms Glasgow North", area:"Maryhill / North Glasgow",
+    type:"sauna", price:"Day pass from £5 · memberships from £25.99/month", rating:3.8, reviews:287,
+    hours:"Mon–Fri 6am–10pm · Sat–Sun 8am–8pm",
+    temp:"Dry sauna · steam room", tags:["Gym Sauna","Budget","Day Pass"], emoji:"🔥", open:true,
+    hygiene:"B+", lockerNote:"Lockers in changing rooms",
+    transport:"Bus on Maryhill Road",
+    parking:"Free on-site parking",
+    desc:"JD Gyms Glasgow North off Maryhill Road — a large budget gym with sauna and steam room in luxury changing rooms. No contract required. An affordable sauna option in north Glasgow with ample free parking.",
+    lat:55.8907, lng:-4.2785,
+    bookingUrl:"https://www.jdgyms.co.uk/gym/glasgow-north/"
+  },
+  {
+    id:318, city:"Glasgow", country:"Scotland", name:"Soul Suites East Kilbride", area:"East Kilbride / South Lanarkshire",
+    type:"both", price:"From £15 per person", rating:4.8, reviews:67,
+    hours:"Mon–Thu 6am–9pm · Fri–Sun 7am–7pm",
+    temp:"Temperature-controlled ice baths · traditional and infrared sauna", tags:["Contrast Therapy","Infrared","Ice Bath","Urban"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities on-site",
+    transport:"East Kilbride train station · 10 min drive",
+    parking:"On-site parking",
+    desc:"Soul Suites East Kilbride — a contrast therapy studio combining traditional and infrared saunas with ice baths. Shared and private sessions from £15. Part of the Soul Suites family with Glasgow, Hamilton and East Kilbride locations.",
+    lat:55.7652, lng:-4.1659,
+    bookingUrl:"https://ek.soul-suites.co.uk"
+  },
+  {
+    id:319, city:"Glasgow", country:"Scotland", name:"Eastwood Forest Sauna", area:"Newton Mearns / South Glasgow",
+    type:"sauna", price:"£25 per person", rating:4.9, reviews:38,
+    hours:"Check Instagram @eastwoodforestsauna for current sessions",
+    temp:"90°C sauna · ice barrels 11–12°C", tags:["Outdoor","Wood-fired","Forest","Countryside"], emoji:"🌲🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Newton Mearns, 20 min from Glasgow city centre",
+    parking:"On-site parking",
+    desc:"Eastwood Forest Sauna in Newton Mearns — a wild log-fired sauna nestled in the forest of south Glasgow with ice water barrels and rolling hill views. Social and private sessions at £25/person in a peaceful woodland setting. About 20 minutes from Glasgow city centre, one of the most scenic outdoor sauna experiences near Glasgow.",
+    lat:55.7709, lng:-4.3093,
+    bookingUrl:"https://www.instagram.com/eastwoodforestsauna/"
+  },
+  {
+    id:320, city:"Glasgow", country:"Scotland", name:"Vida Sauna & Ice", area:"Cumbernauld / Central Scotland",
+    type:"both", price:"£25 per session · Vida Protocol £55", rating:4.7, reviews:29,
+    hours:"Mon–Thu 6:30am–9pm · Fri 6:30am–7pm · Sat–Sun 8am–6pm",
+    temp:"Traditional & infrared sauna · 3 ice baths at varying temperatures", tags:["Contrast Therapy","Infrared","Ice Bath","Boutique"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities on-site",
+    transport:"Cumbernauld town centre · M80 junction 5 · 30 min from Glasgow",
+    parking:"On-site parking",
+    desc:"Vida Sauna & Ice in Cumbernauld — a science-backed wellness studio combining traditional and infrared saunas with three ice baths at varying temperatures. Drop-in 45-minute sessions at £25 or the guided Vida Protocol (1 hr 20 min contrast therapy) at £55. Accessible from the M80 north of Glasgow.",
+    lat:55.9430, lng:-3.9813,
+    bookingUrl:"https://vidasauna-ice.co.uk"
+  },
+  {
+    id:321, city:"Glasgow", country:"Scotland", name:"Bask Saunas", area:"Gartmore / Loch Lomond",
+    type:"sauna", price:"£17 per person communal · £100/hr private", rating:4.8, reviews:22,
+    hours:"Check website · bookings close 2 hrs before session",
+    temp:"Wood-fired sauna · forest and riverside setting", tags:["Outdoor","Wood-fired","Forest","Rural","Scenic"], emoji:"🌲🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · 45 min from Glasgow on A81 towards Aberfoyle",
+    parking:"At Cobleland Campsite, Gartmore",
+    desc:"Bask Saunas at Cobleland Campsite in Gartmore, on the edge of Loch Lomond and the Trossachs National Park. Wood-fired sauna with communal sessions for up to 6 at £17/person and private hire for £100/hour (up to 8 people). A beautiful forest and riverside sauna setting about 45 minutes from Glasgow.",
+    lat:56.1649, lng:-4.3716,
+    bookingUrl:"https://www.basksaunas.com"
+  },
+
+  // ── ABERDEEN (Scotland — new venues) ──
+  {
+    id:322, city:"Aberdeen", country:"Scotland", name:"Barbos Sauna", area:"Aberdeen Beach / Esplanade",
+    type:"sauna", price:"From £12 per person (1 hour)", rating:4.9, reviews:73,
+    hours:"Wed–Sun 7am–7pm · walk-ins and private hire",
+    temp:"North Sea coastal setting", tags:["Outdoor","Wood-fired","Beach","Coastal","Sea Plunge"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Bus to Aberdeen beach / esplanade",
+    parking:"Beach Boulevard car park nearby",
+    desc:"A unique seaside sauna in a converted horsebox on Aberdeen's beachfront at Esplanade North Square. Finnish-inspired wood-fired sauna for up to 6 with stunning North Sea views. From £12/person for a community hour, private hire from £60/hour. Open Wednesday to Sunday with walk-ins welcome. A refreshing coastal sauna experience on Aberdeen's famous beach.",
+    lat:57.1453, lng:-2.0709,
+    bookingUrl:"https://www.barbossauna.co.uk"
+  },
+  {
+    id:323, city:"Aberdeen", country:"Scotland", name:"Bannatyne Health Club & Spa — Aberdeen", area:"Danestone / North Aberdeen",
+    type:"both", price:"Day pass from £13.50 · memberships available", rating:4.3, reviews:219,
+    hours:"Mon–Fri 6am–10:30pm · Sat–Sun 8am–8pm",
+    temp:"Dry sauna · steam room · spa pool", tags:["Gym Sauna","Pool","Spa","Day Pass"], emoji:"💆", open:true,
+    hygiene:"A+", lockerNote:"Secure lockers provided",
+    transport:"Bus to Danestone · Bridge of Don area",
+    parking:"Free on-site parking",
+    desc:"Bannatyne Health Club & Spa Aberdeen in Danestone — a premium health club with sauna, steam room, spa pool, 20-metre swimming pool and relaxation room. Spa treatments from £20. Day passes available for non-members.",
+    lat:57.1771, lng:-2.0835,
+    bookingUrl:"https://www.bannatyne.co.uk/health-club/aberdeen"
+  },
+  {
+    id:324, city:"Aberdeen", country:"Scotland", name:"Village Gym Aberdeen", area:"Kingswells / West Aberdeen",
+    type:"both", price:"Day pass from £20 · memberships available", rating:4.1, reviews:167,
+    hours:"Mon–Fri 6am–10pm · Sat–Sun 7am–9pm",
+    temp:"Dry sauna · steam room · spa pool", tags:["Gym Sauna","Pool","Spa","Day Pass"], emoji:"💆", open:true,
+    hygiene:"A", lockerNote:"Secure lockers provided",
+    transport:"Car recommended · Prime Four Business Park, west Aberdeen",
+    parking:"Free at Prime Four Business Park",
+    desc:"Village Gym Aberdeen at Prime Four Business Park in Kingswells — a premium health club with sauna, steam room and spa pool. Day passes available for non-members. Convenient for the Aberdeen bypass and Westhill corridor.",
+    lat:57.1420, lng:-2.2134,
+    bookingUrl:"https://www.villagegym.co.uk/locations/aberdeen/"
+  },
+  {
+    id:325, city:"Aberdeen", country:"Scotland", name:"Stonehaven Paddleboarding Sauna", area:"Stonehaven Harbour",
+    type:"sauna", price:"Check website for session prices", rating:4.8, reviews:31,
+    hours:"7 days a week 7am–7pm",
+    temp:"Sea or harbour cold dip", tags:["Outdoor","Wood-fired","Harbour","Coastal","Scenic"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Stonehaven train station · 5 min walk · regular Aberdeen–Dundee services",
+    parking:"Stonehaven harbour car park nearby",
+    desc:"An Estonian-style wood-fired sauna in a converted horsebox with beautiful Aspen wood panelling and driftwood exterior, perched at Stonehaven's historic harbour. Up to 6 people, bookable in 30, 60, 90 or 120 minute slots. Stonehaven is just 15 miles south of Aberdeen by train — one of Scotland's most scenic coastal sauna settings.",
+    lat:56.9650, lng:-2.2107,
+    bookingUrl:"https://shpb.co.uk/sauna/"
+  },
+  {
+    id:326, city:"Aberdeen", country:"Scotland", name:"The Sauna Hoose", area:"Fraserburgh Beach / Aberdeenshire",
+    type:"sauna", price:"Check website for session prices", rating:4.7, reviews:17,
+    hours:"Year-round · check website for availability",
+    temp:"Fraserburgh Beach coastal setting", tags:["Outdoor","Wood-fired","Beach","Coastal","Seasonal"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Fraserburgh, northeast Aberdeenshire",
+    parking:"Fraserburgh Beach Caravan Park",
+    desc:"The Sauna Hoose — a mobile wood-fired sauna on the award-winning Fraserburgh Beach within the Fraserburgh Caravan Park on the Aberdeenshire north coast. Private and communal bookings. A unique coastal sauna experience in a remote and beautiful location on the northeast tip of Scotland.",
+    lat:57.6925, lng:-2.0065,
+    bookingUrl:"https://thesaunahoose.co.uk"
+  },
+
+  // ── INVERNESS (Scotland — new venues) ──
+  {
+    id:327, city:"Inverness", country:"Scotland", name:"Bannatyne Health Club & Spa — Inverness", area:"Inshes / East Inverness",
+    type:"both", price:"Spa from £44.50 · day pass from £13.50", rating:4.4, reviews:194,
+    hours:"Mon–Fri 6am–10pm · Sat–Sun 8am–8pm",
+    temp:"Dry sauna · steam room · pool", tags:["Gym Sauna","Pool","Spa","Day Pass"], emoji:"💆", open:true,
+    hygiene:"A+", lockerNote:"Secure lockers provided",
+    transport:"Bus from Inverness city centre to Inshes Retail Park",
+    parking:"Free on-site at Inshes Retail Park",
+    desc:"Bannatyne Health Club & Spa Inverness at the Inshes Retail & Leisure Park — a well-equipped health club with sauna, steam room, swimming pool and full spa treatments from £44.50. Day passes from £13.50 for non-members. A popular wellness facility in east Inverness, convenient for the A9.",
+    lat:57.4503, lng:-4.1969,
+    bookingUrl:"https://www.bannatyne.co.uk/health-club/inverness"
+  },
+  {
+    id:328, city:"Inverness", country:"Scotland", name:"Sauna Cairngorms", area:"Kincraig / Loch Insh / Cairngorms",
+    type:"sauna", price:"Private from £75 (up to 6, 75 min) · communal available", rating:4.9, reviews:48,
+    hours:"Check website for session availability",
+    temp:"Loch Insh wild plunge · 75–120 min sessions", tags:["Outdoor","Wood-fired","Lakeside","Scenic","Highlands"], emoji:"🏔️🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Kingussie train station · 5 miles · direct from Edinburgh and Inverness",
+    parking:"At Loch Insh Outdoor Centre",
+    desc:"Sauna Cairngorms at Loch Insh Outdoor Centre in Kincraig — a wood-fired sauna on the banks of Loch Insh inside Cairngorms National Park. Private sessions for up to 6 from £75 (75 minutes), communal sessions also available. Direct access to Loch Insh for wild water plunges. One of Scotland's most spectacular sauna locations — Highland wilderness and dark loch water in the heart of the Cairngorms. Train-accessible from Edinburgh via Kingussie.",
+    lat:57.0919, lng:-3.9831,
+    bookingUrl:"https://saunacairngorms.co.uk/book-a-sauna/"
+  },
+  {
+    id:329, city:"Inverness", country:"Scotland", name:"Watershed Sauna — Findhorn East Beach", area:"Findhorn / Moray Firth",
+    type:"sauna", price:"Check website for session prices", rating:4.9, reviews:34,
+    hours:"Check website · 60-minute private sessions",
+    temp:"Moray Firth beach plunge", tags:["Outdoor","Wood-fired","Beach","Coastal","Scenic"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Forres 5 miles · train to Forres then taxi",
+    parking:"Findhorn East Beach Car Park (free)",
+    desc:"Watershed Sauna — a vintage horsebox wood-fired Nordic sauna at Findhorn East Beach on the Moray Firth. Private 60-minute sessions with views over the coastal nature reserve and estuary. Findhorn village is a gem of the Scottish coast, with dolphin sightings and the famous Findhorn Foundation community nearby. A truly remote and peaceful sauna experience.",
+    lat:57.6584, lng:-3.7547,
+    bookingUrl:"https://watershedsauna.com"
+  },
+  {
+    id:330, city:"Inverness", country:"Scotland", name:"Fyrhùs Sauna", area:"Hopeman Beach / Moray",
+    type:"sauna", price:"£15 communal · £90 private (up to 6)", rating:4.9, reviews:27,
+    hours:"Regular sessions plus Wed community sessions 3–5pm (pay what you can)",
+    temp:"Moray Firth dunes and beach", tags:["Outdoor","Wood-fired","Beach","Coastal","Community"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Elgin 10 miles · limited bus to Hopeman",
+    parking:"Hopeman Beach car park",
+    desc:"Fyrhùs Sauna at Hopeman Beach, Moray — a wood-fired sauna nestled in the dunes past the beach huts on Hopeman's east beach. Communal sessions at £15/person (max 7), private from £90 for up to 6. Wednesday community sessions with pay-what-you-can (£5 donation suggested). A genuinely wild sauna on a beautiful and often deserted Moray Firth beach. Note: use Hopeman Beach car park for navigation — not the booking postcode.",
+    lat:57.7083, lng:-3.4387,
+    bookingUrl:"https://fyrhussauna.co.uk/booking/"
+  },
+  {
+    id:331, city:"Inverness", country:"Scotland", name:"Sauna at the Kings", area:"Cullen Beach / Moray Firth",
+    type:"sauna", price:"Check website for session prices", rating:4.9, reviews:52,
+    hours:"Check website · hourly public sessions · private hire available",
+    temp:"Cullen Bay sea plunge", tags:["Outdoor","Wood-fired","Beach","Coastal","Sea Plunge","Scenic"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Cullen, Moray · A98 between Aberdeen and Inverness",
+    parking:"Cullen Links car park",
+    desc:"Sauna at the Kings on the Links at Cullen Beach — a beautiful coastal sauna on the Moray Firth with direct beach access and sea plunge into Cullen Bay. Public sessions bookable per person (up to 8), private hire also available. Cullen Bay is one of the most picturesque coves on the Scottish northeast coast, flanked by the ruins of Cullen House and the iconic Three Kings sea stacks.",
+    lat:57.6918, lng:-2.8188,
+    bookingUrl:"https://www.saunaatthekings.co.uk/sauna-sessions"
+  },
+
+  // ── ST ANDREWS (Scotland — new city) ──
+  {
+    id:332, city:"St Andrews", country:"Scotland", name:"St Andrews Seaside Sauna", area:"East Sands / St Andrews Bay",
+    type:"sauna", price:"From £16 per session", rating:4.9, reviews:31,
+    hours:"Check website for session times",
+    temp:"St Andrews Bay sea plunge", tags:["Outdoor","Wood-fired","Beach","Coastal","Sea Plunge","Scenic"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"5 min walk from St Andrews town centre · bus to St Andrews",
+    parking:"East Sands car park adjacent",
+    desc:"St Andrews Seaside Sauna at East Sands — a completely off-grid wood-fired sauna facing directly out to sea across St Andrews Bay. Established in late 2024 and heated to 70–100°C. Individual or group bookings. The sauna sits on the Fife Coastal Path next to East Sands Leisure Centre, with the iconic Old Course and Cathedral ruins nearby. One of Fife's most scenic coastal sauna experiences.",
+    lat:56.3383, lng:-2.7812,
+    bookingUrl:"https://standrewsseasidesauna.com"
+  },
+  {
+    id:333, city:"St Andrews", country:"Scotland", name:"Wild Scottish Sauna — West Sands Beach", area:"West Sands / St Andrews",
+    type:"sauna", price:"From £16 per session", rating:5.0, reviews:48,
+    hours:"Check website for session times · seasonal variations",
+    temp:"St Andrews Bay North Sea plunge", tags:["Outdoor","Wood-fired","Beach","Coastal","Sea Plunge","Scenic"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"15 min walk from St Andrews town centre · car park at West Sands Rd",
+    parking:"West Sands Road car park",
+    desc:"Wild Scottish Sauna at West Sands Beach — a traditional Finnish-style sauna behind the dunes at the iconic West Sands, famously the filming location for Chariots of Fire. Next to The Dook Cafe. 90-minute sessions with panoramic sea views across St Andrews Bay. Sea plunge directly from the beach. Up to 12 people. Full moon saunas and seasonal events.",
+    lat:56.3518, lng:-2.8088,
+    bookingUrl:"https://wildscottishsauna.com/make-a-booking/"
+  },
+  {
+    id:334, city:"St Andrews", country:"Scotland", name:"Wild Scottish Sauna — Kingsbarns Beach", area:"Kingsbarns / East Neuk of Fife",
+    type:"sauna", price:"From £16 per session", rating:5.0, reviews:155,
+    hours:"Check website · seasonal variations · sunrise to sunset",
+    temp:"North Sea plunge · award-winning beach", tags:["Outdoor","Wood-fired","Beach","Coastal","Sea Plunge","Scenic"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · 5 miles south of St Andrews on the coast road",
+    parking:"Kingsbarns Beach Car Park (free)",
+    desc:"Wild Scottish Sauna at Kingsbarns Beach — a luxury 12-person traditional Finnish sauna on the award-winning Kingsbarns Beach, one of Fife's most beautiful coastal locations. Wild spa, hen/stag and private hire packages alongside social sessions. The most popular and highest-rated Wild Scottish Sauna location, with stunning East Neuk coastal scenery.",
+    lat:56.2869, lng:-2.6432,
+    bookingUrl:"https://wildscottishsauna.com/make-a-booking/"
+  },
+  {
+    id:335, city:"St Andrews", country:"Scotland", name:"Wild Scottish Sauna — Eden Springs Loch", area:"Cupar / Bow of Fife",
+    type:"sauna", price:"From £15 per session", rating:4.9, reviews:26,
+    hours:"Check website for session availability",
+    temp:"Eden Springs loch plunge", tags:["Outdoor","Wood-fired","Lakeside","Countryside","Scenic"], emoji:"🌿🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Cupar 3 miles · A91 Fife",
+    parking:"At Eden Springs Country Park",
+    desc:"Wild Scottish Sauna at Eden Springs Country Park near Cupar — a beautiful lochside sauna at a fishery and country park in the heart of Fife. Social sessions from £15, private packages from £100 for fully guided experiences. Jetty access for loch plunges, toilets and cafe on-site. A special inland sauna setting away from the coast, in contrast to the East Neuk beach locations.",
+    lat:56.3463, lng:-3.0249,
+    bookingUrl:"https://wildscottishsauna.com/make-a-booking/"
+  },
+  {
+    id:336, city:"St Andrews", country:"Scotland", name:"Wild Scottish Sauna — Shell Bay, Elie", area:"Shell Bay / Elie / East Neuk",
+    type:"sauna", price:"From £16 per session", rating:5.0, reviews:39,
+    hours:"Fri–Sun · check website for current sessions",
+    temp:"Firth of Forth sea plunge", tags:["Outdoor","Wood-fired","Beach","Coastal","Sea Plunge"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Elie village 1 mile",
+    parking:"Shell Bay / Elie Holiday Park car park",
+    desc:"Wild Scottish Sauna at Shell Bay, near the charming village of Elie in the East Neuk of Fife. Traditional Finnish sauna on the beach at Shell Bay with Firth of Forth sea plunge access. Friday to Sunday sessions, typically spring to autumn. One of the most picturesque spots in Fife, on one of Scotland's most beautiful shorelines.",
+    lat:56.1838, lng:-2.8367,
+    bookingUrl:"https://wildscottishsauna.com/make-a-booking/"
+  },
+  {
+    id:337, city:"St Andrews", country:"Scotland", name:"Elie Seaside Sauna", area:"Elie Harbour / East Neuk",
+    type:"sauna", price:"Check website for session prices", rating:4.8, reviews:86,
+    hours:"Mon 2–4pm · Thu 5–7pm · Fri 10am–8pm · Sat 9am–7pm · Sun 9am–4pm",
+    temp:"Firth of Forth sea plunge from harbour", tags:["Outdoor","Wood-fired","Harbour","Coastal","Sea Plunge"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Elie is a charming East Neuk fishing village",
+    parking:"Elie Harbour car park",
+    desc:"Elie Seaside Sauna at the historic Elie Harbour — two saunas in one of Fife's most charming coastal settings. 'Shore' seats up to 10 (bookable by the seat) and 'Dune' is private-hire-only for 6–8. Direct sea plunge into the Firth of Forth from the harbour. The East Neuk town of Elie is a favourite destination for Scots escaping Edinburgh, with excellent restaurants and a beautiful sandy bay.",
+    lat:56.1877, lng:-2.8279,
+    bookingUrl:"https://www.elieseasidesauna.com/booking/"
+  },
 ];
 
 export const CITIES = [
@@ -3828,7 +4282,7 @@ export const CITIES = [
   "London","Bath","Bristol","Brighton","Manchester","Liverpool","Newcastle","Leeds","Birmingham","Sheffield","Cornwall",
   "Nottingham","Norwich","Cambridge","Exeter","Portsmouth","Plymouth",
   // UK — Scotland
-  "Edinburgh","Glasgow","Aberdeen","Inverness","Dundee",
+  "Edinburgh","Glasgow","Aberdeen","Inverness","Dundee","St Andrews",
   // UK — Wales
   "Cardiff","Swansea",
   "Carmarthen","Llanelli","Neath Port Talbot","Merthyr Tydfil","Blackwood","Bridgend","Porthcawl","Saundersfoot","Cwmbran",
@@ -3848,7 +4302,7 @@ export const FLAG: Record<string, string> = {
   Birmingham:"🇬🇧", Sheffield:"🇬🇧", Cornwall:"🇬🇧",
   Nottingham:"🇬🇧", Norwich:"🇬🇧", Cambridge:"🇬🇧", Exeter:"🇬🇧",
   Portsmouth:"🇬🇧", Plymouth:"🇬🇧",
-  Edinburgh:"🇬🇧", Glasgow:"🇬🇧", Aberdeen:"🇬🇧", Inverness:"🇬🇧", Dundee:"🇬🇧",
+  Edinburgh:"🇬🇧", Glasgow:"🇬🇧", Aberdeen:"🇬🇧", Inverness:"🇬🇧", Dundee:"🇬🇧", "St Andrews":"🇬🇧",
   Cardiff:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Swansea:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
   Carmarthen:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Llanelli:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Neath Port Talbot":"🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Merthyr Tydfil":"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
   Blackwood:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Bridgend:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Porthcawl:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Saundersfoot:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Cwmbran:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
@@ -3876,7 +4330,7 @@ export const REGION_MAP: Record<string, string> = {
   Nottingham:"UK & Ireland", Norwich:"UK & Ireland", Cambridge:"UK & Ireland",
   Exeter:"UK & Ireland", Portsmouth:"UK & Ireland", Plymouth:"UK & Ireland",
   Edinburgh:"UK & Ireland", Glasgow:"UK & Ireland", Aberdeen:"UK & Ireland",
-  Inverness:"UK & Ireland", Dundee:"UK & Ireland",
+  Inverness:"UK & Ireland", Dundee:"UK & Ireland", "St Andrews":"UK & Ireland",
   Cardiff:"UK & Ireland", Swansea:"UK & Ireland",
   Carmarthen:"UK & Ireland", Llanelli:"UK & Ireland", "Neath Port Talbot":"UK & Ireland", "Merthyr Tydfil":"UK & Ireland",
   Blackwood:"UK & Ireland", Bridgend:"UK & Ireland", Porthcawl:"UK & Ireland", Saundersfoot:"UK & Ireland", Cwmbran:"UK & Ireland",
@@ -3906,7 +4360,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Exeter:"England", Portsmouth:"England", Plymouth:"England",
   // Scotland
   Edinburgh:"Scotland", Glasgow:"Scotland", Aberdeen:"Scotland",
-  Inverness:"Scotland", Dundee:"Scotland",
+  Inverness:"Scotland", Dundee:"Scotland", "St Andrews":"Scotland",
   // Wales
   Cardiff:"Wales", Swansea:"Wales",
   Carmarthen:"Wales", Llanelli:"Wales", "Neath Port Talbot":"Wales", "Merthyr Tydfil":"Wales",
@@ -3943,7 +4397,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Exeter:"South West", Portsmouth:"South East", Plymouth:"South West",
   // Scotland — region
   Edinburgh:"Central Belt", Glasgow:"Central Belt", Aberdeen:"Grampian",
-  Inverness:"Highlands", Dundee:"Fife",
+  Inverness:"Highlands", Dundee:"Fife", "St Andrews":"Fife",
   // Wales — region/county
   Cardiff:"South Wales", Swansea:"South Wales",
   Carmarthen:"Carmarthenshire", Llanelli:"Carmarthenshire", "Neath Port Talbot":"Neath Port Talbot", "Merthyr Tydfil":"Merthyr Tydfil",
@@ -4067,6 +4521,16 @@ export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
   "Hammam":          { bg:"rgba(107,175,200,0.12)",  c:"#6bafc8" },
   "Seaweed Bath":    { bg:"rgba(74,155,106,0.15)",   c:"#4a9b6a" },
   "Lakeside":        { bg:"rgba(107,175,200,0.13)",  c:"#6bafc8" },
+  "Lochside":        { bg:"rgba(107,175,200,0.13)",  c:"#6bafc8" },
+  "Highlands":       { bg:"rgba(78,122,85,0.18)",    c:"#6a9b72" },
+  "East Lothian":    { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
+  "West End":        { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
+  "Southside":       { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
+  "Moray Firth":     { bg:"rgba(107,175,200,0.15)",  c:"#6bafc8" },
+  "Fife":            { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
+  "Loch Lomond":     { bg:"rgba(107,175,200,0.15)",  c:"#6bafc8" },
+  "East Kilbride":   { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
+  "North Glasgow":   { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
 };
 
 export function getTag(t: string): { bg: string; c: string } {
