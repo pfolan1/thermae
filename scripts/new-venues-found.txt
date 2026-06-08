@@ -1,0 +1,15 @@
+═══════════════════════════════════════════════════════════════
+  THERMAE VENUE DISCOVERY REPORT
+  Monday, 8 June 2026
+═══════════════════════════════════════════════════════════════
+
+  Candidates collected : 84
+  After relevance filter: 71
+  New venues added     : 0
+  Skipped              : 71
+  Errors               : 0
+
+── NO NEW VENUES FOUND ──────────────────────────────────────────
+  Nothing new to add this week.
+
+Report generated: 2026-06-08T12:00:53.790Z
