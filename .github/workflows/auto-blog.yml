@@ -5,15 +5,9 @@ env:
 
 on:
   schedule:
-    # Every Monday at 5am UTC (6am BST). Script checks whether this Monday
-    # is a scheduled publish date from scripts/blog-schedule.json.
+    # Every Monday at 5am UTC (6am BST)
     - cron: '0 5 * * 1'
   workflow_dispatch:
-    inputs:
-      force:
-        description: 'Force generate even if today is not a scheduled date'
-        required: false
-        default: 'false'
 
 jobs:
   generate-blog-post:
@@ -40,20 +34,15 @@ jobs:
       - name: Generate blog post
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
-          FORCE_GENERATE: ${{ github.event.inputs.force }}
         run: node scripts/generate-blog-post.js
 
-      - name: Commit and push new blog post
+      - name: Commit and push
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "Thermae Auto Blog"
           git add -A
-          if git diff --staged --quiet; then
-            echo "No changes to commit — no post was due today."
-          else
-            git commit -m "Auto blog post: $(date +'%Y-%m-%d')"
-            git push
-          fi
+          git commit -m "Auto blog post: $(date +'%Y-%m-%d')"
+          git push
 
       - name: Trigger Netlify rebuild
         run: curl -X POST -d '' ${{ secrets.NETLIFY_BUILD_HOOK }}
