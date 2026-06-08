@@ -13,6 +13,8 @@
  *   FORCE_GENERATE     — if 'true', generate even if today is not scheduled
  */
 
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 'use strict';
 
 const fs   = require('fs');

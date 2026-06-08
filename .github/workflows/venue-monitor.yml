@@ -1,0 +1,30 @@
+name: Venue Monitor
+
+env:
+  NODE_TLS_REJECT_UNAUTHORIZED: "0"
+
+on:
+  schedule:
+    # Every Sunday at 6am UTC
+    - cron: '0 6 * * 0'
+  workflow_dispatch:
+
+jobs:
+  monitor-venues:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Run venue monitor
+        run: node scripts/monitor-new-saunas.js

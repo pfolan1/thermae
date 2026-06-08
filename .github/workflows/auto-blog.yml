@@ -1,5 +1,8 @@
 name: Auto Blog Post
 
+env:
+  NODE_TLS_REJECT_UNAUTHORIZED: "0"
+
 on:
   schedule:
     # Every Monday at 5am UTC (6am BST). Script checks whether this Monday
@@ -51,3 +54,6 @@ jobs:
             git commit -m "Auto blog post: $(date +'%Y-%m-%d')"
             git push
           fi
+
+      - name: Trigger Netlify rebuild
+        run: curl -X POST -d '' ${{ secrets.NETLIFY_BUILD_HOOK }}
