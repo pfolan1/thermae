@@ -10,10 +10,12 @@ import nordicCulture from './nordic-sauna-culture-uk';
 import saunasScotland from './saunas-edinburgh-glasgow';
 import saunasDublin from './best-saunas-dublin';
 import saunasLondon from './best-saunas-london';
+import coldPlungeScienceBody2026 from './cold-plunge-science-body-2026';
 
 export type { BlogPost };
 
 export const ALL_POSTS: BlogPost[] = [
+  coldPlungeScienceBody2026,
   healthBenefitsSauna,
   saunasLondon,
   saunasDublin,
@@ -31,4 +33,4 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return ALL_POSTS.find(p => p.slug === slug);
 }
 
-export { healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
+export { coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
