@@ -130,6 +130,35 @@ function extractVenueLinks(html, baseUrl) {
   return results;
 }
 
+// ── NAME SIMILARITY ───────────────────────────────────────────────────────────
+
+// Dice coefficient using character bigrams — returns 0..1
+function nameSimilarity(a, b) {
+  a = a.toLowerCase().trim();
+  b = b.toLowerCase().trim();
+  if (a === b) return 1.0;
+  if (a.length < 2 || b.length < 2) return 0;
+  const getBigrams = s => {
+    const set = new Set();
+    for (let i = 0; i < s.length - 1; i++) set.add(s.slice(i, i + 2));
+    return set;
+  };
+  const biA = getBigrams(a);
+  const biB = getBigrams(b);
+  let shared = 0;
+  for (const bg of biA) if (biB.has(bg)) shared++;
+  return (2 * shared) / (biA.size + biB.size);
+}
+
+// Returns true only if the candidateName is 90%+ similar to any existing name
+function isSimilarToExisting(candidateName, existingNames, threshold = 0.9) {
+  const lower = candidateName.toLowerCase().trim();
+  for (const name of existingNames) {
+    if (nameSimilarity(lower, name) >= threshold) return true;
+  }
+  return false;
+}
+
 // ── VENUES.TS HELPERS ─────────────────────────────────────────────────────────
 
 function parseExistingNames(src) {
@@ -336,13 +365,8 @@ async function sendEmail(subject, body) {
   const errors    = [];
 
   for (const candidate of relevant) {
-    // Pre-filter: skip if candidate title strongly matches an existing venue name
-    const titleLower = candidate.title.toLowerCase();
-    const likelyKnown = [...existingNames].some(name => {
-      const words = name.split(/\s+/).filter(w => w.length > 4);
-      return words.length >= 2 && words.every(w => titleLower.includes(w));
-    });
-    if (likelyKnown) {
+    // Pre-filter: skip if candidate title is 90%+ similar to an existing venue name
+    if (isSimilarToExisting(candidate.title, existingNames)) {
       skipped.push({ candidate, reason: 'Matches existing venue name' });
       continue;
     }
@@ -372,13 +396,13 @@ async function sendEmail(subject, body) {
         continue;
       }
 
-      // Duplicate check by resolved name
-      const nameLower = parsed.name.toLowerCase().trim();
-      if (existingNames.has(nameLower)) {
+      // Duplicate check by resolved name (90%+ similarity)
+      if (isSimilarToExisting(parsed.name, existingNames)) {
         console.log(` skip (duplicate: ${parsed.name})`);
         skipped.push({ candidate, reason: `Duplicate: ${parsed.name}` });
         continue;
       }
+      const nameLower = parsed.name.toLowerCase().trim();
 
       console.log(` ✅ "${parsed.name}" — ${parsed.city}, ${parsed.country}`);
       existingNames.add(nameLower); // prevent intra-run duplicates

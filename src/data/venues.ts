@@ -6747,6 +6747,18 @@ export const VENUES: Venue[] = [
     lat:54.784097, lng:-1.534524,
     bookingUrl:"https://www.bannatyne.co.uk/health-club/durham"
   },
+  {
+    id:544, city:"London", country:"England", name:"Arvo Sauna", area:"Walthamstow",
+    type:"both", price:"From £15", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold Plunge", tags:["Finnish","Cold Plunge","Community","East London","Walthamstow","New 2026"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Walthamstow Central (Victoria line) 10 min walk; Wood Street (Overground) 5 min walk",
+    parking:"Check website for parking",
+    desc:"A community Finnish sauna and cold plunge venue in Walthamstow, East London. Offering authentic sauna experiences in a welcoming neighbourhood setting.",
+    lat:51.582, lng:-0.005,
+    bookingUrl:"https://arvosauna.co.uk"
+  },
 ];
 
 export const CITIES = [
