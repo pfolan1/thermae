@@ -23,6 +23,7 @@
   bookingUrl?: string;
   featured?: boolean;
   googleRating?: number;
+  venueCategory?: "dedicated" | "hotel" | "gym" | "spa" | "leisure_centre" | "members_club";
 }
 
 export const VENUES: Venue[] = [
@@ -7085,6 +7086,65 @@ export const VENUES: Venue[] = [
     lat:51.5141, lng:-0.1316,
     bookingUrl:"https://www.sohohousecowshed.com"
   },
+
+  // ── GREENLAND ──
+  {
+    id:571, city:"South Greenland", country:"Greenland", name:"Uunartoq Hot Springs", area:"Island of Uunartoq, South Greenland",
+    type:"lagoon", price:"Free", rating:4.9, reviews:0,
+    hours:"Open year-round · accessible by boat from Alluitsup Paa",
+    temp:"~38°C natural hot springs", tags:["Hot Spring","Natural Pool","Free","Arctic","Historic","Remote"], emoji:"♨️🌍", open:true,
+    hygiene:"Natural", lockerNote:"No facilities — remote uninhabited island",
+    transport:"Boat from Alluitsup Paa (Sydprøven) · seasonal",
+    parking:"N/A — island location",
+    desc:"Greenland's only place warm enough to bathe outdoors. Three naturally heated geothermal springs on the uninhabited island of Uunartoq, dammed with stones to form bathing pools at around 38°C. Set against a breathtaking backdrop of icebergs and Arctic wilderness. Completely free and open year-round, accessible by boat from the village of Alluitsup Paa. A truly remote and unforgettable Arctic bathing experience.",
+    lat:60.1833, lng:-45.3667,
+  },
+  {
+    id:572, city:"Sisimiut", country:"Greenland", name:"Sisimiut Arctic Sauna", area:"Sisimiut, West Greenland",
+    type:"sauna", price:"Check locally", rating:4.7, reviews:0,
+    hours:"Check locally for current hours",
+    temp:"Arctic ocean plunge", tags:["Sauna","Arctic","Unique","Remote"], emoji:"🔥❄️", open:true,
+    hygiene:"A", lockerNote:"Check locally",
+    transport:"Sisimiut town centre",
+    parking:"On-site parking",
+    desc:"Traditional Arctic sauna experience in Sisimiut — one of Greenland's most vibrant and colourful towns, sitting just above the Arctic Circle. Unique Arctic wellness with the possibility of plunging into the frigid Arctic ocean surrounded by dramatic fjord landscapes. A genuinely off-the-beaten-track wellness experience for the adventurous traveller.",
+    lat:66.9396, lng:-53.6735,
+  },
+
+  // ── ICELAND (additional) ──
+  {
+    id:573, city:"Flúðir", country:"Iceland", name:"Pollurinn Hot Pot", area:"Flúðir village, South Iceland",
+    type:"lagoon", price:"Free", rating:4.8, reviews:0,
+    hours:"Open year-round · 24/7",
+    temp:"~39°C natural geothermal", tags:["Hot Spring","Free","Natural Pool","Community","South Iceland"], emoji:"♨️", open:true,
+    hygiene:"Natural", lockerNote:"Basic changing facilities near village",
+    transport:"Village of Flúðir · short walk from centre",
+    parking:"Free near village centre",
+    desc:"A beloved community hot pot in the village of Flúðir in South Iceland, fed by natural geothermal springs and completely free year-round. A favourite with locals and Golden Circle visitors who want an authentic, non-commercial hot spring experience away from the tourist crowds. Simple, warm and genuinely Icelandic.",
+    lat:64.1352, lng:-20.3271,
+  },
+  {
+    id:574, city:"Reykholt", country:"Iceland", name:"Snorralaug", area:"Reykholt, West Iceland",
+    type:"lagoon", price:"Free", rating:4.7, reviews:0,
+    hours:"Open year-round · free to visit",
+    temp:"~35°C natural hot spring", tags:["Hot Spring","Historic","Natural Pool","Free","Medieval"], emoji:"♨️🏛️", open:true,
+    hygiene:"Natural", lockerNote:"No facilities — open-air historic monument",
+    transport:"Reykholt village · short walk from Snorrastofa cultural centre",
+    parking:"Free at Reykholt cultural centre",
+    desc:"One of Iceland's most historically significant hot springs — the medieval bathing pool of the great saga writer Snorri Sturluson, who soaked here in the 13th century. Connected to Snorri's farmstead by a subterranean tunnel, Snorralaug is a circular stone pool fed by natural springs at around 35°C. A place of genuine historic weight, free to visit beside the fascinating Snorrastofa cultural centre.",
+    lat:64.6661, lng:-21.2942,
+  },
+  {
+    id:575, city:"Mývatn", country:"Iceland", name:"Grjótagjá Cave", area:"Near Lake Mývatn, North Iceland",
+    type:"lagoon", price:"Free", rating:4.6, reviews:0,
+    hours:"Open to visit year-round · swimming not permitted",
+    temp:"~50°C (too hot to swim — visit only)", tags:["Geothermal","Historic","Unique","Cave","Natural Pool"], emoji:"🌋🕯️", open:true,
+    hygiene:"Natural", lockerNote:"No facilities — natural lava cave",
+    transport:"Off Road 860 near Lake Mývatn · 5 min drive from Reykjahlíð",
+    parking:"Small roadside car park off Route 860",
+    desc:"A dramatic lava cave near Lake Mývatn containing a stunning turquoise geothermal pool. Made famous as a filming location for Game of Thrones (Season 3), Grjótagjá was once used for bathing but volcanic activity in the 1970s raised the water to around 50°C — too hot to swim. Still visitable and utterly spectacular: the cave glows with otherworldly blue-green light filtering through ancient lava rock.",
+    lat:65.6275, lng:-16.8824,
+  },
 ];
 
 export const CITIES = [
@@ -7106,7 +7166,9 @@ export const CITIES = [
   // Nordic
   "Helsinki","Stockholm","Gothenburg","Copenhagen","Aarhus","Oslo","Bergen","Rovaniemi","Karlstad","Reykjavik",
   // Iceland — regional towns
-  "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes",
+  "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Flúðir","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes",
+  // Greenland
+  "South Greenland","Sisimiut",
 ];
 
 export const FLAG: Record<string, string> = {
@@ -7135,7 +7197,8 @@ export const FLAG: Record<string, string> = {
   Reykjavik:"🇮🇸",
   "Mývatn":"🇮🇸", "Húsavík":"🇮🇸", "Akureyri":"🇮🇸", "Egilsstaðir":"🇮🇸",
   "Hvalfjörður":"🇮🇸", "Laugarás":"🇮🇸", "Reykholt":"🇮🇸", "Laugarvatn":"🇮🇸",
-  "Skógar":"🇮🇸", "Hveragerði":"🇮🇸", "Árskógssandur":"🇮🇸", "Höfn":"🇮🇸", "Drangsnes":"🇮🇸",
+  "Flúðir":"🇮🇸", "Skógar":"🇮🇸", "Hveragerði":"🇮🇸", "Árskógssandur":"🇮🇸", "Höfn":"🇮🇸", "Drangsnes":"🇮🇸",
+  "South Greenland":"🇬🇱", "Sisimiut":"🇬🇱",
 };
 
 export const REGION_MAP: Record<string, string> = {
@@ -7165,7 +7228,8 @@ export const REGION_MAP: Record<string, string> = {
   Reykjavik:"Nordic", Aarhus:"Nordic",
   "Mývatn":"Nordic", "Húsavík":"Nordic", "Akureyri":"Nordic", "Egilsstaðir":"Nordic",
   "Hvalfjörður":"Nordic", "Laugarás":"Nordic", "Reykholt":"Nordic", "Laugarvatn":"Nordic",
-  "Skógar":"Nordic", "Hveragerði":"Nordic", "Árskógssandur":"Nordic", "Höfn":"Nordic", "Drangsnes":"Nordic",
+  "Flúðir":"Nordic", "Skógar":"Nordic", "Hveragerði":"Nordic", "Árskógssandur":"Nordic", "Höfn":"Nordic", "Drangsnes":"Nordic",
+  "South Greenland":"Nordic", "Sisimiut":"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", Rovaniemi:"Nordic",
 };
@@ -7202,7 +7266,8 @@ export const COUNTRY_MAP: Record<string, string> = {
   Reykjavik:"Iceland",
   "Mývatn":"Iceland", "Húsavík":"Iceland", "Akureyri":"Iceland", "Egilsstaðir":"Iceland",
   "Hvalfjörður":"Iceland", "Laugarás":"Iceland", "Reykholt":"Iceland", "Laugarvatn":"Iceland",
-  "Skógar":"Iceland", "Hveragerði":"Iceland", "Árskógssandur":"Iceland", "Höfn":"Iceland", "Drangsnes":"Iceland",
+  "Flúðir":"Iceland", "Skógar":"Iceland", "Hveragerði":"Iceland", "Árskógssandur":"Iceland", "Höfn":"Iceland", "Drangsnes":"Iceland",
+  "South Greenland":"Greenland", "Sisimiut":"Greenland",
   Aarhus:"Denmark", Copenhagen:"Denmark",
   Helsinki:"Finland", Rovaniemi:"Finland",
   Stockholm:"Sweden", Gothenburg:"Sweden", Karlstad:"Sweden",
@@ -7248,7 +7313,8 @@ export const CITY_REGION_MAP: Record<string, string> = {
   "Mývatn":"North Iceland", "Húsavík":"North Iceland", "Akureyri":"North Iceland", "Árskógssandur":"North Iceland",
   "Egilsstaðir":"East Iceland", "Höfn":"East Iceland",
   "Hvalfjörður":"West Iceland", "Reykholt":"West Iceland", "Drangsnes":"West Iceland",
-  "Laugarás":"South Iceland", "Laugarvatn":"South Iceland", "Skógar":"South Iceland", "Hveragerði":"South Iceland",
+  "Laugarás":"South Iceland", "Laugarvatn":"South Iceland", "Flúðir":"South Iceland", "Skógar":"South Iceland", "Hveragerði":"South Iceland",
+  "South Greenland":"South", "Sisimiut":"West",
 };
 
 export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
@@ -7362,8 +7428,40 @@ export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
   "Lagoon":          { bg:"rgba(26,107,138,0.15)",   c:"#1a6b8a" },
   "Natural Pool":    { bg:"rgba(74,124,89,0.18)",    c:"#4a7c59" },
   "Thermal Spa":     { bg:"rgba(123,94,167,0.15)",   c:"#7b5ea7" },
+  "Hotel Spa":       { bg:"rgba(196,162,85,0.15)",   c:"#c4a255" },
+  "Gym Sauna":       { bg:"rgba(78,122,85,0.15)",    c:"#6a9b72" },
+  "Day Spa":         { bg:"rgba(123,94,167,0.15)",   c:"#7b5ea7" },
+  "Beer Spa":        { bg:"rgba(196,121,58,0.18)",   c:"#c4793a" },
+  "Arctic":          { bg:"rgba(107,175,200,0.2)",   c:"#6bafc8" },
+  "Cave":            { bg:"rgba(138,156,130,0.15)",  c:"#8a9c82" },
+  "Medieval":        { bg:"rgba(138,156,130,0.15)",  c:"#a0ae98" },
+  "Remote":          { bg:"rgba(78,122,85,0.12)",    c:"#6a9b72" },
+  "Public Leisure":  { bg:"rgba(107,175,200,0.12)",  c:"#6bafc8" },
 };
 
 export function getTag(t: string): { bg: string; c: string } {
   return TAGS_COLOR[t] ?? { bg:"rgba(100,130,75,0.1)", c:"rgba(138,156,130,0.9)" };
+}
+
+const CATEGORY_LABELS: Record<string, string> = {
+  hotel: "Hotel Spa",
+  gym: "Gym",
+  spa: "Day Spa",
+  leisure_centre: "Leisure Centre",
+  members_club: "Members Club",
+};
+
+export function getVenueCategory(v: Venue): string {
+  if (v.venueCategory) return v.venueCategory;
+  if (v.tags.includes('Hotel Spa')) return 'hotel';
+  if (v.tags.includes('Gym Sauna')) return 'gym';
+  if (v.tags.includes('Members Club')) return 'members_club';
+  if (v.tags.includes('Day Spa')) return 'spa';
+  if (v.tags.includes('Public Leisure')) return 'leisure_centre';
+  return 'dedicated';
+}
+
+export function getVenueCategoryLabel(v: Venue): string | null {
+  const cat = getVenueCategory(v);
+  return cat === 'dedicated' ? null : (CATEGORY_LABELS[cat] ?? null);
 }

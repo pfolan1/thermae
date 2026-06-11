@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import type { Venue } from '@/data/venues';
-import { FLAG, getTag } from '@/data/venues';
+import { FLAG, getTag, getVenueCategoryLabel } from '@/data/venues';
 import { venueSlug } from '@/lib/utils';
 import { trackEvent } from '@/lib/analytics';
 
@@ -33,6 +33,7 @@ const typeLabel: Record<Venue['type'], { text: string; color: string }> = {
 export default function VenueCard({ venue, distance, fromLat, fromLng }: Props) {
   const slug = venueSlug(venue);
   const type = typeLabel[venue.type];
+  const categoryLabel = getVenueCategoryLabel(venue);
 
   const locationParams =
     fromLat !== undefined && fromLng !== undefined
@@ -204,6 +205,22 @@ export default function VenueCard({ venue, distance, fromLat, fromLng }: Props) 
               <div style={{ fontSize: '10px', color: '#4e5e48' }}>
                 {venue.reviews} reviews
               </div>
+              {categoryLabel && (
+                <div style={{
+                  marginTop: '4px',
+                  display: 'inline-block',
+                  padding: '2px 6px',
+                  borderRadius: '4px',
+                  fontSize: '9px',
+                  fontWeight: 600,
+                  background: '#F3F3F3',
+                  color: '#999',
+                  letterSpacing: '0.3px',
+                  textTransform: 'uppercase',
+                }}>
+                  {categoryLabel}
+                </div>
+              )}
             </div>
           </div>
         </div>

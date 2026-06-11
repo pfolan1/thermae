@@ -6,7 +6,7 @@ import VenueCard from '@/components/VenueCard';
 import FiltersModal, { type FilterState } from '@/components/FiltersModal';
 import BackToTop from '@/components/BackToTop';
 import ScrollableRow from '@/components/ScrollableRow';
-import { VENUES, CITIES, COUNTRY_MAP, CITY_REGION_MAP, type Venue } from '@/data/venues';
+import { VENUES, CITIES, COUNTRY_MAP, CITY_REGION_MAP, getVenueCategory, type Venue } from '@/data/venues';
 import { haversineDistance, formatDistance } from '@/lib/geo';
 import { trackEvent } from '@/lib/analytics';
 
@@ -14,7 +14,7 @@ const VenueMap = lazy(() => import('@/components/VenueMap'));
 
 // ── CONSTANTS ────────────────────────────────────────────────────────────────
 
-const COUNTRIES = ['All', 'England', 'Northern Ireland', 'Scotland', 'Wales', 'Ireland', 'Denmark', 'Finland', 'Norway', 'Sweden', 'Iceland'];
+const COUNTRIES = ['All', 'England', 'Northern Ireland', 'Scotland', 'Wales', 'Ireland', 'Denmark', 'Finland', 'Norway', 'Sweden', 'Iceland', 'Greenland'];
 const COUNTRY_LABELS: Record<string, string> = {
   All: 'All Countries',
   England: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England',
@@ -27,6 +27,7 @@ const COUNTRY_LABELS: Record<string, string> = {
   Norway: '🇳🇴 Norway',
   Sweden: '🇸🇪 Sweden',
   Iceland: '🇮🇸 Iceland',
+  Greenland: '🇬🇱 Greenland',
 };
 const COUNTRY_REGIONS: Record<string, string[]> = {
   England: ['Greater London','South East','South West','East of England','East Midlands','West Midlands','Yorkshire','North East','North West'],
@@ -39,6 +40,7 @@ const COUNTRY_REGIONS: Record<string, string[]> = {
   Sweden: ['Stockholm Region','Gothenburg Region','Malmö Region','Northern Sweden'],
   Denmark: ['Copenhagen Region','Jutland'],
   Iceland: ['Reykjavík','South Iceland','North Iceland','East Iceland','West Iceland'],
+  Greenland: ['South','West','North','East'],
 };
 
 // Multi-select type options — each has a predicate that matches against a Venue
@@ -52,24 +54,36 @@ const TYPE_OPTIONS: TypeOption[] = [
   { key: 'seaweed',    label: '🌿  Seaweed Bath',  match: v => v.type === 'seaweed' },
 ];
 
-// Feature legend — compact icons shown as a subtle filter row at the bottom
+// Feature filter options
 const FEATURE_ICONS: { emoji: string; label: string; tags: string[] }[] = [
-  { emoji: '🌊', label: 'Seafront',         tags: ['Seafront','Sea Plunge','Coastal','Beach','Waterside'] },
+  { emoji: '🔥', label: 'Finnish',           tags: ['Finnish'] },
+  { emoji: '🌊', label: 'Seafront',          tags: ['Seafront','Sea Plunge','Coastal','Beach','Waterside'] },
   { emoji: '🌲', label: 'Woodland',          tags: ['Forest','Countryside'] },
-  { emoji: '🏙️', label: 'City Centre',       tags: ['City Centre'] },
+  { emoji: '🌳', label: 'Outdoor',           tags: ['Outdoor'] },
   { emoji: '🛖', label: 'Wood-fired',        tags: ['Wood-fired'] },
-  { emoji: '♾️', label: 'Contrast Therapy',  tags: ['Contrast Therapy','Ice Bath','Multi-plunge'] },
+  { emoji: '♾️', label: 'Contrast Therapy', tags: ['Contrast Therapy','Multi-plunge'] },
+  { emoji: '❄️', label: 'Ice Bath',          tags: ['Ice Bath','Multi-plunge'] },
   { emoji: '🧂', label: 'Halotherapy',       tags: ['Himalayan Salt'] },
   { emoji: '🛁', label: 'Bathhouse',         tags: ['Historic Building','Steam','Turkish Baths','Hammam'] },
-  { emoji: '❄️', label: 'Ice Bath',          tags: ['Ice Bath','Multi-plunge'] },
-  { emoji: '🔥', label: 'Finnish',           tags: ['Finnish'] },
-  { emoji: '🌳', label: 'Outdoor',           tags: ['Outdoor'] },
+  { emoji: '🏛️', label: 'Historic',          tags: ['Historic','Historic Building','Historic Courtyard','Medieval'] },
   { emoji: '🏊', label: 'Wild Swimming',     tags: ['Wild Swim','River'] },
   { emoji: '🌇', label: 'Rooftop',           tags: ['Rooftop','Rooftop Pool'] },
-  { emoji: '💧', label: 'Floating',          tags: ['Lakeside','Unique'] },
-  { emoji: '🏛️', label: 'Historic',          tags: ['Historic','Historic Building','Historic Courtyard'] },
   { emoji: '🔒', label: 'Private',           tags: ['Private','Private Cabins'] },
   { emoji: '🎉', label: 'Events',            tags: ['Events'] },
+  { emoji: '🏨', label: 'Hotel Spa',         tags: ['Hotel Spa'] },
+  { emoji: '🏋️', label: 'Gym Sauna',         tags: ['Gym Sauna'] },
+  { emoji: '💆', label: 'Day Spa',           tags: ['Day Spa'] },
+  { emoji: '🔑', label: 'Members Club',      tags: ['Members Club'] },
+  { emoji: '🍺', label: 'Beer Spa',          tags: ['Beer Spa'] },
+  { emoji: '🌨️', label: 'Arctic',            tags: ['Arctic'] },
+];
+
+// Category visibility toggles (ON = shown, OFF = hidden)
+const CATEGORY_FILTERS = [
+  { key: 'hotel',         label: 'Hotels' },
+  { key: 'gym',           label: 'Gyms' },
+  { key: 'leisure_centre',label: 'Leisure Centres' },
+  { key: 'members_club',  label: 'Members Clubs' },
 ];
 
 const GEOCODING_API_KEY = process.env.NEXT_PUBLIC_GOOGLE_PLACES_API_KEY;
@@ -123,17 +137,18 @@ function Pill({ active, onClick, children }: { active: boolean; onClick: () => v
     <button
       onClick={onClick}
       style={{
-        padding: '7px 15px',
-        borderRadius: '20px',
+        padding: '8px 16px',
+        borderRadius: '999px',
         border: active ? '1px solid #FF5A5F' : '1px solid #EBEBEB',
         cursor: 'pointer',
-        fontSize: '12px',
+        fontSize: '13px',
         fontWeight: active ? 700 : 500,
         background: active ? '#FFF0F0' : '#F7F7F7',
         color: active ? '#FF5A5F' : '#555',
         flexShrink: 0,
         fontFamily: 'inherit',
         whiteSpace: 'nowrap',
+        lineHeight: 1.2,
       }}
     >
       {children}
@@ -150,6 +165,7 @@ export default function HomePage() {
   const [typeFilters, setTypeFilters] = useState<string[]>([]);   // multi-select
   const [featureFilter, setFeatureFilter] = useState<string | null>(null);
   const [citiesExpanded, setCitiesExpanded] = useState(false);
+  const [excludedCategories, setExcludedCategories] = useState<string[]>([]);
   const [viewMode, setViewMode] = useState<'grid' | 'map'>('grid');
   const [filtersOpen, setFiltersOpen] = useState(false);
   const [advFilters, setAdvFilters] = useState<FilterState>({ priceRanges: [], countries: [], features: [] });
@@ -219,6 +235,19 @@ export default function HomePage() {
     trackEvent('filter_type', { type: key });
   }, []);
 
+  const handleAllCitiesClick = useCallback(() => {
+    if (citiesExpanded) {
+      setCitiesExpanded(false);
+      setCity('All');
+    } else {
+      setCitiesExpanded(true);
+    }
+  }, [citiesExpanded]);
+
+  const toggleCategory = useCallback((key: string) => {
+    setExcludedCategories(prev => prev.includes(key) ? prev.filter(k => k !== key) : [...prev, key]);
+  }, []);
+
   const filteredWithDistance = useMemo(() => {
     const q = textSearch.toLowerCase();
     const inLocationMode = userLat !== null && userLng !== null;
@@ -242,7 +271,8 @@ export default function HomePage() {
       const priceOk = priceMatchesFilter(v.price, advFilters.priceRanges);
       const countryOk = countryMatchesFilter(v.country, advFilters.countries);
       const featureOk = advFilters.features.length === 0 || advFilters.features.some(f => v.tags.includes(f));
-      return cityOk && regionOk && subRegionOk && typeOk && searchOk && featOk && priceOk && countryOk && featureOk;
+      const catOk = excludedCategories.length === 0 || !excludedCategories.includes(getVenueCategory(v));
+      return cityOk && regionOk && subRegionOk && typeOk && searchOk && featOk && priceOk && countryOk && featureOk && catOk;
     });
 
     if (inLocationMode) {
@@ -251,7 +281,7 @@ export default function HomePage() {
         .sort((a, b) => a.km - b.km);
     }
     return list.map(v => ({ venue: v, km: null }));
-  }, [city, countryFilter, regionFilter, typeFilters, textSearch, featureFilter, advFilters, userLat, userLng]);
+  }, [city, countryFilter, regionFilter, typeFilters, textSearch, featureFilter, advFilters, excludedCategories, userLat, userLng]);
 
   const nearestFallback = useMemo(() => {
     if (userLat === null || userLng === null || filteredWithDistance.length > 0) return null;
@@ -264,7 +294,7 @@ export default function HomePage() {
   const displayList = nearestFallback ?? filteredWithDistance;
 
   const activeFilterCount =
-    advFilters.priceRanges.length + advFilters.countries.length + advFilters.features.length;
+    advFilters.priceRanges.length + advFilters.countries.length + advFilters.features.length + excludedCategories.length;
 
   return (
     <>
@@ -350,25 +380,23 @@ export default function HomePage() {
           </div>
         </div>
 
-        <hr style={{ border: 'none', borderTop: '1px solid #EBEBEB', margin: '0 0 16px' }} />
+        <div style={{ height: '1px', background: '#EBEBEB', margin: '0 0 20px' }} />
 
         {/* ── FILTER PANEL ── */}
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '10px', marginBottom: '20px' }}>
+        <div style={{ display: 'flex', flexDirection: 'column', gap: '14px', marginBottom: '24px' }}>
 
           {/* ROW 1: Venue type — multi-select */}
           <ScrollableRow gap={6}>
-            {/* "All" resets type filter; pulses when nothing is selected */}
             <button
               className={typeFilters.length === 0 ? 'pill-pulse' : ''}
               onClick={() => setTypeFilters([])}
               style={{
-                padding: '7px 15px', borderRadius: '20px', flexShrink: 0,
+                padding: '9px 18px', borderRadius: '999px', flexShrink: 0,
                 border: typeFilters.length === 0 ? undefined : '1px solid #EBEBEB',
-                cursor: 'pointer', fontSize: '12px',
+                cursor: 'pointer', fontSize: '14px',
                 fontWeight: typeFilters.length === 0 ? 700 : 500,
                 background: typeFilters.length === 0 ? undefined : '#F7F7F7',
-                color: '#555',
-                fontFamily: 'inherit', whiteSpace: 'nowrap',
+                color: '#555', fontFamily: 'inherit', whiteSpace: 'nowrap', lineHeight: 1.2,
               }}
             >
               All
@@ -380,12 +408,12 @@ export default function HomePage() {
                   key={opt.key}
                   onClick={() => toggleType(opt.key)}
                   style={{
-                    padding: '7px 15px', borderRadius: '20px', flexShrink: 0,
+                    padding: '9px 18px', borderRadius: '999px', flexShrink: 0,
                     border: active ? '1px solid #FF5A5F' : '1px solid #EBEBEB',
-                    cursor: 'pointer', fontSize: '12px', fontWeight: active ? 700 : 500,
+                    cursor: 'pointer', fontSize: '14px', fontWeight: active ? 700 : 500,
                     background: active ? '#FF5A5F' : '#F7F7F7',
                     color: active ? '#fff' : '#555',
-                    fontFamily: 'inherit', whiteSpace: 'nowrap',
+                    fontFamily: 'inherit', whiteSpace: 'nowrap', lineHeight: 1.2,
                     transition: 'background 0.15s, color 0.15s, border-color 0.15s',
                   }}
                 >
@@ -414,7 +442,7 @@ export default function HomePage() {
             ))}
           </ScrollableRow>
 
-          {/* Region sub-row — only visible when a country is selected */}
+          {/* Region sub-row — only visible when a country with regions is selected */}
           {activeRegions.length > 0 && (
             <ScrollableRow gap={6}>
               {['All', ...activeRegions].map(r => {
@@ -434,69 +462,54 @@ export default function HomePage() {
             </ScrollableRow>
           )}
 
-          {/* ROW 3: Cities — collapsed by default, expands on click */}
-          <div>
-            <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-              <button
-                className={city === 'All' && !citiesExpanded ? 'pill-pulse' : ''}
-                onClick={() => setCitiesExpanded(e => !e)}
-                style={{
-                  padding: '7px 15px', borderRadius: '20px', flexShrink: 0,
-                  border: city !== 'All' ? '1px solid #FF5A5F' : citiesExpanded ? '1px solid #EBEBEB' : undefined,
-                  cursor: 'pointer', fontSize: '12px',
-                  fontWeight: city !== 'All' ? 700 : 500,
-                  background: city !== 'All' ? '#FFF0F0' : citiesExpanded ? '#F7F7F7' : undefined,
-                  color: city !== 'All' ? '#FF5A5F' : '#555',
-                  fontFamily: 'inherit', whiteSpace: 'nowrap',
+          {/* ROW 3: Cities — inline scrollable row, toggled by "All Cities" button */}
+          <ScrollableRow gap={6}>
+            {/* All Cities toggle button — always first in the row */}
+            <button
+              className={city === 'All' && !citiesExpanded ? 'pill-pulse' : ''}
+              onClick={handleAllCitiesClick}
+              style={{
+                padding: '8px 16px', borderRadius: '999px', flexShrink: 0,
+                border: (city === 'All' && !citiesExpanded) ? undefined
+                      : city !== 'All' ? '1px solid #FF5A5F'
+                      : '1px solid #EBEBEB',
+                cursor: 'pointer', fontSize: '13px',
+                fontWeight: city !== 'All' ? 700 : 500,
+                background: (city === 'All' && !citiesExpanded) ? undefined
+                           : city !== 'All' ? '#FFF0F0'
+                           : '#F7F7F7',
+                color: city !== 'All' ? '#FF5A5F' : '#555',
+                fontFamily: 'inherit', whiteSpace: 'nowrap', lineHeight: 1.2,
+              }}
+            >
+              All Cities {citiesExpanded ? '▼' : '▶'}
+            </button>
+            {/* City pills — visible when expanded */}
+            {citiesExpanded && countryCities.map(c => (
+              <Pill
+                key={c}
+                active={city === c}
+                onClick={() => {
+                  if (city === c) {
+                    setCity('All');
+                    setCitiesExpanded(false);
+                  } else {
+                    setCity(c);
+                    trackEvent('filter_city', { city: c });
+                  }
                 }}
               >
-                {city === 'All'
-                  ? `All Cities ${citiesExpanded ? '▲' : '▼'}`
-                  : `${city} ▼`}
-              </button>
-              {city !== 'All' && (
-                <button
-                  onClick={() => { setCity('All'); setCitiesExpanded(false); }}
-                  style={{
-                    fontSize: '11px', color: '#bbb', background: 'none',
-                    border: 'none', cursor: 'pointer', fontFamily: 'inherit', padding: '4px 0',
-                  }}
-                >
-                  clear ×
-                </button>
-              )}
-            </div>
-            <div style={{
-              maxHeight: citiesExpanded ? '64px' : '0',
-              overflow: 'hidden',
-              transition: 'max-height 0.25s ease',
-            }}>
-              <div style={{ paddingTop: '8px' }}>
-                <ScrollableRow gap={6}>
-                  {countryCities.map(c => (
-                    <Pill
-                      key={c}
-                      active={city === c}
-                      onClick={() => { setCity(c); setCitiesExpanded(false); trackEvent('filter_city', { city: c }); }}
-                    >
-                      {c}
-                    </Pill>
-                  ))}
-                </ScrollableRow>
-              </div>
-            </div>
-          </div>
+                {c}
+              </Pill>
+            ))}
+          </ScrollableRow>
 
-          {/* ROW 4: Features — subtle legend row */}
-          <div style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
-            <span style={{
-              fontSize: '10px', color: '#aaa', fontWeight: 600,
-              textTransform: 'uppercase', letterSpacing: '0.5px',
-              flexShrink: 0, whiteSpace: 'nowrap',
-            }}>
-              Filter by feature:
+          {/* ROW 4: Features */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <span style={{ fontSize: '10px', color: '#bbb', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.6px' }}>
+              Filter by feature
             </span>
-            <ScrollableRow gap={5}>
+            <ScrollableRow gap={6}>
               {FEATURE_ICONS.map(cat => {
                 const active = featureFilter === cat.label;
                 return (
@@ -508,18 +521,18 @@ export default function HomePage() {
                       if (next) trackEvent('filter_feature', { feature: next });
                     }}
                     style={{
-                      display: 'flex', alignItems: 'center', gap: '4px',
-                      padding: '4px 10px', borderRadius: '20px', flexShrink: 0,
-                      border: active ? '1px solid #FF5A5F' : '1px solid #E8E8E8',
-                      background: active ? '#FFF0F0' : '#F5F5F5',
+                      display: 'flex', alignItems: 'center', gap: '5px',
+                      padding: '8px 14px', borderRadius: '999px', flexShrink: 0,
+                      border: active ? '1px solid #FF5A5F' : '1px solid #EBEBEB',
+                      background: active ? '#FFF0F0' : '#F7F7F7',
                       cursor: 'pointer', fontFamily: 'inherit',
                       transition: 'background 0.15s, border-color 0.15s',
                     }}
                   >
-                    <span style={{ fontSize: '12px' }}>{cat.emoji}</span>
+                    <span style={{ fontSize: '13px', lineHeight: 1 }}>{cat.emoji}</span>
                     <span style={{
-                      fontSize: '11px', fontWeight: active ? 600 : 400,
-                      color: active ? '#FF5A5F' : '#777', whiteSpace: 'nowrap',
+                      fontSize: '13px', fontWeight: active ? 600 : 400,
+                      color: active ? '#FF5A5F' : '#555', whiteSpace: 'nowrap',
                     }}>
                       {cat.label}
                     </span>
@@ -529,7 +542,39 @@ export default function HomePage() {
             </ScrollableRow>
           </div>
 
+          {/* ROW 5: Category visibility toggles */}
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
+            <span style={{ fontSize: '10px', color: '#bbb', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.6px' }}>
+              Show venue types
+            </span>
+            <ScrollableRow gap={6}>
+              {CATEGORY_FILTERS.map(cat => {
+                const hidden = excludedCategories.includes(cat.key);
+                return (
+                  <button
+                    key={cat.key}
+                    onClick={() => toggleCategory(cat.key)}
+                    style={{
+                      padding: '8px 14px', borderRadius: '999px', flexShrink: 0,
+                      border: hidden ? '1px solid #E8E8E8' : '1px solid #4CAF50',
+                      background: hidden ? '#F5F5F5' : 'rgba(76,175,80,0.08)',
+                      color: hidden ? '#CCC' : '#3d8b40',
+                      cursor: 'pointer', fontFamily: 'inherit',
+                      fontSize: '13px', fontWeight: hidden ? 400 : 600,
+                      whiteSpace: 'nowrap', lineHeight: 1.2,
+                      transition: 'all 0.15s',
+                    }}
+                  >
+                    {hidden ? '○' : '✓'} {cat.label}
+                  </button>
+                );
+              })}
+            </ScrollableRow>
+          </div>
+
         </div>
+
+        <div style={{ height: '1px', background: '#EBEBEB', marginBottom: '20px' }} />
 
         {/* Result count + Grid/Map toggle */}
         <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: '20px' }}>
