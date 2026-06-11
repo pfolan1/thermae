@@ -4,6 +4,7 @@ import './globals.css';
 import Footer from '@/components/Footer';
 import GoogleAnalytics from '@/components/GoogleAnalytics';
 import CookieBanner from '@/components/CookieBanner';
+import WellnessAssistant from '@/components/WellnessAssistant';
 
 const dmSans = DM_Sans({
   subsets: ['latin'],
@@ -55,6 +56,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {children}
         <Footer />
         <CookieBanner />
+        <WellnessAssistant />
       </body>
     </html>
   );

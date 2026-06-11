@@ -7089,7 +7089,7 @@ export const VENUES: Venue[] = [
 
   // ── GREENLAND ──
   {
-    id:571, city:"South Greenland", country:"Greenland", name:"Uunartoq Hot Springs", area:"Island of Uunartoq, South Greenland",
+    id:571, city:"Nanortalik", country:"Greenland", name:"Uunartoq Hot Springs", area:"Island of Uunartoq, South Greenland",
     type:"lagoon", price:"Free", rating:4.9, reviews:0,
     hours:"Open year-round · accessible by boat from Alluitsup Paa",
     temp:"~38°C natural hot springs", tags:["Hot Spring","Natural Pool","Free","Arctic","Historic","Remote"], emoji:"♨️🌍", open:true,
@@ -7098,6 +7098,7 @@ export const VENUES: Venue[] = [
     parking:"N/A — island location",
     desc:"Greenland's only place warm enough to bathe outdoors. Three naturally heated geothermal springs on the uninhabited island of Uunartoq, dammed with stones to form bathing pools at around 38°C. Set against a breathtaking backdrop of icebergs and Arctic wilderness. Completely free and open year-round, accessible by boat from the village of Alluitsup Paa. A truly remote and unforgettable Arctic bathing experience.",
     lat:60.1833, lng:-45.3667,
+    bookingUrl:"https://visitgreenland.com/activities/hot-springs-in-greenland/",
   },
   {
     id:572, city:"Sisimiut", country:"Greenland", name:"Sisimiut Arctic Sauna", area:"Sisimiut, West Greenland",
@@ -7145,6 +7146,60 @@ export const VENUES: Venue[] = [
     desc:"A dramatic lava cave near Lake Mývatn containing a stunning turquoise geothermal pool. Made famous as a filming location for Game of Thrones (Season 3), Grjótagjá was once used for bathing but volcanic activity in the 1970s raised the water to around 50°C — too hot to swim. Still visitable and utterly spectacular: the cave glows with otherworldly blue-green light filtering through ancient lava rock.",
     lat:65.6275, lng:-16.8824,
   },
+
+  // ── CAUSEWAY COAST (Northern Ireland) ──
+  {
+    id:576, city:"Causeway Coast", country:"UK", name:"Sauna & Sea", area:"Causeway Coast, Co. Antrim",
+    type:"both", price:"Check website", rating:4.9, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Atlantic Ocean plunge", tags:["Seafront","Coastal","Community","Wood-fired","Wild Swimming"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for facilities",
+    transport:"Causeway Coast — check website for exact location",
+    parking:"On-site parking",
+    desc:"A sustainable sauna on the spectacular Causeway Coast, committed to relaxation, socialisation and therapy. Perched on one of the most dramatic coastlines in the British Isles, Sauna & Sea combines wood-fired heat with the wild Atlantic for a truly memorable contrast experience. The surrounding Giant's Causeway landscape makes this one of the most scenically extraordinary saunas in Ireland.",
+    lat:55.2118, lng:-6.4964,
+    bookingUrl:"https://www.saunaandsea.co.uk",
+  },
+
+  // ── DUBLIN MOUNTAINS ──
+  {
+    id:577, city:"Dublin", country:"Ireland", name:"Tigh 'N Alluis", area:"Dublin Mountains, Co. Dublin",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Natural cold plunge", tags:["Outdoor","Mountains","Wood-fired","Unique","Historic"], emoji:"🔥🌿", open:true,
+    hygiene:"A", lockerNote:"Check website for facilities",
+    transport:"Dublin Mountains — check website for directions",
+    parking:"On-site parking",
+    desc:"A traditional Irish sweathouse-inspired sauna experience in the Dublin Mountains. Tigh 'N Alluis — meaning 'house of sweat' in Irish — draws on the ancient Celtic tradition of the tigh alluis, Ireland's indigenous form of thermal therapy predating the introduction of Finnish sauna. Set in wild mountain surroundings above Dublin city, this is a deeply rooted, authentic and atmospheric wellness experience.",
+    lat:53.2748, lng:-6.2834,
+    bookingUrl:"https://www.tighnalluis.ie",
+  },
+
+  // ── SWEATHOUSE.IE (Mobile — Galway & Wexford) ──
+  {
+    id:578, city:"Galway", country:"Ireland", name:"Sweathouse — Galway", area:"Galway Bay / Salthill",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current sessions",
+    temp:"Atlantic Ocean plunge", tags:["Mobile","Seafront","Community","Wood-fired","Sea Plunge"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Mobile setup — check website for current location",
+    transport:"Check website for current session location",
+    parking:"Check website",
+    desc:"Mobile wood-fired sauna operating on Galway Bay and the wild Atlantic coast. Sweathouse.ie brings authentic sauna culture to the sea — sessions combine intense sauna heat with cold plunges into the Atlantic Ocean. A communal and private hire model means you can book your own session or join others for a sociable coastal wellness experience on one of Ireland's most beautiful bays.",
+    lat:53.2634, lng:-9.0811,
+    bookingUrl:"https://www.sweathouse.ie",
+  },
+  {
+    id:579, city:"Wexford", country:"Ireland", name:"Sweathouse — Wexford", area:"Wexford Harbour / Rosslare",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current sessions",
+    temp:"Irish Sea plunge", tags:["Mobile","Seafront","Community","Wood-fired","Sea Plunge"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Mobile setup — check website for current location",
+    transport:"Check website for current session location",
+    parking:"Check website",
+    desc:"Mobile wood-fired sauna operating along the Wexford coastline and Rosslare strand. Sweathouse.ie's Wexford sessions sit by the Irish Sea — communal and private hire options for sauna and cold sea plunge. A social, accessible wellness experience on the sunny south-east coast of Ireland, where the Celtic Sea meets some of the country's most beautiful sandy beaches.",
+    lat:52.3369, lng:-6.4633,
+    bookingUrl:"https://www.sweathouse.ie",
+  },
 ];
 
 export const CITIES = [
@@ -7160,7 +7215,7 @@ export const CITIES = [
   "Criccieth","Bala","Anglesey","Llanberis","Beaumaris","Llangollen","Conwy","Aberystwyth","Pembrokeshire","Wrexham","Colwyn Bay","Welshpool",
   // UK — Northern Ireland
   "Belfast","Derry",
-  "Craigavon","Ballymena","Limavady","Portstewart","Holywood","Bangor","Groomsport","Rostrevor","Downpatrick",
+  "Causeway Coast","Craigavon","Ballymena","Limavady","Portstewart","Holywood","Bangor","Groomsport","Rostrevor","Downpatrick",
   // Ireland — cities only (counties appear as region filters when Ireland is selected)
   "Dublin","Cork","Galway","Limerick",
   // Nordic
@@ -7168,7 +7223,7 @@ export const CITIES = [
   // Iceland — regional towns
   "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Flúðir","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes",
   // Greenland
-  "South Greenland","Sisimiut",
+  "Nanortalik","Sisimiut",
 ];
 
 export const FLAG: Record<string, string> = {
@@ -7185,7 +7240,7 @@ export const FLAG: Record<string, string> = {
   Llangollen:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Conwy:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Aberystwyth:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Pembrokeshire:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
   Wrexham:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Colwyn Bay":"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Welshpool:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
   Belfast:"🇬🇧", Derry:"🇬🇧",
-  Craigavon:"🇬🇧", Ballymena:"🇬🇧", Limavady:"🇬🇧", Portstewart:"🇬🇧", Holywood:"🇬🇧",
+  "Causeway Coast":"🇬🇧", Craigavon:"🇬🇧", Ballymena:"🇬🇧", Limavady:"🇬🇧", Portstewart:"🇬🇧", Holywood:"🇬🇧",
   Bangor:"🇬🇧", Groomsport:"🇬🇧", Rostrevor:"🇬🇧", Downpatrick:"🇬🇧",
   Dublin:"🇮🇪", Galway:"🇮🇪", Cork:"🇮🇪",
   Sligo:"🇮🇪", Kerry:"🇮🇪", Wicklow:"🇮🇪", Limerick:"🇮🇪",
@@ -7198,7 +7253,7 @@ export const FLAG: Record<string, string> = {
   "Mývatn":"🇮🇸", "Húsavík":"🇮🇸", "Akureyri":"🇮🇸", "Egilsstaðir":"🇮🇸",
   "Hvalfjörður":"🇮🇸", "Laugarás":"🇮🇸", "Reykholt":"🇮🇸", "Laugarvatn":"🇮🇸",
   "Flúðir":"🇮🇸", "Skógar":"🇮🇸", "Hveragerði":"🇮🇸", "Árskógssandur":"🇮🇸", "Höfn":"🇮🇸", "Drangsnes":"🇮🇸",
-  "South Greenland":"🇬🇱", "Sisimiut":"🇬🇱",
+  "Nanortalik":"🇬🇱", "Sisimiut":"🇬🇱",
 };
 
 export const REGION_MAP: Record<string, string> = {
@@ -7217,7 +7272,7 @@ export const REGION_MAP: Record<string, string> = {
   Llangollen:"UK & Ireland", Conwy:"UK & Ireland", Aberystwyth:"UK & Ireland", Pembrokeshire:"UK & Ireland",
   Wrexham:"UK & Ireland", "Colwyn Bay":"UK & Ireland", Welshpool:"UK & Ireland",
   Belfast:"UK & Ireland", Derry:"UK & Ireland",
-  Craigavon:"UK & Ireland", Ballymena:"UK & Ireland", Limavady:"UK & Ireland", Portstewart:"UK & Ireland", Holywood:"UK & Ireland",
+  "Causeway Coast":"UK & Ireland", Craigavon:"UK & Ireland", Ballymena:"UK & Ireland", Limavady:"UK & Ireland", Portstewart:"UK & Ireland", Holywood:"UK & Ireland",
   Bangor:"UK & Ireland", Groomsport:"UK & Ireland", Rostrevor:"UK & Ireland", Downpatrick:"UK & Ireland",
   Dublin:"UK & Ireland", Galway:"UK & Ireland", Cork:"UK & Ireland",
   Sligo:"UK & Ireland", Kerry:"UK & Ireland", Wicklow:"UK & Ireland",
@@ -7229,7 +7284,7 @@ export const REGION_MAP: Record<string, string> = {
   "Mývatn":"Nordic", "Húsavík":"Nordic", "Akureyri":"Nordic", "Egilsstaðir":"Nordic",
   "Hvalfjörður":"Nordic", "Laugarás":"Nordic", "Reykholt":"Nordic", "Laugarvatn":"Nordic",
   "Flúðir":"Nordic", "Skógar":"Nordic", "Hveragerði":"Nordic", "Árskógssandur":"Nordic", "Höfn":"Nordic", "Drangsnes":"Nordic",
-  "South Greenland":"Nordic", "Sisimiut":"Nordic",
+  "Nanortalik":"Nordic", "Sisimiut":"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", Rovaniemi:"Nordic",
 };
@@ -7253,7 +7308,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Wrexham:"Wales", "Colwyn Bay":"Wales", Welshpool:"Wales",
   // Northern Ireland
   Belfast:"Northern Ireland", Derry:"Northern Ireland",
-  Craigavon:"Northern Ireland", Ballymena:"Northern Ireland", Limavady:"Northern Ireland", Portstewart:"Northern Ireland",
+  "Causeway Coast":"Northern Ireland", Craigavon:"Northern Ireland", Ballymena:"Northern Ireland", Limavady:"Northern Ireland", Portstewart:"Northern Ireland",
   Holywood:"Northern Ireland", Bangor:"Northern Ireland", Groomsport:"Northern Ireland", Rostrevor:"Northern Ireland", Downpatrick:"Northern Ireland",
   // Ireland
   Dublin:"Ireland", Galway:"Ireland", Cork:"Ireland",
@@ -7267,7 +7322,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   "Mývatn":"Iceland", "Húsavík":"Iceland", "Akureyri":"Iceland", "Egilsstaðir":"Iceland",
   "Hvalfjörður":"Iceland", "Laugarás":"Iceland", "Reykholt":"Iceland", "Laugarvatn":"Iceland",
   "Flúðir":"Iceland", "Skógar":"Iceland", "Hveragerði":"Iceland", "Árskógssandur":"Iceland", "Höfn":"Iceland", "Drangsnes":"Iceland",
-  "South Greenland":"Greenland", "Sisimiut":"Greenland",
+  "Nanortalik":"Greenland", "Sisimiut":"Greenland",
   Aarhus:"Denmark", Copenhagen:"Denmark",
   Helsinki:"Finland", Rovaniemi:"Finland",
   Stockholm:"Sweden", Gothenburg:"Sweden", Karlstad:"Sweden",
@@ -7294,7 +7349,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Wrexham:"Wrexham", "Colwyn Bay":"Conwy", Welshpool:"Powys",
   // Northern Ireland — county
   Belfast:"Antrim", Derry:"Londonderry",
-  Craigavon:"Armagh", Ballymena:"Antrim", Limavady:"Londonderry", Portstewart:"Londonderry",
+  "Causeway Coast":"Antrim", Craigavon:"Armagh", Ballymena:"Antrim", Limavady:"Londonderry", Portstewart:"Londonderry",
   Holywood:"Down", Bangor:"Down", Groomsport:"Down", Rostrevor:"Down", Downpatrick:"Down",
   // Ireland — county
   Dublin:"Dublin", Galway:"Galway", Cork:"Cork",
@@ -7314,7 +7369,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   "Egilsstaðir":"East Iceland", "Höfn":"East Iceland",
   "Hvalfjörður":"West Iceland", "Reykholt":"West Iceland", "Drangsnes":"West Iceland",
   "Laugarás":"South Iceland", "Laugarvatn":"South Iceland", "Flúðir":"South Iceland", "Skógar":"South Iceland", "Hveragerði":"South Iceland",
-  "South Greenland":"South", "Sisimiut":"West",
+  "Nanortalik":"South", "Sisimiut":"West",
 };
 
 export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
@@ -7437,6 +7492,8 @@ export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
   "Medieval":        { bg:"rgba(138,156,130,0.15)",  c:"#a0ae98" },
   "Remote":          { bg:"rgba(78,122,85,0.12)",    c:"#6a9b72" },
   "Public Leisure":  { bg:"rgba(107,175,200,0.12)",  c:"#6bafc8" },
+  "Mobile":          { bg:"rgba(138,156,130,0.15)",  c:"#8a9c82" },
+  "Mountains":       { bg:"rgba(78,122,85,0.18)",    c:"#6a9b72" },
 };
 
 export function getTag(t: string): { bg: string; c: string } {

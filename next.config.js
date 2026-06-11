@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'export',
+  // Removed 'output: export' — the AI chat API route requires a server runtime.
+  // Deploy to Vercel (or similar) for full Next.js support including API routes.
   trailingSlash: true,
   images: { unoptimized: true },
 };
