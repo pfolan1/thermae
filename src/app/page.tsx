@@ -47,6 +47,7 @@ const TYPE_OPTIONS: [string, string][] = [
   ['plunge', '🧊  Cold Plunge'],
   ['both', '♾️  Both'],
   ['seaweed', '🌿  Seaweed Baths'],
+  ['lagoon', '♨️  Lagoon'],
 ];
 const CATEGORY_ICONS: { emoji: string; label: string; tags: string[] }[] = [
   { emoji: '🌊', label: 'Seafront',         tags: ['Seafront','Sea Plunge','Coastal','Beach','Waterside'] },

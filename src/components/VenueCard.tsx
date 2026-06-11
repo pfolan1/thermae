@@ -19,6 +19,7 @@ const banners: Record<Venue['type'], string> = {
   plunge:  'radial-gradient(ellipse at 70% 40%, #e0f0f7 0%, #c8e4f0 60%, #f7f7f7 100%)',
   both:    'radial-gradient(ellipse at 50% 50%, #ffe8e0 0%, #e0f0f7 50%, #f7f7f7 100%)',
   seaweed: 'radial-gradient(ellipse at 40% 60%, #e0f5e8 0%, #c8ead4 60%, #f7f7f7 100%)',
+  lagoon:  'radial-gradient(ellipse at 50% 40%, #d6eef7 0%, #b8dded 55%, #e8f5fa 100%)',
 };
 
 const typeLabel: Record<Venue['type'], { text: string; color: string }> = {
@@ -26,6 +27,7 @@ const typeLabel: Record<Venue['type'], { text: string; color: string }> = {
   plunge:  { text: 'Cold Plunge',       color: '#6bafc8' },
   both:    { text: 'Sauna & Cold Plunge', color: '#8a9c82' },
   seaweed: { text: 'Seaweed Baths',     color: '#4a9b6a' },
+  lagoon:  { text: 'Hot Spring & Lagoon', color: '#1a6b8a' },
 };
 
 export default function VenueCard({ venue, distance, fromLat, fromLng }: Props) {

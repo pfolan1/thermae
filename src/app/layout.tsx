@@ -27,10 +27,11 @@ export const metadata: Metadata = {
     template: '%s | Thermae',
   },
   description:
-    "Discover the world's finest saunas, bathhouses, and cold plunge venues. Curated listings across the UK, Ireland, Scandinavia, and the USA.",
+    "Discover the world's finest saunas, cold plunges, hot springs, lagoons and seaweed baths. Curated listings across the UK, Ireland, Iceland and Scandinavia.",
   keywords: [
     'sauna', 'cold plunge', 'bathhouse', 'wellness', 'ice bath',
     'Finnish sauna', 'Nordic spa', 'thermae', 'contrast therapy',
+    'hot spring', 'geothermal', 'lagoon', 'Iceland spa', 'seaweed bath',
   ],
   openGraph: {
     type: 'website',

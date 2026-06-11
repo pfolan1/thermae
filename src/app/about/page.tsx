@@ -3,7 +3,7 @@ import Header from '@/components/Header';
 
 export const metadata: Metadata = {
   title: 'About Thermae — Europe\'s Sauna & Wellness Directory',
-  description: 'Learn about Thermae — Europe\'s dedicated directory of saunas, cold plunges and seaweed baths across the UK, Ireland and Nordics. Our mission, the health benefits, and how to get in touch.',
+  description: 'Learn about Thermae — Europe\'s dedicated directory of saunas, cold plunges, hot springs, lagoons and seaweed baths across the UK, Ireland, Iceland and Nordics. Our mission, the health benefits, and how to get in touch.',
 };
 
 const CORAL = '#FF5A5F';
@@ -113,7 +113,7 @@ export default function AboutPage() {
             margin: '0 auto',
             lineHeight: 1.5,
           }}>
-            Europe&apos;s dedicated directory of saunas, cold plunges and seaweed baths
+            Europe&apos;s dedicated directory of saunas, cold plunges, hot springs, lagoons and seaweed baths
           </p>
         </div>
 
@@ -138,8 +138,8 @@ export default function AboutPage() {
         <Section>
           <H2>Our Mission</H2>
           <P>
-            Thermae is Europe&apos;s dedicated directory of saunas, cold plunges, seaweed baths and contrast therapy
-            venues. We believe everyone deserves access to the transformative benefits of heat and cold therapy —
+            Thermae is Europe&apos;s dedicated directory of saunas, cold plunges, hot springs, lagoons, seaweed baths
+            and contrast therapy venues. We believe everyone deserves access to the transformative benefits of heat and cold therapy —
             not just those who know where to look.
           </P>
           <P>
@@ -212,6 +212,30 @@ export default function AboutPage() {
               ]}
             />
           </div>
+        </Section>
+
+        {/* ── SECTION 3b: Hot Springs & Geothermal Pools ── */}
+        <Section>
+          <H2>♨️ Hot Springs &amp; Geothermal Pools</H2>
+          <P>
+            Iceland sits on the Mid-Atlantic Ridge, making it one of the most geothermally active places on
+            Earth. From the world-famous Blue Lagoon to hidden natural rivers and remote fjord pools,
+            geothermal bathing is woven into Icelandic culture at every level — from the municipal hot pots
+            where locals gather each morning to the dramatic infinity lagoons perched above the Arctic sea.
+          </P>
+          <P>
+            Rich in silica, sulphur and dissolved minerals, geothermal waters are celebrated for their skin
+            benefits — particularly the soft, silica-rich water that leaves skin noticeably smoother after a
+            single visit. The heat penetrates deeply, easing muscle tension and stress while the minerals work
+            on the skin. Many bathers report profound relaxation that lasts for days.
+          </P>
+          <P>
+            Beyond Iceland, geothermal bathing spans the globe — from the Roman hot springs beneath Bath
+            to the volcanic pools of New Zealand and the onsen culture of Japan. Thermae lists the finest
+            geothermal experiences across Europe, including Iceland&apos;s full spectrum from world-class
+            lagoon spas to completely free, naturally heated rivers and remote fjord-side pools that require
+            a hike to reach. The reward is always worth it.
+          </P>
         </Section>
 
         {/* ── SECTION 4: The Sauna Boom ── */}

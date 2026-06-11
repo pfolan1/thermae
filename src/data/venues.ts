@@ -4,7 +4,7 @@
   country: string;
   name: string;
   area: string;
-  type: 'sauna' | 'plunge' | 'both' | 'seaweed';
+  type: 'sauna' | 'plunge' | 'both' | 'seaweed' | 'lagoon';
   price: string;
   rating: number;
   reviews: number;
@@ -6759,6 +6759,182 @@ export const VENUES: Venue[] = [
     lat:51.582, lng:-0.005,
     bookingUrl:"https://arvosauna.co.uk"
   },
+
+  // ── ICELAND — NORTH ──
+  {
+    id:545, city:"Mývatn", country:"Iceland", name:"Mývatn Nature Baths", area:"Jarðböðin við Mývatn, North Iceland",
+    type:"lagoon", price:"From £28", rating:4.7, reviews:4210,
+    hours:"Check website for current hours",
+    temp:"36–40°C geothermal lagoon", tags:["Geothermal","Lagoon","Natural Pool","Silica","Outdoor","Scenic"], emoji:"🌋♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers and wristbands provided",
+    transport:"Akureyri · 90 min drive · no direct public transport",
+    parking:"Free on-site car park",
+    desc:"Iceland's northern answer to the Blue Lagoon — a sprawling geothermal lagoon rich in silica and minerals set against the dramatic volcanic landscape of Lake Mývatn. The milky blue-green water stays at 36–40°C year-round. More remote and less crowded than its southern counterpart, beloved for its raw geological scenery.",
+    lat:65.6337, lng:-17.0230,
+    bookingUrl:"https://myvatnnaturebaths.is"
+  },
+  {
+    id:546, city:"Húsavík", country:"Iceland", name:"GeoSea Geothermal Sea Baths", area:"Vitabraut 1, Húsavík",
+    type:"lagoon", price:"From £25", rating:4.8, reviews:2840,
+    hours:"Check website for current hours",
+    temp:"36–40°C geothermal infinity pools", tags:["Geothermal","Lagoon","Seafront","Infinity Pool","Outdoor","Scenic"], emoji:"🌊♨️", open:true,
+    hygiene:"A+", lockerNote:"Lockers and wristbands provided",
+    transport:"Húsavík town centre · 5 min walk",
+    parking:"Free on-site",
+    desc:"Dramatic infinity geothermal pools perched on a cliff above Skjálfandi Bay, with sweeping views across the water towards snow-capped mountains. Two pools fed by naturally hot seawater at 36–40°C. On clear nights you may see the Northern Lights from the water. One of Iceland's most scenically stunning bathing experiences.",
+    lat:66.0440, lng:-17.3438,
+    bookingUrl:"https://geosea.is"
+  },
+  {
+    id:547, city:"Akureyri", country:"Iceland", name:"Forest Lagoon", area:"Vaðlaskógur forest, near Akureyri",
+    type:"lagoon", price:"From £30", rating:4.8, reviews:1920,
+    hours:"Check website for current hours",
+    temp:"38–40°C geothermal lagoon", tags:["Geothermal","Lagoon","Forest","Infinity Pool","Outdoor","Scenic"], emoji:"🌲♨️", open:true,
+    hygiene:"A+", lockerNote:"Lockers and wristbands provided",
+    transport:"Akureyri · 20 min drive",
+    parking:"Free on-site",
+    desc:"A beautiful geothermal lagoon set within a birch forest overlooking Eyjafjörður fjord. Two pools — a large geothermal lagoon and a cold plunge — surrounded by trees with sweeping fjord views. A newer, more intimate alternative to the big lagoons, with a wonderful forest atmosphere near Akureyri.",
+    lat:65.6783, lng:-18.0836,
+    bookingUrl:"https://forestlagoon.is"
+  },
+  {
+    id:548, city:"Egilsstaðir", country:"Iceland", name:"Vök Baths", area:"Urriðavatn lake, East Iceland",
+    type:"lagoon", price:"From £30", rating:4.9, reviews:1540,
+    hours:"Check website for current hours",
+    temp:"38–40°C geothermal pools", tags:["Geothermal","Lagoon","Lakeside","Unique","Outdoor","Scenic"], emoji:"💧♨️", open:true,
+    hygiene:"A+", lockerNote:"Lockers and wristbands provided",
+    transport:"Egilsstaðir · 10 min drive",
+    parking:"Free on-site",
+    desc:"One of Iceland's most unique bathing experiences — two geothermal pools that float on a freshwater lake, connected to shore by a walkway. The hot spring water wells up naturally through the lake bed. Set against the quiet East Iceland landscape, Vök offers a serene and otherworldly soak unlike anywhere else on earth.",
+    lat:65.2667, lng:-14.3667,
+    bookingUrl:"https://vokbaths.is"
+  },
+
+  // ── ICELAND — WEST ──
+  {
+    id:549, city:"Hvalfjörður", country:"Iceland", name:"Hvammsvik Hot Springs", area:"Hvammsvik, Hvalfjörður fjord",
+    type:"lagoon", price:"From £40", rating:4.8, reviews:1230,
+    hours:"Check website for current hours",
+    temp:"Natural geothermal pools 28–44°C", tags:["Hot Spring","Natural Pool","Geothermal","Fjord","Outdoor","Scenic"], emoji:"🌊♨️", open:true,
+    hygiene:"A", lockerNote:"Changing rooms on-site",
+    transport:"Reykjavik · 45 min drive",
+    parking:"Free on-site",
+    desc:"Eight naturally heated geothermal pools of varying temperatures arranged along the rocky shoreline of Hvalfjörður fjord, just 45 minutes from Reykjavik. The pools range from warm to very hot, and at high tide the sea laps right to the edge. One of Iceland's most naturally beautiful and atmospheric bathing locations.",
+    lat:64.3667, lng:-21.5167,
+    bookingUrl:"https://hvammsvik.com"
+  },
+  {
+    id:551, city:"Reykholt", country:"Iceland", name:"Krauma Geothermal Spa", area:"Reykholt, West Iceland",
+    type:"both", price:"From £28", rating:4.7, reviews:1890,
+    hours:"Check website for current hours",
+    temp:"Natural hot spring water 38–44°C", tags:["Geothermal","Thermal Spa","Hot Spring","Sauna","Outdoor","Relaxation"], emoji:"♨️🔥", open:true,
+    hygiene:"A+", lockerNote:"Lockers and wristbands provided",
+    transport:"Reykjavik · 90 min drive",
+    parking:"Free on-site",
+    desc:"Set beside Deildartunguhver — Europe's most powerful hot spring — Krauma uses the natural 100°C spring water, cooled to bathing temperature, for its five relaxation pools, cold pool, steam room and Finnish sauna. Clean, mineral-rich water in a beautiful West Iceland setting — an exceptional natural wellness experience.",
+    lat:64.6700, lng:-21.2900,
+    bookingUrl:"https://krauma.is"
+  },
+
+  // ── ICELAND — SOUTH ──
+  {
+    id:550, city:"Laugarás", country:"Iceland", name:"Laugaras Lagoon", area:"Laugarás, South Iceland",
+    type:"lagoon", price:"Check website", rating:4.6, reviews:320,
+    hours:"Check website for current hours",
+    temp:"Geothermal lagoon", tags:["Geothermal","Lagoon","New 2024","Outdoor"], emoji:"♨️", open:true,
+    hygiene:"A", lockerNote:"Facilities on-site",
+    transport:"Reykjavik · 70 min drive · no direct public transport",
+    parking:"Free on-site",
+    desc:"One of Iceland's newest lagoon experiences, opened in 2024. Set in the South Iceland countryside near Laugarás, offering geothermal bathing in a relaxed and less touristed setting. Combines natural hot spring water with modern facilities — a strong addition to Iceland's growing lagoon scene.",
+    lat:64.0833, lng:-20.9000,
+    bookingUrl:"https://laugaras.is"
+  },
+  {
+    id:552, city:"Laugarvatn", country:"Iceland", name:"Fontana Geothermal Baths", area:"Laugarvatn, South Iceland",
+    type:"both", price:"From £22", rating:4.6, reviews:2540,
+    hours:"Check website for current hours",
+    temp:"Geothermal lagoon and steam saunas", tags:["Geothermal","Lagoon","Lakeside","Steam Sauna","Outdoor","Golden Circle"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers provided",
+    transport:"Reykjavik · 75 min drive · Golden Circle route",
+    parking:"Free on-site",
+    desc:"Lakeside geothermal baths on the shores of Lake Laugarvatn with natural steam saunas built directly over a geothermal vent in the ground. Three indoor saunas, outdoor pools, and the extraordinary experience of natural steam rising through the earth. A classic Golden Circle stop — far more atmospheric than many expect.",
+    lat:64.2127, lng:-20.7374,
+    bookingUrl:"https://fontana.is"
+  },
+  {
+    id:553, city:"Skógar", country:"Iceland", name:"Seljavallalaug", area:"Seljavallalaug valley, South Iceland",
+    type:"lagoon", price:"Free", rating:4.5, reviews:3120,
+    hours:"Open year-round · Dawn to dusk",
+    temp:"Naturally heated 23–25°C", tags:["Hot Spring","Natural Pool","Free","Historic","Hiking","Outdoor","Scenic"], emoji:"🏔️♨️", open:true,
+    hygiene:"B", lockerNote:"Basic changing hut on-site",
+    transport:"Reykjavik · 2.5 hr drive · 20 min hike from car park",
+    parking:"Free roadside car park",
+    desc:"A free natural geothermal pool built in 1923, tucked into a narrow mountain valley near Skógar. Surrounded by dramatic basalt cliffs and a cascading waterfall, with water naturally heated by geothermal activity. A 20-minute walk up the valley brings you to one of Iceland's most romantic and atmospheric free bathing spots.",
+    lat:63.5521, lng:-19.6882
+  },
+  {
+    id:554, city:"Hveragerði", country:"Iceland", name:"Reykjadalur Hot River", area:"Hveragerði, South Iceland",
+    type:"lagoon", price:"Free", rating:4.6, reviews:5420,
+    hours:"Open year-round · Daylight hours recommended",
+    temp:"Naturally heated geothermal river", tags:["Hot Spring","Natural Pool","Free","Hiking","Outdoor","Scenic","River"], emoji:"🏔️🌊", open:true,
+    hygiene:"B", lockerNote:"No facilities — bring a towel",
+    transport:"Hveragerði village · 3 km hike from town · 45 min from Reykjavik by bus",
+    parking:"Free car park at trail head in Hveragerði",
+    desc:"A naturally geothermally heated river you can bathe in, reached by a 3km hike through a steaming geothermal valley. The river runs warm enough to swim in year-round. Completely free, entirely natural, and utterly extraordinary. Fumaroles vent on both sides of the trail. One of Iceland's most memorable outdoor bathing experiences.",
+    lat:64.0167, lng:-21.1833
+  },
+  {
+    id:555, city:"Reykjavik", country:"Iceland", name:"Nauthólsvík Geothermal Beach", area:"Nauthólsvík, Reykjavik",
+    type:"lagoon", price:"Free (hot tub: small seasonal fee)", rating:4.5, reviews:3280,
+    hours:"May–Sep daily · Hot tub year-round (check website)",
+    temp:"Geothermal lagoon and hot tub", tags:["Geothermal","Beach","Hot Spring","Free","Outdoor","Reykjavik","Community"], emoji:"🏖️♨️", open:true,
+    hygiene:"A", lockerNote:"Changing rooms and showers on-site",
+    transport:"Reykjavik city centre · 15 min walk or bus",
+    parking:"Free on-site",
+    desc:"A golden-sand geothermal beach right in Reykjavik where warm water is pumped into a sheltered lagoon, raising the sea temperature to swimming level in summer. A large geothermal hot tub operates year-round. Entirely free in summer. A beloved local spot — the place Reykjavik residents go when they want a beach day without leaving the city.",
+    lat:64.1220, lng:-21.9450,
+    bookingUrl:"https://nautholsvik.is"
+  },
+
+  // ── ICELAND — NORTH (QUIRKY) ──
+  {
+    id:556, city:"Árskógssandur", country:"Iceland", name:"Bjórböðin Beer Spa", area:"Árskógssandur, North Iceland",
+    type:"both", price:"From £60", rating:4.5, reviews:890,
+    hours:"Check website for current hours",
+    temp:"Warm beer baths ~36°C", tags:["Unique","Beer Spa","Hot Spring","Geothermal","Experience","North Iceland"], emoji:"🍺♨️", open:true,
+    hygiene:"A", lockerNote:"Facilities on-site",
+    transport:"Akureyri · 45 min drive",
+    parking:"Free on-site",
+    desc:"The world's first beer spa — where you bathe in warm, fresh beer made from Iceland's pristine water and local hops. Each private tub contains a blend of warm geothermal water, yeast, hops and malt. Includes unlimited beer from a tap built into your tub, followed by a relaxation session in the communal hot pool. A one-of-a-kind Icelandic experience.",
+    lat:65.8910, lng:-18.2020,
+    bookingUrl:"https://bjorbodin.is"
+  },
+
+  // ── ICELAND — EAST ──
+  {
+    id:557, city:"Höfn", country:"Iceland", name:"Hoffell Hot Tubs", area:"Hoffell Farm, East Iceland",
+    type:"lagoon", price:"Small fee", rating:4.4, reviews:640,
+    hours:"Open daily",
+    temp:"Natural geothermal hot tubs 38–42°C", tags:["Hot Spring","Natural Pool","Geothermal","Rural","Scenic","Vatnajökull"], emoji:"♨️🏔️", open:true,
+    hygiene:"B+", lockerNote:"Basic changing room on farm",
+    transport:"Höfn town · 10 min drive",
+    parking:"Free on farm",
+    desc:"Five naturally geothermally heated hot tubs on a working farm at the foot of Vatnajökull — Europe's largest glacier. Simple, unpretentious and utterly spectacular. You soak in 38–42°C natural water while gazing across to glacier-capped mountains. One of the most dramatically positioned hot tubs in all of Iceland.",
+    lat:64.3833, lng:-15.1167
+  },
+
+  // ── ICELAND — WESTFJORDS ──
+  {
+    id:558, city:"Drangsnes", country:"Iceland", name:"Drangsnes Hot Tubs", area:"Drangsnes village, Westfjords",
+    type:"lagoon", price:"Free", rating:4.5, reviews:720,
+    hours:"Open year-round · 24 hours",
+    temp:"Natural geothermal hot tubs 39–42°C", tags:["Hot Spring","Free","Seafront","Westfjords","Outdoor","Community"], emoji:"🌊♨️", open:true,
+    hygiene:"B", lockerNote:"No facilities — bring towel",
+    transport:"Holmavík · 25 min drive · no public transport",
+    parking:"Free roadside",
+    desc:"Three simply built geothermal hot tubs right on the seafront in the tiny Westfjords village of Drangsnes. Completely free, open 24 hours a day, and maintained by the local community. At high tide the sea comes almost to the edge. With views across the fjord to the mountains, this is one of Iceland's most remote and rewarding free bathing spots.",
+    lat:65.6920, lng:-21.6960
+  },
 ];
 
 export const CITIES = [
@@ -6779,6 +6955,8 @@ export const CITIES = [
   "Dublin","Cork","Galway","Limerick",
   // Nordic
   "Helsinki","Stockholm","Gothenburg","Copenhagen","Aarhus","Oslo","Bergen","Rovaniemi","Karlstad","Reykjavik",
+  // Iceland — regional towns
+  "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes",
 ];
 
 export const FLAG: Record<string, string> = {
@@ -6805,6 +6983,9 @@ export const FLAG: Record<string, string> = {
   Helsinki:"🇫🇮", Stockholm:"🇸🇪", Gothenburg:"🇸🇪", Karlstad:"🇸🇪",
   Copenhagen:"🇩🇰", Aarhus:"🇩🇰", Oslo:"🇳🇴", Bergen:"🇳🇴", Rovaniemi:"🇫🇮",
   Reykjavik:"🇮🇸",
+  "Mývatn":"🇮🇸", "Húsavík":"🇮🇸", "Akureyri":"🇮🇸", "Egilsstaðir":"🇮🇸",
+  "Hvalfjörður":"🇮🇸", "Laugarás":"🇮🇸", "Reykholt":"🇮🇸", "Laugarvatn":"🇮🇸",
+  "Skógar":"🇮🇸", "Hveragerði":"🇮🇸", "Árskógssandur":"🇮🇸", "Höfn":"🇮🇸", "Drangsnes":"🇮🇸",
 };
 
 export const REGION_MAP: Record<string, string> = {
@@ -6832,6 +7013,9 @@ export const REGION_MAP: Record<string, string> = {
   Donegal:"UK & Ireland", Clare:"UK & Ireland", Cavan:"UK & Ireland", Carlow:"UK & Ireland", Laois:"UK & Ireland",
   Kildare:"UK & Ireland", Leitrim:"UK & Ireland", Meath:"UK & Ireland", Offaly:"UK & Ireland", Roscommon:"UK & Ireland", Westmeath:"UK & Ireland",
   Reykjavik:"Nordic", Aarhus:"Nordic",
+  "Mývatn":"Nordic", "Húsavík":"Nordic", "Akureyri":"Nordic", "Egilsstaðir":"Nordic",
+  "Hvalfjörður":"Nordic", "Laugarás":"Nordic", "Reykholt":"Nordic", "Laugarvatn":"Nordic",
+  "Skógar":"Nordic", "Hveragerði":"Nordic", "Árskógssandur":"Nordic", "Höfn":"Nordic", "Drangsnes":"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", Rovaniemi:"Nordic",
 };
@@ -6866,6 +7050,9 @@ export const COUNTRY_MAP: Record<string, string> = {
   Kildare:"Ireland", Leitrim:"Ireland", Meath:"Ireland", Offaly:"Ireland", Roscommon:"Ireland", Westmeath:"Ireland",
   // Nordic
   Reykjavik:"Iceland",
+  "Mývatn":"Iceland", "Húsavík":"Iceland", "Akureyri":"Iceland", "Egilsstaðir":"Iceland",
+  "Hvalfjörður":"Iceland", "Laugarás":"Iceland", "Reykholt":"Iceland", "Laugarvatn":"Iceland",
+  "Skógar":"Iceland", "Hveragerði":"Iceland", "Árskógssandur":"Iceland", "Höfn":"Iceland", "Drangsnes":"Iceland",
   Aarhus:"Denmark", Copenhagen:"Denmark",
   Helsinki:"Finland", Rovaniemi:"Finland",
   Stockholm:"Sweden", Gothenburg:"Sweden", Karlstad:"Sweden",
@@ -6908,6 +7095,10 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Copenhagen:"Copenhagen Region", Aarhus:"Jutland",
   Oslo:"Oslo Region", Bergen:"Western Norway",
   Reykjavik:"Reykjavík",
+  "Mývatn":"North Iceland", "Húsavík":"North Iceland", "Akureyri":"North Iceland", "Árskógssandur":"North Iceland",
+  "Egilsstaðir":"East Iceland", "Höfn":"East Iceland",
+  "Hvalfjörður":"West Iceland", "Reykholt":"West Iceland", "Drangsnes":"West Iceland",
+  "Laugarás":"South Iceland", "Laugarvatn":"South Iceland", "Skógar":"South Iceland", "Hveragerði":"South Iceland",
 };
 
 export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
@@ -7016,6 +7207,11 @@ export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
   "Loch Lomond":     { bg:"rgba(107,175,200,0.15)",  c:"#6bafc8" },
   "East Kilbride":   { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
   "North Glasgow":   { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
+  "Hot Spring":      { bg:"rgba(232,145,74,0.18)",   c:"#e8914a" },
+  "Geothermal":      { bg:"rgba(0,137,123,0.15)",    c:"#00897b" },
+  "Lagoon":          { bg:"rgba(26,107,138,0.15)",   c:"#1a6b8a" },
+  "Natural Pool":    { bg:"rgba(74,124,89,0.18)",    c:"#4a7c59" },
+  "Thermal Spa":     { bg:"rgba(123,94,167,0.15)",   c:"#7b5ea7" },
 };
 
 export function getTag(t: string): { bg: string; c: string } {
