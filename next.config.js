@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Removed 'output: export' — the AI chat API route requires a server runtime.
-  // Deploy to Vercel (or similar) for full Next.js support including API routes.
+  // Static export removed — API routes require server runtime.
+  // Netlify uses @netlify/plugin-nextjs (see netlify.toml) to handle SSR + API routes.
   trailingSlash: true,
   images: { unoptimized: true },
 };
