@@ -7200,15 +7200,71 @@ export const VENUES: Venue[] = [
     lat:52.3369, lng:-6.4633,
     bookingUrl:"https://www.sweathouse.ie",
   },
+
+  // ── SCOTTISH BORDERS (new venues) ──
+  {
+    id:580, city:"Scottish Borders", country:"Scotland", name:"Cedar Hus Bewliehill", area:"Bewliehill, Scottish Borders",
+    type:"sauna", price:"Check website for session prices", rating:4.9, reviews:0,
+    hours:"Check website for availability",
+    temp:"Lakeside cold water dip", tags:["Lakeside","Wood-fired","Outdoor","Scotland","Scottish Borders"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · nearest station Berwick-upon-Tweed (30 min drive)",
+    parking:"On-site parking",
+    desc:"Cedar Hus sauna at Bewliehill in the heart of the Scottish Borders — a beautifully crafted wood-fired sauna set beside a private loch in peaceful rolling countryside. Hot sauna followed by a cold plunge into the loch. One of the most scenic sauna settings in southern Scotland, far from the crowds.",
+    lat:55.5300, lng:-2.6800,
+    bookingUrl:"https://cedarhus.co.uk",
+  },
+
+  // ── FIFE — additional venues ──
+  {
+    id:581, city:"St Andrews", country:"Scotland", name:"Cellardyke Seaside Sauna", area:"Cellardyke, East Neuk of Fife",
+    type:"sauna", price:"Check website for session prices", rating:4.9, reviews:0,
+    hours:"Check website for availability",
+    temp:"North Sea cold plunge", tags:["Seafront","Wood-fired","Fife","Scotland"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Leuchars station 15 min drive",
+    parking:"Cellardyke harbour car park",
+    desc:"Seaside wood-fired sauna in the picturesque fishing village of Cellardyke, just east of Anstruther in the East Neuk of Fife. Plunge into the cold waters of the North Sea after your session. A quintessential East Neuk experience combining traditional sauna culture with Fife's stunning coastal scenery.",
+    lat:56.2243, lng:-2.6176,
+    bookingUrl:"https://cellardykesauna.co.uk",
+  },
+
+  // ── RENFREWSHIRE — additional venues ──
+  {
+    id:582, city:"Glasgow", country:"Scotland", name:"Clyde Coast Saunas — Kip Marina", area:"Inverkip, Renfrewshire",
+    type:"sauna", price:"Check website for session prices", rating:4.9, reviews:0,
+    hours:"Check website for availability",
+    temp:"Firth of Clyde sea plunge", tags:["Seafront","Marina","Wood-fired","Scotland"], emoji:"🌊🔥", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Inverkip station nearby",
+    parking:"Kip Marina car park",
+    desc:"Clyde Coast Saunas at Kip Marina in Inverkip, Renfrewshire — a wood-fired sauna right on the waterfront of the Firth of Clyde. Cool down with a plunge into the sea after your session. Stunning views across the water to the Cowal Peninsula and Isle of Bute. A classic west coast of Scotland sauna experience.",
+    lat:55.9046, lng:-4.8556,
+    bookingUrl:"https://clydecoastsaunas.co.uk",
+  },
+
+  // ── COUNTY DURHAM (new venues) ──
+  {
+    id:583, city:"Durham", country:"England", name:"Elements Sauna", area:"Barnard Castle, County Durham",
+    type:"sauna", price:"Check website for session prices", rating:4.9, reviews:0,
+    hours:"Check website for availability",
+    temp:"Lakeside cold water dip", tags:["Lakeside","Wood-fired","Outdoor","County Durham"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Outdoor facility — bring a dry bag and towel",
+    transport:"Car recommended · Darlington station 20 min drive",
+    parking:"On-site parking",
+    desc:"Elements Sauna in Barnard Castle, County Durham — a wood-fired outdoor sauna set beside a beautiful lake in the Durham Dales. Intense sauna heat followed by a cold plunge into the lake. A peaceful rural retreat in the heart of the North Pennines AONB, within easy reach of the market town of Barnard Castle.",
+    lat:54.5440, lng:-1.9237,
+    bookingUrl:"https://elementssauna.co.uk",
+  },
 ];
 
 export const CITIES = [
   "All",
   // UK — England
   "London","Bath","Bristol","Brighton","Manchester","Liverpool","Chester","Newcastle","Leeds","Birmingham","Sheffield","Cornwall",
-  "Nottingham","Leicester","Norwich","Cambridge","Oxford","Exeter","Portsmouth","Southampton","Plymouth","York",
+  "Nottingham","Leicester","Norwich","Cambridge","Oxford","Exeter","Portsmouth","Southampton","Plymouth","York","Durham",
   // UK — Scotland
-  "Edinburgh","Glasgow","Aberdeen","Inverness","Dundee","St Andrews",
+  "Edinburgh","Glasgow","Aberdeen","Inverness","Dundee","St Andrews","Scottish Borders",
   // UK — Wales
   "Cardiff","Swansea",
   "Carmarthen","Llanelli","Neath Port Talbot","Merthyr Tydfil","Blackwood","Bridgend","Porthcawl","Saundersfoot","Cwmbran",
@@ -7232,7 +7288,8 @@ export const FLAG: Record<string, string> = {
   Birmingham:"🇬🇧", Sheffield:"🇬🇧", Cornwall:"🇬🇧",
   Nottingham:"🇬🇧", Leicester:"🇬🇧", Norwich:"🇬🇧", Cambridge:"🇬🇧", Oxford:"🇬🇧", Exeter:"🇬🇧",
   Portsmouth:"🇬🇧", Southampton:"🇬🇧", Plymouth:"🇬🇧", York:"🇬🇧",
-  Edinburgh:"🇬🇧", Glasgow:"🇬🇧", Aberdeen:"🇬🇧", Inverness:"🇬🇧", Dundee:"🇬🇧", "St Andrews":"🇬🇧",
+  Edinburgh:"🇬🇧", Glasgow:"🇬🇧", Aberdeen:"🇬🇧", Inverness:"🇬🇧", Dundee:"🇬🇧", "St Andrews":"🇬🇧", "Scottish Borders":"🇬🇧",
+  Durham:"🇬🇧",
   Cardiff:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Swansea:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
   Carmarthen:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Llanelli:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Neath Port Talbot":"🏴󠁧󠁢󠁷󠁬󠁳󠁿", "Merthyr Tydfil":"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
   Blackwood:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Bridgend:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Porthcawl:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Saundersfoot:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Cwmbran:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
@@ -7264,7 +7321,8 @@ export const REGION_MAP: Record<string, string> = {
   Nottingham:"UK & Ireland", Leicester:"UK & Ireland", Norwich:"UK & Ireland", Cambridge:"UK & Ireland",
   Oxford:"UK & Ireland", Exeter:"UK & Ireland", Portsmouth:"UK & Ireland", Southampton:"UK & Ireland", Plymouth:"UK & Ireland", York:"UK & Ireland",
   Edinburgh:"UK & Ireland", Glasgow:"UK & Ireland", Aberdeen:"UK & Ireland",
-  Inverness:"UK & Ireland", Dundee:"UK & Ireland", "St Andrews":"UK & Ireland",
+  Inverness:"UK & Ireland", Dundee:"UK & Ireland", "St Andrews":"UK & Ireland", "Scottish Borders":"UK & Ireland",
+  Durham:"UK & Ireland",
   Cardiff:"UK & Ireland", Swansea:"UK & Ireland",
   Carmarthen:"UK & Ireland", Llanelli:"UK & Ireland", "Neath Port Talbot":"UK & Ireland", "Merthyr Tydfil":"UK & Ireland",
   Blackwood:"UK & Ireland", Bridgend:"UK & Ireland", Porthcawl:"UK & Ireland", Saundersfoot:"UK & Ireland", Cwmbran:"UK & Ireland",
@@ -7297,8 +7355,9 @@ export const COUNTRY_MAP: Record<string, string> = {
   Nottingham:"England", Leicester:"England", Norwich:"England", Cambridge:"England",
   Oxford:"England", Exeter:"England", Portsmouth:"England", Southampton:"England", Plymouth:"England", York:"England",
   // Scotland
+  Durham:"England",
   Edinburgh:"Scotland", Glasgow:"Scotland", Aberdeen:"Scotland",
-  Inverness:"Scotland", Dundee:"Scotland", "St Andrews":"Scotland",
+  Inverness:"Scotland", Dundee:"Scotland", "St Andrews":"Scotland", "Scottish Borders":"Scotland",
   // Wales
   Cardiff:"Wales", Swansea:"Wales",
   Carmarthen:"Wales", Llanelli:"Wales", "Neath Port Talbot":"Wales", "Merthyr Tydfil":"Wales",
@@ -7339,7 +7398,8 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Oxford:"South East", Exeter:"South West", Portsmouth:"South East", Southampton:"South East", Plymouth:"South West", York:"Yorkshire",
   // Scotland — region
   Edinburgh:"Central Belt", Glasgow:"Central Belt", Aberdeen:"Grampian",
-  Inverness:"Highlands", Dundee:"Fife", "St Andrews":"Fife",
+  Inverness:"Highlands", Dundee:"Fife", "St Andrews":"Fife", "Scottish Borders":"Scottish Borders",
+  Durham:"North East",
   // Wales — region/county
   Cardiff:"South Wales", Swansea:"South Wales",
   Carmarthen:"Carmarthenshire", Llanelli:"Carmarthenshire", "Neath Port Talbot":"Neath Port Talbot", "Merthyr Tydfil":"Merthyr Tydfil",
@@ -7494,6 +7554,9 @@ export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
   "Public Leisure":  { bg:"rgba(107,175,200,0.12)",  c:"#6bafc8" },
   "Mobile":          { bg:"rgba(138,156,130,0.15)",  c:"#8a9c82" },
   "Mountains":       { bg:"rgba(78,122,85,0.18)",    c:"#6a9b72" },
+  "Scotland":        { bg:"rgba(78,122,85,0.15)",    c:"#6a9b72" },
+  "Scottish Borders":{ bg:"rgba(138,156,130,0.15)",  c:"#8a9c82" },
+  "County Durham":   { bg:"rgba(138,156,130,0.15)",  c:"#8a9c82" },
 };
 
 export function getTag(t: string): { bg: string; c: string } {

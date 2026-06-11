@@ -182,10 +182,10 @@ export default function WellnessAssistant() {
         aria-label="Open wellness assistant"
         style={{
           position: 'fixed',
-          bottom: '24px',
-          right: '24px',
-          width: '56px',
-          height: '56px',
+          bottom: '20px',
+          right: '20px',
+          width: '48px',
+          height: '48px',
           borderRadius: '50%',
           background: '#FF5A5F',
           border: 'none',
@@ -215,13 +215,13 @@ export default function WellnessAssistant() {
         <div
           style={{
             position: 'fixed',
-            bottom: '92px',
-            right: '24px',
-            width: '380px',
-            height: '520px',
+            bottom: '80px',
+            right: '20px',
+            width: '340px',
+            height: '420px',
             background: '#fff',
             borderRadius: '16px',
-            boxShadow: '0 8px 40px rgba(0,0,0,0.18)',
+            boxShadow: '0 8px 32px rgba(0,0,0,0.15)',
             display: 'flex',
             flexDirection: 'column',
             overflow: 'hidden',
@@ -233,9 +233,9 @@ export default function WellnessAssistant() {
           {/* Header */}
           <div
             style={{
-              background: '#FF5A5F',
+              background: 'linear-gradient(135deg, #1a1a2e, #16213e)',
               color: '#fff',
-              padding: '16px 18px',
+              padding: '14px 16px',
               display: 'flex',
               alignItems: 'center',
               justifyContent: 'space-between',
@@ -243,10 +243,10 @@ export default function WellnessAssistant() {
             }}
           >
             <div style={{ display: 'flex', alignItems: 'center', gap: '10px' }}>
-              <span style={{ fontSize: '20px' }}>♨️</span>
+              <span style={{ fontSize: '18px' }}>✨</span>
               <div>
-                <div style={{ fontWeight: 700, fontSize: '15px', lineHeight: 1.2 }}>Thermae Assistant</div>
-                <div style={{ fontSize: '11px', opacity: 0.85, fontStyle: 'italic' }}>Find your perfect wellness spot</div>
+                <div style={{ fontWeight: 700, fontSize: '14px', lineHeight: 1.2 }}>Thermae AI Assistant</div>
+                <div style={{ fontSize: '10px', opacity: 0.75, fontStyle: 'italic' }}>Powered by AI · Find your perfect spot</div>
               </div>
             </div>
             <button
