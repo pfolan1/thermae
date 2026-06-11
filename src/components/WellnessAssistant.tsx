@@ -85,8 +85,8 @@ export default function WellnessAssistant() {
     }
   }, [open]);
 
-  const sendMessage = useCallback(async () => {
-    const text = input.trim();
+  const sendMessage = useCallback(async (override?: string) => {
+    const text = (override ?? input).trim();
     if (!text || loading) return;
 
     const userMessage: Message = { role: 'user', content: text };
@@ -307,6 +307,44 @@ export default function WellnessAssistant() {
               gap: '12px',
             }}
           >
+            {messages.length === 1 && !loading && (
+              <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', paddingBottom: '4px' }}>
+                {[
+                  'Best saunas in Dublin 🔥',
+                  'Cold plunge near me 🧊',
+                  'Sauna under £20 in London',
+                  'Hot springs in Iceland ♨️',
+                  'Seaweed baths in Ireland 🌿',
+                ].map(q => (
+                  <button
+                    key={q}
+                    onClick={() => sendMessage(q)}
+                    style={{
+                      padding: '5px 10px',
+                      borderRadius: '20px',
+                      border: '1.5px solid #FF5A5F',
+                      background: 'transparent',
+                      color: '#FF5A5F',
+                      fontSize: '12px',
+                      fontFamily: 'inherit',
+                      cursor: 'pointer',
+                      lineHeight: 1.3,
+                      transition: 'background 0.15s, color 0.15s',
+                    }}
+                    onMouseEnter={e => {
+                      (e.currentTarget as HTMLButtonElement).style.background = '#FF5A5F';
+                      (e.currentTarget as HTMLButtonElement).style.color = '#fff';
+                    }}
+                    onMouseLeave={e => {
+                      (e.currentTarget as HTMLButtonElement).style.background = 'transparent';
+                      (e.currentTarget as HTMLButtonElement).style.color = '#FF5A5F';
+                    }}
+                  >
+                    {q}
+                  </button>
+                ))}
+              </div>
+            )}
             {messages.map((msg, i) => (
               <div
                 key={i}
@@ -353,7 +391,7 @@ export default function WellnessAssistant() {
               value={input}
               onChange={e => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Ask about saunas, locations, prices..."
+              placeholder="Ask anything — location, budget, type..."
               disabled={loading}
               style={{
                 flex: 1,
@@ -368,7 +406,7 @@ export default function WellnessAssistant() {
               }}
             />
             <button
-              onClick={sendMessage}
+              onClick={() => sendMessage()}
               disabled={loading || !input.trim()}
               style={{
                 width: '40px',
