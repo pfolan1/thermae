@@ -184,30 +184,56 @@ export default function WellnessAssistant() {
           position: 'fixed',
           bottom: '20px',
           right: '20px',
-          width: '48px',
-          height: '48px',
-          borderRadius: '50%',
+          width: '56px',
+          height: '64px',
+          borderRadius: '16px',
           background: '#FF5A5F',
           border: 'none',
           cursor: 'pointer',
           display: 'flex',
+          flexDirection: 'column',
           alignItems: 'center',
           justifyContent: 'center',
-          fontSize: '24px',
-          boxShadow: '0 4px 20px rgba(255,90,95,0.4)',
+          gap: '3px',
+          boxShadow: '0 4px 16px rgba(255,90,95,0.4)',
           zIndex: 9998,
           transition: 'transform 0.2s, box-shadow 0.2s',
+          animation: open ? 'none' : 'thermaePulse 4s ease-in-out infinite',
         }}
         onMouseEnter={e => {
           (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1.08)';
-          (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 6px 28px rgba(255,90,95,0.5)';
+          (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 6px 24px rgba(255,90,95,0.55)';
+          (e.currentTarget as HTMLButtonElement).style.animation = 'none';
         }}
         onMouseLeave={e => {
           (e.currentTarget as HTMLButtonElement).style.transform = 'scale(1)';
-          (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 20px rgba(255,90,95,0.4)';
+          (e.currentTarget as HTMLButtonElement).style.boxShadow = '0 4px 16px rgba(255,90,95,0.4)';
+          if (!open) (e.currentTarget as HTMLButtonElement).style.animation = 'thermaePulse 4s ease-in-out infinite';
         }}
       >
-        {open ? '✕' : '♨️'}
+        {open ? (
+          <span style={{ color: '#fff', fontSize: '18px', lineHeight: 1 }}>✕</span>
+        ) : (
+          <>
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M12 2C12 2 7 7 7 12a5 5 0 0010 0c0-5-5-10-5-10z" fill="white" opacity="0.95"/>
+              <path d="M8 14c0 2.21 1.79 4 4 4s4-1.79 4-4c0-1.5-.8-2.8-2-3.5.3 1-.2 2.1-1 2.7C12.7 12.4 12 11.2 12 10c0 0-4 2-4 4z" fill="white" opacity="0.7"/>
+              <path d="M7 20h10" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.6"/>
+              <path d="M9 22h6" stroke="white" strokeWidth="1.5" strokeLinecap="round" opacity="0.4"/>
+            </svg>
+            <span style={{
+              color: '#fff',
+              fontSize: '9px',
+              fontWeight: 600,
+              letterSpacing: '0.5px',
+              lineHeight: 1,
+              fontFamily: 'inherit',
+              textTransform: 'uppercase',
+            }}>
+              Thermae AI
+            </span>
+          </>
+        )}
       </button>
 
       {/* Chat panel */}
@@ -370,8 +396,12 @@ export default function WellnessAssistant() {
           from { opacity: 0; transform: translateY(16px) scale(0.97); }
           to   { opacity: 1; transform: translateY(0) scale(1); }
         }
+        @keyframes thermaePulse {
+          0%, 85%, 100% { transform: scale(1); box-shadow: 0 4px 16px rgba(255,90,95,0.4); }
+          90%            { transform: scale(1.07); box-shadow: 0 6px 22px rgba(255,90,95,0.55); }
+          95%            { transform: scale(1.03); box-shadow: 0 5px 18px rgba(255,90,95,0.45); }
+        }
         @media (max-width: 440px) {
-          /* Full-width on small phones */
           .wellness-panel { width: calc(100vw - 32px) !important; right: 16px !important; }
         }
       `}</style>
