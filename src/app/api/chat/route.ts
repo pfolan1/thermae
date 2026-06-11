@@ -2,16 +2,18 @@ import { NextRequest } from 'next/server';
 import { VENUES } from '@/data/venues';
 import { venueSlug } from '@/lib/utils';
 
-// Build a condensed venue list for the system prompt (avoids sending huge payloads)
+// Only include essential fields to minimise system prompt token count
 function buildVenueContext(): string {
   const items = VENUES.map(v => ({
+    id: v.id,
     name: v.name,
     city: v.city,
     country: v.country,
     type: v.type,
     price: v.price,
-    tags: v.tags.slice(0, 6),
-    desc: v.desc.slice(0, 120),
+    tags: v.tags.slice(0, 5),
+    lat: v.lat,
+    lng: v.lng,
     slug: venueSlug(v),
     bookingUrl: v.bookingUrl ?? null,
   }));
@@ -33,6 +35,39 @@ Only recommend venues from the Thermae database below. If no venues match the us
 
 VENUES DATABASE:
 `;
+
+const TIMEOUT_MS = 30_000;
+const MAX_ATTEMPTS = 2;
+
+async function callAnthropic(
+  apiKey: string,
+  payload: object,
+  attempt = 1,
+): Promise<Response> {
+  try {
+    const res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: {
+        'x-api-key': apiKey,
+        'anthropic-version': '2023-06-01',
+        'content-type': 'application/json',
+      },
+      body: JSON.stringify(payload),
+      signal: AbortSignal.timeout(TIMEOUT_MS),
+    });
+
+    // Retry on server errors (5xx) or rate limits (429)
+    if (!res.ok && res.status >= 429 && attempt < MAX_ATTEMPTS) {
+      return callAnthropic(apiKey, payload, attempt + 1);
+    }
+    return res;
+  } catch (err) {
+    if (attempt < MAX_ATTEMPTS) {
+      return callAnthropic(apiKey, payload, attempt + 1);
+    }
+    throw err;
+  }
+}
 
 export async function POST(req: NextRequest) {
   const apiKey = process.env.ANTHROPIC_API_KEY;
@@ -62,21 +97,21 @@ export async function POST(req: NextRequest) {
 
   const systemPrompt = SYSTEM_PROMPT + buildVenueContext();
 
-  const anthropicRes = await fetch('https://api.anthropic.com/v1/messages', {
-    method: 'POST',
-    headers: {
-      'x-api-key': apiKey,
-      'anthropic-version': '2023-06-01',
-      'content-type': 'application/json',
-    },
-    body: JSON.stringify({
+  let anthropicRes: Response;
+  try {
+    anthropicRes = await callAnthropic(apiKey, {
       model: 'claude-sonnet-4-6',
       max_tokens: 1024,
       system: systemPrompt,
       messages,
       stream: true,
-    }),
-  });
+    });
+  } catch {
+    return new Response(JSON.stringify({ error: 'timeout' }), {
+      status: 504,
+      headers: { 'content-type': 'application/json' },
+    });
+  }
 
   if (!anthropicRes.ok) {
     const err = await anthropicRes.text();

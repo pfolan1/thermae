@@ -158,7 +158,7 @@ export default function WellnessAssistant() {
         const updated = [...prev];
         updated[updated.length - 1] = {
           role: 'assistant',
-          content: "Sorry, I couldn't connect right now. Please try again in a moment.",
+          content: "I'm thinking... please try again in a moment.",
         };
         return updated;
       });
