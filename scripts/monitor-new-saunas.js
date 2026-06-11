@@ -3,11 +3,16 @@
  * Thermae — Fully Automatic Venue Discovery
  * Runs every Sunday via GitHub Actions.
  *
- * 1. Searches Google News RSS for new sauna/wellness openings
- * 2. Scrapes thesaunaguide.co.uk and irelandsaunas.com for new listings
- * 3. Uses Claude AI to research each candidate and extract full venue details
- * 4. Adds verified new venues directly to src/data/venues.ts
- * 5. Emails a summary report to hello@thermae.app
+ * Data sources:
+ *   1. Google News RSS — new sauna/wellness opening articles
+ *   2. Direct site scraping — thesaunaguide.co.uk, irelandsaunas.com, swimfinder.net
+ *   3. OpenStreetMap Overpass API — leisure=sauna nodes across UK/Ireland/Iceland/Nordics
+ *   4. Google Places API — text search near key cities (optional, requires API key)
+ *
+ * Pipeline:
+ *   - News + scraping candidates → Claude AI verification → auto-add to venues.ts
+ *   - OSM + Places candidates → flagged for manual review in new-venues-found.txt
+ *   - Email report with sections per data source
  *
  * Git commit, push and Netlify rebuild are handled by venue-monitor.yml.
  */
@@ -43,18 +48,53 @@ const SEARCH_TERMS = [
   'new sauna Bristol',
   'sauna bar opening UK',
   'new cold plunge London',
+  'new hot spring Iceland',
+  'new geothermal spa opening',
+  'new lagoon spa opening 2026',
 ];
 
 // Extra sites to scrape for venue listings
 const EXTRA_SITES = [
-  { name: 'The Sauna Guide UK', url: 'https://thesaunaguide.co.uk' },
-  { name: 'Ireland Saunas',     url: 'https://irelandsaunas.com'   },
+  { name: 'The Sauna Guide UK', url: 'https://thesaunaguide.co.uk'  },
+  { name: 'Ireland Saunas',     url: 'https://irelandsaunas.com'    },
+  { name: 'Swimfinder',         url: 'https://swimfinder.net/saunas' },
+];
+
+// OpenStreetMap bounding boxes [name, "south,west,north,east"]
+const OVERPASS_REGIONS = [
+  { name: 'UK',      bbox: '49.9,-6.4,60.9,1.8'   },
+  { name: 'Ireland', bbox: '51.4,-10.7,55.4,-5.9'  },
+  { name: 'Iceland', bbox: '63.0,-24.5,66.5,-13.5' },
+  { name: 'Nordics', bbox: '54.5,4.5,71.2,31.5'    },
+];
+
+// Google Places cities + search queries
+const PLACES_CITIES = [
+  { name: 'London',     lat: 51.5074, lng: -0.1278,  radius: 20000 },
+  { name: 'Dublin',     lat: 53.3498, lng: -6.2603,  radius: 20000 },
+  { name: 'Edinburgh',  lat: 55.9533, lng: -3.1883,  radius: 15000 },
+  { name: 'Glasgow',    lat: 55.8642, lng: -4.2518,  radius: 15000 },
+  { name: 'Manchester', lat: 53.4808, lng: -2.2426,  radius: 15000 },
+  { name: 'Reykjavik',  lat: 64.1466, lng: -21.9426, radius: 30000 },
+  { name: 'Helsinki',   lat: 60.1699, lng: 24.9384,  radius: 20000 },
+  { name: 'Oslo',       lat: 59.9139, lng: 10.7522,  radius: 20000 },
+  { name: 'Stockholm',  lat: 59.3293, lng: 18.0686,  radius: 20000 },
+  { name: 'Copenhagen', lat: 55.6761, lng: 12.5683,  radius: 20000 },
+];
+
+const PLACES_QUERIES = [
+  'sauna',
+  'cold plunge',
+  'hot spring spa',
+  'geothermal pool',
+  'Nordic spa',
+  'seaweed bath',
 ];
 
 // Keywords that indicate a venue is relevant
-const RELEVANT_RE = /sauna|plunge|cold\s+(water|dip|swim)|banya|steam\s+room|thermal\s+spa|wellness\s+(centre|center|venue)|nordic\s+(spa|bath)|ice\s+bath/i;
+const RELEVANT_RE = /sauna|plunge|cold\s+(water|dip|swim)|banya|steam\s+room|thermal\s+spa|wellness\s+(centre|center|venue)|nordic\s+(spa|bath)|ice\s+bath|hot\s+spring|geothermal|lagoon\s+spa/i;
 
-// ── HTTP ──────────────────────────────────────────────────────────────────────
+// ── HTTP (GET) ────────────────────────────────────────────────────────────────
 
 function fetchUrl(url, depth = 0) {
   return new Promise((resolve, reject) => {
@@ -81,6 +121,36 @@ function fetchUrl(url, depth = 0) {
   });
 }
 
+// ── HTTP (POST) — used by Overpass API ───────────────────────────────────────
+
+function fetchUrlPost(url, body) {
+  return new Promise((resolve, reject) => {
+    const parsed   = new URL(url);
+    const mod      = parsed.protocol === 'https:' ? https : http;
+    const postData = `data=${encodeURIComponent(body)}`;
+    const options  = {
+      hostname: parsed.hostname,
+      path:     parsed.pathname + (parsed.search || ''),
+      method:   'POST',
+      headers:  {
+        'Content-Type':   'application/x-www-form-urlencoded',
+        'Content-Length': Buffer.byteLength(postData),
+        'User-Agent':     'Thermae-Bot/2.0 (+https://thermae.app)',
+      },
+      timeout: 45000,
+    };
+    let data = '';
+    const req = mod.request(options, res => {
+      res.on('data', chunk => { data += chunk; });
+      res.on('end',  () => resolve(data));
+    });
+    req.on('error',   reject);
+    req.on('timeout', () => { req.destroy(); reject(new Error('Timeout')); });
+    req.write(postData);
+    req.end();
+  });
+}
+
 // ── RSS HELPERS ───────────────────────────────────────────────────────────────
 
 function googleNewsUrl(query) {
@@ -92,7 +162,7 @@ function parseRssItems(xml) {
   const re    = /<item>([\s\S]*?)<\/item>/g;
   let m;
   while ((m = re.exec(xml)) !== null) {
-    const b     = m[1];
+    const b       = m[1];
     const title   = (b.match(/<title><!\[CDATA\[(.*?)\]\]><\/title>/)    || b.match(/<title>(.*?)<\/title>/))?.[1]       || '';
     const link    = (b.match(/<link>(.*?)<\/link>/))?.[1]                                                                  || '';
     const pubDate = (b.match(/<pubDate>(.*?)<\/pubDate>/))?.[1]                                                            || '';
@@ -247,7 +317,7 @@ If YES, return a JSON object:
   "city": "City",
   "country": "UK" or "Ireland" or "Norway" or "Sweden" or "Finland" or "Denmark" or "Iceland",
   "area": "Neighbourhood or district",
-  "type": "sauna" or "plunge" or "both" or "seaweed",
+  "type": "sauna" or "plunge" or "both" or "seaweed" or "lagoon",
   "price": "e.g. '£20' or '€15 per session' or 'Check website'",
   "hours": "Check website for current hours",
   "temp": "e.g. '4°C plunge' or 'River plunge' or 'N/A'",
@@ -270,6 +340,123 @@ If this is NOT a real new venue opening (opinion piece, generic article, already
 {"skip": true, "reason": "one line reason"}
 
 Return ONLY valid JSON. No markdown, no explanation.`;
+}
+
+// ── OVERPASS API (OpenStreetMap) ──────────────────────────────────────────────
+
+function buildOverpassQuery(bbox) {
+  return `[out:json][timeout:30];
+(
+  node["leisure"="sauna"](${bbox});
+  node["leisure"="swimming_pool"]["sport"="sauna"](${bbox});
+  node["amenity"="spa"]["name"](${bbox});
+  node["leisure"="sports_centre"]["sport"="sauna"](${bbox});
+);
+out body;`;
+}
+
+async function queryOverpassAPI(existingNames) {
+  const flagged = [];
+  console.log('\n── OpenStreetMap Overpass API ───────────────────────────────');
+
+  for (const region of OVERPASS_REGIONS) {
+    try {
+      process.stdout.write(`  OSM query: ${region.name} (bbox ${region.bbox})…`);
+      const raw  = await fetchUrlPost(
+        'https://overpass-api.de/api/interpreter',
+        buildOverpassQuery(region.bbox)
+      );
+      const data = JSON.parse(raw);
+      const elements = Array.isArray(data.elements) ? data.elements : [];
+
+      let newCount = 0;
+      for (const el of elements) {
+        const name = el.tags && el.tags.name;
+        if (!name || name.length < 3) continue;
+        if (isSimilarToExisting(name, existingNames, 0.85)) continue;
+
+        const type = el.tags.leisure || el.tags.amenity || 'sauna';
+        flagged.push({
+          name,
+          lat:     el.lat,
+          lng:     el.lon,
+          osmType: type,
+          website: el.tags.website || el.tags['contact:website'] || null,
+          region:  region.name,
+          source:  'OpenStreetMap',
+        });
+        newCount++;
+      }
+      console.log(` ${elements.length} elements → ${newCount} new`);
+    } catch (err) {
+      console.log(` ERROR: ${err.message}`);
+    }
+  }
+
+  console.log(`  Total new OSM venues flagged: ${flagged.length}`);
+  return flagged;
+}
+
+// ── GOOGLE PLACES API ─────────────────────────────────────────────────────────
+
+async function queryGooglePlaces(existingNames) {
+  const apiKey = process.env.GOOGLE_PLACES_API_KEY;
+  if (!apiKey) {
+    console.log('\n── Google Places API: SKIPPED (GOOGLE_PLACES_API_KEY not set)');
+    return [];
+  }
+
+  const flagged    = [];
+  const seenIds    = new Set();
+  console.log('\n── Google Places API ────────────────────────────────────────');
+
+  for (const city of PLACES_CITIES) {
+    for (const query of PLACES_QUERIES) {
+      try {
+        process.stdout.write(`  Places: "${query}" near ${city.name}…`);
+        const url = `https://maps.googleapis.com/maps/api/place/textsearch/json`
+          + `?query=${encodeURIComponent(query)}`
+          + `&location=${city.lat},${city.lng}`
+          + `&radius=${city.radius}`
+          + `&key=${apiKey}`;
+
+        const raw  = await fetchUrl(url);
+        const data = JSON.parse(raw);
+
+        if (data.status !== 'OK' && data.status !== 'ZERO_RESULTS') {
+          console.log(` API error: ${data.status}`);
+          continue;
+        }
+
+        let newCount = 0;
+        for (const place of (data.results || [])) {
+          if (seenIds.has(place.place_id)) continue;
+          seenIds.add(place.place_id);
+          if (isSimilarToExisting(place.name, existingNames, 0.85)) continue;
+
+          flagged.push({
+            name:    place.name,
+            address: place.formatted_address || '',
+            lat:     place.geometry.location.lat,
+            lng:     place.geometry.location.lng,
+            city:    city.name,
+            query,
+            source:  'Google Places',
+          });
+          newCount++;
+        }
+        console.log(` ${newCount} new`);
+
+        // Throttle to stay within API rate limits
+        await new Promise(r => setTimeout(r, 200));
+      } catch (err) {
+        console.log(` ERROR: ${err.message}`);
+      }
+    }
+  }
+
+  console.log(`  Total new Google Places venues flagged: ${flagged.length}`);
+  return flagged;
 }
 
 // ── EMAIL ─────────────────────────────────────────────────────────────────────
@@ -305,19 +492,19 @@ async function sendEmail(subject, body) {
   console.log('\nThermae Fully Automatic Venue Discovery');
   console.log('========================================\n');
 
-  const venueSrc     = fs.readFileSync(VENUES_FILE, 'utf-8');
+  const venueSrc      = fs.readFileSync(VENUES_FILE, 'utf-8');
   const existingNames = parseExistingNames(venueSrc);
-  const highestId    = getHighestId(venueSrc);
+  const highestId     = getHighestId(venueSrc);
   console.log(`Loaded ${existingNames.size} existing venues (highest ID: ${highestId})\n`);
 
-  // ── 1. Collect candidates ──────────────────────────────────────────────────
-  const candidates = [];
-  const seenLinks  = new Set();
+  // ── 1. Google News RSS ────────────────────────────────────────────────────
+  const newsCandidates = [];
+  const seenLinks      = new Set();
+  console.log('── Google News RSS ──────────────────────────────────────────');
 
-  // Google News RSS
   for (const term of SEARCH_TERMS) {
     try {
-      process.stdout.write(`  News search: "${term}"…`);
+      process.stdout.write(`  News: "${term}"…`);
       const xml   = await fetchUrl(googleNewsUrl(term));
       const items = parseRssItems(xml);
       let count   = 0;
@@ -325,7 +512,7 @@ async function sendEmail(subject, body) {
         if (seenLinks.has(item.link)) continue;
         if (!isRecent(item.pubDate))  continue;
         seenLinks.add(item.link);
-        candidates.push({ ...item, term, source: 'Google News' });
+        newsCandidates.push({ ...item, term, source: 'Google News' });
         count++;
       }
       console.log(` ${count} result(s)`);
@@ -334,7 +521,8 @@ async function sendEmail(subject, body) {
     }
   }
 
-  // Direct site scraping
+  // ── 2. Direct site scraping ───────────────────────────────────────────────
+  console.log('\n── Site Scraping ────────────────────────────────────────────');
   for (const site of EXTRA_SITES) {
     try {
       process.stdout.write(`  Scraping: ${site.name}…`);
@@ -344,7 +532,7 @@ async function sendEmail(subject, body) {
       for (const item of links) {
         if (seenLinks.has(item.link)) continue;
         seenLinks.add(item.link);
-        candidates.push({ ...item, term: site.name, source: site.name });
+        newsCandidates.push({ ...item, term: site.name, source: site.name });
         count++;
       }
       console.log(` ${count} candidate(s)`);
@@ -353,19 +541,23 @@ async function sendEmail(subject, body) {
     }
   }
 
-  console.log(`\nTotal candidates before filter: ${candidates.length}`);
+  // ── 3. OpenStreetMap Overpass API ─────────────────────────────────────────
+  const osmFlagged = await queryOverpassAPI(existingNames);
 
-  // ── 2. Relevance filter ────────────────────────────────────────────────────
-  const relevant = candidates.filter(c => RELEVANT_RE.test(c.title + ' ' + c.desc));
-  console.log(`After relevance filter: ${relevant.length}\n`);
+  // ── 4. Google Places API ─────────────────────────────────────────────────
+  const placesEnabled  = !!process.env.GOOGLE_PLACES_API_KEY;
+  const placesFlagged  = await queryGooglePlaces(existingNames);
 
-  // ── 3. Research each candidate with Claude ─────────────────────────────────
+  // ── 5. Relevance filter + Claude research (news + scraping only) ──────────
+  const relevant = newsCandidates.filter(c => RELEVANT_RE.test(c.title + ' ' + c.desc));
+  console.log(`\nNews/scraping candidates: ${newsCandidates.length} total, ${relevant.length} relevant`);
+  console.log('── Claude AI Verification ───────────────────────────────────');
+
   const newVenues = [];
   const skipped   = [];
   const errors    = [];
 
   for (const candidate of relevant) {
-    // Pre-filter: skip if candidate title is 90%+ similar to an existing venue name
     if (isSimilarToExisting(candidate.title, existingNames)) {
       skipped.push({ candidate, reason: 'Matches existing venue name' });
       continue;
@@ -396,16 +588,14 @@ async function sendEmail(subject, body) {
         continue;
       }
 
-      // Duplicate check by resolved name (90%+ similarity)
       if (isSimilarToExisting(parsed.name, existingNames)) {
         console.log(` skip (duplicate: ${parsed.name})`);
         skipped.push({ candidate, reason: `Duplicate: ${parsed.name}` });
         continue;
       }
-      const nameLower = parsed.name.toLowerCase().trim();
 
       console.log(` ✅ "${parsed.name}" — ${parsed.city}, ${parsed.country}`);
-      existingNames.add(nameLower); // prevent intra-run duplicates
+      existingNames.add(parsed.name.toLowerCase().trim());
       newVenues.push(parsed);
     } catch (err) {
       console.log(` ERROR: ${err.message}`);
@@ -413,53 +603,90 @@ async function sendEmail(subject, body) {
     }
   }
 
-  console.log(`\nNew venues found    : ${newVenues.length}`);
-  console.log(`Skipped             : ${skipped.length}`);
-  console.log(`Errors              : ${errors.length}\n`);
-
-  // ── 4. Write new venues to venues.ts ──────────────────────────────────────
+  // ── 6. Write verified new venues to venues.ts ─────────────────────────────
   if (newVenues.length > 0) {
     const updated = insertVenuesIntoTs(venueSrc, newVenues, highestId + 1);
     fs.writeFileSync(VENUES_FILE, updated, 'utf-8');
-    console.log(`✅ Added ${newVenues.length} venue(s) to src/data/venues.ts`);
+    console.log(`\n✅ Added ${newVenues.length} venue(s) to src/data/venues.ts`);
   } else {
-    console.log('ℹ️  No new venues to add this week.');
+    console.log('\nℹ️  No new venues auto-added this week.');
   }
 
-  // ── 5. Build report ────────────────────────────────────────────────────────
-  const date  = new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  // ── 7. Build report ───────────────────────────────────────────────────────
+  const date = new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
   const lines = [
     '═══════════════════════════════════════════════════════════════',
     '  THERMAE VENUE DISCOVERY REPORT',
     `  ${date}`,
     '═══════════════════════════════════════════════════════════════',
     '',
-    `  Candidates collected : ${candidates.length}`,
-    `  After relevance filter: ${relevant.length}`,
-    `  New venues added     : ${newVenues.length}`,
-    `  Skipped              : ${skipped.length}`,
-    `  Errors               : ${errors.length}`,
+    '  DATA SOURCES THIS RUN:',
+    `  • Google News RSS          : ${newsCandidates.length} articles, ${relevant.length} relevant`,
+    `  • OpenStreetMap Overpass   : ${osmFlagged.length} new venues flagged`,
+    `  • Google Places API        : ${placesEnabled ? `${placesFlagged.length} new venues flagged` : 'SKIPPED (no API key)'}`,
+    '',
+    '  RESULTS:',
+    `  • Venues auto-added        : ${newVenues.length}`,
+    `  • Flagged for manual review: ${osmFlagged.length + placesFlagged.length}`,
+    `  • Skipped (duplicates/irrelevant): ${skipped.length}`,
+    `  • Errors                   : ${errors.length}`,
+    '',
+    '═══════════════════════════════════════════════════════════════',
     '',
   ];
 
+  // Section 1: Auto-added venues
   if (newVenues.length > 0) {
-    lines.push('── VENUES ADDED TO venues.ts ────────────────────────────────────');
+    lines.push('── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───');
     for (const v of newVenues) {
-      lines.push(`  ✅ ${v.name} — ${v.city}, ${v.country}`);
+      lines.push(`  ✅ ${v.name}`);
+      lines.push(`     ${v.city}, ${v.country}`);
       lines.push(`     ${v.desc}`);
       if (v.bookingUrl) lines.push(`     ${v.bookingUrl}`);
       lines.push('');
     }
   } else {
-    lines.push('── NO NEW VENUES FOUND ──────────────────────────────────────────');
-    lines.push('  Nothing new to add this week.');
+    lines.push('── NO NEW VENUES AUTO-ADDED THIS WEEK ──────────────────────────');
+    lines.push('  Nothing verified from news sources this week.');
     lines.push('');
   }
 
+  // Section 2: OSM flagged
+  lines.push('── OPENSTREETMAP — FLAGGED FOR MANUAL REVIEW ───────────────────');
+  if (osmFlagged.length > 0) {
+    for (const v of osmFlagged) {
+      lines.push(`  📍 ${v.name}`);
+      lines.push(`     Region: ${v.region} | Type: ${v.osmType} | Coords: ${v.lat?.toFixed(4)}, ${v.lng?.toFixed(4)}`);
+      if (v.website) lines.push(`     ${v.website}`);
+      lines.push('');
+    }
+  } else {
+    lines.push('  No new OSM venues found this week.\n');
+  }
+
+  // Section 3: Google Places flagged
+  if (placesEnabled) {
+    lines.push('── GOOGLE PLACES — FLAGGED FOR MANUAL REVIEW ───────────────────');
+    if (placesFlagged.length > 0) {
+      for (const v of placesFlagged) {
+        lines.push(`  📍 ${v.name}`);
+        lines.push(`     ${v.address}`);
+        lines.push(`     Search: "${v.query}" near ${v.city} | Coords: ${v.lat?.toFixed(4)}, ${v.lng?.toFixed(4)}`);
+        lines.push('');
+      }
+    } else {
+      lines.push('  No new Google Places venues found this week.\n');
+    }
+  } else {
+    lines.push('── GOOGLE PLACES ────────────────────────────────────────────────');
+    lines.push('  Skipped — set GOOGLE_PLACES_API_KEY in scripts/.env to enable.\n');
+  }
+
+  // Section 4: Errors
   if (errors.length > 0) {
     lines.push('── ERRORS ───────────────────────────────────────────────────────');
     for (const e of errors) {
-      lines.push(`  "${e.candidate.title.slice(0, 60)}" → ${e.error}`);
+      lines.push(`  ⚠  "${e.candidate.title.slice(0, 60)}" → ${e.error}`);
     }
     lines.push('');
   }
@@ -469,9 +696,12 @@ async function sendEmail(subject, body) {
   fs.writeFileSync(REPORT_FILE, report, 'utf-8');
   console.log('\n' + report);
 
-  // ── 6. Email summary ───────────────────────────────────────────────────────
+  // ── 8. Email summary ──────────────────────────────────────────────────────
+  const totalFlagged = osmFlagged.length + placesFlagged.length;
   const subject = newVenues.length > 0
-    ? `✅ Thermae: ${newVenues.length} new venue(s) added — ${date}`
-    : `ℹ️  Thermae Venue Monitor: No new venues — ${date}`;
+    ? `✅ Thermae: ${newVenues.length} venue(s) added, ${totalFlagged} flagged for review — ${date}`
+    : totalFlagged > 0
+      ? `🔍 Thermae: ${totalFlagged} venue(s) flagged for manual review — ${date}`
+      : `ℹ️  Thermae Venue Monitor: Nothing new — ${date}`;
   await sendEmail(subject, report);
 })();

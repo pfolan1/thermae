@@ -6935,6 +6935,156 @@ export const VENUES: Venue[] = [
     desc:"Three simply built geothermal hot tubs right on the seafront in the tiny Westfjords village of Drangsnes. Completely free, open 24 hours a day, and maintained by the local community. At high tide the sea comes almost to the edge. With views across the fjord to the mountains, this is one of Iceland's most remote and rewarding free bathing spots.",
     lat:65.6920, lng:-21.6960
   },
+
+  // ── IRELAND — SWIMFINDER ADDITIONS ──
+  {
+    id:559, city:"Clare", country:"Ireland", name:"Serenity Saunas — O'Briens Bridge", area:"O'Briens Bridge, River Shannon",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    hours:"Check website for current hours",
+    temp:"River Shannon cold plunge", tags:["Riverside","Mobile","Outdoor","Wild Swimming"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — O'Briens Bridge village, Co. Clare",
+    parking:"Riverside parking",
+    desc:"Mobile wood-fired sauna on the banks of the River Shannon at O'Briens Bridge, Co. Clare. Serenity Saunas brings the authentic Finnish sauna experience to the riverside, with wild swimming in the Shannon after each session. A genuinely restorative west of Ireland experience.",
+    lat:52.7583, lng:-8.5083,
+    bookingUrl:"https://serenitysaunas.ie"
+  },
+  {
+    id:560, city:"Limerick", country:"Ireland", name:"Serenity Saunas — Castleconnell", area:"Castleconnell, River Shannon",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    hours:"Check website for current hours",
+    temp:"River Shannon cold plunge", tags:["Riverside","Mobile","Outdoor","Wild Swimming"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Castleconnell village, Co. Limerick · 15 min from Limerick city",
+    parking:"Village parking",
+    desc:"Mobile wood-fired sauna on the River Shannon at Castleconnell, Co. Limerick. The village is famous for its salmon fishing and wild swimming — Serenity Saunas adds a Finnish sauna and contrast therapy experience to one of the Shannon's most scenic spots, 15 minutes from Limerick city.",
+    lat:52.7167, lng:-8.5000,
+    bookingUrl:"https://serenitysaunas.ie"
+  },
+
+  // ── LONDON — THIRD SPACE PREMIUM GYMS ──
+  {
+    id:561, city:"London", country:"UK", name:"Third Space Soho", area:"Soho / W1F",
+    type:"sauna", price:"Members only", rating:4.7, reviews:0,
+    hours:"Mon–Fri 6am–11pm · Sat–Sun 7am–10pm",
+    temp:"Steam room", tags:["Gym Sauna","Premium","Members Club","Soho","Steam"], emoji:"🔥♨️", open:true,
+    hygiene:"A+", lockerNote:"Luxury lockers and towels provided",
+    transport:"Tottenham Court Road (Northern/Central) · 5 min walk",
+    parking:"NCP Soho / Wardour Street nearby",
+    desc:"Third Space's flagship Soho club on Noel Street — a premium members gym combining world-class fitness facilities with sauna, steam room and spa-level wellness. Third Space is regarded as London's finest gym chain, offering Finnish sauna and steam in a beautifully designed setting.",
+    lat:51.5145, lng:-0.1352,
+    bookingUrl:"https://www.thirdspace.london/clubs/soho"
+  },
+  {
+    id:562, city:"London", country:"UK", name:"Third Space City", area:"City of London / EC4",
+    type:"sauna", price:"Members only", rating:4.7, reviews:0,
+    hours:"Mon–Fri 6am–11pm · Sat–Sun 8am–10pm",
+    temp:"Steam room", tags:["Gym Sauna","Premium","Members Club","City Centre","Steam"], emoji:"🔥♨️", open:true,
+    hygiene:"A+", lockerNote:"Luxury lockers and towels provided",
+    transport:"Mansion House (District/Circle) · 2 min walk · Bank · 5 min",
+    parking:"Limited street parking · NCP nearby",
+    desc:"Third Space's City of London club on Bow Lane — premium fitness and wellness at the heart of the Square Mile. Finnish sauna, steam room and full spa facilities in a sleek, architect-designed space. The destination of choice for finance workers who take their wellness seriously.",
+    lat:51.5131, lng:-0.0972,
+    bookingUrl:"https://www.thirdspace.london/clubs/city"
+  },
+  {
+    id:563, city:"London", country:"UK", name:"Third Space Islington", area:"Islington / EC1V",
+    type:"sauna", price:"Members only", rating:4.7, reviews:0,
+    hours:"Mon–Fri 6am–11pm · Sat–Sun 7am–10pm",
+    temp:"Steam room", tags:["Gym Sauna","Premium","Members Club","North London","Steam"], emoji:"🔥♨️", open:true,
+    hygiene:"A+", lockerNote:"Luxury lockers and towels provided",
+    transport:"Angel (Northern) · 5 min walk · Barbican (Circle/Met) · 8 min walk",
+    parking:"Limited NCP nearby",
+    desc:"Third Space Islington on Goswell Road — premium members gym and wellness club in North London. Sauna, steam room and relaxation facilities in a spacious, design-led building. One of the most popular Third Space clubs among Islington and Clerkenwell residents.",
+    lat:51.5264, lng:-0.0968,
+    bookingUrl:"https://www.thirdspace.london/clubs/islington"
+  },
+  {
+    id:564, city:"London", country:"UK", name:"Third Space Canary Wharf", area:"Canary Wharf / E14",
+    type:"sauna", price:"Members only", rating:4.7, reviews:0,
+    hours:"Mon–Fri 6am–10pm · Sat–Sun 8am–9pm",
+    temp:"Steam room", tags:["Gym Sauna","Premium","Members Club","Canary Wharf","Steam"], emoji:"🔥♨️", open:true,
+    hygiene:"A+", lockerNote:"Luxury lockers and towels provided",
+    transport:"Canary Wharf (Jubilee/DLR) · 3 min walk",
+    parking:"Canary Wharf car parks nearby",
+    desc:"Third Space Canary Wharf at Churchill Place — premium fitness and wellness for Docklands professionals. Sauna and steam facilities alongside an exceptional gym. A serious upgrade from the typical City gym, offering genuine wellness alongside world-class training.",
+    lat:51.5055, lng:-0.0226,
+    bookingUrl:"https://www.thirdspace.london/clubs/canary-wharf"
+  },
+  {
+    id:565, city:"London", country:"UK", name:"Third Space Marylebone", area:"Marylebone / W1U",
+    type:"sauna", price:"Members only", rating:4.7, reviews:0,
+    hours:"Mon–Fri 6am–11pm · Sat–Sun 7am–10pm",
+    temp:"Steam room", tags:["Gym Sauna","Premium","Members Club","Marylebone","Steam"], emoji:"🔥♨️", open:true,
+    hygiene:"A+", lockerNote:"Luxury lockers and towels provided",
+    transport:"Bond Street (Central/Jubilee) · 5 min walk · Baker Street · 7 min",
+    parking:"NCP Portman Square nearby",
+    desc:"Third Space Marylebone on Wigmore Street — premium fitness and wellness in one of London's most desirable neighbourhoods. Sauna, steam and full wellness facilities a short walk from Bond Street. The natural home gym for Marylebone, Mayfair and Fitzrovia residents who demand the best.",
+    lat:51.5161, lng:-0.1505,
+    bookingUrl:"https://www.thirdspace.london/clubs/marylebone"
+  },
+
+  // ── LONDON — KX GYM & HOTEL SPAS ──
+  {
+    id:566, city:"London", country:"UK", name:"KX Gym — Chelsea", area:"Chelsea / SW3",
+    type:"sauna", price:"Members only", rating:4.8, reviews:0,
+    hours:"Mon–Fri 6:30am–10pm · Sat–Sun 7am–9pm",
+    temp:"Steam room and sauna", tags:["Premium","Members Club","Chelsea","Gym Sauna","Luxury","Steam"], emoji:"🔥♨️", open:true,
+    hygiene:"A+", lockerNote:"Private changing rooms with luxury amenities",
+    transport:"South Kensington (District/Circle/Piccadilly) · 5 min walk",
+    parking:"Chelsea street parking / nearby car parks",
+    desc:"KX Gym on Draycott Avenue, Chelsea — one of London's most exclusive private members' clubs, founded in 2004. Ultra-luxury facilities include sauna, steam room, hydrotherapy pool and full spa alongside world-class fitness equipment. Known for its celebrity clientele and unrivalled personal training. A Chelsea institution.",
+    lat:51.4912, lng:-0.1628,
+    bookingUrl:"https://kxlife.co.uk"
+  },
+  {
+    id:567, city:"London", country:"UK", name:"ESPA Life at Corinthia", area:"Westminster / SW1A",
+    type:"both", price:"From £80", rating:4.9, reviews:0,
+    hours:"Daily 6am–10pm",
+    temp:"Thermal suite, plunge pools", tags:["Luxury","Hotel Spa","Central London","Steam","Thermal Pools","Finnish","Iconic"], emoji:"♨️🧊", open:true,
+    hygiene:"A+", lockerNote:"Luxury robes, towels and amenities provided",
+    transport:"Embankment (Circle/District/Bakerloo/Northern) · 3 min walk",
+    parking:"Underground valet parking at hotel",
+    desc:"Europe's largest urban spa across three floors of the Corinthia Hotel on Whitehall Place. Seventeen treatment rooms, a crystal steam room, Finnish sauna, hydrotherapy pools, cold plunge and vitality pool. The ESPA product range and globally acclaimed therapists make this one of London's definitive luxury spa experiences.",
+    lat:51.5057, lng:-0.1222,
+    bookingUrl:"https://www.corinthia.com/london/espa-life"
+  },
+  {
+    id:568, city:"London", country:"UK", name:"The Spa at Mandarin Oriental Hyde Park", area:"Knightsbridge / SW1X",
+    type:"both", price:"From £100", rating:4.9, reviews:0,
+    hours:"Daily 7am–10pm",
+    temp:"Amethyst steam room, sauna, cold plunge", tags:["Luxury","Hotel Spa","Knightsbridge","Steam","Finnish","Iconic"], emoji:"♨️🧊", open:true,
+    hygiene:"A+", lockerNote:"Luxury robes, towels and amenities provided",
+    transport:"Knightsbridge (Piccadilly) · 2 min walk",
+    parking:"On-site valet parking",
+    desc:"The palatial spa at Mandarin Oriental Hyde Park — a landmark of London luxury wellness. Features a 17-metre pool, Finnish sauna, amethyst crystal steam room, cold plunge and a complete thermal suite. Sweeping views toward Hyde Park from the relaxation areas. Consistently ranked among the world's finest urban spas.",
+    lat:51.5021, lng:-0.1614,
+    bookingUrl:"https://www.mandarinoriental.com/en/london/hyde-park/spa"
+  },
+  {
+    id:569, city:"London", country:"UK", name:"Bamford Spa at The Berkeley", area:"Knightsbridge / SW1X",
+    type:"sauna", price:"From £95", rating:4.8, reviews:0,
+    hours:"Daily 7am–9:30pm",
+    temp:"Sauna and steam room", tags:["Luxury","Hotel Spa","Knightsbridge","Boutique","Steam","Organic"], emoji:"🔥♨️", open:true,
+    hygiene:"A+", lockerNote:"Luxury robes, towels and amenities provided",
+    transport:"Hyde Park Corner (Piccadilly) · 3 min walk · Knightsbridge · 5 min",
+    parking:"On-site valet parking at The Berkeley",
+    desc:"The Bamford Spa at The Berkeley brings Carole Bamford's deeply thoughtful, organic wellness philosophy to a private sanctuary in Knightsbridge. Sauna, steam room and signature organic treatments using Bamford's own botanically-sourced skincare range. Peaceful, nature-inspired and entirely in keeping with the Daylesford aesthetic that defines the brand.",
+    lat:51.4999, lng:-0.1560,
+    bookingUrl:"https://www.bamford.com/pages/berkeley-hotel-spa"
+  },
+  {
+    id:570, city:"London", country:"UK", name:"Cowshed Spa — Soho House Soho", area:"Soho / W1D",
+    type:"sauna", price:"Members only", rating:4.7, reviews:0,
+    hours:"Mon–Sun 7am–10pm",
+    temp:"Steam room", tags:["Members Club","Boutique","Soho","Steam","Organic"], emoji:"♨️", open:true,
+    hygiene:"A+", lockerNote:"Robes and towels provided for members",
+    transport:"Tottenham Court Road (Northern/Central) · 4 min walk · Leicester Square · 5 min",
+    parking:"NCP Soho nearby",
+    desc:"Cowshed Spa at Soho House Soho on Greek Street — a members-only wellness haven in the heart of Soho. Cowshed's organic, product-led approach brings sauna, steam and holistic treatments to one of London's most creatively buzzing members clubs. Beloved by the media, arts and entertainment crowd who call Soho House home.",
+    lat:51.5141, lng:-0.1316,
+    bookingUrl:"https://www.sohohousecowshed.com"
+  },
 ];
 
 export const CITIES = [
