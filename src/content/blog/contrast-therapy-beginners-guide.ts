@@ -105,7 +105,13 @@ const post: BlogPost = {
 <p>Contrast therapy is not a biohacker's trick or a fitness trend that will pass. It is one of the oldest, most consistently practised health rituals in human history, now backed by some of the strongest evidence in preventive medicine. The Finns have known this for millennia. The rest of us are catching up.</p>
 
 <p>Start small. Be consistent. And don't fight the cold — breathe into it. On the other side of those forty seconds is something genuinely worth seeking out.</p>
-`
+`,
+  sources: [
+    { id: 1, text: "Laukkanen JA et al. 'Association Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality Events.' JAMA Internal Medicine, 2015.", url: "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2130724" },
+    { id: 2, text: "Tipton MJ et al. 'Cold Water Immersion: Kill or Cure?' Experimental Physiology, 2017. Review of physiological responses to cold water immersion and cardiovascular effects.", url: "https://physoc.onlinelibrary.wiley.com/doi/10.1113/EP086283" },
+    { id: 3, text: "Bleakley CM et al. 'Cold-Water Immersion (Cryotherapy) for Preventing and Treating Muscle Soreness After Exercise.' Cochrane Database of Systematic Reviews, 2012.", url: "https://www.cochranelibrary.com/cdsr/doi/10.1002/14651858.CD008262.pub2/full" },
+    { id: 4, text: "Hof W & Rosales J. 'The Wim Hof Method: Activate Your Full Human Potential.' Sounds True, 2020. Scientific basis for cold exposure and breathing techniques.", url: "https://www.wimhofmethod.com/science" },
+  ],
 };
 
 export default post;

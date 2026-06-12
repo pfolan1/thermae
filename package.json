@@ -9,7 +9,8 @@
     "lint": "next lint",
     "health-check": "node scripts/weekly-health-check.js",
     "monitor": "node scripts/monitor-new-saunas.js",
-    "check-blogs": "node scripts/check-blog-posts.js"
+    "check-blogs": "node scripts/check-blog-posts.js",
+    "analytics": "node scripts/analytics/generate-monthly-report.js"
   },
   "dependencies": {
     "@types/leaflet": "^1.9.21",

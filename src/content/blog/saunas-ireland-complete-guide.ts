@@ -79,7 +79,12 @@ const post: BlogPost = {
 <p>The Irish sauna scene in 2026 is genuinely exciting. New venues are opening regularly, the quality keeps improving, and the community around sea swimming and sauna culture continues to grow. If you haven't tried it yet, there has never been a better time.</p>
 
 <p>Find every Irish sauna, cold plunge and seaweed bath at <a href="https://thermae.app">thermae.app</a>.</p>
-`
+`,
+  sources: [
+    { id: 1, text: "Fáilte Ireland. 'Wellness Tourism Strategy 2023–2027: Growing Ireland's Wellness Tourism Proposition.' Fáilte Ireland, 2023.", url: "https://www.failteireland.ie/FailteIreland/media/WebsiteStructure/Documents/2_Develop_Your_Business/1_StartGrow_Your_Business/Wellness-Tourism-Strategy-2023-2027.pdf" },
+    { id: 2, text: "Tourism Ireland. 'Wild Atlantic Way — Experience Development Plan.' Tourism Ireland, 2022.", url: "https://www.tourismireland.com/Research" },
+    { id: 3, text: "Discover Ireland. '12 Saunas and Hot Tubs With Amazing Views in Ireland.' Fáilte Ireland / Discover Ireland, 2025.", url: "https://www.discoverireland.ie/guides/saunas-hot-tubs-with-view" },
+  ],
 };
 
 export default post;

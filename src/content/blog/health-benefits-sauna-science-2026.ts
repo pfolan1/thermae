@@ -76,6 +76,13 @@ const post: BlogPost = {
 
 <p>Find every sauna, cold plunge, and thermal spa in Ireland and the UK — with real reviews, prices, hours, and transport information — at <a href="https://thermae.app">thermae.app</a>. Whether you are a sauna veteran or stepping into your first session this week, the directory is there to help you find the right venue for where you are and what you need.</p>
 `,
+  sources: [
+    { id: 1, text: "Laukkanen JA et al. 'Association Between Sauna Bathing and Fatal Cardiovascular and All-Cause Mortality Events.' JAMA Internal Medicine, 2015.", url: "https://jamanetwork.com/journals/jamainternalmedicine/fullarticle/2130724" },
+    { id: 2, text: "Laukkanen T et al. 'Sauna Bathing Is Associated with Reduced Cardiovascular Mortality and Improves Risk Prediction in Men and Women: A Prospective Cohort Study.' BMC Medicine, 2018.", url: "https://bmcmedicine.biomedcentral.com/articles/10.1186/s12916-018-1198-0" },
+    { id: 3, text: "Laukkanen JA et al. 'Sauna Bathing and Systemic Inflammation.' European Journal of Epidemiology, 2018.", url: "https://link.springer.com/article/10.1007/s10654-017-0335-y" },
+    { id: 4, text: "Kunutsor SK et al. 'Sauna Bathing Reduces the Risk of Stroke in Finnish Men and Women: A Prospective Cohort Study.' Neurology, 2018.", url: "https://n.neurology.org/content/90/22/e1937" },
+    { id: 5, text: "Patrick R. 'Are Saunas the Next Big Performance-Enhancing 'Drug'?' — FoundMyFitness on heat shock proteins and longevity.", url: "https://www.foundmyfitness.com/episodes/sauna-use-as-a-hormetic-stressor" },
+  ],
 };
 
 export default post;

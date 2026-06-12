@@ -86,7 +86,12 @@ const post: BlogPost = {
 <p>The four venues above are the finest seaweed bath experiences in Ireland. Beyond them, seaweed elements appear in other wellness venues — some coastal saunas offer post-session seaweed wraps, and Oileánra in Galway uniquely combines both traditions.</p>
 
 <p>Find all seaweed bath venues in Ireland at <a href="https://thermae.app">thermae.app</a> — filter by "Seaweed Bath" to see the full list. Go. These experiences are irreplaceable, and the family businesses keeping them alive deserve every visitor they get.</p>
-`
+`,
+  sources: [
+    { id: 1, text: "Shannon E & Abu-Ghannam N. 'Seaweeds as Nutraceuticals for Health and Nutrition.' Phycologia, 2019. Comprehensive review of bioactive compounds in Irish Atlantic seaweeds.", url: "https://www.tandfonline.com/doi/full/10.1080/00318884.2018.1540395" },
+    { id: 2, text: "Bord Iascaigh Mhara (BIM). 'A Desk Study on the World Markets for Seaweed and Seaweed Products.' Irish Sea Fisheries Board, 2020.", url: "https://www.bim.ie/library/a-desk-study-on-the-world-markets-for-seaweed-and-seaweed-products/" },
+    { id: 3, text: "Kilcullen's Seaweed Baths, Enniscrone — Est. 1912. One of Ireland's oldest surviving seaweed bath houses, in continuous family operation for over a century.", url: "https://kilcullensseaweedbaths.com" },
+  ],
 };
 
 export default post;

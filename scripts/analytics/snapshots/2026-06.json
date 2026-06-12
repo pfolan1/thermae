@@ -1,0 +1,1171 @@
+{
+  "generatedAt": "2026-06-12T09:14:54.257Z",
+  "period": "2026-06",
+  "metrics": {
+    "totalVenues": 594,
+    "venuesByCountry": {
+      "Denmark": 6,
+      "England": 205,
+      "Finland": 12,
+      "Greenland": 2,
+      "Iceland": 21,
+      "Ireland": 123,
+      "Northern Ireland": 13,
+      "Norway": 16,
+      "Scotland": 40,
+      "Sweden": 7,
+      "UK": 123,
+      "Wales": 26
+    },
+    "priceByCountry": {
+      "Denmark": {
+        "count": 6,
+        "avg": 40,
+        "min": 0,
+        "max": 150,
+        "median": 6,
+        "priced": 6
+      },
+      "England": {
+        "count": 205,
+        "avg": 25,
+        "min": 4,
+        "max": 222,
+        "median": 23,
+        "priced": 180
+      },
+      "Finland": {
+        "count": 12,
+        "avg": 17,
+        "min": 0,
+        "max": 45,
+        "median": 16,
+        "priced": 8
+      },
+      "Greenland": {
+        "count": 2,
+        "avg": 0,
+        "min": 0,
+        "max": 0,
+        "median": 0,
+        "priced": 1
+      },
+      "Iceland": {
+        "count": 21,
+        "avg": 25,
+        "min": 0,
+        "max": 70,
+        "median": 29,
+        "priced": 19
+      },
+      "Ireland": {
+        "count": 123,
+        "avg": 22,
+        "min": 10,
+        "max": 100,
+        "median": 20,
+        "priced": 41
+      },
+      "Northern Ireland": {
+        "count": 13,
+        "avg": 23,
+        "min": 6,
+        "max": 35,
+        "median": 29,
+        "priced": 12
+      },
+      "Norway": {
+        "count": 16,
+        "avg": 78,
+        "min": 0,
+        "max": 295,
+        "median": 22,
+        "priced": 10
+      },
+      "Scotland": {
+        "count": 40,
+        "avg": 21,
+        "min": 6,
+        "max": 88,
+        "median": 18,
+        "priced": 28
+      },
+      "Sweden": {
+        "count": 7,
+        "avg": 167,
+        "min": 14,
+        "max": 495,
+        "median": 150,
+        "priced": 7
+      },
+      "UK": {
+        "count": 123,
+        "avg": 33,
+        "min": 4,
+        "max": 216,
+        "median": 23,
+        "priced": 100
+      },
+      "Wales": {
+        "count": 26,
+        "avg": 24,
+        "min": 6,
+        "max": 35,
+        "median": 23,
+        "priced": 18
+      }
+    },
+    "top20cities": [
+      [
+        "London",
+        {
+          "count": 65,
+          "avgPrice": 38
+        }
+      ],
+      [
+        "Manchester",
+        {
+          "count": 38,
+          "avgPrice": 14
+        }
+      ],
+      [
+        "Leeds",
+        {
+          "count": 31,
+          "avgPrice": 32
+        }
+      ],
+      [
+        "Birmingham",
+        {
+          "count": 24,
+          "avgPrice": 23
+        }
+      ],
+      [
+        "Cornwall",
+        {
+          "count": 22,
+          "avgPrice": 29
+        }
+      ],
+      [
+        "Dublin",
+        {
+          "count": 21,
+          "avgPrice": 24
+        }
+      ],
+      [
+        "Liverpool",
+        {
+          "count": 19,
+          "avgPrice": 19
+        }
+      ],
+      [
+        "Brighton",
+        {
+          "count": 17,
+          "avgPrice": 19
+        }
+      ],
+      [
+        "Glasgow",
+        {
+          "count": 16,
+          "avgPrice": 20
+        }
+      ],
+      [
+        "Bristol",
+        {
+          "count": 14,
+          "avgPrice": 29
+        }
+      ],
+      [
+        "Edinburgh",
+        {
+          "count": 13,
+          "avgPrice": 24
+        }
+      ],
+      [
+        "Kerry",
+        {
+          "count": 13,
+          "avgPrice": 20
+        }
+      ],
+      [
+        "Cork",
+        {
+          "count": 12,
+          "avgPrice": 17
+        }
+      ],
+      [
+        "Galway",
+        {
+          "count": 12,
+          "avgPrice": 19
+        }
+      ],
+      [
+        "Newcastle",
+        {
+          "count": 10,
+          "avgPrice": 27
+        }
+      ],
+      [
+        "Donegal",
+        {
+          "count": 9,
+          "avgPrice": null
+        }
+      ],
+      [
+        "Sheffield",
+        {
+          "count": 9,
+          "avgPrice": 30
+        }
+      ],
+      [
+        "Cambridge",
+        {
+          "count": 8,
+          "avgPrice": 18
+        }
+      ],
+      [
+        "Aberdeen",
+        {
+          "count": 7,
+          "avgPrice": 22
+        }
+      ],
+      [
+        "Bath",
+        {
+          "count": 7,
+          "avgPrice": 41
+        }
+      ]
+    ],
+    "catBreakdown": {
+      "dedicated": 518,
+      "members_club": 3,
+      "hotel": 11,
+      "leisure_centre": 6,
+      "gym": 55,
+      "spa": 1
+    },
+    "typeBreakdown": {
+      "Finnish": 75,
+      "Wood-fired": 249,
+      "Infrared": 11,
+      "Russian Banya": 3,
+      "Seaweed Bath": 5,
+      "Hot Spring": 11,
+      "Lagoon": 6,
+      "Geothermal": 16,
+      "Smoke Sauna": 1
+    },
+    "topTags": [
+      [
+        "Wood-fired",
+        249
+      ],
+      [
+        "Outdoor",
+        224
+      ],
+      [
+        "Community",
+        137
+      ],
+      [
+        "Steam",
+        120
+      ],
+      [
+        "Budget",
+        83
+      ],
+      [
+        "Finnish",
+        75
+      ],
+      [
+        "Scenic",
+        71
+      ],
+      [
+        "Coastal",
+        68
+      ],
+      [
+        "Beach",
+        59
+      ],
+      [
+        "Seafront",
+        58
+      ],
+      [
+        "Luxury",
+        53
+      ],
+      [
+        "Ice Bath",
+        52
+      ],
+      [
+        "Countryside",
+        47
+      ],
+      [
+        "City Centre",
+        41
+      ],
+      [
+        "Pool",
+        41
+      ],
+      [
+        "Sea Plunge",
+        37
+      ],
+      [
+        "Lakeside",
+        33
+      ],
+      [
+        "Cold Plunge",
+        31
+      ],
+      [
+        "Boutique",
+        30
+      ],
+      [
+        "Riverside",
+        25
+      ]
+    ],
+    "coldPlungeCount": 413,
+    "outdoorCount": 290,
+    "freeOrCheapCount": 71,
+    "extremesByCountry": {
+      "Denmark": {
+        "cheapest": {
+          "name": "La Banchina",
+          "price": "Free entry"
+        },
+        "mostExpensive": {
+          "name": "Saunerne Copenhagen",
+          "price": "From 150 DKK"
+        }
+      },
+      "England": {
+        "cheapest": {
+          "name": "Salford Community Leisure — Broughton Hub",
+          "price": "From £3.50 per swim · monthly passes available"
+        },
+        "mostExpensive": {
+          "name": "Herb House Spa — Lime Wood",
+          "price": "£190/day pass"
+        }
+      },
+      "Finland": {
+        "cheapest": {
+          "name": "Sompasauna",
+          "price": "Free"
+        },
+        "mostExpensive": {
+          "name": "Arctic SnowHotel Sauna Village",
+          "price": "From €45"
+        }
+      },
+      "Greenland": {
+        "cheapest": {
+          "name": "Uunartoq Hot Springs",
+          "price": "Free"
+        },
+        "mostExpensive": {
+          "name": "Uunartoq Hot Springs",
+          "price": "Free"
+        }
+      },
+      "Iceland": {
+        "cheapest": {
+          "name": "Seljavallalaug",
+          "price": "Free"
+        },
+        "mostExpensive": {
+          "name": "Bjórböðin Beer Spa",
+          "price": "From £60"
+        }
+      },
+      "Ireland": {
+        "cheapest": {
+          "name": "Happy Place Saunas",
+          "price": "From €10"
+        },
+        "mostExpensive": {
+          "name": "The Wood Fired Sauna",
+          "price": "€100 private / 45 min"
+        }
+      },
+      "Northern Ireland": {
+        "cheapest": {
+          "name": "JD Gyms Ballymena",
+          "price": "Day pass from £5 · or membership"
+        },
+        "mostExpensive": {
+          "name": "Sudor Castle Ward",
+          "price": "From £30 per person · book online"
+        }
+      },
+      "Norway": {
+        "cheapest": {
+          "name": "Tjuvholmen Sjøbad",
+          "price": "Free"
+        },
+        "mostExpensive": {
+          "name": "The Well Oslo",
+          "price": "From 295 NOK"
+        }
+      },
+      "Scotland": {
+        "cheapest": {
+          "name": "JD Gyms Glasgow South",
+          "price": "Day pass from £5 · memberships from £25.99/month"
+        },
+        "mostExpensive": {
+          "name": "Sauna Cairngorms",
+          "price": "Private from £75 (up to 6, 75 min) · communal available"
+        }
+      },
+      "Sweden": {
+        "cheapest": {
+          "name": "Hellasgården",
+          "price": "SEK 160 (~£12)"
+        },
+        "mostExpensive": {
+          "name": "Yasuragi",
+          "price": "From 495 SEK"
+        }
+      },
+      "UK": {
+        "cheapest": {
+          "name": "Parliament Hill Lido Sauna",
+          "price": "£3.50 add-on"
+        },
+        "mostExpensive": {
+          "name": "Raffles London at The OWO",
+          "price": "From £185 per session"
+        }
+      },
+      "Wales": {
+        "cheapest": {
+          "name": "JD Gyms Llansamlet",
+          "price": "Day pass from £5 · or membership"
+        },
+        "mostExpensive": {
+          "name": "Golden Grove Retreat",
+          "price": "From £30 per person · retreat packages available"
+        }
+      }
+    },
+    "priceByCategory": {
+      "dedicated": {
+        "count": 518,
+        "avg": 29
+      },
+      "hotel": {
+        "count": 11,
+        "avg": 88
+      },
+      "gym": {
+        "count": 55,
+        "avg": 25
+      },
+      "spa": {
+        "count": 1,
+        "avg": 18
+      },
+      "leisure_centre": {
+        "count": 6,
+        "avg": 7
+      },
+      "members_club": {
+        "count": 3,
+        "avg": 116
+      }
+    },
+    "coastalByCountry": {
+      "Denmark": {
+        "total": 6,
+        "coastal": 4,
+        "pct": 67
+      },
+      "England": {
+        "total": 205,
+        "coastal": 21,
+        "pct": 10
+      },
+      "Finland": {
+        "total": 12,
+        "coastal": 3,
+        "pct": 25
+      },
+      "Greenland": {
+        "total": 2,
+        "coastal": 0,
+        "pct": 0
+      },
+      "Iceland": {
+        "total": 21,
+        "coastal": 3,
+        "pct": 14
+      },
+      "Ireland": {
+        "total": 123,
+        "coastal": 66,
+        "pct": 54
+      },
+      "Northern Ireland": {
+        "total": 13,
+        "coastal": 3,
+        "pct": 23
+      },
+      "Norway": {
+        "total": 16,
+        "coastal": 12,
+        "pct": 75
+      },
+      "Scotland": {
+        "total": 40,
+        "coastal": 14,
+        "pct": 35
+      },
+      "Sweden": {
+        "total": 7,
+        "coastal": 0,
+        "pct": 0
+      },
+      "UK": {
+        "total": 123,
+        "coastal": 11,
+        "pct": 9
+      },
+      "Wales": {
+        "total": 26,
+        "coastal": 10,
+        "pct": 38
+      }
+    }
+  },
+  "venueIds": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47,
+    48,
+    49,
+    50,
+    51,
+    52,
+    53,
+    54,
+    55,
+    56,
+    57,
+    58,
+    59,
+    60,
+    62,
+    63,
+    64,
+    65,
+    66,
+    67,
+    68,
+    69,
+    70,
+    71,
+    72,
+    73,
+    74,
+    75,
+    76,
+    77,
+    78,
+    79,
+    80,
+    81,
+    82,
+    83,
+    84,
+    85,
+    86,
+    87,
+    88,
+    89,
+    90,
+    91,
+    92,
+    93,
+    94,
+    95,
+    96,
+    97,
+    98,
+    99,
+    100,
+    101,
+    102,
+    103,
+    104,
+    105,
+    106,
+    107,
+    108,
+    109,
+    110,
+    111,
+    112,
+    113,
+    114,
+    115,
+    116,
+    117,
+    118,
+    119,
+    120,
+    121,
+    122,
+    123,
+    124,
+    125,
+    126,
+    127,
+    128,
+    129,
+    130,
+    131,
+    132,
+    133,
+    134,
+    135,
+    136,
+    137,
+    138,
+    139,
+    140,
+    141,
+    142,
+    143,
+    144,
+    145,
+    146,
+    61,
+    147,
+    148,
+    149,
+    150,
+    153,
+    151,
+    152,
+    154,
+    155,
+    156,
+    157,
+    158,
+    159,
+    160,
+    161,
+    162,
+    163,
+    164,
+    165,
+    166,
+    167,
+    168,
+    169,
+    170,
+    171,
+    172,
+    173,
+    174,
+    175,
+    176,
+    177,
+    178,
+    179,
+    180,
+    181,
+    182,
+    183,
+    184,
+    185,
+    186,
+    187,
+    188,
+    189,
+    190,
+    191,
+    192,
+    193,
+    194,
+    195,
+    196,
+    197,
+    198,
+    199,
+    200,
+    201,
+    202,
+    203,
+    204,
+    205,
+    206,
+    207,
+    208,
+    209,
+    210,
+    211,
+    212,
+    213,
+    214,
+    215,
+    216,
+    217,
+    218,
+    219,
+    223,
+    224,
+    225,
+    226,
+    227,
+    228,
+    220,
+    221,
+    222,
+    229,
+    230,
+    231,
+    232,
+    233,
+    234,
+    235,
+    236,
+    237,
+    238,
+    239,
+    240,
+    241,
+    242,
+    243,
+    244,
+    245,
+    246,
+    247,
+    248,
+    249,
+    250,
+    251,
+    252,
+    253,
+    254,
+    255,
+    256,
+    257,
+    258,
+    259,
+    260,
+    261,
+    262,
+    263,
+    264,
+    265,
+    266,
+    267,
+    268,
+    269,
+    270,
+    271,
+    272,
+    273,
+    274,
+    275,
+    276,
+    277,
+    278,
+    279,
+    280,
+    281,
+    282,
+    283,
+    284,
+    285,
+    286,
+    287,
+    288,
+    289,
+    290,
+    291,
+    292,
+    293,
+    294,
+    295,
+    296,
+    297,
+    298,
+    299,
+    300,
+    301,
+    302,
+    303,
+    304,
+    305,
+    306,
+    307,
+    308,
+    309,
+    310,
+    311,
+    312,
+    313,
+    314,
+    315,
+    316,
+    317,
+    318,
+    319,
+    320,
+    321,
+    322,
+    323,
+    324,
+    325,
+    326,
+    327,
+    328,
+    329,
+    330,
+    331,
+    332,
+    333,
+    334,
+    335,
+    336,
+    337,
+    338,
+    339,
+    340,
+    341,
+    342,
+    343,
+    344,
+    345,
+    346,
+    347,
+    348,
+    349,
+    350,
+    351,
+    352,
+    353,
+    354,
+    355,
+    356,
+    357,
+    358,
+    359,
+    360,
+    361,
+    362,
+    363,
+    364,
+    365,
+    366,
+    367,
+    368,
+    369,
+    370,
+    371,
+    372,
+    373,
+    374,
+    375,
+    376,
+    377,
+    378,
+    379,
+    380,
+    381,
+    382,
+    383,
+    384,
+    385,
+    386,
+    387,
+    388,
+    389,
+    390,
+    391,
+    392,
+    393,
+    394,
+    395,
+    396,
+    397,
+    398,
+    399,
+    400,
+    401,
+    402,
+    403,
+    404,
+    405,
+    406,
+    407,
+    408,
+    409,
+    410,
+    411,
+    412,
+    413,
+    414,
+    415,
+    416,
+    417,
+    418,
+    419,
+    420,
+    421,
+    422,
+    423,
+    424,
+    425,
+    426,
+    427,
+    428,
+    429,
+    430,
+    431,
+    432,
+    433,
+    434,
+    435,
+    436,
+    437,
+    438,
+    439,
+    440,
+    441,
+    442,
+    443,
+    444,
+    445,
+    446,
+    447,
+    448,
+    449,
+    450,
+    451,
+    452,
+    453,
+    454,
+    455,
+    456,
+    457,
+    458,
+    459,
+    460,
+    461,
+    462,
+    464,
+    465,
+    466,
+    467,
+    468,
+    469,
+    470,
+    471,
+    472,
+    473,
+    475,
+    476,
+    477,
+    478,
+    479,
+    480,
+    481,
+    482,
+    483,
+    484,
+    485,
+    486,
+    487,
+    488,
+    490,
+    491,
+    492,
+    493,
+    494,
+    495,
+    496,
+    497,
+    498,
+    499,
+    500,
+    501,
+    502,
+    503,
+    504,
+    505,
+    506,
+    507,
+    508,
+    509,
+    510,
+    511,
+    512,
+    513,
+    514,
+    515,
+    516,
+    517,
+    518,
+    519,
+    520,
+    521,
+    522,
+    523,
+    524,
+    525,
+    526,
+    527,
+    528,
+    529,
+    530,
+    531,
+    532,
+    533,
+    534,
+    535,
+    536,
+    537,
+    538,
+    539,
+    540,
+    541,
+    542,
+    543,
+    544,
+    545,
+    546,
+    547,
+    548,
+    549,
+    551,
+    550,
+    552,
+    553,
+    554,
+    555,
+    556,
+    557,
+    558,
+    559,
+    560,
+    561,
+    562,
+    563,
+    564,
+    565,
+    566,
+    567,
+    568,
+    569,
+    570,
+    571,
+    572,
+    573,
+    574,
+    575,
+    576,
+    577,
+    578,
+    579,
+    580,
+    581,
+    582,
+    583,
+    584,
+    585,
+    586,
+    587,
+    588,
+    589,
+    590,
+    591,
+    592,
+    593,
+    594,
+    595,
+    596,
+    597,
+    598,
+    599,
+    600,
+    601
+  ]
+}

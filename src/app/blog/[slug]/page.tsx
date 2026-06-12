@@ -97,6 +97,39 @@ export default function BlogPostPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: post.content }}
         />
 
+        {/* Sources & References */}
+        {post.sources && post.sources.length > 0 && (
+          <>
+            <hr style={{ border: 'none', borderTop: '1px solid #EBEBEB', margin: '48px 0 32px' }} />
+            <section style={{ marginBottom: '48px' }}>
+              <h3 style={{
+                fontSize: '13px',
+                fontWeight: 700,
+                color: '#999',
+                textTransform: 'uppercase',
+                letterSpacing: '0.8px',
+                marginBottom: '16px',
+              }}>
+                Sources &amp; References
+              </h3>
+              <ol style={{ margin: 0, padding: '0 0 0 20px' }}>
+                {post.sources.map(src => (
+                  <li key={src.id} style={{ marginBottom: '10px' }}>
+                    <a
+                      href={src.url}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ fontSize: '12px', color: '#888', lineHeight: 1.6, textDecoration: 'underline' }}
+                    >
+                      {src.text}
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </section>
+          </>
+        )}
+
         <hr style={{ border: 'none', borderTop: '1px solid #EBEBEB', margin: '48px 0' }} />
 
         {/* Footer CTA */}

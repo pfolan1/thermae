@@ -6,4 +6,5 @@ export interface BlogPost {
   dateISO: string;   // ISO format e.g. "2026-02-14"
   keyword: string;
   content: string;   // HTML string
+  sources?: Array<{ id: number; text: string; url: string; }>;
 }
