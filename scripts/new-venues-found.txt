@@ -1,15 +1,2456 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Monday, 8 June 2026
+  Sunday, 14 June 2026
 ═══════════════════════════════════════════════════════════════
 
-  Candidates collected : 84
-  After relevance filter: 71
-  New venues added     : 0
-  Skipped              : 71
-  Errors               : 0
+  DATA SOURCES THIS RUN:
+  • Google News RSS          : 80 articles, 75 relevant
+  • OpenStreetMap Overpass   : 707 new venues flagged
+  • Google Places API        : SKIPPED (no API key)
 
-── NO NEW VENUES FOUND ──────────────────────────────────────────
-  Nothing new to add this week.
+  RESULTS:
+  • Venues auto-added        : 2
+  • Flagged for manual review: 707
+  • Skipped (duplicates/irrelevant): 73
+  • Errors                   : 0
 
-Report generated: 2026-06-08T12:00:53.790Z
+═══════════════════════════════════════════════════════════════
+
+── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
+  ✅ Kairos Floating Sauna
+     Dublin, Ireland
+     Ireland's first floating sauna, moored on the water in Dublin, offering a unique Nordic-style sauna experience with access to open water. A novel wellness concept bringing Scandinavian bathing culture to the Irish capital.
+
+  ✅ Sauna Theatre
+     Edinburgh, UK
+     Sauna Theatre at Summerhall is a unique concept combining a working sauna with a theatrical performance space. Located within the iconic Summerhall arts complex in Edinburgh, it offers an unconventional wellness experience.
+     https://www.summerhall.co.uk
+
+── OPENSTREETMAP — FLAGGED FOR MANUAL REVIEW ───────────────────
+  📍 The Boilerhouse
+     Region: UK | Type: sauna | Coords: 53.3446, -6.2666
+     https://www.the-boilerhouse.com/
+
+  📍 Omega Sauna
+     Region: UK | Type: sauna | Coords: 51.5449, -0.1417
+
+  📍 Pink Broadway Sauna
+     Region: UK | Type: sauna | Coords: 50.9017, -1.3994
+     https://www.pink-broadway.com/
+
+  📍 The Maintenance Man
+     Region: UK | Type: spa | Coords: 51.5599, -0.1145
+
+  📍 Amala
+     Region: UK | Type: spa | Coords: 52.4782, -1.9092
+
+  📍 The Club & Spa
+     Region: UK | Type: spa | Coords: 52.4751, -1.9071
+
+  📍 The Locker Room
+     Region: UK | Type: sauna | Coords: 51.4883, -0.1106
+     https://www.lockerroomsauna.com/
+
+  📍 Lily May Wellbeing
+     Region: UK | Type: spa | Coords: 52.4854, -1.9106
+
+  📍 Consol
+     Region: UK | Type: spa | Coords: 52.4477, -1.8883
+
+  📍 Castle Thai Spa
+     Region: UK | Type: spa | Coords: 55.9515, -3.2026
+     https://www.castlethaispa.com/
+
+  📍 Sawna / Sauna
+     Region: UK | Type: sauna | Coords: 52.0353, -4.4714
+
+  📍 Ragdale Hall
+     Region: UK | Type: spa | Coords: 52.7729, -1.0325
+
+  📍 Lola Thai Massage
+     Region: UK | Type: sauna | Coords: 50.9827, -1.3825
+
+  📍 Belle Toujours
+     Region: UK | Type: spa | Coords: 51.4862, -3.1960
+     https://www.belletoujours.co.uk/index.php
+
+  📍 Health Suite
+     Region: UK | Type: sauna | Coords: 50.6512, -1.1616
+
+  📍 The Old Hammam
+     Region: UK | Type: spa | Coords: 51.6257, -0.0635
+
+  📍 Plastic Ivy
+     Region: UK | Type: sauna | Coords: 53.6935, -1.6242
+     https://www.plasticivy.co.uk/
+
+  📍 Boiler Room
+     Region: UK | Type: sauna | Coords: 53.3954, -1.4438
+     http://www.boilerroomsheffield.co.uk
+
+  📍 The Greenhouse Sauna
+     Region: UK | Type: sauna | Coords: 52.5775, -2.0330
+     http://www.gay-sauna.com/darlaston.html
+
+  📍 Sauna Sauna
+     Region: UK | Type: sauna | Coords: 53.2679, -2.5368
+     https://www.saunasauna.co.uk/
+
+  📍 Outside Sauna
+     Region: UK | Type: sauna | Coords: 54.6048, -5.9311
+     http://www.belfastgaysauna.com
+
+  📍 The Pipeworks
+     Region: UK | Type: sauna | Coords: 54.6040, -5.9313
+     https://www.thepipeworks.com/Belfast_home.html
+
+  📍 Spartan Health Club
+     Region: UK | Type: sauna | Coords: 52.5172, -1.8612
+     http://www.spartanhealthclub.co.uk
+
+  📍 Acqua Sauna
+     Region: UK | Type: sauna | Coords: 53.8207, -3.0543
+     https://www.acquasaunas.com/
+
+  📍 Saunabar
+     Region: UK | Type: sauna | Coords: 50.7196, -1.8856
+     https://www.gaysaunabournemouth.co.uk/
+
+  📍 W3 Sauna
+     Region: UK | Type: sauna | Coords: 53.8191, -3.0484
+     https://www.w3sauna.co.uk/
+
+  📍 Neros Roman Spa
+     Region: UK | Type: sauna | Coords: 53.6006, -2.3192
+     http://www.nerosonline.co.uk
+
+  📍 The Brighton Sauna
+     Region: UK | Type: sauna | Coords: 50.8233, -0.1360
+     https://www.thebrightonsauna.com/
+
+  📍 Number 11
+     Region: UK | Type: sauna | Coords: 56.4659, -2.9622
+     http://www.number11.net/
+
+  📍 The Boiler Room
+     Region: UK | Type: sauna | Coords: 50.8346, -0.1692
+     https://www.theboilerroomsauna.com/
+
+  📍 The Pipeworks
+     Region: UK | Type: sauna | Coords: 55.8553, -4.2512
+     https://thepipeworks.com/
+
+  📍 Base
+     Region: UK | Type: sauna | Coords: 53.7949, -1.5437
+     http://www.base-leeds.com/#random
+
+  📍 Splash Sauna Spa
+     Region: UK | Type: sauna | Coords: 53.4084, -2.9944
+     http://www.splashsauna.com
+
+  📍 Saunabar Portsea
+     Region: UK | Type: sauna | Coords: 51.5154, -0.1645
+     http://www.gaysaunabar.com
+
+  📍 E15 Club
+     Region: UK | Type: sauna | Coords: 51.5468, 0.0065
+     https://www.e15club.com/
+
+  📍 The Greenhouse - Luton
+     Region: UK | Type: sauna | Coords: 51.8833, -0.4219
+     http://www.gay-sauna.com/luton.html
+
+  📍 Pleasuredrome
+     Region: UK | Type: sauna | Coords: 51.5040, -0.1105
+     https://www.pleasuredrome.com/
+
+  📍 Dolphin
+     Region: UK | Type: sauna | Coords: 53.4346, -3.0533
+
+  📍 Basement
+     Region: UK | Type: sauna | Coords: 53.4815, -2.2313
+     https://www.basementmanchester.com/
+
+  📍 The Greenhouse Sauna - Newport
+     Region: UK | Type: sauna | Coords: 51.5751, -2.9851
+     http://www.gay-sauna.com/newport.html
+
+  📍 Tropics Day Spa
+     Region: UK | Type: sauna | Coords: 50.8036, -1.0881
+     https://www.tropics-sauna.co.uk
+
+  📍 Heroes Health Club
+     Region: UK | Type: sauna | Coords: 52.4600, -2.1487
+     https://www.heroessauna.co.uk/
+
+  📍 Touch Sauna
+     Region: UK | Type: sauna | Coords: 51.5629, -1.7869
+     https://touchsauna.com/
+
+  📍 Steamer Quay Spa
+     Region: UK | Type: sauna | Coords: 50.4610, -3.5366
+     https://steamerquay.com/
+
+  📍 The Pound
+     Region: UK | Type: sauna | Coords: 55.9575, -3.1924
+     https://www.thepoundedinburgh.co.uk
+
+  📍 Westgate Clinic
+     Region: UK | Type: spa | Coords: 56.0579, -2.7259
+     https://www.westgateclinic.com/
+
+  📍 Waterfront
+     Region: UK | Type: sauna | Coords: 51.3980, 0.5604
+
+  📍 Finlandia Sauna
+     Region: UK | Type: sauna | Coords: 51.5617, -0.3734
+
+  📍 Pound Tan
+     Region: UK | Type: sauna | Coords: 53.7233, -1.8596
+
+  📍 Wellnesspa
+     Region: UK | Type: spa | Coords: 52.8552, -1.3882
+     https://wellnesspa.co.uk/spa/aston-on-trent
+
+  📍 yue float
+     Region: UK | Type: sauna | Coords: 51.4631, -0.1853
+     https://yuefloat.com/
+
+  📍 Cosmopolitan International
+     Region: UK | Type: sauna | Coords: 53.4784, -2.2389
+
+  📍 The Spa at Low Wood Bay
+     Region: UK | Type: sauna | Coords: 54.4107, -2.9482
+     https://englishlakes.co.uk/hotels/low-wood-bay/the-spa/
+
+  📍 Lancaster Spa
+     Region: UK | Type: spa | Coords: 51.5344, -0.4714
+
+  📍 Re:Set Wellness Studio
+     Region: UK | Type: sauna | Coords: 54.0515, -2.7971
+     https://www.resetmindbodysoul.co.uk/
+
+  📍 The Well Spa Retreat
+     Region: UK | Type: sauna | Coords: 51.7863, -4.8049
+
+  📍 Vista Spa & Beauty
+     Region: UK | Type: sauna | Coords: 53.3539, -3.0281
+
+  📍 Manticore Spa
+     Region: UK | Type: sauna | Coords: 50.3703, -4.1470
+
+  📍 London City Island Sauna
+     Region: UK | Type: sauna | Coords: 51.5121, 0.0055
+
+  📍 Community Sauna Baths
+     Region: UK | Type: sauna | Coords: 51.5473, -0.0294
+     https://www.community-sauna.co.uk/locations/hackneywick
+
+  📍 Swiss Cottage Sauna
+     Region: UK | Type: sauna | Coords: 51.5451, -0.1763
+
+  📍 Olla Hiki Sauna
+     Region: UK | Type: sauna | Coords: 50.4184, -5.0975
+     https://www.ollahikisauna.co.uk
+
+  📍 Ruean Siam
+     Region: UK | Type: sauna | Coords: 51.4856, 0.0060
+     https://rueansiamsauna.com
+
+  📍 Spa & Treatments Centre
+     Region: UK | Type: sauna | Coords: 50.6147, -3.3673
+
+  📍 Virgin Active Sauna
+     Region: UK | Type: sauna | Coords: 51.5066, -0.0286
+
+  📍 Soul Water Sauna
+     Region: UK | Type: sauna | Coords: 55.9511, -3.1013
+     https://soulwatersauna.com/
+
+  📍 Retreat Day Spa
+     Region: UK | Type: sauna | Coords: 52.4877, -2.1252
+
+  📍 Ocean Soul Sauna
+     Region: UK | Type: sauna | Coords: 50.8360, -4.5535
+
+  📍 Drift
+     Region: UK | Type: sauna | Coords: 53.2888, -6.2061
+
+  📍 Rooftop Saunas
+     Region: UK | Type: sauna | Coords: 51.5374, -0.0575
+     https://rooftopsaunas.com/
+
+  📍 Spear Sauna
+     Region: UK | Type: sauna | Coords: 55.9186, -3.3970
+     https://www.lostshore.com/visit/spear-sauna
+
+  📍 Swanage Bay Sauna
+     Region: UK | Type: sauna | Coords: 50.6103, -1.9576
+     https://swanagebaysauna.co.uk/
+
+  📍 Hot Fox Sauna
+     Region: UK | Type: sauna | Coords: 55.9920, -2.5887
+
+  📍 Community Sauna Baths
+     Region: UK | Type: sauna | Coords: 51.4667, -0.0920
+     https://www.community-sauna.co.uk/locations/camberwell
+
+  📍 Covent Garden Health Spa
+     Region: UK | Type: sauna | Coords: 51.5145, -0.1247
+     https://www.cghspa.uk/
+
+  📍 Nomadic Sauna
+     Region: UK | Type: sauna | Coords: 50.7753, 0.0875
+     https://www.thenomadicsauna.co.uk/locations
+
+  📍 Luna Hut Sauna
+     Region: UK | Type: sauna | Coords: 50.8362, -0.1397
+     https://www.lunahutsauna.co.uk/sauna-cafe
+
+  📍 Sivo Wellness
+     Region: UK | Type: sauna | Coords: 51.4689, -2.6602
+     https://sivowellness.com/
+
+  📍 Suvi Sauna - Clevedon
+     Region: UK | Type: sauna | Coords: 51.4350, -2.8692
+     https://suvisauna.co.uk/
+
+  📍 Suvi Sauna - Bristol
+     Region: UK | Type: sauna | Coords: 51.4623, -2.5652
+     https://suvisauna.co.uk/
+
+  📍 Luna Hut Sauna
+     Region: UK | Type: sauna | Coords: 50.7821, -0.6717
+     https://www.lunahutsauna.co.uk
+
+  📍 Sallynoggin Saunas
+     Region: UK | Type: sauna | Coords: 53.2766, -6.1393
+
+  📍 Re-Up
+     Region: UK | Type: sauna | Coords: 50.8464, -1.0633
+     https://www.facebook.com/profile.php?id=61551512923280
+
+  📍 Pamper Mi Mi
+     Region: UK | Type: sauna | Coords: 52.0472, -0.0238
+     https://bookings.gettimely.com/pampermimi1/book?uri=https%3A%2F%2Fbook.gettimely.com%2FBooking%2FLocation%2F295360%3Fmobile%3DTrue%26params%3D%25253fclient-login%25253dtrue
+
+  📍 Saunos
+     Region: UK | Type: sauna | Coords: 51.5342, -0.0930
+
+  📍 Grounded Sauna
+     Region: UK | Type: sauna | Coords: 51.6789, -3.0255
+     https://www.tidybutt.co.uk/pages/grounded
+
+  📍 Soul Water
+     Region: UK | Type: sauna | Coords: 55.9833, -3.2421
+     https://soulwatersauna.com/granton
+
+  📍 Sawna Bach
+     Region: UK | Type: sauna | Coords: 53.1223, -4.1176
+     https://www.saunawales.co.uk
+
+  📍 Helios Floating Sauna
+     Region: UK | Type: sauna | Coords: 53.2966, -6.1430
+
+  📍 Sandycove Sauna By The Sea
+     Region: UK | Type: sauna | Coords: 53.2885, -6.1141
+
+  📍 The Boilerhouse
+     Region: Ireland | Type: sauna | Coords: 53.3446, -6.2666
+     https://www.the-boilerhouse.com/
+
+  📍 The Spa at Roe Park
+     Region: Ireland | Type: spa | Coords: 55.0386, -6.9554
+
+  📍 Outside Sauna
+     Region: Ireland | Type: sauna | Coords: 54.6048, -5.9311
+     http://www.belfastgaysauna.com
+
+  📍 The Pipeworks
+     Region: Ireland | Type: sauna | Coords: 54.6040, -5.9313
+     https://www.thepipeworks.com/Belfast_home.html
+
+  📍 The Recovery Lounge
+     Region: Ireland | Type: sauna | Coords: 52.2552, -7.1121
+
+  📍 The Hot Box
+     Region: Ireland | Type: sauna | Coords: 54.3067, -8.5767
+
+  📍 The Wild Atlantic Sauna
+     Region: Ireland | Type: sauna | Coords: 53.7783, -9.7699
+
+  📍 Drift
+     Region: Ireland | Type: sauna | Coords: 53.2888, -6.2061
+
+  📍 Solas Croí Eco Spa
+     Region: Ireland | Type: sauna | Coords: 52.3875, -6.9448
+     https://www.brandonhousehotel.ie/solas-croi-spa.html
+
+  📍 The Hot Box Sauna
+     Region: Ireland | Type: sauna | Coords: 53.5800, -6.7041
+
+  📍 Nook Sauna
+     Region: Ireland | Type: sauna | Coords: 54.0503, -7.1612
+
+  📍 Lakeside Saunas
+     Region: Ireland | Type: sauna | Coords: 53.8182, -7.0540
+
+  📍 Roundstone Retreat & Sauna
+     Region: Ireland | Type: sauna | Coords: 53.3961, -9.9187
+     https://roundstoneselfcatering.ie/
+
+  📍 Bunmahon Sauna & Seaweed Baths
+     Region: Ireland | Type: sauna | Coords: 52.1387, -7.3703
+
+  📍 Sauna Social
+     Region: Ireland | Type: sauna | Coords: 52.2060, -7.1170
+
+  📍 Sallynoggin Saunas
+     Region: Ireland | Type: sauna | Coords: 53.2766, -6.1393
+
+  📍 The Hot Box
+     Region: Ireland | Type: sauna | Coords: 52.5392, -6.9540
+
+  📍 Healing Heat
+     Region: Ireland | Type: sauna | Coords: 52.3889, -9.8357
+
+  📍 Savasana Sauna
+     Region: Ireland | Type: sauna | Coords: 53.7258, -6.8216
+
+  📍 Pontoon Sauna
+     Region: Ireland | Type: sauna | Coords: 53.9837, -9.1600
+
+  📍 Sauna Geal Recovery Lounge
+     Region: Ireland | Type: sauna | Coords: 51.9814, -8.5334
+     https://www.instagram.com/sauna_geal/
+
+  📍 Helios Floating Sauna
+     Region: Ireland | Type: sauna | Coords: 53.2966, -6.1430
+
+  📍 Éalu Sauna
+     Region: Ireland | Type: sauna | Coords: 54.0891, -7.1184
+
+  📍 Sandycove Sauna By The Sea
+     Region: Ireland | Type: sauna | Coords: 53.2885, -6.1141
+
+  📍 Acumeen Farm Sauna
+     Region: Ireland | Type: sauna | Coords: 52.2170, -9.9976
+     https://acumeenfarm.ie/sauna
+
+  📍 Steam cave
+     Region: Iceland | Type: sauna | Coords: 63.8802, -22.4480
+
+  📍 Sauna
+     Region: Iceland | Type: sauna | Coords: 64.1966, -19.2847
+
+  📍 Litla Sauna Húsið
+     Region: Iceland | Type: sauna | Coords: 64.1157, -21.9202
+     https://litlasaunahusid.is/
+
+  📍 Sækot
+     Region: Iceland | Type: sauna | Coords: 64.1384, -21.9638
+     https://saekot.is/
+
+  📍 Kiviniemen sauna
+     Region: Nordics | Type: sauna | Coords: 62.9899, 29.9187
+
+  📍 Kaukajärven sauna
+     Region: Nordics | Type: sauna | Coords: 61.4759, 23.8941
+     https://www.kaukajarvensauna.fi/
+
+  📍 Hellasgårdens Bastu
+     Region: Nordics | Type: sauna | Coords: 59.2905, 18.1601
+     https://hellasgarden.se/
+
+  📍 Tenhonperän rantasauna
+     Region: Nordics | Type: sauna | Coords: 61.0929, 21.4661
+
+  📍 Бани
+     Region: Nordics | Type: sauna | Coords: 58.5195, 31.2586
+
+  📍 Kotiharjun sauna
+     Region: Nordics | Type: sauna | Coords: 60.1865, 24.9573
+     https://www.kotiharjunsauna.fi/
+
+  📍 74B
+     Region: Nordics | Type: sauna | Coords: 60.4616, 22.3010
+
+  📍 Hallan Saaga
+     Region: Nordics | Type: spa | Coords: 64.7406, 28.2446
+
+  📍 Kaulus
+     Region: Nordics | Type: sauna | Coords: 63.2688, 24.7157
+
+  📍 Jõhvi Saun
+     Region: Nordics | Type: sauna | Coords: 59.3581, 27.3986
+
+  📍 Sauna Hermanni
+     Region: Nordics | Type: sauna | Coords: 60.1935, 24.9650
+     https://www.saunahermanni.fi/
+
+  📍 Jyrävän Leirintä
+     Region: Nordics | Type: sauna | Coords: 66.2655, 29.3856
+
+  📍 Aurajärvi
+     Region: Nordics | Type: sauna | Coords: 61.3310, 22.6104
+
+  📍 Midnight Ice
+     Region: Nordics | Type: sauna | Coords: 65.8204, 24.1459
+
+  📍 Strandsauna Listland
+     Region: Nordics | Type: sauna | Coords: 55.0141, 8.3708
+     https://www.strandsauna.info/
+
+  📍 2,3
+     Region: Nordics | Type: sauna | Coords: 60.2368, 24.8214
+
+  📍 Mini SPA
+     Region: Nordics | Type: sauna | Coords: 55.8565, 23.1373
+
+  📍 Бани №5
+     Region: Nordics | Type: sauna | Coords: 57.8165, 28.3193
+
+  📍 Saunaseura Kipakka
+     Region: Nordics | Type: sauna | Coords: 60.4735, 26.9277
+
+  📍 Sapokan Sauna
+     Region: Nordics | Type: sauna | Coords: 60.4619, 26.9498
+
+  📍 Hapi
+     Region: Nordics | Type: sauna | Coords: 56.9614, 23.6103
+
+  📍 Водолей
+     Region: Nordics | Type: sauna | Coords: 59.9185, 30.3499
+     https://www.banyavodoley.ru/
+
+  📍 Правобережные Бани
+     Region: Nordics | Type: sauna | Coords: 59.8863, 30.4791
+
+  📍 Oittaan sauna
+     Region: Nordics | Type: sauna | Coords: 60.2417, 24.6581
+
+  📍 Saunalandschaft
+     Region: Nordics | Type: sauna | Coords: 54.5841, 10.0251
+
+  📍 Ouritsaaren talviuintipaikka
+     Region: Nordics | Type: sauna | Coords: 60.1717, 24.8991
+
+  📍 Karl XV:s värdshus
+     Region: Nordics | Type: sauna | Coords: 56.0843, 14.3427
+
+  📍 Kaunissaaren Maja
+     Region: Nordics | Type: sauna | Coords: 60.3459, 26.7737
+     http://www.kaunissaarenmaja.fi/
+
+  📍 Ніагара
+     Region: Nordics | Type: sauna | Coords: 55.1821, 30.2179
+
+  📍 Pitkäjärven autiotupa
+     Region: Nordics | Type: sauna | Coords: 63.2432, 30.8904
+
+  📍 Vedbastu vid sjumilasjön Torneträsk
+     Region: Nordics | Type: sauna | Coords: 68.3618, 18.8016
+
+  📍 Krievu pirts
+     Region: Nordics | Type: sauna | Coords: 55.8732, 26.5292
+
+  📍 Pirts
+     Region: Nordics | Type: sauna | Coords: 55.8763, 26.5469
+
+  📍 Pirts
+     Region: Nordics | Type: sauna | Coords: 56.1321, 27.0031
+
+  📍 Казачьи бани
+     Region: Nordics | Type: sauna | Coords: 59.9223, 30.3284
+     http://kazbani.ru/
+
+  📍 "Дельфин" cауна и "Душ Шарко"
+     Region: Nordics | Type: sauna | Coords: 59.9122, 29.0946
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 61.1251, 29.8769
+
+  📍 Rukatonttu
+     Region: Nordics | Type: sauna | Coords: 66.1725, 29.1353
+     https://www.rukatonttu.fi/
+
+  📍 Kuusijärven saunat
+     Region: Nordics | Type: sauna | Coords: 60.3137, 25.1135
+     https://www.cafekuusijarvi.fi/saunat
+
+  📍 Kultahippu
+     Region: Nordics | Type: sauna | Coords: 68.6602, 27.5406
+     https://www.hotellikultahippu.fi/
+
+  📍 Лазня
+     Region: Nordics | Type: sauna | Coords: 54.6139, 25.9610
+
+  📍 Баня №2
+     Region: Nordics | Type: sauna | Coords: 60.7058, 28.7541
+
+  📍 Балтийские Бани
+     Region: Nordics | Type: sauna | Coords: 59.9074, 30.2956
+     http://baltbani.ru/
+
+  📍 Ямские Бани
+     Region: Nordics | Type: sauna | Coords: 59.9258, 30.3496
+
+  📍 Сауна на Липовском
+     Region: Nordics | Type: sauna | Coords: 59.9063, 29.0666
+     http://www.sborsauna.ru/
+
+  📍 Городская баня
+     Region: Nordics | Type: sauna | Coords: 59.8947, 29.0977
+
+  📍 Tootsi Saun
+     Region: Nordics | Type: sauna | Coords: 58.5879, 24.7852
+
+  📍 VIP-сауна
+     Region: Nordics | Type: sauna | Coords: 59.8709, 30.4484
+
+  📍 Аэлита
+     Region: Nordics | Type: sauna | Coords: 59.8584, 30.3199
+
+  📍 Сауна и общественная баня
+     Region: Nordics | Type: sauna | Coords: 60.5320, 28.6685
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 60.0453, 30.7100
+
+  📍 Kanski
+     Region: Nordics | Type: sauna | Coords: 57.0183, 23.4984
+
+  📍 Баня Хамам
+     Region: Nordics | Type: sauna | Coords: 59.8893, 30.3233
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.8977, 30.3386
+     https://saunapiter.ru
+
+  📍 Mälarhöjdens lilla spa
+     Region: Nordics | Type: spa | Coords: 59.3003, 17.9573
+
+  📍 Баня «В Контокках»
+     Region: Nordics | Type: sauna | Coords: 64.5708, 30.5578
+
+  📍 Café Laiturin sauna
+     Region: Nordics | Type: sauna | Coords: 60.4586, 26.9512
+
+  📍 SPASSO
+     Region: Nordics | Type: spa | Coords: 60.0594, 30.3328
+     http://www.spasso-spb.ru/
+
+  📍 Enigma
+     Region: Nordics | Type: sauna | Coords: 64.5824, 30.6012
+
+  📍 Braun-house
+     Region: Nordics | Type: sauna | Coords: 60.7112, 28.7469
+
+  📍 Green Island
+     Region: Nordics | Type: sauna | Coords: 57.0035, 24.1786
+
+  📍 Оазис
+     Region: Nordics | Type: sauna | Coords: 59.8644, 30.4083
+
+  📍 Myyrmäen urheilutalon saunat
+     Region: Nordics | Type: sauna | Coords: 60.2651, 24.8517
+
+  📍 Laulasmaa Spa
+     Region: Nordics | Type: spa | Coords: 59.3750, 24.2376
+     https://laulasmaa.ee/
+
+  📍 Кирочный двор
+     Region: Nordics | Type: sauna | Coords: 59.9443, 30.3650
+
+  📍 Luukki
+     Region: Nordics | Type: sauna | Coords: 60.3167, 24.6929
+
+  📍 Романовские бани
+     Region: Nordics | Type: sauna | Coords: 60.0023, 30.2759
+
+  📍 Территория отдыха
+     Region: Nordics | Type: sauna | Coords: 54.7292, 20.4757
+
+  📍 Московские бани
+     Region: Nordics | Type: sauna | Coords: 59.8584, 30.3278
+
+  📍 Аквасфера
+     Region: Nordics | Type: sauna | Coords: 59.9444, 30.3455
+     http://sauna-spb.tilda.ws
+
+  📍 Studio Aroma
+     Region: Nordics | Type: spa | Coords: 57.6990, 11.9744
+
+  📍 Nordfjord hotell
+     Region: Nordics | Type: spa | Coords: 61.9042, 5.9958
+
+  📍 Сауна
+     Region: Nordics | Type: sauna | Coords: 67.5507, 30.5145
+
+  📍 Isokenkäisten Klubi
+     Region: Nordics | Type: sauna | Coords: 66.1011, 29.8386
+     https://www.ikk.fi/
+
+  📍 Iivaaran Eräkartano
+     Region: Nordics | Type: sauna | Coords: 65.7903, 29.6543
+
+  📍 ФАК
+     Region: Nordics | Type: sauna | Coords: 55.2051, 30.2179
+
+  📍 Skanda Sabai-Sabai Spa
+     Region: Nordics | Type: spa | Coords: 59.3363, 18.0843
+
+  📍 Красное озеро
+     Region: Nordics | Type: spa | Coords: 60.5339, 29.7371
+     https://www.krasnoeozero.ru
+
+  📍 Lilla Spa
+     Region: Nordics | Type: spa | Coords: 58.1624, 13.5510
+
+  📍 Spa Huset
+     Region: Nordics | Type: spa | Coords: 59.2799, 15.2174
+
+  📍 Blå Bergen Spa
+     Region: Nordics | Type: spa | Coords: 59.3515, 15.1248
+
+  📍 Muhikon sauna
+     Region: Nordics | Type: sauna | Coords: 60.7178, 27.6814
+     https://kyvi.fi/kohteet/miehikkala/salpapolku/muhikko/
+
+  📍 Bastu
+     Region: Nordics | Type: sauna | Coords: 59.2897, 18.9281
+
+  📍 Тропик-РА
+     Region: Nordics | Type: sauna | Coords: 59.8997, 30.4235
+     http://tropik-ra.ru/
+
+  📍 Кедравая бочка
+     Region: Nordics | Type: sauna | Coords: 55.1959, 30.2283
+
+  📍 Sauna
+     Region: Nordics | Type: sauna | Coords: 57.7964, 13.4081
+     https://www.facebook.com/UlricehamnsKallbadhus
+
+  📍 Mārtiņielas pirts
+     Region: Nordics | Type: sauna | Coords: 56.9468, 24.0682
+
+  📍 Kylmäkaraisukeskus
+     Region: Nordics | Type: sauna | Coords: 64.2244, 27.7547
+
+  📍 Satamosaaren sauna
+     Region: Nordics | Type: sauna | Coords: 61.1947, 28.5567
+
+  📍 Царская мельница
+     Region: Nordics | Type: sauna | Coords: 59.8562, 29.9057
+
+  📍 Ahveniston rantasauna
+     Region: Nordics | Type: sauna | Coords: 60.9941, 24.4176
+
+  📍 Sylter Welle
+     Region: Nordics | Type: sauna | Coords: 54.9099, 8.2999
+
+  📍 Mittitjärn kojan
+     Region: Nordics | Type: sauna | Coords: 66.0106, 21.9510
+
+  📍 Puolukkamaan pirtit
+     Region: Nordics | Type: sauna | Coords: 66.7392, 24.4737
+
+  📍 Võru linnasaun
+     Region: Nordics | Type: sauna | Coords: 57.8407, 27.0033
+
+  📍 Sauna 1
+     Region: Nordics | Type: sauna | Coords: 67.9335, 23.6556
+
+  📍 Sauna 2
+     Region: Nordics | Type: sauna | Coords: 67.9334, 23.6555
+
+  📍 Bastun vid Övre Glottern
+     Region: Nordics | Type: sauna | Coords: 58.7117, 16.2038
+     https://minasidor.norrkoping.se/oversikt/overview/818
+
+  📍 Лахтинские бани
+     Region: Nordics | Type: sauna | Coords: 59.9914, 30.1610
+     https://www.lahtabani.com/
+
+  📍 Баньк'off
+     Region: Nordics | Type: sauna | Coords: 60.7138, 28.7319
+
+  📍 Kleopatra SPA
+     Region: Nordics | Type: sauna | Coords: 56.9697, 24.0579
+     http://www.spa-caesar.lv/
+
+  📍 Virtakiven Sauna
+     Region: Nordics | Type: sauna | Coords: 60.9431, 26.5970
+     https://www.facebook.com/Virtakiven-Sauna-557032184319605/
+
+  📍 Павловские бани
+     Region: Nordics | Type: sauna | Coords: 59.9109, 30.3178
+
+  📍 Людмила
+     Region: Nordics | Type: sauna | Coords: 59.8737, 30.4710
+
+  📍 Kalipso
+     Region: Nordics | Type: sauna | Coords: 56.9559, 24.1502
+
+  📍 Särkilammen sauna
+     Region: Nordics | Type: sauna | Coords: 61.2286, 26.7921
+
+  📍 Fredžio pirtis
+     Region: Nordics | Type: sauna | Coords: 54.8501, 25.3115
+
+  📍 Löytölä
+     Region: Nordics | Type: sauna | Coords: 64.2995, 26.9099
+
+  📍 Repparfjord Camping og Misjonssenter
+     Region: Nordics | Type: sauna | Coords: 70.4475, 24.3878
+
+  📍 Банно-прачечный комбинат
+     Region: Nordics | Type: sauna | Coords: 58.2132, 29.0746
+
+  📍 Муринские бани
+     Region: Nordics | Type: sauna | Coords: 60.0473, 30.4512
+     http://муринские-бани.рф/
+
+  📍 Песчаный грот
+     Region: Nordics | Type: sauna | Coords: 59.8543, 30.3868
+
+  📍 Русская баня в Ларионово
+     Region: Nordics | Type: sauna | Coords: 60.9978, 30.1832
+
+  📍 Laine talu
+     Region: Nordics | Type: sauna | Coords: 57.8440, 26.9463
+
+  📍 Zutiņa pirts
+     Region: Nordics | Type: sauna | Coords: 56.5991, 25.3171
+     http://zutinapirts.lv
+
+  📍 Hollywood
+     Region: Nordics | Type: sauna | Coords: 59.8608, 30.3970
+
+  📍 Лазня
+     Region: Nordics | Type: sauna | Coords: 54.5585, 30.4524
+
+  📍 Бегуницкая баня
+     Region: Nordics | Type: sauna | Coords: 59.5872, 29.3041
+
+  📍 Šiacu
+     Region: Nordics | Type: sauna | Coords: 56.9540, 24.1357
+
+  📍 Calliola Conference & Event Center
+     Region: Nordics | Type: sauna | Coords: 59.9680, 23.7635
+     https://www.calliola.com/
+
+  📍 Саўна/Більярд
+     Region: Nordics | Type: sauna | Coords: 54.5288, 30.4364
+
+  📍 Озерки
+     Region: Nordics | Type: sauna | Coords: 60.0427, 30.3019
+
+  📍 Gay Sauna Vogue
+     Region: Nordics | Type: sauna | Coords: 60.1938, 24.9561
+     https://saunavogue.net/
+
+  📍 Mäkelänkadun Sauna
+     Region: Nordics | Type: sauna | Coords: 60.2093, 24.9469
+
+  📍 Купидон
+     Region: Nordics | Type: sauna | Coords: 59.8554, 30.3780
+     http://elkupidon.ru/
+
+  📍 Аполлон
+     Region: Nordics | Type: sauna | Coords: 59.9321, 30.2977
+
+  📍 Паляна
+     Region: Nordics | Type: sauna | Coords: 55.1780, 30.1919
+
+  📍 Lejupes
+     Region: Nordics | Type: sauna | Coords: 57.0312, 24.6838
+
+  📍 Pormestarisauna
+     Region: Nordics | Type: sauna | Coords: 61.4965, 23.7609
+     https://www.pormestarisauna.fi/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9380, 30.3067
+     https://saunapiter.ru/
+
+  📍 Банька
+     Region: Nordics | Type: sauna | Coords: 61.5016, 30.1764
+
+  📍 Otrosjoen autiotupa
+     Region: Nordics | Type: sauna | Coords: 63.7365, 29.9169
+
+  📍 Varaussauna (Solvalla)
+     Region: Nordics | Type: sauna | Coords: 60.2926, 24.5561
+
+  📍 Усачевские бани
+     Region: Nordics | Type: sauna | Coords: 59.9186, 30.2988
+     https://ybani.ru/
+
+  📍 Raua saun
+     Region: Nordics | Type: sauna | Coords: 59.4363, 24.7670
+     http://rauasaun.ee/
+
+  📍 Tartu maantee leilisaun
+     Region: Nordics | Type: sauna | Coords: 59.4286, 24.7764
+     http://www.tallinnasaun.ee/
+
+  📍 Kyrö Sauna Bar
+     Region: Nordics | Type: sauna | Coords: 60.1695, 24.9426
+     https://visit.kyrodistillery.com/pages/kyro-sauna-bar
+
+  📍 Дегтярные бани
+     Region: Nordics | Type: sauna | Coords: 59.9303, 30.3700
+     https://d1a.ru/
+
+  📍 Сауна
+     Region: Nordics | Type: sauna | Coords: 59.7632, 30.7831
+
+  📍 Кулга Баня
+     Region: Nordics | Type: sauna | Coords: 59.3508, 28.1757
+
+  📍 Общественная баня
+     Region: Nordics | Type: sauna | Coords: 58.2120, 30.7296
+
+  📍 Sauna2
+     Region: Nordics | Type: sauna | Coords: 60.2559, 25.0012
+
+  📍 Омс
+     Region: Nordics | Type: sauna | Coords: 54.9287, 31.1447
+
+  📍 Дубровка
+     Region: Nordics | Type: sauna | Coords: 55.0950, 31.0238
+
+  📍 Омс
+     Region: Nordics | Type: sauna | Coords: 55.1201, 31.3488
+
+  📍 Омс
+     Region: Nordics | Type: sauna | Coords: 54.9601, 30.9910
+
+  📍 Омс
+     Region: Nordics | Type: sauna | Coords: 54.9754, 31.0238
+
+  📍 Olutravintola Malmgård saunatila
+     Region: Nordics | Type: sauna | Coords: 60.2473, 24.8618
+
+  📍 Sauna2
+     Region: Nordics | Type: sauna | Coords: 60.1631, 24.9438
+     https://sauna2.fi/
+
+  📍 Eriks bastu
+     Region: Nordics | Type: sauna | Coords: 59.2723, 18.7280
+
+  📍 Чистилище
+     Region: Nordics | Type: sauna | Coords: 59.9708, 30.3067
+
+  📍 TYYn sauna
+     Region: Nordics | Type: sauna | Coords: 60.4545, 22.2872
+
+  📍 Vuorissalo sauna
+     Region: Nordics | Type: sauna | Coords: 61.7933, 25.5271
+     https://www.paijanteenvirkistysalueyhdistys.fi/?id=464
+
+  📍 Kampuskaarre 1, Sauna 1
+     Region: Nordics | Type: sauna | Coords: 60.9805, 24.4733
+
+  📍 Kampuskaarre 1, Sauna 2
+     Region: Nordics | Type: sauna | Coords: 60.9804, 24.4738
+
+  📍 Varvojärven uimarannan sauna- ja kokoustila
+     Region: Nordics | Type: sauna | Coords: 60.4274, 23.3853
+
+  📍 Sinnenas Spa
+     Region: Nordics | Type: spa | Coords: 57.0652, 12.5587
+
+  📍 Lortikka sauna
+     Region: Nordics | Type: sauna | Coords: 61.7021, 24.9917
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 59.5385, 30.8849
+
+  📍 Bincāni pirts
+     Region: Nordics | Type: sauna | Coords: 56.2711, 25.4246
+
+  📍 Krogs pie Viktora
+     Region: Nordics | Type: sauna | Coords: 56.2772, 25.4041
+     www.assi.lv
+
+  📍 Дзен
+     Region: Nordics | Type: sauna | Coords: 60.1298, 30.4497
+
+  📍 Общественная баня Харлу
+     Region: Nordics | Type: sauna | Coords: 61.8048, 30.9349
+
+  📍 HOPS Visakylän tilaussauna
+     Region: Nordics | Type: sauna | Coords: 60.9807, 24.4750
+     https://www.hops.fi/visakylan-saunatila/
+
+  📍 ESPA Riga
+     Region: Nordics | Type: sauna | Coords: 56.9555, 24.1179
+     http://www.espariga.lv/en/
+
+  📍 Lepaan kartano sähkösauna
+     Region: Nordics | Type: sauna | Coords: 61.1139, 24.3226
+     https://lepaanmatkailu.fi/
+
+  📍 Omenakellari tilaussauna
+     Region: Nordics | Type: sauna | Coords: 61.1162, 24.3266
+
+  📍 Sjöporten
+     Region: Nordics | Type: sauna | Coords: 59.7349, 17.6423
+
+  📍 bastu
+     Region: Nordics | Type: sauna | Coords: 57.6254, 12.4263
+
+  📍 Publiskā pirts
+     Region: Nordics | Type: sauna | Coords: 57.5346, 25.4048
+
+  📍 Fifth Avenue sauna
+     Region: Nordics | Type: sauna | Coords: 60.9957, 24.4650
+
+  📍 Järnhedsbastun
+     Region: Nordics | Type: sauna | Coords: 66.3805, 21.2879
+
+  📍 Bastu
+     Region: Nordics | Type: sauna | Coords: 66.4793, 21.1471
+
+  📍 Gröna uddens strandbastu
+     Region: Nordics | Type: sauna | Coords: 60.0925, 19.9539
+     https://www.gronaudden.com/swe/sauna.html
+
+  📍 Эль Пирата
+     Region: Nordics | Type: sauna | Coords: 59.8665, 30.3554
+     https://elpirata.ru/
+
+  📍 Jäämereen Sauna
+     Region: Nordics | Type: sauna | Coords: 69.9741, 29.6343
+     http://www.bugoynes.no/jaumlaumlmeren-sauna.html
+
+  📍 Toijalanrannan rantasauna
+     Region: Nordics | Type: sauna | Coords: 61.9352, 25.1444
+
+  📍 Esbjerg Spa & Wellness
+     Region: Nordics | Type: spa | Coords: 55.4784, 8.4380
+
+  📍 У дяди Серёжи
+     Region: Nordics | Type: sauna | Coords: 55.6196, 28.6373
+
+  📍 Kajane
+     Region: Nordics | Type: sauna | Coords: 62.7846, 21.6221
+
+  📍 Жара
+     Region: Nordics | Type: sauna | Coords: 59.7238, 30.0644
+
+  📍 Amoveo Spa
+     Region: Nordics | Type: spa | Coords: 59.8676, 30.3187
+     https://amoveo.ru/
+
+  📍 Villa Alicante sauna
+     Region: Nordics | Type: sauna | Coords: 54.7061, 25.1597
+     https://www.alicante.lt/
+
+  📍 Pajūrio pirtis
+     Region: Nordics | Type: sauna | Coords: 55.7582, 21.0819
+     https://www.facebook.com/Paj%C5%ABrio-pirtis-216386265484221/
+
+  📍 Tunanäs bastun
+     Region: Nordics | Type: sauna | Coords: 58.9838, 17.7037
+
+  📍 Лазня ў Віктара Апанасавіча
+     Region: Nordics | Type: sauna | Coords: 54.5257, 30.3508
+
+  📍 30B
+     Region: Nordics | Type: sauna | Coords: 60.4644, 22.2956
+
+  📍 20B4
+     Region: Nordics | Type: sauna | Coords: 60.4636, 22.2956
+
+  📍 Баня па-чорнаму
+     Region: Nordics | Type: sauna | Coords: 55.8964, 29.3859
+
+  📍 Brändö
+     Region: Nordics | Type: sauna | Coords: 60.0392, 24.2984
+
+  📍 Bastu
+     Region: Nordics | Type: sauna | Coords: 59.1653, 18.4547
+
+  📍 Ravijoen sauna
+     Region: Nordics | Type: sauna | Coords: 60.5278, 27.5460
+     https://www.salpakeskus.fi/fi/varaussaunat-ja-kodat
+
+  📍 Krievu pirts
+     Region: Nordics | Type: sauna | Coords: 56.8176, 24.5931
+
+  📍 Ata melnā pirts
+     Region: Nordics | Type: sauna | Coords: 56.7018, 26.2181
+
+  📍 La Banchina Sauna
+     Region: Nordics | Type: sauna | Coords: 55.6894, 12.6108
+
+  📍 Пушкарская баня
+     Region: Nordics | Type: sauna | Coords: 59.9580, 30.3020
+
+  📍 Lakkala savusauna
+     Region: Nordics | Type: sauna | Coords: 63.0130, 29.9255
+
+  📍 Amigo Sauna
+     Region: Nordics | Type: sauna | Coords: 55.6781, 12.5688
+
+  📍 Rantasauna
+     Region: Nordics | Type: sauna | Coords: 66.2689, 29.4050
+
+  📍 Kerojärvi sauna
+     Region: Nordics | Type: sauna | Coords: 66.4551, 29.3695
+
+  📍 Puistovartian rantasauna
+     Region: Nordics | Type: sauna | Coords: 66.3692, 29.3107
+
+  📍 Varaustuvan sauna
+     Region: Nordics | Type: sauna | Coords: 65.6797, 27.5428
+
+  📍 Lapinlahden Sauna
+     Region: Nordics | Type: sauna | Coords: 60.1682, 24.9127
+
+  📍 Бани
+     Region: Nordics | Type: sauna | Coords: 58.5457, 31.2393
+
+  📍 Korsatupa sauna
+     Region: Nordics | Type: sauna | Coords: 68.3738, 24.9255
+
+  📍 Музыка ветра
+     Region: Nordics | Type: sauna | Coords: 58.5658, 31.2852
+
+  📍 С легким паром
+     Region: Nordics | Type: sauna | Coords: 58.5383, 31.2609
+
+  📍 Ажур
+     Region: Nordics | Type: sauna | Coords: 58.5508, 31.2183
+
+  📍 Акватория
+     Region: Nordics | Type: sauna | Coords: 58.5705, 31.2622
+
+  📍 Альянс
+     Region: Nordics | Type: sauna | Coords: 58.5270, 31.3021
+
+  📍 Баня Рюрика
+     Region: Nordics | Type: sauna | Coords: 58.4827, 31.2617
+
+  📍 Баунти
+     Region: Nordics | Type: sauna | Coords: 58.5172, 31.2230
+
+  📍 Бриз
+     Region: Nordics | Type: sauna | Coords: 58.5359, 31.2246
+
+  📍 Брызги, сауна
+     Region: Nordics | Type: sauna | Coords: 58.5626, 31.2875
+
+  📍 Водолей
+     Region: Nordics | Type: sauna | Coords: 58.5327, 31.2481
+
+  📍 Holvisauna
+     Region: Nordics | Type: sauna | Coords: 60.4589, 21.8818
+
+  📍 Maisa
+     Region: Nordics | Type: sauna | Coords: 60.3326, 21.8912
+     https://www.maisaari.com
+
+  📍 Villa
+     Region: Nordics | Type: sauna | Coords: 60.3321, 21.8955
+     https://www.maisaari.com
+
+  📍 Фабос
+     Region: Nordics | Type: sauna | Coords: 58.5284, 31.3040
+
+  📍 Сауна
+     Region: Nordics | Type: sauna | Coords: 58.5212, 31.2632
+
+  📍 Юрьевское подворье, сауна
+     Region: Nordics | Type: sauna | Coords: 58.4896, 31.2709
+
+  📍 Deluxe
+     Region: Nordics | Type: sauna | Coords: 58.5218, 31.2597
+
+  📍 Lux
+     Region: Nordics | Type: sauna | Coords: 58.5326, 31.2583
+
+  📍 Bastun
+     Region: Nordics | Type: sauna | Coords: 64.4098, 21.2019
+
+  📍 Боярская баня
+     Region: Nordics | Type: sauna | Coords: 60.1304, 30.4488
+
+  📍 20B1
+     Region: Nordics | Type: sauna | Coords: 60.4636, 22.2957
+
+  📍 20B2
+     Region: Nordics | Type: sauna | Coords: 60.4636, 22.2957
+
+  📍 20B3
+     Region: Nordics | Type: sauna | Coords: 60.4636, 22.2956
+
+  📍 Wisahovi
+     Region: Nordics | Type: sauna | Coords: 60.9802, 24.4673
+
+  📍 Чыкага
+     Region: Nordics | Type: sauna | Coords: 55.1888, 30.1904
+
+  📍 Волна
+     Region: Nordics | Type: sauna | Coords: 59.9100, 30.2746
+
+  📍 Kuusjoen sauna
+     Region: Nordics | Type: sauna | Coords: 60.5856, 23.2470
+
+  📍 Reborn Avenue
+     Region: Nordics | Type: spa | Coords: 56.0509, 12.6890
+
+  📍 Kairosmaja Sauna
+     Region: Nordics | Type: sauna | Coords: 67.0416, 27.2234
+
+  📍 Fjälludden
+     Region: Nordics | Type: sauna | Coords: 63.2251, 18.7159
+
+  📍 25B
+     Region: Nordics | Type: sauna | Coords: 60.4639, 22.2984
+
+  📍 Scandic Jyväskylä City
+     Region: Nordics | Type: sauna | Coords: 62.2428, 25.7512
+     https://www.scandichotels.fi/hotellit/suomi/jyvaskyla/scandic-jyvaskyla-city
+
+  📍 Raudonkalnis
+     Region: Nordics | Type: sauna | Coords: 55.8514, 23.4364
+     https://www.raudonkalnis.lt/
+
+  📍 Sauna (Talviuinti- Smark)
+     Region: Nordics | Type: sauna | Coords: 60.1791, 24.9123
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 60.0921, 29.9669
+
+  📍 Joatkajávri fjellstue
+     Region: Nordics | Type: sauna | Coords: 69.7545, 23.9325
+
+  📍 Taureņu pirts
+     Region: Nordics | Type: sauna | Coords: 56.9142, 23.8767
+
+  📍 Pikku leikosaari
+     Region: Nordics | Type: sauna | Coords: 60.1692, 25.1452
+     https://www.naturaviva.fi/en/vuosaari/recreationalislandsofeasternhelsinki/pikkuleikosaari
+
+  📍 Hiedanrannan Sauna
+     Region: Nordics | Type: sauna | Coords: 61.5164, 23.6848
+
+  📍 Kalma Saun
+     Region: Nordics | Type: sauna | Coords: 59.4438, 24.7377
+     https://www.kalmasaun.ee/
+
+  📍 Банный двор RiverSide
+     Region: Nordics | Type: sauna | Coords: 54.7056, 20.5427
+     https://riverside-relax.ru/
+
+  📍 Stropu vilnis
+     Region: Nordics | Type: sauna | Coords: 55.9205, 26.5826
+
+  📍 SaunatFI Tapiola
+     Region: Nordics | Type: sauna | Coords: 60.1750, 24.8020
+     https://www.saunat.fi/kohde/saunat-fi-tapiola/
+
+  📍 Victoria's room for beauty
+     Region: Nordics | Type: spa | Coords: 60.1571, 24.9468
+
+  📍 Anne Saun
+     Region: Nordics | Type: sauna | Coords: 58.3782, 26.7528
+     https://www.annesaun.ee/
+
+  📍 Lisskas Bastu
+     Region: Nordics | Type: sauna | Coords: 60.5159, 14.8090
+     https://boka.se/lisskasbastu/
+
+  📍 Haukeliseter fjellstue
+     Region: Nordics | Type: sauna | Coords: 59.8237, 7.1930
+
+  📍 Лазня
+     Region: Nordics | Type: sauna | Coords: 55.6004, 27.3414
+
+  📍 Düün Bad & Spa
+     Region: Nordics | Type: spa | Coords: 54.7582, 8.2850
+
+  📍 Timetravels - Arctic Sauna
+     Region: Nordics | Type: sauna | Coords: 69.9779, 29.5885
+     https://www.timetravels.fi/
+
+  📍 Käringön bastu
+     Region: Nordics | Type: sauna | Coords: 61.6503, 17.2391
+
+  📍 Банька Оленегорская
+     Region: Nordics | Type: sauna | Coords: 56.2690, 29.0225
+     https://www.olenyagora.com/
+
+  📍 Pārdaugavas malkas pirts
+     Region: Nordics | Type: sauna | Coords: 56.9295, 24.0951
+
+  📍 Finnsjögårdens bastu
+     Region: Nordics | Type: sauna | Coords: 57.6400, 12.1351
+
+  📍 Talosauna 3
+     Region: Nordics | Type: sauna | Coords: 60.4606, 22.2874
+
+  📍 Баня на Турухтанных
+     Region: Nordics | Type: sauna | Coords: 59.8685, 30.2388
+     https://turuhtan.ru/
+
+  📍 Viljandi Päevakeskus - Saun
+     Region: Nordics | Type: sauna | Coords: 58.3649, 25.5930
+     https://www.paevakeskus.ee/saun
+
+  📍 Mare Mara
+     Region: Nordics | Type: sauna | Coords: 54.5838, 10.0247
+
+  📍 KOK Oslo
+     Region: Nordics | Type: sauna | Coords: 59.9071, 10.7474
+     https://koknorge.no/kok-oslo/
+
+  📍 Rantasauna
+     Region: Nordics | Type: sauna | Coords: 60.6237, 26.1590
+
+  📍 Artturi
+     Region: Nordics | Type: sauna | Coords: 61.5743, 28.1467
+
+  📍 Niskalammen rantasauna
+     Region: Nordics | Type: sauna | Coords: 61.5754, 28.1459
+
+  📍 Huvila ja Sauna
+     Region: Nordics | Type: sauna | Coords: 60.3819, 24.4431
+     https://www.huvilajasauna.com/
+
+  📍 На Высоте
+     Region: Nordics | Type: sauna | Coords: 60.0001, 30.3189
+     https://navisote-spb.ru/
+
+  📍 KOK Vega
+     Region: Nordics | Type: sauna | Coords: 59.9079, 10.7490
+     https://koknorge.no/
+
+  📍 KOK Morild
+     Region: Nordics | Type: sauna | Coords: 59.9078, 10.7489
+     https://koknorge.no/
+
+  📍 Saunamaailma
+     Region: Nordics | Type: sauna | Coords: 64.1486, 28.2346
+
+  📍 Saunaholvi
+     Region: Nordics | Type: sauna | Coords: 64.1443, 28.2480
+     http://vuokattirent.fi/
+
+  📍 Tilaussauna Rantahovi
+     Region: Nordics | Type: sauna | Coords: 64.1432, 28.2349
+
+  📍 Linbastu
+     Region: Nordics | Type: sauna | Coords: 60.4878, 13.1674
+
+  📍 Noitajärven rantasauna
+     Region: Nordics | Type: sauna | Coords: 61.0334, 21.6012
+
+  📍 Marjaniemen leiri- ja virkistysalue
+     Region: Nordics | Type: sauna | Coords: 60.2973, 22.8669
+
+  📍 Eräistenkarin sauna
+     Region: Nordics | Type: sauna | Coords: 60.6683, 21.3789
+     https://www.lokalahtiseura.fi/hyva-tietaa/erainenkari/
+
+  📍 Relaxen
+     Region: Nordics | Type: sauna | Coords: 62.6284, 17.9407
+
+  📍 АртиШок
+     Region: Nordics | Type: sauna | Coords: 59.9417, 30.3517
+     https://artishok-sauna.ru/
+
+  📍 Kankaan Sauna
+     Region: Nordics | Type: sauna | Coords: 62.2536, 25.7627
+
+  📍 Rantasauna
+     Region: Nordics | Type: sauna | Coords: 60.1648, 25.0853
+
+  📍 Furuvik rantasauna
+     Region: Nordics | Type: sauna | Coords: 60.1596, 25.0602
+     https://saunat.fi/lippu/villa-furuvik-rantasauna/
+
+  📍 Teurastamon sauna
+     Region: Nordics | Type: sauna | Coords: 60.1898, 24.9712
+     https://teurastamo.com/vuokraa-teurastamon-sauna/
+
+  📍 Kuopion Saana
+     Region: Nordics | Type: sauna | Coords: 62.8734, 27.6576
+     https://www.kuopionsaana.fi/
+
+  📍 Vierassataman sauna
+     Region: Nordics | Type: sauna | Coords: 60.4528, 26.2342
+
+  📍 Vattenhuset
+     Region: Nordics | Type: sauna | Coords: 59.3767, 18.0477
+
+  📍 Leirintäalueen sauna
+     Region: Nordics | Type: sauna | Coords: 60.4408, 26.2375
+
+  📍 Lahdenpelto
+     Region: Nordics | Type: sauna | Coords: 62.4595, 25.9337
+
+  📍 Koskenniska
+     Region: Nordics | Type: sauna | Coords: 62.4587, 25.9344
+
+  📍 Pargas Port
+     Region: Nordics | Type: sauna | Coords: 60.1494, 22.2854
+     https://www.pargasport.fi/
+
+  📍 Jurttasauna
+     Region: Nordics | Type: sauna | Coords: 60.5259, 26.4696
+     https://stromforsinruukki.com/yleinen/jurttasauna/
+
+  📍 Водолей
+     Region: Nordics | Type: sauna | Coords: 62.1770, 30.6979
+
+  📍 Tornisauna
+     Region: Nordics | Type: sauna | Coords: 62.7898, 22.8244
+
+  📍 Джой
+     Region: Nordics | Type: sauna | Coords: 59.9283, 30.4708
+
+  📍 Эдельвейс
+     Region: Nordics | Type: sauna | Coords: 60.0393, 30.3198
+
+  📍 Звезда Луны
+     Region: Nordics | Type: sauna | Coords: 60.0438, 30.3240
+
+  📍 Петровские бани
+     Region: Nordics | Type: sauna | Coords: 59.8833, 30.4435
+     https://xn----7sbbb2bmnbdbobiodq2u.xn--p1ai/
+
+  📍 Sorankylän keisarinna
+     Region: Nordics | Type: sauna | Coords: 60.3140, 22.7294
+     https://www.facebook.com/pg/Sorankylän-Keisarinna-105852437851142/
+
+  📍 Hotelli OnnenTähti, sauna
+     Region: Nordics | Type: sauna | Coords: 62.6031, 23.7224
+
+  📍 Kaimi saun
+     Region: Nordics | Type: sauna | Coords: 58.3449, 26.4024
+     http://www.kaimisaun.ee/
+
+  📍 Ristiku saun
+     Region: Nordics | Type: sauna | Coords: 59.4404, 24.7149
+     https://www.suhtesepp.com/?page_id=887
+
+  📍 Bastuflotten ReLaxa
+     Region: Nordics | Type: sauna | Coords: 59.3814, 18.0486
+     https://bastuflotten.com
+
+  📍 Koskentien Sauna
+     Region: Nordics | Type: sauna | Coords: 61.5029, 23.7986
+
+  📍 Mooste tervisekeskus
+     Region: Nordics | Type: sauna | Coords: 58.1615, 27.1911
+     https://moostemois.ee/et/tervisekeskus
+
+  📍 Bastu
+     Region: Nordics | Type: sauna | Coords: 64.4090, 18.8289
+
+  📍 Ylläksen huipun sauna
+     Region: Nordics | Type: sauna | Coords: 67.5637, 24.2245
+     https://yllasravintolat.fi/collections/saunapalvelut
+
+  📍 Банька на Тамбовской
+     Region: Nordics | Type: sauna | Coords: 59.9121, 30.3539
+
+  📍 MySauna Tikkurila
+     Region: Nordics | Type: sauna | Coords: 60.2940, 25.0323
+     https://www.mysauna.fi/tuote/saunatila-tikkurila/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9292, 30.4715
+     https://saunapiter.ru/
+
+  📍 Сауна на Белградской
+     Region: Nordics | Type: sauna | Coords: 59.8508, 30.3691
+     https://bani-saunaspb.ru/
+
+  📍 Teemu
+     Region: Nordics | Type: sauna | Coords: 60.5378, 23.4816
+
+  📍 Фонарные бани
+     Region: Nordics | Type: sauna | Coords: 59.9300, 30.3042
+     https://fonari.ru
+
+  📍 Ribbersborgs kallbadhus
+     Region: Nordics | Type: sauna | Coords: 55.6054, 12.9652
+
+  📍 Saunafantti
+     Region: Nordics | Type: sauna | Coords: 64.6852, 24.4573
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9337, 30.3221
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9396, 30.3617
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9583, 30.2632
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9134, 30.4750
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.8558, 30.3604
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9102, 30.3122
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.8997, 30.4623
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.8379, 30.2047
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 60.0894, 30.2751
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.8344, 30.2488
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 60.0475, 30.3539
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9288, 30.3098
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9618, 30.4557
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9234, 30.4537
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 60.0835, 30.2462
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9425, 30.2834
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 60.0148, 30.2491
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9046, 30.2731
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.7528, 30.5757
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.8417, 30.4017
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.8392, 30.3846
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 60.0846, 30.2670
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 60.0494, 30.3671
+     https://saunapiter.ru/
+
+  📍 Сауны Питера
+     Region: Nordics | Type: sauna | Coords: 59.9297, 30.3491
+     https://saunapiter.ru/
+
+  📍 pust.
+     Region: Nordics | Type: sauna | Coords: 69.6509, 18.9623
+     https://www.pust.io/en/badstue/lavvo-badstue
+
+  📍 Peldošā pirts
+     Region: Nordics | Type: sauna | Coords: 56.1553, 27.5639
+
+  📍 Skin and Care
+     Region: Nordics | Type: spa | Coords: 55.4302, 13.8220
+
+  📍 Пещера
+     Region: Nordics | Type: sauna | Coords: 58.5409, 31.2713
+
+  📍 Raatejärven sauna
+     Region: Nordics | Type: sauna | Coords: 63.5050, 25.0241
+
+  📍 Saarijärven sauna
+     Region: Nordics | Type: sauna | Coords: 63.5304, 25.0624
+
+  📍 Pirtis "Dūminukė"
+     Region: Nordics | Type: sauna | Coords: 54.8569, 23.1638
+     https://www.duminuke.lt/
+
+  📍 Campusbad Saunawelt
+     Region: Nordics | Type: sauna | Coords: 54.7768, 9.4524
+
+  📍 Tallholmen
+     Region: Nordics | Type: sauna | Coords: 60.1638, 25.3025
+     https://uuvi.fi/fi/kohde/tallholmen-2/
+
+  📍 Svaja
+     Region: Nordics | Type: sauna | Coords: 55.9397, 23.3079
+
+  📍 Akmena
+     Region: Nordics | Type: sauna | Coords: 55.9073, 23.3306
+
+  📍 Baras-pirtis „Saulės kometa“
+     Region: Nordics | Type: sauna | Coords: 55.7527, 23.7546
+     https://www.visalietuva.lt/imone/saules-kometa-uab-baras-pirtis
+
+  📍 Ogle
+     Region: Nordics | Type: sauna | Coords: 57.1999, 22.2723
+
+  📍 мкп Кузьмоловская баня
+     Region: Nordics | Type: sauna | Coords: 60.1076, 30.4960
+
+  📍 Søbadet
+     Region: Nordics | Type: sauna | Coords: 55.5691, 10.0785
+
+  📍 Баня Хутор Ярви
+     Region: Nordics | Type: sauna | Coords: 61.5624, 30.3850
+     https://hutorjarvi.ru/
+
+  📍 Kartanosauna
+     Region: Nordics | Type: sauna | Coords: 60.3329, 25.0619
+
+  📍 SportMixer Kokous- ja saunatilat
+     Region: Nordics | Type: sauna | Coords: 60.3562, 24.3240
+     https://www.sportmixer.fi/index.php
+
+  📍 Turvesauna
+     Region: Nordics | Type: sauna | Coords: 62.5499, 24.0568
+     https://peatcare.com/collections/turvehoidot-hieronnat/products/turvesauna-hieronta
+
+  📍 Avantosauna Lauteet
+     Region: Nordics | Type: sauna | Coords: 63.0731, 27.6712
+     https://lauteetsauna.fi/
+
+  📍 Pikku-Bulders
+     Region: Nordics | Type: sauna | Coords: 60.2764, 24.8833
+
+  📍 Lauku kūrorts
+     Region: Nordics | Type: sauna | Coords: 56.7178, 21.7732
+
+  📍 Wanda's Kitchen & Lounge, Sauna ja kokoustilat
+     Region: Nordics | Type: sauna | Coords: 60.2629, 24.8514
+     https://www.wandas.fi/sauna-ja-kokoustilat/
+
+  📍 Merihelmen sauna
+     Region: Nordics | Type: sauna | Coords: 61.3424, 21.5659
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 59.8106, 30.8799
+
+  📍 Kriosauna
+     Region: Nordics | Type: sauna | Coords: 56.5054, 25.8650
+
+  📍 Rampsinkarin sauna
+     Region: Nordics | Type: sauna | Coords: 60.5596, 27.1833
+     https://www.rampsi.fi/
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 54.5931, 20.6261
+
+  📍 Murikan rantasauna
+     Region: Nordics | Type: sauna | Coords: 61.7012, 23.7968
+
+  📍 Pieni sauna
+     Region: Nordics | Type: sauna | Coords: 60.4757, 24.6852
+     https://www.vauhtifarmi.fi/
+
+  📍 Iso sauna
+     Region: Nordics | Type: sauna | Coords: 60.4756, 24.6850
+     https://www.vauhtifarmi.fi/
+
+  📍 Heit Åkrafjorden Sauna
+     Region: Nordics | Type: sauna | Coords: 59.8758, 6.3804
+     https://fjordensauna.no/
+
+  📍 "Ozoliņi"
+     Region: Nordics | Type: sauna | Coords: 57.1557, 26.5264
+
+  📍 Juntinvaara sauna
+     Region: Nordics | Type: sauna | Coords: 64.2167, 30.2639
+
+  📍 Via-Vita
+     Region: Nordics | Type: sauna | Coords: 59.9517, 30.2149
+
+  📍 Garo fabrikas
+     Region: Nordics | Type: sauna | Coords: 54.7310, 25.2843
+
+  📍 Gammalgård sauna
+     Region: Nordics | Type: sauna | Coords: 60.2046, 21.8696
+
+  📍 Kok og bad
+     Region: Nordics | Type: sauna | Coords: 61.7661, 4.8768
+
+  📍 Birzīte
+     Region: Nordics | Type: sauna | Coords: 57.0638, 24.3193
+
+  📍 Bunker‘n
+     Region: Nordics | Type: sauna | Coords: 63.4569, 10.4453
+     https://www.bartstua.no/en/bunker-sauna/
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 59.7577, 31.0593
+
+  📍 Saun
+     Region: Nordics | Type: sauna | Coords: 58.9033, 24.4301
+
+  📍 Gasthaus Lohja - Kokous- ja saunatilat
+     Region: Nordics | Type: sauna | Coords: 60.2432, 24.0547
+     https://gasthauslohja.fi/
+
+  📍 Pirties namai
+     Region: Nordics | Type: sauna | Coords: 54.9289, 23.9155
+
+  📍 Bastu i Gropviken och Sandfjärden
+     Region: Nordics | Type: sauna | Coords: 58.3253, 16.6987
+     https://bigs.nu/
+
+  📍 31 Lab
+     Region: Nordics | Type: spa | Coords: 59.9232, 30.3062
+
+  📍 Сауна-Люкс
+     Region: Nordics | Type: sauna | Coords: 59.9404, 30.3495
+     https://saunaliteynyi.ru/
+
+  📍 Семейная баня Новоселье
+     Region: Nordics | Type: sauna | Coords: 59.8133, 30.0561
+
+  📍 Vinterbybadet
+     Region: Nordics | Type: sauna | Coords: 56.0356, 9.9347
+     https://www.vinterbybadet.dk/
+
+  📍 Valhal
+     Region: Nordics | Type: sauna | Coords: 56.1900, 10.6671
+     https://vikingerne-ebeltoft.dk/
+
+  📍 Rådhuset
+     Region: Nordics | Type: sauna | Coords: 59.9083, 10.7500
+     https://oslobadstuforening.no
+
+  📍 Пар для гурманов
+     Region: Nordics | Type: sauna | Coords: 59.8071, 30.6169
+     https://главбаня.рф
+
+  📍 Новосергиевские бани
+     Region: Nordics | Type: sauna | Coords: 59.9041, 30.5653
+     https://banyanov.ru
+
+  📍 Кело
+     Region: Nordics | Type: sauna | Coords: 59.9042, 30.5627
+     https://www.bani-kelo.com
+
+  📍 Löylykontti Matinkylä
+     Region: Nordics | Type: sauna | Coords: 60.1498, 24.7533
+
+  📍 Löylykontti Kivenlahti
+     Region: Nordics | Type: sauna | Coords: 60.1537, 24.6265
+
+  📍 СПА для ВАС
+     Region: Nordics | Type: spa | Coords: 59.9069, 30.3437
+     https://vk.com/massagenow
+
+  📍 Pro.Пар
+     Region: Nordics | Type: sauna | Coords: 59.9252, 30.3824
+     https://proparspb.ru
+
+  📍 Oulunkylän liikuntapuisto, saunat
+     Region: Nordics | Type: sauna | Coords: 60.2347, 24.9596
+
+  📍 Бастион
+     Region: Nordics | Type: sauna | Coords: 59.7145, 30.4296
+
+  📍 Savusauna
+     Region: Nordics | Type: sauna | Coords: 66.4158, 24.6880
+
+  📍 Suvas
+     Region: Nordics | Type: sauna | Coords: 62.5988, 29.7605
+
+  📍 Nuoga pirtis
+     Region: Nordics | Type: sauna | Coords: 55.7614, 21.0808
+     https://kupolasklaipeda.lt/nuoga-pirtis
+
+  📍 Saunaparoni
+     Region: Nordics | Type: sauna | Coords: 60.5514, 22.1177
+     https://www.saunaparoni.fi/
+
+  📍 Tahvontupa sauna
+     Region: Nordics | Type: sauna | Coords: 68.1258, 28.5635
+
+  📍 Ring Spa
+     Region: Nordics | Type: sauna | Coords: 59.4172, 24.6451
+     https://ringspa.ee/
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 54.9420, 20.0361
+
+  📍 Гуляй-пар
+     Region: Nordics | Type: sauna | Coords: 59.9178, 30.2780
+
+  📍 Kallbadhus
+     Region: Nordics | Type: sauna | Coords: 55.4165, 12.8314
+     https://kallbadet.com/
+
+  📍 Грелка
+     Region: Nordics | Type: sauna | Coords: 60.0271, 30.2425
+     https://grelka.club/
+
+  📍 Пар для гурманов
+     Region: Nordics | Type: sauna | Coords: 59.8890, 30.4798
+     https://bagurman.ru/
+
+  📍 Savusauna
+     Region: Nordics | Type: sauna | Coords: 64.3810, 29.7803
+
+  📍 Sähkösauna
+     Region: Nordics | Type: sauna | Coords: 64.3810, 29.7805
+
+  📍 Manndalen Sjøbuer sauna
+     Region: Nordics | Type: sauna | Coords: 69.5441, 20.5445
+
+  📍 Lyngen Tourist Sauna
+     Region: Nordics | Type: sauna | Coords: 69.3223, 20.0103
+
+  📍 Soria Moria sauna
+     Region: Nordics | Type: sauna | Coords: 59.4426, 8.0183
+     https://www.visittelemark.no/dalen
+
+  📍 Лазня
+     Region: Nordics | Type: sauna | Coords: 54.9812, 26.4085
+
+  📍 Пар для гурманов
+     Region: Nordics | Type: sauna | Coords: 59.7991, 30.6485
+     https://bagurman.ru
+
+  📍 Himoisten rantasauna
+     Region: Nordics | Type: sauna | Coords: 60.6778, 21.5781
+     https://www.vehmaa.fi/hyvinvointi-ja-vapaa-aika/saunat-ja-uimarannat/
+
+  📍 Nausta
+     Region: Nordics | Type: sauna | Coords: 62.7364, 7.1632
+     https://www.naustamolde.no/
+
+  📍 Savu
+     Region: Nordics | Type: sauna | Coords: 67.5285, 24.1268
+     https://www.ronola.fi/
+
+  📍 Rönölä
+     Region: Nordics | Type: sauna | Coords: 67.5284, 24.1263
+     https://www.ronola.fi/
+
+  📍 Fass-Sauna Goting
+     Region: Nordics | Type: sauna | Coords: 54.6894, 8.4580
+     https://www.wander-wagen.de/fass-sauna-goting/
+
+  📍 Лазня каля сажалкі
+     Region: Nordics | Type: sauna | Coords: 54.5435, 26.7282
+
+  📍 Lataamo
+     Region: Nordics | Type: sauna | Coords: 60.6354, 25.3165
+     https://www.k2kokoustilat.com/lataamo
+
+  📍 Floating Fjord Sauna
+     Region: Nordics | Type: sauna | Coords: 60.8616, 7.1188
+
+  📍 VÅG Havbadstue
+     Region: Nordics | Type: sauna | Coords: 68.8028, 16.5488
+     https://www.vaaghavbadstue.no/
+
+  📍 Höyrysauna
+     Region: Nordics | Type: sauna | Coords: 60.2799, 25.1195
+
+  📍 Hakunilan uimahalli
+     Region: Nordics | Type: sauna | Coords: 60.2801, 25.1199
+
+  📍 Haapasaaren kansakoulun sauna
+     Region: Nordics | Type: sauna | Coords: 60.2897, 27.1984
+     https://www.haapasaari.net/koulu
+
+  📍 Badstua
+     Region: Nordics | Type: sauna | Coords: 63.5336, 8.3870
+
+  📍 Dolce vita
+     Region: Nordics | Type: sauna | Coords: 59.9358, 30.3690
+     https://dolce-vita-sauna.ru/
+
+  📍 Lofoten Beach Camp
+     Region: Nordics | Type: sauna | Coords: 68.1039, 13.2923
+
+  📍 Камыши
+     Region: Nordics | Type: sauna | Coords: 60.1118, 30.4245
+
+  📍 Sipoonjoen perinnesauna
+     Region: Nordics | Type: sauna | Coords: 60.3453, 25.2574
+     https://saunotus.fi/
+
+  📍 Kogukonnasaunad
+     Region: Nordics | Type: sauna | Coords: 59.4139, 24.6304
+
+  📍 Djupskär Suana & Laavu
+     Region: Nordics | Type: sauna | Coords: 63.1803, 21.3972
+
+  📍 Mestareiden Sauna
+     Region: Nordics | Type: sauna | Coords: 61.0581, 28.1927
+     https://www.mestareidensauna.fi
+
+  📍 HelmiSimpukka rahtarisauna
+     Region: Nordics | Type: sauna | Coords: 60.6734, 25.3534
+
+  📍 Кола 45
+     Region: Nordics | Type: sauna | Coords: 59.9069, 31.0630
+
+  📍 Tampellan panoraamasauna
+     Region: Nordics | Type: sauna | Coords: 61.5058, 23.7657
+     https://www.saunatampere.fi/sauna/tampellan-panoraamasauna/
+
+  📍 Lenkkisauna
+     Region: Nordics | Type: sauna | Coords: 61.1779, 25.5235
+     https://asikkala.fi/kulttuuri-ja-vapaa-aika/liikunta/
+
+  📍 SVAI Sauna
+     Region: Nordics | Type: sauna | Coords: 62.4736, 6.1507
+     https://svaisauna.no/
+
+  📍 Volki
+     Region: Nordics | Type: sauna | Coords: 54.5243, 27.0980
+     https://volki.by/
+
+  📍 Pääsauna
+     Region: Nordics | Type: sauna | Coords: 62.5362, 24.1793
+     https://ravintolakiulu.fi/saunat
+
+  📍 Maisemasauna
+     Region: Nordics | Type: sauna | Coords: 62.5361, 24.1791
+     https://ravintolakiulu.fi/saunat
+
+  📍 Mellsta bastu
+     Region: Nordics | Type: sauna | Coords: 60.5160, 15.3857
+
+  📍 Luoto Kuopio
+     Region: Nordics | Type: sauna | Coords: 62.8934, 27.7047
+     https://www.luotokuopio.fi/
+
+  📍 LöylyTupa
+     Region: Nordics | Type: sauna | Coords: 61.7774, 22.5248
+
+  📍 Jämeräntaival Rooftop Sauna
+     Region: Nordics | Type: sauna | Coords: 60.1873, 24.8364
+     https://www.ayy.fi/en/jamerantaival-rooftop-sauna
+
+  📍 Баня у Петровича
+     Region: Nordics | Type: sauna | Coords: 55.2187, 30.3014
+
+  📍 Tynnyrisauna
+     Region: Nordics | Type: sauna | Coords: 59.9199, 22.4056
+
+  📍 Savusauna
+     Region: Nordics | Type: sauna | Coords: 67.1556, 23.5765
+     https://kylmamaa.fi/
+
+  📍 pyhapiilo
+     Region: Nordics | Type: sauna | Coords: 66.1199, 29.1368
+
+  📍 Pikisaaren sauna
+     Region: Nordics | Type: sauna | Coords: 60.5769, 21.8159
+
+  📍 STHLM Sauna Vinterviken
+     Region: Nordics | Type: sauna | Coords: 59.3100, 17.9827
+     https://www.sthlmsauna.se/
+
+  📍 Sæbø fjordsauna
+     Region: Nordics | Type: sauna | Coords: 62.2093, 6.4775
+
+  📍 Zen Spa
+     Region: Nordics | Type: sauna | Coords: 64.1348, 28.2716
+     https://majoitus.vuokatinaateli.fi/zen-spa/
+
+  📍 Marine Sauna
+     Region: Nordics | Type: sauna | Coords: 61.1315, 21.4564
+
+  📍 Huvilasauna
+     Region: Nordics | Type: sauna | Coords: 60.9167, 26.3863
+
+  📍 Rantasauna
+     Region: Nordics | Type: sauna | Coords: 60.9175, 26.3860
+
+  📍 Kotasauna
+     Region: Nordics | Type: sauna | Coords: 60.9167, 26.3866
+
+  📍 Lake escape Sauna
+     Region: Nordics | Type: sauna | Coords: 61.5243, 24.5383
+     https://kesapaiva.fi
+
+  📍 Yläsauna
+     Region: Nordics | Type: sauna | Coords: 60.5021, 24.6460
+
+  📍 Solun sauna
+     Region: Nordics | Type: sauna | Coords: 61.5038, 23.8060
+
+  📍 Urbansauna Kallio
+     Region: Nordics | Type: sauna | Coords: 60.1889, 24.9550
+     https://urbansauna.fi/
+
+  📍 Skjærgården Sauna
+     Region: Nordics | Type: sauna | Coords: 59.0249, 9.7344
+     https://salensauna.no
+
+  📍 Granviks Bastu
+     Region: Nordics | Type: sauna | Coords: 58.6305, 14.5480
+
+  📍 Räikän sauna
+     Region: Nordics | Type: sauna | Coords: 61.5573, 23.6001
+
+  📍 Bastu BRF Doppingen
+     Region: Nordics | Type: sauna | Coords: 58.8986, 17.9273
+
+  📍 Badstove Oppsjø vasspark
+     Region: Nordics | Type: sauna | Coords: 60.6336, 8.5761
+
+  📍 Seilorin sauna
+     Region: Nordics | Type: sauna | Coords: 62.5914, 29.7388
+
+  📍 Torpön bastu
+     Region: Nordics | Type: sauna | Coords: 58.0259, 15.0865
+
+  📍 Sjøbadet
+     Region: Nordics | Type: sauna | Coords: 59.2681, 10.4032
+     https://sjobadet.com/
+
+  📍 Reidun kyläsauna
+     Region: Nordics | Type: sauna | Coords: 61.0284, 21.3489
+
+  📍 Kasnäs sauna
+     Region: Nordics | Type: sauna | Coords: 59.9214, 22.4095
+
+  📍 Sauna
+     Region: Nordics | Type: sauna | Coords: 59.9143, 23.5247
+
+  📍 Kambja saun
+     Region: Nordics | Type: sauna | Coords: 58.2333, 26.7018
+
+  📍 Баня у Петровича
+     Region: Nordics | Type: sauna | Coords: 55.2205, 30.2979
+
+  📍 Sauna Henki
+     Region: Nordics | Type: sauna | Coords: 62.0639, 27.7122
+
+  📍 Tervajärven sauna
+     Region: Nordics | Type: sauna | Coords: 61.3634, 23.8940
+
+  📍 Koskenselän pieni sauna
+     Region: Nordics | Type: sauna | Coords: 61.5391, 28.1583
+
+  📍 Koskenselän iso sauna
+     Region: Nordics | Type: sauna | Coords: 61.5390, 28.1583
+
+  📍 Koskenselän puusauna
+     Region: Nordics | Type: sauna | Coords: 61.5383, 28.1595
+
+  📍 Varmr Sauna
+     Region: Nordics | Type: sauna | Coords: 59.2380, 10.4561
+     https://www.varmrsauna.com/
+
+  📍 Tenniön pirtti
+     Region: Nordics | Type: sauna | Coords: 67.1559, 28.4072
+
+  📍 Riutukka
+     Region: Nordics | Type: sauna | Coords: 66.5740, 28.1957
+
+  📍 Alatammin tupa & sauna
+     Region: Nordics | Type: sauna | Coords: 67.2934, 28.6126
+
+  📍 Tarkkalan Erämaatila
+     Region: Nordics | Type: sauna | Coords: 67.4185, 27.7955
+     https://korvatunturi.fi/naejakoe-artikkeli/tarkkalan-eramaatila/
+
+  📍 Kommatin rantasauna
+     Region: Nordics | Type: sauna | Coords: 67.4339, 26.7017
+
+  📍 Kivjären Rantasauna
+     Region: Nordics | Type: sauna | Coords: 60.7296, 21.8214
+
+  📍 Wild sauna Gudvangen
+     Region: Nordics | Type: sauna | Coords: 60.9185, 6.8696
+     https://www.gibbs.no/en/listing/wild-sauna-gudvangen/
+
+  📍 Tønna
+     Region: Nordics | Type: sauna | Coords: 60.4979, 8.0421
+     https://www.vinternatt.no/badstue/
+
+  📍 Aalborg Heat
+     Region: Nordics | Type: sauna | Coords: 57.0490, 9.9414
+     https://aalborgheat.dk/
+
+  📍 Villa Järvelä
+     Region: Nordics | Type: sauna | Coords: 60.4585, 22.3892
+     https://www.jarvela.fi/
+
+  📍 Kangasalan Areenan saunatila
+     Region: Nordics | Type: sauna | Coords: 61.4640, 24.0488
+
+  📍 К-33
+     Region: Nordics | Type: sauna | Coords: 59.9857, 30.3510
+     https://bestpar.ru
+
+  📍 Gudvangen Sauna
+     Region: Nordics | Type: sauna | Coords: 60.8812, 6.8425
+     https://www.gibbs.no/listing/wild-sauna-gudvangen/
+
+  📍 Damp Sauna
+     Region: Nordics | Type: sauna | Coords: 58.9718, 5.7505
+     https://www.dampsauna.no
+
+  📍 Matkoslampi
+     Region: Nordics | Type: sauna | Coords: 61.2902, 26.8442
+     https://www.mantyharju.fi/sivut/asuminen-ymparisto/mjuinfo/mantyharju-in-english/nature-activities/shelters-and-fireplaces/
+
+  📍 Roa Molde Fjordhotell
+     Region: Nordics | Type: sauna | Coords: 62.7338, 7.1522
+     https://www.roabadstue.no/
+
+  📍 Gay Sauna Con Hombres
+     Region: Nordics | Type: sauna | Coords: 60.1673, 24.9637
+     https://www.conhombres.com/fi/
+
+  📍 Eemelin sauna
+     Region: Nordics | Type: sauna | Coords: 60.9015, 26.7732
+     https://eemelinsauna.fi/
+
+  📍 Баня в Вистино
+     Region: Nordics | Type: sauna | Coords: 59.7792, 28.4814
+
+  📍 Ossinsauna
+     Region: Nordics | Type: sauna | Coords: 60.1885, 24.8352
+
+  📍 OK20
+     Region: Nordics | Type: sauna | Coords: 60.1869, 24.8338
+
+  📍 Otaranta Rooftop Sauna
+     Region: Nordics | Type: sauna | Coords: 60.1864, 24.8370
+     https://www.ayy.fi/en/otaranta-rooftop-sauna
+
+  📍 Банный комплекс Taiga
+     Region: Nordics | Type: sauna | Coords: 60.0190, 30.2807
+
+  📍 KOK Aker Brygge
+     Region: Nordics | Type: sauna | Coords: 59.9092, 10.7269
+
+  📍 Social Sauna
+     Region: Nordics | Type: sauna | Coords: 54.9973, 11.8909
+
+  📍 Lapland Winter Park
+     Region: Nordics | Type: sauna | Coords: 66.5611, 25.6102
+
+  📍 Fjordtokt Båt & Badstu
+     Region: Nordics | Type: sauna | Coords: 59.9112, 10.6457
+     https://fjordtokt.no/
+
+  📍 Fjordbastun
+     Region: Nordics | Type: sauna | Coords: 58.3410, 11.9064
+     https://kallbadare.bokamera.se/
+
+  📍 Saunamaailma
+     Region: Nordics | Type: sauna | Coords: 68.5506, 24.0541
+
+  📍 АкваСоль
+     Region: Nordics | Type: sauna | Coords: 59.9019, 30.3076
+
+  📍 СПА - комплекс
+     Region: Nordics | Type: sauna | Coords: 60.3070, 29.1338
+
+  📍 ПроПар
+     Region: Nordics | Type: sauna | Coords: 59.7881, 29.9235
+
+  📍 Sorsasalon sauna
+     Region: Nordics | Type: sauna | Coords: 62.9550, 27.6840
+     https://www.kuopiontalviuimarit.com/sorsasalo/
+
+  📍 Sauna X
+     Region: Nordics | Type: sauna | Coords: 60.4612, 22.1177
+
+  📍 Skanderborg Vinterbadeklub
+     Region: Nordics | Type: sauna | Coords: 56.0286, 9.9574
+     https://sviba.dk/
+
+  📍 Kur Sauna Fredrikstad - FMV Vest
+     Region: Nordics | Type: sauna | Coords: 59.2114, 10.9194
+     https://www.kursauna.no/sauna-fredrikstad/
+
+  📍 Баня на дровах
+     Region: Nordics | Type: sauna | Coords: 59.6843, 29.6336
+
+  📍 Oppkok
+     Region: Nordics | Type: sauna | Coords: 59.7307, 10.2306
+     https://www.oppkokbadstue.no/
+
+  📍 Isbjörnarnas bastuförening
+     Region: Nordics | Type: sauna | Coords: 59.3486, 17.8586
+     https://www.isbjornarnabromma.se/
+
+  📍 Mosskur Bastue
+     Region: Nordics | Type: sauna | Coords: 59.4357, 10.6505
+     https://www.mosskurbadstue.no/
+
+  📍 Saunalautta
+     Region: Nordics | Type: sauna | Coords: 64.2224, 27.7461
+
+  📍 Rantasauna Elias
+     Region: Nordics | Type: sauna | Coords: 64.2239, 27.7529
+
+  📍 Viikinhovi
+     Region: Nordics | Type: sauna | Coords: 62.2246, 24.6685
+
+  📍 Kauppahuoneen sauna
+     Region: Nordics | Type: sauna | Coords: 60.4525, 22.2512
+     www.kokoustila.fi/kokoustilat/kauppahuoneen-kabinetti
+
+  📍 Panoraamasauna
+     Region: Nordics | Type: sauna | Coords: 67.5286, 24.1285
+     https://www.ronola.fi/
+
+  📍 Lårdal Sauna
+     Region: Nordics | Type: sauna | Coords: 59.4234, 8.1862
+
+  📍 NORDRE JARLSBERG BADSTUE
+     Region: Nordics | Type: sauna | Coords: 59.5624, 10.2663
+     https://www.nordrejarlsbergbadstue.no/
+
+  📍 Hot’n’Cold Nordhavn
+     Region: Nordics | Type: sauna | Coords: 55.7126, 12.5904
+     https://hotncoldnordhavn.dk/
+
+  📍 Pereensaaren Private
+     Region: Nordics | Type: sauna | Coords: 61.4818, 23.7035
+     https://pereensaarenprivate.fi/
+
+  📍 Blaud.no
+     Region: Nordics | Type: sauna | Coords: 58.1412, 8.0002
+
+  📍 Analog Sauna
+     Region: Nordics | Type: sauna | Coords: 55.7185, 12.5980
+     https://analogsauna.dk/
+
+  📍 Badehuset
+     Region: Nordics | Type: sauna | Coords: 55.6737, 12.6021
+     https://www.christiania.org/find/badehuset/
+
+  📍 Reipin sauna
+     Region: Nordics | Type: sauna | Coords: 61.4478, 23.5512
+
+  📍 Marionette
+     Region: Nordics | Type: sauna | Coords: 55.9301, 23.3298
+     https://marionette.lt
+
+  📍 Mimino Baar
+     Region: Nordics | Type: sauna | Coords: 59.4326, 24.7214
+
+  📍 Mustikkavuoren sauna
+     Region: Nordics | Type: sauna | Coords: 62.5538, 24.0478
+
+  📍 Pasilan Saunatilat
+     Region: Nordics | Type: sauna | Coords: 60.1971, 24.9280
+     https://pasilansaunatilat.fi/
+
+  📍 Африка
+     Region: Nordics | Type: sauna | Coords: 59.9180, 30.2785
+
+  📍 Русские бани на дровах
+     Region: Nordics | Type: sauna | Coords: 59.8151, 30.1795
+
+  📍 Landskrona Kallbadhus
+     Region: Nordics | Type: sauna | Coords: 55.8691, 12.8138
+     https://www.landskrona.se/uppleva-och-gora/idrott-motion-och-friluftsliv/badhus-och-friluftsbad/nytt-kallbadhus/
+
+  📍 Пар студия № 1
+     Region: Nordics | Type: sauna | Coords: 60.0584, 30.4340
+     https://%D0%9F%D0%B0%D1%80%D1%81%D1%82%D1%83%D0%B4%D0%B8%D1%8F.%D1%80%D1%84
+
+  📍 Rauhasauna
+     Region: Nordics | Type: sauna | Coords: 61.4915, 21.7891
+     https://rauhasauna.fi/
+
+  📍 Heretty sauna
+     Region: Nordics | Type: sauna | Coords: 61.6743, 25.0011
+
+  📍 Heit Ølen Sauna
+     Region: Nordics | Type: sauna | Coords: 59.6066, 5.8113
+     https://heitølen.no
+
+  📍 Sickla bastun
+     Region: Nordics | Type: sauna | Coords: 59.3022, 18.1210
+
+  📍 Loimu Resort
+     Region: Nordics | Type: sauna | Coords: 67.5246, 24.3094
+     https://loimuresort.fi/
+
+  📍 Hämpin Kattosauna
+     Region: Nordics | Type: sauna | Coords: 61.4980, 23.7579
+     https://kattosauna.fi/
+
+  📍 Sjøbadet
+     Region: Nordics | Type: sauna | Coords: 59.2269, 10.4457
+     https://sjobadet.com
+
+  📍 Купель
+     Region: Nordics | Type: sauna | Coords: 59.7428, 30.6175
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 59.7016, 29.9479
+     https://vk.link/rvbany
+
+  📍 Åpromenadens Sauna
+     Region: Nordics | Type: sauna | Coords: 56.3712, 9.6546
+     https://aapromenaden.dk/
+
+  📍 BadStua Sauna (110 in Dez. 2025)
+     Region: Nordics | Type: sauna | Coords: 59.6756, 9.6381
+     https://www.kongsberg.kommune.no/badstua
+
+  📍 Grip Skyline
+     Region: Nordics | Type: sauna | Coords: 61.4767, 23.7839
+     https://gripskyline.fi/
+
+  📍 Passebekkdammen
+     Region: Nordics | Type: sauna | Coords: 59.5130, 9.8295
+
+  📍 Skjulstabastun
+     Region: Nordics | Type: sauna | Coords: 59.3397, 16.4885
+     https://www.skjulstabastun.se
+
+  📍 Roiske
+     Region: Nordics | Type: sauna | Coords: 66.5203, 25.7437
+
+  📍 Gröndal Sauna
+     Region: Nordics | Type: sauna | Coords: 59.3164, 18.0164
+     https://grondalsauna.se/
+
+  📍 Kolin Satamatuvan vuokrasauna
+     Region: Nordics | Type: sauna | Coords: 63.1114, 29.8088
+     https://kolinsatamatupa.fi/
+
+  📍 Lampilan saunamaailma
+     Region: Nordics | Type: sauna | Coords: 62.2618, 25.6906
+     https://saunalampila.fi/pages/saunamaailma
+
+  📍 Löylykontti Tuira
+     Region: Nordics | Type: sauna | Coords: 65.0228, 25.4887
+
+  📍 Laugaren
+     Region: Nordics | Type: sauna | Coords: 60.3951, 5.3098
+     https://www.laugaren.no/
+
+  📍 Para - Towarzystwo Saunowe
+     Region: Nordics | Type: sauna | Coords: 54.5026, 18.5583
+     https://saunapara.pl/
+
+  📍 Fotö Bastu
+     Region: Nordics | Type: sauna | Coords: 57.6665, 11.6538
+
+  📍 Holm8
+     Region: Nordics | Type: sauna | Coords: 55.7168, 12.5940
+     https://www.holm8.dk/
+
+  📍 Kotiseutuyhdistyksen Rantasauna
+     Region: Nordics | Type: sauna | Coords: 66.4796, 25.7401
+     https://www.totto.fi/palvelut/saunaa-vuokrataan-2/
+
+  📍 Баня
+     Region: Nordics | Type: sauna | Coords: 59.6173, 30.0451
+
+  📍 Kallbad
+     Region: Nordics | Type: sauna | Coords: 63.8262, 20.2252
+     https://www.umeakallbad.se
+
+  📍 Teivaan Hehku
+     Region: Nordics | Type: sauna | Coords: 60.9885, 25.6406
+     https://teivaanhehku.fi/
+
+  📍 Шаргора
+     Region: Nordics | Type: sauna | Coords: 57.0424, 28.8618
+     https://shargora.ru/
+
+  📍 Gloheit
+     Region: Nordics | Type: sauna | Coords: 66.0241, 12.6297
+     https://helgelandbadstuforening.no/
+
+  📍 Korven Kutsu Pullosauna
+     Region: Nordics | Type: sauna | Coords: 62.0455, 28.8794
+     https://karvilanpanimo.fi/korven-kutsu-pullosauna/
+
+  📍 Salt og Sauna
+     Region: Nordics | Type: sauna | Coords: 55.5520, 9.7287
+     https://saltogsauna.dk
+
+  📍 Mansikka
+     Region: Nordics | Type: sauna | Coords: 60.1808, 24.9992
+
+  📍 Белый медведь
+     Region: Nordics | Type: sauna | Coords: 60.0275, 30.3126
+     https://www.bearwhite.ru/
+
+  📍 MiK-Bastun
+     Region: Nordics | Type: sauna | Coords: 57.7081, 12.0456
+
+  📍 Horisontti sauna
+     Region: Nordics | Type: sauna | Coords: 70.0721, 29.7801
+     https://horisontti.no/
+
+  📍 Oppeby Björkfors Bastu
+     Region: Nordics | Type: sauna | Coords: 58.0170, 15.9086
+
+  📍 Sagfjorden Lodge Havbadstue
+     Region: Nordics | Type: sauna | Coords: 68.8753, 17.8304
+
+  📍 Tilaussauna Siera Nevada
+     Region: Nordics | Type: sauna | Coords: 60.1857, 24.6111
+     https://ravintolakoivunoksa.com/
+
+  📍 Valtuustotalon edustussauna
+     Region: Nordics | Type: sauna | Coords: 60.2071, 24.6561
+
+  📍 Fauna Sauna
+     Region: Nordics | Type: sauna | Coords: 67.2800, 14.3667
+     https://www.nnbadstuforening.no/
+
+  📍 Yhteiskerhotila Talas, sauna
+     Region: Nordics | Type: sauna | Coords: 60.1841, 24.9753
+     https://fisuverkko.fi/yhteiskerhotilat/
+
+  📍 Бор 812
+     Region: Nordics | Type: sauna | Coords: 60.1508, 29.9276
+     https://borclub.ru/
+
+  📍 Stu
+     Region: Nordics | Type: sauna | Coords: 63.4392, 10.4003
+     https://stu.no/
+
+── GOOGLE PLACES ────────────────────────────────────────────────
+  Skipped — set GOOGLE_PLACES_API_KEY in scripts/.env to enable.
+
+Report generated: 2026-06-14T09:54:06.114Z
