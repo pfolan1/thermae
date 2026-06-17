@@ -240,7 +240,7 @@ export const VENUES: Venue[] = [
     parking:"Free at Renville Pier",
     desc:"Hand-built Finnish sauna at Renville Pier on the Wild Atlantic Way. Plunge into the Atlantic or a cold barrel.",
     lat:53.2436, lng:-8.9677,
-    bookingUrl:"https://saunafiain.ie"
+    bookingUrl:"https://saunafiain.com"
   },
 
   // ── CORK ──
@@ -545,7 +545,8 @@ export const VENUES: Venue[] = [
     transport:"Shoreditch High Street (Overground) · 3 min walk",
     parking:"NCP Shoreditch nearby",
     desc:"Brand new for 2025. 40-person sauna inside a former Victorian textile warehouse on Cheshire Street. Plant-based dining, alcohol-free cocktails, breathwork, sound healing and supper clubs. London's most immersive wellness members club.",
-    lat:51.5234, lng:-0.0741
+    lat:51.5234, lng:-0.0741,
+    bookingUrl:"https://andsoul.com/locations/shoreditch/the-sanctuary"
   },
   {
     id:46, city:"London", country:"UK", name:"Revitalise Urban Spa", area:"Hackney",
@@ -617,7 +618,8 @@ export const VENUES: Venue[] = [
     transport:"Clontarf Road (DART) · 5 min walk",
     parking:"Street parking Clontarf",
     desc:"Peaceful sauna in Clontarf East with ice baths and a serene atmosphere. Excellent staff and a welcoming community feel. One of Dublin's most highly rated neighbourhood saunas.",
-    lat:53.3658, lng:-6.2109
+    lat:53.3658, lng:-6.2109,
+    bookingUrl:"https://fadsaoilsaunas.com"
   },
   {
     id:52, city:"Dublin", country:"Ireland", name:"The Hot Box Sauna Inchicore", area:"Inchicore",
@@ -652,7 +654,8 @@ export const VENUES: Venue[] = [
     transport:"Dublin City Centre · various buses and Luas",
     parking:"City centre parking",
     desc:"Handmade bespoke wood-fired sauna with chilled and filtered cold plunge. A clean, thoughtfully designed urban wellness space.",
-    lat:53.3398, lng:-6.2591
+    lat:53.3398, lng:-6.2591,
+    bookingUrl:"https://spirsaunas.ie"
   },
   {
     id:55, city:"Dublin", country:"Ireland", name:"Saunos at Wanderers FC", area:"Ballsbridge, Dublin 4",
@@ -701,7 +704,8 @@ export const VENUES: Venue[] = [
     transport:"Bus to Marina / Cork City buses · 5 min walk",
     parking:"Marina Market car park nearby",
     desc:"Wood-burning sauna in the heart of Cork City, directly opposite the Marina Market. One sauna, two ice baths with chilled filtered water, two cold showers and changing rooms. A proper, no-fuss Cork contrast therapy experience.",
-    lat:51.8974, lng:-8.4578
+    lat:51.8974, lng:-8.4578,
+    bookingUrl:"https://www.facebook.com/people/WildWood-Sauna/61558173500894/"
   },
   {
     id:59, city:"Cork", country:"Ireland", name:"The Cosy Sauna Kinsale", area:"Kinsale",
@@ -724,7 +728,8 @@ export const VENUES: Venue[] = [
     transport:"Drive — 30 min east of Cork City via N25",
     parking:"On-site at the farm",
     desc:"Outdoor retreat in the East Cork countryside. Wood-fired sauna powered by timber from a 20-acre ash forest. Cold plunge pool fed by spring water from the Dower River. Coffee and herbal tea in the relaxation area after. Genuinely hidden and genuinely magical.",
-    lat:51.9069, lng:-8.0658
+    lat:51.9069, lng:-8.0658,
+    bookingUrl:"https://thehiddensaunacork.ie"
   },
 
   // ── LONDON (NEW ADDITIONS) ──
@@ -928,7 +933,7 @@ export const VENUES: Venue[] = [
     parking:"Crown Entry car park",
     desc:"The Bullitt Hotel's subterranean wellness floor is Belfast's most stylish contrast therapy offering. Finnish sauna, cold plunge pool and ice bath in a beautifully designed industrial-chic space under one of the Cathedral Quarter's most popular hotels. Bookable by non-guests — a genuine Belfast hidden gem.",
     lat:54.5987, lng:-5.9300,
-    bookingUrl:"https://www.bullitthotel.com/wellness"
+    bookingUrl:"https://bullitthotel.com"
   },
   {
     id:78, city:"Belfast", country:"UK", name:"Andras House Sauna & Spa", area:"City Centre",
@@ -940,7 +945,7 @@ export const VENUES: Venue[] = [
     parking:"Great Northern Mall car park",
     desc:"A long-established Belfast spa institution near the Europa Hotel, offering sauna, steam room and wet spa facilities at genuinely accessible prices. Not the flashiest venue in town but consistently well-reviewed for value, cleanliness and the friendly no-nonsense Belfast welcome.",
     lat:54.5952, lng:-5.9363,
-    bookingUrl:"https://www.andrashouse.co.uk/spa"
+    bookingUrl:"https://www.andrashouse.co.uk"
   },
   {
     id:79, city:"Belfast", country:"UK", name:"Titanic Quarter Sauna", area:"Titanic Quarter",
@@ -1004,7 +1009,7 @@ export const VENUES: Venue[] = [
     parking:"Red Dragon Centre car park",
     desc:"Perched on the waterfront at Cardiff Bay with views across the barrage and Bristol Channel, St David's Spa is Wales's finest thermal spa experience. A full thermal suite — sauna, steam rooms, ice fountain, hydrotherapy pool, plunge pool — in a striking glass-fronted building beside the five-star St David's Hotel. The Bay setting makes every session feel like a mini-break.",
     lat:51.4638, lng:-3.1624,
-    bookingUrl:"https://www.stdavidshotel.com/spa"
+    bookingUrl:"https://stdavids.vocohotels.com/spa/"
   },
   {
     id:84, city:"Cardiff", country:"UK", name:"Pontcanna Sauna Club", area:"Pontcanna",
@@ -1184,7 +1189,7 @@ export const VENUES: Venue[] = [
     parking:"Free on-site parking at Strandhill beach",
     desc:"The original Irish seaweed bath experience on the shores of Strandhill beach with views of Knocknarea. Voya's certified organic seaweed is harvested from the North Atlantic and packed into private wooden bathing boxes fed with heated sea water. An ancient Irish wellness tradition, now with a proper modern bathhouse. Unforgettable — especially in a winter Atlantic storm.",
     lat:54.2693, lng:-8.5994,
-    bookingUrl:"https://www.voya.ie/seaweed-baths"
+    bookingUrl:"https://voyaseaweedbaths.com"
   },
 
   // ── KERRY ──
@@ -1198,7 +1203,7 @@ export const VENUES: Venue[] = [
     parking:"Free on-site at Portmagee pier",
     desc:"A wood-fired sauna barrel perched above the Atlantic at Portmagee, looking out towards the Skellig Islands. One of Ireland's most dramatically situated sauna experiences — the contrast between the 90°C cedar heat and the wild Atlantic below is extraordinary. Book via Airbnb Experiences; slots fill weeks ahead in summer.",
     lat:51.8847, lng:-10.2993,
-    bookingUrl:"https://www.airbnb.com/experiences/skellig-sauna"
+    bookingUrl:"https://www.skelligsauna.ie"
   },
   {
     id:99, city:"Kerry", country:"Ireland", name:"Killarney Thermal Spa", area:"Killarney",
@@ -1865,7 +1870,8 @@ export const VENUES: Venue[] = [
     transport:"Drive — 25 min from Galway city",
     parking:"On-site parking",
     desc:"Started by a couple who spent time in Scandinavia, bringing authentic sauna culture to the West of Ireland. Traditional Finnish touches including leaf whisks. Full Moon Sauna events with fire pit, cocoa and marshmallows by the beach. A truly special experience outside Galway.",
-    lat:53.2444, lng:-9.3099
+    lat:53.2444, lng:-9.3099,
+    bookingUrl:"https://driftwoodsauna.ie"
   },
 
   // ── ICELAND / REYKJAVIK ──
@@ -1903,7 +1909,7 @@ export const VENUES: Venue[] = [
     parking:"Free on-site car park",
     desc:"Reykjavik's largest swimming pool and a true slice of Icelandic everyday life. Features outdoor geothermal pools, multiple hot pots at 38–44°C, a Finnish sauna, steam room, waterslide, and year-round outdoor swimming. Beloved by locals and the most affordable geothermal bathing in Reykjavik.",
     lat:64.132, lng:-21.877,
-    bookingUrl:"https://www.reykjavik.is/stadir/laugardalslaugin"
+    bookingUrl:"https://laugardalslaugin.is"
   },
   {
     id:150, city:"Reykjavik", country:"Iceland", name:"Secret Lagoon", area:"Flúðir / South Iceland",
@@ -1943,7 +1949,7 @@ export const VENUES: Venue[] = [
     parking:"Aarhus Ø car park · 2 min",
     desc:"Aarhus' vibrant harbor bath and wellness facility on the new Aarhus Ø island development. Features a large outdoor seawater pool, diving platforms, children's pool, and a year-round sauna with sea views. A much-loved public space that captures Aarhus' modern Nordic identity perfectly.",
     lat:56.156, lng:10.230,
-    bookingUrl:"https://www.aarhus.dk/borger/sport-og-fritid/svoemning/aarhus-o-harbor-baths/"
+    bookingUrl:"https://international.aarhus.dk/live/nature-playgrounds-and-fitness-outside/beaches-forests-and-other-beautiful-natural-areas/the-harbour-bath"
   },
   {
     id:152, city:"Aarhus", country:"Denmark", name:"Broens Sauna", area:"Aarhus River / City Centre",
@@ -2080,7 +2086,8 @@ export const VENUES: Venue[] = [
     transport:"Drive — 45 min from Tralee · 30 min from Listowel",
     parking:"Ladies Beach car park",
     desc:"A true Kerry institution. Established in 1932 on the Ladies Strand in Ballybunion, Collins's offers private heated baths packed with fresh Atlantic seaweed — one of only four remaining authentic seaweed bathhouses in Ireland. Three generations of the Collins family and almost 100 years of tradition. Walk-ins welcome.",
-    lat:52.5118, lng:-9.6871
+    lat:52.5118, lng:-9.6871,
+    bookingUrl:"https://www.facebook.com/p/Collinss-Seaweed-Baths-Ballybunion-Co-Kerry-100068617793165/"
   },
   {
     id:164, city:"Galway", country:"Ireland", name:"Oileánra Seaweed Baths & Sauna", area:"Lettermullen / Leitir Mealláin",
@@ -2119,7 +2126,8 @@ export const VENUES: Venue[] = [
     transport:"Drive — 20 min north of Galway city",
     parking:"On-site at Annaghdown Pier",
     desc:"A wood-fired mobile sauna beside Annaghdown Pier on the shores of Lough Corrib, Ireland's second-largest lake. Built and run by Eoin with a focus on wellness and community. A deeply peaceful setting — cold plunges in the fresh lough water, birdsong, and the wide Corrib shoreline. A hidden gem 20 minutes from Galway city.",
-    lat:53.4153, lng:-9.0847
+    lat:53.4153, lng:-9.0847,
+    bookingUrl:"https://www.instagram.com/follainesauna/"
   },
   {
     id:167, city:"Galway", country:"Ireland", name:"Oak Smoke Sauna", area:"Kylebrack / Loughrea",
@@ -2154,7 +2162,7 @@ export const VENUES: Venue[] = [
     transport:"Drive — 1.5 hrs from Galway city via N59 through Clifden",
     parking:"On-site at Gurteen Pier, Tully, Renvyle",
     desc:"An ecological wood-fired outdoor sauna at Gurteen Pier in Renvyle, deep in the Connemara wilderness with the Twelve Bens as a backdrop. Atlantic Ocean plunging directly from the pier, temperatures from 70–110°C. Also operates in Wexford. One of Ireland's most wild and remote sauna experiences — truly living up to the brand name.",
-    lat:53.5831, lng:-9.9917,
+    lat:53.6023, lng:-9.9733,
     bookingUrl:"https://www.sweathouse.ie"
   },
 
@@ -2588,14 +2596,14 @@ export const VENUES: Venue[] = [
   {
     id:204, city:"Kildare", country:"Ireland", name:"An Chill Sauna", area:"Kill, Co. Kildare",
     type:"both", price:"Check website for current pricing", rating:4.9, reviews:39,
-    hours:"Check website for current hours",
-    temp:"Cold plunge", tags:["Cold Plunge","Wood-fired","Countryside"], emoji:"🔥🧊", open:true,
+    hours:"Temporarily closed — owners exploring sale/reopening",
+    temp:"Cold plunge", tags:["Cold Plunge","Wood-fired","Countryside"], emoji:"🔥🧊", open:false,
     hygiene:"A", lockerNote:"No lockers — bring a dry bag",
     transport:"Drive — Kill village, Co. Kildare · off M7",
     parking:"On-site",
     desc:"Intimate wood-fired sauna and cold plunge in Kill, Co. Kildare. Capacity of 8 for a personal, unhurried experience. Conveniently located just off the M7 motorway.",
     lat:53.2545, lng:-6.5929,
-    bookingUrl:"http://www.anchillsauna.ie/book-now"
+    bookingUrl:"https://www.anchillsauna.ie"
   },
   {
     id:205, city:"Kildare", country:"Ireland", name:"Treehouse Sauna", area:"Osberstown, Naas",
@@ -2661,7 +2669,7 @@ export const VENUES: Venue[] = [
     parking:"Free at the marina",
     desc:"Traditional sauna and cold water immersion at Banagher Marina on the River Shannon. A compact, community-focused venue with barrel cold plunge and stunning river views. Perfect after a walk or cycle along the Shannon.",
     lat:53.1952, lng:-7.9861,
-    bookingUrl:"https://calendly.com/banaghersauna"
+    bookingUrl:"https://www.instagram.com/banagher_sauna/"
   },
 
   // ── ROSCOMMON ──
@@ -3425,7 +3433,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park at retail park",
     desc:"Bannatyne Health Club Holywood at Kinnegar Retail Park — a premium health club with sauna, steam room, jacuzzi and 20-metre swimming pool. Day passes available for non-members. Conveniently close to Holywood town centre and train station on the Belfast–Bangor line. A polished mid-range spa and gym option on the north side of Belfast Lough.",
     lat:54.623856, lng:-5.851131,
-    bookingUrl:"https://www.bannatyne.co.uk/health-club/holywood"
+    bookingUrl:"https://www.bannatyne.co.uk/health-club/belfast"
   },
   {
     id:271, city:"Bangor", country:"Northern Ireland", name:"Sudor Club 24",
@@ -3518,7 +3526,7 @@ export const VENUES: Venue[] = [
     parking:"Newborough forest car park",
     desc:"Sawna Bach (Little Sauna) on the Isle of Anglesey near Newborough — a compact, beautiful wood-fired sauna in the dunes near Newborough Warren National Nature Reserve and Llanddwyn Island. Views of Snowdonia across the Menai Strait. A deeply peaceful Welsh island sauna experience in a protected coastal landscape.",
     lat:53.21898, lng:-4.500014,
-    bookingUrl:"https://sawnabach.co.uk/"
+    bookingUrl:"https://saunawales.co.uk"
   },
   {
     id:278, city:"Beaumaris", country:"Wales", name:"Cedar Hut Sauna Penmon",
@@ -3544,7 +3552,7 @@ export const VENUES: Venue[] = [
     parking:"Village car parks in Llanberis",
     desc:"Sawna Bach in Llanberis at the gateway to Snowdon — a wood-fired outdoor sauna in the heart of Eryri (Snowdonia National Park) with views of Llyn Padarn lake and the Snowdon massif. Perfect for walkers after a Snowdon summit, or anyone seeking mountain-and-lake sauna serenity in one of Wales's finest landscapes.",
     lat:53.120604, lng:-4.115282,
-    bookingUrl:"https://sawnabach.co.uk/"
+    bookingUrl:"https://saunawales.co.uk"
   },
   {
     id:280, city:"Beaumaris", country:"Wales", name:"Seacoast Sauna Beaumaris",
@@ -3583,7 +3591,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park at Surf Snowdonia",
     desc:"Wave Garden Spa at Surf Snowdonia in the Conwy Valley — a premium spa facility attached to the world's first inland surf lagoon. Features sauna, steam room, hot tubs and thermal suite with views of surrounding Snowdonia mountains. Combine a surf session on the wave machine with full spa facilities. Ideal for groups, couples and surf-and-wellness days.",
     lat:53.191172, lng:-3.842558,
-    bookingUrl:"https://www.surfsnowdonia.co.uk/spa"
+    bookingUrl:"https://www.wavegardenspa.com"
   },
   {
     id:283, city:"Aberystwyth", country:"Wales", name:"ABERPOETH Sauna",
@@ -3728,7 +3736,7 @@ export const VENUES: Venue[] = [
     parking:"Car park on site",
     desc:"Village Gym Swansea on Langdon Road near the city centre — a premium health club with sauna, steam room, 20-metre swimming pool and spa facilities. Day passes available for non-members. One of Swansea's best mid-to-premium gym and spa options, within walking distance of the waterfront.",
     lat:51.620582, lng:-3.924568,
-    bookingUrl:"https://www.villagegym.co.uk/clubs/swansea/"
+    bookingUrl:"https://www.villagegym.co.uk/locations/swansea/"
   },
   {
     id:294, city:"Merthyr Tydfil", country:"Wales", name:"The Old Drift Wellness",
@@ -3943,7 +3951,7 @@ export const VENUES: Venue[] = [
     parking:"On-street parking on McCulloch Street",
     desc:"Scotland's first queer-led, not-for-profit community sauna, nestled in the back corner of Bowling Green Together in Pollokshields. A 90°C sauna in a remodelled horsebox with spacious reclaimed-wood changing rooms, cold shower and ice-cold plunge pools. 75 minutes for just £10, £7 concession. One of Glasgow's most welcoming and affordable sauna experiences.",
     lat:55.84443, lng:-4.270127,
-    bookingUrl:"https://www.glasgowcommunitysauna.co.uk/bookings"
+    bookingUrl:"https://www.glasgowcommunitysauna.co.uk/book-now"
   },
   {
     id:311, city:"Glasgow", country:"Scotland", name:"Soul Suites Glasgow", area:"Bridgeton / East End",
@@ -4287,7 +4295,7 @@ export const VENUES: Venue[] = [
     parking:"NCP Great Northern · Britannia car park",
     desc:"JD Gyms Manchester City Centre at Bridgewater House on Whitworth Street — a large budget gym with steam room and dry sauna facilities. Day passes available, no long-term contract required. Well-located between Piccadilly and Deansgate.",
     lat:53.4752, lng:-2.240162,
-    bookingUrl:"https://www.jdgyms.co.uk/gyms/manchester-city-centre"
+    bookingUrl:"https://www.jdgyms.co.uk/gym/manchester/"
   },
   {
     id:339, city:"Manchester", country:"England", name:"Nuffield Health Manchester Printworks", area:"City Centre / Printworks",
@@ -4347,7 +4355,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park on site",
     desc:"Salford Community Leisure Broughton Hub on Great Cheetham Street West — community leisure centre with swimming pool, sauna and steam room. Run by Salford Community Leisure trust. Affordable day passes and monthly memberships.",
     lat:53.501387, lng:-2.260209,
-    bookingUrl:"https://www.salfordcommunityleisure.co.uk/broughton-hub"
+    bookingUrl:"https://salfordcommunityleisure.co.uk/location/broughton-leisure-centre/"
   },
   {
     id:344, city:"Manchester", country:"England", name:"Better Abraham Moss Leisure Centre", area:"Crumpsall / Cheetham Hill",
@@ -4395,7 +4403,7 @@ export const VENUES: Venue[] = [
     parking:"Car park on site",
     desc:"Better Arcadia Leisure Centre on Stockport Road, Levenshulme — community leisure centre in south-east Manchester operated by GLL. Pool, sauna and steam room. Easy access from Levenshulme rail station.",
     lat:53.446741, lng:-2.191776,
-    bookingUrl:"https://www.better.org.uk/leisure-centre/manchester/arcadia"
+    bookingUrl:"https://www.better.org.uk/leisure-centre/manchester/arcadia-leisure-centre"
   },
   {
     id:348, city:"Manchester", country:"England", name:"Hive Sauna — Debdale Park", area:"Gorton / Debdale Park",
@@ -4431,7 +4439,7 @@ export const VENUES: Venue[] = [
     parking:"Parrs Wood car park",
     desc:"Nuffield Health Manchester Didsbury at Parrs Wood Entertainment Centre, Wilmslow Road — premium health club in south Manchester with sauna, steam room, jacuzzi and pool.",
     lat:53.40868, lng:-2.21951,
-    bookingUrl:"https://www.nuffieldhealth.com/gyms/manchester-didsbury"
+    bookingUrl:"https://www.nuffieldhealth.com/gyms/didsbury"
   },
   {
     id:351, city:"Manchester", country:"England", name:"Village Gym Ashton-under-Lyne", area:"Ashton Moss / Ashton-under-Lyne",
@@ -4443,7 +4451,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park at Ashton Moss Retail Park",
     desc:"Village Gym Ashton-under-Lyne at Ashton Moss — premium Village Gym with sauna, steam room, jacuzzi and pool. Located at the Ashton Moss leisure complex on the edge of Ashton-under-Lyne, east of Manchester.",
     lat:53.48667, lng:-2.112446,
-    bookingUrl:"https://www.villagegym.co.uk/clubs/ashton-under-lyne"
+    bookingUrl:"https://www.villagegym.co.uk/locations/ashton-moss/"
   },
   {
     id:352, city:"Manchester", country:"England", name:"Total Fitness Whitefield", area:"Whitefield / Unsworth",
@@ -4479,7 +4487,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park at Captain Clarke Road",
     desc:"Village Gym Hyde at Captain Clarke Road — premium Village Gym in Tameside, east of Manchester. Sauna, steam room, jacuzzi and pool. Serving Hyde, Tameside and east Manchester communities.",
     lat:53.464792, lng:-2.091557,
-    bookingUrl:"https://www.villagegym.co.uk/clubs/hyde"
+    bookingUrl:"https://www.villagegym.co.uk/locations/hyde/"
   },
   {
     id:355, city:"Manchester", country:"England", name:"Village Gym Cheadle", area:"Cheadle / Stockport",
@@ -4491,7 +4499,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park on site",
     desc:"Village Gym Cheadle on Cheadle Road — premium Village Gym serving Cheadle and Stockport, south of Manchester. Full spa including sauna, steam room and jacuzzi. Popular with the south Manchester and north Cheshire communities.",
     lat:53.38611, lng:-2.209817,
-    bookingUrl:"https://www.villagegym.co.uk/clubs/cheadle"
+    bookingUrl:"https://www.villagegym.co.uk/locations/cheadle/"
   },
   {
     id:356, city:"Manchester", country:"England", name:"Salford Community Leisure — Worsley Leisure Centre", area:"Walkden / Worsley",
@@ -4551,7 +4559,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park",
     desc:"Village Gym Bury on Rochdale Road — premium Village Gym north of Manchester. Full spa facilities including sauna, steam room and jacuzzi with 20m pool. Day spa packages and memberships available.",
     lat:53.590731, lng:-2.276168,
-    bookingUrl:"https://www.villagegym.co.uk/clubs/bury"
+    bookingUrl:"https://www.villagegym.co.uk/locations/bury/"
   },
   {
     id:361, city:"Manchester", country:"England", name:"JD Gyms Bury", area:"Bury Town Centre",
@@ -4647,7 +4655,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park at Centre Park Square",
     desc:"Village Gym Warrington at 110 Centre Park Square — premium Village Gym with sauna, steam room, jacuzzi and pool. Set in the Centre Park waterside development in central Warrington.",
     lat:53.383137, lng:-2.595152,
-    bookingUrl:"https://www.villagegym.co.uk/clubs/warrington"
+    bookingUrl:"https://www.villagegym.co.uk/locations/warrington/"
   },
   {
     id:369, city:"Manchester", country:"England", name:"Total Fitness Wigan", area:"Wigan / Goose Green",
@@ -4733,7 +4741,7 @@ export const VENUES: Venue[] = [
     parking:"NCP Dale Street / Town Hall area",
     desc:"JD Gyms Liverpool City Centre at 14 Dale Street — budget gym with steam room in Liverpool's business district. Day passes available, no contract. Steps from Moorfields Merseyrail station.",
     lat:53.407257, lng:-2.99015,
-    bookingUrl:"https://www.jdgyms.co.uk/gyms/liverpool-city-centre"
+    bookingUrl:"https://www.jdgyms.co.uk/gym/liverpool/"
   },
   {
     id:376, city:"Liverpool", country:"England", name:"JD Gyms Liverpool South", area:"Hunt's Cross / Speke",
@@ -4769,7 +4777,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park",
     desc:"Village Gym Wirral at Pool Lane, Bromborough — premium Village Gym on the Wirral peninsula. Sauna, steam room, jacuzzi and pool. Serving Bromborough, Bebington and south Wirral.",
     lat:53.348576, lng:-2.98589,
-    bookingUrl:"https://www.villagegym.co.uk/clubs/wirral"
+    bookingUrl:"https://www.villagegym.co.uk/locations/wirral/"
   },
   {
     id:379, city:"Liverpool", country:"England", name:"Village Gym Liverpool", area:"Whiston / Prescot",
@@ -4781,7 +4789,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park",
     desc:"Village Gym Liverpool at Fallows Way, Whiston — premium Village Gym east of Liverpool. Sauna, steam room, jacuzzi and pool. Serving Whiston, Prescot and Knowsley.",
     lat:53.403903, lng:-2.811527,
-    bookingUrl:"https://www.villagegym.co.uk/clubs/liverpool"
+    bookingUrl:"https://www.villagegym.co.uk/locations/liverpool/"
   },
   {
     id:380, city:"Liverpool", country:"England", name:"JD Gyms Bromborough", area:"Bromborough / Wirral",
@@ -4829,7 +4837,7 @@ export const VENUES: Venue[] = [
     parking:"Free car park at Switch Island Leisure Park",
     desc:"Total Fitness Aintree at Switch Island Leisure Park — gym with sauna, steam room and jacuzzi at the major Switch Island retail and leisure complex, north Liverpool. Swimming pool and full gym.",
     lat:53.489721, lng:-2.956906,
-    bookingUrl:"https://www.totalfitness.co.uk/clubs/aintree"
+    bookingUrl:"https://www.totalfitness.co.uk/clubs/aintree-sefton/"
   },
   {
     id:384, city:"Liverpool", country:"England", name:"Mersea Sauna", area:"Crosby / Waterloo",
@@ -5463,7 +5471,7 @@ export const VENUES: Venue[] = [
     parking:"Brindleyplace NCP · 2 min walk",
     desc:"A full-service health club and spa at 3 Brunswick Arcade, Brindleyplace, Birmingham B1 2JF. Features traditional sauna, steam room, indoor pool, and spa treatment rooms. Set in Birmingham's landmark Brindleyplace canal quarter.",
     lat:52.478085, lng:-1.914526,
-    bookingUrl:"https://www.bannatyne.co.uk/health-club/birmingham"
+    bookingUrl:"https://www.bannatyne.co.uk/health-club/birmingham-brindleyplace"
   },
   {
     id:436, city:"Birmingham", country:"England", name:"Bannatyne Health Club & Spa Sutton Coldfield", area:"Sutton Coldfield / Princess Park",
@@ -5487,7 +5495,7 @@ export const VENUES: Venue[] = [
     parking:"On-site parking available",
     desc:"A Fitness First gym at Ulleries Road, Solihull B92 8DS offering sauna, pool, and full fitness facilities. Part of the national Fitness First chain with a comprehensive group exercise programme.",
     lat:52.444435, lng:-1.796009,
-    bookingUrl:"https://www.fitnessfirst.co.uk/clubs/solihull"
+    bookingUrl:"https://www.fitnessfirst.co.uk/find-a-gym/solihull"
   },
   {
     id:438, city:"Birmingham", country:"England", name:"JD Gyms West Bromwich", area:"West Bromwich / The Farley Centre",
@@ -5667,7 +5675,7 @@ export const VENUES: Venue[] = [
     parking:"Free on-site parking",
     desc:"A Bannatyne health club and spa on Alcester Road, Stratford-upon-Avon CV37 9RJ. Features sauna, steam room, heated pool, and spa facilities in the heart of Shakespeare Country, Warwickshire.",
     lat:52.198707, lng:-1.750751,
-    bookingUrl:"https://www.bannatyne.co.uk/health-club/stratford-upon-avon"
+    bookingUrl:"https://www.bannatyne.co.uk/health-club/wildmoor"
   },
   {
     id:453, city:"Birmingham", country:"England", name:"Bannatyne Health Club & Spa Burton on Trent", area:"Burton on Trent / Centrum 100",
@@ -5691,7 +5699,7 @@ export const VENUES: Venue[] = [
     parking:"Free on-site parking",
     desc:"A lakeside wild swimming and sauna venue at Bishampton, Pershore WR10 2LZ in Worcestershire. A tranquil rural retreat combining water wellness with beautiful Worcestershire countryside.",
     lat:52.152614, lng:-1.998325,
-    bookingUrl:"https://www.watersedge.uk.com"
+    bookingUrl:"https://www.watersedge.club"
   },
   {
     id:455, city:"Birmingham", country:"England", name:"Escape to the Lake", area:"Leigh / Worcester",
@@ -5817,7 +5825,7 @@ export const VENUES: Venue[] = [
     parking:"Street meters nearby; Brighton Marina car park · 10 min walk",
     desc:"Finnish-style sauna right on Brighton beach with cold plunge pools and direct access to the English Channel at the Sea Lanes outdoor pool complex.",
     lat:50.819244, lng:-0.126406,
-    bookingUrl:"https://www.lunahutsauna.co.uk/sealanes"
+    bookingUrl:"https://www.lunahutsauna.co.uk/brightonsealanes"
   },
   {
     id:466, city:"Brighton", country:"England", name:"Beach Box Sauna Spa", area:"Madeira Drive",
@@ -6049,7 +6057,7 @@ export const VENUES: Venue[] = [
     parking:"Pay-and-display on Chesterton Road",
     desc:"Sauna at Jesus Green Lido alongside one of Europe's longest outdoor pools at 100 yards, set on the River Cam in the heart of Cambridge.",
     lat:52.213855, lng:0.124396,
-    bookingUrl:"https://www.better.org.uk/leisure-centre/cambridge/jesus-green-lido"
+    bookingUrl:"https://www.better.org.uk/leisure-centre/cambridge/jesusgreenlido"
   },
   {
     id:486, city:"Cambridge", country:"England", name:"Revivo Sauna", area:"Grantchester Road",
@@ -6662,7 +6670,7 @@ export const VENUES: Venue[] = [
     parking:"Free on-site parking",
     desc:"Village Gym health club in Whitley Bay with sauna, steam room, pool and full gym — day passes available on the North Tyneside coast.",
     lat:55.025416, lng:-1.511448,
-    bookingUrl:"https://www.villagegym.co.uk/locations/whitley-bay/"
+    bookingUrl:"https://www.villagegym.co.uk/locations/newcastle/"
   },
   {
     id:537, city:"Newcastle", country:"England", name:"JD Gyms — Washington", area:"Washington",
@@ -7401,14 +7409,14 @@ export const VENUES: Venue[] = [
   {
     id:595, city:"Tampere", country:"Finland", name:"Rauhaniemi Public Sauna", area:"Rauhaniemenranta",
     type:"sauna", price:"Free with swimming", rating:4.8, reviews:312,
-    hours:"Check website for current hours",
-    temp:"Lake Näsijärvi", tags:["Finnish","Lakeside","Public","Free","Outdoor","Community"], emoji:"🔥🌊", open:true,
+    hours:"Closed for renovation — check website for reopening date",
+    temp:"Lake Näsijärvi", tags:["Finnish","Lakeside","Public","Free","Outdoor","Community"], emoji:"🔥🌊", open:false,
     hygiene:"A", lockerNote:"Simple changing rooms — bring a dry bag",
     transport:"Bus to Rauhaniemi · 5 min walk",
     parking:"Rauhaniemenranta free parking",
     desc:"A classic Finnish public lakeside sauna on the shores of Lake Näsijärvi — free sauna included with the swimming fee. The quintessential democratic Finnish sauna experience: a traditional smoke-warmed or wood-fired sauna, a wooden pier, and a cold plunge into the dark lake. Tampere's most beloved free outdoor wellness spot.",
     lat:61.5200, lng:23.6800,
-    bookingUrl:"https://tampere.fi/rauhaniemi",
+    bookingUrl:"https://rauhaniemi.net/en/",
   },
 
   // ── HELSINKI (additional venues) ──
@@ -7487,6 +7495,125 @@ export const VENUES: Venue[] = [
     desc:"A barrel sauna accommodating up to 10 people on the beachfront at Laytown, Co. Meath — panoramic views of the Irish Sea from inside the sauna. One of the most accessible coastal sauna experiences from Dublin (40 min by train), combining a proper wood-fired session with a plunge into the Irish Sea.",
     lat:53.6917, lng:-6.2383,
     bookingUrl:"https://seaviewsaunas.ie",
+  },
+
+  // ── DÚN LAOGHAIRE (Dublin) ──
+  {
+    id:602, city:"Dublin", country:"Ireland", name:"Helios Floating Sauna", area:"Dún Laoghaire Harbour",
+    type:"both", price:"From €24.95 per person · private hire €260 (up to 12)",
+    rating:4.9, reviews:0,
+    hours:"Daily 8am–10pm",
+    temp:"Harbour cold plunge", tags:["Floating","Waterfront","Coastal","Outdoor","City Centre"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Changing facilities at Old Quay · complimentary dry robes provided",
+    transport:"Dún Laoghaire DART station · 5 min walk",
+    parking:"Coal Harbour paid parking on-site",
+    desc:"Ireland's first floating sauna, opened May 2026 at Dún Laoghaire Harbour. A compact brass and wood structure on a floating pontoon in the harbour — heat in the sauna, then plunge into the sea. Freshwater showers and dry robes included. Stunning views across Dublin Bay. Booking essential; walk-ins when available.",
+    lat:53.2945, lng:-6.1348,
+    bookingUrl:"https://heliossauna.ie/products/dun-laoghaire-floating-sauna",
+  },
+
+  // ── EDINBURGH (additional) ──
+  {
+    id:603, city:"Edinburgh", country:"Scotland", name:"Sauna Theatre — Summerhall", area:"Summerhall / Newington",
+    type:"sauna", price:"From £15 per session · Edinburgh Fringe programme",
+    rating:4.9, reviews:0,
+    hours:"Edinburgh Fringe: 7–31 Aug 2026 · check summerhallarts.co.uk for full programme",
+    temp:"90°C sauna · cold plunge", tags:["Finnish","Events","Arts","Unique","Community","Seasonal"], emoji:"🔥🎭", open:true,
+    hygiene:"A", lockerNote:"Bring a towel · changing area provided",
+    transport:"Edinburgh Waverley · 20 min walk · Lothian buses to Summerhall",
+    parking:"Summerhall street parking · paid NCP nearby",
+    desc:"The UK's first purpose-built Sauna Theatre at Summerhall Arts — the country's biggest sauna, capacity 80, hosting live music and performances at 90°C. Founded by Lucy Osborne and James Grieve as part of the Edinburgh Fringe 2026, blending electrifying wellness with state-of-the-art sound and lighting. A genuinely once-in-a-lifetime sauna experience.",
+    lat:55.9382, lng:-3.1830,
+    bookingUrl:"https://www.summerhallarts.co.uk",
+  },
+
+  // ── GALWAY (additional) ──
+  {
+    id:604, city:"Galway", country:"Ireland", name:"Fernwood Clifden Sauna", area:"Killymongaun, Clifden",
+    type:"both", price:"Check website", rating:4.9, reviews:0,
+    hours:"Check website — seasonal",
+    temp:"Atlantic plunge", tags:["Wood-fired","Outdoor","Connemara","Scenic","Wild Atlantic Way"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Clifden town, Connemara",
+    parking:"On-site",
+    desc:"Wood-fired outdoor sauna in Connemara set among the wild landscape of Clifden. Combines traditional sauna heat with immersive Atlantic plunging in one of Ireland's most scenic settings.",
+    lat:53.4963, lng:-10.0250,
+    bookingUrl:"https://fernwood.eco/sauna-booking",
+  },
+  {
+    id:605, city:"Galway", country:"Ireland", name:"Sauna Bó Finne", area:"Cloonamore Strand, Inishbofin",
+    type:"both", price:"Check website", rating:4.9, reviews:0,
+    hours:"Check website — seasonal and ferry-dependent",
+    temp:"Atlantic ocean plunge", tags:["Island","Seafront","Wood-fired","Outdoor","Remote","Wild Atlantic Way"], emoji:"🔥🏝️", open:true,
+    hygiene:"A", lockerNote:"No lockers — remote island location, bring dry bag",
+    transport:"Ferry from Cleggan Pier to Inishbofin (approx 30 min)",
+    parking:"Cleggan Pier car park on mainland",
+    desc:"A truly remote wood-fired sauna on Inishbofin Island off the Connemara coast. Sauna Bó Finne sits above Cloonamore Strand with direct Atlantic plunging — one of the most beautifully isolated sauna experiences in Ireland.",
+    lat:53.6090, lng:-10.1850,
+    bookingUrl:"https://saunabofinne.com",
+  },
+  {
+    id:606, city:"Galway", country:"Ireland", name:"Teach Allais Sauna", area:"Renville Park, Oranmore",
+    type:"both", price:"Check website", rating:4.9, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Atlantic wild plunge", tags:["Seafront","Wood-fired","Outdoor","Wild Atlantic","Coastal"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Oranmore, 10 min from Galway city",
+    parking:"Renville Park car park",
+    desc:"Traditional wood-fired sauna (\"Teach Allais\" means \"sweat house\" in Irish) at the scenic Renville Park waterfront near Oranmore. Combines Irish sweat-house heritage with Atlantic plunging.",
+    lat:53.2432, lng:-8.9670,
+    bookingUrl:"https://teachallaissauna.com",
+  },
+  {
+    id:607, city:"Galway", country:"Ireland", name:"The Hawthorn Hotel & Spa", area:"Renville Point, Oranmore",
+    type:"both", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Spa pool", tags:["Hotel Spa","Coastal","Luxury","Scenic"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers provided",
+    transport:"Drive — Oranmore, 10 min from Galway city",
+    parking:"Free on-site",
+    desc:"Boutique hotel and spa at Renville Point on the shores of Galway Bay. Sauna and thermal facilities with views across the water to the Burren and Connemara hills.",
+    lat:53.2445, lng:-8.9695,
+    bookingUrl:"https://thehawthornhotel.ie",
+    venueCategory:"hotel",
+  },
+
+  // ── CORK (additional) ──
+  {
+    id:608, city:"Cork", country:"Ireland", name:"Swede Sauna", area:"Roberts Cove Beach",
+    type:"sauna", price:"Check Instagram", rating:4.9, reviews:0,
+    hours:"Check Instagram — seasonal and weather-dependent",
+    temp:"Atlantic sea plunge", tags:["Seafront","Wood-fired","Outdoor","Beach","Pop-up","Coastal"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Roberts Cove, 20 min south of Cork City",
+    parking:"Roberts Cove Beach car park",
+    desc:"Swedish-style wood-fired barrel sauna on Roberts Cove Beach, a quiet cove south of Cork City. One of Cork's most scenic outdoor sauna experiences with direct sea plunging.",
+    lat:51.8045, lng:-8.3535,
+    bookingUrl:"https://www.instagram.com/swede_sauna/",
+  },
+  {
+    id:609, city:"Cork", country:"Ireland", name:"Wild Wellness Beach Sauna", area:"Garrettstown Beach, Kinsale",
+    type:"both", price:"Check website", rating:4.9, reviews:0,
+    hours:"Check website — seasonal",
+    temp:"Atlantic sea plunge", tags:["Beach","Seafront","Wood-fired","Outdoor","Wild Atlantic","Kinsale"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Garrettstown, 30 min from Cork City via Kinsale",
+    parking:"Garrettstown Beach car park",
+    desc:"Outdoor wood-fired sauna on Garrettstown Beach near Kinsale, one of Cork's most beautiful Blue Flag beaches. Combines the sauna heat with cold Atlantic plunging in a stunning natural setting.",
+    lat:51.6382, lng:-8.5793,
+    bookingUrl:"https://wildwellness.ie",
+  },
+  {
+    id:610, city:"Cork", country:"Ireland", name:"The Sweaty Sanctuary Sauna", area:"Inch Beach East, East Cork",
+    type:"sauna", price:"Check Instagram", rating:4.9, reviews:0,
+    hours:"Check Instagram — seasonal and weather-dependent",
+    temp:"Atlantic sea plunge", tags:["Beach","Seafront","Wood-fired","Outdoor","Coastal"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Inch Beach East, East Cork",
+    parking:"Inch Beach car park",
+    desc:"Wood-fired sauna on the beach at Inch, East Cork, offering a peaceful outdoor wellness experience with direct Atlantic sea plunging. A hidden gem on the East Cork coastline.",
+    lat:51.5970, lng:-8.7850,
+    bookingUrl:"https://www.instagram.com/thesweatysanctuarysauna/",
   },
 ];
 

@@ -12,6 +12,9 @@ on:
 jobs:
   health-check:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      issues: write
 
     steps:
       - name: Checkout repository
@@ -31,3 +34,38 @@ jobs:
           ZOHO_EMAIL: ${{ secrets.ZOHO_EMAIL }}
           ZOHO_PASSWORD: ${{ secrets.ZOHO_PASSWORD }}
         run: node scripts/weekly-health-check.js
+
+      - name: Save dated health report
+        run: |
+          DATE=$(date +%Y-%m-%d)
+          mkdir -p scripts/analytics/health-reports
+          cp scripts/health-report.txt "scripts/analytics/health-reports/${DATE}-health-report.txt"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add "scripts/analytics/health-reports/${DATE}-health-report.txt"
+          git diff --staged --quiet || git commit -m "chore: health report ${DATE}"
+          git push
+
+      - name: Create GitHub issue for dead links
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          DEAD=$(grep -E '^\s+\[DEAD\s+HTTP 404' scripts/health-report.txt || true)
+          if [ -n "$DEAD" ]; then
+            DATE=$(date +%Y-%m-%d)
+            BODY="## Dead links found in health check ${DATE}
+
+          The following venues returned HTTP 404 and need manual review:
+
+          \`\`\`
+          $(grep -A2 '\[DEAD.*404' scripts/health-report.txt || echo 'See full report')
+          \`\`\`
+
+          Full report: \`scripts/analytics/health-reports/${DATE}-health-report.txt\`
+
+          For each venue: update the bookingUrl or set \`open:false\` in venues.ts."
+            gh issue create \
+              --title "⚠️ Dead links detected — health check ${DATE}" \
+              --body "$BODY" \
+              --label "bug" || true
+          fi
