@@ -7617,7 +7617,7 @@ export const VENUES: Venue[] = [
   },
 ];
 
-export const CITIES = [
+export const CITIES: string[] = [
   "All",
   // UK — England
   "London","Bath","Bristol","Brighton","Manchester","Liverpool","Chester","Newcastle","Leeds","Birmingham","Sheffield","Cornwall",
@@ -7638,32 +7638,7 @@ export const CITIES = [
   // Iceland — regional towns
   "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Flúðir","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes",
   // Greenland
-  "Nanortalik","Sisimiut",,
-
-  // ── AUTO-ADDED ──
-  {
-    id:602, city:"Dublin", country:"Ireland", name:"Kairos Floating Sauna", area:"Grand Canal Dock",
-    type:"sauna", price:"Check website", rating:4.5, reviews:0,
-    hours:"Check website for current hours",
-    temp:"River plunge", tags:["Floating Sauna","Waterfront","Unique Experience","Ireland's First"], emoji:"🔥🌊", open:true,
-    hygiene:"A", lockerNote:"Check website for locker details",
-    transport:"Check website for directions",
-    parking:"Check website for parking",
-    desc:"Ireland's first floating sauna, moored on the water in Dublin, offering a unique Nordic-style sauna experience with access to open water. A novel wellness concept bringing Scandinavian bathing culture to the Irish capital.",
-    lat:53.34, lng:-6.235,
-  },
-  {
-    id:603, city:"Edinburgh", country:"UK", name:"Sauna Theatre", area:"Summerhall",
-    type:"sauna", price:"Check website", rating:4.5, reviews:0,
-    hours:"Check website for current hours",
-    temp:"N/A", tags:["Unique Experience","Theatre","Arts Venue","Cultural"], emoji:"🔥", open:true,
-    hygiene:"A", lockerNote:"Check website for locker details",
-    transport:"Check website for directions",
-    parking:"Check website for parking",
-    desc:"Sauna Theatre at Summerhall is a unique concept combining a working sauna with a theatrical performance space. Located within the iconic Summerhall arts complex in Edinburgh, it offers an unconventional wellness experience.",
-    lat:55.939, lng:-3.1837,
-    bookingUrl:"https://www.summerhall.co.uk"
-  }
+  "Nanortalik","Sisimiut",
 ];
 
 export const FLAG: Record<string, string> = {
