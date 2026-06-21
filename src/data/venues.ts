@@ -7638,7 +7638,42 @@ export const CITIES: string[] = [
   // Iceland — regional towns
   "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Flúðir","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes",
   // Greenland
-  "Nanortalik","Sisimiut",
+  "Nanortalik","Sisimiut",,
+
+  // ── AUTO-ADDED ──
+  {
+    id:611, city:"Bognor Regis", country:"UK", name:"Bognor Regis Beach Sauna", area:"Beach",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Sea plunge", tags:["Beach Sauna","Finnish Sauna","Seafront","Cold Water Swimming"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A Finnish-inspired beach sauna located on the seafront at Bognor Regis, bringing Nordic wellness culture to the West Sussex coast. The venue combines traditional sauna bathing with access to sea swimming.",
+    lat:50.7823, lng:-0.6755,
+  },
+  {
+    id:612, city:"Downings", country:"Ireland", name:"Downings Bay Sauna", area:"Downings, County Donegal",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Coastal","Retreat","Donegal","Wellness"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new sauna retreat has opened in Downings, County Donegal, bringing Nordic-inspired sauna culture to this scenic coastal village. The venue aims to offer a wellness escape on the rugged Donegal coastline.",
+    lat:55.1886, lng:-7.8456,
+  },
+  {
+    id:613, city:"Glengarriff", country:"Ireland", name:"Fernhill House Hotel Sauna", area:"West Cork",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Sea Views","Hotel","West Cork","Garnish Island Views","Mimosa"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A sauna experience at a West Cork hotel offering views of Garnish Island, combining wellness with mimosas and scenic coastal surroundings near Glengarriff.",
+    lat:51.7497, lng:-9.5503,
+  }
 ];
 
 export const FLAG: Record<string, string> = {

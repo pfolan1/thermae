@@ -1,30 +1,33 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 14 June 2026
+  Sunday, 21 June 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 80 articles, 75 relevant
-  • OpenStreetMap Overpass   : 707 new venues flagged
+  • Google News RSS          : 76 articles, 72 relevant
+  • OpenStreetMap Overpass   : 704 new venues flagged
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 2
-  • Flagged for manual review: 707
-  • Skipped (duplicates/irrelevant): 73
+  • Venues auto-added        : 3
+  • Flagged for manual review: 704
+  • Skipped (duplicates/irrelevant): 69
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Kairos Floating Sauna
-     Dublin, Ireland
-     Ireland's first floating sauna, moored on the water in Dublin, offering a unique Nordic-style sauna experience with access to open water. A novel wellness concept bringing Scandinavian bathing culture to the Irish capital.
+  ✅ Bognor Regis Beach Sauna
+     Bognor Regis, UK
+     A Finnish-inspired beach sauna located on the seafront at Bognor Regis, bringing Nordic wellness culture to the West Sussex coast. The venue combines traditional sauna bathing with access to sea swimming.
 
-  ✅ Sauna Theatre
-     Edinburgh, UK
-     Sauna Theatre at Summerhall is a unique concept combining a working sauna with a theatrical performance space. Located within the iconic Summerhall arts complex in Edinburgh, it offers an unconventional wellness experience.
-     https://www.summerhall.co.uk
+  ✅ Downings Bay Sauna
+     Downings, Ireland
+     A new sauna retreat has opened in Downings, County Donegal, bringing Nordic-inspired sauna culture to this scenic coastal village. The venue aims to offer a wellness escape on the rugged Donegal coastline.
+
+  ✅ Fernhill House Hotel Sauna
+     Glengarriff, Ireland
+     A sauna experience at a West Cork hotel offering views of Garnish Island, combining wellness with mimosas and scenic coastal surroundings near Glengarriff.
 
 ── OPENSTREETMAP — FLAGGED FOR MANUAL REVIEW ───────────────────
   📍 The Boilerhouse
@@ -191,7 +194,7 @@
      Region: UK | Type: sauna | Coords: 50.4610, -3.5366
      https://steamerquay.com/
 
-  📍 The Pound
+  📍 Steamworks Sauna
      Region: UK | Type: sauna | Coords: 55.9575, -3.1924
      https://www.thepoundedinburgh.co.uk
 
@@ -349,9 +352,6 @@
      Region: UK | Type: sauna | Coords: 53.1223, -4.1176
      https://www.saunawales.co.uk
 
-  📍 Helios Floating Sauna
-     Region: UK | Type: sauna | Coords: 53.2966, -6.1430
-
   📍 Sandycove Sauna By The Sea
      Region: UK | Type: sauna | Coords: 53.2885, -6.1141
 
@@ -424,9 +424,6 @@
      Region: Ireland | Type: sauna | Coords: 51.9814, -8.5334
      https://www.instagram.com/sauna_geal/
 
-  📍 Helios Floating Sauna
-     Region: Ireland | Type: sauna | Coords: 53.2966, -6.1430
-
   📍 Éalu Sauna
      Region: Ireland | Type: sauna | Coords: 54.0891, -7.1184
 
@@ -436,20 +433,6 @@
   📍 Acumeen Farm Sauna
      Region: Ireland | Type: sauna | Coords: 52.2170, -9.9976
      https://acumeenfarm.ie/sauna
-
-  📍 Steam cave
-     Region: Iceland | Type: sauna | Coords: 63.8802, -22.4480
-
-  📍 Sauna
-     Region: Iceland | Type: sauna | Coords: 64.1966, -19.2847
-
-  📍 Litla Sauna Húsið
-     Region: Iceland | Type: sauna | Coords: 64.1157, -21.9202
-     https://litlasaunahusid.is/
-
-  📍 Sækot
-     Region: Iceland | Type: sauna | Coords: 64.1384, -21.9638
-     https://saekot.is/
 
   📍 Kiviniemen sauna
      Region: Nordics | Type: sauna | Coords: 62.9899, 29.9187
@@ -550,9 +533,6 @@
 
   📍 Vedbastu vid sjumilasjön Torneträsk
      Region: Nordics | Type: sauna | Coords: 68.3618, 18.8016
-
-  📍 Krievu pirts
-     Region: Nordics | Type: sauna | Coords: 55.8732, 26.5292
 
   📍 Pirts
      Region: Nordics | Type: sauna | Coords: 55.8763, 26.5469
@@ -1360,7 +1340,7 @@
   📍 Relaxen
      Region: Nordics | Type: sauna | Coords: 62.6284, 17.9407
 
-  📍 АртиШок
+  📍 АртиШ��к
      Region: Nordics | Type: sauna | Coords: 59.9417, 30.3517
      https://artishok-sauna.ru/
 
@@ -2313,6 +2293,9 @@
      Region: Nordics | Type: sauna | Coords: 61.4980, 23.7579
      https://kattosauna.fi/
 
+  📍 Живой пар
+     Region: Nordics | Type: sauna | Coords: 60.0630, 30.4049
+
   📍 Sjøbadet
      Region: Nordics | Type: sauna | Coords: 59.2269, 10.4457
      https://sjobadet.com
@@ -2450,7 +2433,17 @@
      Region: Nordics | Type: sauna | Coords: 63.4392, 10.4003
      https://stu.no/
 
+  📍 Harmoonikum öko-spa. Kohvik
+     Region: Nordics | Type: sauna | Coords: 59.5030, 24.8359
+     https://harmoonikum.ee/
+
+  📍 Hot spot
+     Region: Nordics | Type: sauna | Coords: 59.8703, 10.6578
+
+  📍 Alta Sauna
+     Region: Nordics | Type: sauna | Coords: 69.9633, 23.2373
+
 ── GOOGLE PLACES ────────────────────────────────────────────────
   Skipped — set GOOGLE_PLACES_API_KEY in scripts/.env to enable.
 
-Report generated: 2026-06-14T09:54:06.114Z
+Report generated: 2026-06-21T10:05:19.533Z
