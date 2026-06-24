@@ -7889,6 +7889,46 @@ export const VENUES: Venue[] = [
     lat:60.1862, lng:24.9478,
     bookingUrl:"https://kotiharjunsauna.fi",
   },
+
+  // ── BOGNOR REGIS ──
+  {
+    id:632, city:"Bognor Regis", country:"England", name:"Bognor Regis Beach Sauna", area:"Seafront, West Sussex",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Sea plunge", tags:["Seafront","Finnish","Coastal","Wood-fired"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Bognor Regis (Southern Rail) · walk to seafront",
+    parking:"Check website for parking",
+    desc:"A Finnish-inspired beach sauna on the seafront at Bognor Regis, bringing Nordic wellness culture to the West Sussex coast. Combines traditional sauna bathing with access to sea swimming.",
+    lat:50.7823, lng:-0.6755,
+  },
+
+  // ── DONEGAL (additional) ──
+  {
+    id:633, city:"Donegal", country:"Ireland", name:"Downings Bay Sauna", area:"Downings, Rosguill Peninsula",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Atlantic sea plunge", tags:["Coastal","Seafront","Wood-fired","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Downings village, Rosguill Peninsula, north Donegal",
+    parking:"Check website for parking",
+    desc:"A sauna retreat in Downings on the Rosguill Peninsula, bringing Nordic-inspired wellness culture to this scenic Donegal coastal village with Atlantic plunging on one of Ireland's most beautiful bays.",
+    lat:55.1886, lng:-7.8456,
+  },
+
+  // ── CORK (additional) ──
+  {
+    id:634, city:"Cork", country:"Ireland", name:"Fernhill House Hotel Sauna", area:"Glengarriff, West Cork",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Hotel Spa","Sea Views","Scenic","West Cork"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers provided",
+    transport:"Drive — Glengarriff village, N71, West Cork",
+    parking:"Free on-site at Fernhill House Hotel",
+    desc:"A sauna and wellness experience at Fernhill House Hotel in Glengarriff, West Cork, with stunning views of Garnish Island and Bantry Bay. A scenic coastal hotel retreat at the gateway to the Beara Peninsula.",
+    lat:51.7497, lng:-9.5503,
+    venueCategory:"hotel",
+  },
 ];
 
 export const CITIES: string[] = [
@@ -7912,42 +7952,9 @@ export const CITIES: string[] = [
   // Iceland — regional towns
   "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Flúðir","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes",
   // Greenland
-  "Nanortalik","Sisimiut",,
-
-  // ── AUTO-ADDED ──
-  {
-    id:611, city:"Bognor Regis", country:"UK", name:"Bognor Regis Beach Sauna", area:"Beach",
-    type:"sauna", price:"Check website", rating:4.5, reviews:0,
-    hours:"Check website for current hours",
-    temp:"Sea plunge", tags:["Beach Sauna","Finnish Sauna","Seafront","Cold Water Swimming"], emoji:"🔥🌊", open:true,
-    hygiene:"A", lockerNote:"Check website for locker details",
-    transport:"Check website for directions",
-    parking:"Check website for parking",
-    desc:"A Finnish-inspired beach sauna located on the seafront at Bognor Regis, bringing Nordic wellness culture to the West Sussex coast. The venue combines traditional sauna bathing with access to sea swimming.",
-    lat:50.7823, lng:-0.6755,
-  },
-  {
-    id:612, city:"Downings", country:"Ireland", name:"Downings Bay Sauna", area:"Downings, County Donegal",
-    type:"sauna", price:"Check website", rating:4.5, reviews:0,
-    hours:"Check website for current hours",
-    temp:"N/A", tags:["Coastal","Retreat","Donegal","Wellness"], emoji:"🔥", open:true,
-    hygiene:"A", lockerNote:"Check website for locker details",
-    transport:"Check website for directions",
-    parking:"Check website for parking",
-    desc:"A new sauna retreat has opened in Downings, County Donegal, bringing Nordic-inspired sauna culture to this scenic coastal village. The venue aims to offer a wellness escape on the rugged Donegal coastline.",
-    lat:55.1886, lng:-7.8456,
-  },
-  {
-    id:613, city:"Glengarriff", country:"Ireland", name:"Fernhill House Hotel Sauna", area:"West Cork",
-    type:"sauna", price:"Check website", rating:4.5, reviews:0,
-    hours:"Check website for current hours",
-    temp:"N/A", tags:["Sea Views","Hotel","West Cork","Garnish Island Views","Mimosa"], emoji:"🔥", open:true,
-    hygiene:"A", lockerNote:"Check website for locker details",
-    transport:"Check website for directions",
-    parking:"Check website for parking",
-    desc:"A sauna experience at a West Cork hotel offering views of Garnish Island, combining wellness with mimosas and scenic coastal surroundings near Glengarriff.",
-    lat:51.7497, lng:-9.5503,
-  }
+  "Nanortalik","Sisimiut",
+  // England (additional)
+  "Bognor Regis",
 ];
 
 export const FLAG: Record<string, string> = {
@@ -7955,7 +7962,7 @@ export const FLAG: Record<string, string> = {
   Manchester:"🇬🇧", Liverpool:"🇬🇧", Chester:"🇬🇧", Newcastle:"🇬🇧", Leeds:"🇬🇧",
   Birmingham:"🇬🇧", Sheffield:"🇬🇧", Cornwall:"🇬🇧",
   Nottingham:"🇬🇧", Leicester:"🇬🇧", Norwich:"🇬🇧", Cambridge:"🇬🇧", Oxford:"🇬🇧", Exeter:"🇬🇧",
-  Portsmouth:"🇬🇧", Southampton:"🇬🇧", Plymouth:"🇬🇧", York:"🇬🇧", Swanage:"🇬🇧",
+  Portsmouth:"🇬🇧", Southampton:"🇬🇧", Plymouth:"🇬🇧", York:"🇬🇧", Swanage:"🇬🇧", "Bognor Regis":"🇬🇧",
   Edinburgh:"🇬🇧", Glasgow:"🇬🇧", Aberdeen:"🇬🇧", Inverness:"🇬🇧", Dundee:"🇬🇧", "St Andrews":"🇬🇧", "Scottish Borders":"🇬🇧",
   Durham:"🇬🇧",
   Cardiff:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Swansea:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
@@ -7988,7 +7995,7 @@ export const REGION_MAP: Record<string, string> = {
   Newcastle:"UK & Ireland", Leeds:"UK & Ireland", Birmingham:"UK & Ireland",
   Sheffield:"UK & Ireland", Cornwall:"UK & Ireland",
   Nottingham:"UK & Ireland", Leicester:"UK & Ireland", Norwich:"UK & Ireland", Cambridge:"UK & Ireland",
-  Oxford:"UK & Ireland", Exeter:"UK & Ireland", Portsmouth:"UK & Ireland", Southampton:"UK & Ireland", Plymouth:"UK & Ireland", York:"UK & Ireland", Swanage:"UK & Ireland",
+  Oxford:"UK & Ireland", Exeter:"UK & Ireland", Portsmouth:"UK & Ireland", Southampton:"UK & Ireland", Plymouth:"UK & Ireland", York:"UK & Ireland", Swanage:"UK & Ireland", "Bognor Regis":"UK & Ireland",
   Edinburgh:"UK & Ireland", Glasgow:"UK & Ireland", Aberdeen:"UK & Ireland",
   Inverness:"UK & Ireland", Dundee:"UK & Ireland", "St Andrews":"UK & Ireland", "Scottish Borders":"UK & Ireland",
   Durham:"UK & Ireland",
@@ -8023,7 +8030,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Manchester:"England", Liverpool:"England", Chester:"England", Newcastle:"England", Leeds:"England",
   Birmingham:"England", Sheffield:"England", Cornwall:"England",
   Nottingham:"England", Leicester:"England", Norwich:"England", Cambridge:"England",
-  Oxford:"England", Exeter:"England", Portsmouth:"England", Southampton:"England", Plymouth:"England", York:"England", Swanage:"England",
+  Oxford:"England", Exeter:"England", Portsmouth:"England", Southampton:"England", Plymouth:"England", York:"England", Swanage:"England", "Bognor Regis":"England",
   // Scotland
   Durham:"England",
   Edinburgh:"Scotland", Glasgow:"Scotland", Aberdeen:"Scotland",
@@ -8066,7 +8073,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Manchester:"North West", Liverpool:"North West", Chester:"Cheshire", Newcastle:"North East", Leeds:"Yorkshire",
   Birmingham:"West Midlands", Sheffield:"Yorkshire", Cornwall:"South West",
   Nottingham:"East Midlands", Leicester:"East Midlands", Norwich:"East of England", Cambridge:"East of England",
-  Oxford:"South East", Exeter:"South West", Portsmouth:"South East", Southampton:"South East", Plymouth:"South West", York:"Yorkshire", Swanage:"South West",
+  Oxford:"South East", Exeter:"South West", Portsmouth:"South East", Southampton:"South East", Plymouth:"South West", York:"Yorkshire", Swanage:"South West", "Bognor Regis":"South East",
   // Scotland — region
   Edinburgh:"Central Belt", Glasgow:"Central Belt", Aberdeen:"Grampian",
   Inverness:"Highlands", Dundee:"Fife", "St Andrews":"Fife", "Scottish Borders":"Scottish Borders",

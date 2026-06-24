@@ -316,8 +316,31 @@ function buildVenueEntry(id, v) {
 function insertVenuesIntoTs(src, venues, startId) {
   const entries = venues.map((v, i) => buildVenueEntry(startId + i, v));
   const block   = '\n\n  // ── AUTO-ADDED ──\n' + entries.join(',\n');
-  const idx     = src.lastIndexOf('\n];');
-  if (idx === -1) throw new Error('Could not find closing ]; in venues.ts');
+
+  // Find the closing bracket of the VENUES array specifically.
+  // The VENUES array declaration starts with "export const VENUES: Venue[] = ["
+  // and its closing "];" is followed by a blank line then "export const CITIES".
+  // We locate the VENUES closing "];" by finding the last one that appears BEFORE
+  // the CITIES export declaration.
+  const citiesIdx = src.indexOf('\nexport const CITIES');
+  if (citiesIdx === -1) {
+    // Fallback safety: can't locate structure — abort insertion, write to report instead
+    throw new Error('Could not locate CITIES export in venues.ts — aborting auto-insert to prevent file corruption');
+  }
+
+  // Within the portion before CITIES, find the last ];\n
+  const venuesPortion = src.slice(0, citiesIdx);
+  const idx = venuesPortion.lastIndexOf('\n];');
+  if (idx === -1) {
+    throw new Error('Could not find VENUES array closing ]; before CITIES export');
+  }
+
+  // Validate: the character just before this ]; should be part of a venue object (closing brace area)
+  const nearClose = venuesPortion.slice(Math.max(0, idx - 10), idx);
+  if (!nearClose.includes('}') && !nearClose.includes(',')) {
+    throw new Error('Unexpected content near VENUES closing bracket — aborting to prevent corruption');
+  }
+
   return src.slice(0, idx) + ',' + block + src.slice(idx);
 }
 
@@ -676,10 +699,30 @@ async function sendEmail(subject, body) {
   }
 
   // ── 6. Write verified new venues to venues.ts ─────────────────────────────
+  let insertedCount = 0;
   if (newVenues.length > 0) {
-    const updated = insertVenuesIntoTs(venueSrc, newVenues, highestId + 1);
-    fs.writeFileSync(VENUES_FILE, updated, 'utf-8');
-    console.log(`\n✅ Added ${newVenues.length} venue(s) to src/data/venues.ts`);
+    try {
+      const updated = insertVenuesIntoTs(venueSrc, newVenues, highestId + 1);
+      // Sanity check: updated file must still contain CITIES export intact
+      if (!updated.includes('export const CITIES: string[] = [')) {
+        throw new Error('Post-insert sanity check failed: CITIES export missing from result');
+      }
+      fs.writeFileSync(VENUES_FILE, updated, 'utf-8');
+      insertedCount = newVenues.length;
+      console.log(`\n✅ Added ${newVenues.length} venue(s) to src/data/venues.ts`);
+    } catch (insertErr) {
+      console.error(`\n⚠️  Auto-insert FAILED (${insertErr.message})`);
+      console.error('   Venues saved to new-venues-found.txt for manual review instead.');
+      // Write the failed venues to the manual review report
+      const fallbackLines = ['── VENUES NOT AUTO-INSERTED (insert error — manual review needed) ──'];
+      for (const v of newVenues) {
+        fallbackLines.push(`  ❌ ${v.name} — ${v.city}, ${v.country}`);
+        fallbackLines.push(`     ${v.desc}`);
+        if (v.bookingUrl) fallbackLines.push(`     ${v.bookingUrl}`);
+        fallbackLines.push('');
+      }
+      fs.appendFileSync(REPORT_FILE, '\n' + fallbackLines.join('\n'), 'utf-8');
+    }
   } else {
     console.log('\nℹ️  No new venues auto-added this week.');
   }
