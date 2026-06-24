@@ -1,21 +1,21 @@
 {
-  "generatedAt": "2026-06-12T09:14:54.257Z",
+  "generatedAt": "2026-06-24T10:34:59.984Z",
   "period": "2026-06",
   "metrics": {
-    "totalVenues": 594,
+    "totalVenues": 627,
     "venuesByCountry": {
       "Denmark": 6,
-      "England": 205,
-      "Finland": 12,
+      "England": 206,
+      "Finland": 15,
       "Greenland": 2,
-      "Iceland": 21,
-      "Ireland": 123,
+      "Iceland": 23,
+      "Ireland": 147,
       "Northern Ireland": 13,
       "Norway": 16,
-      "Scotland": 40,
+      "Scotland": 41,
       "Sweden": 7,
-      "UK": 123,
-      "Wales": 26
+      "UK": 124,
+      "Wales": 27
     },
     "priceByCountry": {
       "Denmark": {
@@ -27,7 +27,7 @@
         "priced": 6
       },
       "England": {
-        "count": 205,
+        "count": 206,
         "avg": 25,
         "min": 4,
         "max": 222,
@@ -35,7 +35,7 @@
         "priced": 180
       },
       "Finland": {
-        "count": 12,
+        "count": 15,
         "avg": 17,
         "min": 0,
         "max": 45,
@@ -51,7 +51,7 @@
         "priced": 1
       },
       "Iceland": {
-        "count": 21,
+        "count": 23,
         "avg": 25,
         "min": 0,
         "max": 70,
@@ -59,12 +59,12 @@
         "priced": 19
       },
       "Ireland": {
-        "count": 123,
+        "count": 147,
         "avg": 22,
         "min": 10,
         "max": 100,
         "median": 20,
-        "priced": 41
+        "priced": 42
       },
       "Northern Ireland": {
         "count": 13,
@@ -83,12 +83,12 @@
         "priced": 10
       },
       "Scotland": {
-        "count": 40,
+        "count": 41,
         "avg": 21,
         "min": 6,
         "max": 88,
         "median": 18,
-        "priced": 28
+        "priced": 29
       },
       "Sweden": {
         "count": 7,
@@ -99,7 +99,7 @@
         "priced": 7
       },
       "UK": {
-        "count": 123,
+        "count": 124,
         "avg": 33,
         "min": 4,
         "max": 216,
@@ -107,7 +107,7 @@
         "priced": 100
       },
       "Wales": {
-        "count": 26,
+        "count": 27,
         "avg": 24,
         "min": 6,
         "max": 35,
@@ -145,17 +145,17 @@
         }
       ],
       [
+        "Dublin",
+        {
+          "count": 23,
+          "avgPrice": 25
+        }
+      ],
+      [
         "Cornwall",
         {
           "count": 22,
           "avgPrice": 29
-        }
-      ],
-      [
-        "Dublin",
-        {
-          "count": 21,
-          "avgPrice": 24
         }
       ],
       [
@@ -173,9 +173,30 @@
         }
       ],
       [
+        "Galway",
+        {
+          "count": 17,
+          "avgPrice": 19
+        }
+      ],
+      [
+        "Cork",
+        {
+          "count": 16,
+          "avgPrice": 17
+        }
+      ],
+      [
         "Glasgow",
         {
           "count": 16,
+          "avgPrice": 20
+        }
+      ],
+      [
+        "Kerry",
+        {
+          "count": 15,
           "avgPrice": 20
         }
       ],
@@ -189,29 +210,8 @@
       [
         "Edinburgh",
         {
-          "count": 13,
+          "count": 14,
           "avgPrice": 24
-        }
-      ],
-      [
-        "Kerry",
-        {
-          "count": 13,
-          "avgPrice": 20
-        }
-      ],
-      [
-        "Cork",
-        {
-          "count": 12,
-          "avgPrice": 17
-        }
-      ],
-      [
-        "Galway",
-        {
-          "count": 12,
-          "avgPrice": 19
         }
       ],
       [
@@ -229,6 +229,13 @@
         }
       ],
       [
+        "Helsinki",
+        {
+          "count": 9,
+          "avgPrice": 15
+        }
+      ],
+      [
         "Sheffield",
         {
           "count": 9,
@@ -243,34 +250,27 @@
         }
       ],
       [
-        "Aberdeen",
+        "Mayo",
         {
-          "count": 7,
-          "avgPrice": 22
-        }
-      ],
-      [
-        "Bath",
-        {
-          "count": 7,
-          "avgPrice": 41
+          "count": 8,
+          "avgPrice": 19
         }
       ]
     ],
     "catBreakdown": {
-      "dedicated": 518,
+      "dedicated": 548,
       "members_club": 3,
-      "hotel": 11,
+      "hotel": 14,
       "leisure_centre": 6,
       "gym": 55,
       "spa": 1
     },
     "typeBreakdown": {
-      "Finnish": 75,
-      "Wood-fired": 249,
+      "Finnish": 80,
+      "Wood-fired": 270,
       "Infrared": 11,
       "Russian Banya": 3,
-      "Seaweed Bath": 5,
+      "Seaweed Bath": 6,
       "Hot Spring": 11,
       "Lagoon": 6,
       "Geothermal": 16,
@@ -279,15 +279,15 @@
     "topTags": [
       [
         "Wood-fired",
-        249
+        270
       ],
       [
         "Outdoor",
-        224
+        237
       ],
       [
         "Community",
-        137
+        138
       ],
       [
         "Steam",
@@ -299,27 +299,27 @@
       ],
       [
         "Finnish",
-        75
-      ],
-      [
-        "Scenic",
-        71
+        80
       ],
       [
         "Coastal",
-        68
+        77
       ],
       [
-        "Beach",
-        59
+        "Scenic",
+        74
       ],
       [
         "Seafront",
-        58
+        69
+      ],
+      [
+        "Beach",
+        62
       ],
       [
         "Luxury",
-        53
+        54
       ],
       [
         "Ice Bath",
@@ -331,7 +331,7 @@
       ],
       [
         "City Centre",
-        41
+        42
       ],
       [
         "Pool",
@@ -343,7 +343,7 @@
       ],
       [
         "Lakeside",
-        33
+        36
       ],
       [
         "Cold Plunge",
@@ -358,8 +358,8 @@
         25
       ]
     ],
-    "coldPlungeCount": 413,
-    "outdoorCount": 290,
+    "coldPlungeCount": 421,
+    "outdoorCount": 312,
     "freeOrCheapCount": 71,
     "extremesByCountry": {
       "Denmark": {
@@ -485,11 +485,11 @@
     },
     "priceByCategory": {
       "dedicated": {
-        "count": 518,
+        "count": 548,
         "avg": 29
       },
       "hotel": {
-        "count": 11,
+        "count": 14,
         "avg": 88
       },
       "gym": {
@@ -516,14 +516,14 @@
         "pct": 67
       },
       "England": {
-        "total": 205,
-        "coastal": 21,
-        "pct": 10
+        "total": 206,
+        "coastal": 22,
+        "pct": 11
       },
       "Finland": {
-        "total": 12,
+        "total": 15,
         "coastal": 3,
-        "pct": 25
+        "pct": 20
       },
       "Greenland": {
         "total": 2,
@@ -531,14 +531,14 @@
         "pct": 0
       },
       "Iceland": {
-        "total": 21,
-        "coastal": 3,
-        "pct": 14
+        "total": 23,
+        "coastal": 4,
+        "pct": 17
       },
       "Ireland": {
-        "total": 123,
-        "coastal": 66,
-        "pct": 54
+        "total": 147,
+        "coastal": 78,
+        "pct": 53
       },
       "Northern Ireland": {
         "total": 13,
@@ -551,9 +551,9 @@
         "pct": 75
       },
       "Scotland": {
-        "total": 40,
+        "total": 41,
         "coastal": 14,
-        "pct": 35
+        "pct": 34
       },
       "Sweden": {
         "total": 7,
@@ -561,14 +561,14 @@
         "pct": 0
       },
       "UK": {
-        "total": 123,
-        "coastal": 11,
-        "pct": 9
+        "total": 124,
+        "coastal": 12,
+        "pct": 10
       },
       "Wales": {
-        "total": 26,
-        "coastal": 10,
-        "pct": 38
+        "total": 27,
+        "coastal": 11,
+        "pct": 41
       }
     }
   },
@@ -1166,6 +1166,39 @@
     598,
     599,
     600,
-    601
+    601,
+    602,
+    603,
+    604,
+    605,
+    606,
+    607,
+    608,
+    609,
+    610,
+    611,
+    612,
+    613,
+    614,
+    620,
+    615,
+    616,
+    617,
+    618,
+    619,
+    621,
+    622,
+    623,
+    625,
+    624,
+    626,
+    627,
+    628,
+    629,
+    630,
+    631,
+    611,
+    612,
+    613
   ]
 }
