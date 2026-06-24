@@ -7615,13 +7615,287 @@ export const VENUES: Venue[] = [
     lat:51.5970, lng:-8.7850,
     bookingUrl:"https://www.instagram.com/thesweatysanctuarysauna/",
   },
+
+  // ── SWANAGE ──
+  {
+    id:611, city:"Swanage", country:"England", name:"Swanage Bay Sauna", area:"Swanage Bay, Dorset",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Swanage Bay sea plunge", tags:["Seafront","Coastal","Wood-fired"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Swanage (South Western Railway) · walk to bay",
+    parking:"Victoria Avenue car park, Swanage",
+    desc:"Wood-fired sauna on the sandy beach of Swanage Bay on the Jurassic Coast, Dorset. Cold plunge into the English Channel in one of England's most scenic seaside settings.",
+    lat:50.6086, lng:-1.9749,
+    bookingUrl:"https://swanagebaysauna.co.uk"
+  },
+
+  // ── PEMBROKESHIRE (additional) ──
+  {
+    id:612, city:"Pembrokeshire", country:"Wales", name:"Grounded Sauna", area:"Pembrokeshire Coast",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Coastal sea plunge", tags:["Wales","Wood-fired","Coastal"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Check website for location details",
+    parking:"Check website for parking",
+    desc:"A wood-fired coastal sauna experience from the Tidybutt wellness collective in Pembrokeshire. Combines intense sauna heat with cold Atlantic plunging on the dramatic Pembrokeshire Coast.",
+    lat:51.6700, lng:-4.9200,
+    bookingUrl:"https://tidybutt.co.uk"
+  },
+
+  // ── WATERFORD (additional) ──
+  {
+    id:613, city:"Waterford", country:"Ireland", name:"The Recovery Lounge", area:"Waterford City",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Recovery","Ireland","Wood-fired"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Waterford city centre — check website for exact location",
+    parking:"Check website for parking",
+    desc:"A recovery-focused sauna and wellness lounge in Waterford city. Combines sauna sessions with cold therapy and recovery techniques for athletes and wellness seekers.",
+    lat:52.2593, lng:-7.1101,
+  },
+
+  // ── MAYO (additional) ──
+  {
+    id:614, city:"Mayo", country:"Ireland", name:"The Wild Atlantic Sauna", area:"West Mayo, Wild Atlantic Way",
+    type:"both", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Atlantic sea plunge", tags:["Wild Atlantic","Seafront","Wood-fired","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — west Mayo, Wild Atlantic Way",
+    parking:"Check website for parking",
+    desc:"A wood-fired sauna on the rugged west Mayo coastline with direct access to the Wild Atlantic Way. Spectacular scenery and Atlantic plunging in one of Ireland's most dramatic coastal settings.",
+    lat:53.7783, lng:-9.7699,
+  },
+  {
+    id:620, city:"Mayo", country:"Ireland", name:"Pontoon Sauna", area:"Pontoon, between Lough Conn & Lough Cullin",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Lough Conn lake plunge", tags:["Lakeside","Mayo","Wood-fired","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Pontoon village, 5 min north of Foxford, Co. Mayo",
+    parking:"On-site at Pontoon",
+    desc:"A lakeside wood-fired sauna at Pontoon — the beautiful isthmus between Lough Conn and Lough Cullin in north Mayo. Cold plunge in the lake with views of the surrounding Mayo hills. A wonderfully peaceful sauna experience.",
+    lat:53.9553, lng:-9.3750,
+  },
+
+  // ── WEXFORD (additional) ──
+  {
+    id:615, city:"Wexford", country:"Ireland", name:"Solas Croí Eco Spa", area:"New Ross, Co. Wexford",
+    type:"both", price:"Check brandonhousehotel.ie", rating:4.7, reviews:0,
+    hours:"Check brandonhousehotel.ie for current hours",
+    temp:"Hydrotherapy pool", tags:["Hotel Spa","Eco","Ireland"], emoji:"♨️🌿", open:true,
+    hygiene:"A+", lockerNote:"Lockers provided",
+    transport:"Drive — New Ross, Co. Wexford",
+    parking:"Free on-site at Brandon House Hotel",
+    desc:"The eco spa at Brandon House Hotel in New Ross, Wexford — a calming thermal and sauna retreat with sustainably-designed wellness facilities in a beautiful riverside hotel setting.",
+    lat:52.3950, lng:-6.9440,
+    bookingUrl:"https://brandonhousehotel.ie",
+    venueCategory:"hotel",
+  },
+
+  // ── CAVAN (additional) ──
+  {
+    id:616, city:"Cavan", country:"Ireland", name:"Nook Sauna", area:"Cavan / Monaghan border",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Ireland","Wood-fired"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Drive — Cavan / Monaghan border area",
+    parking:"Check website for parking",
+    desc:"A wood-fired sauna in the rolling border countryside of Cavan and Monaghan. A peaceful retreat combining traditional sauna heat with cold therapy in the quiet heart of Ireland.",
+    lat:54.0000, lng:-7.3600,
+  },
+  {
+    id:617, city:"Cavan", country:"Ireland", name:"Lakeside Saunas", area:"Cavan Lakelands",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Lake plunge", tags:["Lakeside","Ireland","Wood-fired"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Cavan lakelands area",
+    parking:"Check website for parking",
+    desc:"Sauna sessions beside one of Cavan's beautiful lakes — Ireland's lakelands county. Combine the heat of a wood-fired sauna with a cold plunge into one of hundreds of Cavan's crystal-clear lakes.",
+    lat:54.0050, lng:-7.3550,
+  },
+
+  // ── GALWAY (additional) ──
+  {
+    id:618, city:"Galway", country:"Ireland", name:"Roundstone Retreat & Sauna", area:"Roundstone, Connemara",
+    type:"sauna", price:"Check roundstoneselfcatering.ie", rating:4.9, reviews:0,
+    hours:"Check roundstoneselfcatering.ie for availability",
+    temp:"Atlantic wild plunge", tags:["Connemara","Wild Atlantic","Outdoor","Scenic"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Drive — Roundstone village, Connemara, 75 min from Galway city",
+    parking:"On-site at Roundstone",
+    desc:"A private retreat sauna in the stunning village of Roundstone at the edge of Connemara, with views of the Twelve Bens and direct access to the Wild Atlantic. One of Connemara's most beautiful sauna settings.",
+    lat:53.3894, lng:-9.9854,
+    bookingUrl:"https://roundstoneselfcatering.ie",
+  },
+
+  // ── WATERFORD (additional) ──
+  {
+    id:619, city:"Waterford", country:"Ireland", name:"Bunmahon Sauna & Seaweed Baths", area:"Bunmahon Beach, Copper Coast",
+    type:"seaweed", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Atlantic sea plunge", tags:["Seaweed Bath","Seafront","Coastal","Wood-fired"], emoji:"🌿🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Drive — Bunmahon, Copper Coast, 25 min from Waterford city",
+    parking:"Bunmahon Beach car park",
+    desc:"A sauna and traditional seaweed bath experience on the dramatic Copper Coast at Bunmahon Beach, Waterford. Combines the ancient Irish wellness tradition of seaweed bathing with wood-fired sauna heat.",
+    lat:52.1407, lng:-7.3726,
+  },
+
+  // ── CORK (additional) ──
+  {
+    id:621, city:"Cork", country:"Ireland", name:"Sauna Geal Recovery Lounge", area:"Cork",
+    type:"sauna", price:"Check Instagram (@sauna_geal)", rating:4.7, reviews:0,
+    hours:"Check Instagram (@sauna_geal) for current sessions",
+    temp:"Cold plunge", tags:["Cork","Recovery","Wood-fired"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check Instagram for details",
+    transport:"Check Instagram for location",
+    parking:"Check Instagram for parking",
+    desc:"A recovery-focused sauna lounge in Cork. Sauna Geal ('bright sauna' in Irish) offers wellness sessions combining heat therapy with cold plunging for recovery and relaxation.",
+    lat:51.8985, lng:-8.4756,
+    bookingUrl:"https://www.instagram.com/sauna_geal",
+  },
+
+  // ── MONAGHAN ──
+  {
+    id:622, city:"Monaghan", country:"Ireland", name:"Éalu Sauna", area:"Co. Monaghan",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Ireland","Wood-fired","Outdoor"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Drive — Co. Monaghan",
+    parking:"Check website for parking",
+    desc:"A wood-fired sauna retreat in the quiet lakeland countryside of County Monaghan. 'Éalu' means 'escape' in Irish — and this peaceful sauna offers exactly that in the rolling drumlin hills of Monaghan.",
+    lat:54.2508, lng:-6.9686,
+  },
+
+  // ── KERRY (additional) ──
+  {
+    id:623, city:"Kerry", country:"Ireland", name:"Acumeen Farm Sauna", area:"Co. Kerry",
+    type:"sauna", price:"Check acumeenfarm.ie", rating:4.8, reviews:0,
+    hours:"Check acumeenfarm.ie for current availability",
+    temp:"Cold plunge", tags:["Farm","Kerry","Rural","Wood-fired"], emoji:"🔥🌿", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Drive — Acumeen Farm, Co. Kerry",
+    parking:"Free on-site at farm",
+    desc:"A sauna experience on the grounds of Acumeen Farm in rural Kerry. Combines the restorative tradition of the Finnish sauna with the beauty of the Kerry countryside.",
+    lat:52.2713, lng:-9.7017,
+    bookingUrl:"https://acumeenfarm.ie/sauna",
+  },
+  {
+    id:625, city:"Kerry", country:"Ireland", name:"Healing Heat", area:"Co. Kerry",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Kerry","Wood-fired","Outdoor"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Drive — Co. Kerry",
+    parking:"Check website for parking",
+    desc:"A wood-fired sauna experience in the stunning landscape of County Kerry. Kerry's natural beauty — mountains, coast, and sea — makes every session here uniquely restorative.",
+    lat:52.1546, lng:-9.5669,
+  },
+
+  // ── LOUTH ──
+  {
+    id:624, city:"Louth", country:"Ireland", name:"Savasana Sauna", area:"Co. Louth",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Ireland","Wood-fired"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Drive — Co. Louth",
+    parking:"Check website for parking",
+    desc:"A wood-fired sauna retreat in County Louth — Ireland's smallest county but home to a growing wellness scene. Peaceful countryside sessions with cold therapy.",
+    lat:53.9959, lng:-6.4069,
+  },
+
+  // ── DUBLIN (additional) ──
+  {
+    id:626, city:"Dublin", country:"Ireland", name:"Sandycove Sauna By The Sea", area:"Sandycove / Dún Laoghaire",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Irish Sea plunge at Forty Foot", tags:["Seafront","Dublin","Wood-fired","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Sandycove & Glasthule (DART) · 5 min walk",
+    parking:"Sandycove beach car park",
+    desc:"A sauna by the sea at Sandycove — steps from the legendary Forty Foot sea bathing place and the James Joyce Tower. Cold plunge into Dublin Bay after your session in this iconic coastal Dublin setting.",
+    lat:53.2885, lng:-6.1141,
+  },
+
+  // ── REYKJAVIK (additional) ──
+  {
+    id:627, city:"Reykjavik", country:"Iceland", name:"Litla Sauna Húsið", area:"Reykjavik",
+    type:"sauna", price:"Check litlasaunahusid.is", rating:4.8, reviews:0,
+    hours:"Check litlasaunahusid.is for current hours",
+    temp:"Cold plunge", tags:["Iceland","Wood-fired","Finnish"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions — Reykjavik",
+    parking:"Check website for parking",
+    desc:"The Little Sauna House — a cosy, authentic wood-fired sauna experience in Reykjavik. Traditional sauna culture in the heart of Iceland's capital.",
+    lat:64.1490, lng:-21.9280,
+    bookingUrl:"https://litlasaunahusid.is",
+  },
+  {
+    id:628, city:"Reykjavik", country:"Iceland", name:"Sækot", area:"Reykjavik waterfront",
+    type:"sauna", price:"Check saekot.is", rating:4.8, reviews:0,
+    hours:"Check saekot.is for current hours",
+    temp:"Cold plunge", tags:["Iceland","Sauna","Seafront"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions — Reykjavik",
+    parking:"Check website for parking",
+    desc:"Sækot is a sauna and wellness venue on the Reykjavik waterfront, combining Icelandic sauna tradition with sea views and cold plunging in the capital of Iceland.",
+    lat:64.1600, lng:-21.9500,
+    bookingUrl:"https://saekot.is",
+  },
+
+  // ── TAMPERE (additional) ──
+  {
+    id:629, city:"Tampere", country:"Finland", name:"Pormestarisauna", area:"Laukontori, Tampere",
+    type:"sauna", price:"Check pormestarisauna.fi", rating:4.8, reviews:0,
+    hours:"Check pormestarisauna.fi for current hours",
+    temp:"Lake Näsijärvi plunge", tags:["Finnish","Public","Tampere","Lakeside"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers available",
+    transport:"Walk from Tampere city centre — Laukontori waterfront",
+    parking:"Check website for parking — Laukontori",
+    desc:"A beloved public sauna at the Laukontori quayside in central Tampere, overlooking Lake Näsijärvi. A cornerstone of Tampere's proud sauna culture, with a traditional wood-fired sauna and direct lake swimming access.",
+    lat:61.4983, lng:23.7603,
+    bookingUrl:"https://pormestarisauna.fi",
+  },
+
+  // ── HELSINKI (additional) ──
+  {
+    id:630, city:"Helsinki", country:"Finland", name:"Kyrö Sauna Bar", area:"Teurastamo, Sörnäinen, Helsinki",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Finnish","Unique","Helsinki","Bar On-site"], emoji:"🔥🍸", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Sörnäinen (Metro) · 10 min walk · or bus to Teurastamo",
+    parking:"Check website for parking",
+    desc:"Kyrö Distillery's Helsinki sauna bar — a unique experience combining a traditional Finnish sauna with the distillery's award-winning craft spirits. Sauna, cold plunge, and a Kyrö cocktail at one of Helsinki's most distinctive wellness venues.",
+    lat:60.1882, lng:24.9706,
+  },
+  {
+    id:631, city:"Helsinki", country:"Finland", name:"Kotiharjun Sauna", area:"Kallio, Helsinki",
+    type:"sauna", price:"Check kotiharjunsauna.fi", rating:4.9, reviews:0,
+    hours:"Check kotiharjunsauna.fi for current hours",
+    temp:"Cold shower", tags:["Finnish","Historic","Public","Cultural"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Lockers available",
+    transport:"Sörnäinen (Metro) · 8 min walk",
+    parking:"Street parking in Kallio",
+    desc:"Helsinki's oldest public wood-fired sauna, operating since 1928 in the Kallio neighbourhood. Kotiharjun Sauna is a living piece of Finnish cultural heritage — a no-frills, authentic public sauna beloved by locals for nearly a century.",
+    lat:60.1862, lng:24.9478,
+    bookingUrl:"https://kotiharjunsauna.fi",
+  },
 ];
 
 export const CITIES: string[] = [
   "All",
   // UK — England
   "London","Bath","Bristol","Brighton","Manchester","Liverpool","Chester","Newcastle","Leeds","Birmingham","Sheffield","Cornwall",
-  "Nottingham","Leicester","Norwich","Cambridge","Oxford","Exeter","Portsmouth","Southampton","Plymouth","York","Durham",
+  "Nottingham","Leicester","Norwich","Cambridge","Oxford","Exeter","Portsmouth","Southampton","Plymouth","York","Durham","Swanage",
   // UK — Scotland
   "Edinburgh","Glasgow","Aberdeen","Inverness","Dundee","St Andrews","Scottish Borders",
   // UK — Wales
@@ -7646,7 +7920,7 @@ export const FLAG: Record<string, string> = {
   Manchester:"🇬🇧", Liverpool:"🇬🇧", Chester:"🇬🇧", Newcastle:"🇬🇧", Leeds:"🇬🇧",
   Birmingham:"🇬🇧", Sheffield:"🇬🇧", Cornwall:"🇬🇧",
   Nottingham:"🇬🇧", Leicester:"🇬🇧", Norwich:"🇬🇧", Cambridge:"🇬🇧", Oxford:"🇬🇧", Exeter:"🇬🇧",
-  Portsmouth:"🇬🇧", Southampton:"🇬🇧", Plymouth:"🇬🇧", York:"🇬🇧",
+  Portsmouth:"🇬🇧", Southampton:"🇬🇧", Plymouth:"🇬🇧", York:"🇬🇧", Swanage:"🇬🇧",
   Edinburgh:"🇬🇧", Glasgow:"🇬🇧", Aberdeen:"🇬🇧", Inverness:"🇬🇧", Dundee:"🇬🇧", "St Andrews":"🇬🇧", "Scottish Borders":"🇬🇧",
   Durham:"🇬🇧",
   Cardiff:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Swansea:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
@@ -7662,6 +7936,7 @@ export const FLAG: Record<string, string> = {
   Sligo:"🇮🇪", Kerry:"🇮🇪", Wicklow:"🇮🇪", Limerick:"🇮🇪",
   Mayo:"🇮🇪", Waterford:"🇮🇪", Kilkenny:"🇮🇪", Wexford:"🇮🇪", Tipperary:"🇮🇪", Carlingford:"🇮🇪", Drogheda:"🇮🇪",
   Donegal:"🇮🇪", Clare:"🇮🇪", Cavan:"🇮🇪", Carlow:"🇮🇪", Laois:"🇮🇪",
+  Monaghan:"🇮🇪", Louth:"🇮🇪",
   Kildare:"🇮🇪", Leitrim:"🇮🇪", Meath:"🇮🇪", Offaly:"🇮🇪", Roscommon:"🇮🇪", Westmeath:"🇮🇪",
   Helsinki:"🇫🇮", Stockholm:"🇸🇪", Gothenburg:"🇸🇪", Karlstad:"🇸🇪",
   Copenhagen:"🇩🇰", Aarhus:"🇩🇰", Oslo:"🇳🇴", Bergen:"🇳🇴", "Tromsø":"🇳🇴", Stavanger:"🇳🇴", Rovaniemi:"🇫🇮", Tampere:"🇫🇮",
@@ -7678,7 +7953,7 @@ export const REGION_MAP: Record<string, string> = {
   Newcastle:"UK & Ireland", Leeds:"UK & Ireland", Birmingham:"UK & Ireland",
   Sheffield:"UK & Ireland", Cornwall:"UK & Ireland",
   Nottingham:"UK & Ireland", Leicester:"UK & Ireland", Norwich:"UK & Ireland", Cambridge:"UK & Ireland",
-  Oxford:"UK & Ireland", Exeter:"UK & Ireland", Portsmouth:"UK & Ireland", Southampton:"UK & Ireland", Plymouth:"UK & Ireland", York:"UK & Ireland",
+  Oxford:"UK & Ireland", Exeter:"UK & Ireland", Portsmouth:"UK & Ireland", Southampton:"UK & Ireland", Plymouth:"UK & Ireland", York:"UK & Ireland", Swanage:"UK & Ireland",
   Edinburgh:"UK & Ireland", Glasgow:"UK & Ireland", Aberdeen:"UK & Ireland",
   Inverness:"UK & Ireland", Dundee:"UK & Ireland", "St Andrews":"UK & Ireland", "Scottish Borders":"UK & Ireland",
   Durham:"UK & Ireland",
@@ -7696,6 +7971,7 @@ export const REGION_MAP: Record<string, string> = {
   Limerick:"UK & Ireland", Waterford:"UK & Ireland", Kilkenny:"UK & Ireland",
   Mayo:"UK & Ireland", Wexford:"UK & Ireland", Tipperary:"UK & Ireland", Carlingford:"UK & Ireland", Drogheda:"UK & Ireland",
   Donegal:"UK & Ireland", Clare:"UK & Ireland", Cavan:"UK & Ireland", Carlow:"UK & Ireland", Laois:"UK & Ireland",
+  Monaghan:"UK & Ireland", Louth:"UK & Ireland",
   Kildare:"UK & Ireland", Leitrim:"UK & Ireland", Meath:"UK & Ireland", Offaly:"UK & Ireland", Roscommon:"UK & Ireland", Westmeath:"UK & Ireland",
   Reykjavik:"Nordic", Aarhus:"Nordic",
   "Mývatn":"Nordic", "Húsavík":"Nordic", "Akureyri":"Nordic", "Egilsstaðir":"Nordic",
@@ -7712,7 +7988,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Manchester:"England", Liverpool:"England", Chester:"England", Newcastle:"England", Leeds:"England",
   Birmingham:"England", Sheffield:"England", Cornwall:"England",
   Nottingham:"England", Leicester:"England", Norwich:"England", Cambridge:"England",
-  Oxford:"England", Exeter:"England", Portsmouth:"England", Southampton:"England", Plymouth:"England", York:"England",
+  Oxford:"England", Exeter:"England", Portsmouth:"England", Southampton:"England", Plymouth:"England", York:"England", Swanage:"England",
   // Scotland
   Durham:"England",
   Edinburgh:"Scotland", Glasgow:"Scotland", Aberdeen:"Scotland",
@@ -7735,6 +8011,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Mayo:"Ireland", Wexford:"Ireland", Tipperary:"Ireland", Carlingford:"Ireland", Drogheda:"Ireland",
   Donegal:"Ireland", Clare:"Ireland", Cavan:"Ireland", Carlow:"Ireland", Laois:"Ireland",
   Kildare:"Ireland", Leitrim:"Ireland", Meath:"Ireland", Offaly:"Ireland", Roscommon:"Ireland", Westmeath:"Ireland",
+  Monaghan:"Ireland", Louth:"Ireland",
   // Nordic
   Reykjavik:"Iceland",
   "Mývatn":"Iceland", "Húsavík":"Iceland", "Akureyri":"Iceland", "Egilsstaðir":"Iceland",
@@ -7754,7 +8031,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Manchester:"North West", Liverpool:"North West", Chester:"Cheshire", Newcastle:"North East", Leeds:"Yorkshire",
   Birmingham:"West Midlands", Sheffield:"Yorkshire", Cornwall:"South West",
   Nottingham:"East Midlands", Leicester:"East Midlands", Norwich:"East of England", Cambridge:"East of England",
-  Oxford:"South East", Exeter:"South West", Portsmouth:"South East", Southampton:"South East", Plymouth:"South West", York:"Yorkshire",
+  Oxford:"South East", Exeter:"South West", Portsmouth:"South East", Southampton:"South East", Plymouth:"South West", York:"Yorkshire", Swanage:"South West",
   // Scotland — region
   Edinburgh:"Central Belt", Glasgow:"Central Belt", Aberdeen:"Grampian",
   Inverness:"Highlands", Dundee:"Fife", "St Andrews":"Fife", "Scottish Borders":"Scottish Borders",
@@ -7778,6 +8055,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Mayo:"Mayo", Drogheda:"Louth",
   Donegal:"Donegal", Clare:"Clare", Cavan:"Cavan", Carlow:"Carlow", Laois:"Laois",
   Kildare:"Kildare", Leitrim:"Leitrim", Meath:"Meath", Offaly:"Offaly", Roscommon:"Roscommon", Westmeath:"Westmeath",
+  Monaghan:"Monaghan", Louth:"Louth",
   // Nordic — region
   Helsinki:"Helsinki Region", Rovaniemi:"Lapland", Tampere:"Pirkanmaa",
   Stockholm:"Stockholm Region", Gothenburg:"Gothenburg Region", Karlstad:"Gothenburg Region",
@@ -7928,6 +8206,11 @@ export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
   "Barrel Sauna":    { bg:"rgba(196,121,58,0.15)",   c:"#c4793a" },
   "Cultural":        { bg:"rgba(138,156,130,0.12)",  c:"#8a9c82" },
   "Sea Views":       { bg:"rgba(107,175,200,0.15)",  c:"#6bafc8" },
+  "Recovery":        { bg:"rgba(196,121,58,0.12)",   c:"#c4793a" },
+  "Farm":            { bg:"rgba(78,122,85,0.18)",    c:"#6a9b72" },
+  "Rural":           { bg:"rgba(138,156,130,0.15)",  c:"#8a9c82" },
+  "Eco":             { bg:"rgba(78,155,106,0.15)",   c:"#4a9b6a" },
+  "Connemara":       { bg:"rgba(107,175,200,0.15)",  c:"#6bafc8" },
 };
 
 export function getTag(t: string): { bg: string; c: string } {

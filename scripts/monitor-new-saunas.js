@@ -61,11 +61,23 @@ const EXTRA_SITES = [
 ];
 
 // OpenStreetMap bounding boxes [name, "south,west,north,east"]
+// Allowed countries: UK, Ireland, Iceland, Norway, Sweden, Finland, Denmark, Greenland,
+//                    Latvia, Estonia, Lithuania, Germany, Poland
+// Excluded by bounding box: Russia (>31°E or >59°N east of 28°E) and Belarus (23–32°E, 51–56°N)
 const OVERPASS_REGIONS = [
-  { name: 'UK',      bbox: '49.9,-6.4,60.9,1.8'   },
-  { name: 'Ireland', bbox: '51.4,-10.7,55.4,-5.9'  },
-  { name: 'Iceland', bbox: '63.0,-24.5,66.5,-13.5' },
-  { name: 'Nordics', bbox: '54.5,4.5,71.2,31.5'    },
+  { name: 'UK',          bbox: '49.9,-6.4,60.9,1.8'    },
+  { name: 'Ireland',     bbox: '51.4,-10.7,55.4,-5.9'   },
+  { name: 'Iceland',     bbox: '63.0,-24.5,66.5,-13.5'  },
+  { name: 'Norway',      bbox: '57.0,4.0,71.5,31.0'     },
+  { name: 'Sweden',      bbox: '55.0,10.5,69.5,24.5'    },
+  { name: 'Finland',     bbox: '59.5,19.5,70.0,31.5'    },
+  { name: 'Denmark',     bbox: '54.5,8.0,57.8,15.5'     },
+  { name: 'Greenland',   bbox: '59.5,-73.0,83.5,-12.0'  },
+  { name: 'Latvia',      bbox: '55.6,20.8,58.1,28.2'    },
+  { name: 'Estonia',     bbox: '57.5,21.5,59.7,28.2'    },
+  { name: 'Lithuania',   bbox: '53.9,20.9,56.5,26.8'    },
+  { name: 'Germany',     bbox: '47.2,5.8,55.1,15.1'     },
+  { name: 'Poland',      bbox: '49.0,14.1,54.9,24.2'    },
 ];
 
 // Google Places cities + search queries
@@ -93,6 +105,43 @@ const PLACES_QUERIES = [
 
 // Keywords that indicate a venue is relevant
 const RELEVANT_RE = /sauna|plunge|cold\s+(water|dip|swim)|banya|steam\s+room|thermal\s+spa|wellness\s+(centre|center|venue)|nordic\s+(spa|bath)|ice\s+bath|hot\s+spring|geothermal|lagoon\s+spa/i;
+
+// Adult/sex venue exclusion — precise terms only, NOT blanket "gay" exclusion.
+// LGBTQ-friendly wellness venues are fine; only exclude explicit adult/sex venues.
+const ADULT_CONTENT_RE = /\bcruising\b|adult\s+only|men\s+only|18\+|private\s+cabin[s]?|darkroom|gay\s+sauna|massage\s+parlour|thai\s+massage/i;
+
+// Exclude venues with Cyrillic-only names (Russian/Belarusian)
+const CYRILLIC_ONLY_RE = /^[\u0400-\u04FF\s\d\W]+$/;
+
+// Exclude venues with pure numbers/symbols names (no real words)
+const MEANINGLESS_NAME_RE = /^[\d\s\-–—_.,;:!?@#$%^&*()+=/\\|<>{}[\]"'`~]+$/;
+
+// Russia bounding box: lng > 32°E (east of Belarus/Baltics) combined with lat in Russia range
+// Belarus bounding box: lng 23–32°E, lat 51–56°N
+function isRussiaOrBelarus(lat, lng) {
+  if (lat == null || lng == null) return false;
+  // Belarus: approximately 51.3–56.2°N, 23.2–32.8°E
+  if (lat >= 51.3 && lat <= 56.2 && lng >= 23.2 && lng <= 32.8) return true;
+  // Russia: east of 32°E (covers mainland Russia west of Urals) + north of Finland/Baltic
+  // More precisely: exclude lng > 32 when lat > 59 (northern Russia) OR lng > 40
+  if (lng > 40) return true;
+  if (lng > 32 && lat > 59) return true;
+  return false;
+}
+
+// Returns true if a venue name/website should be excluded as adult content
+function isAdultVenue(name, website) {
+  const text = (name + ' ' + (website || '')).toLowerCase();
+  return ADULT_CONTENT_RE.test(text);
+}
+
+// Returns true if the name fails basic quality checks
+function isLowQualityName(name) {
+  if (!name || name.trim().length < 4) return true;
+  if (MEANINGLESS_NAME_RE.test(name)) return true;
+  if (CYRILLIC_ONLY_RE.test(name)) return true;
+  return false;
+}
 
 // ── HTTP (GET) ────────────────────────────────────────────────────────────────
 
@@ -372,7 +421,14 @@ async function queryOverpassAPI(existingNames) {
       let newCount = 0;
       for (const el of elements) {
         const name = el.tags && el.tags.name;
-        if (!name || name.length < 3) continue;
+        // Quality filters
+        if (isLowQualityName(name)) continue;
+        // Geographic exclusion: Russia and Belarus
+        if (isRussiaOrBelarus(el.lat, el.lon)) continue;
+        // Adult content exclusion
+        const website = el.tags && (el.tags.website || el.tags['contact:website'] || null);
+        if (isAdultVenue(name, website)) continue;
+        // Duplicate check
         if (isSimilarToExisting(name, existingNames, 0.85)) continue;
 
         const type = el.tags.leisure || el.tags.amenity || 'sauna';
@@ -381,9 +437,10 @@ async function queryOverpassAPI(existingNames) {
           lat:     el.lat,
           lng:     el.lon,
           osmType: type,
-          website: el.tags.website || el.tags['contact:website'] || null,
+          website: website,
           region:  region.name,
           source:  'OpenStreetMap',
+          flagged: true, // always manual review
         });
         newCount++;
       }
@@ -432,6 +489,10 @@ async function queryGooglePlaces(existingNames) {
         for (const place of (data.results || [])) {
           if (seenIds.has(place.place_id)) continue;
           seenIds.add(place.place_id);
+          // Quality and exclusion filters
+          if (isLowQualityName(place.name)) continue;
+          if (isAdultVenue(place.name, place.website || '')) continue;
+          if (isRussiaOrBelarus(place.geometry?.location?.lat, place.geometry?.location?.lng)) continue;
           if (isSimilarToExisting(place.name, existingNames, 0.85)) continue;
 
           flagged.push({
@@ -442,6 +503,7 @@ async function queryGooglePlaces(existingNames) {
             city:    city.name,
             query,
             source:  'Google Places',
+            flagged: true, // always manual review
           });
           newCount++;
         }
@@ -549,7 +611,17 @@ async function sendEmail(subject, body) {
   const placesFlagged  = await queryGooglePlaces(existingNames);
 
   // ── 5. Relevance filter + Claude research (news + scraping only) ──────────
-  const relevant = newsCandidates.filter(c => RELEVANT_RE.test(c.title + ' ' + c.desc));
+  const relevant = newsCandidates.filter(c => {
+    const text = c.title + ' ' + c.desc;
+    if (!RELEVANT_RE.test(text)) return false;
+    // Adult content check on title/URL
+    if (isAdultVenue(c.title, c.link)) return false;
+    // Minimum name length
+    if (!c.title || c.title.trim().length < 4) return false;
+    // Cyrillic / numbers-only exclusion
+    if (CYRILLIC_ONLY_RE.test(c.title)) return false;
+    return true;
+  });
   console.log(`\nNews/scraping candidates: ${newsCandidates.length} total, ${relevant.length} relevant`);
   console.log('── Claude AI Verification ───────────────────────────────────');
 
