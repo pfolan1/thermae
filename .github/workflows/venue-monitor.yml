@@ -38,7 +38,45 @@ jobs:
           ZOHO_PASSWORD: ${{ secrets.ZOHO_PASSWORD }}
         run: node scripts/monitor-new-saunas.js
 
+      - name: Verify build
+        id: build_check
+        run: npm run build
+        continue-on-error: true
+
+      - name: Revert and notify if build failed
+        if: steps.build_check.outcome == 'failure'
+        env:
+          ZOHO_EMAIL: ${{ secrets.ZOHO_EMAIL }}
+          ZOHO_PASSWORD: ${{ secrets.ZOHO_PASSWORD }}
+        run: |
+          echo "Build failed — saving proposed changes and reverting venues.ts"
+          git diff src/data/venues.ts > scripts/new-venues-found.txt
+          git checkout src/data/venues.ts
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "Thermae Venue Bot"
+          git add scripts/new-venues-found.txt
+          if ! git diff --staged --quiet; then
+            git commit -m "Venue discovery (build failed — manual review needed): $(date +'%Y-%m-%d')"
+            git push
+          fi
+          node -e "
+            const nodemailer = require('nodemailer');
+            const fs = require('fs');
+            const diff = fs.existsSync('scripts/new-venues-found.txt') ? fs.readFileSync('scripts/new-venues-found.txt', 'utf8') : '(no diff captured)';
+            const transporter = nodemailer.createTransport({
+              host: 'smtp.zoho.eu', port: 465, secure: true,
+              auth: { user: process.env.ZOHO_EMAIL, pass: process.env.ZOHO_PASSWORD }
+            });
+            transporter.sendMail({
+              from: process.env.ZOHO_EMAIL,
+              to: process.env.ZOHO_EMAIL,
+              subject: '[Thermae] Build failed — venues need manual review',
+              text: 'The venue monitor found new venues but npm run build failed.\n\nProposed changes have been saved to scripts/new-venues-found.txt in the repo.\nPlease review and apply manually.\n\n--- DIFF ---\n' + diff
+            }).then(() => console.log('Notification email sent')).catch(e => console.error('Email failed:', e.message));
+          "
+
       - name: Commit and push new venues
+        if: steps.build_check.outcome == 'success'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "Thermae Venue Bot"
@@ -51,4 +89,5 @@ jobs:
           fi
 
       - name: Trigger Netlify rebuild
+        if: steps.build_check.outcome == 'success'
         run: curl -X POST -d '' ${{ secrets.NETLIFY_BUILD_HOOK }}
