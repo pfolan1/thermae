@@ -341,7 +341,14 @@ function insertVenuesIntoTs(src, venues, startId) {
     throw new Error('Unexpected content near VENUES closing bracket — aborting to prevent corruption');
   }
 
-  return src.slice(0, idx) + ',' + block + src.slice(idx);
+  // Find the last non-whitespace character before \n]; to determine if a trailing comma is needed.
+  // All manually-formatted venues already end with "},", so blindly prepending "," would create
+  // a double-comma (",,") which TypeScript rejects as a sparse array in a Venue[] literal.
+  let lastNonWsPos = idx - 1;
+  while (lastNonWsPos >= 0 && /\s/.test(src[lastNonWsPos])) lastNonWsPos--;
+  const needsComma = lastNonWsPos < 0 || src[lastNonWsPos] !== ',';
+
+  return src.slice(0, idx) + (needsComma ? ',' : '') + block + src.slice(idx);
 }
 
 // ── ANTHROPIC API ─────────────────────────────────────────────────────────────
