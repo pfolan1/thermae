@@ -132,17 +132,24 @@ const CYRILLIC_ONLY_RE = /^[\u0400-\u04FF\s\d\W]+$/;
 // Exclude venues with pure numbers/symbols names (no real words)
 const MEANINGLESS_NAME_RE = /^[\d\s\-–—_.,;:!?@#$%^&*()+=/\\|<>{}[\]"'`~]+$/;
 
-// Russia bounding box: lng > 32°E (east of Belarus/Baltics) combined with lat in Russia range
-// Belarus bounding box: lng 23–32°E, lat 51–56°N
+// Russia/Belarus/excluded-region coordinate exclusion
 function isRussiaOrBelarus(lat, lng) {
   if (lat == null || lng == null) return false;
   // Belarus: approximately 51.3–56.2°N, 23.2–32.8°E
   if (lat >= 51.3 && lat <= 56.2 && lng >= 23.2 && lng <= 32.8) return true;
-  // Russia: east of 32°E (covers mainland Russia west of Urals) + north of Finland/Baltic
-  // More precisely: exclude lng > 32 when lat > 59 (northern Russia) OR lng > 40
+  // St Petersburg region: ~59–62°N, 29.5–33.5°E
+  // (Finnish cities in this lat band — Lappeenranta, Imatra — are at lng < 29°E, so safe)
+  if (lat >= 59.0 && lat <= 62.0 && lng >= 29.5 && lng <= 33.5) return true;
+  // Rest of Russia: east of 32°E at high latitudes, or very far east
   if (lng > 40) return true;
   if (lng > 32 && lat > 59) return true;
   return false;
+}
+
+// Returns true if the website URL indicates a Russian/out-of-region venue
+function isRussianUrl(website) {
+  if (!website) return false;
+  return /\.(ru|su)(\/|$)|saunapiter\.ru|piterbanyas?\.ru/i.test(website);
 }
 
 // Returns true if a venue name/website should be excluded as adult content
@@ -160,6 +167,10 @@ function isJunkVenue(name, website) {
   if (JUNK_NAME_RE.test(name.trim())) return true;
   if (TANNING_RE.test(name))          return true;
   if (MASSAGE_SPA_RE.test(name))      return true;
+  // Alphanumeric OSM node codes: "20B4", "74B", "30B", "A5", etc.
+  if (/^\d+[A-Z]+\d*$|^[A-Z]{1,2}\d+[A-Z]?\d*$/.test(name.trim())) return true;
+  // Name is exactly a generic wellness category word with no distinguishing info
+  if (/^(sauna|bastu|баня|banya|badstue|badehus|kallbadhus|spa|löyly|steam\s+room)$/i.test(name.trim())) return true;
   // Single generic word with no wellness signal and no website = almost certainly noise
   if (!website && /^\S+$/.test(name.trim()) && !WELLNESS_NAME_RE.test(name)) return true;
   return false;
@@ -200,32 +211,37 @@ function saveFlaggedHistory(historySet) {
 }
 
 // Curate the combined OSM + Places raw candidates into a short, high-quality review list.
-// Applies all filters, de-dupes against history, and caps at 20 sorted by website-first.
-// Returns { curated, junkCount, dupCount, historyCount, totalBeforeFilter }
+// Tracks separate filter counts: regional (Russian/.ru), adult, junk, duplicate, history.
+// Caps at 25 candidates sorted by website-first.
+// Returns { curated, regionalCount, adultCount, junkCount, dupCount, historyCount, totalBeforeFilter }
 function curateReviewList(candidates, existingNames, flaggedHistory) {
-  let junkCount    = 0;
-  let dupCount     = 0;
-  let historyCount = 0;
-  const seenNames  = new Set(); // within-batch dedup
-  const curated    = [];
+  let regionalCount = 0;
+  let adultCount    = 0;
+  let junkCount     = 0;
+  let dupCount      = 0;
+  let historyCount  = 0;
+  const seenNames   = new Set(); // within-batch dedup
+  const curated     = [];
 
   for (const c of candidates) {
     const name    = (c.name || '').trim();
     const nameLow = name.toLowerCase();
     const website = c.website || '';
 
-    // Within-batch deduplication
-    if (seenNames.has(nameLow))                              { dupCount++;     continue; }
-    // Adult content (name + URL)
-    if (isAdultVenue(name, website))                         { junkCount++;    continue; }
-    // Non-wellness junk (tanning, massage, generic names)
-    if (isJunkVenue(name, website))                          { junkCount++;    continue; }
-    // Name doesn't sound like a wellness venue
-    if (!isPlausibleWellnessVenue(name))                     { junkCount++;    continue; }
+    // Within-batch deduplication (before other checks)
+    if (seenNames.has(nameLow))                              { dupCount++;      continue; }
+    // Russian/out-of-region: .ru domains
+    if (isRussianUrl(website))                               { regionalCount++; continue; }
+    // Adult content (name + URL patterns)
+    if (isAdultVenue(name, website))                         { adultCount++;    continue; }
+    // Non-wellness junk (tanning, massage, generic/code names)
+    if (isJunkVenue(name, website))                          { junkCount++;     continue; }
+    // Name doesn't sound like a wellness venue at all
+    if (!isPlausibleWellnessVenue(name))                     { junkCount++;     continue; }
     // Already in venues.ts
-    if (isSimilarToExisting(name, existingNames, 0.85))      { dupCount++;     continue; }
+    if (isSimilarToExisting(name, existingNames, 0.85))      { dupCount++;      continue; }
     // Already flagged in a previous week
-    if (isSimilarToExisting(name, flaggedHistory, 0.85))     { historyCount++; continue; }
+    if (isSimilarToExisting(name, flaggedHistory, 0.85))     { historyCount++;  continue; }
 
     seenNames.add(nameLow);
     curated.push(c);
@@ -240,7 +256,9 @@ function curateReviewList(candidates, existingNames, flaggedHistory) {
   });
 
   return {
-    curated: curated.slice(0, 20),
+    curated: curated.slice(0, 25),
+    regionalCount,
+    adultCount,
     junkCount,
     dupCount,
     historyCount,
@@ -835,8 +853,8 @@ async function sendEmail(subject, body) {
   // ── 7. Curate the OSM + Places review list ───────────────────────────────
   const allRawFlagged = [...osmFlagged, ...placesFlagged];
   const curation = curateReviewList(allRawFlagged, existingNames, flaggedHistory);
-  const { curated, junkCount, dupCount, historyCount, totalBeforeFilter } = curation;
-  const totalFiltered = junkCount + dupCount + historyCount;
+  const { curated, regionalCount, adultCount, junkCount, dupCount, historyCount, totalBeforeFilter } = curation;
+  const totalFiltered = regionalCount + adultCount + junkCount + dupCount + historyCount;
 
   // Add the curated names to flagged history so they aren't re-shown next week
   for (const v of curated) {
@@ -844,7 +862,7 @@ async function sendEmail(subject, body) {
   }
   saveFlaggedHistory(flaggedHistory);
   console.log(`\nCurated review list: ${curated.length} of ${totalBeforeFilter} candidates`);
-  console.log(`  Filtered: ${junkCount} junk/adult/non-wellness, ${dupCount} duplicates, ${historyCount} previously flagged`);
+  console.log(`  Filtered: ${regionalCount} Russian/out-of-region, ${adultCount} adult, ${junkCount} junk/non-wellness, ${dupCount} duplicates, ${historyCount} previously flagged`);
 
   // ── 8. Build report ───────────────────────────────────────────────────────
   const date  = new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
@@ -862,7 +880,7 @@ async function sendEmail(subject, body) {
     '',
     '  RESULTS:',
     `  • Venues auto-added        : ${newVenues.length}`,
-    `  • Review list (curated)    : ${curated.length} of ${totalBeforeFilter} raw (${totalFiltered} filtered out)`,
+    `  • Review list (curated)    : ${curated.length} of ${totalBeforeFilter} raw (${regionalCount} regional, ${adultCount} adult, ${junkCount} junk, ${dupCount} dup, ${historyCount} seen)`,
     `  • Skipped (duplicates/irrelevant): ${skipped.length}`,
     `  • Errors                   : ${errors.length}`,
     '',
@@ -889,7 +907,7 @@ async function sendEmail(subject, body) {
   // Section 2: Curated review list (max 20)
   lines.push(`── CURATED REVIEW LIST (${curated.length} of ${totalBeforeFilter} candidates) ─────────────────`);
   if (curated.length > 0) {
-    lines.push(`  (Filtered: ${junkCount} junk/adult/non-wellness · ${dupCount} already in venues.ts · ${historyCount} seen in previous weeks)`);
+    lines.push(`  (Filtered: ${regionalCount} Russian/out-of-region · ${adultCount} adult · ${junkCount} junk/non-wellness · ${dupCount} already in venues.ts · ${historyCount} previously seen)`);
     lines.push('');
     for (const v of curated) {
       lines.push(`  📍 ${v.name}`);
@@ -903,7 +921,7 @@ async function sendEmail(subject, body) {
     }
   } else {
     lines.push('  No new genuine candidates found this week.');
-    lines.push(`  (${totalFiltered} entries filtered: ${junkCount} junk, ${dupCount} duplicates, ${historyCount} previously seen)`);
+    lines.push(`  (${totalFiltered} filtered: ${regionalCount} Russian/out-of-region, ${adultCount} adult, ${junkCount} junk, ${dupCount} duplicates, ${historyCount} previously seen)`);
     lines.push('');
   }
 
