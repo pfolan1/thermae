@@ -29,9 +29,10 @@ const nodemailer = require('nodemailer');
 
 try { require('dotenv').config({ path: path.join(__dirname, '.env') }); } catch (_) {}
 
-const VENUES_FILE = path.join(__dirname, '../src/data/venues.ts');
-const REPORT_FILE = path.join(__dirname, 'new-venues-found.txt');
-const DAYS_BACK   = 9; // One week + 2 day buffer
+const VENUES_FILE          = path.join(__dirname, '../src/data/venues.ts');
+const REPORT_FILE          = path.join(__dirname, 'new-venues-found.txt');
+const FLAGGED_HISTORY_FILE = path.join(__dirname, 'flagged-history.json');
+const DAYS_BACK            = 9; // One week + 2 day buffer
 
 // ── SEARCH TERMS ─────────────────────────────────────────────────────────────
 
@@ -103,12 +104,27 @@ const PLACES_QUERIES = [
   'seaweed bath',
 ];
 
-// Keywords that indicate a venue is relevant
+// Keywords that indicate a venue is relevant (used for news/scraping pipeline)
 const RELEVANT_RE = /sauna|plunge|cold\s+(water|dip|swim)|banya|steam\s+room|thermal\s+spa|wellness\s+(centre|center|venue)|nordic\s+(spa|bath)|ice\s+bath|hot\s+spring|geothermal|lagoon\s+spa/i;
 
-// Adult/sex venue exclusion — precise terms only, NOT blanket "gay" exclusion.
-// LGBTQ-friendly wellness venues are fine; only exclude explicit adult/sex venues.
-const ADULT_CONTENT_RE = /\bcruising\b|adult\s+only|men\s+only|18\+|private\s+cabin[s]?|darkroom|gay\s+sauna|massage\s+parlour|thai\s+massage/i;
+// Name sounds like a genuine wellness/sauna venue
+const WELLNESS_NAME_RE = /sauna|plunge|thermal|wellness|spa|baths?|nordic|steam|geothermal|lagoon|hot\s+spring|cold\s+water|ice\s+bath|banya|pirts|pirtis|kylpyl|therme|terme|therm|badeland|hammam|lido|hydrotherapy/i;
+
+// Adult/sex venue exclusion. Covers known adult-sauna chains and content keywords.
+// LGBTQ-friendly wellness venues are fine; only explicit adult/sex venues are excluded.
+const ADULT_CONTENT_RE = /\bcruising\b|adult[\s-]+only|men[\s-]+only|18\+|private\s+cabin[s]?|darkroom|gay[-\s]?sauna|gaysauna|pleasuredrome|pipeworks|steamworks|e15\s*club|massage\s+parlou?r|thai\s+massage|thai\s+spa|naturist\s+sauna|dogging|fetish|escort\b/i;
+
+// Adult venue URL/domain patterns
+const ADULT_URL_RE = /gay[-_]?sauna|gaysauna\.com|pleasuredrome|pipeworks\.com|steamworks|e15club|mensonly/i;
+
+// Generic single-word names unlikely to be real wellness venues
+const JUNK_NAME_RE = /^(dolphin|base|waterfront|quayside|lakeside|poolside|harbour|pavilion|number\s+\d+|consol|amala|the\s+base|the\s+waterfront|sports\s+club|leisure\s+centre|recreation\s+centre|fitness\s+centre)$/i;
+
+// Tanning salons — not wellness in our sense
+const TANNING_RE = /\b(tanning\s+(studio|salon|shop|bed|booth)|sunbed\s+(studio|salon)|solarium|pound\s+tan|bling\s+tan)\b/i;
+
+// Generic massage/beauty — not wellness in our sense
+const MASSAGE_SPA_RE = /\b(thai\s+(massage|spa|therapy)|massage\s+parlou?r|beauty\s+salon|nail\s+(bar|salon|studio)|hair\s+(salon|studio|bar)|barbershop|barber\s+shop|laser\s+(hair|beauty)|microblading)\b/i;
 
 // Exclude venues with Cyrillic-only names (Russian/Belarusian)
 const CYRILLIC_ONLY_RE = /^[\u0400-\u04FF\s\d\W]+$/;
@@ -131,8 +147,27 @@ function isRussiaOrBelarus(lat, lng) {
 
 // Returns true if a venue name/website should be excluded as adult content
 function isAdultVenue(name, website) {
-  const text = (name + ' ' + (website || '')).toLowerCase();
-  return ADULT_CONTENT_RE.test(text);
+  const nameStr = (name || '').toLowerCase();
+  const urlStr  = (website || '').toLowerCase();
+  if (ADULT_CONTENT_RE.test(nameStr)) return true;
+  if (ADULT_URL_RE.test(urlStr))      return true;
+  return false;
+}
+
+// Returns true if the name/website indicates a non-wellness junk venue
+function isJunkVenue(name, website) {
+  if (!name) return true;
+  if (JUNK_NAME_RE.test(name.trim())) return true;
+  if (TANNING_RE.test(name))          return true;
+  if (MASSAGE_SPA_RE.test(name))      return true;
+  // Single generic word with no wellness signal and no website = almost certainly noise
+  if (!website && /^\S+$/.test(name.trim()) && !WELLNESS_NAME_RE.test(name)) return true;
+  return false;
+}
+
+// Returns true if the name plausibly describes a sauna/wellness venue
+function isPlausibleWellnessVenue(name) {
+  return WELLNESS_NAME_RE.test(name || '');
 }
 
 // Returns true if the name fails basic quality checks
@@ -141,6 +176,76 @@ function isLowQualityName(name) {
   if (MEANINGLESS_NAME_RE.test(name)) return true;
   if (CYRILLIC_ONLY_RE.test(name)) return true;
   return false;
+}
+
+// ── FLAGGED HISTORY ───────────────────────────────────────────────────────────
+// Persists names flagged in previous weeks so they don't re-appear in the review list.
+
+function loadFlaggedHistory() {
+  try {
+    const raw  = fs.readFileSync(FLAGGED_HISTORY_FILE, 'utf-8');
+    const data = JSON.parse(raw);
+    return new Set(Array.isArray(data.names) ? data.names.map(n => n.toLowerCase().trim()) : []);
+  } catch (_) {
+    return new Set(); // first run or missing file — start fresh
+  }
+}
+
+function saveFlaggedHistory(historySet) {
+  const data = {
+    lastUpdated: new Date().toISOString(),
+    names: [...historySet].sort(),
+  };
+  fs.writeFileSync(FLAGGED_HISTORY_FILE, JSON.stringify(data, null, 2), 'utf-8');
+}
+
+// Curate the combined OSM + Places raw candidates into a short, high-quality review list.
+// Applies all filters, de-dupes against history, and caps at 20 sorted by website-first.
+// Returns { curated, junkCount, dupCount, historyCount, totalBeforeFilter }
+function curateReviewList(candidates, existingNames, flaggedHistory) {
+  let junkCount    = 0;
+  let dupCount     = 0;
+  let historyCount = 0;
+  const seenNames  = new Set(); // within-batch dedup
+  const curated    = [];
+
+  for (const c of candidates) {
+    const name    = (c.name || '').trim();
+    const nameLow = name.toLowerCase();
+    const website = c.website || '';
+
+    // Within-batch deduplication
+    if (seenNames.has(nameLow))                              { dupCount++;     continue; }
+    // Adult content (name + URL)
+    if (isAdultVenue(name, website))                         { junkCount++;    continue; }
+    // Non-wellness junk (tanning, massage, generic names)
+    if (isJunkVenue(name, website))                          { junkCount++;    continue; }
+    // Name doesn't sound like a wellness venue
+    if (!isPlausibleWellnessVenue(name))                     { junkCount++;    continue; }
+    // Already in venues.ts
+    if (isSimilarToExisting(name, existingNames, 0.85))      { dupCount++;     continue; }
+    // Already flagged in a previous week
+    if (isSimilarToExisting(name, flaggedHistory, 0.85))     { historyCount++; continue; }
+
+    seenNames.add(nameLow);
+    curated.push(c);
+  }
+
+  // Sort: entries with a working website first, then alphabetical by name
+  curated.sort((a, b) => {
+    const aW = !!(a.website);
+    const bW = !!(b.website);
+    if (aW !== bW) return bW ? 1 : -1;
+    return (a.name || '').localeCompare(b.name || '');
+  });
+
+  return {
+    curated: curated.slice(0, 20),
+    junkCount,
+    dupCount,
+    historyCount,
+    totalBeforeFilter: candidates.length,
+  };
 }
 
 // ── HTTP (GET) ────────────────────────────────────────────────────────────────
@@ -451,17 +556,12 @@ async function queryOverpassAPI(existingNames) {
       let newCount = 0;
       for (const el of elements) {
         const name = el.tags && el.tags.name;
-        // Quality filters
+        // Basic quality and geo filters — deeper filtering happens in curateReviewList
         if (isLowQualityName(name)) continue;
-        // Geographic exclusion: Russia and Belarus
         if (isRussiaOrBelarus(el.lat, el.lon)) continue;
-        // Adult content exclusion
-        const website = el.tags && (el.tags.website || el.tags['contact:website'] || null);
-        if (isAdultVenue(name, website)) continue;
-        // Duplicate check
-        if (isSimilarToExisting(name, existingNames, 0.85)) continue;
 
-        const type = el.tags.leisure || el.tags.amenity || 'sauna';
+        const website = el.tags && (el.tags.website || el.tags['contact:website'] || null);
+        const type    = el.tags.leisure || el.tags.amenity || 'sauna';
         flagged.push({
           name,
           lat:     el.lat,
@@ -470,17 +570,16 @@ async function queryOverpassAPI(existingNames) {
           website: website,
           region:  region.name,
           source:  'OpenStreetMap',
-          flagged: true, // always manual review
         });
         newCount++;
       }
-      console.log(` ${elements.length} elements → ${newCount} new`);
+      console.log(` ${elements.length} elements → ${newCount} collected`);
     } catch (err) {
       console.log(` ERROR: ${err.message}`);
     }
   }
 
-  console.log(`  Total new OSM venues flagged: ${flagged.length}`);
+  console.log(`  Total OSM candidates collected: ${flagged.length}`);
   return flagged;
 }
 
@@ -519,25 +618,23 @@ async function queryGooglePlaces(existingNames) {
         for (const place of (data.results || [])) {
           if (seenIds.has(place.place_id)) continue;
           seenIds.add(place.place_id);
-          // Quality and exclusion filters
+          // Basic quality and geo filters — deeper filtering in curateReviewList
           if (isLowQualityName(place.name)) continue;
-          if (isAdultVenue(place.name, place.website || '')) continue;
           if (isRussiaOrBelarus(place.geometry?.location?.lat, place.geometry?.location?.lng)) continue;
-          if (isSimilarToExisting(place.name, existingNames, 0.85)) continue;
 
           flagged.push({
             name:    place.name,
             address: place.formatted_address || '',
+            website: place.website || null,
             lat:     place.geometry.location.lat,
             lng:     place.geometry.location.lng,
             city:    city.name,
             query,
             source:  'Google Places',
-            flagged: true, // always manual review
           });
           newCount++;
         }
-        console.log(` ${newCount} new`);
+        console.log(` ${newCount} collected`);
 
         // Throttle to stay within API rate limits
         await new Promise(r => setTimeout(r, 200));
@@ -547,7 +644,7 @@ async function queryGooglePlaces(existingNames) {
     }
   }
 
-  console.log(`  Total new Google Places venues flagged: ${flagged.length}`);
+  console.log(`  Total Google Places candidates collected: ${flagged.length}`);
   return flagged;
 }
 
@@ -587,7 +684,9 @@ async function sendEmail(subject, body) {
   const venueSrc      = fs.readFileSync(VENUES_FILE, 'utf-8');
   const existingNames = parseExistingNames(venueSrc);
   const highestId     = getHighestId(venueSrc);
-  console.log(`Loaded ${existingNames.size} existing venues (highest ID: ${highestId})\n`);
+  const flaggedHistory = loadFlaggedHistory();
+  console.log(`Loaded ${existingNames.size} existing venues (highest ID: ${highestId})`);
+  console.log(`Loaded ${flaggedHistory.size} previously-flagged venue names from history\n`);
 
   // ── 1. Google News RSS ────────────────────────────────────────────────────
   const newsCandidates = [];
@@ -637,7 +736,6 @@ async function sendEmail(subject, body) {
   const osmFlagged = await queryOverpassAPI(existingNames);
 
   // ── 4. Google Places API ─────────────────────────────────────────────────
-  const placesEnabled  = !!process.env.GOOGLE_PLACES_API_KEY;
   const placesFlagged  = await queryGooglePlaces(existingNames);
 
   // ── 5. Relevance filter + Claude research (news + scraping only) ──────────
@@ -734,8 +832,23 @@ async function sendEmail(subject, body) {
     console.log('\nℹ️  No new venues auto-added this week.');
   }
 
-  // ── 7. Build report ───────────────────────────────────────────────────────
-  const date = new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  // ── 7. Curate the OSM + Places review list ───────────────────────────────
+  const allRawFlagged = [...osmFlagged, ...placesFlagged];
+  const curation = curateReviewList(allRawFlagged, existingNames, flaggedHistory);
+  const { curated, junkCount, dupCount, historyCount, totalBeforeFilter } = curation;
+  const totalFiltered = junkCount + dupCount + historyCount;
+
+  // Add the curated names to flagged history so they aren't re-shown next week
+  for (const v of curated) {
+    flaggedHistory.add((v.name || '').toLowerCase().trim());
+  }
+  saveFlaggedHistory(flaggedHistory);
+  console.log(`\nCurated review list: ${curated.length} of ${totalBeforeFilter} candidates`);
+  console.log(`  Filtered: ${junkCount} junk/adult/non-wellness, ${dupCount} duplicates, ${historyCount} previously flagged`);
+
+  // ── 8. Build report ───────────────────────────────────────────────────────
+  const date  = new Date().toLocaleDateString('en-GB', { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' });
+  const placesEnabled = !!process.env.GOOGLE_PLACES_API_KEY;
   const lines = [
     '═══════════════════════════════════════════════════════════════',
     '  THERMAE VENUE DISCOVERY REPORT',
@@ -744,12 +857,12 @@ async function sendEmail(subject, body) {
     '',
     '  DATA SOURCES THIS RUN:',
     `  • Google News RSS          : ${newsCandidates.length} articles, ${relevant.length} relevant`,
-    `  • OpenStreetMap Overpass   : ${osmFlagged.length} new venues flagged`,
-    `  • Google Places API        : ${placesEnabled ? `${placesFlagged.length} new venues flagged` : 'SKIPPED (no API key)'}`,
+    `  • OpenStreetMap Overpass   : ${osmFlagged.length} candidates collected`,
+    `  • Google Places API        : ${placesEnabled ? `${placesFlagged.length} candidates collected` : 'SKIPPED (no API key)'}`,
     '',
     '  RESULTS:',
     `  • Venues auto-added        : ${newVenues.length}`,
-    `  • Flagged for manual review: ${osmFlagged.length + placesFlagged.length}`,
+    `  • Review list (curated)    : ${curated.length} of ${totalBeforeFilter} raw (${totalFiltered} filtered out)`,
     `  • Skipped (duplicates/irrelevant): ${skipped.length}`,
     `  • Errors                   : ${errors.length}`,
     '',
@@ -773,38 +886,28 @@ async function sendEmail(subject, body) {
     lines.push('');
   }
 
-  // Section 2: OSM flagged
-  lines.push('── OPENSTREETMAP — FLAGGED FOR MANUAL REVIEW ───────────────────');
-  if (osmFlagged.length > 0) {
-    for (const v of osmFlagged) {
+  // Section 2: Curated review list (max 20)
+  lines.push(`── CURATED REVIEW LIST (${curated.length} of ${totalBeforeFilter} candidates) ─────────────────`);
+  if (curated.length > 0) {
+    lines.push(`  (Filtered: ${junkCount} junk/adult/non-wellness · ${dupCount} already in venues.ts · ${historyCount} seen in previous weeks)`);
+    lines.push('');
+    for (const v of curated) {
       lines.push(`  📍 ${v.name}`);
-      lines.push(`     Region: ${v.region} | Type: ${v.osmType} | Coords: ${v.lat?.toFixed(4)}, ${v.lng?.toFixed(4)}`);
-      if (v.website) lines.push(`     ${v.website}`);
+      const locationStr = [v.region || v.city, v.source].filter(Boolean).join(' · ');
+      if (locationStr) lines.push(`     ${locationStr}`);
+      if (v.address)   lines.push(`     ${v.address}`);
+      if (v.website)   lines.push(`     ${v.website}`);
+      const coordStr = (v.lat != null && v.lng != null) ? `${v.lat.toFixed(4)}, ${v.lng.toFixed(4)}` : '';
+      if (coordStr)    lines.push(`     Coords: ${coordStr}`);
       lines.push('');
     }
   } else {
-    lines.push('  No new OSM venues found this week.\n');
+    lines.push('  No new genuine candidates found this week.');
+    lines.push(`  (${totalFiltered} entries filtered: ${junkCount} junk, ${dupCount} duplicates, ${historyCount} previously seen)`);
+    lines.push('');
   }
 
-  // Section 3: Google Places flagged
-  if (placesEnabled) {
-    lines.push('── GOOGLE PLACES — FLAGGED FOR MANUAL REVIEW ───────────────────');
-    if (placesFlagged.length > 0) {
-      for (const v of placesFlagged) {
-        lines.push(`  📍 ${v.name}`);
-        lines.push(`     ${v.address}`);
-        lines.push(`     Search: "${v.query}" near ${v.city} | Coords: ${v.lat?.toFixed(4)}, ${v.lng?.toFixed(4)}`);
-        lines.push('');
-      }
-    } else {
-      lines.push('  No new Google Places venues found this week.\n');
-    }
-  } else {
-    lines.push('── GOOGLE PLACES ────────────────────────────────────────────────');
-    lines.push('  Skipped — set GOOGLE_PLACES_API_KEY in scripts/.env to enable.\n');
-  }
-
-  // Section 4: Errors
+  // Section 3: Errors
   if (errors.length > 0) {
     lines.push('── ERRORS ───────────────────────────────────────────────────────');
     for (const e of errors) {
@@ -818,12 +921,11 @@ async function sendEmail(subject, body) {
   fs.writeFileSync(REPORT_FILE, report, 'utf-8');
   console.log('\n' + report);
 
-  // ── 8. Email summary ──────────────────────────────────────────────────────
-  const totalFlagged = osmFlagged.length + placesFlagged.length;
+  // ── 9. Email summary ──────────────────────────────────────────────────────
   const subject = newVenues.length > 0
-    ? `✅ Thermae: ${newVenues.length} venue(s) added, ${totalFlagged} flagged for review — ${date}`
-    : totalFlagged > 0
-      ? `🔍 Thermae: ${totalFlagged} venue(s) flagged for manual review — ${date}`
+    ? `✅ Thermae: ${newVenues.length} added, ${curated.length} for review — ${date}`
+    : curated.length > 0
+      ? `🔍 Thermae: ${curated.length} venue(s) for review — ${date}`
       : `ℹ️  Thermae Venue Monitor: Nothing new — ${date}`;
   await sendEmail(subject, report);
 })();

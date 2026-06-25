@@ -14,7 +14,7 @@ const VenueMap = lazy(() => import('@/components/VenueMap'));
 
 // ── CONSTANTS ────────────────────────────────────────────────────────────────
 
-const COUNTRIES = ['All', 'England', 'Northern Ireland', 'Scotland', 'Wales', 'Ireland', 'Denmark', 'Finland', 'Norway', 'Sweden', 'Iceland', 'Greenland'];
+const COUNTRIES = ['All', 'England', 'Northern Ireland', 'Scotland', 'Wales', 'Ireland', 'Denmark', 'Finland', 'Norway', 'Sweden', 'Iceland', 'Greenland', 'Germany', 'Estonia', 'Latvia', 'Lithuania', 'Poland'];
 const COUNTRY_LABELS: Record<string, string> = {
   All: 'All Countries',
   England: '🏴󠁧󠁢󠁥󠁮󠁧󠁿 England',
@@ -28,6 +28,11 @@ const COUNTRY_LABELS: Record<string, string> = {
   Sweden: '🇸🇪 Sweden',
   Iceland: '🇮🇸 Iceland',
   Greenland: '🇬🇱 Greenland',
+  Germany: '🇩🇪 Germany',
+  Estonia: '🇪🇪 Estonia',
+  Latvia: '🇱🇻 Latvia',
+  Lithuania: '🇱🇹 Lithuania',
+  Poland: '🇵🇱 Poland',
 };
 const COUNTRY_REGIONS: Record<string, string[]> = {
   England: ['Greater London','South East','South West','East of England','East Midlands','West Midlands','Yorkshire','North East','North West'],
@@ -41,6 +46,11 @@ const COUNTRY_REGIONS: Record<string, string[]> = {
   Denmark: ['Copenhagen Region','Jutland'],
   Iceland: ['Reykjavík','South Iceland','North Iceland','East Iceland','West Iceland'],
   Greenland: ['South','West','North','East'],
+  Germany: ['Berlin','Bavaria','North Rhine-Westphalia','Baden-Württemberg','Hamburg','Saxony','Lower Saxony'],
+  Estonia: ['Harju County','Pärnu County','Tartu County','Ida-Viru County'],
+  Latvia: ['Riga Region','Vidzeme','Kurzeme','Zemgale','Latgale'],
+  Lithuania: ['Vilnius County','Kaunas County','Alytus County','Klaipėda County'],
+  Poland: ['Masovian','Lesser Poland','Greater Poland','Pomeranian','Lower Silesian','Silesian'],
 };
 
 // Multi-select type options — each has a predicate that matches against a Venue

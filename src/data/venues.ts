@@ -7929,6 +7929,244 @@ export const VENUES: Venue[] = [
     lat:51.7497, lng:-9.5503,
     venueCategory:"hotel",
   },
+  // ── Germany ──
+  {
+    id:635, city:"Berlin", country:"Germany", name:"Vabali Spa", area:"Tiergarten, Berlin",
+    type:"sauna", price:"from €35", rating:4.7, reviews:8200,
+    hours:"Daily 09:00–24:00",
+    temp:"Multiple saunas 60–100°C", tags:["Sauna Village","Day Spa","Iconic","City Centre"], emoji:"♨️🌿", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"S-Bahn: Tiergarten or Bellevue. Bus TXL to Lehrter Straße",
+    parking:"Paid parking on-site",
+    url:"https://www.vabali.de/berlin",
+    desc:"A Balinese-inspired urban spa village in the heart of Berlin featuring nine themed saunas, outdoor pools, and tropical gardens. One of Germany's most celebrated urban sauna destinations.",
+    lat:52.5213, lng:13.3491,
+    venueCategory:"spa",
+  },
+  {
+    id:636, city:"Berlin", country:"Germany", name:"Liquidrom", area:"Kreuzberg, Berlin",
+    type:"both", price:"from €22", rating:4.5, reviews:3100,
+    hours:"Sun–Thu 10:00–24:00, Fri–Sat 10:00–01:00",
+    temp:"Thermal pool 34°C, saunas to 90°C", tags:["Thermal Pools","Sauna Village","Day Spa","City Centre"], emoji:"💧♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"U-Bahn: Möckernbrücke (U1/U7). Bus M29",
+    parking:"Limited street parking",
+    url:"https://www.liquidrom-berlin.de",
+    desc:"A unique underground thermal bath and sauna complex in Kreuzberg known for its saltwater flotation pool with underwater music. A meditative urban wellness experience.",
+    lat:52.4967, lng:13.3788,
+    venueCategory:"spa",
+  },
+  {
+    id:637, city:"Erding", country:"Germany", name:"Therme Erding", area:"Erding, Bavaria",
+    type:"both", price:"from €32", rating:4.6, reviews:22000,
+    hours:"Daily 09:00–23:00",
+    temp:"Thermal pools 32–38°C, saunas to 90°C", tags:["Thermal Pools","Outdoor Pools","Sauna Village","Iconic"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"S-Bahn S2 to Erding from Munich. Shuttle bus from station",
+    parking:"Free on-site parking",
+    url:"https://www.therme-erding.de",
+    desc:"Europe's largest thermal spa complex near Munich, featuring over 25 pools, an enormous sauna world, water slides, and tropical gardens across 66,000 m². A world-class destination.",
+    lat:48.3006, lng:11.9077,
+    venueCategory:"spa",
+  },
+  {
+    id:638, city:"Cologne", country:"Germany", name:"Claudius Therme", area:"Deutz, Cologne",
+    type:"both", price:"from €22", rating:4.4, reviews:11000,
+    hours:"Mon–Sat 09:00–22:00, Sun 08:00–22:00",
+    temp:"Thermal pools 33–36°C, saunas to 90°C", tags:["Thermal Pools","Outdoor Pools","Riverside","Iconic"], emoji:"♨️🌿", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"Bus 150 from Cologne Hbf or cycle across Deutzer Brücke",
+    parking:"On-site paid parking",
+    url:"https://www.claudius-therme.de",
+    desc:"A riverside thermal spa set beside the Rhine with views of Cologne Cathedral. Features mineral-rich spring waters, multiple indoor and outdoor pools, and a large sauna landscape.",
+    lat:50.9555, lng:6.9823,
+    venueCategory:"spa",
+  },
+  {
+    id:639, city:"Baden-Baden", country:"Germany", name:"Friedrichsbad", area:"Old Town, Baden-Baden",
+    type:"sauna", price:"from €30", rating:4.6, reviews:6800,
+    hours:"Mon–Sat 09:00–22:00, Sun 12:00–20:00 (last entry 3hr before close)",
+    temp:"17-stage Roman-Irish ritual, pools 18–48°C", tags:["Historic","Traditional","Iconic","Cultural"], emoji:"🏛️♨️", open:true,
+    hygiene:"A", lockerNote:"Robes provided",
+    transport:"Bus 201 to Römerplatz, Baden-Baden. 5 min walk",
+    parking:"Paid parking nearby",
+    url:"https://www.carasana.de/en/friedrichsbad",
+    desc:"A magnificent 19th-century Roman-Irish bathing palace where Mark Twain famously lingered. A 17-stage ritual of alternating warm and cool pools, steam, and soap scrubs in an ornate Renaissance Revival building.",
+    lat:48.7610, lng:8.2375,
+    venueCategory:"spa",
+  },
+  {
+    id:640, city:"Munich", country:"Germany", name:"Müllersches Volksbad", area:"Au-Haidhausen, Munich",
+    type:"both", price:"from €6", rating:4.5, reviews:4200,
+    hours:"Mon–Sun 07:30–23:00",
+    temp:"Pool 28–30°C, saunas 80–90°C", tags:["Historic","Art Nouveau","Public","Cultural"], emoji:"🏛️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers available",
+    transport:"Tram 18 to Müllersches Volksbad. U-Bahn: Max-Weber-Platz",
+    parking:"Limited street parking",
+    url:"https://www.swm.de/privatkunden/m-baeder/hallenschwimmbad/muellersches-volksbad.html",
+    desc:"A spectacular Art Nouveau public bath opened in 1901, one of Munich's finest Jugendstil buildings. Features a stunning ornate hall pool, Roman bath section, and sauna. A beloved local institution.",
+    lat:48.1346, lng:11.5867,
+    venueCategory:"leisure_centre",
+  },
+  // ── Estonia ──
+  {
+    id:641, city:"Tallinn", country:"Estonia", name:"Viimsi SPA Hotel", area:"Viimsi Peninsula, Tallinn",
+    type:"sauna", price:"from €35", rating:4.5, reviews:2800,
+    hours:"Spa daily 07:00–22:00",
+    temp:"Finnish sauna 80°C, steam room, cold pool", tags:["Hotel Spa","Sauna Village","Seafront","Luxury"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers and robes included",
+    transport:"Bus 114 from Tallinn Old Town to Viimsi. 25 min",
+    parking:"Free on-site parking",
+    url:"https://www.viimsispa.ee/en",
+    desc:"A waterfront wellness hotel on the Viimsi Peninsula overlooking the Baltic Sea. Features a large Finnish sauna village, heated outdoor pools, and panoramic sea views — a favourite weekend retreat from Tallinn.",
+    lat:59.5048, lng:24.8375,
+    venueCategory:"hotel",
+  },
+  {
+    id:642, city:"Tallinn", country:"Estonia", name:"Kalma Saun", area:"Kalamaja, Tallinn",
+    type:"sauna", price:"from €10", rating:4.6, reviews:1500,
+    hours:"Mon–Fri 12:00–21:00, Sat 10:00–21:00, Sun 10:00–20:00",
+    temp:"Finnish sauna 80–90°C, steam room", tags:["Traditional","Public","Cultural","Historic"], emoji:"♨️🧡", open:true,
+    hygiene:"B", lockerNote:"Lockers available",
+    transport:"Tram 2 to Kotzebue. 5 min walk through Kalamaja",
+    parking:"Street parking nearby",
+    url:"https://kalmasaun.ee",
+    desc:"Tallinn's oldest surviving public sauna, established 1928 in the bohemian Kalamaja district. A genuine neighbourhood institution with separate men's and women's sections, beloved by locals and travellers alike.",
+    lat:59.4416, lng:24.7295,
+  },
+  {
+    id:643, city:"Pärnu", country:"Estonia", name:"Tervis Paradise Spa", area:"Central Pärnu",
+    type:"both", price:"from €25", rating:4.4, reviews:3600,
+    hours:"Daily 09:00–21:00",
+    temp:"Thermal pools 32–36°C, saunas 70–90°C", tags:["Hotel Spa","Thermal Pools","Outdoor Pools","Seafront"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers and wristbands",
+    transport:"Bus from Tallinn to Pärnu (2hr). Local buses within Pärnu",
+    parking:"Free on-site parking",
+    url:"https://www.tervisparadise.ee/en",
+    desc:"Estonia's largest water and spa complex in the seaside resort town of Pärnu, the country's 'summer capital'. Features indoor and outdoor pools, waterslides, Finnish saunas, and medical spa treatments.",
+    lat:58.3916, lng:24.4978,
+    venueCategory:"hotel",
+  },
+  // ── Latvia ──
+  {
+    id:644, city:"Jūrmala", country:"Latvia", name:"Baltic Beach Hotel & SPA", area:"Majori, Jūrmala",
+    type:"both", price:"from €30", rating:4.5, reviews:2200,
+    hours:"Spa daily 08:00–22:00",
+    temp:"Thermal pool 36°C, Finnish sauna 85°C, steam room", tags:["Hotel Spa","Seafront","Luxury","Outdoor Pools"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Robes and lockers included",
+    transport:"Train from Riga to Majori station (30 min). 5 min walk",
+    parking:"Free on-site parking",
+    url:"https://www.balticbeach.lv/en",
+    desc:"Latvia's premier seafront spa resort in Jūrmala, the Baltic Riviera along the Gulf of Riga. Features a panoramic rooftop pool, Finnish sauna, and direct access to the white sand beach.",
+    lat:56.9685, lng:23.7707,
+    venueCategory:"hotel",
+  },
+  {
+    id:645, city:"Riga", country:"Latvia", name:"Wellton Riverside SPA Hotel", area:"Old Town area, Riga",
+    type:"sauna", price:"from €25", rating:4.4, reviews:1900,
+    hours:"Spa daily 08:00–22:00",
+    temp:"Finnish sauna 80°C, steam room, cold pool", tags:["Hotel Spa","Riverside","City Centre","Luxury"], emoji:"♨️🏙️", open:true,
+    hygiene:"A", lockerNote:"Robes and slippers included",
+    transport:"Walking distance from Riga Old Town. Tram to Tirgoņu iela",
+    parking:"Paid hotel parking",
+    url:"https://wellton.com/riverside-hotel",
+    desc:"A contemporary spa hotel on the banks of the Daugava River in central Riga, with views of the old city skyline. Offers a Finnish sauna, steam room, hydrotherapy treatments, and riverside pool.",
+    lat:56.9490, lng:24.0572,
+    venueCategory:"hotel",
+  },
+  // ── Lithuania ──
+  {
+    id:646, city:"Druskininkai", country:"Lithuania", name:"Grand SPA Lietuva", area:"Central Druskininkai",
+    type:"both", price:"from €30", rating:4.5, reviews:3100,
+    hours:"Daily 07:00–22:00",
+    temp:"Thermal pools 35–38°C, saunas 70–90°C", tags:["Hotel Spa","Thermal Pools","Luxury","Outdoor Pools"], emoji:"♨️🌿", open:true,
+    hygiene:"A", lockerNote:"Robes and lockers provided",
+    transport:"Bus from Vilnius to Druskininkai (2.5hr). Local transport within town",
+    parking:"Free on-site parking",
+    url:"https://www.grandspalietu.lt/en",
+    desc:"Lithuania's flagship spa resort in Druskininkai, the country's premier mineral water resort town in the forested south. Features thermal pools, a large sauna world, and mineral water treatments.",
+    lat:54.0145, lng:23.9580,
+    venueCategory:"hotel",
+  },
+  {
+    id:647, city:"Druskininkai", country:"Lithuania", name:"AQUA Druskininkai", area:"Central Druskininkai",
+    type:"both", price:"from €20", rating:4.4, reviews:4500,
+    hours:"Mon–Thu 10:00–21:00, Fri 10:00–22:00, Sat–Sun 09:00–22:00",
+    temp:"Thermal pools 30–36°C, sauna 80°C", tags:["Thermal Pools","Outdoor Pools","Day Spa","Waterside"], emoji:"🌊♨️", open:true,
+    hygiene:"A", lockerNote:"Electronic wristband locker system",
+    transport:"Short walk from Druskininkai town centre",
+    parking:"On-site parking",
+    url:"https://www.aquapark.lt/en",
+    desc:"Lithuania's largest indoor water park and spa in Druskininkai, featuring thermal pools fed by local mineral springs, waterslides, a wave pool, and a dedicated sauna section for adults.",
+    lat:54.0163, lng:23.9607,
+    venueCategory:"spa",
+  },
+  // ── Poland ──
+  {
+    id:648, city:"Zakopane", country:"Poland", name:"Termy Chochołowskie", area:"Chochołów, Tatra Mountains",
+    type:"both", price:"from €20", rating:4.6, reviews:7800,
+    hours:"Mon–Thu 09:00–21:00, Fri–Sun 09:00–22:00",
+    temp:"Thermal pools 30–38°C, Finnish sauna 85°C", tags:["Thermal Pools","Outdoor Pools","Mountains","Scenic"], emoji:"⛰️♨️", open:true,
+    hygiene:"A", lockerNote:"Electronic wristband locker",
+    transport:"Bus from Zakopane bus station to Chochołów (40 min). Own transport recommended",
+    parking:"Large free car park on-site",
+    url:"https://www.termychocholowskie.pl/en",
+    desc:"A scenic outdoor thermal complex in the Tatra foothills, renowned for large outdoor geothermal pools with mountain panoramas. One of Poland's most beautiful thermal destinations, open year-round.",
+    lat:49.4631, lng:19.7183,
+    venueCategory:"spa",
+  },
+  {
+    id:649, city:"Zakopane", country:"Poland", name:"Termy Bukovina", area:"Bukowina Tatrzańska, Tatra Mountains",
+    type:"both", price:"from €25", rating:4.5, reviews:5200,
+    hours:"Daily 09:00–21:00",
+    temp:"Thermal pools 32–38°C, saunas 70–90°C", tags:["Hotel Spa","Thermal Pools","Mountains","Outdoor Pools"], emoji:"⛰️♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers included with wristband",
+    transport:"Bus from Zakopane to Bukowina Tatrzańska (25 min)",
+    parking:"Free on-site parking",
+    url:"https://www.termybukovina.pl/en",
+    desc:"A large thermal resort in Bukowina Tatrzańska set against the High Tatra peaks. Offers geothermal pools, a sauna complex, and a hotel — a favourite year-round mountain wellness destination.",
+    lat:49.3740, lng:20.0972,
+    venueCategory:"hotel",
+  },
+  {
+    id:650, city:"Zakopane", country:"Poland", name:"Bania Thermal Baths & Ski", area:"Białka Tatrzańska, Tatra Mountains",
+    type:"both", price:"from €22", rating:4.6, reviews:6100,
+    hours:"Daily 09:00–21:00 (Fri–Sat to 22:00)",
+    temp:"Thermal pools 30–38°C, sauna 80–90°C", tags:["Thermal Pools","Outdoor Pools","Mountains","Scenic"], emoji:"⛰️🌊", open:true,
+    hygiene:"A", lockerNote:"Wristband locker system",
+    transport:"Bus from Zakopane to Białka Tatrzańska (30 min)",
+    parking:"Free on-site",
+    url:"https://www.bania.pl/en",
+    desc:"A stunning outdoor thermal complex in Białka Tatrzańska with heated pools overlooking the High Tatras. Famous for open-air pools steaming against winter snow — a spectacular alpine thermal experience.",
+    lat:49.3814, lng:20.1351,
+    venueCategory:"spa",
+  },
+  {
+    id:651, city:"Warsaw", country:"Poland", name:"Suntago Wodny Świat", area:"Mszczonów, near Warsaw",
+    type:"both", price:"from €35", rating:4.5, reviews:12000,
+    hours:"Mon–Thu 10:00–20:00, Fri 10:00–21:00, Sat–Sun 09:00–21:00",
+    temp:"Thermal pools 30–38°C, sauna 80–90°C", tags:["Thermal Pools","Outdoor Pools","Sauna Village","Day Spa"], emoji:"🌊♨️", open:true,
+    hygiene:"A", lockerNote:"Electronic wristband locker",
+    transport:"Shuttle bus from Warsaw Centralna. Check website for timetables",
+    parking:"Large free car park",
+    url:"https://www.suntago.pl/en",
+    desc:"Europe's largest indoor water park and thermal spa (opened 2020), 50km south-west of Warsaw. Features a vast tropical indoor world, thermal pools, a dedicated Relax Zone sauna complex, and waterslides.",
+    lat:51.9760, lng:20.5210,
+    venueCategory:"spa",
+  },
+  {
+    id:652, city:"Poznań", country:"Poland", name:"Termy Maltańskie", area:"Malta Lake, Poznań",
+    type:"both", price:"from €18", rating:4.3, reviews:8900,
+    hours:"Mon–Fri 07:00–22:00, Sat–Sun 08:00–22:00",
+    temp:"Thermal pools 32–36°C, saunas 70–85°C", tags:["Thermal Pools","Outdoor Pools","Lakeside","City Centre"], emoji:"🌊♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers with wristband",
+    transport:"Tram 1/4/8/16 to Rondo Środka, then walk to Malta Lake",
+    parking:"Paid car park on-site",
+    url:"https://www.termymaltanskie.com.pl/en",
+    desc:"A popular urban thermal complex set on the shores of Malta Lake in Poznań. Offers geothermal pools, outdoor pools with lake views, sauna facilities, and waterslides — a favourite local wellness escape.",
+    lat:52.4085, lng:16.9748,
+    venueCategory:"spa",
+  },
 ];
 
 export const CITIES: string[] = [
@@ -7955,6 +8193,16 @@ export const CITIES: string[] = [
   "Nanortalik","Sisimiut",
   // England (additional)
   "Bognor Regis",
+  // Germany
+  "Berlin","Erding","Cologne","Baden-Baden","Munich",
+  // Estonia
+  "Tallinn","Pärnu",
+  // Latvia
+  "Jūrmala","Riga",
+  // Lithuania
+  "Druskininkai",
+  // Poland
+  "Zakopane","Warsaw","Poznań",
 ];
 
 export const FLAG: Record<string, string> = {
@@ -7987,6 +8235,16 @@ export const FLAG: Record<string, string> = {
   "Hvalfjörður":"🇮🇸", "Laugarás":"🇮🇸", "Reykholt":"🇮🇸", "Laugarvatn":"🇮🇸",
   "Flúðir":"🇮🇸", "Skógar":"🇮🇸", "Hveragerði":"🇮🇸", "Árskógssandur":"🇮🇸", "Höfn":"🇮🇸", "Drangsnes":"🇮🇸",
   "Nanortalik":"🇬🇱", "Sisimiut":"🇬🇱",
+  // Germany
+  Berlin:"🇩🇪", Erding:"🇩🇪", Cologne:"🇩🇪", "Baden-Baden":"🇩🇪", Munich:"🇩🇪",
+  // Estonia
+  Tallinn:"🇪🇪", "Pärnu":"🇪🇪",
+  // Latvia
+  "Jūrmala":"🇱🇻", Riga:"🇱🇻",
+  // Lithuania
+  Druskininkai:"🇱🇹",
+  // Poland
+  Zakopane:"🇵🇱", Warsaw:"🇵🇱", "Poznań":"🇵🇱",
 };
 
 export const REGION_MAP: Record<string, string> = {
@@ -8022,6 +8280,13 @@ export const REGION_MAP: Record<string, string> = {
   "Nanortalik":"Nordic", "Sisimiut":"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", "Tromsø":"Nordic", Stavanger:"Nordic", Rovaniemi:"Nordic", Tampere:"Nordic",
+  // Central Europe
+  Berlin:"Central Europe", Erding:"Central Europe", Cologne:"Central Europe", "Baden-Baden":"Central Europe", Munich:"Central Europe",
+  Zakopane:"Central Europe", Warsaw:"Central Europe", "Poznań":"Central Europe",
+  // Baltics
+  Tallinn:"Baltics", "Pärnu":"Baltics",
+  "Jūrmala":"Baltics", Riga:"Baltics",
+  Druskininkai:"Baltics",
 };
 
 export const COUNTRY_MAP: Record<string, string> = {
@@ -8064,6 +8329,16 @@ export const COUNTRY_MAP: Record<string, string> = {
   Helsinki:"Finland", Rovaniemi:"Finland", Tampere:"Finland",
   Stockholm:"Sweden", Gothenburg:"Sweden", Karlstad:"Sweden",
   Oslo:"Norway", Bergen:"Norway", "Tromsø":"Norway", Stavanger:"Norway",
+  // Germany
+  Berlin:"Germany", Erding:"Germany", Cologne:"Germany", "Baden-Baden":"Germany", Munich:"Germany",
+  // Estonia
+  Tallinn:"Estonia", "Pärnu":"Estonia",
+  // Latvia
+  "Jūrmala":"Latvia", Riga:"Latvia",
+  // Lithuania
+  Druskininkai:"Lithuania",
+  // Poland
+  Zakopane:"Poland", Warsaw:"Poland", "Poznań":"Poland",
 };
 
 // Maps city → county (Ireland/NI) or region (everything else)
@@ -8109,6 +8384,16 @@ export const CITY_REGION_MAP: Record<string, string> = {
   "Hvalfjörður":"West Iceland", "Reykholt":"West Iceland", "Drangsnes":"West Iceland",
   "Laugarás":"South Iceland", "Laugarvatn":"South Iceland", "Flúðir":"South Iceland", "Skógar":"South Iceland", "Hveragerði":"South Iceland",
   "Nanortalik":"South", "Sisimiut":"West",
+  // Germany — state
+  Berlin:"Berlin", Erding:"Bavaria", Cologne:"North Rhine-Westphalia", "Baden-Baden":"Baden-Württemberg", Munich:"Bavaria",
+  // Estonia — county
+  Tallinn:"Harju County", "Pärnu":"Pärnu County",
+  // Latvia — region
+  "Jūrmala":"Riga Region", Riga:"Riga Region",
+  // Lithuania — county
+  Druskininkai:"Alytus County",
+  // Poland — voivodeship
+  Zakopane:"Lesser Poland", Warsaw:"Masovian", "Poznań":"Greater Poland",
 };
 
 export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
