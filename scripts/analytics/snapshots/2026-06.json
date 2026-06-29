@@ -1,46 +1,67 @@
 {
-  "generatedAt": "2026-06-24T10:39:19.507Z",
+  "generatedAt": "2026-06-29T12:32:34.129Z",
   "period": "2026-06",
   "metrics": {
-    "totalVenues": 627,
+    "totalVenues": 679,
     "venuesByCountry": {
-      "Denmark": 6,
-      "England": 206,
-      "Finland": 15,
+      "Denmark": 14,
+      "England": 207,
+      "Estonia": 5,
+      "Finland": 21,
+      "Germany": 6,
       "Greenland": 2,
       "Iceland": 23,
       "Ireland": 147,
+      "Latvia": 2,
+      "Lithuania": 2,
       "Northern Ireland": 13,
-      "Norway": 16,
+      "Norway": 29,
+      "Poland": 5,
       "Scotland": 41,
-      "Sweden": 7,
-      "UK": 124,
+      "Sweden": 12,
+      "UK": 123,
       "Wales": 27
     },
     "priceByCountry": {
       "Denmark": {
-        "count": 6,
-        "avg": 40,
+        "count": 14,
+        "avg": 8,
         "min": 0,
-        "max": 150,
-        "median": 6,
-        "priced": 6
+        "max": 20,
+        "median": 8,
+        "priced": 9
       },
       "England": {
-        "count": 206,
+        "count": 207,
         "avg": 25,
         "min": 4,
         "max": 222,
         "median": 23,
         "priced": 180
       },
+      "Estonia": {
+        "count": 5,
+        "avg": 22,
+        "min": 8,
+        "max": 35,
+        "median": 25,
+        "priced": 5
+      },
       "Finland": {
-        "count": 15,
-        "avg": 17,
+        "count": 21,
+        "avg": 15,
         "min": 0,
         "max": 45,
-        "median": 16,
-        "priced": 8
+        "median": 13,
+        "priced": 10
+      },
+      "Germany": {
+        "count": 6,
+        "avg": 25,
+        "min": 6,
+        "max": 35,
+        "median": 26,
+        "priced": 6
       },
       "Greenland": {
         "count": 2,
@@ -66,6 +87,22 @@
         "median": 20,
         "priced": 42
       },
+      "Latvia": {
+        "count": 2,
+        "avg": 28,
+        "min": 25,
+        "max": 30,
+        "median": 28,
+        "priced": 2
+      },
+      "Lithuania": {
+        "count": 2,
+        "avg": 25,
+        "min": 20,
+        "max": 30,
+        "median": 25,
+        "priced": 2
+      },
       "Northern Ireland": {
         "count": 13,
         "avg": 23,
@@ -75,12 +112,20 @@
         "priced": 12
       },
       "Norway": {
-        "count": 16,
-        "avg": 78,
+        "count": 29,
+        "avg": 16,
         "min": 0,
-        "max": 295,
+        "max": 25,
+        "median": 19,
+        "priced": 13
+      },
+      "Poland": {
+        "count": 5,
+        "avg": 24,
+        "min": 18,
+        "max": 35,
         "median": 22,
-        "priced": 10
+        "priced": 5
       },
       "Scotland": {
         "count": 41,
@@ -91,15 +136,15 @@
         "priced": 29
       },
       "Sweden": {
-        "count": 7,
-        "avg": 167,
-        "min": 14,
-        "max": 495,
-        "median": 150,
-        "priced": 7
+        "count": 12,
+        "avg": 22,
+        "min": 5,
+        "max": 43,
+        "median": 20,
+        "priced": 8
       },
       "UK": {
-        "count": 124,
+        "count": 123,
         "avg": 33,
         "min": 4,
         "max": 216,
@@ -120,178 +165,235 @@
         "London",
         {
           "count": 65,
-          "avgPrice": 38
+          "avgPrice": 38,
+          "priced": 53
         }
       ],
       [
         "Manchester",
         {
           "count": 38,
-          "avgPrice": 14
+          "avgPrice": 14,
+          "priced": 38
         }
       ],
       [
         "Leeds",
         {
           "count": 31,
-          "avgPrice": 32
+          "avgPrice": 32,
+          "priced": 21
         }
       ],
       [
         "Birmingham",
         {
           "count": 24,
-          "avgPrice": 23
+          "avgPrice": 23,
+          "priced": 19
         }
       ],
       [
         "Dublin",
         {
           "count": 23,
-          "avgPrice": 25
+          "avgPrice": 25,
+          "priced": 12
         }
       ],
       [
         "Cornwall",
         {
           "count": 22,
-          "avgPrice": 29
+          "avgPrice": 29,
+          "priced": 21
         }
       ],
       [
         "Liverpool",
         {
           "count": 19,
-          "avgPrice": 19
+          "avgPrice": 19,
+          "priced": 16
         }
       ],
       [
         "Brighton",
         {
           "count": 17,
-          "avgPrice": 19
+          "avgPrice": 19,
+          "priced": 16
+        }
+      ],
+      [
+        "Cork",
+        {
+          "count": 17,
+          "avgPrice": 17,
+          "priced": 3
         }
       ],
       [
         "Galway",
         {
           "count": 17,
-          "avgPrice": 19
-        }
-      ],
-      [
-        "Cork",
-        {
-          "count": 16,
-          "avgPrice": 17
+          "avgPrice": 19,
+          "priced": 6
         }
       ],
       [
         "Glasgow",
         {
           "count": 16,
-          "avgPrice": 20
+          "avgPrice": 20,
+          "priced": 13
         }
       ],
       [
         "Kerry",
         {
           "count": 15,
-          "avgPrice": 20
+          "avgPrice": 20,
+          "priced": 5
         }
       ],
       [
         "Bristol",
         {
           "count": 14,
-          "avgPrice": 29
+          "avgPrice": 29,
+          "priced": 14
         }
       ],
       [
         "Edinburgh",
         {
           "count": 14,
-          "avgPrice": 24
+          "avgPrice": 24,
+          "priced": 12
+        }
+      ],
+      [
+        "Helsinki",
+        {
+          "count": 12,
+          "avgPrice": 14,
+          "priced": 6
+        }
+      ],
+      [
+        "Donegal",
+        {
+          "count": 10,
+          "avgPrice": null,
+          "priced": 0
         }
       ],
       [
         "Newcastle",
         {
           "count": 10,
-          "avgPrice": 27
+          "avgPrice": 27,
+          "priced": 10
         }
       ],
       [
-        "Donegal",
+        "Oslo",
         {
-          "count": 9,
-          "avgPrice": null
+          "count": 10,
+          "avgPrice": 18,
+          "priced": 9
         }
       ],
       [
-        "Helsinki",
+        "Copenhagen",
         {
           "count": 9,
-          "avgPrice": 15
+          "avgPrice": 8,
+          "priced": 7
         }
       ],
       [
         "Sheffield",
         {
           "count": 9,
-          "avgPrice": 30
-        }
-      ],
-      [
-        "Cambridge",
-        {
-          "count": 8,
-          "avgPrice": 18
-        }
-      ],
-      [
-        "Mayo",
-        {
-          "count": 8,
-          "avgPrice": 19
+          "avgPrice": 30,
+          "priced": 8
         }
       ]
     ],
     "catBreakdown": {
-      "dedicated": 548,
+      "dedicated": 582,
       "members_club": 3,
-      "hotel": 14,
-      "leisure_centre": 6,
+      "hotel": 21,
+      "leisure_centre": 7,
       "gym": 55,
-      "spa": 1
+      "spa": 11
+    },
+    "priceByCategory": {
+      "dedicated": {
+        "count": 582,
+        "avg": 24
+      },
+      "hotel": {
+        "count": 21,
+        "avg": 62
+      },
+      "gym": {
+        "count": 55,
+        "avg": 25
+      },
+      "spa": {
+        "count": 11,
+        "avg": 25
+      },
+      "leisure_centre": {
+        "count": 7,
+        "avg": 7
+      },
+      "members_club": {
+        "count": 3,
+        "avg": 116
+      }
     },
     "typeBreakdown": {
-      "Finnish": 80,
-      "Wood-fired": 270,
+      "Finnish": 81,
+      "Wood-fired": 277,
       "Infrared": 11,
       "Russian Banya": 3,
       "Seaweed Bath": 6,
       "Hot Spring": 11,
       "Lagoon": 6,
       "Geothermal": 16,
-      "Smoke Sauna": 1
+      "Smoke Sauna": 2
+    },
+    "typeCounts": {
+      "sauna": 229,
+      "plunge": 3,
+      "both": 426,
+      "seaweed": 6,
+      "lagoon": 15
     },
     "topTags": [
       [
         "Wood-fired",
-        270
+        277
       ],
       [
         "Outdoor",
-        237
+        247
       ],
       [
         "Community",
-        138
+        148
       ],
       [
         "Steam",
         120
+      ],
+      [
+        "Scenic",
+        92
       ],
       [
         "Budget",
@@ -299,19 +401,15 @@
       ],
       [
         "Finnish",
-        80
-      ],
-      [
-        "Coastal",
-        77
-      ],
-      [
-        "Scenic",
-        74
+        81
       ],
       [
         "Seafront",
-        69
+        81
+      ],
+      [
+        "Coastal",
+        78
       ],
       [
         "Beach",
@@ -319,7 +417,11 @@
       ],
       [
         "Luxury",
-        54
+        58
+      ],
+      [
+        "City Centre",
+        53
       ],
       [
         "Ice Bath",
@@ -330,8 +432,8 @@
         47
       ],
       [
-        "City Centre",
-        42
+        "Lakeside",
+        41
       ],
       [
         "Pool",
@@ -342,188 +444,357 @@
         37
       ],
       [
-        "Lakeside",
-        36
+        "Boutique",
+        31
       ],
       [
         "Cold Plunge",
         31
       ],
       [
-        "Boutique",
-        30
-      ],
-      [
         "Riverside",
-        25
+        28
       ]
     ],
-    "coldPlungeCount": 421,
-    "outdoorCount": 312,
-    "freeOrCheapCount": 71,
+    "coldPlungeCount": 446,
+    "outdoorCount": 352,
+    "freeOrCheapCount": 80,
+    "geothermalCount": 16,
+    "hotSpringCount": 12,
+    "lagoonCount": 6,
     "extremesByCountry": {
       "Denmark": {
         "cheapest": {
           "name": "La Banchina",
-          "price": "Free entry"
+          "price": "Free entry",
+          "type": "both",
+          "native": 0,
+          "currency": "Free",
+          "eur": 0
         },
         "mostExpensive": {
           "name": "Saunerne Copenhagen",
-          "price": "From 150 DKK"
+          "price": "From 150 DKK",
+          "type": "both",
+          "native": 150,
+          "currency": "DKK",
+          "eur": 20
         }
       },
       "England": {
         "cheapest": {
           "name": "Salford Community Leisure — Broughton Hub",
-          "price": "From £3.50 per swim · monthly passes available"
+          "price": "From £3.50 per swim · monthly passes available",
+          "type": "both",
+          "native": 3.5,
+          "currency": "GBP",
+          "eur": 4
         },
         "mostExpensive": {
           "name": "Herb House Spa — Lime Wood",
-          "price": "£190/day pass"
+          "price": "£190/day pass",
+          "type": "sauna",
+          "native": 190,
+          "currency": "GBP",
+          "eur": 222
+        }
+      },
+      "Estonia": {
+        "cheapest": {
+          "name": "Anne Saun",
+          "price": "from €8",
+          "type": "sauna",
+          "native": 8,
+          "currency": "EUR",
+          "eur": 8
+        },
+        "mostExpensive": {
+          "name": "Viimsi SPA Hotel",
+          "price": "from €35",
+          "type": "sauna",
+          "native": 35,
+          "currency": "EUR",
+          "eur": 35
         }
       },
       "Finland": {
         "cheapest": {
           "name": "Sompasauna",
-          "price": "Free"
+          "price": "Free",
+          "type": "both",
+          "native": 0,
+          "currency": "Free",
+          "eur": 0
         },
         "mostExpensive": {
           "name": "Arctic SnowHotel Sauna Village",
-          "price": "From €45"
+          "price": "From €45",
+          "type": "both",
+          "native": 45,
+          "currency": "EUR",
+          "eur": 45
+        }
+      },
+      "Germany": {
+        "cheapest": {
+          "name": "Müllersches Volksbad",
+          "price": "from €6",
+          "type": "both",
+          "native": 6,
+          "currency": "EUR",
+          "eur": 6
+        },
+        "mostExpensive": {
+          "name": "Vabali Spa",
+          "price": "from €35",
+          "type": "sauna",
+          "native": 35,
+          "currency": "EUR",
+          "eur": 35
         }
       },
       "Greenland": {
         "cheapest": {
           "name": "Uunartoq Hot Springs",
-          "price": "Free"
+          "price": "Free",
+          "type": "lagoon",
+          "native": 0,
+          "currency": "Free",
+          "eur": 0
         },
         "mostExpensive": {
           "name": "Uunartoq Hot Springs",
-          "price": "Free"
+          "price": "Free",
+          "type": "lagoon",
+          "native": 0,
+          "currency": "Free",
+          "eur": 0
         }
       },
       "Iceland": {
         "cheapest": {
           "name": "Seljavallalaug",
-          "price": "Free"
+          "price": "Free",
+          "type": "lagoon",
+          "native": 0,
+          "currency": "Free",
+          "eur": 0
         },
         "mostExpensive": {
           "name": "Bjórböðin Beer Spa",
-          "price": "From £60"
+          "price": "From £60",
+          "type": "both",
+          "native": 60,
+          "currency": "GBP",
+          "eur": 70
         }
       },
       "Ireland": {
         "cheapest": {
           "name": "Happy Place Saunas",
-          "price": "From €10"
+          "price": "From €10",
+          "type": "both",
+          "native": 10,
+          "currency": "EUR",
+          "eur": 10
         },
         "mostExpensive": {
           "name": "The Wood Fired Sauna",
-          "price": "€100 private / 45 min"
+          "price": "€100 private / 45 min",
+          "type": "both",
+          "native": 100,
+          "currency": "EUR",
+          "eur": 100
+        }
+      },
+      "Latvia": {
+        "cheapest": {
+          "name": "Wellton Riverside SPA Hotel",
+          "price": "from €25",
+          "type": "sauna",
+          "native": 25,
+          "currency": "EUR",
+          "eur": 25
+        },
+        "mostExpensive": {
+          "name": "Baltic Beach Hotel & SPA",
+          "price": "from €30",
+          "type": "both",
+          "native": 30,
+          "currency": "EUR",
+          "eur": 30
+        }
+      },
+      "Lithuania": {
+        "cheapest": {
+          "name": "AQUA Druskininkai",
+          "price": "from €20",
+          "type": "both",
+          "native": 20,
+          "currency": "EUR",
+          "eur": 20
+        },
+        "mostExpensive": {
+          "name": "Grand SPA Lietuva",
+          "price": "from €30",
+          "type": "both",
+          "native": 30,
+          "currency": "EUR",
+          "eur": 30
         }
       },
       "Northern Ireland": {
         "cheapest": {
           "name": "JD Gyms Ballymena",
-          "price": "Day pass from £5 · or membership"
+          "price": "Day pass from £5 · or membership",
+          "type": "sauna",
+          "native": 5,
+          "currency": "GBP",
+          "eur": 6
         },
         "mostExpensive": {
           "name": "Sudor Castle Ward",
-          "price": "From £30 per person · book online"
+          "price": "From £30 per person · book online",
+          "type": "both",
+          "native": 30,
+          "currency": "GBP",
+          "eur": 35
         }
       },
       "Norway": {
         "cheapest": {
           "name": "Tjuvholmen Sjøbad",
-          "price": "Free"
+          "price": "Free",
+          "type": "plunge",
+          "native": 0,
+          "currency": "Free",
+          "eur": 0
         },
         "mostExpensive": {
           "name": "The Well Oslo",
-          "price": "From 295 NOK"
+          "price": "From 295 NOK",
+          "type": "both",
+          "native": 295,
+          "currency": "NOK",
+          "eur": 25
+        }
+      },
+      "Poland": {
+        "cheapest": {
+          "name": "Termy Maltańskie",
+          "price": "from €18",
+          "type": "both",
+          "native": 18,
+          "currency": "EUR",
+          "eur": 18
+        },
+        "mostExpensive": {
+          "name": "Suntago Wodny Świat",
+          "price": "from €35",
+          "type": "both",
+          "native": 35,
+          "currency": "EUR",
+          "eur": 35
         }
       },
       "Scotland": {
         "cheapest": {
           "name": "JD Gyms Glasgow South",
-          "price": "Day pass from £5 · memberships from £25.99/month"
+          "price": "Day pass from £5 · memberships from £25.99/month",
+          "type": "sauna",
+          "native": 5,
+          "currency": "GBP",
+          "eur": 6
         },
         "mostExpensive": {
           "name": "Sauna Cairngorms",
-          "price": "Private from £75 (up to 6, 75 min) · communal available"
+          "price": "Private from £75 (up to 6, 75 min) · communal available",
+          "type": "sauna",
+          "native": 75,
+          "currency": "GBP",
+          "eur": 88
         }
       },
       "Sweden": {
         "cheapest": {
-          "name": "Hellasgården",
-          "price": "SEK 160 (~£12)"
+          "name": "Ribersborgs Kallbadhus",
+          "price": "from 60 SEK",
+          "type": "both",
+          "native": 60,
+          "currency": "SEK",
+          "eur": 5
         },
         "mostExpensive": {
           "name": "Yasuragi",
-          "price": "From 495 SEK"
+          "price": "From 495 SEK",
+          "type": "both",
+          "native": 495,
+          "currency": "SEK",
+          "eur": 43
         }
       },
       "UK": {
         "cheapest": {
           "name": "Parliament Hill Lido Sauna",
-          "price": "£3.50 add-on"
+          "price": "£3.50 add-on",
+          "type": "sauna",
+          "native": 3.5,
+          "currency": "GBP",
+          "eur": 4
         },
         "mostExpensive": {
           "name": "Raffles London at The OWO",
-          "price": "From £185 per session"
+          "price": "From £185 per session",
+          "type": "sauna",
+          "native": 185,
+          "currency": "GBP",
+          "eur": 216
         }
       },
       "Wales": {
         "cheapest": {
           "name": "JD Gyms Llansamlet",
-          "price": "Day pass from £5 · or membership"
+          "price": "Day pass from £5 · or membership",
+          "type": "sauna",
+          "native": 5,
+          "currency": "GBP",
+          "eur": 6
         },
         "mostExpensive": {
           "name": "Golden Grove Retreat",
-          "price": "From £30 per person · retreat packages available"
+          "price": "From £30 per person · retreat packages available",
+          "type": "sauna",
+          "native": 30,
+          "currency": "GBP",
+          "eur": 35
         }
-      }
-    },
-    "priceByCategory": {
-      "dedicated": {
-        "count": 548,
-        "avg": 29
-      },
-      "hotel": {
-        "count": 14,
-        "avg": 88
-      },
-      "gym": {
-        "count": 55,
-        "avg": 25
-      },
-      "spa": {
-        "count": 1,
-        "avg": 18
-      },
-      "leisure_centre": {
-        "count": 6,
-        "avg": 7
-      },
-      "members_club": {
-        "count": 3,
-        "avg": 116
       }
     },
     "coastalByCountry": {
       "Denmark": {
-        "total": 6,
-        "coastal": 4,
-        "pct": 67
+        "total": 14,
+        "coastal": 9,
+        "pct": 64
       },
       "England": {
-        "total": 206,
-        "coastal": 22,
+        "total": 207,
+        "coastal": 23,
         "pct": 11
       },
-      "Finland": {
-        "total": 15,
+      "Estonia": {
+        "total": 5,
         "coastal": 3,
-        "pct": 20
+        "pct": 60
+      },
+      "Finland": {
+        "total": 21,
+        "coastal": 5,
+        "pct": 24
+      },
+      "Germany": {
+        "total": 6,
+        "coastal": 0,
+        "pct": 0
       },
       "Greenland": {
         "total": 2,
@@ -540,15 +811,30 @@
         "coastal": 78,
         "pct": 53
       },
+      "Latvia": {
+        "total": 2,
+        "coastal": 1,
+        "pct": 50
+      },
+      "Lithuania": {
+        "total": 2,
+        "coastal": 0,
+        "pct": 0
+      },
       "Northern Ireland": {
         "total": 13,
         "coastal": 3,
         "pct": 23
       },
       "Norway": {
-        "total": 16,
-        "coastal": 12,
-        "pct": 75
+        "total": 29,
+        "coastal": 24,
+        "pct": 83
+      },
+      "Poland": {
+        "total": 5,
+        "coastal": 0,
+        "pct": 0
       },
       "Scotland": {
         "total": 41,
@@ -556,21 +842,23 @@
         "pct": 34
       },
       "Sweden": {
-        "total": 7,
-        "coastal": 0,
-        "pct": 0
+        "total": 12,
+        "coastal": 3,
+        "pct": 25
       },
       "UK": {
-        "total": 124,
-        "coastal": 12,
-        "pct": 10
+        "total": 123,
+        "coastal": 11,
+        "pct": 9
       },
       "Wales": {
         "total": 27,
         "coastal": 11,
         "pct": 41
       }
-    }
+    },
+    "avgPriceEur": 25,
+    "avgPriceGbp": 24
   },
   "venueIds": [
     1,
@@ -1197,8 +1485,60 @@
     629,
     630,
     631,
-    611,
-    612,
-    613
+    632,
+    633,
+    634,
+    635,
+    636,
+    637,
+    638,
+    639,
+    640,
+    641,
+    642,
+    643,
+    644,
+    645,
+    646,
+    647,
+    648,
+    649,
+    650,
+    651,
+    652,
+    653,
+    654,
+    655,
+    656,
+    657,
+    658,
+    659,
+    660,
+    661,
+    662,
+    663,
+    664,
+    665,
+    666,
+    667,
+    668,
+    669,
+    670,
+    671,
+    672,
+    673,
+    674,
+    675,
+    676,
+    677,
+    678,
+    679,
+    680,
+    681,
+    682,
+    683,
+    684,
+    685,
+    686
   ]
 }
