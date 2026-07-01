@@ -8581,6 +8581,30 @@ export const VENUES: Venue[] = [
     lat:59.5189, lng:24.8508,
     venueCategory:"hotel",
   },
+
+  // ── AUTO-ADDED ──
+  {
+    id:687, city:"Dublin", country:"Ireland", name:"Float Dublin (Floating Sauna)", area:"Grand Canal Dock",
+    type:"sauna", price:"Check website for current pricing", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"River plunge", tags:["Floating Sauna","Unique Experience","Waterfront","Ireland's First"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Ireland's first floating sauna, offering a unique wellness experience on the water. Guests can enjoy traditional sauna sessions with access to open water bathing in a scenic Dublin setting.",
+    lat:53.3396, lng:-6.2378,
+  },
+  {
+    id:688, city:"Sheffield", country:"UK", name:"Rother Valley Country Park Sauna", area:"Rother Valley",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Lake plunge", tags:["Forest","Lakeside","Outdoor","Leisure Park"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Set within an expansive forest near Manchester, this venue features a brand new sauna alongside a massive Total Wipeout-style floating obstacle course with a 3.8-metre inflatable tower. The sauna is located at a country park offering outdoor water-based activities.",
+    lat:53.3637, lng:-1.3318,
+  }
 ];
 
 export const CITIES: string[] = [

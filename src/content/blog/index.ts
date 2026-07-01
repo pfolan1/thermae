@@ -13,10 +13,12 @@ import saunasLondon from './best-saunas-london';
 import coldPlungeScienceBody2026 from './cold-plunge-science-body-2026';
 import newSaunaOpeningsUkIrelandSummer2026 from './new-sauna-openings-uk-ireland-summer-2026';
 import bestOutdoorSaunasScotland from './best-outdoor-saunas-scotland';
+import wildAtlanticWayWellnessSaunas from './wild-atlantic-way-wellness-saunas';
 
 export type { BlogPost };
 
 export const ALL_POSTS: BlogPost[] = [
+  wildAtlanticWayWellnessSaunas,
   bestOutdoorSaunasScotland,
   newSaunaOpeningsUkIrelandSummer2026,
   coldPlungeScienceBody2026,
@@ -37,4 +39,4 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return ALL_POSTS.find(p => p.slug === slug);
 }
 
-export { bestOutdoorSaunasScotland, newSaunaOpeningsUkIrelandSummer2026, coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
+export { wildAtlanticWayWellnessSaunas, bestOutdoorSaunasScotland, newSaunaOpeningsUkIrelandSummer2026, coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
