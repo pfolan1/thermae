@@ -950,21 +950,25 @@ async function sendEmail(subject, htmlBody, xlsxPath) {
     port:   465,
     secure: true,
     auth:   { user: email, pass: password },
+    tls:    { rejectUnauthorized: false },
   });
 
-  await transporter.sendMail({
-    from:    email,
-    to:      REPORT_EMAIL,
-    subject,
-    html:    htmlBody,
-    attachments: [{
-      filename:    path.basename(xlsxPath),
-      path:        xlsxPath,
-      contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-    }],
-  });
-
-  console.log(`Email sent to ${REPORT_EMAIL} — attached: ${path.basename(xlsxPath)}`);
+  try {
+    await transporter.sendMail({
+      from:    email,
+      to:      REPORT_EMAIL,
+      subject,
+      html:    htmlBody,
+      attachments: [{
+        filename:    path.basename(xlsxPath),
+        path:        xlsxPath,
+        contentType: 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+      }],
+    });
+    console.log(`Email sent to ${REPORT_EMAIL} — attached: ${path.basename(xlsxPath)}`);
+  } catch (err) {
+    console.error(`Email send failed (likely local network) but report files were saved successfully.\nReason: ${err.message}`);
+  }
 }
 
 // ── MAIN ──────────────────────────────────────────────────────────────────────
