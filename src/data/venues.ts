@@ -8604,6 +8604,55 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"Set within an expansive forest near Manchester, this venue features a brand new sauna alongside a massive Total Wipeout-style floating obstacle course with a 3.8-metre inflatable tower. The sauna is located at a country park offering outdoor water-based activities.",
     lat:53.3637, lng:-1.3318,
+  },
+  // AUTO-ADDED 2026-07-01
+  {
+    id:689, city:"London", country:"UK", name:"Mile End Climbing Wall Sauna", area:"Mile End / East London",
+    type:"both", price:"£10 standalone · add-on to climb available", rating:4.7, reviews:0,
+    hours:"Mon–Fri 07:00–22:00 · Sat–Sun 09:00–20:00",
+    temp:"Two outdoor wood-fired Finnish saunas · two cold plunge pools", tags:["Wood-fired","Outdoor","Cold Plunge","East London"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Changing rooms and lockers at the climbing wall",
+    transport:"Mile End (Central / District) · 10 min walk",
+    parking:"Limited street parking on Haverfield Road",
+    desc:"Two outdoor wood-fired Finnish saunas and two cold plunge pools at Mile End Climbing Wall, Haverfield Road, London E3 5BE. Sauna Yksi runs hotter (~85°C) for experienced bathers; Sauna Kaksi is milder for newcomers. Outdoor cold showers and whisky-barrel plunge pools complete the contrast-therapy circuit. At £10 for a standalone session, one of East London's most affordable outdoor sauna setups. Booking recommended; walk-ins subject to availability.",
+    lat:51.5231, lng:-0.0320,
+    bookingUrl:"https://www.mileendwall.org.uk/index.php/sauna"
+  },
+  {
+    id:690, city:"Dublin", country:"Ireland", name:"The Sauna Village Swords", area:"Swords, North Dublin",
+    type:"both", price:"From €16 / 1 hr · check website", rating:4.8, reviews:0,
+    hours:"Check website for current hours · Mon–Sun",
+    temp:"Three 12-person saunas · 8-person stainless-steel cold plunge", tags:["Community","Cold Plunge","North Dublin"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Bus to Swords Pavilions · Free 2-hr parking at Pavilions Car Park A",
+    parking:"Free 2-hour parking at Swords Pavilions Car Park A",
+    desc:"The Sauna Village at Swords Pavilions Shopping Centre, Malahide Road, Swords, North Co. Dublin — three spacious 12-person traditional saunas, an 8-person stainless-steel cold plunge pool and a private Ladies' Lounge, accessed via Car Park A of the Pavilions. One-hour sessions in a communal sauna environment with two hours' free parking included. Off-peak and peak pricing available. Book via thesaunavillage.com.",
+    lat:53.4596, lng:-6.2178,
+    bookingUrl:"https://www.thesaunavillage.com"
+  },
+  {
+    id:691, city:"Wexford", country:"Ireland", name:"Helios Sauna Rosslare", area:"Rosslare Strand, Co. Wexford",
+    type:"both", price:"€16.95 / 55 min · check website", rating:4.8, reviews:0,
+    hours:"Check heliossauna.ie for current session times",
+    temp:"Wood-fired heat · Irish Sea cold plunge", tags:["Wood-fired","Seafront","Sea Plunge","Coastal"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Check website for directions · seafront location",
+    parking:"Seafront parking at Rosslare Strand",
+    desc:"Helios Sauna's Rosslare Strand location — a wood-fired seaside sauna set directly on the beach at Rosslare Strand, Co. Wexford (Eircode Y35 EA24). Open sea views and direct Irish Sea cold plunge access make this one of Ireland's most beautiful coastal sauna spots. 55-minute sessions at €16.95 per person. Part of the Helios network alongside Bray Cottage, Bray Rooftop and Dún Laoghaire Floating Sauna.",
+    lat:52.2743, lng:-6.3573,
+    bookingUrl:"https://heliossauna.ie/products/wexford"
+  },
+  {
+    id:692, city:"Dublin", country:"Ireland", name:"Helios Sauna Bray Rooftop", area:"Bray Seafront, Co. Wicklow",
+    type:"both", price:"From €17.95 / 45 min · check website", rating:4.9, reviews:0,
+    hours:"Check heliossauna.ie for current session times",
+    temp:"Wood-fired rooftop sauna · sea cold plunge", tags:["Rooftop","Seafront","Sea Views","Wood-fired"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
+    transport:"Bray (DART) · 5 min walk to north end of promenade",
+    parking:"Seafront parking Bray",
+    desc:"Ireland's first rooftop sauna, perched above Platform Pizza at the north end of Bray Promenade with panoramic views across the Irish Sea to Bray Head. Wood-fired heat in a purpose-built rooftop space with cold plunge access — a spectacular setting day or evening. 45-minute shared sessions from €17.95 per person. Sister venue to Helios Bray Cottage (south end of promenade), Helios Rosslare and Helios Dún Laoghaire Floating Sauna.",
+    lat:53.2087, lng:-6.1003,
+    bookingUrl:"https://heliossauna.ie/products/bray-rooftop"
   }
 ];
 
@@ -8879,6 +8928,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
 export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
   "Finnish":         { bg:"rgba(78,122,85,0.2)",    c:"#6a9b72" },
   "Ice Bath":        { bg:"rgba(107,175,200,0.15)",  c:"#6bafc8" },
+  "Cold Plunge":     { bg:"rgba(107,175,200,0.15)",  c:"#6bafc8" },
   "Luxury":          { bg:"rgba(196,162,85,0.15)",   c:"#c4a255" },
   "Budget":          { bg:"rgba(78,122,85,0.18)",    c:"#7aaa80" },
   "Community":       { bg:"rgba(138,156,130,0.15)",  c:"#8a9c82" },
