@@ -8653,6 +8653,41 @@ export const VENUES: Venue[] = [
     desc:"Ireland's first rooftop sauna, perched above Platform Pizza at the north end of Bray Promenade with panoramic views across the Irish Sea to Bray Head. Wood-fired heat in a purpose-built rooftop space with cold plunge access — a spectacular setting day or evening. 45-minute shared sessions from €17.95 per person. Sister venue to Helios Bray Cottage (south end of promenade), Helios Rosslare and Helios Dún Laoghaire Floating Sauna.",
     lat:53.2087, lng:-6.1003,
     bookingUrl:"https://heliossauna.ie/products/bray-rooftop"
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:693, city:"Cork", country:"Ireland", name:"Wild Sauna Cork", area:"Cork City",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"River plunge", tags:["Wild Sauna","River","Outdoor","Nature"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A newly opened wild sauna in Cork, located just steps from a river, offering an outdoor sauna experience with natural river plunge access.",
+    lat:51.8985, lng:-8.4756,
+  },
+  {
+    id:694, city:"Bournemouth", country:"UK", name:"Boscombe Beach Sauna", area:"Boscombe",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Sea plunge", tags:["Beachfront","Award-winning","Sea swimming","Outdoor"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Claimed to be the UK's largest beachfront sauna, located in Boscombe near Bournemouth, this venue won an award just weeks after opening. It offers a coastal sauna experience with access to sea swimming.",
+    lat:50.722, lng:-1.8393,
+  },
+  {
+    id:695, city:"Glasgow", country:"UK", name:"Amberwave Sauna", area:"Glasgow",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Aufguss","German Ritual","New Opening","Urban Sauna"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Amberwave Sauna has opened in Glasgow, creating the city's first venue dedicated to the German Aufguss sauna ritual. The new space brings traditional Germanic sauna culture to Scotland.",
+    lat:55.8642, lng:-4.2518,
   }
 ];
 
