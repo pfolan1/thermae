@@ -22,8 +22,15 @@ try { require('dotenv').config({ path: path.join(__dirname, '.env') }); } catch 
 const VENUES_FILE  = path.join(__dirname, '../src/data/venues.ts');
 const REPORT_FILE  = path.join(__dirname, 'health-report.txt');
 const TIMEOUT_MS   = 12000;   // 12 s per request
-const CONCURRENCY  = 6;       // parallel requests (polite)
-const REPORT_EMAIL = 'hello@thermae.app';
+const CONCURRENCY        = 6;       // parallel requests (polite)
+const REPORT_EMAIL       = 'hello@thermae.app';
+const INSTAGRAM_DELAY_MS = 2500;    // pause between instagram.com requests
+const RETRY_DELAY_MS     = 4000;    // wait before retrying a failed connection
+
+// Realistic browser UA — many sites block or 403 bot-identified requests
+const BROWSER_UA = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36';
+
+const sleep = ms => new Promise(r => setTimeout(r, ms));
 
 // Bounding boxes for sanity-checking coordinates [minLat, maxLat, minLng, maxLng]
 const COUNTRY_BOUNDS = {
@@ -90,7 +97,7 @@ function checkUrl(url, depth = 0) {
     const req = mod.request(url, {
       method: 'HEAD',
       timeout: TIMEOUT_MS,
-      headers: { 'User-Agent': 'Thermae-HealthBot/1.0 (+https://thermae.app)' },
+      headers: { 'User-Agent': BROWSER_UA },
     }, res => {
       clearTimeout(timer);
       const code = res.statusCode;
@@ -99,6 +106,9 @@ function checkUrl(url, depth = 0) {
         let loc = res.headers.location;
         if (loc.startsWith('/')) loc = `${parsedUrl.protocol}//${parsedUrl.host}${loc}`;
         checkUrl(loc, depth + 1).then(done);
+      } else if (code === 429) {
+        // Rate-limited — site is alive, just throttling us
+        done({ status: 'RATE_LIMITED', code: 429 });
       } else {
         done({ status: code >= 200 && code < 400 ? 'OK' : 'DEAD', code });
       }
@@ -111,6 +121,8 @@ function checkUrl(url, depth = 0) {
 }
 
 // ── CONCURRENCY POOL ──────────────────────────────────────────────────────────
+let lastInstagramMs = 0; // throttle instagram requests globally
+
 async function checkAll(venues) {
   const results = new Array(venues.length);
   let idx = 0;
@@ -123,7 +135,28 @@ async function checkAll(venues) {
         results[i] = { ...v, status: 'NO_URL', code: null };
       } else {
         process.stdout.write(`  [${String(i + 1).padStart(3)}/${venues.length}] ${v.name.padEnd(45).slice(0,45)}…\r`);
-        const r = await checkUrl(v.url);
+
+        const isInstagram = /instagram\.com/i.test(v.url);
+        if (isInstagram) {
+          // Enforce minimum gap between instagram requests to reduce 429s
+          const gap = Date.now() - lastInstagramMs;
+          if (gap < INSTAGRAM_DELAY_MS) await sleep(INSTAGRAM_DELAY_MS - gap);
+          lastInstagramMs = Date.now();
+        }
+
+        let r = await checkUrl(v.url);
+
+        // Retry once on transient connection failures (DNS glitch, reset, timeout)
+        if (r.status === 'ERROR' || r.status === 'TIMEOUT') {
+          await sleep(RETRY_DELAY_MS);
+          r = await checkUrl(v.url);
+        }
+
+        // Instagram still rate-limiting after delay → mark as not checkable
+        if (isInstagram && r.code === 429) {
+          r = { status: 'RATE_LIMITED', code: 429, note: 'Instagram rate-limited — likely still live' };
+        }
+
         results[i] = { ...v, ...r };
       }
     }
@@ -165,13 +198,20 @@ function checkCoordinates(venues) {
 
 // ── REPORT BUILDER ────────────────────────────────────────────────────────────
 function buildReport(results, coordCheck, date) {
-  const ok      = results.filter(r => r.status === 'OK');
-  const dead    = results.filter(r => r.status === 'DEAD');
-  const timeout = results.filter(r => r.status === 'TIMEOUT');
-  const error   = results.filter(r => r.status === 'ERROR');
-  const noUrl   = results.filter(r => r.status === 'NO_URL');
-  const flagged = [...dead, ...timeout, ...error];
+  const ok          = results.filter(r => r.status === 'OK');
+  const allDead     = results.filter(r => r.status === 'DEAD');
+  const timeout     = results.filter(r => r.status === 'TIMEOUT');
+  const error       = results.filter(r => r.status === 'ERROR');
+  const rateLimited = results.filter(r => r.status === 'RATE_LIMITED');
+  const noUrl       = results.filter(r => r.status === 'NO_URL');
   const { noCoords, inTheSea } = coordCheck;
+
+  // Split dead into genuinely confirmed (404/410) vs soft failures (403, 5xx, etc.)
+  const confirmedDead     = allDead.filter(r => r.code === 404 || r.code === 410);
+  const softDead          = allDead.filter(r => r.code !== 404 && r.code !== 410);
+
+  // "Possibly unreachable" = soft HTTP errors + timeouts + connection errors + rate-limited
+  const possiblyUnreachable = [...softDead, ...rateLimited, ...timeout, ...error];
 
   const sep  = '═══════════════════════════════════════════════════════════════';
   const sep2 = '───────────────────────────────────────────────────────────────';
@@ -182,31 +222,45 @@ function buildReport(results, coordCheck, date) {
     `  ${date}`,
     sep,
     '',
-    `  Total venues checked : ${results.length}`,
-    `  ✅ OK                : ${ok.length}`,
-    `  ❌ Dead (4xx/5xx)    : ${dead.length}`,
-    `  ⏱  Timeout           : ${timeout.length}`,
-    `  ⚠️  Connection error  : ${error.length}`,
-    `  🔗 No website listed : ${noUrl.length}`,
-    `  📍 No coordinates    : ${noCoords.length}`,
-    `  🌊 Suspect coordinates: ${inTheSea.length}`,
+    `  Total venues checked        : ${results.length}`,
+    `  ✅ OK                       : ${ok.length}`,
+    `  🔴 CONFIRMED DEAD (404/410) : ${confirmedDead.length}   ← needs attention`,
+    `  ⚠️  Possibly unreachable     : ${possiblyUnreachable.length}   (403/429/timeout/DNS — may be transient)`,
+    `  🔗 No website listed        : ${noUrl.length}`,
+    `  📍 No coordinates           : ${noCoords.length}`,
+    `  🌊 Suspect coordinates      : ${inTheSea.length}`,
     '',
   ];
 
-  // ── Flagged websites ──
-  if (flagged.length > 0) {
-    lines.push('── FLAGGED WEBSITES (dead / timeout / error) ───────────────────');
-    for (const r of flagged) {
-      const code = r.code ? ` HTTP ${r.code}` : '';
-      lines.push(`  [${r.status.padEnd(7)}${code.padEnd(9)}]  ID ${String(r.id).padStart(3)}  ${r.name}`);
+  // ── NEEDS ATTENTION: confirmed 404/410 only ──
+  if (confirmedDead.length > 0) {
+    lines.push('── NEEDS ATTENTION — CONFIRMED DEAD (404 / 410) ─────────────────');
+    for (const r of confirmedDead) {
+      lines.push(`  [HTTP ${r.code}]  ID ${String(r.id).padStart(3)}  ${r.name}`);
       lines.push(`    ${r.city}, ${r.country}`);
       lines.push(`    ${r.url}`);
+      lines.push(`    → Visit manually. If gone: set open:false or remove entry.`);
       lines.push('');
     }
   } else {
-    lines.push('── FLAGGED WEBSITES ─────────────────────────────────────────────');
-    lines.push('  All websites are live. No action needed.');
+    lines.push('── NEEDS ATTENTION ──────────────────────────────────────────────');
+    lines.push('  No confirmed 404/410 dead links this week. 🎉');
     lines.push('');
+  }
+
+  // ── Possibly unreachable ──
+  if (possiblyUnreachable.length > 0) {
+    lines.push('── POSSIBLY UNREACHABLE (403 / 429 / timeout / DNS) ─────────────');
+    lines.push('  These may be transient. Check manually before taking action.');
+    lines.push('');
+    for (const r of possiblyUnreachable) {
+      const codeStr = r.code ? `HTTP ${r.code}` : r.status;
+      const note    = r.note ? `  (${r.note})` : '';
+      lines.push(`  [${codeStr.padEnd(10)}]  ID ${String(r.id).padStart(3)}  ${r.name}`);
+      lines.push(`    ${r.city}, ${r.country}`);
+      lines.push(`    ${r.url}${note}`);
+      lines.push('');
+    }
   }
 
   // ── No website ──
@@ -238,33 +292,19 @@ function buildReport(results, coordCheck, date) {
     }
   }
 
-  // ── Suggested actions ──
-  const hasActions = flagged.length > 0 || noCoords.length > 0 || inTheSea.length > 0;
-  lines.push('── SUGGESTED ACTIONS ────────────────────────────────────────────');
-  if (!hasActions) {
-    lines.push('  No actions required this week. Everything looks healthy! 🎉');
-  } else {
-    for (const r of dead) {
-      lines.push(`• [DEAD] ${r.name} (${r.city}) — ${r.url}`);
-      lines.push('  → HTTP error returned. Venue may have closed or changed URL.');
-      lines.push('  → Visit URL manually. If gone: set open:false or remove entry.');
-    }
-    for (const r of timeout) {
-      lines.push(`• [TIMEOUT] ${r.name} (${r.city}) — ${r.url}`);
-      lines.push('  → Site timed out. Check manually; may be a temporary outage.');
-    }
-    for (const r of error) {
-      lines.push(`• [ERROR] ${r.name} (${r.city}) — ${r.url}`);
-      lines.push('  → DNS/connection failure. Verify the URL is correct.');
-    }
+  // ── Suggested actions (coords only — URL actions are inline above) ──
+  const hasCoordActions = noCoords.length > 0 || inTheSea.length > 0;
+  if (hasCoordActions) {
+    lines.push('── SUGGESTED ACTIONS (coordinates) ──────────────────────────────');
     for (const v of noCoords) {
       lines.push(`• [NO COORDS] ${v.name} (${v.city}) — add lat/lng to venues.ts`);
     }
     for (const v of inTheSea) {
       lines.push(`• [BAD COORDS] ${v.name} (${v.city}) — verify lat:${v.lat} lng:${v.lng}`);
     }
+    lines.push('');
   }
-  lines.push('');
+
   lines.push(sep2);
   lines.push(`Report generated: ${new Date().toISOString()}`);
   lines.push('');
@@ -330,10 +370,10 @@ async function sendReport(report, flaggedCount, date) {
   console.log(report);
   console.log(`Report saved to: ${REPORT_FILE}`);
 
-  const flaggedCount =
-    results.filter(r => ['DEAD','TIMEOUT','ERROR'].includes(r.status)).length +
-    coordCheck.noCoords.length +
-    coordCheck.inTheSea.length;
+  // flaggedCount drives the email subject — only confirmed 404/410 are "action required"
+  const confirmedDeadCount =
+    results.filter(r => r.status === 'DEAD' && (r.code === 404 || r.code === 410)).length;
+  const flaggedCount = confirmedDeadCount + coordCheck.noCoords.length + coordCheck.inTheSea.length;
 
   await sendReport(report, flaggedCount, date);
 })();
