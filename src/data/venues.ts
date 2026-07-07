@@ -24,6 +24,7 @@
   featured?: boolean;
   googleRating?: number;
   venueCategory?: "dedicated" | "hotel" | "gym" | "spa" | "leisure_centre" | "members_club";
+  priceType?: "session" | "day_pass" | "package" | "free";
 }
 
 export const VENUES: Venue[] = [
@@ -8555,6 +8556,46 @@ export const VENUES: Venue[] = [
     desc:"A rooftop sauna overlooking the sea at Otaranta on Aalto University's Otaniemi campus in Espoo. Stunning sea views from an elevated sauna in the heart of the university district.",
     lat:60.1830, lng:24.8240,
   },
+  // ── Finland (additional public saunas, Helsinki / Tampere / Turku) ──
+  {
+    id:696, city:"Helsinki", country:"Finland", name:"Hermannin Sauna", area:"Hermanni, Helsinki",
+    type:"sauna", price:"Check website", rating:4.8, reviews:0,
+    priceType:"session",
+    hours:"Check hermanninsauna.fi for current session times",
+    temp:"Wood-fired stone oven 80–90°C", tags:["Wood-fired","Finnish","Public","Historic","Community"], emoji:"♨️🔥", open:true,
+    hygiene:"A", lockerNote:"Lockers available — bring a padlock",
+    transport:"Metro to Sörnäinen · 10 min walk · Bus routes to Hermanni",
+    parking:"Street parking in Hermanni — limited",
+    desc:"A traditional wood-fired public sauna in Helsinki's Hermanni neighbourhood — one of the classic city bathhouses that shaped Finnish urban sauna culture before the era of private bathrooms. The wood-heated stone oven delivers serious Finnish heat with separate sections for men and women, and the unhurried, unpretentious atmosphere puts the focus firmly on the sweat. Hermanni is one of Helsinki's most compelling post-industrial districts, with craft breweries, artist studios, and the Teurastamo food and culture complex all within walking distance — easy to combine into a full afternoon. Check hermanninsauna.fi for session times and any advance booking requirements.",
+    lat:60.2018, lng:25.0282,
+    bookingUrl:"https://hermanninsauna.fi"
+  },
+  {
+    id:697, city:"Tampere", country:"Finland", name:"Kaupinoja Sauna", area:"Kaupinoja, Lake Näsijärvi, Tampere",
+    type:"both", price:"Check website", rating:4.7, reviews:0,
+    priceType:"session",
+    hours:"Seasonal — check tampere.fi for opening dates and hours",
+    temp:"Lake Näsijärvi swim", tags:["Finnish","Lakeside","Outdoor","Public","Community","Wood-fired"], emoji:"🌲🔥", open:true,
+    hygiene:"A", lockerNote:"Basic changing facilities on site",
+    transport:"Bus from Tampere city centre to Kaupinoja · drive approx 10 min",
+    parking:"Car park at Kaupinoja recreation area",
+    desc:"A popular public lakeside sauna and outdoor recreation area on the shores of Lake Näsijärvi in Tampere — one of the city's most beloved spots for classic Finnish summer bathing. The public sauna here is part of a wider complex of swimming piers, sandy beach, and open water, and the ritual of heating in the sauna before plunging into the cool, dark lake water is the democratic Finnish sauna experience in its purest form. Näsijärvi stays noticeably cold even in July, making the contrast particularly vivid. Operated by the city of Tampere and open seasonally — check tampere.fi for current opening dates.",
+    lat:61.5185, lng:23.6265,
+    bookingUrl:"https://www.tampere.fi"
+  },
+  {
+    id:698, city:"Turku", country:"Finland", name:"Sauna Vasa", area:"Turku City Centre",
+    type:"sauna", price:"Check website", rating:4.7, reviews:0,
+    priceType:"session",
+    hours:"Check saunavasa.fi for current session times",
+    temp:"Wood-fired sauna", tags:["Wood-fired","Finnish","Public","Boutique"], emoji:"♨️🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Turku city centre — walkable from Turku Market Square",
+    parking:"City centre parking near Turku Market Square",
+    desc:"A public wood-fired sauna in Turku, Finland's oldest city and the historic capital of the country before Helsinki — offering authentic Finnish sauna culture in a city famed for its medieval cathedral, Aura River restaurant boats, and ferry connections to Sweden and Åland. The Turku sauna scene is smaller than Helsinki or Tampere's but genuine, and Sauna Vasa provides a proper wood-fired session accessible to visitors exploring or passing through southwest Finland. Turku pairs well with the island-hopping Archipelago Sea (Saaristomeri) ferry route, one of the most beautiful sea journeys in Scandinavia.",
+    lat:60.4520, lng:22.2660,
+    bookingUrl:"https://saunavasa.fi"
+  },
   // ── Estonia (additional) ──
   {
     id:685, city:"Tartu", country:"Estonia", name:"Anne Saun", area:"Anne Canal, Tartu",
@@ -8732,7 +8773,7 @@ export const CITIES: string[] = [
   // Sweden (additional)
   "Malmö","Landskrona","Umeå",
   // Finland (additional)
-  "Kuopio","Espoo",
+  "Kuopio","Espoo","Turku",
 ];
 
 export const FLAG: Record<string, string> = {
@@ -8782,7 +8823,7 @@ export const FLAG: Record<string, string> = {
   // Sweden (additional)
   "Malmö":"🇸🇪", Landskrona:"🇸🇪", "Umeå":"🇸🇪",
   // Finland (additional)
-  Kuopio:"🇫🇮", Espoo:"🇫🇮",
+  Kuopio:"🇫🇮", Espoo:"🇫🇮", Turku:"🇫🇮",
 };
 
 export const REGION_MAP: Record<string, string> = {
@@ -8832,7 +8873,7 @@ export const REGION_MAP: Record<string, string> = {
   // Sweden (additional)
   "Malmö":"Nordic", Landskrona:"Nordic", "Umeå":"Nordic",
   // Finland (additional)
-  Kuopio:"Nordic", Espoo:"Nordic",
+  Kuopio:"Nordic", Espoo:"Nordic", Turku:"Nordic",
 };
 
 export const COUNTRY_MAP: Record<string, string> = {
@@ -8892,7 +8933,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   // Sweden (additional)
   "Malmö":"Sweden", Landskrona:"Sweden", "Umeå":"Sweden",
   // Finland (additional)
-  Kuopio:"Finland", Espoo:"Finland",
+  Kuopio:"Finland", Espoo:"Finland", Turku:"Finland",
 };
 
 // Maps city → county (Ireland/NI) or region (everything else)
@@ -8957,7 +8998,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   // Sweden (additional) — region
   "Malmö":"Malmö Region", Landskrona:"Malmö Region", "Umeå":"Northern Sweden",
   // Finland (additional) — region
-  Kuopio:"Eastern Finland", Espoo:"Helsinki Region",
+  Kuopio:"Eastern Finland", Espoo:"Helsinki Region", Turku:"Turku Region",
 };
 
 export const TAGS_COLOR: Record<string, { bg: string; c: string }> = {
