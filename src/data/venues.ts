@@ -8483,6 +8483,20 @@ export const VENUES: Venue[] = [
     desc:"A cold bathing and sauna facility in Umeå, Sweden's university city in the far north. Year-round bathing in the River Ume, popular with students and locals alike in every season.",
     lat:63.8262, lng:20.2252,
   },
+  // ── Sweden (additional) ──
+  {
+    id:699, city:"Varberg", country:"Sweden", name:"Varberg Kallbadhus", area:"Varberg Harbour, Halland",
+    type:"both", price:"Check website", rating:4.9, reviews:0,
+    priceType:"session",
+    hours:"Seasonal — check varbergskallbadhus.se for current hours",
+    temp:"Swedish west coast sea plunge (Kattegat)", tags:["Historic","Seafront","Kallbadhus","Public","Cold Plunge","Scenic","Traditional"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Separate changing rooms for men and women",
+    transport:"Walk 15 min from Varberg train station · Varberg is on the West Coast Line (Gothenburg–Malmö), approx 50 min from Gothenburg",
+    parking:"Car park at Varberg harbour, short walk",
+    desc:"One of Sweden's most celebrated and photographed historic bathing establishments — a beautiful wooden kallbadhus (cold bathhouse) extending on piers into the sea at Varberg harbour, dating from 1903 and now a protected cultural monument. Separate wings for men and women each have traditional saunas and direct cold plunge access into the Kattegat, with views of Varberg Fortress (a 13th-century castle) rising above the shoreline. The ritual here is quintessentially Scandinavian: intense sauna heat followed by a bracing drop into the grey-green sea, repeated until the world feels right. Varberg sits on the main West Coast railway line, making it a very easy half-day trip from Gothenburg or Malmö.",
+    lat:57.1075, lng:12.2415,
+    bookingUrl:"https://varbergskallbadhus.se"
+  },
   // ── Finland (additional public saunas) ──
   {
     id:679, city:"Helsinki", country:"Finland", name:"Lapinlahden Sauna", area:"Lapinlahti Bay, Helsinki",
@@ -8771,7 +8785,7 @@ export const CITIES: string[] = [
   // Denmark (additional)
   "Fredericia","Aalborg","Skanderborg",
   // Sweden (additional)
-  "Malmö","Landskrona","Umeå",
+  "Malmö","Landskrona","Umeå","Varberg",
   // Finland (additional)
   "Kuopio","Espoo","Turku",
 ];
@@ -8821,7 +8835,7 @@ export const FLAG: Record<string, string> = {
   // Denmark (additional)
   Fredericia:"🇩🇰", Aalborg:"🇩🇰", Skanderborg:"🇩🇰",
   // Sweden (additional)
-  "Malmö":"🇸🇪", Landskrona:"🇸🇪", "Umeå":"🇸🇪",
+  "Malmö":"🇸🇪", Landskrona:"🇸🇪", "Umeå":"🇸🇪", Varberg:"🇸🇪",
   // Finland (additional)
   Kuopio:"🇫🇮", Espoo:"🇫🇮", Turku:"🇫🇮",
 };
@@ -8871,7 +8885,7 @@ export const REGION_MAP: Record<string, string> = {
   // Denmark (additional)
   Fredericia:"Nordic", Aalborg:"Nordic", Skanderborg:"Nordic",
   // Sweden (additional)
-  "Malmö":"Nordic", Landskrona:"Nordic", "Umeå":"Nordic",
+  "Malmö":"Nordic", Landskrona:"Nordic", "Umeå":"Nordic", Varberg:"Nordic",
   // Finland (additional)
   Kuopio:"Nordic", Espoo:"Nordic", Turku:"Nordic",
 };
@@ -8931,7 +8945,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   // Denmark (additional)
   Fredericia:"Denmark", Aalborg:"Denmark", Skanderborg:"Denmark",
   // Sweden (additional)
-  "Malmö":"Sweden", Landskrona:"Sweden", "Umeå":"Sweden",
+  "Malmö":"Sweden", Landskrona:"Sweden", "Umeå":"Sweden", Varberg:"Sweden",
   // Finland (additional)
   Kuopio:"Finland", Espoo:"Finland", Turku:"Finland",
 };
@@ -8996,7 +9010,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   // Denmark (additional) — region
   Fredericia:"Jutland", Aalborg:"Jutland", Skanderborg:"Jutland",
   // Sweden (additional) — region
-  "Malmö":"Malmö Region", Landskrona:"Malmö Region", "Umeå":"Northern Sweden",
+  "Malmö":"Malmö Region", Landskrona:"Malmö Region", "Umeå":"Northern Sweden", Varberg:"Gothenburg Region",
   // Finland (additional) — region
   Kuopio:"Eastern Finland", Espoo:"Helsinki Region", Turku:"Turku Region",
 };
