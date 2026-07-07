@@ -8755,7 +8755,7 @@ export const CITIES: string[] = [
   // Greenland
   "Nanortalik","Sisimiut",
   // England (additional)
-  "Bognor Regis",
+  "Bognor Regis","Bournemouth",
   // Germany
   "Berlin","Erding","Cologne","Baden-Baden","Munich",
   // Estonia
@@ -8781,7 +8781,7 @@ export const FLAG: Record<string, string> = {
   Manchester:"🇬🇧", Liverpool:"🇬🇧", Chester:"🇬🇧", Newcastle:"🇬🇧", Leeds:"🇬🇧",
   Birmingham:"🇬🇧", Sheffield:"🇬🇧", Cornwall:"🇬🇧",
   Nottingham:"🇬🇧", Leicester:"🇬🇧", Norwich:"🇬🇧", Cambridge:"🇬🇧", Oxford:"🇬🇧", Exeter:"🇬🇧",
-  Portsmouth:"🇬🇧", Southampton:"🇬🇧", Plymouth:"🇬🇧", York:"🇬🇧", Swanage:"🇬🇧", "Bognor Regis":"🇬🇧",
+  Portsmouth:"🇬🇧", Southampton:"🇬🇧", Plymouth:"🇬🇧", York:"🇬🇧", Swanage:"🇬🇧", "Bognor Regis":"🇬🇧", Bournemouth:"🇬🇧",
   Edinburgh:"🇬🇧", Glasgow:"🇬🇧", Aberdeen:"🇬🇧", Inverness:"🇬🇧", Dundee:"🇬🇧", "St Andrews":"🇬🇧", "Scottish Borders":"🇬🇧",
   Durham:"🇬🇧",
   Cardiff:"🏴󠁧󠁢󠁷󠁬󠁳󠁿", Swansea:"🏴󠁧󠁢󠁷󠁬󠁳󠁿",
@@ -8832,7 +8832,7 @@ export const REGION_MAP: Record<string, string> = {
   Newcastle:"UK & Ireland", Leeds:"UK & Ireland", Birmingham:"UK & Ireland",
   Sheffield:"UK & Ireland", Cornwall:"UK & Ireland",
   Nottingham:"UK & Ireland", Leicester:"UK & Ireland", Norwich:"UK & Ireland", Cambridge:"UK & Ireland",
-  Oxford:"UK & Ireland", Exeter:"UK & Ireland", Portsmouth:"UK & Ireland", Southampton:"UK & Ireland", Plymouth:"UK & Ireland", York:"UK & Ireland", Swanage:"UK & Ireland", "Bognor Regis":"UK & Ireland",
+  Oxford:"UK & Ireland", Exeter:"UK & Ireland", Portsmouth:"UK & Ireland", Southampton:"UK & Ireland", Plymouth:"UK & Ireland", York:"UK & Ireland", Swanage:"UK & Ireland", "Bognor Regis":"UK & Ireland", Bournemouth:"UK & Ireland",
   Edinburgh:"UK & Ireland", Glasgow:"UK & Ireland", Aberdeen:"UK & Ireland",
   Inverness:"UK & Ireland", Dundee:"UK & Ireland", "St Andrews":"UK & Ireland", "Scottish Borders":"UK & Ireland",
   Durham:"UK & Ireland",
@@ -8882,7 +8882,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Manchester:"England", Liverpool:"England", Chester:"England", Newcastle:"England", Leeds:"England",
   Birmingham:"England", Sheffield:"England", Cornwall:"England",
   Nottingham:"England", Leicester:"England", Norwich:"England", Cambridge:"England",
-  Oxford:"England", Exeter:"England", Portsmouth:"England", Southampton:"England", Plymouth:"England", York:"England", Swanage:"England", "Bognor Regis":"England",
+  Oxford:"England", Exeter:"England", Portsmouth:"England", Southampton:"England", Plymouth:"England", York:"England", Swanage:"England", "Bognor Regis":"England", Bournemouth:"England",
   // Scotland
   Durham:"England",
   Edinburgh:"Scotland", Glasgow:"Scotland", Aberdeen:"Scotland",
@@ -8943,7 +8943,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Manchester:"North West", Liverpool:"North West", Chester:"Cheshire", Newcastle:"North East", Leeds:"Yorkshire",
   Birmingham:"West Midlands", Sheffield:"Yorkshire", Cornwall:"South West",
   Nottingham:"East Midlands", Leicester:"East Midlands", Norwich:"East of England", Cambridge:"East of England",
-  Oxford:"South East", Exeter:"South West", Portsmouth:"South East", Southampton:"South East", Plymouth:"South West", York:"Yorkshire", Swanage:"South West", "Bognor Regis":"South East",
+  Oxford:"South East", Exeter:"South West", Portsmouth:"South East", Southampton:"South East", Plymouth:"South West", York:"Yorkshire", Swanage:"South West", "Bognor Regis":"South East", Bournemouth:"South West",
   // Scotland — region
   Edinburgh:"Central Belt", Glasgow:"Central Belt", Aberdeen:"Grampian",
   Inverness:"Highlands", Dundee:"Fife", "St Andrews":"Fife", "Scottish Borders":"Scottish Borders",
