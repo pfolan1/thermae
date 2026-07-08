@@ -376,20 +376,6 @@ export const VENUES: Venue[] = [
     bookingUrl:"https://hellasgarden.se"
   },
 
-  // ── COPENHAGEN ──
-  {
-    id:32, city:"Copenhagen", country:"Denmark", name:"La Banchina", area:"Refshaleøen",
-    type:"both", price:"Free entry", rating:4.9, reviews:567,
-    hours:"Check website for current hours",
-    temp:"Copenhagen Harbour", tags:["Harbour","Rustic","Café On-site"], emoji:"🌊🔥", open:true,
-    hygiene:"A+", lockerNote:"No lockers — bring a dry bag",
-    transport:"Bus 9A to Refshaleøen · 10 min walk",
-    parking:"Refshaleøen free parking",
-    desc:"Rustic wooden sauna, cold harbour plunge, and a small café serving natural wine and food. Copenhagen's most beloved wellness spot.",
-    lat:55.6856, lng:12.6003,
-    bookingUrl:"https://labanchina.dk"
-  },
-
   // ── OSLO ──
   {
     id:33, city:"Oslo", country:"Norway", name:"KOK Oslo Sauna Bar", area:"Sørenga",
