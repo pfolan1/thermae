@@ -378,7 +378,7 @@ export const VENUES: Venue[] = [
 
   // ── OSLO ──
   {
-    id:33, city:"Oslo", country:"Norway", name:"KOK Oslo Sauna Bar", area:"Sørenga",
+    id:33, city:"Oslo", country:"Norway", name:"KOK Oslo Sauna Bar", area:"Langkaia (by the Opera House)",
     type:"both", price:"NOK 295 (~£22)", rating:4.9, reviews:498,
     hours:"Check website for current hours",
     temp:"Oslofjord 4–15°C", tags:["Bar On-site","Fjord Plunge","Social"], emoji:"🌊🔥", open:true,
@@ -522,18 +522,6 @@ export const VENUES: Venue[] = [
     desc:"Private sauna and cold plunge in leafy South London. Maximum 4 people per session for a completely private experience. Traditional Finnish sauna, ice bath, red light therapy and a boutique lounge with complimentary tea.",
     lat:51.4109, lng:-0.0748,
     bookingUrl:"https://contrastlondon.co.uk"
-  },
-  {
-    id:45, city:"London", country:"UK", name:"Shoreditch & Soul", area:"Shoreditch",
-    type:"sauna", price:"Membership from £99/month", rating:4.8, reviews:34,
-    hours:"Check website for current hours",
-    temp:"Cold plunge", tags:["Members Club","Luxury","Events"], emoji:"♨️🌿", open:true,
-    hygiene:"A+", lockerNote:"Lockers and locks provided",
-    transport:"Shoreditch High Street (Overground) · 3 min walk",
-    parking:"NCP Shoreditch nearby",
-    desc:"Brand new for 2025. 40-person sauna inside a former Victorian textile warehouse on Cheshire Street. Plant-based dining, alcohol-free cocktails, breathwork, sound healing and supper clubs. London's most immersive wellness members club.",
-    lat:51.5234, lng:-0.0741,
-    bookingUrl:"https://andsoul.com/locations/shoreditch/the-sanctuary"
   },
   {
     id:46, city:"London", country:"UK", name:"Revitalise Urban Spa", area:"Hackney",
@@ -7316,19 +7304,7 @@ export const VENUES: Venue[] = [
     bookingUrl:"https://dokkeskjaerskaien.no",
   },
 
-  // ── TROMSØ (new city) ──
-  {
-    id:589, city:"Tromsø", country:"Norway", name:"Pust Tromsø", area:"Tromsø Harbour",
-    type:"sauna", price:"From NOK 120", rating:4.9, reviews:243,
-    hours:"Check website for current hours",
-    temp:"Arctic Ocean", tags:["Arctic","Waterfront","Floating","Wood-fired","Northern Lights"], emoji:"🔥❄️", open:true,
-    hygiene:"A+", lockerNote:"Changing facilities available",
-    transport:"Storgata city centre · 8 min walk",
-    parking:"Stortorget parking · 10 min walk",
-    desc:"A floating sauna on Tromsø harbour offering what may be the world's most extraordinary sauna setting — plunging into the Arctic Ocean with the mountains of Kvaløya across the water and, in winter, the Northern Lights dancing overhead. Drop-in sessions and private bookings. In summer you sauna under the midnight sun; in winter under the aurora. An unmissable Arctic experience.",
-    lat:69.6489, lng:18.9551,
-    bookingUrl:"https://pust.no",
-  },
+  // ── TROMSØ ──
   {
     id:590, city:"Tromsø", country:"Norway", name:"Camp Senja Sauna", area:"Senja Island",
     type:"sauna", price:"Check website", rating:4.9, reviews:87,
@@ -7548,7 +7524,7 @@ export const VENUES: Venue[] = [
     transport:"Drive — Oranmore, 10 min from Galway city",
     parking:"Renville Park car park",
     desc:"Traditional wood-fired sauna (\"Teach Allais\" means \"sweat house\" in Irish) at the scenic Renville Park waterfront near Oranmore. Combines Irish sweat-house heritage with Atlantic plunging.",
-    lat:53.2432, lng:-8.9670,
+    lat:53.2418, lng:-8.9655,
     bookingUrl:"https://teachallaissauna.com",
   },
   {
@@ -7797,19 +7773,6 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A wood-fired sauna retreat in County Louth — Ireland's smallest county but home to a growing wellness scene. Peaceful countryside sessions with cold therapy.",
     lat:53.9959, lng:-6.4069,
-  },
-
-  // ── DUBLIN (additional) ──
-  {
-    id:626, city:"Dublin", country:"Ireland", name:"Sandycove Sauna By The Sea", area:"Sandycove / Dún Laoghaire",
-    type:"sauna", price:"Check website", rating:4.8, reviews:0,
-    hours:"Check website for current hours",
-    temp:"Irish Sea plunge at Forty Foot", tags:["Seafront","Dublin","Wood-fired","Outdoor"], emoji:"🔥🌊", open:true,
-    hygiene:"A", lockerNote:"No lockers — bring a dry bag",
-    transport:"Sandycove & Glasthule (DART) · 5 min walk",
-    parking:"Sandycove beach car park",
-    desc:"A sauna by the sea at Sandycove — steps from the legendary Forty Foot sea bathing place and the James Joyce Tower. Cold plunge into Dublin Bay after your session in this iconic coastal Dublin setting.",
-    lat:53.2885, lng:-6.1141,
   },
 
   // ── REYKJAVIK (additional) ──
