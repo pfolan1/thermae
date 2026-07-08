@@ -1,0 +1,352 @@
+Thermae Dedup Check — Wednesday, 8 July 2026
+════════════════════════════════════════════════════════════════════════
+
+── CONFIRMED (4) ──
+
+  [HIGH]  Same bookingUrl
+  ID 48: The Barrel Sauna Dundrum  (Dublin, Ireland)
+         URL:      https://thebarrelsauna.ie
+         Coords:   53.2915, -6.2404
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 49: The Barrel Sauna Tallaght  (Dublin, Ireland)
+         URL:      https://thebarrelsauna.ie
+         Coords:   53.2874, -6.3748
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 75%   Distance: 8945m
+  Suggested keep: ID 48 (The Barrel Sauna Dundrum)
+
+  [HIGH]  Same bookingUrl
+  ID 159: Sláinte Saunas  (Dublin, Ireland)
+         URL:      https://www.slaintesaunas.ie
+         Coords:   53.3375, -6.2144
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 178: Sláinte Saunas Wild Atlantic  (Mayo, Ireland)
+         URL:      https://www.slaintesaunas.ie
+         Coords:   53.7726, -9.6938
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 90%   Distance: 234844m
+  Suggested keep: ID 159 (Sláinte Saunas)
+
+  [HIGH]  Same bookingUrl
+  ID 193: The Sea View Sauna Culdaff  (Donegal, Ireland)
+         URL:      https://theseaviewsauna.ie
+         Coords:   55.289, -7.164
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 194: The Sea View Sauna Shroove  (Donegal, Ireland)
+         URL:      https://theseaviewsauna.ie
+         Coords:   55.253, -6.976
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 80%   Distance: 12564m
+  Suggested keep: ID 193 (The Sea View Sauna Culdaff)
+
+  [HIGH]  Same bookingUrl
+  ID 511: Devon Cold Swim — Exmouth  (Exeter, England)
+         URL:      https://www.devoncoldswim.co.uk/
+         Coords:   50.616936, -3.423849
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 512: Devon Cold Swim — Teignmouth  (Exeter, England)
+         URL:      https://www.devoncoldswim.co.uk/
+         Coords:   50.545766, -3.495141
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 75%   Distance: 9379m
+  Suggested keep: ID 511 (Devon Cold Swim — Exmouth)
+
+────────────────────────────────────────────────────────────────────────
+
+── PROBABLE (24) ──
+
+  [HIGH]  Same bookingUrl
+  ID 176: Sabhna Saunas Dugort  (Mayo, Ireland)
+         URL:      https://sabhna.ie
+         Coords:   54.0124, -10.0234
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 177: Sabhna Saunas Keel  (Mayo, Ireland)
+         URL:      https://sabhna.ie
+         Coords:   53.97, -10.0674
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 67%   Distance: 5523m
+  Suggested keep: ID 176 (Sabhna Saunas Dugort)
+
+  [MEDIUM]  Same bookingUrl
+  ID 211: Cè Sauna  (Roscommon, Ireland)
+         URL:      https://www.irelandsaunas.com/roscommon
+         Coords:   53.9727, -8.319
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 212: Riverside Sauna Termonbarry  (Roscommon, Ireland)
+         URL:      https://www.irelandsaunas.com/roscommon
+         Coords:   53.6728, -7.9767
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 33%   Distance: 40210m
+  Suggested keep: ID 211 (Cè Sauna)
+
+  [MEDIUM]  Same bookingUrl
+  ID 231: Lowlu Kentish Town  (London, UK)
+         URL:      https://www.lowlu.co
+         Coords:   51.5519, -0.1449
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 232: Lowlu Wandsworth  (London, UK)
+         URL:      https://www.lowlu.co
+         Coords:   51.4577, -0.189
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 33%   Distance: 10910m
+  Suggested keep: ID 231 (Lowlu Kentish Town)
+
+  [MEDIUM]  Same bookingUrl
+  ID 264: HotBox Benone  (Limavady, Northern Ireland)
+         URL:      https://hotboxni.com/
+         Coords:   55.163443, -6.879525
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 273: HotBox Groomsport  (Groomsport, Northern Ireland)
+         URL:      https://hotboxni.com/
+         Coords:   54.676038, -5.617067
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 97190m
+  Suggested keep: ID 264 (HotBox Benone)
+
+  [MEDIUM]  Same bookingUrl
+  ID 271: Sudor Club 24  (Bangor, Northern Ireland)
+         URL:      https://www.sudoroutdoorsaunas.com/
+         Coords:   54.645324, -5.674751
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 272: Sudor Quarries Farm  (Bangor, Northern Ireland)
+         URL:      https://www.sudoroutdoorsaunas.com/
+         Coords:   54.634057, -5.638158
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 33%   Distance: 2667m
+  Suggested keep: ID 271 (Sudor Club 24)
+
+  [HIGH]  Same bookingUrl
+  ID 277: Sawna Bach Anglesey  (Anglesey, Wales)
+         URL:      https://saunawales.co.uk
+         Coords:   53.21898, -4.500014
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 279: Sawna Bach Llanberis  (Llanberis, Wales)
+         URL:      https://saunawales.co.uk
+         Coords:   53.120604, -4.115282
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 67%   Distance: 27880m
+  Suggested keep: ID 277 (Sawna Bach Anglesey)
+
+  [MEDIUM]  Same bookingUrl
+  ID 416: Roots & Rocks — Hardcastle Crags  (Leeds, England)
+         URL:      https://www.rootsandrocks.co.uk
+         Coords:   53.766739, -2.050315
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 417: Roots & Rocks — Mytholmroyd Community Centre  (Leeds, England)
+         URL:      https://www.rootsandrocks.co.uk
+         Coords:   53.731174, -1.985898
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 40%   Distance: 5795m
+  Suggested keep: ID 416 (Roots & Rocks — Hardcastle Crags)
+
+  [HIGH]  Same bookingUrl
+  ID 451: Wild Sauna Club — Burton Farm  (Birmingham, England)
+         URL:      https://wildsaunaclub.co.uk/book
+         Coords:   52.505005, -1.395987
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 460: Wild Sauna Club — Stoney Cove  (Leicester, England)
+         URL:      https://wildsaunaclub.co.uk/book
+         Coords:   52.545435, -1.276032
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 60%   Distance: 9277m
+  Suggested keep: ID 451 (Wild Sauna Club — Burton Farm)
+
+  [HIGH]  Same bookingUrl
+  ID 451: Wild Sauna Club — Burton Farm  (Birmingham, England)
+         URL:      https://wildsaunaclub.co.uk/book
+         Coords:   52.505005, -1.395987
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 462: Wild Sauna Club — Market Harborough  (Leicester, England)
+         URL:      https://wildsaunaclub.co.uk/book
+         Coords:   52.460461, -0.848626
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 60%   Distance: 37395m
+  Suggested keep: ID 451 (Wild Sauna Club — Burton Farm)
+
+  [HIGH]  Same bookingUrl
+  ID 460: Wild Sauna Club — Stoney Cove  (Leicester, England)
+         URL:      https://wildsaunaclub.co.uk/book
+         Coords:   52.545435, -1.276032
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 462: Wild Sauna Club — Market Harborough  (Leicester, England)
+         URL:      https://wildsaunaclub.co.uk/book
+         Coords:   52.460461, -0.848626
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 60%   Distance: 30434m
+  Suggested keep: ID 460 (Wild Sauna Club — Stoney Cove)
+
+  [HIGH]  Same bookingUrl
+  ID 475: The Nomadic Sauna — Kingston Beach  (Brighton, England)
+         URL:      https://www.thenomadicsauna.co.uk/
+         Coords:   50.831861, -0.256919
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 477: The Nomadic Sauna — Swanborough Lake  (Brighton, England)
+         URL:      https://www.thenomadicsauna.co.uk/
+         Coords:   50.856921, -0.008726
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 60%   Distance: 17647m
+  Suggested keep: ID 475 (The Nomadic Sauna — Kingston Beach)
+
+  [MEDIUM]  Same bookingUrl
+  ID 478: Still & Wild Sauna — Hinksey Pool  (Oxford, England)
+         URL:      https://www.stillandwildsauna.co.uk/
+         Coords:   51.741221, -1.254908
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 482: Still & Wild Sauna — Chipping Norton Lido  (Oxford, England)
+         URL:      https://www.stillandwildsauna.co.uk/
+         Coords:   51.939749, -1.54191
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 29599m
+  Suggested keep: ID 478 (Still & Wild Sauna — Hinksey Pool)
+
+  [HIGH]  Same bookingUrl
+  ID 513: Wilder Sauna — Chagford  (Exeter, England)
+         URL:      https://www.wildersauna.co.uk/
+         Coords:   50.688763, -3.823709
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 514: Wilder Sauna — Dartmeet  (Exeter, England)
+         URL:      https://www.wildersauna.co.uk/
+         Coords:   50.545085, -3.876992
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 67%   Distance: 16413m
+  Suggested keep: ID 513 (Wilder Sauna — Chagford)
+
+  [HIGH]  Same bookingUrl
+  ID 525: Motts Sauna — Menheniot  (Cornwall, England)
+         URL:      https://www.mottssauna.co.uk/
+         Coords:   50.429246, -4.411383
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 527: Motts Sauna — Portwrinkle  (Cornwall, England)
+         URL:      https://www.mottssauna.co.uk/
+         Coords:   50.361939, -4.310382
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 67%   Distance: 10357m
+  Suggested keep: ID 525 (Motts Sauna — Menheniot)
+
+  [MEDIUM]  Same bookingUrl
+  ID 531: Mor Holan — Porthleven  (Cornwall, England)
+         URL:      https://www.morholan.co.uk/
+         Coords:   50.085464, -5.315186
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 532: Mor Holan — St Ives  (Cornwall, England)
+         URL:      https://www.morholan.co.uk/
+         Coords:   50.208239, -5.477766
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 17905m
+  Suggested keep: ID 531 (Mor Holan — Porthleven)
+
+  [HIGH]  Same bookingUrl
+  ID 559: Serenity Saunas — O  (Clare, Ireland)
+         URL:      https://serenitysaunas.ie
+         Coords:   52.7583, -8.5083
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 560: Serenity Saunas — Castleconnell  (Limerick, Ireland)
+         URL:      https://serenitysaunas.ie
+         Coords:   52.7167, -8.5
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 67%   Distance: 4659m
+  Suggested keep: ID 559 (Serenity Saunas — O)
+
+  [MEDIUM]  Same bookingUrl
+  ID 653: KOK Aker Brygge  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.9087, 10.7267
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 654: KOK Vega  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.909, 10.7271
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 33%   Distance: 40m
+  Suggested keep: ID 653 (KOK Aker Brygge)
+
+  [MEDIUM]  Same bookingUrl
+  ID 653: KOK Aker Brygge  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.9087, 10.7267
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 655: KOK Morild  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.9085, 10.7263
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 33%   Distance: 31m
+  Suggested keep: ID 653 (KOK Aker Brygge)
+
+  [MEDIUM]  Same bookingUrl
+  ID 654: KOK Vega  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.909, 10.7271
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 655: KOK Morild  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.9085, 10.7263
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 71m
+  Suggested keep: ID 654 (KOK Vega)
+
+  [MEDIUM]  Same bookingUrl
+  ID 662: Alta Sauna  (Alta, Norway)
+         URL:      Check local listings
+         Coords:   69.9633, 23.2373
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 667: Amigo Sauna  (Copenhagen, Denmark)
+         URL:      Check local listings
+         Coords:   55.6781, 12.5688
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 1672486m
+  Suggested keep: ID 662 (Alta Sauna)
+
+  [MEDIUM]  Same bookingUrl
+  ID 662: Alta Sauna  (Alta, Norway)
+         URL:      Check local listings
+         Coords:   69.9633, 23.2373
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 679: Lapinlahden Sauna  (Helsinki, Finland)
+         URL:      Check local listings
+         Coords:   60.1682, 24.9127
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 1091891m
+  Suggested keep: ID 662 (Alta Sauna)
+
+  [MEDIUM]  Same bookingUrl
+  ID 667: Amigo Sauna  (Copenhagen, Denmark)
+         URL:      Check local listings
+         Coords:   55.6781, 12.5688
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 679: Lapinlahden Sauna  (Helsinki, Finland)
+         URL:      Check local listings
+         Coords:   60.1682, 24.9127
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 881348m
+  Suggested keep: ID 667 (Amigo Sauna)
+
+  [HIGH]  Same bookingUrl
+  ID 683: Jämeräntaival Rooftop Sauna  (Espoo, Finland)
+         URL:      https://www.ayy.fi
+         Coords:   60.187, 24.826
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 684: Otaranta Rooftop Sauna  (Espoo, Finland)
+         URL:      https://www.ayy.fi
+         Coords:   60.183, 24.824
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 67%   Distance: 458m
+  Suggested keep: ID 683 (Jämeräntaival Rooftop Sauna)
+
+  [MEDIUM]  Coordinates within 80m + similar name
+  ID 4: Thermae Bath Spa  (Bath, UK)
+         URL:      https://thermaebathspa.com
+         Coords:   51.3797, -2.3585
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 70: Gainsborough Bath Spa  (Bath, UK)
+         URL:      https://www.gainsboroughbathspa.com
+         Coords:   51.3799, -2.3596
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 67%   Distance: 80m
+  Suggested keep: ID 4 (Thermae Bath Spa)
+
+────────────────────────────────────────────────────────────────────────
+
+Total suspected: 28
+
+This script is READ-ONLY. Remove weaker entries manually from src/data/venues.ts.
+
+════════════════════════════════════════════════════════════════════════
