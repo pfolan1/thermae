@@ -8631,7 +8631,7 @@ export const VENUES: Venue[] = [
   {
     id:703, city:"Wicklow", country:"Ireland", name:"Bosca Beatha", area:"Glenmalure Valley, Co. Wicklow",
     type:"sauna", price:"From €20 per person", rating:4.7, reviews:0,
-    priceFrom:20, priceType:"session",
+    priceType:"session",
     hours:"Sept–April: weekends at Glenmalure Lodge · Summer: festivals & events nationwide",
     temp:"Wood-fired sauna · river dip", tags:["Wood-Fired","Outdoor","Mobile","Remote","Wilderness","Waterfront"], emoji:"🔥🌿", open:true,
     hygiene:"A", lockerNote:"Changing area on-site",
@@ -8670,7 +8670,7 @@ export const VENUES: Venue[] = [
   {
     id:706, city:"Wicklow", country:"Ireland", name:"Fad Saoil Saunas Greystones", area:"Rise at The Cove, Greystones Harbour",
     type:"sauna", price:"From €15 per session", rating:4.6, reviews:0,
-    priceFrom:15, priceType:"session",
+    priceType:"session",
     hours:"Check website for current hours",
     temp:"Wood-fired sauna · ice baths", tags:["Wood-Fired","Outdoor","Ice Bath","Waterfront"], emoji:"🔥🧊", open:true,
     hygiene:"A", lockerNote:"Changing facilities at The Cove",
@@ -8683,7 +8683,7 @@ export const VENUES: Venue[] = [
   {
     id:707, city:"Wexford", country:"Ireland", name:"Saltee Sauna", area:"Little Beach, Kilmore Quay, South Wexford",
     type:"sauna", price:"From €12.50 per person", rating:4.9, reviews:0,
-    priceFrom:12.5, priceType:"session",
+    priceType:"session",
     hours:"By appointment — book via website",
     temp:"Wood-fired sauna · sea swim", tags:["Wood-Fired","Outdoor","Sea Swim","Sea Views","Coastal","Waterfront"], emoji:"🔥🌊", open:true,
     hygiene:"A", lockerNote:"Check website for facilities",
@@ -8709,7 +8709,7 @@ export const VENUES: Venue[] = [
   {
     id:709, city:"Wexford", country:"Ireland", name:"Réalt Na Mara Saunas", area:"South Beach, Seamount, Courtown, North Wexford",
     type:"sauna", price:"From €12.50 per person", rating:4.8, reviews:0,
-    priceFrom:12.5, priceType:"session",
+    priceType:"session",
     hours:"Check website for current hours",
     temp:"Wood-fired sauna · sea swim", tags:["Wood-Fired","Outdoor","Sea Swim","Coastal","Waterfront"], emoji:"🔥🌊", open:true,
     hygiene:"A", lockerNote:"Check website for facilities",
@@ -8722,7 +8722,7 @@ export const VENUES: Venue[] = [
   {
     id:710, city:"Dublin", country:"Ireland", name:"The Hot Box Sauna Killiney Beach", area:"White Cottage, North Killiney Beach, South Dublin",
     type:"sauna", price:"From €15.95 per session", rating:4.8, reviews:0,
-    priceFrom:15.95, priceType:"session",
+    priceType:"session",
     hours:"Check website for current session times",
     temp:"Finnish-style sauna · sea swim", tags:["Wood-Fired","Outdoor","Sea Swim","Sea Views","Coastal","Beach"], emoji:"🔥🌊", open:true,
     hygiene:"A", lockerNote:"Check website for locker details",
@@ -8735,7 +8735,7 @@ export const VENUES: Venue[] = [
   {
     id:711, city:"Clare", country:"Ireland", name:"Inis Cealtra Mobile Sauna", area:"Kilkee / Kilrush / Doonbeg / Lough Derg, West Clare",
     type:"sauna", price:"From €20 per person", rating:4.8, reviews:0,
-    priceFrom:20, priceType:"session",
+    priceType:"session",
     hours:"Various locations — book via Bookwhen for current schedule",
     temp:"Wood-fired barrel sauna · lake or sea swim", tags:["Mobile","Wood-Fired","Barrel Sauna","Coastal","Lakeside","Outdoor"], emoji:"🔥🌊", open:true,
     hygiene:"A", lockerNote:"Check booking page for current location facilities",
@@ -8813,7 +8813,7 @@ export const VENUES: Venue[] = [
   {
     id:717, city:"Cork", country:"Ireland", name:"Wet & Wild Sauna", area:"Galley Cove Beach, Crookhaven, West Cork",
     type:"sauna", price:"From €10 per person", rating:4.8, reviews:0,
-    priceFrom:10, priceType:"session",
+    priceType:"session",
     hours:"Check website for current hours — bookings per 30-min slot",
     temp:"Wood-fired sauna · sea swim at Galley Cove", tags:["Wood-Fired","Outdoor","Sea Swim","Beach","Remote","Waterfront","Sea Views"], emoji:"🔥🌊", open:true,
     hygiene:"A", lockerNote:"Check website for facilities",
