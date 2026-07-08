@@ -8623,6 +8623,34 @@ export const VENUES: Venue[] = [
     venueCategory:"hotel",
   },
 
+  // ── Iceland (additional public baths) ──
+  {
+    id:700, city:"Akranes", country:"Iceland", name:"Guðlaug Baths", area:"Akranes Harbour, West Iceland",
+    type:"lagoon", price:"From ISK 2,190 (~£12)", rating:4.8, reviews:0,
+    priceType:"day_pass",
+    hours:"Check website for current hours",
+    temp:"Geothermal infinity pool 39–42°C", tags:["Geothermal","Lagoon","Seafront","Outdoor","Scenic","Natural Pool"], emoji:"🌊♨️", open:true,
+    hygiene:"A", lockerNote:"Changing rooms on-site",
+    transport:"Ferry from Reykjavik (30 min) or drive via Hvalfjörður tunnel (45 min) · short walk from Akranes ferry quay",
+    parking:"Free on-site",
+    desc:"A striking new municipal geothermal infinity pool on the old harbour quay in Akranes, opened May 2023. Heated to 39–42°C by the town's own geothermal source, with sweeping panoramic views across Faxaflói Bay toward Reykjavik and Snæfellsjökull glacier on clear days. Named after Guðlaug Þorbergsdóttir, an Akranes swimmer who drowned near this spot in 1933. Far less crowded than Reykjavik's pools and one of Iceland's most beautiful new public bathing experiences — a compelling reason to make the short trip west.",
+    lat:64.3252, lng:-22.0743,
+    bookingUrl:"https://gudlaugbaths.is"
+  },
+  {
+    id:701, city:"Reykjavik", country:"Iceland", name:"Sundhöll Reykjavíkur", area:"Barónsstígur, Central Reykjavik",
+    type:"both", price:"From ISK 1,200 (~£7)", rating:4.7, reviews:0,
+    priceType:"session",
+    hours:"Mon–Thu 06:30–22:00 · Fri 06:30–20:00 · Sat–Sun 08:00–20:00",
+    temp:"Indoor 25m pool · outdoor hot pots 39–45°C · cold pool", tags:["Public Pool","Geothermal","Historic","Budget","Outdoor","Community"], emoji:"♨️🏛️", open:true,
+    hygiene:"A", lockerNote:"Coin-operated lockers on-site",
+    transport:"Hlemmur bus terminal · 5 min walk · central Reykjavik",
+    parking:"Street parking on Barónsstígur / Bergstaðastræti",
+    desc:"Reykjavik's oldest public pool, designed by architect Guðjón Samúelsson and opened in 1937 in a handsome art deco building in the heart of the city. Features a 25m indoor pool in the original hall plus outdoor hot pots at 39–45°C, a cold plunge pool, and steam rooms — all recently renovated while preserving the building's historic character. At ISK 1,200, one of the best-value and most genuinely Icelandic experiences in Reykjavik, beloved by locals as a daily ritual for nearly a century.",
+    lat:64.1440, lng:-21.9327,
+    bookingUrl:"https://reykjavik.is/stadir/sundholl-reykjavikur"
+  },
+
   // ── AUTO-ADDED ──
   {
     id:687, city:"Dublin", country:"Ireland", name:"Float Dublin (Floating Sauna)", area:"Grand Canal Dock",
@@ -8751,7 +8779,7 @@ export const CITIES: string[] = [
   // Nordic
   "Helsinki","Stockholm","Gothenburg","Copenhagen","Aarhus","Oslo","Bergen","Tromsø","Stavanger","Rovaniemi","Karlstad","Tampere","Reykjavik",
   // Iceland — regional towns
-  "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Flúðir","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes",
+  "Mývatn","Húsavík","Akureyri","Egilsstaðir","Hvalfjörður","Laugarás","Reykholt","Laugarvatn","Flúðir","Skógar","Hveragerði","Árskógssandur","Höfn","Drangsnes","Akranes",
   // Greenland
   "Nanortalik","Sisimiut",
   // England (additional)
@@ -8804,7 +8832,7 @@ export const FLAG: Record<string, string> = {
   Reykjavik:"🇮🇸",
   "Mývatn":"🇮🇸", "Húsavík":"🇮🇸", "Akureyri":"🇮🇸", "Egilsstaðir":"🇮🇸",
   "Hvalfjörður":"🇮🇸", "Laugarás":"🇮🇸", "Reykholt":"🇮🇸", "Laugarvatn":"🇮🇸",
-  "Flúðir":"🇮🇸", "Skógar":"🇮🇸", "Hveragerði":"🇮🇸", "Árskógssandur":"🇮🇸", "Höfn":"🇮🇸", "Drangsnes":"🇮🇸",
+  "Flúðir":"🇮🇸", "Skógar":"🇮🇸", "Hveragerði":"🇮🇸", "Árskógssandur":"🇮🇸", "Höfn":"🇮🇸", "Drangsnes":"🇮🇸", "Akranes":"🇮🇸",
   "Nanortalik":"🇬🇱", "Sisimiut":"🇬🇱",
   // Germany
   Berlin:"🇩🇪", Erding:"🇩🇪", Cologne:"🇩🇪", "Baden-Baden":"🇩🇪", Munich:"🇩🇪",
@@ -8855,7 +8883,7 @@ export const REGION_MAP: Record<string, string> = {
   Reykjavik:"Nordic", Aarhus:"Nordic",
   "Mývatn":"Nordic", "Húsavík":"Nordic", "Akureyri":"Nordic", "Egilsstaðir":"Nordic",
   "Hvalfjörður":"Nordic", "Laugarás":"Nordic", "Reykholt":"Nordic", "Laugarvatn":"Nordic",
-  "Flúðir":"Nordic", "Skógar":"Nordic", "Hveragerði":"Nordic", "Árskógssandur":"Nordic", "Höfn":"Nordic", "Drangsnes":"Nordic",
+  "Flúðir":"Nordic", "Skógar":"Nordic", "Hveragerði":"Nordic", "Árskógssandur":"Nordic", "Höfn":"Nordic", "Drangsnes":"Nordic", "Akranes":"Nordic",
   "Nanortalik":"Nordic", "Sisimiut":"Nordic",
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", "Tromsø":"Nordic", Stavanger:"Nordic", Rovaniemi:"Nordic", Tampere:"Nordic",
@@ -8910,7 +8938,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Reykjavik:"Iceland",
   "Mývatn":"Iceland", "Húsavík":"Iceland", "Akureyri":"Iceland", "Egilsstaðir":"Iceland",
   "Hvalfjörður":"Iceland", "Laugarás":"Iceland", "Reykholt":"Iceland", "Laugarvatn":"Iceland",
-  "Flúðir":"Iceland", "Skógar":"Iceland", "Hveragerði":"Iceland", "Árskógssandur":"Iceland", "Höfn":"Iceland", "Drangsnes":"Iceland",
+  "Flúðir":"Iceland", "Skógar":"Iceland", "Hveragerði":"Iceland", "Árskógssandur":"Iceland", "Höfn":"Iceland", "Drangsnes":"Iceland", "Akranes":"Iceland",
   "Nanortalik":"Greenland", "Sisimiut":"Greenland",
   Aarhus:"Denmark", Copenhagen:"Denmark",
   Helsinki:"Finland", Rovaniemi:"Finland", Tampere:"Finland",
@@ -8976,7 +9004,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Reykjavik:"Reykjavík",
   "Mývatn":"North Iceland", "Húsavík":"North Iceland", "Akureyri":"North Iceland", "Árskógssandur":"North Iceland",
   "Egilsstaðir":"East Iceland", "Höfn":"East Iceland",
-  "Hvalfjörður":"West Iceland", "Reykholt":"West Iceland", "Drangsnes":"West Iceland",
+  "Hvalfjörður":"West Iceland", "Reykholt":"West Iceland", "Drangsnes":"West Iceland", "Akranes":"West Iceland",
   "Laugarás":"South Iceland", "Laugarvatn":"South Iceland", "Flúðir":"South Iceland", "Skógar":"South Iceland", "Hveragerði":"South Iceland",
   "Nanortalik":"South", "Sisimiut":"West",
   // Germany — state
