@@ -9,25 +9,8 @@ const VENUES_FILE  = path.join(__dirname, '../src/data/venues.ts');
 const REPORTS_DIR  = path.join(__dirname, 'analytics/dedup-reports');
 const REPORT_EMAIL = 'hello@thermae.app';
 
-// ~150m threshold for coordinate-based detection
-const COORD_THRESHOLD_KM = 0.15;
-
-// For these brands, only flag if two entries are within COORD_THRESHOLD_KM of each other
-// (different locations of the same chain are NOT duplicates)
-const MULTI_LOCATION_BRANDS = [
-  'Community Sauna Baths',
-  'Helios Sauna',
-  'Hot Box Sauna',
-  'Wild Scottish Sauna',
-  'The Hot Pod',
-  'Sweathouse',
-  'Sauna Social Club',
-  'Saunas by The Sea',
-  'KOK',
-  'Rooftop Saunas',
-  'Banya No.1',
-  'Sauna & Sea',
-];
+// ~200m threshold — two venues must be within this to count as the same physical spot
+const COORD_THRESHOLD_KM = 0.20;
 
 // ── PARSE VENUES ──────────────────────────────────────────────────────────────
 function parseVenues(src) {
@@ -97,14 +80,6 @@ function nameSimilarity(a, b) {
   return total > 0 ? shared / total : 0;
 }
 
-function isMultiLocationBrand(name) {
-  const norm = normaliseName(name);
-  return MULTI_LOCATION_BRANDS.some(brand => {
-    const nb = normaliseName(brand);
-    return norm.startsWith(nb) || nb.startsWith(norm.split(' ').slice(0, 2).join(' '));
-  });
-}
-
 // ── COMPLETENESS SCORE (0–10) ─────────────────────────────────────────────────
 function completenessScore(v) {
   let s = 0;
@@ -121,34 +96,32 @@ function completenessScore(v) {
 function detectDuplicates(venues) {
   const pairs = [];
 
-  // Build URL index
+  // Build URL index — real URLs only (skip empty strings and placeholder text)
   const byUrl = new Map();
   for (const v of venues) {
-    if (!v.url) continue;
+    if (!v.url || !v.url.startsWith('http')) continue;
     const key = v.url.toLowerCase().replace(/\/$/, '');
     if (!byUrl.has(key)) byUrl.set(key, []);
     byUrl.get(key).push(v);
   }
 
-  // 1. URL-based detection (HIGH confidence)
+  // 1. URL + proximity detection: same URL AND within threshold = same physical spot
+  //    Same URL alone is NOT enough — operators legitimately run multiple venues
+  //    under one website. Only flag when coordinates confirm it's the same spot.
   for (const group of byUrl.values()) {
     if (group.length < 2) continue;
     for (let i = 0; i < group.length; i++) {
       for (let j = i + 1; j < group.length; j++) {
         const a = group[i], b = group[j];
-        const sim       = nameSimilarity(a.name, b.name);
-        const aIsML     = isMultiLocationBrand(a.name);
-        const bIsML     = isMultiLocationBrand(b.name);
-        const distKm    = (a.lat && b.lat) ? haversineKm(a.lat, a.lng, b.lat, b.lng) : null;
-        const isSameSpot = distKm !== null && distKm < COORD_THRESHOLD_KM;
+        if (!a.lat || !b.lat) continue; // can't verify proximity without coords
+        const distKm = haversineKm(a.lat, a.lng, b.lat, b.lng);
+        if (distKm >= COORD_THRESHOLD_KM) continue; // different spots = different venues
 
-        // Multi-location brands with the same URL are only flagged if they're at the same spot
-        if ((aIsML || bIsML) && !isSameSpot) continue;
-
+        const sim = nameSimilarity(a.name, b.name);
         pairs.push({
           a, b, sim,
-          distanceM:  distKm !== null ? Math.round(distKm * 1000) : null,
-          reason:     'Same bookingUrl',
+          distanceM:  Math.round(distKm * 1000),
+          reason:     'Same bookingUrl + within 200m',
           confidence: sim >= 0.6 ? 'HIGH' : 'MEDIUM',
         });
       }
