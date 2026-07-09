@@ -3463,6 +3463,108 @@ export const VENUES: Venue[] = [
     bookingUrl:"https://www.nationaltrust.org.uk/visit/northern-ireland/castle-ward"
   },
 
+  // ── Northern Ireland (additional) ─────────────────────────────────────────
+  {
+    id:719, city:"Ballycastle", country:"Northern Ireland", name:"Niche Coastal",
+    area:"Ballycastle Beach, Ballycastle, Co. Antrim BT54 6QP",
+    type:"sauna", price:"Check website for session pricing", rating:4.8, reviews:0,
+    priceType:"session",
+    hours:"Thu–Sun 8:15am until sunset · seasonal",
+    temp:"Wood-fired horsebox sauna · sea plunge", tags:["Wood-Fired","Outdoor","Beach","Sea Swim","Coastal","Causeway Coast"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for facilities",
+    transport:"Ballycastle town centre 5 min walk to beach",
+    parking:"Ballycastle Beach car park",
+    desc:"A wood-fired horsebox sauna at Ballycastle Beach on the Causeway Coast — founder Declan repurposed a horsebox into a bespoke sauna cabin seating up to 8. Sessions of 60 or 90 minutes, with cold-water plunge or sea dip between rounds. Operating Thursday to Sunday from 8:15am until sunset, Niche Coastal is one of the few dedicated sauna operations on the Antrim coast, with stunning views towards Rathlin Island and the Mull of Kintyre across the North Channel.",
+    lat:55.2006, lng:-6.2402,
+    bookingUrl:"https://www.nichecoastal.co.uk"
+  },
+  {
+    id:720, city:"Newcastle Down", country:"Northern Ireland", name:"Sauna Ice Balance",
+    area:"13 Central Promenade, Newcastle, Co. Down BT33 0AA",
+    type:"both", price:"Check website for session pricing", rating:4.7, reviews:0,
+    priceType:"session",
+    hours:"Mon–Fri 12:00–21:00 · Sat–Sun 09:00–21:00",
+    temp:"90°C Finnish sauna · 8–12°C or 1–3°C cold plunge", tags:["Finnish","Cold Plunge","Town Centre","Mournes","Indoor"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Lockers on site · towels available to rent",
+    transport:"Newcastle town centre — Unit 6 downstairs, opposite the Diamond nail spa on Central Promenade",
+    parking:"Newcastle town centre car parks",
+    desc:"A dedicated sauna and ice plunge studio in the heart of Newcastle, Co. Down, steps from the seafront with Slieve Donard rising behind the town. A Baltic-inspired 90°C Finnish sauna pairs with your choice of 8–12°C or an intense 1–3°C cold plunge pool. 45-minute sessions include massage guns, essential oil steam pours, shower, changing room with lockers and a thorough walkthrough for first-timers. Towels available to rent. Walk-ins welcome subject to availability.",
+    lat:54.2223, lng:-5.8933,
+    bookingUrl:"https://saunaicebalance.co.uk"
+  },
+  {
+    id:721, city:"Newcastle Down", country:"Northern Ireland", name:"SOAK Seaweed Baths",
+    area:"South Promenade, Newcastle, Co. Down BT33 0EY",
+    type:"seaweed", price:"From £25 per person", rating:4.8, reviews:0,
+    priceType:"session",
+    hours:"Sep–Jun: Thu–Mon 11:30–22:00 · Jul–Aug: Wed–Mon 11:30–22:00",
+    temp:"Hot seawater bath with Atlantic seaweed · steam cabinet or steam shower", tags:["Seaweed Bath","Steam","Coastal","Wellbeing","Down Coast"], emoji:"🌿🛁", open:true,
+    hygiene:"A", lockerNote:"Private bathrooms for each booking",
+    transport:"Newcastle town centre seafront · 5 min walk south of the main bus stop",
+    parking:"Seafront car parks on Newcastle promenade",
+    desc:"SOAK Seaweed Baths on Newcastle's South Promenade — Northern Ireland's standout seaweed bathing destination. Each private room holds a Victorian roll-top bath filled with hot seawater and fresh Atlantic seaweed, paired with a handcrafted wooden steam cabinet or modern steam shower. Multi-award winning and established over many years, SOAK is one of the most distinctive wellness experiences in the North of Ireland. Single baths from £25, double deluxe from £45. The South Down coastal setting, with Slieve Donard visible across the promenade, makes this a memorable destination experience.",
+    lat:54.2201, lng:-5.8906,
+    bookingUrl:"https://www.soakseaweedbaths.com"
+  },
+  {
+    id:722, city:"Newcastle Down", country:"Northern Ireland", name:"Enniskeen Estate Forest Spa",
+    area:"Tollymore Valley, Newcastle, Co. Down BT33 0PS",
+    type:"sauna", price:"Check website for spa day pricing", rating:4.8, reviews:0,
+    priceType:"session",
+    hours:"By booking only · check website for current availability",
+    temp:"Wood-fired Finnish sauna cabin · outdoor waterfall shower · fireside gazebo", tags:["Wood-Fired","Forest","Outdoor","Luxury","Glamping","Mournes"], emoji:"🔥🌲", open:true,
+    hygiene:"A", lockerNote:"Heated changing area within sauna cabin",
+    transport:"2 miles from Newcastle town centre via Bryansford Road into Tollymore Valley",
+    parking:"Forest Spa car park on site",
+    desc:"A private wood-fired Finnish sauna cabin tucked deep in the ancient woodland of Tollymore Valley, with views up to Slieve Donard and the Mourne Mountains. Enniskeen Estate's Forest Spa offers day spa bookings alongside its luxury glamping cabins, with the sauna set beside a mountain stream under towering fir trees. Between sauna rounds, cool under an outdoor waterfall shower or relax on the terrace in a fireside gazebo. Adults only. A genuinely secluded mountain wellness retreat — the combination of forest, heat, red squirrels and mountain landscape is exceptional.",
+    lat:54.2143, lng:-5.9614,
+    bookingUrl:"https://www.enniskeen.com",
+    venueCategory:"spa"
+  },
+  {
+    id:723, city:"Omagh", country:"Northern Ireland", name:"The Sauna Shack",
+    area:"Gortin Glens, Sperrin Mountains, Co. Tyrone BT79",
+    type:"sauna", price:"Check website for current pricing", rating:4.8, reviews:0,
+    priceType:"session",
+    hours:"By appointment only · private and social sessions available",
+    temp:"Wood-fired sauna · stream-fed cold plunge pool · cold bucket shower", tags:["Wood-Fired","Outdoor","Forest","Remote","Off-Grid","Sperrins","Wilderness"], emoji:"🔥🌲", open:true,
+    hygiene:"A", lockerNote:"Off-grid facility — bring your own towel",
+    transport:"~6 miles from Gortin village · ~10 miles from Omagh town · car essential",
+    parking:"On-site parking",
+    desc:"A completely off-grid wood-fired sauna deep in the beech forest of the Sperrin Mountains, between Gortin and Omagh in Co. Tyrone. Heat from the wood stove, power from solar panels, cold plunge in a stream-fed pool or cold bucket shower in the forest. An ideal combination with a visit to Gortin Glens Forest Park, which borders the site. Listed on the Explore Omagh & Sperrins regional tourism guide and saunafinder.ie. Private bookings and social sessions available. One of very few dedicated sauna venues in Ulster's inland heartland — a genuine hidden gem in the Sperrins AONB.",
+    lat:54.6900, lng:-7.1500,
+    bookingUrl:"https://thesaunashack.uk"
+  },
+  {
+    id:724, city:"Enniskillen", country:"Northern Ireland", name:"Finn Lough Elements Trail Spa",
+    area:"33 Letter Road, Aghnablaney, Enniskillen, Co. Fermanagh BT93 2BB",
+    type:"both", price:"From £70pp · day visits available", rating:4.9, reviews:0,
+    priceType:"session",
+    hours:"By booking only · check website for current availability",
+    temp:"Dry Finnish sauna with Lough Erne views · wet aromatherapy sauna · hot tub · lake dip", tags:["Finnish","Hot Tub","Forest","Lakeside","Luxury","Fermanagh","Day Spa","Waterfront"], emoji:"🔥🏊", open:true,
+    hygiene:"A", lockerNote:"Full facilities included with spa booking",
+    transport:"Car essential — approx 30 min from Enniskillen town on the Lough Erne shoreline",
+    parking:"On-site at Finn Lough estate",
+    desc:"Finn Lough's Elements Trail Spa — one of Northern Ireland's most extraordinary wellness experiences on the wooded shores of Lough Erne in Co. Fermanagh. Day visitors book a self-guided two-hour trail through forest spa cabins: salt float, dry Finnish sauna with panoramic lake views, wet steam sauna infused with aromatherapy oils, outdoor hot tub and wild swim in Lough Erne (Elements Trail, £85pp). The Shoreline Spa (£70pp, 90 min) offers a private loughside tub and lake swim. Finn Lough's 150-acre woodland estate on the Erne waterway — one of NI's finest natural settings — makes this a destination spa experience unlike any other.",
+    lat:54.4258, lng:-7.8242,
+    bookingUrl:"https://www.finnlough.com",
+    venueCategory:"spa"
+  },
+  {
+    id:725, city:"Newcastle Down", country:"Northern Ireland", name:"Wild Mourne Wellness",
+    area:"Mourne Mountains & coast, Co. Down (mobile)",
+    type:"sauna", price:"Check Instagram for current pricing", rating:4.7, reviews:0,
+    priceType:"session",
+    hours:"Seasonal · check Instagram @wildmournewellness for current schedule",
+    temp:"Wood-fired mobile sauna · sea or cold-water plunge", tags:["Mobile","Wood-Fired","Outdoor","Sea Swim","Coastal","Mournes","Community"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check social media for current session details",
+    transport:"Various Mourne coastal and mountain locations — announced via Instagram",
+    parking:"Varies by location",
+    desc:"A community-focused mobile wood-fired sauna rooted in the Mourne landscape, with a strong emphasis on inclusion, accessibility and mental health. Wild Mourne Wellness brings sauna culture to rural Down — handcrafted heat rounds followed by sea or cold-water plunges in some of Northern Ireland's most beautiful coastal and mountain settings. Sessions are relaxed, social and welcoming regardless of fitness level or sauna experience. Listed on the official Visit Mourne Gullion Strangford wellness guide. Book and follow via Instagram @wildmournewellness.",
+    lat:54.2100, lng:-5.9200,
+    bookingUrl:"https://www.instagram.com/wildmournewellness"
+  },
+
   // ── North Wales ───────────────────────────────────────────────────────────
   {
     id:275, city:"Criccieth", country:"Wales", name:"Sawna Criccieth",
@@ -8960,6 +9062,7 @@ export const CITIES: string[] = [
   // UK — Northern Ireland
   "Belfast","Derry",
   "Causeway Coast","Craigavon","Ballymena","Limavady","Portstewart","Holywood","Bangor","Groomsport","Rostrevor","Downpatrick",
+  "Ballycastle","Newcastle Down","Omagh","Enniskillen",
   // Ireland — cities only (counties appear as region filters when Ireland is selected)
   "Dublin","Cork","Galway","Limerick",
   // Nordic
@@ -9007,6 +9110,7 @@ export const FLAG: Record<string, string> = {
   Belfast:"🇬🇧", Derry:"🇬🇧",
   "Causeway Coast":"🇬🇧", Craigavon:"🇬🇧", Ballymena:"🇬🇧", Limavady:"🇬🇧", Portstewart:"🇬🇧", Holywood:"🇬🇧",
   Bangor:"🇬🇧", Groomsport:"🇬🇧", Rostrevor:"🇬🇧", Downpatrick:"🇬🇧",
+  Ballycastle:"🇬🇧", "Newcastle Down":"🇬🇧", Omagh:"🇬🇧", Enniskillen:"🇬🇧",
   Dublin:"🇮🇪", Galway:"🇮🇪", Cork:"🇮🇪",
   Sligo:"🇮🇪", Kerry:"🇮🇪", Wicklow:"🇮🇪", Limerick:"🇮🇪",
   Mayo:"🇮🇪", Waterford:"🇮🇪", Kilkenny:"🇮🇪", Wexford:"🇮🇪", Tipperary:"🇮🇪", Carlingford:"🇮🇪", Drogheda:"🇮🇪",
@@ -9059,6 +9163,7 @@ export const REGION_MAP: Record<string, string> = {
   Belfast:"UK & Ireland", Derry:"UK & Ireland",
   "Causeway Coast":"UK & Ireland", Craigavon:"UK & Ireland", Ballymena:"UK & Ireland", Limavady:"UK & Ireland", Portstewart:"UK & Ireland", Holywood:"UK & Ireland",
   Bangor:"UK & Ireland", Groomsport:"UK & Ireland", Rostrevor:"UK & Ireland", Downpatrick:"UK & Ireland",
+  Ballycastle:"UK & Ireland", "Newcastle Down":"UK & Ireland", Omagh:"UK & Ireland", Enniskillen:"UK & Ireland",
   Dublin:"UK & Ireland", Galway:"UK & Ireland", Cork:"UK & Ireland",
   Sligo:"UK & Ireland", Kerry:"UK & Ireland", Wicklow:"UK & Ireland",
   Limerick:"UK & Ireland", Waterford:"UK & Ireland", Kilkenny:"UK & Ireland",
@@ -9112,6 +9217,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Belfast:"Northern Ireland", Derry:"Northern Ireland",
   "Causeway Coast":"Northern Ireland", Craigavon:"Northern Ireland", Ballymena:"Northern Ireland", Limavady:"Northern Ireland", Portstewart:"Northern Ireland",
   Holywood:"Northern Ireland", Bangor:"Northern Ireland", Groomsport:"Northern Ireland", Rostrevor:"Northern Ireland", Downpatrick:"Northern Ireland",
+  Ballycastle:"Northern Ireland", "Newcastle Down":"Northern Ireland", Omagh:"Northern Ireland", Enniskillen:"Northern Ireland",
   // Ireland
   Dublin:"Ireland", Galway:"Ireland", Cork:"Ireland",
   Sligo:"Ireland", Kerry:"Ireland", Wicklow:"Ireland",
@@ -9173,6 +9279,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   Belfast:"Antrim", Derry:"Londonderry",
   "Causeway Coast":"Antrim", Craigavon:"Armagh", Ballymena:"Antrim", Limavady:"Londonderry", Portstewart:"Londonderry",
   Holywood:"Down", Bangor:"Down", Groomsport:"Down", Rostrevor:"Down", Downpatrick:"Down",
+  Ballycastle:"Antrim", "Newcastle Down":"Down", Omagh:"Tyrone", Enniskillen:"Fermanagh",
   // Ireland — county
   Dublin:"Dublin", Galway:"Galway", Cork:"Cork",
   Sligo:"Sligo", Kerry:"Kerry", Wicklow:"Wicklow",
