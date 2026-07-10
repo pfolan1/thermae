@@ -8598,6 +8598,99 @@ export const VENUES: Venue[] = [
     lat:52.5347, lng:13.1948,
     priceType:"day_pass", venueCategory:"spa",
   },
+
+  // ── Germany (Munich area, Stuttgart, Freiburg, Hamburg) ─────────────────
+  {
+    id:769, city:"Tegernsee", country:"Germany", name:"Monte Mare Seesauna Tegernsee",
+    area:"Hauptstraße 63, 83684 Tegernsee, Bavaria",
+    type:"sauna", price:"From €29 · timed session · book online", rating:4.6, reviews:1200,
+    priceType:"day_pass",
+    hours:"Daily 11:00–19:30",
+    temp:"Saunas 70–95°C", tags:["Lake Views","Waterfront","Sauna Boat"], emoji:"⛵🔥", open:true,
+    hygiene:"A", lockerNote:"Changing rooms and lockers on site",
+    transport:"Train (BOB) to Tegernsee; 10 min walk along lake shore",
+    parking:"Public parking near Hauptstraße",
+    bookingUrl:"https://www.monte-mare.de/tegernsee/",
+    desc:"Lakeside sauna complex on the shores of the Tegernsee, featuring the legendary Saunaschiff Irmingard — a 17-metre, 15-tonne ship built in 1925 and converted into a floating sauna since 2008. Salt, reed and Swiss stone pine saunas plus a steam bath, with panoramic views across one of Bavaria's most beautiful alpine lakes. Online booking recommended at weekends and holidays.",
+    lat:47.7127, lng:11.7553,
+    venueCategory:"spa",
+  },
+  {
+    id:770, city:"Ottobrunn", country:"Germany", name:"Phönix-Bad Ottobrunn",
+    area:"Haidgraben 121, 85521 Ottobrunn, Bavaria",
+    type:"both", price:"From €20 · day pass (renovation discounts 2026)", rating:4.3, reviews:1400,
+    priceType:"day_pass",
+    hours:"Daily 07:30–23:00",
+    temp:"10 saunas 50–100°C · pools 28–36°C", tags:["Day Spa","Sauna Village","Outdoor Area","Pool"], emoji:"🔥💧", open:true,
+    hygiene:"A", lockerNote:"Lockers included; robes available",
+    transport:"U-Bahn U1 to Ottobrunn, then bus 213; or S-Bahn S3 to Dürrnhaar",
+    parking:"Free car park on site",
+    bookingUrl:"https://phoenixbad.de/",
+    desc:"Municipal wellness destination south of Munich spanning 5,000 m² of sauna landscape across three floors — 10 saunas and steam rooms including a Finnish kelo sauna, large outdoor sauna garden and thermal pools. Part of the outdoor area is under renovation until late 2026, with discounted entry during works. A well-regarded public spa with family and adults-only zones.",
+    lat:48.0707, lng:11.6534,
+    venueCategory:"spa",
+  },
+  {
+    id:771, city:"Bad Aibling", country:"Germany", name:"Therme Bad Aibling",
+    area:"Lindenstraße 32, 83043 Bad Aibling, Bavaria",
+    type:"both", price:"From €22 · day pass", rating:4.5, reviews:3400,
+    priceType:"day_pass",
+    hours:"Daily · check website for seasonal hours",
+    temp:"Thermal water 32–36°C · saunas 70–95°C", tags:["Thermal Pools","Geothermal","Day Spa","Outdoor Area"], emoji:"🏛️♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers and robes available on site",
+    transport:"Train (BOB) to Bad Aibling; 10 min walk",
+    parking:"Large free car park adjacent",
+    bookingUrl:"https://www.therme-bad-aibling.de/",
+    desc:"Distinctive dome-shaped thermal spa on the edge of Bad Aibling, drawing geothermal water from 2,300 metres depth — recognised as a Bavarian healing spring. Eight interconnected domes house thermal pools, Kneipp baths, eucalyptus and kelo saunas, children's areas and an outdoor zone alongside the Triftbach stream. A true therapeutic thermal resort 60 km south-east of Munich.",
+    lat:47.8647, lng:12.0065,
+    venueCategory:"spa",
+  },
+  {
+    id:772, city:"Stuttgart", country:"Germany", name:"Das Leuze Mineralbad",
+    area:"König-Karl-Straße 2, 70372 Stuttgart-Bad Cannstatt, Baden-Württemberg",
+    type:"both", price:"From €18.50 · swim + sauna from €25.50", rating:4.3, reviews:2800,
+    priceType:"day_pass",
+    hours:"Mon–Fri 06:30–22:00 · Sat–Sun 08:00–22:00",
+    temp:"Mineral pools 28–34°C · saunas 80–95°C", tags:["Thermal Pools","Mineral Bath","Day Spa","Family Friendly"], emoji:"♨️💧", open:true,
+    hygiene:"A", lockerNote:"Lockers on site; robes available",
+    transport:"S-Bahn S1/S2/S3 to Bad Cannstatt; 5 min walk",
+    parking:"On-site car park",
+    bookingUrl:"https://www.stuttgarterbaeder.de/leuze",
+    desc:"Stuttgart's flagship mineral bath on the banks of the Neckar, fed by the city's natural mineral springs. Indoor and outdoor thermal pools with river views, plus an adults-only sauna section with Finnish saunas and steam rooms (€7 surcharge on top of pool entry). Operated by Stuttgarter Bäder as a genuine municipal wellness institution — affordable, historic and centrally located.",
+    lat:48.8054, lng:9.2157,
+    venueCategory:"leisure_centre",
+  },
+  {
+    id:773, city:"Freiburg", country:"Germany", name:"Keidel Mineral-Thermalbad",
+    area:"An den Heilquellen 4, 79111 Freiburg im Breisgau, Baden-Württemberg",
+    type:"both", price:"From €20.60 weekday · €22.90 weekend", rating:4.4, reviews:1900,
+    priceType:"day_pass",
+    hours:"Daily 09:00–21:00 (Sauna from 10:00)",
+    temp:"Hot spring pool 38°C · saunas 55–95°C", tags:["Thermal Pools","Mineral Bath","Day Spa","Outdoor Area"], emoji:"🌿♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers included; robes available to hire",
+    transport:"Tram 1 to Leutersberg / Munzingen; short walk",
+    parking:"Free car park on site",
+    bookingUrl:"https://www.keideltherme.de/",
+    desc:"Freiburg's municipal mineral thermal bath set within a moss-forest landscape, drawing on its own spring for over 40 years. Nine saunas (three indoor, six outdoor at varying temperatures), a 38°C hot spring pool, a 34°C adventure pool with massage jets and a Turkish steam bath. A well-priced city-run retreat at the southern edge of the Black Forest — adults from €20.60.",
+    lat:47.9705, lng:7.7853,
+    venueCategory:"spa",
+  },
+  {
+    id:774, city:"Hamburg", country:"Germany", name:"Kaifu-Sole",
+    area:"Hohe Weide 15, 20259 Hamburg-Eimsbüttel",
+    type:"both", price:"Sauna from €23.60 · Sole-Therme from €28", rating:4.3, reviews:870,
+    priceType:"day_pass",
+    hours:"Check baederland.de for current hours",
+    temp:"Sole pools 32–36°C · saunas 70–90°C", tags:["Thermal Pools","Public","Saltwater"], emoji:"🧂♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers on site",
+    transport:"U-Bahn U3 to Hoheluftbrücke; 5 min walk",
+    parking:"Limited street parking; U-Bahn recommended",
+    bookingUrl:"https://www.baederland.de/wellness/kaifusole/",
+    desc:"Hamburg's saltwater wellness destination in Eimsbüttel, operated by Bäderland — the city's public swimming network. The Sole-Therme wing offers saltwater thermal pools, whirlpools and steam baths; the adjacent sauna section (ticketed separately) adds Finnish saunas and a cold plunge. Competitively priced for a major city — sauna from €23.60, full Sole-Therme from €28.",
+    lat:53.5792, lng:9.9541,
+    venueCategory:"leisure_centre",
+  },
+
   // ── Estonia ──
   {
     id:641, city:"Tallinn", country:"Estonia", name:"Viimsi SPA Hotel", area:"Viimsi Peninsula, Tallinn",
@@ -9672,6 +9765,7 @@ export const CITIES: string[] = [
   "Bognor Regis","Bournemouth",
   // Germany
   "Berlin","Erding","Cologne","Baden-Baden","Munich","Bergisch Gladbach","Düsseldorf",
+  "Tegernsee","Ottobrunn","Bad Aibling","Stuttgart","Freiburg","Hamburg",
   // Estonia
   "Tallinn","Pärnu","Tartu",
   // Latvia
@@ -9726,6 +9820,7 @@ export const FLAG: Record<string, string> = {
   "Nanortalik":"🇬🇱", "Sisimiut":"🇬🇱",
   // Germany
   Berlin:"🇩🇪", Erding:"🇩🇪", Cologne:"🇩🇪", "Baden-Baden":"🇩🇪", Munich:"🇩🇪", "Bergisch Gladbach":"🇩🇪", "Düsseldorf":"🇩🇪",
+  Tegernsee:"🇩🇪", Ottobrunn:"🇩🇪", "Bad Aibling":"🇩🇪", Stuttgart:"🇩🇪", Freiburg:"🇩🇪", Hamburg:"🇩🇪",
   // Estonia
   Tallinn:"🇪🇪", "Pärnu":"🇪🇪", Tartu:"🇪🇪",
   // Latvia
@@ -9783,6 +9878,7 @@ export const REGION_MAP: Record<string, string> = {
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", "Tromsø":"Nordic", Stavanger:"Nordic", Rovaniemi:"Nordic", Tampere:"Nordic",
   // Central Europe
   Berlin:"Central Europe", Erding:"Central Europe", Cologne:"Central Europe", "Baden-Baden":"Central Europe", Munich:"Central Europe", "Bergisch Gladbach":"Central Europe", "Düsseldorf":"Central Europe",
+  Tegernsee:"Central Europe", Ottobrunn:"Central Europe", "Bad Aibling":"Central Europe", Stuttgart:"Central Europe", Freiburg:"Central Europe", Hamburg:"Central Europe",
   Zakopane:"Central Europe", Warsaw:"Central Europe", "Poznań":"Central Europe",
   // Baltics
   Tallinn:"Baltics", "Pärnu":"Baltics", Tartu:"Baltics",
@@ -9844,6 +9940,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Oslo:"Norway", Bergen:"Norway", "Tromsø":"Norway", Stavanger:"Norway",
   // Germany
   Berlin:"Germany", Erding:"Germany", Cologne:"Germany", "Baden-Baden":"Germany", Munich:"Germany", "Bergisch Gladbach":"Germany", "Düsseldorf":"Germany",
+  Tegernsee:"Germany", Ottobrunn:"Germany", "Bad Aibling":"Germany", Stuttgart:"Germany", Freiburg:"Germany", Hamburg:"Germany",
   // Estonia
   Tallinn:"Estonia", "Pärnu":"Estonia", Tartu:"Estonia",
   // Latvia
@@ -9911,6 +10008,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   "Nanortalik":"South", "Sisimiut":"West",
   // Germany — state
   Berlin:"Berlin", Erding:"Bavaria", Cologne:"North Rhine-Westphalia", "Baden-Baden":"Baden-Württemberg", Munich:"Bavaria", "Bergisch Gladbach":"North Rhine-Westphalia", "Düsseldorf":"North Rhine-Westphalia",
+  Tegernsee:"Bavaria", Ottobrunn:"Bavaria", "Bad Aibling":"Bavaria", Stuttgart:"Baden-Württemberg", Freiburg:"Baden-Württemberg", Hamburg:"Hamburg",
   // Estonia — county
   Tallinn:"Harju County", "Pärnu":"Pärnu County", Tartu:"Tartu County",
   // Latvia — region
