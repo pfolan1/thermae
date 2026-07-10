@@ -8524,7 +8524,7 @@ export const VENUES: Venue[] = [
     hygiene:"A", lockerNote:"Robes provided",
     transport:"Bus 201 to Römerplatz, Baden-Baden. 5 min walk",
     parking:"Paid parking nearby",
-    bookingUrl:"https://www.carasana.de/en/friedrichsbad",
+    bookingUrl:"https://friedrichsbad.net",
     desc:"A magnificent 19th-century Roman-Irish bathing palace where Mark Twain famously lingered. A 17-stage ritual of alternating warm and cool pools, steam, and soap scrubs in an ornate Renaissance Revival building.",
     lat:48.7610, lng:8.2375,
     venueCategory:"spa",
@@ -8537,10 +8537,66 @@ export const VENUES: Venue[] = [
     hygiene:"A", lockerNote:"Lockers available",
     transport:"Tram 18 to Müllersches Volksbad. U-Bahn: Max-Weber-Platz",
     parking:"Limited street parking",
-    bookingUrl:"https://www.swm.de/privatkunden/m-baeder/hallenschwimmbad/muellersches-volksbad.html",
+    bookingUrl:"https://www.swm.de/baeder/muellersches-volksbad",
     desc:"A spectacular Art Nouveau public bath opened in 1901, one of Munich's finest Jugendstil buildings. Features a stunning ornate hall pool, Roman bath section, and sauna. A beloved local institution.",
     lat:48.1346, lng:11.5867,
     venueCategory:"leisure_centre",
+  },
+  {
+    id:761, city:"Baden-Baden", country:"Germany", name:"Caracalla Therme",
+    area:"Römerplatz 1, Baden-Baden, Baden-Württemberg",
+    type:"both", price:"From €20 · time-based entry", rating:4.4, reviews:7800,
+    hours:"Daily 08:00–22:00 (last entry 3 hrs before closing)",
+    temp:"Thermal pools 30–38°C · saunas to 95°C",
+    tags:["Thermal Pools","Outdoor Pools","Sauna Village","Iconic","Baden-Baden"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers included · robes optional extra",
+    transport:"Bus 201 to Römerplatz · 2 min walk. 5 min walk from Friedrichsbad",
+    parking:"Paid parking at Römerplatz garage",
+    desc:"Caracalla Therme in Baden-Baden — a grand modern thermal spa covering 4,000 m² with indoor and outdoor mineral pools, grottos, jets, and a textile-optional sauna world. Named after the Roman Emperor Caracalla who visited Baden-Baden's springs in 213 AD, the complex draws on 2,000 years of bathing tradition. A perfect companion to the historic Friedrichsbad two minutes away. Baden-Baden's thermal waters emerge at 68°C naturally from the earth.",
+    lat:48.7617, lng:8.2374,
+    priceType:"day_pass", venueCategory:"spa",
+  },
+  {
+    id:762, city:"Bergisch Gladbach", country:"Germany", name:"Mediterana",
+    area:"Paffrather Straße 50, 51465 Bergisch Gladbach, NRW",
+    type:"both", price:"Check website for current prices · day pass", rating:4.4, reviews:5600,
+    hours:"Sun–Thu 10:00–22:30 · Fri–Sat 10:00–24:00",
+    temp:"Thermal pools 34–36°C · 12 themed saunas 60–100°C",
+    tags:["Thermal Pools","Sauna Village","Day Spa","Outdoor Pools","Mediterranean"], emoji:"♨️🌿", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"S-Bahn S11 to Bergisch Gladbach then bus · or car from Cologne (25 min)",
+    parking:"Free on-site parking",
+    desc:"Mediterana in Bergisch Gladbach — a Mediterranean-themed wellness and health retreat 25 minutes east of Cologne. Twelve themed saunas, four thermal baths, a salt grotto, sulphur bath, sports pool, and over 1,000 m² of fitness facilities. One of NRW's most complete wellness destinations, reopening its celebrated salt mine (Salzstollen) on 10 July 2026. Extensive weekly programme of sauna infusions, yoga and spa rituals.",
+    lat:50.9920, lng:7.1220,
+    priceType:"day_pass", venueCategory:"spa",
+  },
+  {
+    id:763, city:"Düsseldorf", country:"Germany", name:"Vabali Spa Düsseldorf",
+    area:"Am Elbsee 1, 40724 Hilden (Greater Düsseldorf)",
+    type:"sauna", price:"From €51.50 weekday · €56.50 weekend", rating:4.6, reviews:6200,
+    hours:"Daily 09:00–24:00",
+    temp:"14 saunas and steam baths 60–100°C · outdoor pools",
+    tags:["Sauna Village","Day Spa","Lakeside","Outdoor Pools","Iconic"], emoji:"♨️🌿", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"Car recommended · 20 min from Düsseldorf city centre · A46 motorway",
+    parking:"Free on-site parking",
+    desc:"Vabali Spa Düsseldorf — the second outpost of Germany's celebrated Balinese-style sauna brand, set directly on the Elbsee lake south of Düsseldorf. Fourteen saunas and steam baths, outdoor pools, a large sauna garden, relaxation rooms and an Asian-Mediterranean restaurant. Indonesian architecture amid lush landscaping on the lakeshore. A world-class day spa experience in a natural lakeside setting.",
+    lat:51.1700, lng:6.9380,
+    priceType:"day_pass", venueCategory:"spa",
+  },
+  {
+    id:764, city:"Berlin", country:"Germany", name:"Meridian Spa — Spandau",
+    area:"Spandau Arcaden, Mauerstraße 6, 13581 Berlin",
+    type:"sauna", price:"From €35 weekday · €45 weekend", rating:4.3, reviews:3200,
+    hours:"Check website for current hours",
+    temp:"7 saunas · rooftop outdoor sauna · 40m pool",
+    tags:["Day Spa","Sauna Village","Rooftop","Pool","City Centre"], emoji:"♨️🏙️", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"U7 to Spandau or S-Bahn to Spandau · Spandau Arcaden directly above",
+    parking:"Spandau Arcaden car park",
+    desc:"Meridian Spa Berlin Spandau — 9,000 m² of premium spa and wellness on the upper floor of Spandau Arcaden. Seven saunas including a rooftop outdoor sauna, a 40-metre pool, a 600 m² rooftop terrace and an extensive day spa menu of massages and beauty treatments. Day passes (now under the David Lloyd umbrella) give access to all spa, pool and fitness facilities for a flat fee. One of Berlin's largest private wellness clubs.",
+    lat:52.5347, lng:13.1948,
+    priceType:"day_pass", venueCategory:"spa",
   },
   // ── Estonia ──
   {
@@ -9559,7 +9615,7 @@ export const CITIES: string[] = [
   // England (additional)
   "Bognor Regis","Bournemouth",
   // Germany
-  "Berlin","Erding","Cologne","Baden-Baden","Munich",
+  "Berlin","Erding","Cologne","Baden-Baden","Munich","Bergisch Gladbach","Düsseldorf",
   // Estonia
   "Tallinn","Pärnu","Tartu",
   // Latvia
@@ -9613,7 +9669,7 @@ export const FLAG: Record<string, string> = {
   "Flúðir":"🇮🇸", "Skógar":"🇮🇸", "Hveragerði":"🇮🇸", "Árskógssandur":"🇮🇸", "Höfn":"🇮🇸", "Drangsnes":"🇮🇸", "Akranes":"🇮🇸",
   "Nanortalik":"🇬🇱", "Sisimiut":"🇬🇱",
   // Germany
-  Berlin:"🇩🇪", Erding:"🇩🇪", Cologne:"🇩🇪", "Baden-Baden":"🇩🇪", Munich:"🇩🇪",
+  Berlin:"🇩🇪", Erding:"🇩🇪", Cologne:"🇩🇪", "Baden-Baden":"🇩🇪", Munich:"🇩🇪", "Bergisch Gladbach":"🇩🇪", "Düsseldorf":"🇩🇪",
   // Estonia
   Tallinn:"🇪🇪", "Pärnu":"🇪🇪", Tartu:"🇪🇪",
   // Latvia
@@ -9670,7 +9726,7 @@ export const REGION_MAP: Record<string, string> = {
   Helsinki:"Nordic", Stockholm:"Nordic", Gothenburg:"Nordic", Karlstad:"Nordic",
   Copenhagen:"Nordic", Oslo:"Nordic", Bergen:"Nordic", "Tromsø":"Nordic", Stavanger:"Nordic", Rovaniemi:"Nordic", Tampere:"Nordic",
   // Central Europe
-  Berlin:"Central Europe", Erding:"Central Europe", Cologne:"Central Europe", "Baden-Baden":"Central Europe", Munich:"Central Europe",
+  Berlin:"Central Europe", Erding:"Central Europe", Cologne:"Central Europe", "Baden-Baden":"Central Europe", Munich:"Central Europe", "Bergisch Gladbach":"Central Europe", "Düsseldorf":"Central Europe",
   Zakopane:"Central Europe", Warsaw:"Central Europe", "Poznań":"Central Europe",
   // Baltics
   Tallinn:"Baltics", "Pärnu":"Baltics", Tartu:"Baltics",
@@ -9731,7 +9787,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   Stockholm:"Sweden", Gothenburg:"Sweden", Karlstad:"Sweden",
   Oslo:"Norway", Bergen:"Norway", "Tromsø":"Norway", Stavanger:"Norway",
   // Germany
-  Berlin:"Germany", Erding:"Germany", Cologne:"Germany", "Baden-Baden":"Germany", Munich:"Germany",
+  Berlin:"Germany", Erding:"Germany", Cologne:"Germany", "Baden-Baden":"Germany", Munich:"Germany", "Bergisch Gladbach":"Germany", "Düsseldorf":"Germany",
   // Estonia
   Tallinn:"Estonia", "Pärnu":"Estonia", Tartu:"Estonia",
   // Latvia
@@ -9798,7 +9854,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   "Laugarás":"South Iceland", "Laugarvatn":"South Iceland", "Flúðir":"South Iceland", "Skógar":"South Iceland", "Hveragerði":"South Iceland",
   "Nanortalik":"South", "Sisimiut":"West",
   // Germany — state
-  Berlin:"Berlin", Erding:"Bavaria", Cologne:"North Rhine-Westphalia", "Baden-Baden":"Baden-Württemberg", Munich:"Bavaria",
+  Berlin:"Berlin", Erding:"Bavaria", Cologne:"North Rhine-Westphalia", "Baden-Baden":"Baden-Württemberg", Munich:"Bavaria", "Bergisch Gladbach":"North Rhine-Westphalia", "Düsseldorf":"North Rhine-Westphalia",
   // Estonia — county
   Tallinn:"Harju County", "Pärnu":"Pärnu County", Tartu:"Tartu County",
   // Latvia — region
