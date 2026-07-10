@@ -8691,6 +8691,120 @@ export const VENUES: Venue[] = [
     venueCategory:"leisure_centre",
   },
 
+  // ── Germany (Rhine-Main / Hesse) ─────────────────────────────────────────
+  {
+    id:775, city:"Wiesbaden", country:"Germany", name:"Kaiser-Friedrich-Therme",
+    area:"Langgasse 38–40, 65183 Wiesbaden, Hesse",
+    type:"sauna", price:"From €16 · check mattiaqua.de", rating:4.7, reviews:2100,
+    priceType:"day_pass",
+    hours:"Daily 10:00–22:00 · closed June–Aug annually for maintenance",
+    temp:"Roman-Irish baths 40–55°C · Finnish sauna 80–90°C · Russian steam 50°C",
+    tags:["Historic","Cultural","Thermal Pools","Public"], emoji:"🏛️♨️", open:true,
+    hygiene:"A", lockerNote:"Nude bathing mandatory in thermal area",
+    transport:"Bus to Langgasse, 3 min walk from Wiesbaden city centre",
+    parking:"Paid parking nearby (Marktgarage)",
+    bookingUrl:"https://www.mattiaqua.de/en/thermal-springs/kaiser-friedrich-therme/",
+    desc:"Magnificent 1913 Roman-Irish bathhouse in the heart of Wiesbaden's spa quarter, operated by Mattiaqua. Ornate Wilhelmine mosaics, marble halls and period chandeliers frame a Finnish sauna, Russian steam bath and authentic Roman bathing sequence. Nude bathing mandatory throughout the thermal area. Annually closed June–August for maintenance — confirm before visiting.",
+    lat:50.0821, lng:8.2414,
+    venueCategory:"spa",
+  },
+  {
+    id:776, city:"Wiesbaden", country:"Germany", name:"Thermalbad Aukammtal",
+    area:"Leibnizstraße 7, 65191 Wiesbaden, Hesse",
+    type:"both", price:"From €7 swim · from €18 incl. sauna", rating:4.2, reviews:1100,
+    priceType:"day_pass",
+    hours:"Daily 07:00–22:00",
+    temp:"Thermal pools 28–34°C · saunas 70–90°C",
+    tags:["Thermal Pools","Day Spa","Family Friendly","Pool"], emoji:"♨️💧", open:true,
+    hygiene:"A", lockerNote:"Lockers and towels available on site",
+    transport:"Bus 14 from Wiesbaden Hbf to Aukammtal",
+    parking:"Free car park on site",
+    bookingUrl:"https://www.mattiaqua.de/thermen/thermalbad-aukammtal/",
+    desc:"Wiesbaden's larger public thermal resort in the leafy Aukammtal valley, operated by Mattiaqua alongside the historic Kaiser-Friedrich-Therme. Multiple thermal pools fed by Wiesbaden's natural hot springs, a sauna landscape, fitness facilities and wellness area. Family-friendly with varying pool temperatures — a practical everyday thermal destination open from early morning.",
+    lat:50.0905, lng:8.2692,
+    venueCategory:"leisure_centre",
+  },
+  {
+    id:777, city:"Bad Homburg", country:"Germany", name:"Kur-Royal Day Spa",
+    area:"Kisseleffstraße 45 (Kaiser-Wilhelms-Bad), 61348 Bad Homburg vor der Höhe, Hesse",
+    type:"sauna", price:"From €29 · day pass", rating:4.5, reviews:680,
+    priceType:"day_pass",
+    hours:"Daily 09:00–20:00 · closed late Jul–Aug annually",
+    temp:"Saunas 65–90°C",
+    tags:["Historic","Cultural","Day Spa"], emoji:"👑♨️", open:true,
+    hygiene:"A", lockerNote:"Robes available; locker included",
+    transport:"U-Bahn U2 to Bad Homburg station; 10 min walk through Kurpark",
+    parking:"Kurpark car park nearby",
+    bookingUrl:"https://www.kur-royal.de/en",
+    desc:"Elegant day spa set in the 1890 Kaiser-Wilhelms-Bad within Bad Homburg's celebrated Kurpark — a UNESCO-listed spa garden. Originally a royal bathhouse where Kaiser Wilhelm II once bathed, it now offers Finnish and herbal saunas, a steam bath, relaxation pools and massage services amid preserved Wilhelmine architecture. Annual summer closure late July through August.",
+    lat:50.2271, lng:8.6170,
+    venueCategory:"spa",
+  },
+  {
+    id:778, city:"Bad Homburg", country:"Germany", name:"Taunus Therme",
+    area:"Seedammweg 10, 61352 Bad Homburg vor der Höhe, Hesse",
+    type:"both", price:"From €18 (2hr thermal) · from €23 (thermal+sauna) · day €34", rating:4.5, reviews:8600,
+    priceType:"day_pass",
+    hours:"Daily 09:00–22:00",
+    temp:"Thermal pools 28–36°C · 10 saunas 55–100°C",
+    tags:["Thermal Pools","Day Spa","Hammam","Sauna Village"], emoji:"🕌♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers included; robes available to hire",
+    transport:"U-Bahn U2 from Frankfurt to Bad Homburg; then bus or taxi 10 min",
+    parking:"Large free car park on site",
+    bookingUrl:"https://www.taunus-therme.de/",
+    desc:"One of Germany's best-loved thermal spas, with an Asian-inspired Thermalwelt, a Saunawelt of 10 saunas from 55°C to 100°C including a women-only Oriental zone, and a Hamam Paradies with traditional steam bathing and body treatments. Asian décor, cascading waterfalls and multiple dining options. A flagship Rhine-Main spa destination 20 km north of Frankfurt.",
+    lat:50.2296, lng:8.6226,
+    venueCategory:"spa",
+  },
+  {
+    id:779, city:"Hofheim", country:"Germany", name:"Rhein-Main-Therme",
+    area:"Niederhofheimer Straße 67, 65719 Hofheim am Taunus, Hesse",
+    type:"both", price:"From €24 · 3hr or day pass", rating:4.2, reviews:2300,
+    priceType:"day_pass",
+    hours:"Daily · check rhein-main-therme.de for seasonal hours",
+    temp:"Thermal pools 28–36°C · 8 saunas 55–95°C",
+    tags:["Thermal Pools","Day Spa","Family Friendly","Water Slides","Outdoor Area"], emoji:"🌊♨️", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"S-Bahn S2 to Hofheim; then bus or taxi 5 min",
+    parking:"Large free car park adjacent",
+    bookingUrl:"https://www.rhein-main-therme.de/",
+    desc:"Popular Rhine-Main thermal resort between Hofheim and Kelkheim with a sauna garden of eight saunas, indoor and outdoor thermal pools, water slides, whirlpool zones and a wellness area. Family-friendly with separate adults-only sections — a reliable all-weather destination 20 km west of Frankfurt. Timed tickets and day passes available; seasonal family discounts.",
+    lat:50.0908, lng:8.4453,
+    venueCategory:"spa",
+  },
+  {
+    id:780, city:"Frankfurt", country:"Germany", name:"Titus Thermen",
+    area:"Walter-Möller-Platz 2, 60439 Frankfurt am Main, Hesse",
+    type:"both", price:"From €12 (2hr swim+sauna)", rating:4.2, reviews:1800,
+    priceType:"day_pass",
+    hours:"Daily · closed Jun–mid-Aug annually for maintenance",
+    temp:"Pools 28–34°C · 5 saunas 45–100°C",
+    tags:["Thermal Pools","Public","City Centre","Family Friendly"], emoji:"♨️🌊", open:true,
+    hygiene:"A", lockerNote:"Lockers on site",
+    transport:"U-Bahn U1/U9 to Nordwestzentrum; directly in shopping centre",
+    parking:"Nordwestzentrum car park",
+    bookingUrl:"https://frankfurter-baeder.de/baeder/titus-thermen/",
+    desc:"Frankfurt's flagship public thermal spa run by Frankfurter Bäder, with five themed saunas — Nero (90°C), Titus (85°C), Tiberius (100°C hottest), Spartacus steam (45°C) and Evento — alongside adventure pools and thermal pools. Among the most affordable thermal options in central Frankfurt from €12 for a 2-hour swim and sauna session. Annual maintenance closure late June to mid-August.",
+    lat:50.1643, lng:8.6524,
+    venueCategory:"leisure_centre",
+  },
+  {
+    id:781, city:"Darmstadt", country:"Germany", name:"Jugendstilbad",
+    area:"Mercksplatz 1, 64287 Darmstadt, Hesse",
+    type:"both", price:"From €5 swim · from €16 day pass (swim+sauna)", rating:4.5, reviews:520,
+    priceType:"day_pass",
+    hours:"Daily · check jugendstilbad.de for current hours",
+    temp:"Pools 28–32°C · saunas 70–95°C",
+    tags:["Historic","Cultural","Day Spa","Art Nouveau"], emoji:"🎨🔥", open:true,
+    hygiene:"A", lockerNote:"Lockers included",
+    transport:"10 min walk from Darmstadt Hbf or tram to Mercksplatz",
+    parking:"On-street parking; P+R recommended",
+    bookingUrl:"https://www.jugendstilbad.de/",
+    desc:"Art Nouveau public bath opened in 1909, lovingly restored and reopened in 2008. The three-winged complex retains original Jugendstil mosaics, tile-work and a vaulted swimming hall alongside a modern sauna landscape on two levels, SaunaPremium***** certified. Outdoor pool in summer; a restaurant and popular late-night 'Midnight Sauna' events round out an exceptional architectural and wellness experience.",
+    lat:49.8726, lng:8.6464,
+    venueCategory:"spa",
+  },
+
   // ── Estonia ──
   {
     id:641, city:"Tallinn", country:"Estonia", name:"Viimsi SPA Hotel", area:"Viimsi Peninsula, Tallinn",
@@ -9766,6 +9880,7 @@ export const CITIES: string[] = [
   // Germany
   "Berlin","Erding","Cologne","Baden-Baden","Munich","Bergisch Gladbach","Düsseldorf",
   "Tegernsee","Ottobrunn","Bad Aibling","Stuttgart","Freiburg","Hamburg",
+  "Wiesbaden","Bad Homburg","Hofheim","Frankfurt","Darmstadt",
   // Estonia
   "Tallinn","Pärnu","Tartu",
   // Latvia
@@ -9821,6 +9936,7 @@ export const FLAG: Record<string, string> = {
   // Germany
   Berlin:"🇩🇪", Erding:"🇩🇪", Cologne:"🇩🇪", "Baden-Baden":"🇩🇪", Munich:"🇩🇪", "Bergisch Gladbach":"🇩🇪", "Düsseldorf":"🇩🇪",
   Tegernsee:"🇩🇪", Ottobrunn:"🇩🇪", "Bad Aibling":"🇩🇪", Stuttgart:"🇩🇪", Freiburg:"🇩🇪", Hamburg:"🇩🇪",
+  Wiesbaden:"🇩🇪", "Bad Homburg":"🇩🇪", Hofheim:"🇩🇪", Frankfurt:"🇩🇪", Darmstadt:"🇩🇪",
   // Estonia
   Tallinn:"🇪🇪", "Pärnu":"🇪🇪", Tartu:"🇪🇪",
   // Latvia
@@ -9879,6 +9995,7 @@ export const REGION_MAP: Record<string, string> = {
   // Central Europe
   Berlin:"Central Europe", Erding:"Central Europe", Cologne:"Central Europe", "Baden-Baden":"Central Europe", Munich:"Central Europe", "Bergisch Gladbach":"Central Europe", "Düsseldorf":"Central Europe",
   Tegernsee:"Central Europe", Ottobrunn:"Central Europe", "Bad Aibling":"Central Europe", Stuttgart:"Central Europe", Freiburg:"Central Europe", Hamburg:"Central Europe",
+  Wiesbaden:"Central Europe", "Bad Homburg":"Central Europe", Hofheim:"Central Europe", Frankfurt:"Central Europe", Darmstadt:"Central Europe",
   Zakopane:"Central Europe", Warsaw:"Central Europe", "Poznań":"Central Europe",
   // Baltics
   Tallinn:"Baltics", "Pärnu":"Baltics", Tartu:"Baltics",
@@ -9941,6 +10058,7 @@ export const COUNTRY_MAP: Record<string, string> = {
   // Germany
   Berlin:"Germany", Erding:"Germany", Cologne:"Germany", "Baden-Baden":"Germany", Munich:"Germany", "Bergisch Gladbach":"Germany", "Düsseldorf":"Germany",
   Tegernsee:"Germany", Ottobrunn:"Germany", "Bad Aibling":"Germany", Stuttgart:"Germany", Freiburg:"Germany", Hamburg:"Germany",
+  Wiesbaden:"Germany", "Bad Homburg":"Germany", Hofheim:"Germany", Frankfurt:"Germany", Darmstadt:"Germany",
   // Estonia
   Tallinn:"Estonia", "Pärnu":"Estonia", Tartu:"Estonia",
   // Latvia
@@ -10009,6 +10127,7 @@ export const CITY_REGION_MAP: Record<string, string> = {
   // Germany — state
   Berlin:"Berlin", Erding:"Bavaria", Cologne:"North Rhine-Westphalia", "Baden-Baden":"Baden-Württemberg", Munich:"Bavaria", "Bergisch Gladbach":"North Rhine-Westphalia", "Düsseldorf":"North Rhine-Westphalia",
   Tegernsee:"Bavaria", Ottobrunn:"Bavaria", "Bad Aibling":"Bavaria", Stuttgart:"Baden-Württemberg", Freiburg:"Baden-Württemberg", Hamburg:"Hamburg",
+  Wiesbaden:"Hesse", "Bad Homburg":"Hesse", Hofheim:"Hesse", Frankfurt:"Hesse", Darmstadt:"Hesse",
   // Estonia — county
   Tallinn:"Harju County", "Pärnu":"Pärnu County", Tartu:"Tartu County",
   // Latvia — region

@@ -46,7 +46,7 @@ const COUNTRY_REGIONS: Record<string, string[]> = {
   Denmark: ['Copenhagen Region','Jutland'],
   Iceland: ['Reykjavík','South Iceland','North Iceland','East Iceland','West Iceland'],
   Greenland: ['South','West','North','East'],
-  Germany: ['Berlin','Bavaria','North Rhine-Westphalia','Baden-Württemberg','Hamburg','Saxony','Lower Saxony'],
+  Germany: ['Berlin','Bavaria','North Rhine-Westphalia','Baden-Württemberg','Hamburg','Hesse','Saxony','Lower Saxony'],
   Estonia: ['Harju County','Pärnu County','Tartu County','Ida-Viru County'],
   Latvia: ['Riga Region','Vidzeme','Kurzeme','Zemgale','Latgale'],
   Lithuania: ['Vilnius County','Kaunas County','Alytus County','Klaipėda County'],
