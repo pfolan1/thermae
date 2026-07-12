@@ -9992,6 +9992,52 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"Amberwave Sauna has opened in Glasgow, creating the city's first venue dedicated to the German Aufguss sauna ritual. The new space brings traditional Germanic sauna culture to Scotland.",
     lat:55.8642, lng:-4.2518,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:791, city:"Dublin", country:"Ireland", name:"Fiadh Floating Sauna", area:"Grand Canal Dock",
+    type:"sauna", price:"Check website for current pricing", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"River plunge", tags:["Floating Sauna","Waterfront","First in Ireland","Unique Experience"], emoji:"🔥🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Ireland's first floating sauna, offering a unique wellness experience on the water. Guests can enjoy sauna sessions with access to cold water plunging in a scenic waterside setting.",
+    lat:53.3396, lng:-6.2352,
+  },
+  {
+    id:792, city:"Dublin", country:"Ireland", name:"Everlast Gyms+ Henry Street", area:"Henry Street, City Centre",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Sauna","Ice Bath","Reformer Pilates","Gym","Wellness"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Henry Street is central Dublin, well served by Luas and Dublin Bus",
+    parking:"Check website for parking",
+    desc:"Everlast Gyms+, associated with Sports Direct, is opening a new facility on Henry Street in Dublin city centre featuring a reformer pilates studio, sauna, and ice baths. The venue forms part of a premium gym and wellness offering.",
+    lat:53.3483, lng:-6.2615,
+  },
+  {
+    id:793, city:"Mossley", country:"UK", name:"Renegade Lake Sauna", area:"Greater Manchester",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Lake plunge", tags:["Lakeside","Outdoor","Wood-fired","Cold water plunge"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A lakeside sauna experience located near Greater Manchester, offering wood-fired sauna sessions with access to a natural lake for cold water plunging. The venue opened to the public in late 2024.",
+    lat:53.5163, lng:-2.0086,
+  },
+  {
+    id:794, city:"Cheshire", country:"UK", name:"Lakeside Sauna Cheshire", area:"Cheshire",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Lake plunge", tags:["Lakeside","Outdoor","New Opening"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new lakeside sauna venue opening in Cheshire, offering sauna sessions alongside access to a natural lake for cold water plunging. The venue combines traditional sauna bathing with an outdoor lakeside setting.",
+    lat:53.2308, lng:-2.719,
   }
 ];
 
