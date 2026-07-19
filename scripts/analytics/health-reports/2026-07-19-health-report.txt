@@ -1,0 +1,679 @@
+═══════════════════════════════════════════════════════════════
+  THERMAE WEEKLY HEALTH CHECK
+  Sunday, 19 July 2026
+═══════════════════════════════════════════════════════════════
+
+  Total venues checked        : 783
+  ✅ OK                       : 593
+  🔴 CONFIRMED DEAD (404/410) : 9   ← needs attention
+  ⚠️  Possibly unreachable     : 144   (403/429/timeout/DNS — may be transient)
+  🔗 No website listed        : 37
+  📍 No coordinates           : 0
+  🌊 Suspect coordinates      : 0
+
+── NEEDS ATTENTION — CONFIRMED DEAD (404 / 410) ─────────────────
+  [HTTP 404]  ID  56  Coastal Roast Sauna
+    Cork, Ireland
+    https://coastalroast.ie
+    → Visit manually. If gone: set open:false or remove entry.
+
+  [HTTP 404]  ID  75  Balmoral Spa
+    Edinburgh, UK
+    https://www.roccofortehotels.com/hotels-and-resorts/the-balmoral-hotel/spa/
+    → Visit manually. If gone: set open:false or remove entry.
+
+  [HTTP 404]  ID 115  Jubilee Pool Sauna Penzance
+    Cornwall, UK
+    https://jubileepool.co.uk/sauna
+    → Visit manually. If gone: set open:false or remove entry.
+
+  [HTTP 404]  ID 450  Broadfields Wild Swimming and Wellbeing
+    Birmingham, England
+    https://broadfieldswildswimming.co.uk
+    → Visit manually. If gone: set open:false or remove entry.
+
+  [HTTP 404]  ID 455  Escape to the Lake
+    Birmingham, England
+    https://escapetothelake.co.uk/book-now
+    → Visit manually. If gone: set open:false or remove entry.
+
+  [HTTP 404]  ID 569  Bamford Spa at The Berkeley
+    London, UK
+    https://www.bamford.com/pages/berkeley-hotel-spa
+    → Visit manually. If gone: set open:false or remove entry.
+
+  [HTTP 404]  ID 645  Wellton Riverside SPA Hotel
+    Riga, Latvia
+    https://wellton.com/riverside-hotel
+    → Visit manually. If gone: set open:false or remove entry.
+
+  [HTTP 404]  ID 652  Termy Maltańskie
+    Poznań, Poland
+    https://www.termymaltanskie.com.pl/en
+    → Visit manually. If gone: set open:false or remove entry.
+
+  [HTTP 404]  ID 700  Guðlaug Baths
+    Akranes, Iceland
+    https://gudlaugbaths.is
+    → Visit manually. If gone: set open:false or remove entry.
+
+── POSSIBLY UNREACHABLE (403 / 429 / timeout / DNS) ─────────────
+  These may be transient. Check manually before taking action.
+
+  [HTTP 400  ]  ID   4  Thermae Bath Spa
+    Bath, UK
+    https://thermaebathspa.com
+
+  [HTTP 405  ]  ID  43  Brockwell Lido Sauna
+    London, UK
+    https://fusion-lifestyle.com/centres/brockwell-lido
+
+  [HTTP 400  ]  ID  58  Wildwood Sauna Cork City
+    Cork, Ireland
+    https://www.facebook.com/people/WildWood-Sauna/61558173500894/
+
+  [HTTP 403  ]  ID  94  Tjuvholmen Sjøbad
+    Oslo, Norway
+    https://www.visitoslo.com/en/product/?TLp=185440
+
+  [HTTP 403  ]  ID 147  Blue Lagoon
+    Reykjavik, Iceland
+    https://www.bluelagoon.com
+
+  [HTTP 400  ]  ID 163  Collins's Seaweed Baths
+    Kerry, Ireland
+    https://www.facebook.com/p/Collinss-Seaweed-Baths-Ballybunion-Co-Kerry-100068617793165/
+
+  [HTTP 403  ]  ID 245  AIRE Ancient Baths London
+    London, UK
+    https://beaire.com/en/aire-ancient-baths-london
+
+  [HTTP 403  ]  ID 282  Wave Garden Spa
+    Conwy, Wales
+    https://www.wavegardenspa.com
+
+  [HTTP 503  ]  ID 299  Hikitalo Sandy Bay Sauna
+    Porthcawl, Wales
+    https://hikitalo.co.uk/
+
+  [HTTP 503  ]  ID 748  North Wales Sauna
+    Barmouth, Wales
+    https://northwalessauna.co.uk
+
+  [HTTP 403  ]  ID 374  Eforea Spa at DoubleTree Liverpool
+    Liverpool, England
+    https://www.hilton.com/en/hotels/lplsidi-doubletree-liverpool/spa/
+
+  [HTTP 403  ]  ID 479  Sauna At The Farm
+    Oxford, England
+    https://www.farm-fit.co.uk/sauna
+
+  [HTTP 522  ]  ID 502  Suvi Sauna
+    Bristol, England
+    https://www.suvisauna.co.uk/
+
+  [HTTP 403  ]  ID 749  Whitby Well Being
+    Whitby, England
+    https://www.whitbywellbeing.com
+
+  [HTTP 401  ]  ID 556  Bjórböðin Beer Spa
+    Árskógssandur, Iceland
+    https://bjorbodin.is
+
+  [HTTP 405  ]  ID 567  ESPA Life at Corinthia
+    London, UK
+    https://www.corinthia.com/london/espa-life
+
+  [HTTP 403  ]  ID 736  Wild Sauna Company — Lake of Menteith
+    Callander, Scotland
+    https://www.thewildsaunacompany.co.uk
+
+  [HTTP 403  ]  ID 741  Wild Sauna Company — Dalgety Bay
+    Dalgety Bay, Scotland
+    https://www.thewildsaunacompany.co.uk
+
+  [HTTP 403  ]  ID 770  Phönix-Bad Ottobrunn
+    Ottobrunn, Germany
+    https://phoenixbad.de/
+
+  [HTTP 403  ]  ID 666  La Banchina
+    Copenhagen, Denmark
+    https://www.labanchina.dk
+
+  [HTTP 403  ]  ID 674  STHLM Sauna Vinterviken
+    Stockholm, Sweden
+    https://www.sthlmsauna.se
+
+  [HTTP 403  ]  ID 715  Rock View Sauna
+    Tipperary, Ireland
+    https://rockviewsauna.ie
+
+  [TIMEOUT   ]  ID 241  The Mindful Yard
+    Dublin, Ireland
+    https://mindfulyard.ie
+
+  [TIMEOUT   ]  ID 498  Harbour Hotel Spa
+    Bristol, England
+    https://www.harbour-hotels.co.uk/hotels/bristol/spa
+
+  [TIMEOUT   ]  ID 769  Monte Mare Seesauna Tegernsee
+    Tegernsee, Germany
+    https://www.monte-mare.de/tegernsee/
+
+  [TIMEOUT   ]  ID 786  Monte Mare Bedburg
+    Bedburg, Germany
+    https://www.monte-mare.de/bedburg/
+
+  [TIMEOUT   ]  ID 670  Badehuset Christiania
+    Copenhagen, Denmark
+    https://www.christiania.org
+
+  [TIMEOUT   ]  ID 677  Landskrona Kallbadhus
+    Landskrona, Sweden
+    https://www.landskrona.se
+
+  [TIMEOUT   ]  ID 685  Anne Saun
+    Tartu, Estonia
+    https://www.annesaun.ee
+
+  [ERROR     ]  ID   5  Campwell Farm Sauna
+    Bath, UK
+    https://campwellfarm.co.uk
+
+  [ERROR     ]  ID   7  Bristol Community Sauna
+    Bristol, UK
+    https://bristolcommunitysauna.co.uk
+
+  [ERROR     ]  ID   8  Ardagh Community Sauna
+    Bristol, UK
+    https://ardaghcommunitysauna.com
+
+  [ERROR     ]  ID   9  Sivo Wellness Leigh Court
+    Bristol, UK
+    https://sivowellness.co.uk
+
+  [ERROR     ]  ID  10  Sensate Spa Studios
+    Bristol, UK
+    https://sensatespastudios.co.uk
+
+  [ERROR     ]  ID  11  Sauna in the Lanes
+    Brighton, UK
+    https://saunaonthelanes.co.uk
+
+  [ERROR     ]  ID  15  The Outcast Saunas
+    Dublin, Ireland
+    https://outcastsaunas.ie
+
+  [ERROR     ]  ID  26  Ormeau Baths Spa
+    Belfast, UK
+    https://ormeaubaths.co.uk
+
+  [ERROR     ]  ID  33  KOK Oslo Sauna Bar
+    Oslo, Norway
+    https://koksauna.no
+
+  [ERROR     ]  ID  70  Gainsborough Bath Spa
+    Bath, UK
+    https://www.gainsboroughbathspa.com
+
+  [ERROR     ]  ID  72  Manifest Health Club
+    Manchester, UK
+    https://www.manifesthealthclub.com
+
+  [ERROR     ]  ID  74  One Spa Edinburgh
+    Edinburgh, UK
+    https://www.one-spa.com
+
+  [ERROR     ]  ID  76  Thermae Scotland
+    Edinburgh, UK
+    https://www.thermaescotland.co.uk
+
+  [ERROR     ]  ID  80  Blythswood Square Spa
+    Glasgow, UK
+    https://www.theblythswood.com/spa
+
+  [ERROR     ]  ID  81  Bòthan Sauna Glasgow
+    Glasgow, UK
+    https://www.bòthan.co.uk
+
+  [ERROR     ]  ID  82  The Baths Glasgow
+    Glasgow, UK
+    https://www.thebathsglasgow.co.uk
+
+  [ERROR     ]  ID  84  Pontcanna Sauna Club
+    Cardiff, UK
+    https://www.pontcannasaunaclub.co.uk
+
+  [ERROR     ]  ID  85  Spire Cardiff Wellness
+    Cardiff, UK
+    https://www.spirecardiff.co.uk/wellbeing
+
+  [ERROR     ]  ID  89  Saunerne Copenhagen
+    Copenhagen, Denmark
+    https://www.saunerne.dk
+
+  [ERROR     ]  ID  90  Kastrup Sea Bath
+    Copenhagen, Denmark
+    https://kastrup-soebad.dk
+
+  [ERROR     ]  ID  91  Amager Strandpark Sauna
+    Copenhagen, Denmark
+    https://www.amager-strandpark.dk
+
+  [ERROR     ]  ID  95  Inis Wellness Galway
+    Galway, Ireland
+    https://www.iniswellness.ie
+
+  [ERROR     ]  ID  96  Galway City Sauna
+    Galway, Ireland
+    https://www.galwaycitysauna.ie
+
+  [ERROR     ]  ID  99  Killarney Thermal Spa
+    Kerry, Ireland
+    https://www.killarneyspasalud.ie
+
+  [ERROR     ]  ID 100  Greystones Sauna
+    Wicklow, Ireland
+    https://www.greystonessauna.ie
+
+  [ERROR     ]  ID 102  Frihamnen Sauna
+    Gothenburg, Sweden
+    https://www.frihamnen.nu/sauna
+
+  [ERROR     ]  ID 103  Alrek Badehus
+    Bergen, Norway
+    https://www.alrekbadehus.no
+
+  [ERROR     ]  ID 104  Nordnes Sjøbad
+    Bergen, Norway
+    https://www.bergenskommune.no/nordnes-sjobad
+
+  [ERROR     ]  ID 107  Sauna Social Liverpool
+    Liverpool, UK
+    https://www.saunasocialliverpool.co.uk
+
+  [ERROR     ]  ID 108  Liverpool Lido Sauna
+    Liverpool, UK
+    https://www.liverpoollido.co.uk
+
+  [ERROR     ]  ID 109  Quayside Sauna Newcastle
+    Newcastle, UK
+    https://www.quaysideSauna.co.uk
+
+  [ERROR     ]  ID 110  Kirkstall Sauna Club
+    Leeds, UK
+    https://www.kirkstallsaunaclub.co.uk
+
+  [ERROR     ]  ID 111  Aire Street Baths
+    Leeds, UK
+    https://www.airestreetbaths.co.uk
+
+  [ERROR     ]  ID 112  Moseley Road Baths Sauna
+    Birmingham, UK
+    https://www.moseleyroad baths.org.uk  (Invalid URL)
+
+  [ERROR     ]  ID 113  The Wellness Rooms Birmingham
+    Birmingham, UK
+    https://www.thewellnessroomsbirmingham.co.uk
+
+  [ERROR     ]  ID 114  Kelham Island Sauna
+    Sheffield, UK
+    https://www.kelhamislsandsauna.co.uk
+
+  [ERROR     ]  ID 116  Surfers' Sauna Newquay
+    Cornwall, UK
+    https://www.surferssauna.co.uk
+
+  [ERROR     ]  ID 117  The Beach Sauna Aberdeen
+    Aberdeen, UK
+    https://www.beachsaunaaaberdeen.co.uk
+
+  [ERROR     ]  ID 118  Loch Ness Sauna
+    Inverness, UK
+    https://www.lochnessauna.co.uk
+
+  [ERROR     ]  ID 119  Swansea Sauna
+    Swansea, UK
+    https://www.swanseasauna.co.uk
+
+  [ERROR     ]  ID 120  Shannon Sauna Limerick
+    Limerick, Ireland
+    https://www.shannonsauna.ie
+
+  [ERROR     ]  ID 145  Heit Bergen Sauna
+    Bergen, Norway
+    https://en.heitbergensauna.com
+
+  [ERROR     ]  ID 149  Laugardalur Swimming Pool
+    Reykjavik, Iceland
+    https://laugardalslaugin.is
+
+  [ERROR     ]  ID 152  Broens Sauna
+    Aarhus, Denmark
+    https://broens-sauna.dk
+
+  [ERROR     ]  ID 182  West Coast Sauna Co.
+    Sligo, Ireland
+    https://westcoastsaunaco.ie
+
+  [ERROR     ]  ID 185  Soul Sauna
+    Laois, Ireland
+    https://soulsauna.ie
+
+  [ERROR     ]  ID 204  An Chill Sauna
+    Kildare, Ireland
+    https://www.anchillsauna.ie
+
+  [ERROR     ]  ID 224  The Wonky Sauna
+    Dublin, Ireland
+    https://www.wonkysauna.ie
+
+  [ERROR     ]  ID 226  The Hideaway Sauna
+    Kilkenny, Ireland
+    https://www.thehideawaysauna.ie
+
+  [ERROR     ]  ID 220  Thalassa Seaweed Baths Ballybunion
+    Kerry, Ireland
+    https://www.thalassaballybunion.ie
+
+  [ERROR     ]  ID 221  Wild Irish Saunas
+    Galway, Ireland
+    https://www.wildirshsaunas.ie
+
+  [ERROR     ]  ID 239  D7 Sauna
+    Dublin, Ireland
+    https://d7sauna.ie
+
+  [ERROR     ]  ID 262  Hot Rocks Sauna
+    Craigavon, Northern Ireland
+    https://www.hotrocksni.com/
+
+  [ERROR     ]  ID 264  HotBox Benone
+    Limavady, Northern Ireland
+    https://hotboxni.com/
+
+  [ERROR     ]  ID 268  Redbarn Cavehill
+    Belfast, Northern Ireland
+    https://redbarnni.com/
+
+  [ERROR     ]  ID 269  Revive Saunas Rostrevor
+    Rostrevor, Northern Ireland
+    https://revivesaunasni.com/
+
+  [ERROR     ]  ID 271  Sudor Club 24
+    Bangor, Northern Ireland
+    https://www.sudoroutdoorsaunas.com/
+
+  [ERROR     ]  ID 272  Sudor Quarries Farm
+    Bangor, Northern Ireland
+    https://www.sudoroutdoorsaunas.com/
+
+  [ERROR     ]  ID 273  HotBox Groomsport
+    Groomsport, Northern Ireland
+    https://hotboxni.com/
+
+  [ERROR     ]  ID 276  Niku-Naku Sauna
+    Bala, Wales
+    https://niku-naku.co.uk/
+
+  [ERROR     ]  ID 278  Cedar Hut Sauna Penmon
+    Beaumaris, Wales
+    https://cedarhutpenmon.co.uk/
+
+  [ERROR     ]  ID 283  ABERPOETH Sauna
+    Aberystwyth, Wales
+    https://aberpoethsauna.co.uk/
+
+  [ERROR     ]  ID 286  Casgen Sawna
+    Colwyn Bay, Wales
+    https://casgensawna.co.uk/
+
+  [ERROR     ]  ID 287  Drift Sauna Camp Plas
+    Welshpool, Wales
+    https://www.campplas.co.uk/
+
+  [ERROR     ]  ID 289  Willow Springs Wellness
+    Neath Port Talbot, Wales
+    https://willowspringswellness.co.uk/
+
+  [ERROR     ]  ID 290  Live Free Sauna — Y Coed
+    Llanelli, Wales
+    https://livefreesauna.co.uk/
+
+  [ERROR     ]  ID 294  The Old Drift Wellness
+    Merthyr Tydfil, Wales
+    https://theolddrift.co.uk/
+
+  [ERROR     ]  ID 295  Tân a Rhew
+    Blackwood, Wales
+    https://tanarhew.co.uk/
+
+  [ERROR     ]  ID 296  Sauna Hut Wales — Mumbles
+    Swansea, Wales
+    https://saunahut.wales/
+
+  [ERROR     ]  ID 298  Hwyl Outdoor Sauna
+    Saundersfoot, Wales
+    https://hwyloutsauna.co.uk/
+
+  [ERROR     ]  ID 300  The Outdoor Sauna Bridgend
+    Bridgend, Wales
+    https://outdoorsaunabridgend.co.uk/
+
+  [ERROR     ]  ID 348  Hive Sauna — Debdale Park
+    Manchester, England
+    https://www.hivesauna.co.uk
+
+  [ERROR     ]  ID 384  Mersea Sauna
+    Liverpool, England
+    https://www.merseysauna.co.uk
+
+  [ERROR     ]  ID 391  The Club and Spa Chester
+    Chester, England
+    https://www.theclubandspachesterhoole.co.uk
+
+  [ERROR     ]  ID 490  Chill At The Yard
+    Cambridge, England
+    https://www.theyardatknapwell.co.uk/
+
+  [ERROR     ]  ID 503  Bristol Sauna Yard
+    Bristol, England
+    https://www.bristolsaunayard.co.uk/
+
+  [ERROR     ]  ID 504  Field Trip Sauna
+    Bristol, England
+    https://www.fieldtripsauna.co.uk/
+
+  [ERROR     ]  ID 506  Briery Wood Sauna
+    Bristol, England
+    https://www.brierywoodsauna.co.uk/
+
+  [ERROR     ]  ID 507  Bristol Wild Sauna
+    Bristol, England
+    https://www.bristolwildsauna.co.uk/
+
+  [ERROR     ]  ID 510  Campwell Woods Sauna
+    Bath, England
+    https://www.campwellfarm.co.uk/sauna
+
+  [ERROR     ]  ID 511  Devon Cold Swim — Exmouth
+    Exeter, England
+    https://www.devoncoldswim.co.uk/
+
+  [ERROR     ]  ID 512  Devon Cold Swim — Teignmouth
+    Exeter, England
+    https://www.devoncoldswim.co.uk/
+
+  [ERROR     ]  ID 516  Earthbound Sauna
+    Cornwall, England
+    https://www.earthboundsauna.co.uk/
+
+  [ERROR     ]  ID 518  Melancoose Mill Sauna
+    Cornwall, England
+    https://www.melancoose.co.uk/
+
+  [ERROR     ]  ID 519  Heat Retreat — Talland Bay
+    Cornwall, England
+    https://www.heatretreat.co.uk/
+
+  [ERROR     ]  ID 523  Heart Sauna
+    Cornwall, England
+    https://www.heartsauna.co.uk/
+
+  [ERROR     ]  ID 524  Olla Hiki
+    Cornwall, England
+    https://www.ollahiki.co.uk/
+
+  [ERROR     ]  ID 525  Motts Sauna — Menheniot
+    Cornwall, England
+    https://www.mottssauna.co.uk/
+
+  [ERROR     ]  ID 526  Water & Stone Sauna
+    Cornwall, England
+    https://www.waterandstonefalmouth.co.uk/
+
+  [ERROR     ]  ID 527  Motts Sauna — Portwrinkle
+    Cornwall, England
+    https://www.mottssauna.co.uk/
+
+  [ERROR     ]  ID 528  Loe Sauna
+    Cornwall, England
+    https://www.loesauna.co.uk/
+
+  [ERROR     ]  ID 530  Rising Embers Sauna
+    Cornwall, England
+    https://www.risingembers.co.uk/
+
+  [ERROR     ]  ID 533  Ocean Soul Sauna — Bude
+    Cornwall, England
+    https://www.oceansoulbude.co.uk/
+
+  [ERROR     ]  ID 535  Somewhere Sauna — Mothecombe
+    Plymouth, England
+    https://www.somewheresauna.co.uk/
+
+  [ERROR     ]  ID 570  Cowshed Spa — Soho House Soho
+    London, UK
+    https://www.sohohousecowshed.com
+
+  [ERROR     ]  ID 581  Cellardyke Seaside Sauna
+    St Andrews, Scotland
+    https://cellardykesauna.co.uk
+
+  [ERROR     ]  ID 583  Elements Sauna
+    Durham, England
+    https://elementssauna.co.uk
+
+  [ERROR     ]  ID 584  SALT Oslo
+    Oslo, Norway
+    https://saltos.no
+
+  [ERROR     ]  ID 585  Oslo Sauna Association
+    Oslo, Norway
+    https://oslosaunaforbund.no
+
+  [ERROR     ]  ID 587  Saunabåten Bergen
+    Bergen, Norway
+    https://saunabaaten.no
+
+  [ERROR     ]  ID 588  Dokkeskjærskaien Sauna
+    Bergen, Norway
+    https://dokkeskjaerskaien.no
+
+  [ERROR     ]  ID 590  Camp Senja Sauna
+    Tromsø, Norway
+    https://campsenja.no
+
+  [ERROR     ]  ID 592  Tenanger Floating Sauna
+    Stavanger, Norway
+    https://tenanger.no
+
+  [ERROR     ]  ID 598  Kuusijärvi Outdoor Recreation Area
+    Helsinki, Finland
+    https://kuusijarvi.fi
+
+  [ERROR     ]  ID 601  Sea View Saunas Laytown
+    Meath, Ireland
+    https://seaviewsaunas.ie
+
+  [ERROR     ]  ID 643  Tervis Paradise Spa
+    Pärnu, Estonia
+    https://www.tervisparadise.ee/en
+
+  [ERROR     ]  ID 646  Grand SPA Lietuva
+    Druskininkai, Lithuania
+    https://www.grandspalietu.lt/en
+
+  [ERROR     ]  ID 647  AQUA Druskininkai
+    Druskininkai, Lithuania
+    https://www.aquapark.lt/en
+
+  [ERROR     ]  ID 662  Alta Sauna
+    Alta, Norway
+    Check local listings  (Invalid URL)
+
+  [ERROR     ]  ID 667  Amigo Sauna
+    Copenhagen, Denmark
+    Check local listings  (Invalid URL)
+
+  [ERROR     ]  ID 699  Varberg Kallbadhus
+    Varberg, Sweden
+    https://varbergskallbadhus.se
+
+  [ERROR     ]  ID 679  Lapinlahden Sauna
+    Helsinki, Finland
+    Check local listings  (Invalid URL)
+
+  [ERROR     ]  ID 696  Hermannin Sauna
+    Helsinki, Finland
+    https://hermanninsauna.fi
+
+  [ERROR     ]  ID 698  Sauna Vasa
+    Turku, Finland
+    https://saunavasa.fi
+
+  [ERROR     ]  ID 709  Réalt Na Mara Saunas
+    Wexford, Ireland
+    https://realtnamarasaunas.com
+
+── VENUES WITH NO WEBSITE ───────────────────────────────────────
+  ID  46  Revitalise Urban Spa · London, UK
+  ID 521  Wild Spa — Polzeath · Cornwall, England
+  ID 553  Seljavallalaug · Skógar, Iceland
+  ID 554  Reykjadalur Hot River · Hveragerði, Iceland
+  ID 557  Hoffell Hot Tubs · Höfn, Iceland
+  ID 558  Drangsnes Hot Tubs · Drangsnes, Iceland
+  ID 572  Sisimiut Arctic Sauna · Sisimiut, Greenland
+  ID 573  Pollurinn Hot Pot · Flúðir, Iceland
+  ID 574  Snorralaug · Reykholt, Iceland
+  ID 575  Grjótagjá Cave · Mývatn, Iceland
+  ID 613  The Recovery Lounge · Waterford, Ireland
+  ID 614  The Wild Atlantic Sauna · Mayo, Ireland
+  ID 620  Pontoon Sauna · Mayo, Ireland
+  ID 616  Nook Sauna · Cavan, Ireland
+  ID 617  Lakeside Saunas · Cavan, Ireland
+  ID 619  Bunmahon Sauna & Seaweed Baths · Waterford, Ireland
+  ID 622  Éalu Sauna · Monaghan, Ireland
+  ID 625  Healing Heat · Kerry, Ireland
+  ID 624  Savasana Sauna · Louth, Ireland
+  ID 630  Kyrö Sauna Bar · Helsinki, Finland
+  ID 632  Bognor Regis Beach Sauna · Bognor Regis, England
+  ID 633  Downings Bay Sauna · Donegal, Ireland
+  ID 634  Fernhill House Hotel Sauna · Cork, Ireland
+  ID 761  Caracalla Therme · Baden-Baden, Germany
+  ID 762  Mediterana · Bergisch Gladbach, Germany
+  ID 763  Vabali Spa Düsseldorf · Düsseldorf, Germany
+  ID 764  Meridian Spa — Spandau · Berlin, Germany
+  ID 687  Float Dublin (Floating Sauna) · Dublin, Ireland
+  ID 688  Rother Valley Country Park Sauna · Sheffield, UK
+  ID 693  Wild Sauna Cork · Cork, Ireland
+  ID 694  Boscombe Beach Sauna · Bournemouth, UK
+  ID 695  Amberwave Sauna · Glasgow, UK
+  ID 791  Fiadh Floating Sauna · Dublin, Ireland
+  ID 792  Everlast Gyms+ Henry Street · Dublin, Ireland
+  ID 793  Renegade Lake Sauna · Mossley, UK
+  ID 794  Lakeside Sauna Cheshire · Cheshire, UK
+  ID 795  Reykjaböð Geothermal Lagoon · Reykjanes, Iceland
+
+───────────────────────────────────────────────────────────────
+Report generated: 2026-07-19T09:07:37.310Z
