@@ -10038,6 +10038,19 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new lakeside sauna venue opening in Cheshire, offering sauna sessions alongside access to a natural lake for cold water plunging. The venue combines traditional sauna bathing with an outdoor lakeside setting.",
     lat:53.2308, lng:-2.719,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:795, city:"Reykjanes", country:"Iceland", name:"Reykjaböð Geothermal Lagoon", area:"Reykjanes Peninsula",
+    type:"lagoon", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Geothermal lagoon", tags:["Geothermal","Lagoon","Luxury","Outdoor","New Opening 2026"], emoji:"♨️", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Reykjaböð Geothermal Lagoon is a new luxury geothermal bathing destination opening in 2026 on Iceland's Reykjanes Peninsula, situated amid dramatic lava fields. It is positioned as one of Iceland's major new wellness and adventure travel attractions.",
+    lat:63.8833, lng:-22.5667,
   }
 ];
 

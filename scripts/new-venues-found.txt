@@ -1,164 +1,152 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 12 July 2026
+  Sunday, 19 July 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 83 articles, 72 relevant
-  • OpenStreetMap Overpass   : 711 candidates collected
+  • Google News RSS          : 80 articles, 72 relevant
+  • OpenStreetMap Overpass   : 576 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 4
-  • Review list (curated)    : 25 of 711 raw (1 regional, 17 adult, 321 junk, 80 dup, 49 seen)
-  • Skipped (duplicates/irrelevant): 68
+  • Venues auto-added        : 1
+  • Review list (curated)    : 25 of 576 raw (0 regional, 17 adult, 243 junk, 81 dup, 62 seen)
+  • Skipped (duplicates/irrelevant): 71
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Fiadh Floating Sauna
-     Dublin, Ireland
-     Ireland's first floating sauna, offering a unique wellness experience on the water. Guests can enjoy sauna sessions with access to cold water plunging in a scenic waterside setting.
+  ✅ Reykjaböð Geothermal Lagoon
+     Reykjanes, Iceland
+     Reykjaböð Geothermal Lagoon is a new luxury geothermal bathing destination opening in 2026 on Iceland's Reykjanes Peninsula, situated amid dramatic lava fields. It is positioned as one of Iceland's major new wellness and adventure travel attractions.
 
-  ✅ Everlast Gyms+ Henry Street
-     Dublin, Ireland
-     Everlast Gyms+, associated with Sports Direct, is opening a new facility on Henry Street in Dublin city centre featuring a reformer pilates studio, sauna, and ice baths. The venue forms part of a premium gym and wellness offering.
+── CURATED REVIEW LIST (25 of 576 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 17 adult · 243 junk/non-wellness · 81 already in venues.ts · 62 previously seen)
 
-  ✅ Renegade Lake Sauna
-     Mossley, UK
-     A lakeside sauna experience located near Greater Manchester, offering wood-fired sauna sessions with access to a natural lake for cold water plunging. The venue opened to the public in late 2024.
-
-  ✅ Lakeside Sauna Cheshire
-     Cheshire, UK
-     A new lakeside sauna venue opening in Cheshire, offering sauna sessions alongside access to a natural lake for cold water plunging. The venue combines traditional sauna bathing with an outdoor lakeside setting.
-
-── CURATED REVIEW LIST (25 of 711 candidates) ─────────────────
-  (Filtered: 1 Russian/out-of-region · 17 adult · 321 junk/non-wellness · 80 already in venues.ts · 49 previously seen)
-
-  📍 Áda studio - sauna a solárium
-     Poland · OpenStreetMap
-     http://ada.mvd.cz
-     Coords: 50.2343, 17.2089
-
-  📍 Finská sauna
-     Poland · OpenStreetMap
-     http://www.sareza.cz/vodni-svet/finska-sauna/
-     Coords: 49.8450, 18.2890
-
-  📍 Gorąca Chata – sauna w plenerze
-     Poland · OpenStreetMap
-     https://goracachata.pl/
-     Coords: 52.1114, 21.1408
-
-  📍 Laura Spa
-     Poland · OpenStreetMap
-     https://www.lauraspa.pl/
-     Coords: 52.3342, 15.2973
-
-  📍 Národní sauna
-     Poland · OpenStreetMap
-     https://www.narodnisauna.cz/
-     Coords: 50.0806, 14.4144
-
-  📍 NUUK - SAUNA & OSVĚŽOVNA
-     Poland · OpenStreetMap
-     https://www.saunanuuk.net/
-     Coords: 50.1874, 15.8174
-
-  📍 Parowóz sauna
-     Poland · OpenStreetMap
-     https://parowoz.com.pl
-     Coords: 52.3634, 20.8529
-
-  📍 Pieni sauna
+  📍 Lehtolan sauna
      Norway · OpenStreetMap
-     https://www.vauhtifarmi.fi/
-     Coords: 60.4757, 24.6852
+     https://rauma.elakkeensaajat.fi/lehtola/lehtolan-esittely/
+     Coords: 61.1397, 21.4703
 
-  📍 Pink Broadway Sauna
+  📍 Rekefjord Sauna
+     Norway · OpenStreetMap
+     https://sites.google.com/view/rekefjord-sauna
+     Coords: 58.3389, 6.2604
+
+  📍 Saunaholvi
+     Norway · OpenStreetMap
+     http://vuokattirent.fi/
+     Coords: 64.1443, 28.2480
+
+  📍 Saunaparoni
+     Norway · OpenStreetMap
+     https://www.saunaparoni.fi/
+     Coords: 60.5514, 22.1177
+
+  📍 SaunatFI Tapiola
+     Norway · OpenStreetMap
+     https://www.saunat.fi/kohde/saunat-fi-tapiola/
+     Coords: 60.1750, 24.8020
+
+  📍 Sipoonjoen perinnesauna
+     Norway · OpenStreetMap
+     https://saunotus.fi/
+     Coords: 60.3453, 25.2574
+
+  📍 Sivo Wellness
      UK · OpenStreetMap
-     https://www.pink-broadway.com/
-     Coords: 50.9017, -1.3994
+     https://sivowellness.com/
+     Coords: 51.4689, -2.6602
 
-  📍 Pirtis "Dūminukė"
-     Poland · OpenStreetMap
-     https://www.duminuke.lt/
-     Coords: 54.8569, 23.1638
-
-  📍 Rampsinkarin sauna
+  📍 Skjærgården Sauna
      Norway · OpenStreetMap
-     https://www.rampsi.fi/
-     Coords: 60.5596, 27.1833
+     https://salensauna.no
+     Coords: 59.0249, 9.7344
 
-  📍 Rauhasauna
+  📍 Soria Moria sauna
      Norway · OpenStreetMap
-     https://rauhasauna.fi/
-     Coords: 61.4915, 21.7891
+     https://www.visittelemark.no/dalen
+     Coords: 59.4426, 8.0183
 
-  📍 Ravijoen sauna
+  📍 Sorsasalon sauna
      Norway · OpenStreetMap
-     https://www.salpakeskus.fi/fi/varaussaunat-ja-kodat
-     Coords: 60.5278, 27.5460
+     https://www.kuopiontalviuimarit.com/sorsasalo/
+     Coords: 62.9550, 27.6840
 
-  📍 Re:Set Wellness Studio
+  📍 Soul Water Sauna
      UK · OpenStreetMap
-     https://www.resetmindbodysoul.co.uk/
-     Coords: 54.0515, -2.7971
+     https://soulwatersauna.com/
+     Coords: 55.9511, -3.1013
 
-  📍 Rooftop Saunas
+  📍 Spartan Health Club
      UK · OpenStreetMap
-     https://rooftopsaunas.com/
-     Coords: 51.5374, -0.0575
+     http://www.spartanhealthclub.co.uk
+     Coords: 52.5172, -1.8612
 
-  📍 Sauna AKWEN
-     Poland · OpenStreetMap
-     https://akwenczerwonak.pl/plywalnia/sauny/
-     Coords: 52.4482, 16.9915
+  📍 Spear Sauna
+     UK · OpenStreetMap
+     https://www.lostshore.com/visit/spear-sauna
+     Coords: 55.9186, -3.3970
 
-  📍 Sauna Babylonia
-     Poland · OpenStreetMap
-     https://www.saunababylonia.cz/
-     Coords: 50.0829, 14.4197
+  📍 Splash Sauna Spa
+     UK · OpenStreetMap
+     http://www.splashsauna.com
+     Coords: 53.4084, -2.9944
 
-  📍 Sauna Eldorado
-     Poland · OpenStreetMap
-     https://www.sauna-eldorado.de
-     Coords: 52.3221, 14.5522
-
-  📍 Sauna Fénix
-     Poland · OpenStreetMap
-     https://wellness-fenix.cz/
-     Coords: 49.0628, 17.4667
-
-  📍 Sauna Hadovka
-     Poland · OpenStreetMap
-     https://www.sauna-hadovka.cz/
-     Coords: 50.0991, 14.3752
-
-  📍 Sauna Hermanni
+  📍 SportMixer Kokous- ja saunatilat
      Norway · OpenStreetMap
-     https://www.saunahermanni.fi/
-     Coords: 60.1935, 24.9650
+     https://www.sportmixer.fi/index.php
+     Coords: 60.3562, 24.3240
 
-  📍 Sauna klub ve Finské
-     Poland · OpenStreetMap
-     http://www.saunaklubvefinske.cz/
-     Coords: 50.0716, 14.4563
+  📍 Steamer Quay Spa
+     UK · OpenStreetMap
+     https://steamerquay.com/
+     Coords: 50.4610, -3.5366
 
-  📍 Sauna Komfort klub Brno
-     Poland · OpenStreetMap
-     https://www.sauna-komfortklub.cz/
-     Coords: 49.2096, 16.6244
+  📍 Strandsauna Listland
+     Denmark · OpenStreetMap
+     https://www.strandsauna.info/
+     Coords: 55.0141, 8.3708
 
-  📍 Sauna na Mara
-     Ireland · OpenStreetMap
-     https://cleire.ie/news/uJigVrWouLJv6dDP32Cn
-     Coords: 51.4414, -9.5050
+  📍 Suvi Sauna - Bristol
+     UK · OpenStreetMap
+     https://suvisauna.co.uk/
+     Coords: 51.4623, -2.5652
 
-  📍 Sauna Na návsi
-     Poland · OpenStreetMap
-     http://www.saunaobristvi.cz/
-     Coords: 50.2955, 14.4782
+  📍 Suvi Sauna - Clevedon
+     UK · OpenStreetMap
+     https://suvisauna.co.uk/
+     Coords: 51.4350, -2.8692
 
-Report generated: 2026-07-12T08:34:10.227Z
+  📍 Tampellan panoraamasauna
+     Norway · OpenStreetMap
+     https://www.saunatampere.fi/sauna/tampellan-panoraamasauna/
+     Coords: 61.5058, 23.7657
+
+  📍 The Brighton Sauna
+     UK · OpenStreetMap
+     https://www.thebrightonsauna.com/
+     Coords: 50.8233, -0.1360
+
+  📍 The Spa at Low Wood Bay
+     UK · OpenStreetMap
+     https://englishlakes.co.uk/hotels/low-wood-bay/the-spa/
+     Coords: 54.4107, -2.9482
+
+  📍 Tilaussauna Siera Nevada
+     Norway · OpenStreetMap
+     https://ravintolakoivunoksa.com/
+     Coords: 60.1857, 24.6111
+
+  📍 Timetravels - Arctic Sauna
+     Norway · OpenStreetMap
+     https://www.timetravels.fi/
+     Coords: 69.9779, 29.5885
+
+  📍 Touch Sauna
+     UK · OpenStreetMap
+     https://touchsauna.com/
+     Coords: 51.5629, -1.7869
+
+Report generated: 2026-07-19T08:34:39.704Z
