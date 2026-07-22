@@ -1,0 +1,88 @@
+Thermae Dedup Check — Wednesday, 22 July 2026
+════════════════════════════════════════════════════════════════════════
+
+── PROBABLE (5) ──
+
+  [MEDIUM]  Same bookingUrl + within 200m
+  ID 653: KOK Aker Brygge  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.9087, 10.7267
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 654: KOK Vega  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.909, 10.7271
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 33%   Distance: 40m
+  Suggested keep: ID 653 (KOK Aker Brygge)
+
+  [MEDIUM]  Same bookingUrl + within 200m
+  ID 653: KOK Aker Brygge  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.9087, 10.7267
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 655: KOK Morild  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.9085, 10.7263
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 33%   Distance: 31m
+  Suggested keep: ID 653 (KOK Aker Brygge)
+
+  [MEDIUM]  Same bookingUrl + within 200m
+  ID 654: KOK Vega  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.909, 10.7271
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 655: KOK Morild  (Oslo, Norway)
+         URL:      https://www.koknorge.no
+         Coords:   59.9085, 10.7263
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 71m
+  Suggested keep: ID 654 (KOK Vega)
+
+  [MEDIUM]  Coordinates within 80m + similar name
+  ID 4: Thermae Bath Spa  (Bath, UK)
+         URL:      https://thermaebathspa.com
+         Coords:   51.3797, -2.3585
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 70: Gainsborough Bath Spa  (Bath, UK)
+         URL:      https://www.gainsboroughbathspa.com
+         Coords:   51.3799, -2.3596
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 67%   Distance: 80m
+  Suggested keep: ID 4 (Thermae Bath Spa)
+
+  [MEDIUM]  Coordinates within 159m + similar name
+  ID 596: Sauna Arla  (Helsinki, Finland)
+         URL:      https://saunaarla.fi
+         Coords:   60.1624, 24.9338
+         Reviews:  0   Price: –   Completeness: 6/10
+  ID 597: Uusi Sauna  (Helsinki, Finland)
+         URL:      https://uusisauna.fi
+         Coords:   60.1618, 24.9364
+         Reviews:  0   Price: –   Completeness: 6/10
+  Similarity: 50%   Distance: 159m
+  Suggested keep: ID 596 (Sauna Arla)
+
+────────────────────────────────────────────────────────────────────────
+
+── STUB (1) ──
+
+  [MEDIUM]  Coordinates within 173m + similar name
+  ID 687: Float Dublin (Floating Sauna)  (Dublin, Ireland)
+         URL:      (none)
+         Coords:   53.3396, -6.2378
+         Reviews:  0   Price: –   Completeness: 3/10
+  ID 791: Fiadh Floating Sauna  (Dublin, Ireland)
+         URL:      (none)
+         Coords:   53.3396, -6.2352
+         Reviews:  0   Price: –   Completeness: 3/10
+  Similarity: 50%   Distance: 173m
+  Suggested keep: ID 687 (Float Dublin (Floating Sauna))
+
+────────────────────────────────────────────────────────────────────────
+
+Total suspected: 6
+
+This script is READ-ONLY. Remove weaker entries manually from src/data/venues.ts.
+
+════════════════════════════════════════════════════════════════════════
