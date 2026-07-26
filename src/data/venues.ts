@@ -10051,6 +10051,52 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"Reykjaböð Geothermal Lagoon is a new luxury geothermal bathing destination opening in 2026 on Iceland's Reykjanes Peninsula, situated amid dramatic lava fields. It is positioned as one of Iceland's major new wellness and adventure travel attractions.",
     lat:63.8833, lng:-22.5667,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:796, city:"Cork", country:"Ireland", name:"Coolmore Farm Sauna", area:"Cork",
+    type:"sauna", price:"€1 introductory sessions (check website for current pricing)", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Farm setting","Outdoor","New opening","Rural"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A newly opened sauna experience set on a Cork farm, offering wellness sessions in a rural farm setting. Launched with introductory €1 sessions to mark its opening.",
+    lat:51.8985, lng:-8.4756,
+  },
+  {
+    id:797, city:"London", country:"UK", name:"Spa Boat London", area:"River Thames",
+    type:"both", price:"£87", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Hot tub on deck", tags:["Hot Tub","Sauna","Massage","Boat","Thames","Unique Experience"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A floating spa boat on the River Thames offering hot tub, sauna and massage treatments from £87. A unique wellness experience on the water in London.",
+    lat:51.5074, lng:-0.1278,
+  },
+  {
+    id:798, city:"Edinburgh", country:"UK", name:"Sauna Theatre", area:"Edinburgh",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Sauna Theatre","Edinburgh Fringe","Purpose-Built","Cultural Experience","Unique Concept"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"The UK's first purpose-built Sauna Theatre, located in Edinburgh, combining sauna bathing with theatrical performance. The venue has announced its Edinburgh Festival Fringe programme, offering a unique cultural wellness experience.",
+    lat:55.9533, lng:-3.1883,
+  },
+  {
+    id:799, city:"London", country:"UK", name:"Aquavista Floating Spa", area:"Unknown - floating venue",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Hot tub and sauna available", tags:["Floating","Hot Tub","Sauna","Spa","Unique Experience"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"London has gained a new floating spa featuring a hot tub and sauna, offering a unique wellness experience on the water. The venue provides a novel setting for relaxation and thermal bathing in the capital.",
+    lat:51.5074, lng:-0.1278,
   }
 ];
 
