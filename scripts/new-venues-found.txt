@@ -1,147 +1,131 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 26 July 2026
+  Sunday, 2 August 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 87 articles, 74 relevant
-  • OpenStreetMap Overpass   : 287 candidates collected
+  • Google News RSS          : 84 articles, 73 relevant
+  • OpenStreetMap Overpass   : 578 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 4
-  • Review list (curated)    : 25 of 287 raw (0 regional, 2 adult, 99 junk, 22 dup, 54 seen)
-  • Skipped (duplicates/irrelevant): 70
+  • Venues auto-added        : 0
+  • Review list (curated)    : 25 of 578 raw (0 regional, 17 adult, 245 junk, 79 dup, 111 seen)
+  • Skipped (duplicates/irrelevant): 73
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
-── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Coolmore Farm Sauna
-     Cork, Ireland
-     A newly opened sauna experience set on a Cork farm, offering wellness sessions in a rural farm setting. Launched with introductory €1 sessions to mark its opening.
+── NO NEW VENUES AUTO-ADDED THIS WEEK ──────────────────────────
+  Nothing verified from news sources this week.
 
-  ✅ Spa Boat London
-     London, UK
-     A floating spa boat on the River Thames offering hot tub, sauna and massage treatments from £87. A unique wellness experience on the water in London.
+── CURATED REVIEW LIST (25 of 578 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 17 adult · 245 junk/non-wellness · 79 already in venues.ts · 111 previously seen)
 
-  ✅ Sauna Theatre
-     Edinburgh, UK
-     The UK's first purpose-built Sauna Theatre, located in Edinburgh, combining sauna bathing with theatrical performance. The venue has announced its Edinburgh Festival Fringe programme, offering a unique cultural wellness experience.
+  📍 Kallbadhuset / Sauna
+     Norway · OpenStreetMap
+     https://www.ulricehamnskallbad.se/bad/
+     Coords: 57.7964, 13.4081
 
-  ✅ Aquavista Floating Spa
-     London, UK
-     London has gained a new floating spa featuring a hot tub and sauna, offering a unique wellness experience on the water. The venue provides a novel setting for relaxation and thermal bathing in the capital.
+  📍 Sus Sauna
+     Norway · OpenStreetMap
+     https://sussauna.no/asset/andalsnes
+     Coords: 62.5521, 7.7046
 
-── CURATED REVIEW LIST (25 of 287 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 2 adult · 99 junk/non-wellness · 22 already in venues.ts · 54 previously seen)
+  📍 Tropics Day Spa
+     UK · OpenStreetMap
+     https://www.tropics-sauna.co.uk
+     Coords: 50.8036, -1.0881
 
-  📍 Turvesauna
-     Finland · OpenStreetMap
-     https://peatcare.com/collections/turvehoidot-hieronnat/products/turvesauna-hieronta
-     Coords: 62.5499, 24.0568
+  📍 Varmr Sauna
+     Norway · OpenStreetMap
+     https://www.varmrsauna.com/
+     Coords: 59.2380, 10.4561
 
-  📍 Virtakiven Sauna
-     Finland · OpenStreetMap
-     https://www.facebook.com/Virtakiven-Sauna-557032184319605/
-     Coords: 60.9431, 26.5970
+  📍 W3 Sauna
+     UK · OpenStreetMap
+     https://www.w3sauna.co.uk/
+     Coords: 53.8191, -3.0484
 
-  📍 Vuorissalo sauna
-     Finland · OpenStreetMap
-     https://www.paijanteenvirkistysalueyhdistys.fi/?id=464
-     Coords: 61.7933, 25.5271
+  📍 Wellnesspa
+     UK · OpenStreetMap
+     https://wellnesspa.co.uk/spa/aston-on-trent
+     Coords: 52.8552, -1.3882
 
-  📍 Wanda's Kitchen & Lounge, Sauna ja kokoustilat
-     Finland · OpenStreetMap
-     https://www.wandas.fi/sauna-ja-kokoustilat/
-     Coords: 60.2629, 24.8514
+  📍 An Lasán Sauna
+     Ireland · OpenStreetMap
+     Coords: 52.9054, -7.3526
 
-  📍 Yhteiskerhotila Talas, sauna
-     Finland · OpenStreetMap
-     https://fisuverkko.fi/yhteiskerhotilat/
-     Coords: 60.1841, 24.9753
+  📍 Badstove Oppsjø vasspark
+     Norway · OpenStreetMap
+     Coords: 60.6336, 8.5761
 
-  📍 Ylläksen huipun sauna
-     Finland · OpenStreetMap
-     https://yllasravintolat.fi/collections/saunapalvelut
-     Coords: 67.5637, 24.2245
+  📍 Blå Bergen Spa
+     Norway · OpenStreetMap
+     Coords: 59.3515, 15.1248
 
-  📍 Zen Spa
-     Finland · OpenStreetMap
-     https://majoitus.vuokatinaateli.fi/zen-spa/
-     Coords: 64.1348, 28.2716
+  📍 Brim fjordsauna
+     Norway · OpenStreetMap
+     Coords: 61.8362, 4.9377
 
-  📍 Zutiņa pirts
-     Latvia · OpenStreetMap
-     http://zutinapirts.lv
-     Coords: 56.5991, 25.3171
+  📍 Cambridge Community Sauna
+     UK · OpenStreetMap
+     Coords: 51.4667, -0.0918
 
-  📍 Ahveniston rantasauna
-     Finland · OpenStreetMap
-     Coords: 60.9941, 24.4176
+  📍 Finlandia Sauna
+     UK · OpenStreetMap
+     Coords: 51.5617, -0.3734
 
-  📍 Alatammin tupa & sauna
-     Finland · OpenStreetMap
-     Coords: 67.2934, 28.6126
+  📍 Floating Fjord Sauna
+     Norway · OpenStreetMap
+     Coords: 60.8616, 7.1188
 
-  📍 Ata melnā pirts
-     Latvia · OpenStreetMap
-     Coords: 56.7018, 26.2181
+  📍 Hot Fox Sauna
+     UK · OpenStreetMap
+     Coords: 55.9920, -2.5887
 
-  📍 Bincāni pirts
-     Latvia · OpenStreetMap
-     Coords: 56.2711, 25.4246
+  📍 Kangasalan Areenan saunatila
+     Norway · OpenStreetMap
+     Coords: 61.4640, 24.0488
 
-  📍 Café Laiturin sauna
-     Finland · OpenStreetMap
-     Coords: 60.4586, 26.9512
+  📍 Kankaan Sauna
+     Norway · OpenStreetMap
+     Coords: 62.2536, 25.7627
 
-  📍 Fifth Avenue sauna
-     Finland · OpenStreetMap
-     Coords: 60.9957, 24.4650
+  📍 Kartanosauna
+     Norway · OpenStreetMap
+     Coords: 60.3329, 25.0619
 
-  📍 Gammalgård sauna
-     Finland · OpenStreetMap
-     Coords: 60.2046, 21.8696
+  📍 Kasnäs sauna
+     Norway · OpenStreetMap
+     Coords: 59.9214, 22.4095
 
-  📍 HelmiSimpukka rahtarisauna
-     Finland · OpenStreetMap
-     Coords: 60.6734, 25.3534
+  📍 Kerojärvi sauna
+     Norway · OpenStreetMap
+     Coords: 66.4551, 29.3695
 
-  📍 Heretty sauna
-     Finland · OpenStreetMap
-     Coords: 61.6743, 25.0011
+  📍 Kiviniemen retkisauna
+     Norway · OpenStreetMap
+     Coords: 62.9899, 29.9185
 
-  📍 Hiedanrannan Sauna
-     Finland · OpenStreetMap
-     Coords: 61.5164, 23.6848
+  📍 Kivjären Rantasauna
+     Norway · OpenStreetMap
+     Coords: 60.7296, 21.8214
 
-  📍 Hotelli OnnenTähti, sauna
-     Finland · OpenStreetMap
-     Coords: 62.6031, 23.7224
+  📍 Kogukonnasaunad
+     Norway · OpenStreetMap
+     Coords: 59.4139, 24.6304
 
-  📍 Höyrysauna
-     Finland · OpenStreetMap
-     Coords: 60.2799, 25.1195
+  📍 Kommatin rantasauna
+     Norway · OpenStreetMap
+     Coords: 67.4339, 26.7017
 
-  📍 Huvilasauna
-     Finland · OpenStreetMap
-     Coords: 60.9167, 26.3863
+  📍 Korsatupa sauna
+     Norway · OpenStreetMap
+     Coords: 68.3738, 24.9255
 
-  📍 Juntinvaara sauna
-     Finland · OpenStreetMap
-     Coords: 64.2167, 30.2639
+  📍 Koskenselän iso sauna
+     Norway · OpenStreetMap
+     Coords: 61.5390, 28.1583
 
-  📍 Kairosmaja Sauna
-     Finland · OpenStreetMap
-     Coords: 67.0416, 27.2234
-
-  📍 Kampuskaarre 1, Sauna 1
-     Finland · OpenStreetMap
-     Coords: 60.9805, 24.4733
-
-  📍 Kampuskaarre 1, Sauna 2
-     Finland · OpenStreetMap
-     Coords: 60.9804, 24.4738
-
-Report generated: 2026-07-26T08:41:55.627Z
+Report generated: 2026-08-02T08:39:03.097Z
