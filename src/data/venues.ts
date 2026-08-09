@@ -10097,6 +10097,41 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"London has gained a new floating spa featuring a hot tub and sauna, offering a unique wellness experience on the water. The venue provides a novel setting for relaxation and thermal bathing in the capital.",
     lat:51.5074, lng:-0.1278,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:800, city:"Galway", country:"Ireland", name:"Galway Sauna at Blackrock", area:"Salthill",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Atlantic Ocean plunge", tags:["Seafront","Wild Swimming","Cold Plunge","Outdoor"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new sauna venue opening at Blackrock, Galway's iconic seafront diving and swimming spot in Salthill. Combines traditional sauna with access to natural Atlantic Ocean cold water plunging.",
+    lat:53.2589, lng:-9.0852,
+  },
+  {
+    id:801, city:"Corfe Castle", country:"UK", name:"Corfe Castle Sauna & Swim", area:"Corfe Castle, Dorset",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Outdoor","Swimming","Wellness","Castle Views","Dorset"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new swimming and sauna wellness experience opening beneath the iconic Corfe Castle in Dorset, combining outdoor bathing with sauna facilities in a historic setting.",
+    lat:50.6395, lng:-2.0566,
+  },
+  {
+    id:802, city:"Corfe Castle", country:"UK", name:"Corfe Castle Wild Swimming and Sauna", area:"Purbeck",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"River plunge", tags:["Wild Swimming","Sauna","Outdoor","Historic Setting","Dorset"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new wild swimming and sauna destination set to open beneath the iconic Corfe Castle in Dorset. The venue combines outdoor sauna facilities with natural wild swimming in a scenic historic landscape.",
+    lat:50.6395, lng:-2.0566,
   }
 ];
 

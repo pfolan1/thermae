@@ -1,131 +1,135 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 2 August 2026
+  Sunday, 9 August 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 84 articles, 73 relevant
-  • OpenStreetMap Overpass   : 578 candidates collected
+  • Google News RSS          : 82 articles, 70 relevant
+  • OpenStreetMap Overpass   : 441 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 0
-  • Review list (curated)    : 25 of 578 raw (0 regional, 17 adult, 245 junk, 79 dup, 111 seen)
-  • Skipped (duplicates/irrelevant): 73
+  • Venues auto-added        : 3
+  • Review list (curated)    : 25 of 441 raw (0 regional, 17 adult, 144 junk, 67 dup, 117 seen)
+  • Skipped (duplicates/irrelevant): 67
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
-── NO NEW VENUES AUTO-ADDED THIS WEEK ──────────────────────────
-  Nothing verified from news sources this week.
+── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
+  ✅ Galway Sauna at Blackrock
+     Galway, Ireland
+     A new sauna venue opening at Blackrock, Galway's iconic seafront diving and swimming spot in Salthill. Combines traditional sauna with access to natural Atlantic Ocean cold water plunging.
 
-── CURATED REVIEW LIST (25 of 578 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 17 adult · 245 junk/non-wellness · 79 already in venues.ts · 111 previously seen)
+  ✅ Corfe Castle Sauna & Swim
+     Corfe Castle, UK
+     A new swimming and sauna wellness experience opening beneath the iconic Corfe Castle in Dorset, combining outdoor bathing with sauna facilities in a historic setting.
 
-  📍 Kallbadhuset / Sauna
-     Norway · OpenStreetMap
-     https://www.ulricehamnskallbad.se/bad/
-     Coords: 57.7964, 13.4081
+  ✅ Corfe Castle Wild Swimming and Sauna
+     Corfe Castle, UK
+     A new wild swimming and sauna destination set to open beneath the iconic Corfe Castle in Dorset. The venue combines outdoor sauna facilities with natural wild swimming in a scenic historic landscape.
 
-  📍 Sus Sauna
-     Norway · OpenStreetMap
-     https://sussauna.no/asset/andalsnes
-     Coords: 62.5521, 7.7046
+── CURATED REVIEW LIST (25 of 441 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 17 adult · 144 junk/non-wellness · 67 already in venues.ts · 117 previously seen)
 
-  📍 Tropics Day Spa
+  📍 Campusbad Saunawelt
+     Denmark · OpenStreetMap
+     Coords: 54.7768, 9.4524
+
+  📍 Düün Bad & Spa
+     Denmark · OpenStreetMap
+     Coords: 54.7582, 8.2850
+
+  📍 Esbjerg Spa & Wellness
+     Denmark · OpenStreetMap
+     Coords: 55.4784, 8.4380
+
+  📍 Færgesaunaen
+     Denmark · OpenStreetMap
+     Coords: 56.7002, 9.1914
+
+  📍 Koskenselän pieni sauna
+     Finland · OpenStreetMap
+     Coords: 61.5391, 28.1583
+
+  📍 Koskenselän puusauna
+     Finland · OpenStreetMap
+     Coords: 61.5383, 28.1595
+
+  📍 Koskentien Sauna
+     Finland · OpenStreetMap
+     Coords: 61.5029, 23.7986
+
+  📍 Kotasauna
+     Finland · OpenStreetMap
+     Coords: 60.9167, 26.3866
+
+  📍 Kuusjoen sauna
+     Finland · OpenStreetMap
+     Coords: 60.5856, 23.2470
+
+  📍 La Banchina Sauna
+     Denmark · OpenStreetMap
+     Coords: 55.6894, 12.6108
+
+  📍 Lakkala savusauna
+     Finland · OpenStreetMap
+     Coords: 63.0130, 29.9255
+
+  📍 Lancaster Spa
      UK · OpenStreetMap
-     https://www.tropics-sauna.co.uk
-     Coords: 50.8036, -1.0881
+     Coords: 51.5344, -0.4714
 
-  📍 Varmr Sauna
-     Norway · OpenStreetMap
-     https://www.varmrsauna.com/
-     Coords: 59.2380, 10.4561
+  📍 Leirintäalueen sauna
+     Finland · OpenStreetMap
+     Coords: 60.4408, 26.2375
 
-  📍 W3 Sauna
+  📍 London City Island Sauna
      UK · OpenStreetMap
-     https://www.w3sauna.co.uk/
-     Coords: 53.8191, -3.0484
+     Coords: 51.5121, 0.0055
 
-  📍 Wellnesspa
+  📍 Lortikka sauna
+     Finland · OpenStreetMap
+     Coords: 61.7021, 24.9917
+
+  📍 Lyngen Tourist Sauna
+     Finland · OpenStreetMap
+     Coords: 69.3223, 20.0103
+
+  📍 Mäkelänkadun Sauna
+     Finland · OpenStreetMap
+     Coords: 60.2093, 24.9469
+
+  📍 Manndalen Sjøbuer sauna
+     Finland · OpenStreetMap
+     Coords: 69.5441, 20.5445
+
+  📍 Manticore Spa
      UK · OpenStreetMap
-     https://wellnesspa.co.uk/spa/aston-on-trent
-     Coords: 52.8552, -1.3882
+     Coords: 50.3703, -4.1470
 
-  📍 An Lasán Sauna
+  📍 Marine Sauna
+     Finland · OpenStreetMap
+     Coords: 61.1315, 21.4564
+
+  📍 Mark's Sauna
      Ireland · OpenStreetMap
-     Coords: 52.9054, -7.3526
+     Coords: 52.1421, -9.9816
 
-  📍 Badstove Oppsjø vasspark
-     Norway · OpenStreetMap
-     Coords: 60.6336, 8.5761
+  📍 Merihelmen sauna
+     Finland · OpenStreetMap
+     Coords: 61.3424, 21.5659
 
-  📍 Blå Bergen Spa
-     Norway · OpenStreetMap
-     Coords: 59.3515, 15.1248
+  📍 Mini SPA
+     Lithuania · OpenStreetMap
+     Coords: 55.8565, 23.1373
 
-  📍 Brim fjordsauna
-     Norway · OpenStreetMap
-     Coords: 61.8362, 4.9377
+  📍 Murikan rantasauna
+     Finland · OpenStreetMap
+     Coords: 61.7012, 23.7968
 
-  📍 Cambridge Community Sauna
-     UK · OpenStreetMap
-     Coords: 51.4667, -0.0918
+  📍 Mustikkavuoren sauna
+     Finland · OpenStreetMap
+     Coords: 62.5538, 24.0478
 
-  📍 Finlandia Sauna
-     UK · OpenStreetMap
-     Coords: 51.5617, -0.3734
-
-  📍 Floating Fjord Sauna
-     Norway · OpenStreetMap
-     Coords: 60.8616, 7.1188
-
-  📍 Hot Fox Sauna
-     UK · OpenStreetMap
-     Coords: 55.9920, -2.5887
-
-  📍 Kangasalan Areenan saunatila
-     Norway · OpenStreetMap
-     Coords: 61.4640, 24.0488
-
-  📍 Kankaan Sauna
-     Norway · OpenStreetMap
-     Coords: 62.2536, 25.7627
-
-  📍 Kartanosauna
-     Norway · OpenStreetMap
-     Coords: 60.3329, 25.0619
-
-  📍 Kasnäs sauna
-     Norway · OpenStreetMap
-     Coords: 59.9214, 22.4095
-
-  📍 Kerojärvi sauna
-     Norway · OpenStreetMap
-     Coords: 66.4551, 29.3695
-
-  📍 Kiviniemen retkisauna
-     Norway · OpenStreetMap
-     Coords: 62.9899, 29.9185
-
-  📍 Kivjären Rantasauna
-     Norway · OpenStreetMap
-     Coords: 60.7296, 21.8214
-
-  📍 Kogukonnasaunad
-     Norway · OpenStreetMap
-     Coords: 59.4139, 24.6304
-
-  📍 Kommatin rantasauna
-     Norway · OpenStreetMap
-     Coords: 67.4339, 26.7017
-
-  📍 Korsatupa sauna
-     Norway · OpenStreetMap
-     Coords: 68.3738, 24.9255
-
-  📍 Koskenselän iso sauna
-     Norway · OpenStreetMap
-     Coords: 61.5390, 28.1583
-
-Report generated: 2026-08-02T08:39:03.097Z
+Report generated: 2026-08-09T07:13:36.466Z
