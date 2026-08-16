@@ -10132,6 +10132,41 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new wild swimming and sauna destination set to open beneath the iconic Corfe Castle in Dorset. The venue combines outdoor sauna facilities with natural wild swimming in a scenic historic landscape.",
     lat:50.6395, lng:-2.0566,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:803, city:"Galway", country:"Ireland", name:"Galway Sauna at Blackrock Diving Board", area:"Salthill",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Atlantic Ocean plunge", tags:["Waterfront","Wild Swimming","Outdoor","Iconic Location"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new sauna venue opening at the iconic Blackrock diving board swim spot in Salthill, Galway, combining traditional sauna with Atlantic ocean swimming. The venue has announced its official opening date at one of Galway's most beloved coastal landmarks.",
+    lat:53.2589, lng:-9.0849,
+  },
+  {
+    id:804, city:"London", country:"UK", name:"Southgate Leisure Centre Sauna", area:"Southgate",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Leisure Centre","Public Sauna","North London"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Southgate Underground Station (Piccadilly line)",
+    parking:"Check website for parking",
+    desc:"Southgate Leisure Centre in the London Borough of Enfield has opened new sauna facilities, giving local residents access to sweating sessions at their neighbourhood leisure centre.",
+    lat:51.6321, lng:-0.1279,
+  },
+  {
+    id:805, city:"Eastbourne", country:"UK", name:"Eastbourne Gym Sauna", area:"Eastbourne",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Gym Sauna","New Opening"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new sauna is set to open at a gym in Eastbourne, East Sussex. Further details on the venue and facilities are available via SussexWorld.",
+    lat:50.7676, lng:0.29,
   }
 ];
 

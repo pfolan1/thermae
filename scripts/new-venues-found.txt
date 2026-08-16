@@ -1,135 +1,135 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 9 August 2026
+  Sunday, 16 August 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 82 articles, 70 relevant
-  • OpenStreetMap Overpass   : 441 candidates collected
+  • Google News RSS          : 100 articles, 84 relevant
+  • OpenStreetMap Overpass   : 291 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
   • Venues auto-added        : 3
-  • Review list (curated)    : 25 of 441 raw (0 regional, 17 adult, 144 junk, 67 dup, 117 seen)
-  • Skipped (duplicates/irrelevant): 67
+  • Review list (curated)    : 25 of 291 raw (0 regional, 4 adult, 93 junk, 38 dup, 98 seen)
+  • Skipped (duplicates/irrelevant): 81
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Galway Sauna at Blackrock
+  ✅ Galway Sauna at Blackrock Diving Board
      Galway, Ireland
-     A new sauna venue opening at Blackrock, Galway's iconic seafront diving and swimming spot in Salthill. Combines traditional sauna with access to natural Atlantic Ocean cold water plunging.
+     A new sauna venue opening at the iconic Blackrock diving board swim spot in Salthill, Galway, combining traditional sauna with Atlantic ocean swimming. The venue has announced its official opening date at one of Galway's most beloved coastal landmarks.
 
-  ✅ Corfe Castle Sauna & Swim
-     Corfe Castle, UK
-     A new swimming and sauna wellness experience opening beneath the iconic Corfe Castle in Dorset, combining outdoor bathing with sauna facilities in a historic setting.
+  ✅ Southgate Leisure Centre Sauna
+     London, UK
+     Southgate Leisure Centre in the London Borough of Enfield has opened new sauna facilities, giving local residents access to sweating sessions at their neighbourhood leisure centre.
 
-  ✅ Corfe Castle Wild Swimming and Sauna
-     Corfe Castle, UK
-     A new wild swimming and sauna destination set to open beneath the iconic Corfe Castle in Dorset. The venue combines outdoor sauna facilities with natural wild swimming in a scenic historic landscape.
+  ✅ Eastbourne Gym Sauna
+     Eastbourne, UK
+     A new sauna is set to open at a gym in Eastbourne, East Sussex. Further details on the venue and facilities are available via SussexWorld.
 
-── CURATED REVIEW LIST (25 of 441 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 17 adult · 144 junk/non-wellness · 67 already in venues.ts · 117 previously seen)
+── CURATED REVIEW LIST (25 of 291 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 4 adult · 93 junk/non-wellness · 38 already in venues.ts · 98 previously seen)
 
-  📍 Campusbad Saunawelt
-     Denmark · OpenStreetMap
-     Coords: 54.7768, 9.4524
+  📍 Bryggjusauna
+     Iceland · OpenStreetMap
+     Coords: 66.0706, -23.1250
 
-  📍 Düün Bad & Spa
-     Denmark · OpenStreetMap
-     Coords: 54.7582, 8.2850
-
-  📍 Esbjerg Spa & Wellness
-     Denmark · OpenStreetMap
-     Coords: 55.4784, 8.4380
-
-  📍 Færgesaunaen
-     Denmark · OpenStreetMap
-     Coords: 56.7002, 9.1914
-
-  📍 Koskenselän pieni sauna
+  📍 Myyrmäen urheilutalon saunat
      Finland · OpenStreetMap
-     Coords: 61.5391, 28.1583
+     Coords: 60.2651, 24.8517
 
-  📍 Koskenselän puusauna
+  📍 Niskalammen rantasauna
      Finland · OpenStreetMap
-     Coords: 61.5383, 28.1595
+     Coords: 61.5754, 28.1459
 
-  📍 Koskentien Sauna
+  📍 Noitajärven rantasauna
      Finland · OpenStreetMap
-     Coords: 61.5029, 23.7986
+     Coords: 61.0334, 21.6012
 
-  📍 Kotasauna
+  📍 Oittaan sauna
      Finland · OpenStreetMap
-     Coords: 60.9167, 26.3866
+     Coords: 60.2417, 24.6581
 
-  📍 Kuusjoen sauna
+  📍 Olutravintola Malmgård saunatila
      Finland · OpenStreetMap
-     Coords: 60.5856, 23.2470
+     Coords: 60.2473, 24.8618
 
-  📍 La Banchina Sauna
-     Denmark · OpenStreetMap
-     Coords: 55.6894, 12.6108
-
-  📍 Lakkala savusauna
+  📍 Omenakellari tilaussauna
      Finland · OpenStreetMap
-     Coords: 63.0130, 29.9255
+     Coords: 61.1162, 24.3266
 
-  📍 Lancaster Spa
-     UK · OpenStreetMap
-     Coords: 51.5344, -0.4714
-
-  📍 Leirintäalueen sauna
+  📍 Ossinsauna
      Finland · OpenStreetMap
-     Coords: 60.4408, 26.2375
+     Coords: 60.1885, 24.8352
 
-  📍 London City Island Sauna
-     UK · OpenStreetMap
-     Coords: 51.5121, 0.0055
-
-  📍 Lortikka sauna
+  📍 Oulunkylän liikuntapuisto, saunat
      Finland · OpenStreetMap
-     Coords: 61.7021, 24.9917
+     Coords: 60.2347, 24.9596
 
-  📍 Lyngen Tourist Sauna
+  📍 Pikisaaren sauna
      Finland · OpenStreetMap
-     Coords: 69.3223, 20.0103
+     Coords: 60.5769, 21.8159
 
-  📍 Mäkelänkadun Sauna
+  📍 Puistovartian rantasauna
      Finland · OpenStreetMap
-     Coords: 60.2093, 24.9469
+     Coords: 66.3692, 29.3107
 
-  📍 Manndalen Sjøbuer sauna
+  📍 Raatejärven sauna
      Finland · OpenStreetMap
-     Coords: 69.5441, 20.5445
+     Coords: 63.5050, 25.0241
 
-  📍 Manticore Spa
-     UK · OpenStreetMap
-     Coords: 50.3703, -4.1470
-
-  📍 Marine Sauna
+  📍 Räikän sauna
      Finland · OpenStreetMap
-     Coords: 61.1315, 21.4564
+     Coords: 61.5573, 23.6001
 
-  📍 Mark's Sauna
+  📍 Rantasauna
+     Finland · OpenStreetMap
+     Coords: 66.2689, 29.4050
+
+  📍 Rantasauna Elias
+     Finland · OpenStreetMap
+     Coords: 64.2239, 27.7529
+
+  📍 Reidun kyläsauna
+     Finland · OpenStreetMap
+     Coords: 61.0284, 21.3489
+
+  📍 Reipin sauna
+     Finland · OpenStreetMap
+     Coords: 61.4478, 23.5512
+
+  📍 Saarijärven sauna
+     Finland · OpenStreetMap
+     Coords: 63.5304, 25.0624
+
+  📍 Sähkösauna
+     Finland · OpenStreetMap
+     Coords: 64.3810, 29.7805
+
+  📍 Sallynoggin Saunas
      Ireland · OpenStreetMap
-     Coords: 52.1421, -9.9816
+     Coords: 53.2766, -6.1393
 
-  📍 Merihelmen sauna
+  📍 Sandycove Sauna By The Sea
+     Ireland · OpenStreetMap
+     Coords: 53.2885, -6.1141
+
+  📍 Sapokan Sauna
      Finland · OpenStreetMap
-     Coords: 61.3424, 21.5659
+     Coords: 60.4619, 26.9498
 
-  📍 Mini SPA
-     Lithuania · OpenStreetMap
-     Coords: 55.8565, 23.1373
-
-  📍 Murikan rantasauna
+  📍 Särkilammen sauna
      Finland · OpenStreetMap
-     Coords: 61.7012, 23.7968
+     Coords: 61.2286, 26.7921
 
-  📍 Mustikkavuoren sauna
+  📍 Satamosaaren sauna
      Finland · OpenStreetMap
-     Coords: 62.5538, 24.0478
+     Coords: 61.1947, 28.5567
 
-Report generated: 2026-08-09T07:13:36.466Z
+  📍 Sauna (Talviuinti- Smark)
+     Finland · OpenStreetMap
+     Coords: 60.1791, 24.9123
+
+Report generated: 2026-08-16T06:57:24.970Z
