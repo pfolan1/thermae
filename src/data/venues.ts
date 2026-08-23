@@ -10167,6 +10167,41 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new sauna is set to open at a gym in Eastbourne, East Sussex. Further details on the venue and facilities are available via SussexWorld.",
     lat:50.7676, lng:0.29,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:806, city:"Cloughduv", country:"Ireland", name:"Cloughduv Sauna & Ice Bath", area:"Cloughduv",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Ice bath plunge", tags:["Sauna","Ice Bath","Rural","Cork","Wellness"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A newly opened sauna and ice bath venue located in Cloughduv, County Cork, Ireland. The spot offers a combined sauna and cold plunge experience in a rural Cork setting.",
+    lat:51.8231, lng:-8.8012,
+  },
+  {
+    id:807, city:"Ashford", country:"UK", name:"Stour Leisure Spa", area:"Kent",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Sauna","Cold Plunge","Leisure Centre","Spa","Kent"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A £480k spa facility featuring saunas and cold plunge pools set to open within a Kent leisure centre. The significant investment signals a major wellness upgrade to an existing public leisure facility.",
+    lat:51.1465, lng:0.8762,
+  },
+  {
+    id:808, city:"Gravesend", country:"UK", name:"Cascades Leisure Centre Spa", area:"Kent",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Sauna","Cold Plunge","Leisure Centre","New Opening","Kent"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A £480,000 spa facility featuring saunas and cold plunge pools set to open at a Kent leisure centre. The new wellness offering represents a major investment in the existing leisure centre site.",
+    lat:51.4414, lng:0.3684,
   }
 ];
 
