@@ -10202,6 +10202,42 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A £480,000 spa facility featuring saunas and cold plunge pools set to open at a Kent leisure centre. The new wellness offering represents a major investment in the existing leisure centre site.",
     lat:51.4414, lng:0.3684,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:809, city:"Grimsby", country:"UK", name:"Grimsby Gym (former B&M site)", area:"Grimsby town centre",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Infrared Sauna","Reformer Pilates","Gym","New Opening"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new gym has opened at a former B&M retail site in Grimsby, offering Reformer Pilates classes and an infrared sauna alongside gym facilities.",
+    lat:53.5675, lng:-0.0797,
+  },
+  {
+    id:810, city:"Auchterarder", country:"UK", name:"Gleneagles Wild Sauna", area:"Gleneagles Estate",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"River plunge", tags:["Wild Sauna","Hotel","Luxury","Outdoor","Nature"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A newly opened wild sauna experience at Gleneagles, Scotland's acclaimed luxury hotel in Perthshire. The serene outdoor sauna offering is described as restorative and set within the estate's natural surroundings.",
+    lat:56.2789, lng:-3.7293,
+    bookingUrl:"https://www.gleneagles.com"
+  },
+  {
+    id:811, city:"Reykjavik", country:"Iceland", name:"Reykjaböð", area:"35 minutes from Reykjavik",
+    type:"lagoon", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Geothermal lagoon", tags:["Geothermal","Lagoon","Iceland","New Opening","Wellness"], emoji:"🌊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Approximately 35 minutes from Reykjavik",
+    parking:"Check website for parking",
+    desc:"Reykjaböð is a geothermal lagoon that opened on 1 September, located approximately 35 minutes from Reykjavik, Iceland. It offers a natural geothermal bathing experience in the Icelandic landscape.",
+    lat:64, lng:-21.5,
   }
 ];
 
