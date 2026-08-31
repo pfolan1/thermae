@@ -21,10 +21,12 @@ import nordicSaunaCultureFinland from './nordic-sauna-culture-finland';
 import bestSaunasManchesterLiverpool from './best-saunas-manchester-liverpool';
 import contrastTherapyBenefitsResearch2026 from './contrast-therapy-benefits-research-2026';
 import bestSaunasCornwallSouthWestEngland from './best-saunas-cornwall-south-west-england';
+import yorkshireSaunaGuideLeedsSheffieldYork from './yorkshire-sauna-guide-leeds-sheffield-york';
 
 export type { BlogPost };
 
 export const ALL_POSTS: BlogPost[] = [
+  yorkshireSaunaGuideLeedsSheffieldYork,
   bestSaunasCornwallSouthWestEngland,
   contrastTherapyBenefitsResearch2026,
   bestSaunasManchesterLiverpool,
@@ -53,4 +55,4 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return ALL_POSTS.find(p => p.slug === slug);
 }
 
-export { bestSaunasCornwallSouthWestEngland, contrastTherapyBenefitsResearch2026, bestSaunasManchesterLiverpool, nordicSaunaCultureFinland, seaweedBathsIrelandTraditionScience, bestSaunasBeginnersLondon, helsinkiSaunaGuide2026, wildAtlanticWayWellnessSaunas, bestOutdoorSaunasScotland, newSaunaOpeningsUkIrelandSummer2026, coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
+export { yorkshireSaunaGuideLeedsSheffieldYork, bestSaunasCornwallSouthWestEngland, contrastTherapyBenefitsResearch2026, bestSaunasManchesterLiverpool, nordicSaunaCultureFinland, seaweedBathsIrelandTraditionScience, bestSaunasBeginnersLondon, helsinkiSaunaGuide2026, wildAtlanticWayWellnessSaunas, bestOutdoorSaunasScotland, newSaunaOpeningsUkIrelandSummer2026, coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
