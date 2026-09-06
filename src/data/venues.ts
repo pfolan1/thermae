@@ -10238,6 +10238,52 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"Reykjaböð is a geothermal lagoon that opened on 1 September, located approximately 35 minutes from Reykjavik, Iceland. It offers a natural geothermal bathing experience in the Icelandic landscape.",
     lat:64, lng:-21.5,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:812, city:"Grimsby", country:"UK", name:"Flex Fitness Grimsby", area:"Grimsby town centre",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Infrared Sauna","Reformer Pilates","Gym","New Opening"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new gym has opened at a former B&M site in Grimsby, offering Reformer Pilates classes and an infrared sauna alongside fitness facilities. The venue represents a new wellness-focused gym concept for the area.",
+    lat:53.5653, lng:-0.0796,
+  },
+  {
+    id:813, city:"London", country:"UK", name:"Sauna at Sewardstone Road Castle", area:"East London",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Historic Building","Grade II Listed","East London","New Opening"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new sauna venue set to open inside a Grade II listed building described as a 'castle' in East London. The venue brings wellness facilities to a historic listed structure in the East London area.",
+    lat:51.5765, lng:-0.0167,
+  },
+  {
+    id:814, city:"Bristol", country:"UK", name:"Sauna at HMP Bristol (Lawford's Gate)", area:"Lawford's Gate",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Historic Building","Former Prison","Urban Sauna"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new sauna venue set to open inside a former prison in Bristol, offering a unique wellness experience within a historic setting. Full details on opening dates and pricing to be confirmed.",
+    lat:51.4545, lng:-2.5879,
+  },
+  {
+    id:815, city:"London", country:"UK", name:"Sauna at Swanlea School Castle", area:"Whitechapel, East London",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Historic Building","Grade II Listed","East London","New Opening"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new sauna venue set to open within a Grade II listed 'castle' building in East London. The historic architecture provides a unique setting for this emerging wellness space.",
+    lat:51.5194, lng:-0.0627,
   }
 ];
 
