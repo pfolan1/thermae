@@ -1,140 +1,131 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 6 September 2026
+  Sunday, 13 September 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 88 articles, 74 relevant
-  • OpenStreetMap Overpass   : 858 candidates collected
+  • Google News RSS          : 77 articles, 74 relevant
+  • OpenStreetMap Overpass   : 704 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 4
-  • Review list (curated)    : 25 of 858 raw (0 regional, 19 adult, 343 junk, 101 dup, 356 seen)
-  • Skipped (duplicates/irrelevant): 70
+  • Venues auto-added        : 2
+  • Review list (curated)    : 25 of 704 raw (1 regional, 15 adult, 331 junk, 48 dup, 265 seen)
+  • Skipped (duplicates/irrelevant): 72
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Flex Fitness Grimsby
-     Grimsby, UK
-     A new gym has opened at a former B&M site in Grimsby, offering Reformer Pilates classes and an infrared sauna alongside fitness facilities. The venue represents a new wellness-focused gym concept for the area.
-
-  ✅ Sauna at Sewardstone Road Castle
+  ✅ Castle Sauna at Hackney Town Hall
      London, UK
-     A new sauna venue set to open inside a Grade II listed building described as a 'castle' in East London. The venue brings wellness facilities to a historic listed structure in the East London area.
+     A new sauna experience is opening within a castle-like historic building in Hackney, East London. The venue brings wellness and bathing culture to a distinctive architectural setting in the neighbourhood.
 
-  ✅ Sauna at HMP Bristol (Lawford's Gate)
-     Bristol, UK
-     A new sauna venue set to open inside a former prison in Bristol, offering a unique wellness experience within a historic setting. Full details on opening dates and pricing to be confirmed.
-
-  ✅ Sauna at Swanlea School Castle
+  ✅ Sauna at Regal Lane (Castle Cinema)
      London, UK
-     A new sauna venue set to open within a Grade II listed 'castle' building in East London. The historic architecture provides a unique setting for this emerging wellness space.
+     A new sauna venue set to open inside a Grade II listed building known locally as 'the castle' in East London. The historic structure is being repurposed as a wellness destination.
 
-── CURATED REVIEW LIST (25 of 858 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 19 adult · 343 junk/non-wellness · 101 already in venues.ts · 356 previously seen)
+── CURATED REVIEW LIST (25 of 704 candidates) ─────────────────
+  (Filtered: 1 Russian/out-of-region · 15 adult · 331 junk/non-wellness · 48 already in venues.ts · 265 previously seen)
 
-  📍 Eldmølla Sauna
-     Norway · OpenStreetMap
-     https://xn--eldmlla-t1a.no/
-     Coords: 61.1581, 8.6079
+  📍 Jutrzenka Medical SPA
+     Poland · OpenStreetMap
+     Coords: 52.6570, 18.9892
 
-  📍 Lårdal Sauna
-     Norway · OpenStreetMap
-     Coords: 59.4234, 8.1862
+  📍 Kelosauna
+     Poland · OpenStreetMap
+     Coords: 51.8555, 14.1082
 
-  📍 Lillesotra Sauna
-     Norway · OpenStreetMap
-     Coords: 60.3951, 5.1166
+  📍 Městská sauna
+     Poland · OpenStreetMap
+     Coords: 50.1670, 14.7568
 
-  📍 Sæbø fjordsauna
-     Norway · OpenStreetMap
-     Coords: 62.2093, 6.4775
+  📍 Okresowa Sauna
+     Poland · OpenStreetMap
+     Coords: 52.2954, 17.8935
 
-  📍 Sauna OSiR
-     Lithuania · OpenStreetMap
-     Coords: 54.0793, 23.0842
+  📍 Pirts Māra
+     Poland · OpenStreetMap
+     Coords: 54.4327, 18.2943
 
-  📍 Sawna / Sauna
+  📍 RELAX sauna
+     Poland · OpenStreetMap
+     Coords: 49.2181, 16.6140
+
+  📍 Sauna a vírivka Koliba
+     Poland · OpenStreetMap
+     Coords: 49.0548, 20.2053
+
+  📍 Sauna Aquapark Sopot
+     Poland · OpenStreetMap
+     Coords: 54.4600, 18.5575
+
+  📍 Sauna Central
+     Poland · OpenStreetMap
+     Coords: 50.0791, 14.4269
+
+  📍 Sauna Dolní Benešov
+     Poland · OpenStreetMap
+     Coords: 49.9227, 18.0966
+
+  📍 Sauna fińska
+     Poland · OpenStreetMap
+     Coords: 51.9453, 15.5210
+
+  📍 Sauna Komorní Lhotka
+     Poland · OpenStreetMap
+     Coords: 49.6513, 18.5165
+
+  📍 Sauna na kopečku
+     Poland · OpenStreetMap
+     Coords: 49.1305, 17.7448
+
+  📍 Sauna Plechovka
+     Poland · OpenStreetMap
+     Coords: 50.0636, 14.5896
+
+  📍 Sauna v Liberci
+     Poland · OpenStreetMap
+     Coords: 50.7675, 15.0464
+
+  📍 Sauna Vodní svět Kolín
+     Poland · OpenStreetMap
+     Coords: 50.0218, 15.1946
+
+  📍 Sauna w Glamuri
+     Poland · OpenStreetMap
+     Coords: 53.1548, 18.1489
+
+  📍 Sauna Wezuwiusza
+     Poland · OpenStreetMap
+     Coords: 50.3085, 19.0705
+
+  📍 Saunadorf
+     Poland · OpenStreetMap
+     Coords: 51.5127, 14.7197
+
+  📍 Saunarium
+     Poland · OpenStreetMap
+     Coords: 51.0429, 16.9811
+
+  📍 Saunaverein Waltersdorf
+     Poland · OpenStreetMap
+     Coords: 50.8657, 14.6492
+
+  📍 Sea Scrub Sauna
      UK · OpenStreetMap
-     Coords: 52.0353, -4.4714
+     Coords: 51.0771, 1.1865
 
-  📍 Seilorin sauna
-     Norway · OpenStreetMap
-     Coords: 62.5914, 29.7388
+  📍 SHU SPA
+     Poland · OpenStreetMap
+     Coords: 52.4842, 20.9684
 
-  📍 Sinnenas Spa
-     Norway · OpenStreetMap
-     Coords: 57.0652, 12.5587
+  📍 SpolCentrum - Sauna
+     Poland · OpenStreetMap
+     Coords: 49.0579, 20.1984
 
-  📍 Skanda Sabai-Sabai Spa
-     Norway · OpenStreetMap
-     Coords: 59.3363, 18.0843
+  📍 Steam cave
+     Iceland · OpenStreetMap
+     Coords: 63.8802, -22.4480
 
-  📍 Solun sauna
-     Norway · OpenStreetMap
-     Coords: 61.5038, 23.8060
-
-  📍 Spa & Treatments Centre
-     UK · OpenStreetMap
-     Coords: 50.6147, -3.3673
-
-  📍 Spa Huset
-     Norway · OpenStreetMap
-     Coords: 59.2799, 15.2174
-
-  📍 Suomun Tupa Pihasauna
-     Norway · OpenStreetMap
-     Coords: 63.1313, 30.7285
-
-  📍 Svarthølen sauna
-     Norway · OpenStreetMap
-     Coords: 62.6041, 9.5522
-
-  📍 Swiss Cottage Sauna
-     UK · OpenStreetMap
-     Coords: 51.5451, -0.1763
-
-  📍 Tahvontupa sauna
-     Norway · OpenStreetMap
-     Coords: 68.1258, 28.5635
-
-  📍 Talosauna 3
-     Norway · OpenStreetMap
-     Coords: 60.4606, 22.2874
-
-  📍 Tenhonperän rantasauna
-     Norway · OpenStreetMap
-     Coords: 61.0929, 21.4661
-
-  📍 Tervajärven sauna
-     Norway · OpenStreetMap
-     Coords: 61.3634, 23.8940
-
-  📍 The Club & Spa
-     UK · OpenStreetMap
-     Coords: 52.4751, -1.9071
-
-  📍 The Hot Box Sauna
-     Ireland · OpenStreetMap
-     Coords: 53.5800, -6.7041
-
-  📍 The Old Hammam
-     UK · OpenStreetMap
-     Coords: 51.6257, -0.0635
-
-  📍 The Spa at Roe Park
-     Ireland · OpenStreetMap
-     Coords: 55.0386, -6.9554
-
-  📍 The Well Spa Retreat
-     UK · OpenStreetMap
-     Coords: 51.7863, -4.8049
-
-  📍 Tilaussauna Rantahovi
-     Norway · OpenStreetMap
-     Coords: 64.1432, 28.2349
-
-Report generated: 2026-09-06T10:52:20.353Z
+Report generated: 2026-09-13T11:41:51.942Z

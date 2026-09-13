@@ -10284,6 +10284,30 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new sauna venue set to open within a Grade II listed 'castle' building in East London. The historic architecture provides a unique setting for this emerging wellness space.",
     lat:51.5194, lng:-0.0627,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:816, city:"London", country:"UK", name:"Castle Sauna at Hackney Town Hall", area:"Hackney",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Urban Sauna","Historic Venue","East London","Bathing Culture"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Hackney Central or Hackney Downs stations nearby",
+    parking:"Check website for parking",
+    desc:"A new sauna experience is opening within a castle-like historic building in Hackney, East London. The venue brings wellness and bathing culture to a distinctive architectural setting in the neighbourhood.",
+    lat:51.5454, lng:-0.0553,
+  },
+  {
+    id:817, city:"London", country:"UK", name:"Sauna at Regal Lane (Castle Cinema)", area:"Homerton, East London",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Heritage Building","Grade II Listed","East London","New Opening"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Homerton Overground station nearby",
+    parking:"Check website for parking",
+    desc:"A new sauna venue set to open inside a Grade II listed building known locally as 'the castle' in East London. The historic structure is being repurposed as a wellness destination.",
+    lat:51.5449, lng:-0.0553,
   }
 ];
 
