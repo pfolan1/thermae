@@ -23,10 +23,12 @@ import contrastTherapyBenefitsResearch2026 from './contrast-therapy-benefits-res
 import bestSaunasCornwallSouthWestEngland from './best-saunas-cornwall-south-west-england';
 import yorkshireSaunaGuideLeedsSheffieldYork from './yorkshire-sauna-guide-leeds-sheffield-york';
 import birminghamMidlandsSaunaGuide from './birmingham-midlands-sauna-guide';
+import bestColdPlungeVenuesIreland2026 from './best-cold-plunge-venues-ireland-2026';
 
 export type { BlogPost };
 
 export const ALL_POSTS: BlogPost[] = [
+  bestColdPlungeVenuesIreland2026,
   birminghamMidlandsSaunaGuide,
   yorkshireSaunaGuideLeedsSheffieldYork,
   bestSaunasCornwallSouthWestEngland,
@@ -57,4 +59,4 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return ALL_POSTS.find(p => p.slug === slug);
 }
 
-export { birminghamMidlandsSaunaGuide, yorkshireSaunaGuideLeedsSheffieldYork, bestSaunasCornwallSouthWestEngland, contrastTherapyBenefitsResearch2026, bestSaunasManchesterLiverpool, nordicSaunaCultureFinland, seaweedBathsIrelandTraditionScience, bestSaunasBeginnersLondon, helsinkiSaunaGuide2026, wildAtlanticWayWellnessSaunas, bestOutdoorSaunasScotland, newSaunaOpeningsUkIrelandSummer2026, coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
+export { bestColdPlungeVenuesIreland2026, birminghamMidlandsSaunaGuide, yorkshireSaunaGuideLeedsSheffieldYork, bestSaunasCornwallSouthWestEngland, contrastTherapyBenefitsResearch2026, bestSaunasManchesterLiverpool, nordicSaunaCultureFinland, seaweedBathsIrelandTraditionScience, bestSaunasBeginnersLondon, helsinkiSaunaGuide2026, wildAtlanticWayWellnessSaunas, bestOutdoorSaunasScotland, newSaunaOpeningsUkIrelandSummer2026, coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
