@@ -1,131 +1,91 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 13 September 2026
+  Sunday, 20 September 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 77 articles, 74 relevant
-  • OpenStreetMap Overpass   : 704 candidates collected
+  • Google News RSS          : 81 articles, 75 relevant
+  • OpenStreetMap Overpass   : 577 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
   • Venues auto-added        : 2
-  • Review list (curated)    : 25 of 704 raw (1 regional, 15 adult, 331 junk, 48 dup, 265 seen)
-  • Skipped (duplicates/irrelevant): 72
+  • Review list (curated)    : 15 of 577 raw (0 regional, 15 adult, 256 junk, 49 dup, 242 seen)
+  • Skipped (duplicates/irrelevant): 73
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Castle Sauna at Hackney Town Hall
-     London, UK
-     A new sauna experience is opening within a castle-like historic building in Hackney, East London. The venue brings wellness and bathing culture to a distinctive architectural setting in the neighbourhood.
+  ✅ Sauna at Yay Cork (venue name unclear)
+     Cork, Ireland
+     A newly featured sauna experience in Cork, described as unlike anything visitors have tried before. Full details available via Yay Cork.
 
-  ✅ Sauna at Regal Lane (Castle Cinema)
-     London, UK
-     A new sauna venue set to open inside a Grade II listed building known locally as 'the castle' in East London. The historic structure is being repurposed as a wellness destination.
+  ✅ Reykjaböð Hot Springs
+     Reykjavik, Iceland
+     Reykjaböð Hot Springs in Iceland has revealed a new thermal journey experience, offering guests a geothermal wellness journey. The venue represents a new addition to Iceland's growing thermal bathing scene.
 
-── CURATED REVIEW LIST (25 of 704 candidates) ─────────────────
-  (Filtered: 1 Russian/out-of-region · 15 adult · 331 junk/non-wellness · 48 already in venues.ts · 265 previously seen)
+── CURATED REVIEW LIST (15 of 577 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 15 adult · 256 junk/non-wellness · 49 already in venues.ts · 242 previously seen)
 
-  📍 Jutrzenka Medical SPA
-     Poland · OpenStreetMap
-     Coords: 52.6570, 18.9892
+  📍 Taureņu pirts
+     Latvia · OpenStreetMap
+     Coords: 56.9142, 23.8767
 
-  📍 Kelosauna
-     Poland · OpenStreetMap
-     Coords: 51.8555, 14.1082
+  📍 Toijalanrannan rantasauna
+     Norway · OpenStreetMap
+     Coords: 61.9352, 25.1444
 
-  📍 Městská sauna
-     Poland · OpenStreetMap
-     Coords: 50.1670, 14.7568
+  📍 Tornisauna
+     Norway · OpenStreetMap
+     Coords: 62.7898, 22.8244
 
-  📍 Okresowa Sauna
-     Poland · OpenStreetMap
-     Coords: 52.2954, 17.8935
+  📍 Tynnyrisauna
+     Norway · OpenStreetMap
+     Coords: 59.9199, 22.4056
 
-  📍 Pirts Māra
-     Poland · OpenStreetMap
-     Coords: 54.4327, 18.2943
+  📍 TYYn sauna
+     Norway · OpenStreetMap
+     Coords: 60.4545, 22.2872
 
-  📍 RELAX sauna
-     Poland · OpenStreetMap
-     Coords: 49.2181, 16.6140
+  📍 Valtuustotalon edustussauna
+     Norway · OpenStreetMap
+     Coords: 60.2071, 24.6561
 
-  📍 Sauna a vírivka Koliba
-     Poland · OpenStreetMap
-     Coords: 49.0548, 20.2053
+  📍 Varaussauna (Solvalla)
+     Norway · OpenStreetMap
+     Coords: 60.2926, 24.5561
 
-  📍 Sauna Aquapark Sopot
-     Poland · OpenStreetMap
-     Coords: 54.4600, 18.5575
+  📍 Varaustuvan sauna
+     Norway · OpenStreetMap
+     Coords: 65.6797, 27.5428
 
-  📍 Sauna Central
-     Poland · OpenStreetMap
-     Coords: 50.0791, 14.4269
+  📍 Varvojärven uimarannan sauna- ja kokoustila
+     Norway · OpenStreetMap
+     Coords: 60.4274, 23.3853
 
-  📍 Sauna Dolní Benešov
-     Poland · OpenStreetMap
-     Coords: 49.9227, 18.0966
+  📍 Vierassataman sauna
+     Norway · OpenStreetMap
+     Coords: 60.4528, 26.2342
 
-  📍 Sauna fińska
-     Poland · OpenStreetMap
-     Coords: 51.9453, 15.5210
-
-  📍 Sauna Komorní Lhotka
-     Poland · OpenStreetMap
-     Coords: 49.6513, 18.5165
-
-  📍 Sauna na kopečku
-     Poland · OpenStreetMap
-     Coords: 49.1305, 17.7448
-
-  📍 Sauna Plechovka
-     Poland · OpenStreetMap
-     Coords: 50.0636, 14.5896
-
-  📍 Sauna v Liberci
-     Poland · OpenStreetMap
-     Coords: 50.7675, 15.0464
-
-  📍 Sauna Vodní svět Kolín
-     Poland · OpenStreetMap
-     Coords: 50.0218, 15.1946
-
-  📍 Sauna w Glamuri
-     Poland · OpenStreetMap
-     Coords: 53.1548, 18.1489
-
-  📍 Sauna Wezuwiusza
-     Poland · OpenStreetMap
-     Coords: 50.3085, 19.0705
-
-  📍 Saunadorf
-     Poland · OpenStreetMap
-     Coords: 51.5127, 14.7197
-
-  📍 Saunarium
-     Poland · OpenStreetMap
-     Coords: 51.0429, 16.9811
-
-  📍 Saunaverein Waltersdorf
-     Poland · OpenStreetMap
-     Coords: 50.8657, 14.6492
-
-  📍 Sea Scrub Sauna
+  📍 Virgin Active Sauna
      UK · OpenStreetMap
-     Coords: 51.0771, 1.1865
+     Coords: 51.5066, -0.0286
 
-  📍 SHU SPA
-     Poland · OpenStreetMap
-     Coords: 52.4842, 20.9684
+  📍 Vista Spa & Beauty
+     UK · OpenStreetMap
+     Coords: 53.3539, -3.0281
 
-  📍 SpolCentrum - Sauna
-     Poland · OpenStreetMap
-     Coords: 49.0579, 20.1984
+  📍 Yksityissauna
+     Norway · OpenStreetMap
+     Coords: 61.1354, 21.4712
 
-  📍 Steam cave
-     Iceland · OpenStreetMap
-     Coords: 63.8802, -22.4480
+  📍 Yläsauna
+     Norway · OpenStreetMap
+     Coords: 60.5021, 24.6460
 
-Report generated: 2026-09-13T11:41:51.942Z
+  📍 Yleissauna
+     Norway · OpenStreetMap
+     Coords: 61.1353, 21.4714
+
+Report generated: 2026-09-20T11:13:31.525Z

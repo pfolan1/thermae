@@ -10308,6 +10308,30 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new sauna venue set to open inside a Grade II listed building known locally as 'the castle' in East London. The historic structure is being repurposed as a wellness destination.",
     lat:51.5449, lng:-0.0553,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:818, city:"Cork", country:"Ireland", name:"Sauna at Yay Cork (venue name unclear)", area:"Cork City",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Sauna","Wellness","Cork"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A newly featured sauna experience in Cork, described as unlike anything visitors have tried before. Full details available via Yay Cork.",
+    lat:51.8985, lng:-8.4756,
+  },
+  {
+    id:819, city:"Reykjavik", country:"Iceland", name:"Reykjaböð Hot Springs", area:"Check website for area details",
+    type:"lagoon", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Hot Springs","Thermal Journey","Geothermal","Wellness"], emoji:"♨️", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Reykjaböð Hot Springs in Iceland has revealed a new thermal journey experience, offering guests a geothermal wellness journey. The venue represents a new addition to Iceland's growing thermal bathing scene.",
+    lat:64.1466, lng:-21.9426,
   }
 ];
 
