@@ -1,91 +1,49 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 20 September 2026
+  Sunday, 27 September 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 81 articles, 75 relevant
-  • OpenStreetMap Overpass   : 577 candidates collected
+  • Google News RSS          : 85 articles, 74 relevant
+  • OpenStreetMap Overpass   : 889 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 2
-  • Review list (curated)    : 15 of 577 raw (0 regional, 15 adult, 256 junk, 49 dup, 242 seen)
-  • Skipped (duplicates/irrelevant): 73
+  • Venues auto-added        : 4
+  • Review list (curated)    : 2 of 889 raw (0 regional, 19 adult, 362 junk, 81 dup, 425 seen)
+  • Skipped (duplicates/irrelevant): 70
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Sauna at Yay Cork (venue name unclear)
-     Cork, Ireland
-     A newly featured sauna experience in Cork, described as unlike anything visitors have tried before. Full details available via Yay Cork.
+  ✅ Padel Meath
+     Meath, Ireland
+     A new indoor padel centre in County Meath featuring six courts and a heated players lounge, with a complimentary sauna included with every court booking.
 
-  ✅ Reykjaböð Hot Springs
-     Reykjavik, Iceland
-     Reykjaböð Hot Springs in Iceland has revealed a new thermal journey experience, offering guests a geothermal wellness journey. The venue represents a new addition to Iceland's growing thermal bathing scene.
+  ✅ Woodland Sauna Harrogate
+     Harrogate, UK
+     A new woodland sauna and cold plunge experience has opened in Harrogate, offering guests an immersive nature-based wellness retreat. The venue combines traditional sauna bathing with cold water immersion in a scenic outdoor woodland setting.
 
-── CURATED REVIEW LIST (15 of 577 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 15 adult · 256 junk/non-wellness · 49 already in venues.ts · 242 previously seen)
+  ✅ Somerset Levels Contrast Therapy Centre
+     Somerset, UK
+     A new luxury contrast therapy wellness centre recently opened in the Somerset Levels, offering hot and cold therapy experiences in a rural setting.
 
-  📍 Taureņu pirts
-     Latvia · OpenStreetMap
-     Coords: 56.9142, 23.8767
+  ✅ Cold Bath Plunge
+     Harrogate, UK
+     Cold Bath Plunge is a new cold water immersion venue in Harrogate, offering plunge experiences inspired by the town's historic spa and wellness heritage.
 
-  📍 Toijalanrannan rantasauna
-     Norway · OpenStreetMap
-     Coords: 61.9352, 25.1444
+── CURATED REVIEW LIST (2 of 889 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 19 adult · 362 junk/non-wellness · 81 already in venues.ts · 425 previously seen)
 
-  📍 Tornisauna
-     Norway · OpenStreetMap
-     Coords: 62.7898, 22.8244
+  📍 Borgens Sauna
+     Denmark · OpenStreetMap
+     https://borgenssauna.gomember.com/
+     Coords: 55.6080, 8.5062
 
-  📍 Tynnyrisauna
-     Norway · OpenStreetMap
-     Coords: 59.9199, 22.4056
-
-  📍 TYYn sauna
-     Norway · OpenStreetMap
-     Coords: 60.4545, 22.2872
-
-  📍 Valtuustotalon edustussauna
-     Norway · OpenStreetMap
-     Coords: 60.2071, 24.6561
-
-  📍 Varaussauna (Solvalla)
-     Norway · OpenStreetMap
-     Coords: 60.2926, 24.5561
-
-  📍 Varaustuvan sauna
-     Norway · OpenStreetMap
-     Coords: 65.6797, 27.5428
-
-  📍 Varvojärven uimarannan sauna- ja kokoustila
-     Norway · OpenStreetMap
-     Coords: 60.4274, 23.3853
-
-  📍 Vierassataman sauna
-     Norway · OpenStreetMap
-     Coords: 60.4528, 26.2342
-
-  📍 Virgin Active Sauna
+  📍 Hide Sauna
      UK · OpenStreetMap
-     Coords: 51.5066, -0.0286
+     https://hidesauna.co.uk/
+     Coords: 54.3110, -2.9607
 
-  📍 Vista Spa & Beauty
-     UK · OpenStreetMap
-     Coords: 53.3539, -3.0281
-
-  📍 Yksityissauna
-     Norway · OpenStreetMap
-     Coords: 61.1354, 21.4712
-
-  📍 Yläsauna
-     Norway · OpenStreetMap
-     Coords: 60.5021, 24.6460
-
-  📍 Yleissauna
-     Norway · OpenStreetMap
-     Coords: 61.1353, 21.4714
-
-Report generated: 2026-09-20T11:13:31.525Z
+Report generated: 2026-09-27T11:58:10.477Z

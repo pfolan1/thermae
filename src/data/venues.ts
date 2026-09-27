@@ -10332,6 +10332,52 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"Reykjaböð Hot Springs in Iceland has revealed a new thermal journey experience, offering guests a geothermal wellness journey. The venue represents a new addition to Iceland's growing thermal bathing scene.",
     lat:64.1466, lng:-21.9426,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:820, city:"Meath", country:"Ireland", name:"Padel Meath", area:"County Meath",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Free Sauna","Sports Facility","Padel","Indoor","Heated Lounge"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new indoor padel centre in County Meath featuring six courts and a heated players lounge, with a complimentary sauna included with every court booking.",
+    lat:53.6055, lng:-6.6564,
+  },
+  {
+    id:821, city:"Harrogate", country:"UK", name:"Woodland Sauna Harrogate", area:"Woodland setting, Harrogate",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Woodland","Cold Plunge","Sauna","Outdoor","Wellness"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new woodland sauna and cold plunge experience has opened in Harrogate, offering guests an immersive nature-based wellness retreat. The venue combines traditional sauna bathing with cold water immersion in a scenic outdoor woodland setting.",
+    lat:53.9919, lng:-1.5378,
+  },
+  {
+    id:822, city:"Somerset", country:"UK", name:"Somerset Levels Contrast Therapy Centre", area:"Somerset Levels",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Check website for temperatures", tags:["Contrast Therapy","Luxury","Wellness","Rural"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new luxury contrast therapy wellness centre recently opened in the Somerset Levels, offering hot and cold therapy experiences in a rural setting.",
+    lat:51.1284, lng:-2.9882,
+  },
+  {
+    id:823, city:"Harrogate", country:"UK", name:"Cold Bath Plunge", area:"Harrogate",
+    type:"plunge", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge", tags:["Cold Water","Plunge Pool","Wellness"], emoji:"🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Cold Bath Plunge is a new cold water immersion venue in Harrogate, offering plunge experiences inspired by the town's historic spa and wellness heritage.",
+    lat:53.992, lng:-1.5378,
   }
 ];
 
