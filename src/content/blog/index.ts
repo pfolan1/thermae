@@ -24,10 +24,12 @@ import bestSaunasCornwallSouthWestEngland from './best-saunas-cornwall-south-wes
 import yorkshireSaunaGuideLeedsSheffieldYork from './yorkshire-sauna-guide-leeds-sheffield-york';
 import birminghamMidlandsSaunaGuide from './birmingham-midlands-sauna-guide';
 import bestColdPlungeVenuesIreland2026 from './best-cold-plunge-venues-ireland-2026';
+import edinburghGlasgowSaunaScene from './edinburgh-glasgow-sauna-scene';
 
 export type { BlogPost };
 
 export const ALL_POSTS: BlogPost[] = [
+  edinburghGlasgowSaunaScene,
   bestColdPlungeVenuesIreland2026,
   birminghamMidlandsSaunaGuide,
   yorkshireSaunaGuideLeedsSheffieldYork,
@@ -59,4 +61,4 @@ export function getPostBySlug(slug: string): BlogPost | undefined {
   return ALL_POSTS.find(p => p.slug === slug);
 }
 
-export { bestColdPlungeVenuesIreland2026, birminghamMidlandsSaunaGuide, yorkshireSaunaGuideLeedsSheffieldYork, bestSaunasCornwallSouthWestEngland, contrastTherapyBenefitsResearch2026, bestSaunasManchesterLiverpool, nordicSaunaCultureFinland, seaweedBathsIrelandTraditionScience, bestSaunasBeginnersLondon, helsinkiSaunaGuide2026, wildAtlanticWayWellnessSaunas, bestOutdoorSaunasScotland, newSaunaOpeningsUkIrelandSummer2026, coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
+export { edinburghGlasgowSaunaScene, bestColdPlungeVenuesIreland2026, birminghamMidlandsSaunaGuide, yorkshireSaunaGuideLeedsSheffieldYork, bestSaunasCornwallSouthWestEngland, contrastTherapyBenefitsResearch2026, bestSaunasManchesterLiverpool, nordicSaunaCultureFinland, seaweedBathsIrelandTraditionScience, bestSaunasBeginnersLondon, helsinkiSaunaGuide2026, wildAtlanticWayWellnessSaunas, bestOutdoorSaunasScotland, newSaunaOpeningsUkIrelandSummer2026, coldPlungeScienceBody2026, healthBenefitsSauna, contrastTherapy, saunasIreland, seaweedBaths, coldPlunge, saunasCork, outdoorSauna, nordicCulture, saunasScotland, saunasDublin, saunasLondon };
