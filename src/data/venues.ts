@@ -10378,6 +10378,41 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"Cold Bath Plunge is a new cold water immersion venue in Harrogate, offering plunge experiences inspired by the town's historic spa and wellness heritage.",
     lat:53.992, lng:-1.5378,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:824, city:"London", country:"UK", name:"Bermondsey Sauna", area:"Bermondsey",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Sauna","Cold Plunge","Railway Arch","Studio"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Bermondsey station nearby",
+    parking:"Check website for parking",
+    desc:"A new sauna and cold plunge studio opened in the railway arches of Bermondsey, London. The venue offers sauna and cold plunge facilities in a distinctive arch setting in southeast London.",
+    lat:51.4995, lng:-0.0742,
+  },
+  {
+    id:825, city:"Harrogate", country:"UK", name:"Woodland Sauna & Cold Plunge", area:"North Yorkshire",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Woodland","Cold Plunge","Outdoor","Sauna","North Yorkshire"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new woodland sauna and cold plunge attraction has opened in the North Yorkshire spa town of Harrogate, offering an outdoor wellness experience set among trees. The venue combines traditional sauna bathing with cold water immersion in a natural woodland setting.",
+    lat:54.0023, lng:-1.5408,
+  },
+  {
+    id:826, city:"Brighton", country:"UK", name:"Saltgrass Sauna", area:"Brighton",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Community","Farm","New Opening","Outdoor"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Saltgrass Sauna is a newly launched sauna venue based at a community farm, reported by The Argus. The venue opened in 2025 offering sauna sessions in a community-focused rural setting.",
+    lat:50.8229, lng:-0.1363,
   }
 ];
 

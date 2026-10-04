@@ -1,49 +1,40 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 27 September 2026
+  Sunday, 4 October 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 85 articles, 74 relevant
-  • OpenStreetMap Overpass   : 889 candidates collected
+  • Google News RSS          : 86 articles, 81 relevant
+  • OpenStreetMap Overpass   : 531 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 4
-  • Review list (curated)    : 2 of 889 raw (0 regional, 19 adult, 362 junk, 81 dup, 425 seen)
-  • Skipped (duplicates/irrelevant): 70
+  • Venues auto-added        : 3
+  • Review list (curated)    : 1 of 531 raw (0 regional, 4 adult, 222 junk, 38 dup, 266 seen)
+  • Skipped (duplicates/irrelevant): 78
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Padel Meath
-     Meath, Ireland
-     A new indoor padel centre in County Meath featuring six courts and a heated players lounge, with a complimentary sauna included with every court booking.
+  ✅ Bermondsey Sauna
+     London, UK
+     A new sauna and cold plunge studio opened in the railway arches of Bermondsey, London. The venue offers sauna and cold plunge facilities in a distinctive arch setting in southeast London.
 
-  ✅ Woodland Sauna Harrogate
+  ✅ Woodland Sauna & Cold Plunge
      Harrogate, UK
-     A new woodland sauna and cold plunge experience has opened in Harrogate, offering guests an immersive nature-based wellness retreat. The venue combines traditional sauna bathing with cold water immersion in a scenic outdoor woodland setting.
+     A new woodland sauna and cold plunge attraction has opened in the North Yorkshire spa town of Harrogate, offering an outdoor wellness experience set among trees. The venue combines traditional sauna bathing with cold water immersion in a natural woodland setting.
 
-  ✅ Somerset Levels Contrast Therapy Centre
-     Somerset, UK
-     A new luxury contrast therapy wellness centre recently opened in the Somerset Levels, offering hot and cold therapy experiences in a rural setting.
+  ✅ Saltgrass Sauna
+     Brighton, UK
+     Saltgrass Sauna is a newly launched sauna venue based at a community farm, reported by The Argus. The venue opened in 2025 offering sauna sessions in a community-focused rural setting.
 
-  ✅ Cold Bath Plunge
-     Harrogate, UK
-     Cold Bath Plunge is a new cold water immersion venue in Harrogate, offering plunge experiences inspired by the town's historic spa and wellness heritage.
+── CURATED REVIEW LIST (1 of 531 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 4 adult · 222 junk/non-wellness · 38 already in venues.ts · 266 previously seen)
 
-── CURATED REVIEW LIST (2 of 889 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 19 adult · 362 junk/non-wellness · 81 already in venues.ts · 425 previously seen)
+  📍 Haukanpesän sauna
+     Finland · OpenStreetMap
+     https://naturaviva.fi/fi_FI/cafehaukka/haukanpesan-sauna
+     Coords: 60.3098, 24.5146
 
-  📍 Borgens Sauna
-     Denmark · OpenStreetMap
-     https://borgenssauna.gomember.com/
-     Coords: 55.6080, 8.5062
-
-  📍 Hide Sauna
-     UK · OpenStreetMap
-     https://hidesauna.co.uk/
-     Coords: 54.3110, -2.9607
-
-Report generated: 2026-09-27T11:58:10.477Z
+Report generated: 2026-10-04T12:16:51.257Z
