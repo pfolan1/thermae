@@ -1,40 +1,36 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 4 October 2026
+  Sunday, 11 October 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 86 articles, 81 relevant
-  • OpenStreetMap Overpass   : 531 candidates collected
+  • Google News RSS          : 79 articles, 72 relevant
+  • OpenStreetMap Overpass   : 94 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
   • Venues auto-added        : 3
-  • Review list (curated)    : 1 of 531 raw (0 regional, 4 adult, 222 junk, 38 dup, 266 seen)
-  • Skipped (duplicates/irrelevant): 78
+  • Review list (curated)    : 0 of 94 raw (0 regional, 0 adult, 55 junk, 6 dup, 33 seen)
+  • Skipped (duplicates/irrelevant): 69
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Bermondsey Sauna
+  ✅ Thermae Bath Spa Suite
+     Somerset, UK
+     A new boutique spa suite in Somerset featuring saunas, cold plunges, and a hot tub. The venue offers a private wellness experience in a boutique setting.
+
+  ✅ Sauna Barge London
      London, UK
-     A new sauna and cold plunge studio opened in the railway arches of Bermondsey, London. The venue offers sauna and cold plunge facilities in a distinctive arch setting in southeast London.
+     A floating wood-fired sauna experience on the River Thames in London, offering sessions from £32 per person. Guests can enjoy the heat of a wood-fired sauna aboard a barge on the river.
 
-  ✅ Woodland Sauna & Cold Plunge
-     Harrogate, UK
-     A new woodland sauna and cold plunge attraction has opened in the North Yorkshire spa town of Harrogate, offering an outdoor wellness experience set among trees. The venue combines traditional sauna bathing with cold water immersion in a natural woodland setting.
+  ✅ Sutton Rooftop Spa
+     London, UK
+     A new rooftop spa featuring hot tubs and cold plunge facilities is set to open in Sutton, London, in autumn. The venue offers an urban wellness experience with rooftop views.
 
-  ✅ Saltgrass Sauna
-     Brighton, UK
-     Saltgrass Sauna is a newly launched sauna venue based at a community farm, reported by The Argus. The venue opened in 2025 offering sauna sessions in a community-focused rural setting.
+── CURATED REVIEW LIST (0 of 94 candidates) ─────────────────
+  No new genuine candidates found this week.
+  (94 filtered: 0 Russian/out-of-region, 0 adult, 55 junk, 6 duplicates, 33 previously seen)
 
-── CURATED REVIEW LIST (1 of 531 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 4 adult · 222 junk/non-wellness · 38 already in venues.ts · 266 previously seen)
-
-  📍 Haukanpesän sauna
-     Finland · OpenStreetMap
-     https://naturaviva.fi/fi_FI/cafehaukka/haukanpesan-sauna
-     Coords: 60.3098, 24.5146
-
-Report generated: 2026-10-04T12:16:51.257Z
+Report generated: 2026-10-11T12:41:02.392Z

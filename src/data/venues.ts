@@ -10413,6 +10413,41 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"Saltgrass Sauna is a newly launched sauna venue based at a community farm, reported by The Argus. The venue opened in 2025 offering sauna sessions in a community-focused rural setting.",
     lat:50.8229, lng:-0.1363,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:827, city:"Somerset", country:"UK", name:"Thermae Bath Spa Suite", area:"Somerset",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Boutique","Sauna","Cold Plunge","Hot Tub","Spa Suite"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new boutique spa suite in Somerset featuring saunas, cold plunges, and a hot tub. The venue offers a private wellness experience in a boutique setting.",
+    lat:51.0755, lng:-2.9262,
+  },
+  {
+    id:828, city:"London", country:"UK", name:"Sauna Barge London", area:"River Thames",
+    type:"sauna", price:"£32 per session", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"River plunge", tags:["Floating","Wood-fired","River Thames","Unique Experience"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A floating wood-fired sauna experience on the River Thames in London, offering sessions from £32 per person. Guests can enjoy the heat of a wood-fired sauna aboard a barge on the river.",
+    lat:51.5074, lng:-0.1278,
+  },
+  {
+    id:829, city:"London", country:"UK", name:"Sutton Rooftop Spa", area:"Sutton",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Rooftop","Hot Tub","Cold Plunge","Spa"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new rooftop spa featuring hot tubs and cold plunge facilities is set to open in Sutton, London, in autumn. The venue offers an urban wellness experience with rooftop views.",
+    lat:51.3618, lng:-0.1945,
   }
 ];
 
