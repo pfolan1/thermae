@@ -1,36 +1,58 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 11 October 2026
+  Sunday, 18 October 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 79 articles, 72 relevant
-  • OpenStreetMap Overpass   : 94 candidates collected
+  • Google News RSS          : 80 articles, 72 relevant
+  • OpenStreetMap Overpass   : 511 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
   • Venues auto-added        : 3
-  • Review list (curated)    : 0 of 94 raw (0 regional, 0 adult, 55 junk, 6 dup, 33 seen)
+  • Review list (curated)    : 5 of 511 raw (0 regional, 4 adult, 212 junk, 41 dup, 249 seen)
   • Skipped (duplicates/irrelevant): 69
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Thermae Bath Spa Suite
+  ✅ Thermae Cork
+     Cork, Ireland
+     A morning wellness experience in Cork City combining stretching, sauna sessions and coffee. The venue offers feel-good morning programming blending yoga or stretching with sauna access.
+
+  ✅ Laoch Saunas
+     Galway, Ireland
+     Laoch Saunas is Galway's newest sauna and cold plunge facility, offering wellness experiences in the west of Ireland. The venue combines traditional sauna sessions with cold plunge therapy.
+
+  ✅ Thermae Bath Spa Suite Somerset
      Somerset, UK
      A new boutique spa suite in Somerset featuring saunas, cold plunges, and a hot tub. The venue offers a private wellness experience in a boutique setting.
 
-  ✅ Sauna Barge London
-     London, UK
-     A floating wood-fired sauna experience on the River Thames in London, offering sessions from £32 per person. Guests can enjoy the heat of a wood-fired sauna aboard a barge on the river.
+── CURATED REVIEW LIST (5 of 511 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 4 adult · 212 junk/non-wellness · 41 already in venues.ts · 249 previously seen)
 
-  ✅ Sutton Rooftop Spa
-     London, UK
-     A new rooftop spa featuring hot tubs and cold plunge facilities is set to open in Sutton, London, in autumn. The venue offers an urban wellness experience with rooftop views.
+  📍 Hotelli Viikinhovin sauna
+     Finland · OpenStreetMap
+     https://hotelliviikinhovi.fi
+     Coords: 62.2245, 24.6687
 
-── CURATED REVIEW LIST (0 of 94 candidates) ─────────────────
-  No new genuine candidates found this week.
-  (94 filtered: 0 Russian/out-of-region, 0 adult, 55 junk, 6 duplicates, 33 previously seen)
+  📍 Lilla sauna
+     Sweden · OpenStreetMap
+     https://lillasauna.se/bastu-stockholm
+     Coords: 59.3212, 18.0583
 
-Report generated: 2026-10-11T12:41:02.392Z
+  📍 Saunasetrið
+     Iceland · OpenStreetMap
+     https://saunasetrid.is
+     Coords: 65.3952, -20.9481
+
+  📍 La Rive Sauna
+     Ireland · OpenStreetMap
+     Coords: 52.8060, -7.2058
+
+  📍 Peltokylpylä
+     Sweden · OpenStreetMap
+     Coords: 60.2330, 23.3856
+
+Report generated: 2026-10-18T10:59:24.050Z

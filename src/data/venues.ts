@@ -10448,6 +10448,41 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new rooftop spa featuring hot tubs and cold plunge facilities is set to open in Sutton, London, in autumn. The venue offers an urban wellness experience with rooftop views.",
     lat:51.3618, lng:-0.1945,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:830, city:"Cork", country:"Ireland", name:"Thermae Cork", area:"Cork City Centre",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Sauna","Yoga","Wellness","Morning Sessions","Coffee"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A morning wellness experience in Cork City combining stretching, sauna sessions and coffee. The venue offers feel-good morning programming blending yoga or stretching with sauna access.",
+    lat:51.8985, lng:-8.4756,
+  },
+  {
+    id:831, city:"Galway", country:"Ireland", name:"Laoch Saunas", area:"Galway",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Sauna","Cold Plunge","Wellness","New Opening"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Laoch Saunas is Galway's newest sauna and cold plunge facility, offering wellness experiences in the west of Ireland. The venue combines traditional sauna sessions with cold plunge therapy.",
+    lat:53.2707, lng:-9.0568,
+  },
+  {
+    id:832, city:"Somerset", country:"UK", name:"Thermae Bath Spa Suite Somerset", area:"Somerset",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Boutique","Cold Plunge","Hot Tub","Sauna","Spa Suite"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new boutique spa suite in Somerset featuring saunas, cold plunges, and a hot tub. The venue offers a private wellness experience in a boutique setting.",
+    lat:51.0755, lng:-2.9027,
   }
 ];
 
