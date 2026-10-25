@@ -1,58 +1,36 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 18 October 2026
+  Sunday, 25 October 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 80 articles, 72 relevant
-  • OpenStreetMap Overpass   : 511 candidates collected
+  • Google News RSS          : 82 articles, 76 relevant
+  • OpenStreetMap Overpass   : 854 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 3
-  • Review list (curated)    : 5 of 511 raw (0 regional, 4 adult, 212 junk, 41 dup, 249 seen)
-  • Skipped (duplicates/irrelevant): 69
+  • Venues auto-added        : 2
+  • Review list (curated)    : 1 of 854 raw (0 regional, 4 adult, 383 junk, 40 dup, 426 seen)
+  • Skipped (duplicates/irrelevant): 74
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Thermae Cork
-     Cork, Ireland
-     A morning wellness experience in Cork City combining stretching, sauna sessions and coffee. The venue offers feel-good morning programming blending yoga or stretching with sauna access.
+  ✅ Sixmile Leisure Centre Sauna & Steam Room
+     Antrim, UK
+     Sixmile Leisure Centre in Northern Ireland has plans for a new sauna and steam room facility. The addition will expand the wellness offering at the existing leisure centre.
 
-  ✅ Laoch Saunas
-     Galway, Ireland
-     Laoch Saunas is Galway's newest sauna and cold plunge facility, offering wellness experiences in the west of Ireland. The venue combines traditional sauna sessions with cold plunge therapy.
+  ✅ Fen Sauna & Wild Swimming
+     Huntingdon, UK
+     A new sauna and wild swimming attraction has opened near Huntingdon, Cambridgeshire, combining outdoor bathing with sauna experiences in a natural setting.
 
-  ✅ Thermae Bath Spa Suite Somerset
-     Somerset, UK
-     A new boutique spa suite in Somerset featuring saunas, cold plunges, and a hot tub. The venue offers a private wellness experience in a boutique setting.
+── CURATED REVIEW LIST (1 of 854 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 4 adult · 383 junk/non-wellness · 40 already in venues.ts · 426 previously seen)
 
-── CURATED REVIEW LIST (5 of 511 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 4 adult · 212 junk/non-wellness · 41 already in venues.ts · 249 previously seen)
-
-  📍 Hotelli Viikinhovin sauna
-     Finland · OpenStreetMap
-     https://hotelliviikinhovi.fi
-     Coords: 62.2245, 24.6687
-
-  📍 Lilla sauna
+  📍 Viekšnių viešoji pirtis
      Sweden · OpenStreetMap
-     https://lillasauna.se/bastu-stockholm
-     Coords: 59.3212, 18.0583
+     https://pirtis.lt/lt/pirtys/vieksniu
+     Coords: 56.2326, 22.5123
 
-  📍 Saunasetrið
-     Iceland · OpenStreetMap
-     https://saunasetrid.is
-     Coords: 65.3952, -20.9481
-
-  📍 La Rive Sauna
-     Ireland · OpenStreetMap
-     Coords: 52.8060, -7.2058
-
-  📍 Peltokylpylä
-     Sweden · OpenStreetMap
-     Coords: 60.2330, 23.3856
-
-Report generated: 2026-10-18T10:59:24.050Z
+Report generated: 2026-10-25T11:18:59.664Z

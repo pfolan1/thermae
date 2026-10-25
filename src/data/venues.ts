@@ -10483,6 +10483,30 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new boutique spa suite in Somerset featuring saunas, cold plunges, and a hot tub. The venue offers a private wellness experience in a boutique setting.",
     lat:51.0755, lng:-2.9027,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:833, city:"Antrim", country:"UK", name:"Sixmile Leisure Centre Sauna & Steam Room", area:"Sixmilewater",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Sauna","Steam Room","Leisure Centre","Northern Ireland"], emoji:"♨️", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"Sixmile Leisure Centre in Northern Ireland has plans for a new sauna and steam room facility. The addition will expand the wellness offering at the existing leisure centre.",
+    lat:54.7195, lng:-6.2073,
+  },
+  {
+    id:834, city:"Huntingdon", country:"UK", name:"Fen Sauna & Wild Swimming", area:"Near Huntingdon",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Wild swimming", tags:["Wild Swimming","Sauna","Outdoor","Nature"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new sauna and wild swimming attraction has opened near Huntingdon, Cambridgeshire, combining outdoor bathing with sauna experiences in a natural setting.",
+    lat:52.329, lng:-0.183,
   }
 ];
 
