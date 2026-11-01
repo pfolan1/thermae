@@ -1,36 +1,32 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 25 October 2026
+  Sunday, 1 November 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 82 articles, 76 relevant
-  • OpenStreetMap Overpass   : 854 candidates collected
+  • Google News RSS          : 78 articles, 72 relevant
+  • OpenStreetMap Overpass   : 7 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
   • Venues auto-added        : 2
-  • Review list (curated)    : 1 of 854 raw (0 regional, 4 adult, 383 junk, 40 dup, 426 seen)
-  • Skipped (duplicates/irrelevant): 74
+  • Review list (curated)    : 0 of 7 raw (0 regional, 0 adult, 3 junk, 1 dup, 3 seen)
+  • Skipped (duplicates/irrelevant): 70
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ Sixmile Leisure Centre Sauna & Steam Room
-     Antrim, UK
-     Sixmile Leisure Centre in Northern Ireland has plans for a new sauna and steam room facility. The addition will expand the wellness offering at the existing leisure centre.
+  ✅ The Urban Sauna
+     Liverpool, UK
+     The Urban Sauna is a new sauna venue opening in the Anfield area of Liverpool, set to create 20 jobs in the local community. The venue is part of a growing wellness trend bringing urban sauna experiences to UK cities.
 
-  ✅ Fen Sauna & Wild Swimming
-     Huntingdon, UK
-     A new sauna and wild swimming attraction has opened near Huntingdon, Cambridgeshire, combining outdoor bathing with sauna experiences in a natural setting.
+  ✅ Thermae Sauna at Tooting Bec Lido
+     London, UK
+     A new affordable sauna and cold plunge experience priced at £17.50 has opened in a south west London park. The venue offers both sauna and cold plunge facilities in an accessible outdoor park setting.
 
-── CURATED REVIEW LIST (1 of 854 candidates) ─────────────────
-  (Filtered: 0 Russian/out-of-region · 4 adult · 383 junk/non-wellness · 40 already in venues.ts · 426 previously seen)
+── CURATED REVIEW LIST (0 of 7 candidates) ─────────────────
+  No new genuine candidates found this week.
+  (7 filtered: 0 Russian/out-of-region, 0 adult, 3 junk, 1 duplicates, 3 previously seen)
 
-  📍 Viekšnių viešoji pirtis
-     Sweden · OpenStreetMap
-     https://pirtis.lt/lt/pirtys/vieksniu
-     Coords: 56.2326, 22.5123
-
-Report generated: 2026-10-25T11:18:59.664Z
+Report generated: 2026-11-01T13:11:18.203Z

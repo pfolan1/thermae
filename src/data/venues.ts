@@ -10507,6 +10507,30 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new sauna and wild swimming attraction has opened near Huntingdon, Cambridgeshire, combining outdoor bathing with sauna experiences in a natural setting.",
     lat:52.329, lng:-0.183,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:835, city:"Liverpool", country:"UK", name:"The Urban Sauna", area:"Anfield",
+    type:"sauna", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"N/A", tags:["Urban Sauna","Anfield","Liverpool","New Opening","Jobs"], emoji:"🔥", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"The Urban Sauna is a new sauna venue opening in the Anfield area of Liverpool, set to create 20 jobs in the local community. The venue is part of a growing wellness trend bringing urban sauna experiences to UK cities.",
+    lat:53.4308, lng:-2.9608,
+  },
+  {
+    id:836, city:"London", country:"UK", name:"Thermae Sauna at Tooting Bec Lido", area:"Tooting",
+    type:"both", price:"£17.50 per session", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Park","Cold Plunge","Sauna","South West London","Affordable"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new affordable sauna and cold plunge experience priced at £17.50 has opened in a south west London park. The venue offers both sauna and cold plunge facilities in an accessible outdoor park setting.",
+    lat:51.4319, lng:-0.1445,
   }
 ];
 
