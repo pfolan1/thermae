@@ -1,32 +1,45 @@
 ═══════════════════════════════════════════════════════════════
   THERMAE VENUE DISCOVERY REPORT
-  Sunday, 1 November 2026
+  Sunday, 8 November 2026
 ═══════════════════════════════════════════════════════════════
 
   DATA SOURCES THIS RUN:
-  • Google News RSS          : 78 articles, 72 relevant
-  • OpenStreetMap Overpass   : 7 candidates collected
+  • Google News RSS          : 74 articles, 71 relevant
+  • OpenStreetMap Overpass   : 959 candidates collected
   • Google Places API        : SKIPPED (no API key)
 
   RESULTS:
-  • Venues auto-added        : 2
-  • Review list (curated)    : 0 of 7 raw (0 regional, 0 adult, 3 junk, 1 dup, 3 seen)
+  • Venues auto-added        : 1
+  • Review list (curated)    : 4 of 959 raw (0 regional, 6 adult, 423 junk, 63 dup, 463 seen)
   • Skipped (duplicates/irrelevant): 70
   • Errors                   : 0
 
 ═══════════════════════════════════════════════════════════════
 
 ── NEW VENUES ADDED AUTOMATICALLY (via Google News + Claude) ───
-  ✅ The Urban Sauna
-     Liverpool, UK
-     The Urban Sauna is a new sauna venue opening in the Anfield area of Liverpool, set to create 20 jobs in the local community. The venue is part of a growing wellness trend bringing urban sauna experiences to UK cities.
+  ✅ Midlothian Outdoor Sauna & Cold Plunge
+     Midlothian, UK
+     A new outdoor sauna with cold plunge facility set to open in Midlothian at a scenic waterfront location. The venue offers an outdoor wellness experience combining traditional sauna with cold water immersion.
 
-  ✅ Thermae Sauna at Tooting Bec Lido
-     London, UK
-     A new affordable sauna and cold plunge experience priced at £17.50 has opened in a south west London park. The venue offers both sauna and cold plunge facilities in an accessible outdoor park setting.
+── CURATED REVIEW LIST (4 of 959 candidates) ─────────────────
+  (Filtered: 0 Russian/out-of-region · 6 adult · 423 junk/non-wellness · 63 already in venues.ts · 463 previously seen)
 
-── CURATED REVIEW LIST (0 of 7 candidates) ─────────────────
-  No new genuine candidates found this week.
-  (7 filtered: 0 Russian/out-of-region, 0 adult, 3 junk, 1 duplicates, 3 previously seen)
+  📍 Sauna Pirts Rīgā, Zolitūde
+     Sweden · OpenStreetMap
+     https://sauna-riga.lv/
+     Coords: 56.9400, 24.0106
 
-Report generated: 2026-11-01T13:11:18.203Z
+  📍 Saunalautta Hiisi
+     Norway · OpenStreetMap
+     https://hiisisauna.fi/
+     Coords: 60.1769, 24.9132
+
+  📍 North Surf Sauna
+     Norway · OpenStreetMap
+     Coords: 57.3712, 9.7062
+
+  📍 Perhesauna
+     Norway · OpenStreetMap
+     Coords: 61.6715, 26.7493
+
+Report generated: 2026-11-08T13:20:49.127Z

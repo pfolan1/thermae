@@ -10531,6 +10531,19 @@ export const VENUES: Venue[] = [
     parking:"Check website for parking",
     desc:"A new affordable sauna and cold plunge experience priced at £17.50 has opened in a south west London park. The venue offers both sauna and cold plunge facilities in an accessible outdoor park setting.",
     lat:51.4319, lng:-0.1445,
+  },
+
+  // ── AUTO-ADDED ──
+  {
+    id:837, city:"Midlothian", country:"UK", name:"Midlothian Outdoor Sauna & Cold Plunge", area:"Midlothian waterfront",
+    type:"both", price:"Check website", rating:4.5, reviews:0,
+    hours:"Check website for current hours",
+    temp:"Cold plunge available", tags:["Outdoor","Cold Plunge","Waterfront","Sauna"], emoji:"🔥🧊", open:true,
+    hygiene:"A", lockerNote:"Check website for locker details",
+    transport:"Check website for directions",
+    parking:"Check website for parking",
+    desc:"A new outdoor sauna with cold plunge facility set to open in Midlothian at a scenic waterfront location. The venue offers an outdoor wellness experience combining traditional sauna with cold water immersion.",
+    lat:55.8449, lng:-3.0636,
   }
 ];
 
